@@ -21,6 +21,13 @@
 		<junit.platform.version>1.2.0</junit.platform.version>
 	</properties>
 
+	<scm>
+		<url>https://bitbucket.org/retest/recheck-web/</url>
+		<connection>scm:git:https://bitbucket.org/retest/recheck-web.git</connection>
+		<developerConnection>scm:git:https://bitbucket.org/retest/recheck-web.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
 	<repositories>
 		<repository>
 			<id>nexus-retest</id>
