@@ -21,6 +21,13 @@
 		<junit.platform.version>1.2.0</junit.platform.version>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>nexus-retest</id>
+			<url>https://nexus.retest.org/repository/all/</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>de.retest</groupId>
