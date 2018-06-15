@@ -20,7 +20,7 @@ Currently only offers a Java API.
 
 ### Installing
 
-Installation is as easy as downloading the jar or adding the dependency to your maven or gradle.
+Installation is as easy as downloading the jar and adding it as a dependency.
 
 ## License
 
