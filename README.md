@@ -11,8 +11,8 @@ recheck for web apps. Replace manual asserts and check everything at once.
 
 * Easy creation and maintenance of checks in web tests.
 * Semantic comparison of contents.
-* Easy ignore of volatile elements, attributes or sections.
-* One-click maintenance to update tests with wanted changes.
+* Easily ignore volatile elements, attributes or sections.
+* One-click maintenance to update tests with intended changes.
 * No unexpected changes go unnoticed.
 * Operates on top of Selenium.
 * The Git for your GUI.
