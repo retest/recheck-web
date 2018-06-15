@@ -13,6 +13,13 @@
 	<name>recheck - web</name>
 	<description>Implementation of the retest's SUT API for Selenium/web.</description>
 
+	<licenses>
+		<license>
+			<name>GNU Affero General Public License (AGPL), Version 3</name>
+			<url>https://gnu.org/licenses/agpl-3.0.html</url>
+		</license>
+	</licenses>
+
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
