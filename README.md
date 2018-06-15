@@ -1,27 +1,29 @@
-# recheck for web
+[![license](https://img.shields.io/badge/license-AGPL-brightgreen.svg)](https://github.com/retest/recheck-web/blob/master/LICENSE)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/retest/recheck-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+[![code with hearth by retest](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-retest-C1D82F.svg)](https://github.com/retest)
 
-Replacing manual asserts: check everything at once.
+# recheck-web
 
-[![license](https://img.shields.io/badge/license-AGPL-brightgreen.svg)](https://github.com/retest/recheck-web/blob/master/LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/retest/recheck-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) [![code with hearth by retest](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-retest-C1D82F.svg)](https://github.com/retest)
+recheck for web apps. Replace manual asserts and check everything at once.
 
 ## Features
 
 * Easy creation and maintenance of checks in web tests.
 * Semantic comparison of contents.
 * Easy ignore of volatile elements, attributes or sections.
-* 1-click maintenance to update tests with wanted changes.
+* One-click maintenance to update tests with wanted changes.
 * No unexpected changes go unnoticed.
-* Works with Selenium.
-* The git for your gui.
+* Operates on top of Selenium.
+* The Git for your UI.
 
 ### Prerequisites
 
-Currently only offers a Java API.
+Currently only available as a Java API.
 
 ### Installing
 
-Installation is as easy as downloading the jar and adding it as a dependency.
+We will soon provide a bundled JAR and Maven dependencies.
 
 ## License
 
-This project is licensed under the [AGPL license](LICENSE.md).
+This project is licensed under the [AGPL license](LICENSE).
