@@ -2,3 +2,6 @@ language: java
 
 notifications:
   email: false
+
+before_install:
+  - cp .travis.settings.xml ${HOME}/.m2/settings.xml
