@@ -15,7 +15,7 @@ recheck for web apps. Replace manual asserts and check everything at once.
 * One-click maintenance to update tests with wanted changes.
 * No unexpected changes go unnoticed.
 * Operates on top of Selenium.
-* The Git for your UI.
+* The Git for your GUI.
 
 ### Prerequisites
 
