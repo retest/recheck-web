@@ -1,6 +1,7 @@
 package de.retest.web;
 
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.Comparator;
@@ -11,11 +12,13 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.google.common.base.Charsets;
+import com.google.common.io.Files;
 
 import de.retest.recheck.RecheckAdapter;
 import de.retest.ui.DefaultValueFinder;
@@ -52,9 +55,9 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	}
 
 	public String getQueryJS() {
+		final File file = new File( getClass().getResource( GET_ALL_ELEMENTS_BY_PATH_JS_PATH ).getFile() );
 		try {
-			return IOUtils
-					.toString( RecheckSeleniumAdapter.class.getResourceAsStream( GET_ALL_ELEMENTS_BY_PATH_JS_PATH ) );
+			return Files.asCharSource( file, Charsets.UTF_8 ).read();
 		} catch ( final IOException e ) {
 			throw new RuntimeException( "Exception reading '" + GET_ALL_ELEMENTS_BY_PATH_JS_PATH + "'.", e );
 		}
