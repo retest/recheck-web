@@ -2,7 +2,6 @@ package de.retest.web;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.io.Serializable;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -20,7 +19,6 @@ import org.slf4j.LoggerFactory;
 
 import de.retest.recheck.RecheckAdapter;
 import de.retest.ui.DefaultValueFinder;
-import de.retest.ui.descriptors.IdentifyingAttributes;
 import de.retest.ui.descriptors.RootElement;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategy;
@@ -120,13 +118,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public DefaultValueFinder getDefaultValueFinder() {
-		return new DefaultValueFinder() {
-			@Override
-			public Serializable getDefaultValue( final IdentifyingAttributes comp, final String attributesKey ) {
-				// TODO Auto-generated method stub
-				return null;
-			}
-		};
+		// TODO DefaultValueFinder is just a stub.
+		return ( identifyingAttributes, attributesKey ) -> null;
 	}
 
 }
