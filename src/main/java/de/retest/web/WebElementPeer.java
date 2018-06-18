@@ -45,10 +45,10 @@ public class WebElementPeer {
 		if ( webData == null ) {
 			return null;
 		}
-		final List<Element> children = convertChildren();
+		final List<Element> convertedChildren = convertChildren();
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
 		final MutableAttributes state = retrieveStateAttributes();
-		return new Element( identifyingAttributes, state.immutable(), children, retrieveScreenshot() );
+		return new Element( identifyingAttributes, state.immutable(), convertedChildren, retrieveScreenshot() );
 	}
 
 	protected IdentifyingAttributes retrieveIdentifyingAttributes() {
