@@ -58,12 +58,12 @@ public class WebElementPeer {
 		attributes.add( new StringAttribute( "type", webData.get( "tagName" ) ) );
 		attributes.add( new TextAttribute( "text", webData.get( "text" ) ) );
 		final List<String> userDefinedAttributes =
-				new ArrayList<>( AttributeProvider.getInstance().getIdentifyingAttributes() );
+				new ArrayList<>( AttributesProvider.getInstance().getIdentifyingAttributes() );
 		if ( containsOutline( userDefinedAttributes ) ) {
-			userDefinedAttributes.remove( Attributes.X );
-			userDefinedAttributes.remove( Attributes.Y );
-			userDefinedAttributes.remove( Attributes.WIDTH );
-			userDefinedAttributes.remove( Attributes.HEIGHT );
+			userDefinedAttributes.remove( AttributesConfig.X );
+			userDefinedAttributes.remove( AttributesConfig.Y );
+			userDefinedAttributes.remove( AttributesConfig.WIDTH );
+			userDefinedAttributes.remove( AttributesConfig.HEIGHT );
 			final OutlineAttribute outline = retrieveOutline();
 			if ( outline != null ) {
 				attributes.add( outline );
@@ -79,21 +79,21 @@ public class WebElementPeer {
 	}
 
 	public boolean containsOutline( final List<String> userDefinedAttributes ) {
-		return userDefinedAttributes.contains( Attributes.X ) && userDefinedAttributes.contains( Attributes.Y ) //
-				&& userDefinedAttributes.contains( Attributes.WIDTH )
-				&& userDefinedAttributes.contains( Attributes.HEIGHT );
+		return userDefinedAttributes.contains( AttributesConfig.X ) && userDefinedAttributes.contains( AttributesConfig.Y ) //
+				&& userDefinedAttributes.contains( AttributesConfig.WIDTH )
+				&& userDefinedAttributes.contains( AttributesConfig.HEIGHT );
 	}
 
 	public OutlineAttribute retrieveOutline() {
-		if ( webData.get( Attributes.X ) == null || webData.get( Attributes.Y ) == null //
-				|| webData.get( Attributes.WIDTH ) == null || webData.get( Attributes.HEIGHT ) == null ) {
+		if ( webData.get( AttributesConfig.X ) == null || webData.get( AttributesConfig.Y ) == null //
+				|| webData.get( AttributesConfig.WIDTH ) == null || webData.get( AttributesConfig.HEIGHT ) == null ) {
 			return null;
 		}
 		try {
-			final int x = toInt( webData.get( Attributes.X ) );
-			final int y = toInt( webData.get( Attributes.Y ) );
-			final int width = toInt( webData.get( Attributes.WIDTH ) );
-			final int height = toInt( webData.get( Attributes.HEIGHT ) );
+			final int x = toInt( webData.get( AttributesConfig.X ) );
+			final int y = toInt( webData.get( AttributesConfig.Y ) );
+			final int width = toInt( webData.get( AttributesConfig.WIDTH ) );
+			final int height = toInt( webData.get( AttributesConfig.HEIGHT ) );
 			return new OutlineAttribute( new Rectangle( x, y, width, height ) );
 		} catch ( final Exception e ) {
 			logger.error( "Exception retrieving outline: ", e );
@@ -127,7 +127,7 @@ public class WebElementPeer {
 
 	protected MutableAttributes retrieveStateAttributes() {
 		final MutableAttributes state = new MutableAttributes();
-		for ( final String attribute : AttributeProvider.getInstance().getAttributes() ) {
+		for ( final String attribute : AttributesProvider.getInstance().getAttributes() ) {
 			final String attributeValue = webData.get( attribute );
 			if ( attributeValue != null && !isDefault( attributeValue ) ) {
 				state.put( attribute, attributeValue );

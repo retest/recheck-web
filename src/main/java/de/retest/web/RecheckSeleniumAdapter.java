@@ -41,7 +41,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	public Set<RootElement> convert( final Object toVerify ) {
 		final WebDriver driver = (WebDriver) toVerify;
 
-		final List<String> attributes = AttributeProvider.getInstance().getJoinedAttributes();
+		final List<String> attributes = AttributesProvider.getInstance().getJoinedAttributes();
 		logger.info( "Retrieving {} attributes for each element.", attributes.size() );
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		@SuppressWarnings( "unchecked" )

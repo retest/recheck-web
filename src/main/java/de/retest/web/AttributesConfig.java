@@ -5,7 +5,7 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Attributes {
+public class AttributesConfig {
 
 	public static final String X = "x";
 	public static final String Y = "y";
@@ -16,7 +16,7 @@ public class Attributes {
 	private final List<String> identifyingAttributes;
 
 	@JsonCreator
-	public Attributes( @JsonProperty( "attributes" ) final List<String> attributes,
+	public AttributesConfig( @JsonProperty( "attributes" ) final List<String> attributes,
 			@JsonProperty( "identifyingAttributes" ) final List<String> identifyingAttributes ) {
 		this.attributes = attributes;
 		this.identifyingAttributes = identifyingAttributes;
