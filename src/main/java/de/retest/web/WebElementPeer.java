@@ -110,20 +110,12 @@ public class WebElementPeer {
 			return Integer.parseInt( (String) value );
 		}
 		if ( value instanceof Double ) {
-			return toIntExact( Math.round( (Double) value ) );
+			return Math.toIntExact( Math.round( (Double) value ) );
 		}
 		if ( value instanceof Long ) {
-			return toIntExact( (Long) value );
+			return Math.toIntExact( Math.round( (Double) value ) );
 		}
 		throw new IllegalArgumentException( "Don't know how to convert a " + value.getClass() + " to int!" );
-	}
-
-	// TODO in Java 8 use import static java.lang.Math.toIntExact;
-	public static int toIntExact( final long l ) {
-		if ( l < Integer.MIN_VALUE || l > Integer.MAX_VALUE ) {
-			throw new ArithmeticException( l + " cannot be cast to int since it is out of range." );
-		}
-		return (int) l;
 	}
 
 	protected MutableAttributes retrieveStateAttributes() {
