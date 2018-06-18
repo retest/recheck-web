@@ -79,8 +79,9 @@ public class WebElementPeer {
 	}
 
 	public boolean containsOutline( final List<String> userDefinedAttributes ) {
-		return userDefinedAttributes.contains( AttributesConfig.X ) && userDefinedAttributes.contains( AttributesConfig.Y ) //
-				&& userDefinedAttributes.contains( AttributesConfig.WIDTH )
+		return userDefinedAttributes.contains( AttributesConfig.X ) //
+				&& userDefinedAttributes.contains( AttributesConfig.Y ) //
+				&& userDefinedAttributes.contains( AttributesConfig.WIDTH ) //
 				&& userDefinedAttributes.contains( AttributesConfig.HEIGHT );
 	}
 
