@@ -64,26 +64,35 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	public RootElement convertToPeers( final Map<String, Map<String, String>> data, final String title,
 			final BufferedImage screenshot ) {
-		RootElementPeer root = null;
 		final Map<String, WebElementPeer> converted = new HashMap<>();
+		RootElementPeer root = null;
+
 		for ( final Map.Entry<String, Map<String, String>> entry : sort( data ) ) {
 			final String path = entry.getKey();
-			logger.debug( "Found element with path {}.", path );
-			final Map<String, String> webData = entry.getValue();
+			logger.debug( "Found element with path '{}'.", path );
 			final String parentPath = getParentPath( path );
+			final Map<String, String> webData = entry.getValue();
 			WebElementPeer peer = converted.get( path );
+
 			assert peer == null : "List is sorted, we should not have path twice.";
+
 			if ( parentPath == null ) {
 				root = new RootElementPeer( webData, path, title, screenshot );
 				peer = root;
 			} else {
 				peer = new WebElementPeer( webData, path, screenshot );
 				final WebElementPeer parent = converted.get( parentPath );
-				assert parent != null : "We sorted the map, parent should already be there!";
+				assert parent != null : "We sorted the map, parent should already be there.";
 				parent.addChild( peer );
 			}
+
 			converted.put( path, peer );
 		}
+
+		if ( root == null ) {
+			throw new NullPointerException( "RootElementPeer is null." );
+		}
+
 		return root.toElement();
 	}
 
