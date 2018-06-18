@@ -6,7 +6,6 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +19,6 @@ public class CustomShootingStrategy extends SimpleShootingStrategy {
 
 	@Override
 	public BufferedImage getScreenshot( final WebDriver wd ) {
-		ByteArrayInputStream imageArrayStream = null;
 		/*
 		 * Original code:
 		 *
@@ -30,13 +28,11 @@ public class CustomShootingStrategy extends SimpleShootingStrategy {
 		 * whatever...
 		 */
 		final TakesScreenshot takesScreenshot = (TakesScreenshot) wd;
-		try {
-			imageArrayStream = new ByteArrayInputStream( takesScreenshot.getScreenshotAs( OutputType.BYTES ) );
+		final byte[] screenshotBytes = takesScreenshot.getScreenshotAs( OutputType.BYTES );
+		try ( ByteArrayInputStream imageArrayStream = new ByteArrayInputStream( screenshotBytes ) ) {
 			return ImageIO.read( imageArrayStream );
 		} catch ( final IOException e ) {
-			throw new ImageReadException( "Can not parse screenshot data.", e );
-		} finally {
-			IOUtils.closeQuietly( imageArrayStream );
+			throw new ImageReadException( "Cannot parse screenshot data.", e );
 		}
 	}
 }
