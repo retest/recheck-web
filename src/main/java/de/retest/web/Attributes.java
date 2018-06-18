@@ -7,6 +7,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Attributes {
 
+	public static final String X = "x";
+	public static final String Y = "y";
+	public static final String WIDTH = "width";
+	public static final String HEIGHT = "height";
+
 	private final List<String> attributes;
 	private final List<String> identifyingAttributes;
 

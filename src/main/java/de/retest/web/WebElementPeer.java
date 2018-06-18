@@ -60,10 +60,10 @@ public class WebElementPeer {
 		final List<String> userDefinedAttributes =
 				new ArrayList<>( AttributeProvider.getInstance().getIdentifyingAttributes() );
 		if ( containsOutline( userDefinedAttributes ) ) {
-			userDefinedAttributes.remove( "x" );
-			userDefinedAttributes.remove( "y" );
-			userDefinedAttributes.remove( "width" );
-			userDefinedAttributes.remove( "height" );
+			userDefinedAttributes.remove( Attributes.X );
+			userDefinedAttributes.remove( Attributes.Y );
+			userDefinedAttributes.remove( Attributes.WIDTH );
+			userDefinedAttributes.remove( Attributes.HEIGHT );
 			final OutlineAttribute outline = retrieveOutline();
 			if ( outline != null ) {
 				attributes.add( outline );
@@ -79,20 +79,21 @@ public class WebElementPeer {
 	}
 
 	public boolean containsOutline( final List<String> userDefinedAttributes ) {
-		return userDefinedAttributes.contains( "x" ) && userDefinedAttributes.contains( "y" ) //
-				&& userDefinedAttributes.contains( "width" ) && userDefinedAttributes.contains( "height" );
+		return userDefinedAttributes.contains( Attributes.X ) && userDefinedAttributes.contains( Attributes.Y ) //
+				&& userDefinedAttributes.contains( Attributes.WIDTH )
+				&& userDefinedAttributes.contains( Attributes.HEIGHT );
 	}
 
 	public OutlineAttribute retrieveOutline() {
-		if ( webData.get( "x" ) == null || webData.get( "y" ) == null //
-				|| webData.get( "width" ) == null || webData.get( "height" ) == null ) {
+		if ( webData.get( Attributes.X ) == null || webData.get( Attributes.Y ) == null //
+				|| webData.get( Attributes.WIDTH ) == null || webData.get( Attributes.HEIGHT ) == null ) {
 			return null;
 		}
 		try {
-			final int x = toInt( webData.get( "x" ) );
-			final int y = toInt( webData.get( "y" ) );
-			final int width = toInt( webData.get( "width" ) );
-			final int height = toInt( webData.get( "height" ) );
+			final int x = toInt( webData.get( Attributes.X ) );
+			final int y = toInt( webData.get( Attributes.Y ) );
+			final int width = toInt( webData.get( Attributes.WIDTH ) );
+			final int height = toInt( webData.get( Attributes.HEIGHT ) );
 			return new OutlineAttribute( new Rectangle( x, y, width, height ) );
 		} catch ( final Exception e ) {
 			logger.error( "Exception retrieving outline: ", e );
