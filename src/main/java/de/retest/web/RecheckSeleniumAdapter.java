@@ -3,7 +3,6 @@ package de.retest.web;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -11,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.JavascriptExecutor;
@@ -97,16 +97,10 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	}
 
 	private List<Map.Entry<String, Map<String, String>>> sort( final Map<String, Map<String, String>> data ) {
-		final List<Map.Entry<String, Map<String, String>>> sorted = new ArrayList<>( data.entrySet() );
 		// Sorting ensures that parents are already created.
-		Collections.sort( sorted, new Comparator<Map.Entry<String, Map<String, String>>>() {
-			@Override
-			public int compare( final Entry<String, Map<String, String>> o1,
-					final Entry<String, Map<String, String>> o2 ) {
-				return o1.getKey().compareTo( o2.getKey() );
-			}
-		} );
-		return sorted;
+		return data.entrySet().stream() //
+				.sorted( Comparator.comparing( Entry::getKey ) ) //
+				.collect( Collectors.toList() );
 	}
 
 	private BufferedImage createScreenshot( final WebDriver driver ) {
