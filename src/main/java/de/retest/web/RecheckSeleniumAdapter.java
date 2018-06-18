@@ -109,7 +109,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	}
 
 	static String getParentPath( final String path ) {
-		final String parentPath = path.substring( 0, path.lastIndexOf( "/" ) );
+		final String parentPath = path.substring( 0, path.lastIndexOf( '/' ) );
 		if ( parentPath.length() == 1 ) {
 			return null;
 		}

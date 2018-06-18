@@ -54,7 +54,7 @@ public class WebElementPeer {
 	protected IdentifyingAttributes retrieveIdentifyingAttributes() {
 		final List<Attribute> attributes = new ArrayList<>();
 		attributes.add( new PathAttribute( Path.fromString( path ) ) );
-		attributes.add( new SuffixAttribute( path.substring( path.lastIndexOf( "[" ) + 1, path.lastIndexOf( "]" ) ) ) );
+		attributes.add( new SuffixAttribute( path.substring( path.lastIndexOf( '[' ) + 1, path.lastIndexOf( ']' ) ) ) );
 		attributes.add( new StringAttribute( "type", webData.get( "tagName" ) ) );
 		attributes.add( new TextAttribute( "text", webData.get( "text" ) ) );
 		final List<String> userDefinedAttributes =
