@@ -18,6 +18,7 @@ import de.retest.junit.SystemProperty;
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
 
+// TODO This test isn't executed (probably due to the missing "Test" suffix), delete?
 public class CheckRetestWebsite {
 
 	@Rule
