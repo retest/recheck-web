@@ -37,7 +37,7 @@ public class AttributesProvider {
 		final String userAttributesFilePath = System.getProperty( ATTRIBUTES_FILE_PROPERTY );
 		if ( userAttributesFilePath != null ) {
 			final File userAttributes = new File( userAttributesFilePath );
-			logger.debug( "Loading user-defined attribues file '{}'.", userAttributesFilePath );
+			logger.debug( "Loading user-defined attribues file '{}'.", userAttributes );
 			return readAttributesConfigFromFile( userAttributes );
 		} else {
 			final File defaultAttributes = new File( getClass().getResource( DEFAULT_ATTRIBUTES_FILE_PATH ).getPath() );
@@ -51,7 +51,7 @@ public class AttributesProvider {
 		try {
 			return mapper.readValue( attributesFile, AttributesConfig.class );
 		} catch ( final IOException e ) {
-			throw new RuntimeException( "Cannot read attributes file '{}'.", e );
+			throw new RuntimeException( "Cannot read attributes file '" + attributesFile + "'.", e );
 		}
 	}
 
