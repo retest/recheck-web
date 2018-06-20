@@ -45,25 +45,25 @@ public class WebElementPeer {
 		if ( webData == null ) {
 			return null;
 		}
-		final List<Element> children = convertChildren();
+		final List<Element> convertedChildren = convertChildren();
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
 		final MutableAttributes state = retrieveStateAttributes();
-		return new Element( identifyingAttributes, state.immutable(), children, retrieveScreenshot() );
+		return new Element( identifyingAttributes, state.immutable(), convertedChildren, retrieveScreenshot() );
 	}
 
 	protected IdentifyingAttributes retrieveIdentifyingAttributes() {
 		final List<Attribute> attributes = new ArrayList<>();
 		attributes.add( new PathAttribute( Path.fromString( path ) ) );
-		attributes.add( new SuffixAttribute( path.substring( path.lastIndexOf( "[" ) + 1, path.lastIndexOf( "]" ) ) ) );
+		attributes.add( new SuffixAttribute( path.substring( path.lastIndexOf( '[' ) + 1, path.lastIndexOf( ']' ) ) ) );
 		attributes.add( new StringAttribute( "type", webData.get( "tagName" ) ) );
 		attributes.add( new TextAttribute( "text", webData.get( "text" ) ) );
 		final List<String> userDefinedAttributes =
-				new ArrayList<>( AttributeProvider.getInstance().getIdentifyingAttributes() );
+				new ArrayList<>( AttributesProvider.getInstance().getIdentifyingAttributes() );
 		if ( containsOutline( userDefinedAttributes ) ) {
-			userDefinedAttributes.remove( "x" );
-			userDefinedAttributes.remove( "y" );
-			userDefinedAttributes.remove( "width" );
-			userDefinedAttributes.remove( "height" );
+			userDefinedAttributes.remove( AttributesConfig.X );
+			userDefinedAttributes.remove( AttributesConfig.Y );
+			userDefinedAttributes.remove( AttributesConfig.WIDTH );
+			userDefinedAttributes.remove( AttributesConfig.HEIGHT );
 			final OutlineAttribute outline = retrieveOutline();
 			if ( outline != null ) {
 				attributes.add( outline );
@@ -79,20 +79,22 @@ public class WebElementPeer {
 	}
 
 	public boolean containsOutline( final List<String> userDefinedAttributes ) {
-		return userDefinedAttributes.contains( "x" ) && userDefinedAttributes.contains( "y" ) //
-				&& userDefinedAttributes.contains( "width" ) && userDefinedAttributes.contains( "height" );
+		return userDefinedAttributes.contains( AttributesConfig.X ) //
+				&& userDefinedAttributes.contains( AttributesConfig.Y ) //
+				&& userDefinedAttributes.contains( AttributesConfig.WIDTH ) //
+				&& userDefinedAttributes.contains( AttributesConfig.HEIGHT );
 	}
 
 	public OutlineAttribute retrieveOutline() {
-		if ( webData.get( "x" ) == null || webData.get( "y" ) == null //
-				|| webData.get( "width" ) == null || webData.get( "height" ) == null ) {
+		if ( webData.get( AttributesConfig.X ) == null || webData.get( AttributesConfig.Y ) == null //
+				|| webData.get( AttributesConfig.WIDTH ) == null || webData.get( AttributesConfig.HEIGHT ) == null ) {
 			return null;
 		}
 		try {
-			final int x = toInt( webData.get( "x" ) );
-			final int y = toInt( webData.get( "y" ) );
-			final int width = toInt( webData.get( "width" ) );
-			final int height = toInt( webData.get( "height" ) );
+			final int x = toInt( webData.get( AttributesConfig.X ) );
+			final int y = toInt( webData.get( AttributesConfig.Y ) );
+			final int width = toInt( webData.get( AttributesConfig.WIDTH ) );
+			final int height = toInt( webData.get( AttributesConfig.HEIGHT ) );
 			return new OutlineAttribute( new Rectangle( x, y, width, height ) );
 		} catch ( final Exception e ) {
 			logger.error( "Exception retrieving outline: ", e );
@@ -108,25 +110,17 @@ public class WebElementPeer {
 			return Integer.parseInt( (String) value );
 		}
 		if ( value instanceof Double ) {
-			return toIntExact( Math.round( (Double) value ) );
+			return Math.toIntExact( Math.round( (Double) value ) );
 		}
 		if ( value instanceof Long ) {
-			return toIntExact( (Long) value );
+			return Math.toIntExact( Math.round( (Double) value ) );
 		}
 		throw new IllegalArgumentException( "Don't know how to convert a " + value.getClass() + " to int!" );
 	}
 
-	// TODO in Java 8 use import static java.lang.Math.toIntExact;
-	public static int toIntExact( final long l ) {
-		if ( l < Integer.MIN_VALUE || l > Integer.MAX_VALUE ) {
-			throw new ArithmeticException( l + " cannot be cast to int since it is out of range." );
-		}
-		return (int) l;
-	}
-
 	protected MutableAttributes retrieveStateAttributes() {
 		final MutableAttributes state = new MutableAttributes();
-		for ( final String attribute : AttributeProvider.getInstance().getAttributes() ) {
+		for ( final String attribute : AttributesProvider.getInstance().getAttributes() ) {
 			final String attributeValue = webData.get( attribute );
 			if ( attributeValue != null && !isDefault( attributeValue ) ) {
 				state.put( attribute, attributeValue );

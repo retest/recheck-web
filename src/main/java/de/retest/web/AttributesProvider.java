@@ -11,56 +11,56 @@ import org.slf4j.LoggerFactory;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 
-public class AttributeProvider {
+public class AttributesProvider {
 
 	public static final String ATTRIBUTES_FILE_PROPERTY = "de.retest.recheck.web.attributesFile";
 	public static final String DEFAULT_ATTRIBUTES_FILE_PATH = "/attributes.yaml";
 
-	private static final Logger logger = LoggerFactory.getLogger( AttributeProvider.class );
+	private static final Logger logger = LoggerFactory.getLogger( AttributesProvider.class );
 
-	private static AttributeProvider instance;
+	private static AttributesProvider instance;
 
-	public static AttributeProvider getInstance() {
+	public static AttributesProvider getInstance() {
 		if ( instance == null ) {
-			instance = new AttributeProvider();
+			instance = new AttributesProvider();
 		}
 		return instance;
 	}
 
-	private final Attributes attributes;
+	private final AttributesConfig attributesConfig;
 
-	private AttributeProvider() {
-		attributes = readAttributes();
+	private AttributesProvider() {
+		attributesConfig = readAttributesConfig();
 	}
 
-	private Attributes readAttributes() {
+	private AttributesConfig readAttributesConfig() {
 		final String userAttributesFilePath = System.getProperty( ATTRIBUTES_FILE_PROPERTY );
 		if ( userAttributesFilePath != null ) {
 			final File userAttributes = new File( userAttributesFilePath );
 			logger.debug( "Loading user-defined attribues file '{}'.", userAttributesFilePath );
-			return readAttributesFromFile( userAttributes );
+			return readAttributesConfigFromFile( userAttributes );
 		} else {
 			final File defaultAttributes = new File( getClass().getResource( DEFAULT_ATTRIBUTES_FILE_PATH ).getPath() );
 			logger.debug( "Loading default attributes file '{}'", defaultAttributes );
-			return readAttributesFromFile( defaultAttributes );
+			return readAttributesConfigFromFile( defaultAttributes );
 		}
 	}
 
-	private Attributes readAttributesFromFile( final File attributesFile ) {
+	private AttributesConfig readAttributesConfigFromFile( final File attributesFile ) {
 		final ObjectMapper mapper = new ObjectMapper( new YAMLFactory() );
 		try {
-			return mapper.readValue( attributesFile, Attributes.class );
+			return mapper.readValue( attributesFile, AttributesConfig.class );
 		} catch ( final IOException e ) {
 			throw new RuntimeException( "Cannot read attributes file '{}'.", e );
 		}
 	}
 
 	public List<String> getAttributes() {
-		return attributes.getAttributes();
+		return attributesConfig.getAttributes();
 	}
 
 	public List<String> getIdentifyingAttributes() {
-		return attributes.getIdentifyingAttributes();
+		return attributesConfig.getIdentifyingAttributes();
 	}
 
 	public List<String> getJoinedAttributes() {

@@ -1,9 +1,8 @@
 package de.retest.web;
 
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
-import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -11,16 +10,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.stream.Collectors;
 
-import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.google.common.base.Charsets;
+import com.google.common.io.Files;
+
 import de.retest.recheck.RecheckAdapter;
 import de.retest.ui.DefaultValueFinder;
-import de.retest.ui.descriptors.IdentifyingAttributes;
 import de.retest.ui.descriptors.RootElement;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategy;
@@ -41,7 +42,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	public Set<RootElement> convert( final Object toVerify ) {
 		final WebDriver driver = (WebDriver) toVerify;
 
-		final List<String> attributes = AttributeProvider.getInstance().getJoinedAttributes();
+		final List<String> attributes = AttributesProvider.getInstance().getJoinedAttributes();
 		logger.info( "Retrieving {} attributes for each element.", attributes.size() );
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		@SuppressWarnings( "unchecked" )
@@ -54,9 +55,9 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	}
 
 	public String getQueryJS() {
+		final File file = new File( getClass().getResource( GET_ALL_ELEMENTS_BY_PATH_JS_PATH ).getFile() );
 		try {
-			return IOUtils
-					.toString( RecheckSeleniumAdapter.class.getResourceAsStream( GET_ALL_ELEMENTS_BY_PATH_JS_PATH ) );
+			return Files.asCharSource( file, Charsets.UTF_8 ).read();
 		} catch ( final IOException e ) {
 			throw new RuntimeException( "Exception reading '" + GET_ALL_ELEMENTS_BY_PATH_JS_PATH + "'.", e );
 		}
@@ -64,40 +65,43 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	public RootElement convertToPeers( final Map<String, Map<String, String>> data, final String title,
 			final BufferedImage screenshot ) {
-		RootElementPeer root = null;
 		final Map<String, WebElementPeer> converted = new HashMap<>();
+		RootElementPeer root = null;
+
 		for ( final Map.Entry<String, Map<String, String>> entry : sort( data ) ) {
 			final String path = entry.getKey();
-			logger.debug( "Found element with path {}.", path );
-			final Map<String, String> webData = entry.getValue();
+			logger.debug( "Found element with path '{}'.", path );
 			final String parentPath = getParentPath( path );
+			final Map<String, String> webData = entry.getValue();
 			WebElementPeer peer = converted.get( path );
+
 			assert peer == null : "List is sorted, we should not have path twice.";
+
 			if ( parentPath == null ) {
 				root = new RootElementPeer( webData, path, title, screenshot );
 				peer = root;
 			} else {
 				peer = new WebElementPeer( webData, path, screenshot );
 				final WebElementPeer parent = converted.get( parentPath );
-				assert parent != null : "We sorted the map, parent should already be there!";
+				assert parent != null : "We sorted the map, parent should already be there.";
 				parent.addChild( peer );
 			}
+
 			converted.put( path, peer );
 		}
+
+		if ( root == null ) {
+			throw new NullPointerException( "RootElementPeer is null." );
+		}
+
 		return root.toElement();
 	}
 
 	private List<Map.Entry<String, Map<String, String>>> sort( final Map<String, Map<String, String>> data ) {
-		final List<Map.Entry<String, Map<String, String>>> sorted = new ArrayList<>( data.entrySet() );
 		// Sorting ensures that parents are already created.
-		Collections.sort( sorted, new Comparator<Map.Entry<String, Map<String, String>>>() {
-			@Override
-			public int compare( final Entry<String, Map<String, String>> o1,
-					final Entry<String, Map<String, String>> o2 ) {
-				return o1.getKey().compareTo( o2.getKey() );
-			}
-		} );
-		return sorted;
+		return data.entrySet().stream() //
+				.sorted( Comparator.comparing( Entry::getKey ) ) //
+				.collect( Collectors.toList() );
 	}
 
 	private BufferedImage createScreenshot( final WebDriver driver ) {
@@ -108,7 +112,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	}
 
 	static String getParentPath( final String path ) {
-		final String parentPath = path.substring( 0, path.lastIndexOf( "/" ) );
+		final String parentPath = path.substring( 0, path.lastIndexOf( '/' ) );
 		if ( parentPath.length() == 1 ) {
 			return null;
 		}
@@ -117,13 +121,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public DefaultValueFinder getDefaultValueFinder() {
-		return new DefaultValueFinder() {
-			@Override
-			public Serializable getDefaultValue( final IdentifyingAttributes comp, final String attributesKey ) {
-				// TODO Auto-generated method stub
-				return null;
-			}
-		};
+		// TODO DefaultValueFinder is just a stub.
+		return ( identifyingAttributes, attributesKey ) -> null;
 	}
 
 }
