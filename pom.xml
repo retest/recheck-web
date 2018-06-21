@@ -11,7 +11,7 @@
 	<packaging>jar</packaging>
 
 	<name>recheck - web</name>
-	<description>Implementation of the retest's SUT API for Selenium/web.</description>
+	<description>recheck for web apps.</description>
 
 	<licenses>
 		<license>
@@ -26,7 +26,6 @@
 		<project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<junit.jupiter.version>5.2.0</junit.jupiter.version>
-		<junit.platform.version>1.2.0</junit.platform.version>
 	</properties>
 
 	<scm>
@@ -118,18 +117,11 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.junit.vintage</groupId>
-			<artifactId>junit-vintage-engine</artifactId>
-			<version>${junit.jupiter.version}</version>
-			<scope>test</scope>
-		</dependency>
-
 		<!-- only required since Eclipse (4.7.1a) bundles an older version -->
 		<dependency>
 			<groupId>org.junit.platform</groupId>
 			<artifactId>junit-platform-launcher</artifactId>
-			<version>${junit.platform.version}</version>
+			<version>1.2.0</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -170,14 +162,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.21.0</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.junit.platform</groupId>
-						<artifactId>junit-platform-surefire-provider</artifactId>
-						<version>${junit.platform.version}</version>
-					</dependency>
-				</dependencies>
+				<version>2.22.0</version>
 			</plugin>
 
 			<plugin>
