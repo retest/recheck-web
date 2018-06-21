@@ -118,13 +118,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.junit.vintage</groupId>
-			<artifactId>junit-vintage-engine</artifactId>
-			<version>${junit.jupiter.version}</version>
-			<scope>test</scope>
-		</dependency>
-
 		<!-- only required since Eclipse (4.7.1a) bundles an older version -->
 		<dependency>
 			<groupId>org.junit.platform</groupId>
