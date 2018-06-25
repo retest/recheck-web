@@ -12,7 +12,36 @@
 
 	<name>recheck - web</name>
 	<description>recheck for web apps.</description>
+	<url>https://retest.de/recheck-web/</url>
 
+	<organization>
+		<name>ReTest GmbH</name>
+		<url>https://retest.de/</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>roessler</id>
+			<name>Dr. Jeremias Rößler</name>
+			<email>jeremias.roessler@retest.de</email>
+		</developer>
+		<developer>
+			<id>kraus</id>
+			<name>Daniel Kraus</name>
+			<email>daniel.kraus@retest.de</email>
+		</developer>
+		<developer>
+			<id>vietz</id>
+			<name>Martin Vietz</name>
+			<email>martin.vietz@retest.de</email>
+		</developer>
+		<developer>
+			<id>dillmann</id>
+			<name>Johannes Dillmann</name>
+			<email>johannes.dillmann@retest.de</email>
+		</developer>
+	</developers>
+	
 	<licenses>
 		<license>
 			<name>GNU Affero General Public License (AGPL), Version 3</name>
