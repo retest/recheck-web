@@ -12,6 +12,35 @@
 
 	<name>recheck - web</name>
 	<description>recheck for web apps.</description>
+	<url>https://retest.de/recheck-web/</url>
+
+	<organization>
+		<name>ReTest GmbH</name>
+		<url>https://retest.de/</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>roessler</id>
+			<name>Dr. Jeremias Rößler</name>
+			<email>jeremias.roessler@retest.de</email>
+		</developer>
+		<developer>
+			<id>kraus</id>
+			<name>Daniel Kraus</name>
+			<email>daniel.kraus@retest.de</email>
+		</developer>
+		<developer>
+			<id>vietz</id>
+			<name>Martin Vietz</name>
+			<email>martin.vietz@retest.de</email>
+		</developer>
+		<developer>
+			<id>dillmann</id>
+			<name>Johannes Dillmann</name>
+			<email>johannes.dillmann@retest.de</email>
+		</developer>
+	</developers>
 
 	<licenses>
 		<license>
@@ -29,7 +58,7 @@
 	</properties>
 
 	<scm>
-		<url>https://github.com/retest/recheck-web</url>
+		<url>https://github.com/retest/recheck-web/</url>
 		<connection>scm:git:https://github.com/retest/recheck-web.git</connection>
 		<developerConnection>scm:git:https://github.com/retest/recheck-web.git</developerConnection>
 		<tag>HEAD</tag>
@@ -45,14 +74,26 @@
 	<dependencies>
 		<dependency>
 			<groupId>de.retest</groupId>
-			<artifactId>retest-sut-api</artifactId>
-			<version>2.1.1</version>
+			<artifactId>retest-core</artifactId>
+			<version>2.2.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>de.retest</groupId>
-			<artifactId>retest-recheck</artifactId>
-			<version>2.1.1</version>
+			<artifactId>retest-sut-api</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>de.retest</groupId>
+			<artifactId>retest-utils</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>de.retest</groupId>
+			<artifactId>recheck</artifactId>
+			<version>0.1.0</version>
 		</dependency>
 
 		<dependency>
@@ -173,6 +214,34 @@
 					<goals>install</goals>
 					<tagNameFormat>v@{project.version}</tagNameFormat>
 				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.0.1</version>
+				<executions>
+					<execution>
+						<id>bundle-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.0.1</version>
+				<executions>
+					<execution>
+						<id>bundle-javadoc</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
