@@ -9,17 +9,17 @@
 
 ## Features
 
-* Easy creation and maintenance of checks in web tests.
+* Easy creation and maintenance of checks for [web](https://github.com/retest/recheck-web/) and [Java Swing](http://retest.org/) (more coming).
 * Semantic comparison of contents.
 * Easily ignore volatile elements, attributes or sections.
 * One-click maintenance to update tests with intended changes.
 * No unexpected changes go unnoticed.
+* The Git for your interface.
 * Operates on top of Selenium.
-* The Git for your GUI.
 
 ### Prerequisites
 
-Currently only available as a Java API.
+Currently only available as a Java API with support for JUnit 4.
 
 ### Installing
 
