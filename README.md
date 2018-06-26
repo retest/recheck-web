@@ -1,4 +1,4 @@
-# ![recheck logo](https://user-images.githubusercontent.com/1871610/41766965-b69d46a2-7608-11e8-97b4-c6b0f047d455.png) for web
+# ![recheck logo](https://user-images.githubusercontent.com/1871610/41766965-b69d46a2-7608-11e8-97b4-c6b0f047d455.png) for web apps
 
 [![Build Status](https://travis-ci.com/retest/recheck-web.svg?branch=master)](https://travis-ci.com/retest/recheck-web)
 [![license](https://img.shields.io/badge/license-AGPL-brightgreen.svg)](https://github.com/retest/recheck-web/blob/master/LICENSE)
@@ -9,13 +9,13 @@
 
 ## Features
 
-* Easy creation and maintenance of checks for [web](https://github.com/retest/recheck-web/) and [Java Swing](http://retest.org/) (more coming).
+* Easy creation and maintenance of checks for web.
 * Semantic comparison of contents.
 * Easily ignore volatile elements, attributes or sections.
 * One-click maintenance to update tests with intended changes.
 * No unexpected changes go unnoticed.
-* The Git for your interface.
 * Operates on top of Selenium.
+* The Git for your GUI.
 
 ### Prerequisites
 
