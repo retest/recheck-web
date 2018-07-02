@@ -67,14 +67,14 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 		</snapshotRepository>
 		<repository>
 			<id>ossrh</id>
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
-		
+
 	<repositories>
 		<repository>
 			<id>nexus-retest</id>
@@ -260,10 +260,10 @@
 				<artifactId>maven-gpg-plugin</artifactId>
 				<version>1.6</version>
 				<configuration>
-				    <skip>${gpg.skip}</skip>
-				    <keyname>0x99045A9A</keyname>
-				    <passphrase>${GPG_PASSPHRASE}</passphrase>
-				</configuration> 
+					<skip>${gpg.skip}</skip>
+					<keyname>0x99045A9A</keyname>
+					<passphrase>${GPG_PASSPHRASE}</passphrase>
+				</configuration>
 				<executions>
 					<execution>
 						<id>sign-artifacts</id>
