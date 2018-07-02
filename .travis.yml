@@ -28,7 +28,7 @@ before_script:
 script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
 
-before_deploy: mvn package -DskipTests --settings .travis.settings.xml
+before_deploy: mvn package -DskipTests
 
 deploy:
   provider: releases
