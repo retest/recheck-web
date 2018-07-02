@@ -25,6 +25,23 @@ Currently only available as a Java API with support for JUnit 4.
 
 We will soon provide a bundled JAR and Maven dependencies.
 
+
+### Building
+
+To build this project locally, you have to skip JAR signing.
+
+For normal builds use:
+
+```
+mvn deploy -Dgpg.skip=true
+```
+
+For making releases use:
+
+```
+mvn release:prepare -Darguments="-Dgpg.skip=true"
+```
+
 ## License
 
 This project is licensed under the [AGPL license](LICENSE).
