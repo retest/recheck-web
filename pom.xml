@@ -221,7 +221,7 @@
 				<configuration>
 					<skip>${gpg.skip}</skip>
 					<keyname>0x99045A9A</keyname>
-					<passphrase>${GPG_PASSPHRASE}</passphrase>
+					<passphrase>${env.GPG_PASSPHRASE}</passphrase>
 				</configuration>
 				<executions>
 					<execution>
