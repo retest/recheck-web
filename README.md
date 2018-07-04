@@ -19,7 +19,7 @@
 * The Git for your GUI.
 
 
-### Advantages
+## Advantages
 
 Instead of manually defining individual aspects that you want to check, check everything at once. So instead of writing lots of `assert`-statements (and still not have complete checks), write a single `re.check`. This saves a lot of effort when creating the tests. And makes sure to not [miss unexpected changes](https://hackernoon.com/assertions-considered-harmful-d3770d818054).
 
@@ -88,7 +88,8 @@ public class MyWebTest {
 
 Currently only available as a Java API with support for JUnit 4.
 
-### Building
+
+## Building
 
 To build this project locally, you have to skip JAR signing.
 
@@ -104,6 +105,8 @@ For making releases use:
 mvn release:prepare -Darguments="-Dgpg.skip=true"
 ```
 
+
 ## License
 
 This project is licensed under the [AGPL license](LICENSE).
+
