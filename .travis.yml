@@ -23,7 +23,7 @@ before_install:
 install: true
 
 before_script:
-  - cp .travis.settings.xml ${HOME}/.m2/settings.xml
+  - cp .travis.settings.xml "${HOME}/.m2/settings.xml"
 
 script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
@@ -41,4 +41,5 @@ deploy:
     tags: true
     branch: master
 
-after_deploy: mvn deploy -DskipTests
+after_deploy:
+  - mvn deploy -DskipTests
