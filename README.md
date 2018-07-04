@@ -23,7 +23,15 @@ Currently only available as a Java API with support for JUnit 4.
 
 ### Installing
 
-We will soon provide a bundled JAR and Maven dependencies.
+You can download recheck-web [directly](https://github.com/retest/recheck-web/releases/) or use Maven and have the transitive dependencies be automatically resolved by adding it as a Maven dependency in your POM:
+
+```
+<dependency>
+	<groupId>de.retest</groupId>
+	<artifactId>recheck-web</artifactId>
+	<version>0.1.0</version>
+</dependency>
+```
 
 
 ### Building
