@@ -7,6 +7,7 @@
 
 [recheck](https://github.com/retest/recheck) for web apps. Replace manual asserts and check everything at once.
 
+
 ## Features
 
 * Easy creation and maintenance of checks for web.
@@ -17,9 +18,11 @@
 * Operates on top of Selenium.
 * The Git for your GUI.
 
+
 ### Prerequisites
 
 Currently only available as a Java API with support for JUnit 4.
+
 
 ### Installing
 
@@ -32,6 +35,7 @@ You can download recheck-web [directly](https://github.com/retest/recheck-web/re
 	<version>0.1.0</version>
 </dependency>
 ```
+
 
 
 ### Building
