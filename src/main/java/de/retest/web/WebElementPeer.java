@@ -9,7 +9,6 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.retest.image.ImageUtils;
 import de.retest.ui.Path;
 import de.retest.ui.descriptors.Attribute;
 import de.retest.ui.descriptors.Element;
@@ -20,6 +19,7 @@ import de.retest.ui.descriptors.PathAttribute;
 import de.retest.ui.descriptors.StringAttribute;
 import de.retest.ui.descriptors.SuffixAttribute;
 import de.retest.ui.descriptors.TextAttribute;
+import de.retest.ui.image.ImageUtils;
 import de.retest.ui.image.Screenshot;
 
 public class WebElementPeer {
@@ -113,7 +113,7 @@ public class WebElementPeer {
 			return Math.toIntExact( Math.round( (Double) value ) );
 		}
 		if ( value instanceof Long ) {
-			return Math.toIntExact( Math.round( (Double) value ) );
+			return Math.toIntExact( Math.round( (Long) value ) );
 		}
 		throw new IllegalArgumentException( "Don't know how to convert a " + value.getClass() + " to int!" );
 	}

@@ -75,36 +75,17 @@
 		</repository>
 	</distributionManagement>
 
-	<repositories>
-		<repository>
-			<id>nexus-retest</id>
-			<url>https://nexus.retest.org/repository/all/</url>
-		</repository>
-	</repositories>
-
 	<dependencies>
 		<dependency>
 			<groupId>de.retest</groupId>
-			<artifactId>retest-core</artifactId>
-			<version>2.2.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>de.retest</groupId>
-			<artifactId>retest-sut-api</artifactId>
-			<version>2.2.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>de.retest</groupId>
-			<artifactId>retest-utils</artifactId>
-			<version>2.2.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>de.retest</groupId>
 			<artifactId>recheck</artifactId>
-			<version>0.1.0</version>
+			<version>0.2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>de.retest</groupId>
+			<artifactId>retest</artifactId>
+			<version>2.3.1</version>
 		</dependency>
 
 		<dependency>
@@ -157,23 +138,15 @@
 
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<version>${junit.jupiter.version}</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-engine</artifactId>
 			<version>${junit.jupiter.version}</version>
 			<scope>test</scope>
 		</dependency>
 
-		<!-- only required since Eclipse (4.7.1a) bundles an older version -->
 		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-launcher</artifactId>
-			<version>1.2.0</version>
+			<groupId>org.junit.vintage</groupId>
+			<artifactId>junit-vintage-engine</artifactId>
+			<version>${junit.jupiter.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -181,13 +154,6 @@
 			<groupId>org.assertj</groupId>
 			<artifactId>assertj-core</artifactId>
 			<version>3.9.1</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>de.retest</groupId>
-			<artifactId>retest-testutils</artifactId>
-			<version>2.1.1</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -262,7 +228,7 @@
 				<configuration>
 					<skip>${gpg.skip}</skip>
 					<keyname>0x99045A9A</keyname>
-					<passphrase>${GPG_PASSPHRASE}</passphrase>
+					<passphrase>${env.GPG_PASSPHRASE}</passphrase>
 				</configuration>
 				<executions>
 					<execution>
