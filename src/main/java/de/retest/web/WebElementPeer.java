@@ -113,7 +113,7 @@ public class WebElementPeer {
 			return Math.toIntExact( Math.round( (Double) value ) );
 		}
 		if ( value instanceof Long ) {
-			return Math.toIntExact( Math.round( (Double) value ) );
+			return Math.toIntExact( Math.round( (Long) value ) );
 		}
 		throw new IllegalArgumentException( "Don't know how to convert a " + value.getClass() + " to int!" );
 	}
