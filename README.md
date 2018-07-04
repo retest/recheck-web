@@ -19,6 +19,18 @@
 * The Git for your GUI.
 
 
+### Easy creation and maintenance
+
+Instead of manually defining individual aspects that you want to check, check everything at once. 
+So instead of writing lots of `assert`-statements (and still not have complete checks), write a single `re.check`.
+This saves a lot of effort when creating the tests. 
+And makes sure to not [miss unexpected changes](https://hackernoon.com/assertions-considered-harmful-d3770d818054).
+
+And even better: using the [retest GUI](https://retest.de/en/) (or the soon to come open source CLI), you can easily accept those changes with a single click (patent pending).
+This also saves a lot of time during maintenance.
+Any regular changing aspects or elements can easily be ignored.
+
+
 ### Prerequisites
 
 Currently only available as a Java API with support for JUnit 4.
