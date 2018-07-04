@@ -26,10 +26,6 @@ Instead of manually defining individual aspects that you want to check, check ev
 And even better: using the [retest GUI](https://retest.de/en/) (or the soon to come open source CLI), you can easily accept those changes with a single click (patent pending). This also saves a lot of time during maintenance. Any regular changing aspects or elements can easily be ignored.
 
 
-### Prerequisites
-
-Currently only available as a Java API with support for JUnit 4.
-
 ## Usage
 
 Download recheck-web [directly](https://github.com/retest/recheck-web/releases/) or add it as a Maven dependency in your POM:
@@ -88,7 +84,9 @@ public class MyWebTest {
 ```
 
 
+### Prerequisites
 
+Currently only available as a Java API with support for JUnit 4.
 
 ### Building
 
