@@ -32,9 +32,9 @@ Download recheck-web [directly](https://github.com/retest/recheck-web/releases/)
 
 ```
 <dependency>
-	<groupId>de.retest</groupId>
-	<artifactId>recheck-web</artifactId>
-	<version>0.1.0</version>
+  <groupId>de.retest</groupId>
+  <artifactId>recheck-web</artifactId>
+  <version>0.1.0</version>
 </dependency>
 ```
 
@@ -43,43 +43,43 @@ Then replace the assertions in your Selenium test. An example test could look li
 ```
 public class MyWebTest {
 
-	private WebDriver driver;
-	private Recheck re;
+  private WebDriver driver;
+  private Recheck re;
 
-	@Before
-	public void setup() {
-		System.setProperty( "webdriver.chrome.driver", "src/test/resources/chromedriver" );
-		driver = new ChromeDriver();
-		driver.manage().timeouts().pageLoadTimeout( -1, TimeUnit.MINUTES );
-		
-		// Use default implementation
-		re = new RecheckImpl();
-	}
+  @Before
+  public void setup() {
+    System.setProperty( "webdriver.chrome.driver", "src/test/resources/chromedriver" );
+    driver = new ChromeDriver();
+    driver.manage().timeouts().pageLoadTimeout( -1, TimeUnit.MINUTES );
 
-	@Test
-	public void index() throws Exception {
-		// This is used for the file name of the Golden Master
-		re.startTest( "index" );
-		
-		// Do your normal Selenium stuff
-		driver.get( "your url" );
-				
-		// Single call instead of multiple assertions
-		// does not immediately fail on differences
-		re.check( driver, "index" );
-		
-		// This concludes the test and fails on differences
-		re.capTest();
-	}
+    // Use default implementation
+    re = new RecheckImpl();
+  }
 
-	@After
-	public void tearDown() {
-		driver.quit();
-		
-		// This produces the result file
-		// which makes maintenance easy
-		re.cap();
-	}
+  @Test
+  public void index() throws Exception {
+    // This is used for the file name of the Golden Master
+    re.startTest( "index" );
+
+    // Do your normal Selenium stuff
+    driver.get( "your url" );
+
+    // Single call instead of multiple assertions
+    // does not immediately fail on differences
+    re.check( driver, "index" );
+
+    // This concludes the test and fails on differences
+    re.capTest();
+  }
+
+  @After
+  public void tearDown() {
+    driver.quit();
+
+    // This produces the result file
+    // which makes maintenance easy
+    re.cap();
+  }
 }
 ```
 
