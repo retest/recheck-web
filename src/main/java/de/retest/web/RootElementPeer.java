@@ -3,10 +3,10 @@ package de.retest.web;
 import java.awt.image.BufferedImage;
 import java.util.Map;
 
-import de.retest.image.ImageUtils;
 import de.retest.ui.descriptors.IdentifyingAttributes;
 import de.retest.ui.descriptors.MutableAttributes;
 import de.retest.ui.descriptors.RootElement;
+import de.retest.ui.image.ImageUtils;
 
 public class RootElementPeer extends WebElementPeer {
 
