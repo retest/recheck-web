@@ -30,7 +30,7 @@ And even better: using the [retest GUI](https://retest.de/en/) (or the soon to c
 
 Download recheck-web [directly](https://github.com/retest/recheck-web/releases/) or add it as a Maven dependency in your POM:
 
-```
+```xml
 <dependency>
   <groupId>de.retest</groupId>
   <artifactId>recheck-web</artifactId>
@@ -40,7 +40,7 @@ Download recheck-web [directly](https://github.com/retest/recheck-web/releases/)
 
 Then replace the assertions in your Selenium test. An example test could look like so:
 
-```
+```java
 public class MyWebTest {
 
   private WebDriver driver;
