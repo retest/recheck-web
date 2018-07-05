@@ -1,11 +1,13 @@
 language: java
 sudo: false
+dist: trusty
 
 addons:
   sonarcloud:
     organization: "retest"
     token:
       secure: "${SONAR_CLOUD_TOKEN}"
+  chrome: stable
 
 notifications:
   email: false
@@ -14,6 +16,9 @@ cache:
   directories:
     - "${HOME}/.sonar/cache/"
     - "${HOME}/.m2/"
+
+before_install:
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 
 install: true
 
