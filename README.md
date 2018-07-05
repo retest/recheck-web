@@ -21,14 +21,19 @@
 
 ## Advantages
 
-Instead of manually defining individual aspects that you want to check, check everything at once. So instead of writing lots of `assert`-statements (and still not have complete checks), write a single `re.check`. This saves a lot of effort when creating the tests. And makes sure to not [miss unexpected changes](https://hackernoon.com/assertions-considered-harmful-d3770d818054).
+Instead of manually defining individual aspects that you want to check, check everything at once. So instead of writing many `assert` statements—and still not have complete checks—write a single `re.check()`. This saves a lot of effort when creating tests. And it makes sure to not [miss unexpected changes](https://hackernoon.com/assertions-considered-harmful-d3770d818054).
 
-And even better: using the [retest GUI](https://retest.de/en/) (or the soon to come open source CLI), you can easily accept those changes with a single click (patent pending). This also saves a lot of time during maintenance. Any regular changing aspects or elements can easily be ignored.
+Even better: Using the [retest GUI](https://retest.de/en/) (or the soon to come open-source CLI), you can easily accept those changes with a single click (patent pending). This also saves a lot of time during maintenance. Moreover, any regular changing aspects or elements (e.g. date fields) can easily be ignored.
+
+
+## Prerequisites
+
+Currently available as a Java API with support for JUnit 4.
 
 
 ## Usage
 
-Download recheck-web [directly](https://github.com/retest/recheck-web/releases/) or add it as a Maven dependency in your POM:
+Download recheck-web [here on GitHub](https://github.com/retest/recheck-web/releases/) or add it as a Maven dependency in your POM:
 
 ```xml
 <dependency>
@@ -47,46 +52,35 @@ public class MyWebTest {
   private Recheck re;
 
   @Before
-  public void setup() {
-    System.setProperty( "webdriver.chrome.driver", "src/test/resources/chromedriver" );
+  public void setUp() {
     driver = new ChromeDriver();
-    driver.manage().timeouts().pageLoadTimeout( -1, TimeUnit.MINUTES );
-
-    // Use default implementation
+    // Use the default implementation.
     re = new RecheckImpl();
   }
 
   @Test
   public void index() throws Exception {
-    // This is used for the file name of the Golden Master
+    // Set the file name of the Golden Master.
     re.startTest( "index" );
 
-    // Do your normal Selenium stuff
+    // Do your Selenium stuff.
     driver.get( "your url" );
 
-    // Single call instead of multiple assertions
-    // does not immediately fail on differences
+    // Single call instead of multiple assertions (doesn't fail on differences).
     re.check( driver, "index" );
 
-    // This concludes the test and fails on differences
+    // Conclude the test case (fails on differences).
     re.capTest();
   }
 
   @After
   public void tearDown() {
     driver.quit();
-
-    // This produces the result file
-    // which makes maintenance easy
+    // Produce the test result.
     re.cap();
   }
 }
 ```
-
-
-### Prerequisites
-
-Currently only available as a Java API with support for JUnit 4.
 
 
 ## Building
@@ -109,4 +103,3 @@ mvn release:prepare -Darguments="-Dgpg.skip=true"
 ## License
 
 This project is licensed under the [AGPL license](LICENSE).
-
