@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="2.4.0-SNAPSHOT" dataType="de.retest.ui.descriptors.SutState" dataTypeVersion="1">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="2.3.2" dataType="de.retest.ui.descriptors.SutState" dataTypeVersion="1">
 	<data xsi:type="sutState">
 		<descriptors screenId="1" screen="retest - Java Swing GUI Testing" title="retest - Java Swing GUI Testing">
 			<identifyingAttributes>
@@ -69,10 +69,6 @@
 						<value xsi:type="xsd:string">0px</value>
 					</entry>
 					<entry>
-						<key>screenshot</key>
-						<value xsi:type="xsd:string">window_45d1261e3808935a758aed2a5b3790946ca7f9090ce720073ecab80ab3debfc7</value>
-					</entry>
-					<entry>
 						<key>text-align</key>
 						<value xsi:type="xsd:string">start</value>
 					</entry>
@@ -81,10 +77,6 @@
 						<value xsi:type="xsd:string">visible</value>
 					</entry>
 				</attributes>
-				<screenshot>
-					<persistenceId>window_45d1261e3808935a758aed2a5b3790946ca7f9090ce720073ecab80ab3debfc7</persistenceId>
-					<type>PNG</type>
-				</screenshot>
 			</attributes>
 			<containedComponents>
 				<identifyingAttributes>
