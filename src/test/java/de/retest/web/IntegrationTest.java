@@ -33,22 +33,31 @@ public class IntegrationTest {
 
 		driver = new ChromeDriver( dc );
 
+		// Use the default implementation.
 		re = new RecheckImpl();
 	}
 
 	@Test
 	public void index() throws Exception {
+		// Set the file name of the Golden Master.
+		re.startTest( "index" );
+
+		// Do your Selenium stuff.
 		driver.get( "file:///"
 				+ new File( "src/test/resources/de/retest/web/IntegrationTest/retest.html" ).getAbsolutePath() );
 
-		re.startTest( "index" );
+		// Single call instead of multiple assertions (doesn't fail on differences).
 		re.check( driver, "index" );
+
+		// Conclude the test case (fails on differences).
 		re.capTest();
 	}
 
 	@After
 	public void tearDown() {
 		driver.quit();
+
+		// Produce the result file.
 		re.cap();
 	}
 

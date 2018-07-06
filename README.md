@@ -54,6 +54,7 @@ public class MyWebTest {
   @Before
   public void setUp() {
     driver = new ChromeDriver();
+    
     // Use the default implementation.
     re = new RecheckImpl();
   }
@@ -76,7 +77,8 @@ public class MyWebTest {
   @After
   public void tearDown() {
     driver.quit();
-    // Produce the test result.
+    
+    // Produce the result file.
     re.cap();
   }
 }
