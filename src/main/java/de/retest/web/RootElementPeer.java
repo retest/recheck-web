@@ -27,11 +27,4 @@ public class RootElementPeer extends WebElementPeer {
 		return new RootElement( identifyingAttributes, state.immutable(),
 				ImageUtils.image2Screenshot( SCREENSHOT_PREFIX, bigPicture ), convertChildren(), title, 1, title );
 	}
-
-	@Override
-	protected MutableAttributes retrieveStateAttributes() {
-		final MutableAttributes state = super.retrieveStateAttributes();
-		state.put( ImageUtils.image2Screenshot( SCREENSHOT_PREFIX, bigPicture ) );
-		return state;
-	}
 }

@@ -5,5 +5,8 @@
 # Maven.
 /target/
 
+ignore os-specific chromedriver
+src/test/resources/chromedriver
+
 # Artifact from signing JARs.
 retest-gmbh-gpg.asc

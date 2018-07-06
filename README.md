@@ -43,7 +43,7 @@ Download recheck-web [here on GitHub](https://github.com/retest/recheck-web/rele
 </dependency>
 ```
 
-Then replace the assertions in your Selenium test. An example test could look like so:
+Then replace the assertions in your Selenium test. An example test could look like so ([simplified](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/IntegrationTest.java)):
 
 ```java
 public class MyWebTest {
@@ -54,6 +54,7 @@ public class MyWebTest {
   @Before
   public void setUp() {
     driver = new ChromeDriver();
+    
     // Use the default implementation.
     re = new RecheckImpl();
   }
@@ -76,7 +77,8 @@ public class MyWebTest {
   @After
   public void tearDown() {
     driver.quit();
-    // Produce the test result.
+    
+    // Produce the result file.
     re.cap();
   }
 }
