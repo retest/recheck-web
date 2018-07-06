@@ -1,7 +1,6 @@
 package de.retest.web;
 
 import java.io.File;
-import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
 import org.junit.Before;
@@ -34,7 +33,6 @@ public class IntegrationTest {
 
 		driver = new ChromeDriver( dc );
 
-		driver.manage().timeouts().pageLoadTimeout( -1, TimeUnit.MINUTES );
 		re = new RecheckImpl();
 	}
 
