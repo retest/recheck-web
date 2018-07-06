@@ -18,7 +18,7 @@ cache:
     - "${HOME}/.m2/"
 
 before_install:
-  - wget -N http://chromedriver.storage.googleapis.com/2.9/chromedriver_linux64.zip -P ~/
+  - wget -N http://chromedriver.storage.googleapis.com/2.40/chromedriver_linux64.zip -P ~/
   - unzip ~/chromedriver_linux64.zip -d ~/
   - rm ~/chromedriver_linux64.zip
   - sudo mv -f ~/chromedriver /usr/local/share/
