@@ -25,6 +25,7 @@ public class IntegrationTest {
 		final ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments( "--headless" );
 		chromeOptions.addArguments( "--disable-gpu" );
+		chromeOptions.addArguments( "--window-size=1200,800" );
 
 		final DesiredCapabilities dc = new DesiredCapabilities();
 		dc.setJavascriptEnabled( true );
