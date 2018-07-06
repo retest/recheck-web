@@ -20,8 +20,7 @@ public class IntegrationTest {
 
 	@Before
 	public void setup() {
-		// $ whereis chromedriver
-		System.setProperty( "webdriver.chrome.driver", "/usr/local/bin/chromedriver" );
+		System.setProperty( "webdriver.chrome.driver", "src/test/resources/chromedriver" );
 
 		final ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments( "--headless" );
