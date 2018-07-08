@@ -1,7 +1,12 @@
 language: java
+dist: trusty
 sudo: false
 
 addons:
+  chrome: stable
+  apt:
+    packages:
+      - chromium-chromedriver
   sonarcloud:
     organization: "retest"
     token:
@@ -22,6 +27,8 @@ before_script:
       -in retest-gmbh-gpg.asc.enc -out retest-gmbh-gpg.asc -d
   - gpg --fast-import retest-gmbh-gpg.asc
   - cp .travis.settings.xml "${HOME}/.m2/settings.xml"
+  - ln --symbolic /usr/lib/chromium-browser/chromedriver "${HOME}/bin/chromedriver"
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 
 script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
