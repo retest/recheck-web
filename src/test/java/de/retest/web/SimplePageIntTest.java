@@ -1,45 +1,52 @@
 package de.retest.web;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
+import de.retest.recheck.Recheck;
+import de.retest.recheck.RecheckImpl;
 
 public class SimplePageIntTest {
 
 	WebDriver driver;
+	Recheck re;
 
-	@BeforeEach
-	void setUp() {
+	@Before
+	public void setUp() {
 		final ChromeOptions opts = new ChromeOptions();
 		opts.addArguments( "--headless" );
 		opts.addArguments( "--no-sandbox" );
+		opts.addArguments( "--window-size=1200,800" );
 
 		driver = new ChromeDriver( opts );
+
+		re = new RecheckImpl();
 	}
 
 	@Test
-	void testName() throws Exception {
-		final Path simplePage = Paths.get( "src/test/resources/pages/simple-page.html" );
-		driver.get( simplePage.toUri().toURL().toString() );
-		final WebElement multiline = driver.findElement( By.id( "multiline" ) );
-		assertThat( multiline.getText() ).isEqualTo( "A div containing\n" //
-				+ "More than one line of text\n" //
-				+ "and block level elements" );
+	public void simple_html_page_should_be_checked() throws Exception {
+		re.startTest( "simple-page" );
+
+		final Path simplePagePath = Paths.get( "src/test/resources/pages/simple-page.html" );
+		driver.get( simplePagePath.toUri().toURL().toString() );
+
+		re.check( driver, "open" );
+
+		re.capTest();
 	}
 
-	@AfterEach
-	void tearDown() {
+	@After
+	public void tearDown() {
 		driver.quit();
+
+		re.cap();
 	}
 
 }
