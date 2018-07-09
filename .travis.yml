@@ -34,7 +34,7 @@ before_script:
   - gpg --fast-import retest-gmbh-gpg.asc
 
 script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar
 
 before_deploy:
   - mvn package -DskipTests
