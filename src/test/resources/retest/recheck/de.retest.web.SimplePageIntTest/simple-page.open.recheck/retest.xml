@@ -191,10 +191,6 @@
 								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 							</entry>
 							<entry>
-								<key>cursor</key>
-								<value xsi:type="xsd:string">pointer</value>
-							</entry>
-							<entry>
 								<key>direction</key>
 								<value xsi:type="xsd:string">ltr</value>
 							</entry>
@@ -2387,10 +2383,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
-									<key>cursor</key>
-									<value xsi:type="xsd:string">pointer</value>
-								</entry>
-								<entry>
 									<key>direction</key>
 									<value xsi:type="xsd:string">ltr</value>
 								</entry>
@@ -2471,10 +2463,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<entry>
 									<key>color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>cursor</key>
-									<value xsi:type="xsd:string">pointer</value>
 								</entry>
 								<entry>
 									<key>direction</key>
@@ -2559,10 +2547,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
-									<key>cursor</key>
-									<value xsi:type="xsd:string">pointer</value>
-								</entry>
-								<entry>
 									<key>direction</key>
 									<value xsi:type="xsd:string">ltr</value>
 								</entry>
@@ -2638,10 +2622,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<entry>
 										<key>color</key>
 										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>cursor</key>
-										<value xsi:type="xsd:string">pointer</value>
 									</entry>
 									<entry>
 										<key>direction</key>
@@ -2731,10 +2711,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
-									<key>cursor</key>
-									<value xsi:type="xsd:string">pointer</value>
-								</entry>
-								<entry>
 									<key>direction</key>
 									<value xsi:type="xsd:string">ltr</value>
 								</entry>
@@ -2817,10 +2793,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
-									<key>cursor</key>
-									<value xsi:type="xsd:string">pointer</value>
-								</entry>
-								<entry>
 									<key>direction</key>
 									<value xsi:type="xsd:string">ltr</value>
 								</entry>
@@ -2901,10 +2873,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<entry>
 									<key>color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>cursor</key>
-									<value xsi:type="xsd:string">pointer</value>
 								</entry>
 								<entry>
 									<key>direction</key>
@@ -3071,10 +3039,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
-									<key>cursor</key>
-									<value xsi:type="xsd:string">pointer</value>
-								</entry>
-								<entry>
 									<key>direction</key>
 									<value xsi:type="xsd:string">ltr</value>
 								</entry>
@@ -3150,10 +3114,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<entry>
 										<key>color</key>
 										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>cursor</key>
-										<value xsi:type="xsd:string">pointer</value>
 									</entry>
 									<entry>
 										<key>direction</key>
@@ -3480,10 +3440,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 									</entry>
 									<entry>
-										<key>cursor</key>
-										<value xsi:type="xsd:string">default</value>
-									</entry>
-									<entry>
 										<key>direction</key>
 										<value xsi:type="xsd:string">ltr</value>
 									</entry>
@@ -3497,15 +3453,15 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									</entry>
 									<entry>
 										<key>font-family</key>
-										<value xsi:type="xsd:string">system-ui</value>
+										<value xsi:type="xsd:string">Arial</value>
 									</entry>
 									<entry>
 										<key>font-size</key>
-										<value xsi:type="xsd:string">11px</value>
+										<value xsi:type="xsd:string">13.3333px</value>
 									</entry>
 									<entry>
 										<key>margin</key>
-										<value xsi:type="xsd:string">3px 2.89502px</value>
+										<value xsi:type="xsd:string">3px 3px 3px 4px</value>
 									</entry>
 									<entry>
 										<key>overflow</key>
@@ -3564,10 +3520,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<entry>
 										<key>color</key>
 										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-									</entry>
-									<entry>
-										<key>cursor</key>
-										<value xsi:type="xsd:string">default</value>
 									</entry>
 									<entry>
 										<key>direction</key>
@@ -3645,10 +3597,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<entry>
 											<key>color</key>
 											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-										</entry>
-										<entry>
-											<key>cursor</key>
-											<value xsi:type="xsd:string">default</value>
 										</entry>
 										<entry>
 											<key>direction</key>
