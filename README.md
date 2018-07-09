@@ -46,7 +46,7 @@ Download recheck-web [here on GitHub](https://github.com/retest/recheck-web/rele
 Then replace the assertions in your Selenium test. An example test could look like so:
 
 ```java
-public class MyWebTest {
+public class MyRecheckWebTest {
 
   private WebDriver driver;
   private Recheck re;
@@ -61,13 +61,13 @@ public class MyWebTest {
   @Test
   public void index() throws Exception {
     // Set the file name of the Golden Master.
-    re.startTest( "index" );
+    re.startTest( "my-file-name" );
 
     // Do your Selenium stuff.
-    driver.get( "your url" );
+    driver.get( "https://my-url.org/" );
 
     // Single call instead of multiple assertions (doesn't fail on differences).
-    re.check( driver, "index" );
+    re.check( driver, "my-step-name" );
 
     // Conclude the test case (fails on differences).
     re.capTest();
@@ -82,6 +82,8 @@ public class MyWebTest {
 }
 ```
 
+For more examples, have a look at our [integration tests](https://github.com/retest/recheck-web/tree/master/src/test/java/de/retest/web/) (ending with `*IT`).
+
 
 ## Building
 
@@ -89,13 +91,13 @@ To build this project locally, you have to skip JAR signing.
 
 For normal builds use:
 
-```
+```bash
 mvn deploy -Dgpg.skip=true
 ```
 
 For making releases use:
 
-```
+```bash
 mvn release:prepare -Darguments="-Dgpg.skip=true"
 ```
 
