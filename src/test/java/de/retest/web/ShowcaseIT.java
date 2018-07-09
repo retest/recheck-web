@@ -13,7 +13,7 @@ import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
 import de.retest.web.testutils.ChromeOptionsFactory;
 
-public class ShowcaseIntTest {
+public class ShowcaseIT {
 
 	private WebDriver driver;
 	private Recheck re;

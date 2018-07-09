@@ -87,17 +87,9 @@ public class MyRecheckWebTest {
 For more examples, have a look at our [integration tests](https://github.com/retest/recheck-web/tree/master/src/test/java/de/retest/web/) (ending with `*IT`).
 
 
-## Building
+## Deploying
 
-To build this project locally, you have to skip JAR signing.
-
-For normal builds use:
-
-```bash
-mvn deploy -Dgpg.skip=true
-```
-
-For making releases use:
+To trigger a deployment via Travis CI, you have to skip JAR signing locally:
 
 ```bash
 mvn release:prepare -Darguments="-Dgpg.skip=true"
