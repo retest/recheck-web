@@ -43,7 +43,7 @@ Download recheck-web [here on GitHub](https://github.com/retest/recheck-web/rele
 </dependency>
 ```
 
-Then replace the assertions in your Selenium test. An example test could look like so:
+Then replace the assertions in your Selenium test. An example test could look like so ([simplified](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/ShowcaseIT.java)):
 
 ```java
 public class MyRecheckWebTest {
@@ -83,8 +83,6 @@ public class MyRecheckWebTest {
   }
 }
 ```
-
-For more examples, have a look at our [integration tests](https://github.com/retest/recheck-web/tree/master/src/test/java/de/retest/web/) (ending with `*IT`).
 
 
 ## Deploying
