@@ -8,10 +8,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
-import de.retest.web.testutils.ChromeOptionsFactory;
 
 public class ShowcaseIT {
 
@@ -20,7 +20,15 @@ public class ShowcaseIT {
 
 	@Before
 	public void setup() {
-		driver = new ChromeDriver( ChromeOptionsFactory.createNewInstance() );
+		final ChromeOptions opts = new ChromeOptions();
+		opts.addArguments(
+				// Enable headless mode for faster execution.
+				"--headless",
+				// Use chrome in container-based Travis CI environment (see https://docs.travis-ci.com/user/chrome#Sandboxing).
+				"--no-sandbox",
+				// Fix window size for stable results.
+				"--window-size=1200,800" );
+		driver = new ChromeDriver( opts );
 
 		// Use the default implementation.
 		re = new RecheckImpl();
