@@ -8,10 +8,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
+import de.retest.web.testutils.ChromeOptionsFactory;
 
 public class SimplePageIntTest {
 
@@ -20,12 +20,7 @@ public class SimplePageIntTest {
 
 	@Before
 	public void setUp() {
-		final ChromeOptions opts = new ChromeOptions();
-		opts.addArguments( "--headless" );
-		opts.addArguments( "--no-sandbox" );
-		opts.addArguments( "--window-size=1200,800" );
-
-		driver = new ChromeDriver( opts );
+		driver = new ChromeDriver( ChromeOptionsFactory.createNewInstance() );
 
 		re = new RecheckImpl();
 	}
