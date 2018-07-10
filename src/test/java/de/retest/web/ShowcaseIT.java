@@ -20,11 +20,14 @@ public class ShowcaseIT {
 
 	@Before
 	public void setup() {
+		// If ChromeDriver is not in your PATH, copy/link your installation to the path below and uncomment.
+		//		System.setProperty( "webdriver.chrome.driver", "src/test/resources/chromedriver" );
+
 		final ChromeOptions opts = new ChromeOptions();
 		opts.addArguments(
 				// Enable headless mode for faster execution.
 				"--headless",
-				// Use chrome in container-based Travis CI environment (see https://docs.travis-ci.com/user/chrome#Sandboxing).
+				// Use Chrome in container-based Travis CI environment (see https://docs.travis-ci.com/user/chrome#Sandboxing).
 				"--no-sandbox",
 				// Fix window size for stable results.
 				"--window-size=1200,800" );
