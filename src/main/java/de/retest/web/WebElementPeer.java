@@ -91,19 +91,15 @@ public class WebElementPeer {
 			return null;
 		}
 		try {
-			final int x = toInt( webData.get( AttributesConfig.X ) );
-			final int y = toInt( webData.get( AttributesConfig.Y ) );
-			final int width = toInt( webData.get( AttributesConfig.WIDTH ) );
-			final int height = toInt( webData.get( AttributesConfig.HEIGHT ) );
+			final int x = Integer.parseInt( webData.get( AttributesConfig.X ) );
+			final int y = Integer.parseInt( webData.get( AttributesConfig.Y ) );
+			final int width = Integer.parseInt( webData.get( AttributesConfig.WIDTH ) );
+			final int height = Integer.parseInt( webData.get( AttributesConfig.HEIGHT ) );
 			return new OutlineAttribute( new Rectangle( x, y, width, height ) );
 		} catch ( final Exception e ) {
 			logger.error( "Exception retrieving outline: ", e );
 		}
 		return null;
-	}
-
-	private int toInt( final String value ) {
-		return Integer.parseInt( value );
 	}
 
 	protected MutableAttributes retrieveStateAttributes() {
