@@ -14,12 +14,15 @@ public class AttributesConfig {
 
 	private final List<String> attributes;
 	private final List<String> identifyingAttributes;
+	private final List<String> sizes;
 
 	@JsonCreator
 	public AttributesConfig( @JsonProperty( "attributes" ) final List<String> attributes,
-			@JsonProperty( "identifyingAttributes" ) final List<String> identifyingAttributes ) {
+			@JsonProperty( "identifyingAttributes" ) final List<String> identifyingAttributes,
+			@JsonProperty( "sizes" ) final List<String> sizes ) {
 		this.attributes = attributes;
 		this.identifyingAttributes = identifyingAttributes;
+		this.sizes = sizes;
 	}
 
 	public List<String> getAttributes() {
@@ -30,4 +33,7 @@ public class AttributesConfig {
 		return identifyingAttributes;
 	}
 
+	public List<String> getSizes() {
+		return sizes;
+	}
 }
