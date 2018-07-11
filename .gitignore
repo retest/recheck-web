@@ -7,6 +7,3 @@
 
 # Artifact from signing JARs.
 retest-gmbh-gpg.asc
-
-# Ignore OS-specific ChromeDriver.
-src/test/resources/chromedriver

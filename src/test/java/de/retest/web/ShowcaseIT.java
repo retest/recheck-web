@@ -20,8 +20,8 @@ public class ShowcaseIT {
 
 	@Before
 	public void setup() {
-		// If ChromeDriver is not in your PATH, copy/link your installation to the path below and uncomment.
-		//		System.setProperty( "webdriver.chrome.driver", "src/test/resources/chromedriver" );
+		// If ChromeDriver is not in your PATH, uncomment this and point to your installation.
+		//		System.setProperty( "webdriver.chrome.driver", "path/to/chromedriver" );
 
 		final ChromeOptions opts = new ChromeOptions();
 		opts.addArguments(
