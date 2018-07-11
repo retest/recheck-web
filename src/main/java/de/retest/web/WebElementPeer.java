@@ -101,14 +101,14 @@ public class WebElementPeer {
 		final MutableAttributes state = new MutableAttributes();
 		for ( final String attribute : AttributesProvider.getInstance().getAttributes() ) {
 			final String attributeValue = webData.get( attribute );
-			if ( attributeValue != null && !isDefault( attributeValue ) ) {
+			if ( attributeValue != null && !isDefault( attribute, attributeValue ) ) {
 				state.put( attribute, attributeValue );
 			}
 		}
 		return state;
 	}
 
-	private boolean isDefault( final String attributeValue ) {
+	private boolean isDefault( final String attribute, final String attributeValue ) {
 		if ( attributeValue == null || attributeValue.isEmpty() ) {
 			return true;
 		}
@@ -119,6 +119,9 @@ public class WebElementPeer {
 			return true;
 		}
 		if ( attributeValue.equals( "normal" ) ) {
+			return true;
+		}
+		if ( AttributesProvider.getInstance().getSizes().contains( attribute ) && attributeValue.equals( "0px" ) ) {
 			return true;
 		}
 		return false;
