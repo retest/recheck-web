@@ -91,31 +91,15 @@ public class WebElementPeer {
 			return null;
 		}
 		try {
-			final int x = toInt( webData.get( AttributesConfig.X ) );
-			final int y = toInt( webData.get( AttributesConfig.Y ) );
-			final int width = toInt( webData.get( AttributesConfig.WIDTH ) );
-			final int height = toInt( webData.get( AttributesConfig.HEIGHT ) );
+			final int x = Integer.parseInt( webData.get( AttributesConfig.X ) );
+			final int y = Integer.parseInt( webData.get( AttributesConfig.Y ) );
+			final int width = Integer.parseInt( webData.get( AttributesConfig.WIDTH ) );
+			final int height = Integer.parseInt( webData.get( AttributesConfig.HEIGHT ) );
 			return new OutlineAttribute( new Rectangle( x, y, width, height ) );
 		} catch ( final Exception e ) {
 			logger.error( "Exception retrieving outline: ", e );
 		}
 		return null;
-	}
-
-	private int toInt( final Object value ) {
-		if ( value instanceof Integer ) {
-			return (Integer) value;
-		}
-		if ( value instanceof String ) {
-			return Integer.parseInt( (String) value );
-		}
-		if ( value instanceof Double ) {
-			return Math.toIntExact( Math.round( (Double) value ) );
-		}
-		if ( value instanceof Long ) {
-			return Math.toIntExact( Math.round( (Long) value ) );
-		}
-		throw new IllegalArgumentException( "Don't know how to convert a " + value.getClass() + " to int!" );
 	}
 
 	protected MutableAttributes retrieveStateAttributes() {
