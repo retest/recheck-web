@@ -19,7 +19,7 @@ class WebElementPeerTest {
 	@BeforeEach
 	void setUp() {
 		webData = new HashMap<>();
-		cut = new WebElementPeer( webData, null, null );
+		cut = new WebElementPeer( webData, null );
 	}
 
 	@Test

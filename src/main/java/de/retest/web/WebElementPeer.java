@@ -1,7 +1,6 @@
 package de.retest.web;
 
 import java.awt.Rectangle;
-import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -19,8 +18,6 @@ import de.retest.ui.descriptors.PathAttribute;
 import de.retest.ui.descriptors.StringAttribute;
 import de.retest.ui.descriptors.SuffixAttribute;
 import de.retest.ui.descriptors.TextAttribute;
-import de.retest.ui.image.ImageUtils;
-import de.retest.ui.image.Screenshot;
 
 public class WebElementPeer {
 
@@ -29,12 +26,10 @@ public class WebElementPeer {
 	protected final List<WebElementPeer> children = new ArrayList<>();
 	protected final Map<String, String> webData;
 	protected final String path;
-	protected final BufferedImage bigPicture;
 
-	public WebElementPeer( final Map<String, String> webData, final String path, final BufferedImage bigPicture ) {
+	public WebElementPeer( final Map<String, String> webData, final String path ) {
 		this.webData = webData;
 		this.path = path;
-		this.bigPicture = bigPicture;
 	}
 
 	public void addChild( final WebElementPeer child ) {
@@ -48,7 +43,7 @@ public class WebElementPeer {
 		final List<Element> convertedChildren = convertChildren();
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
 		final MutableAttributes state = retrieveStateAttributes();
-		return new Element( identifyingAttributes, state.immutable(), convertedChildren, retrieveScreenshot() );
+		return new Element( identifyingAttributes, state.immutable(), convertedChildren, null );
 	}
 
 	protected IdentifyingAttributes retrieveIdentifyingAttributes() {
@@ -127,19 +122,6 @@ public class WebElementPeer {
 			return true;
 		}
 		return false;
-	}
-
-	private Screenshot retrieveScreenshot() {
-		final OutlineAttribute outline = retrieveOutline();
-		if ( outline == null ) {
-			return null;
-		}
-		final Rectangle bounds = outline.getValue();
-		if ( bounds.getX() < 0 || bounds.getY() < 0 || bounds.getWidth() <= 0 || bounds.getHeight() <= 0 ) {
-			return null;
-		}
-		final BufferedImage cut = ImageUtils.cutImage( bigPicture, bounds );
-		return ImageUtils.image2Screenshot( webData.get( "tagName" ), cut );
 	}
 
 	protected List<Element> convertChildren() {
