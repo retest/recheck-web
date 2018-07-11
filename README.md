@@ -85,7 +85,7 @@ public class MyRecheckWebTest {
 ```
 
 
-## Deploying
+## Building and Deploying locally
 
 To trigger a deployment via Travis CI, you have to skip JAR signing locally:
 
