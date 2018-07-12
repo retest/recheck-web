@@ -59,19 +59,20 @@ public class AttributesProvider {
 		return attributesConfig.getAttributes();
 	}
 
+	public List<String> getNumericalAttributes() {
+		return attributesConfig.getNumericalAttributes();
+	}
+
 	public List<String> getIdentifyingAttributes() {
 		return attributesConfig.getIdentifyingAttributes();
 	}
 
 	public List<String> getJoinedAttributes() {
-		final List<String> result = new ArrayList<>();
-		result.addAll( getIdentifyingAttributes() );
-		result.addAll( getAttributes() );
-		return result;
-	}
-
-	public List<String> getSizes() {
-		return attributesConfig.getSizes();
+		final List<String> joined = new ArrayList<>();
+		joined.addAll( getAttributes() );
+		joined.addAll( getNumericalAttributes() );
+		joined.addAll( getIdentifyingAttributes() );
+		return joined;
 	}
 
 }

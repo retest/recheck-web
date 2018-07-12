@@ -25,11 +25,6 @@ attributes:
   - overflow
   - visibility
 
-identifyingAttributes:
-  - class
-  - id
-  - name
-
 numericalAttributes:
   - border-radius
   - border-width
@@ -39,3 +34,8 @@ numericalAttributes:
   - offsetHeight
   - offsetWidth
   - width
+
+identifyingAttributes:
+  - class
+  - id
+  - name

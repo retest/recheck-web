@@ -13,27 +13,27 @@ public class AttributesConfig {
 	public static final String HEIGHT = "height";
 
 	private final List<String> attributes;
+	private final List<String> numericalAttributes;
 	private final List<String> identifyingAttributes;
-	private final List<String> sizes;
 
 	@JsonCreator
 	public AttributesConfig( @JsonProperty( "attributes" ) final List<String> attributes,
-			@JsonProperty( "identifyingAttributes" ) final List<String> identifyingAttributes,
-			@JsonProperty( "sizes" ) final List<String> sizes ) {
+			@JsonProperty( "numericalAttributes" ) final List<String> numericalAttributes,
+			@JsonProperty( "identifyingAttributes" ) final List<String> identifyingAttributes ) {
 		this.attributes = attributes;
+		this.numericalAttributes = numericalAttributes;
 		this.identifyingAttributes = identifyingAttributes;
-		this.sizes = sizes;
 	}
 
 	public List<String> getAttributes() {
 		return attributes;
 	}
 
-	public List<String> getIdentifyingAttributes() {
-		return identifyingAttributes;
+	public List<String> getNumericalAttributes() {
+		return numericalAttributes;
 	}
 
-	public List<String> getSizes() {
-		return sizes;
+	public List<String> getIdentifyingAttributes() {
+		return identifyingAttributes;
 	}
 }

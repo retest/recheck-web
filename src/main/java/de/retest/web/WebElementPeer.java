@@ -121,7 +121,8 @@ public class WebElementPeer {
 		if ( attributeValue.equals( "normal" ) ) {
 			return true;
 		}
-		if ( AttributesProvider.getInstance().getSizes().contains( attribute ) && attributeValue.equals( "0px" ) ) {
+		if ( AttributesProvider.getInstance().getNumericalAttributes().contains( attribute )
+				&& attributeValue.equals( "0px" ) ) {
 			return true;
 		}
 		return false;
