@@ -3,15 +3,24 @@ package de.retest.web;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+import java.lang.reflect.Field;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class AttributesProviderTest {
+
+	@BeforeEach
+	void setUp() throws Exception {
+		final Field instance = AttributesProvider.class.getDeclaredField( "instance" );
+		instance.setAccessible( true );
+		instance.set( null, null );
+	}
 
 	@Test
 	void joined_attributes_should_equal_concated_attributes() throws Exception {
