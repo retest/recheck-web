@@ -21,8 +21,8 @@
 						<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 					</entry>
 					<entry>
-						<key>border</key>
-						<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+						<key>border-color</key>
+						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 					</entry>
 					<entry>
 						<key>box-sizing</key>
@@ -57,16 +57,8 @@
 						<value xsi:type="xsd:string">16px</value>
 					</entry>
 					<entry>
-						<key>margin</key>
-						<value xsi:type="xsd:string">0px</value>
-					</entry>
-					<entry>
 						<key>overflow</key>
 						<value xsi:type="xsd:string">visible</value>
-					</entry>
-					<entry>
-						<key>padding</key>
-						<value xsi:type="xsd:string">0px</value>
 					</entry>
 					<entry>
 						<key>text-align</key>
@@ -98,8 +90,8 @@
 							<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 						</entry>
 						<entry>
-							<key>border</key>
-							<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+							<key>border-color</key>
+							<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 						</entry>
 						<entry>
 							<key>box-sizing</key>
@@ -142,10 +134,6 @@
 							<value xsi:type="xsd:string">visible</value>
 						</entry>
 						<entry>
-							<key>padding</key>
-							<value xsi:type="xsd:string">0px</value>
-						</entry>
-						<entry>
 							<key>text-align</key>
 							<value xsi:type="xsd:string">start</value>
 						</entry>
@@ -175,8 +163,8 @@
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 238)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -211,16 +199,8 @@
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -253,8 +233,8 @@
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -289,16 +269,8 @@
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -330,8 +302,8 @@
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -366,16 +338,8 @@
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -409,8 +373,8 @@
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -445,16 +409,8 @@
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -486,8 +442,8 @@
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -522,16 +478,8 @@
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -564,8 +512,8 @@
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -600,16 +548,8 @@
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -642,8 +582,8 @@
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -686,10 +626,6 @@
 									<value xsi:type="xsd:string">visible</value>
 								</entry>
 								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>text-align</key>
 									<value xsi:type="xsd:string">start</value>
 								</entry>
@@ -721,8 +657,8 @@
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -757,16 +693,8 @@
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -800,8 +728,8 @@
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -844,10 +772,6 @@
 									<value xsi:type="xsd:string">visible</value>
 								</entry>
 								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>text-align</key>
 									<value xsi:type="xsd:string">start</value>
 								</entry>
@@ -878,8 +802,8 @@
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -920,10 +844,6 @@
 								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -956,8 +876,8 @@
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -998,10 +918,6 @@
 								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -1035,8 +951,8 @@
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -1071,16 +987,8 @@
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -1112,8 +1020,8 @@
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -1154,10 +1062,6 @@
 								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -1190,8 +1094,8 @@
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -1232,10 +1136,6 @@
 								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -1269,8 +1169,8 @@
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -1305,16 +1205,8 @@
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -1346,8 +1238,8 @@
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -1382,16 +1274,8 @@
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -1423,8 +1307,8 @@
 										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 									</entry>
 									<entry>
-										<key>border</key>
-										<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+										<key>border-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 									</entry>
 									<entry>
 										<key>box-sizing</key>
@@ -1459,16 +1343,8 @@
 										<value xsi:type="xsd:string">16px</value>
 									</entry>
 									<entry>
-										<key>margin</key>
-										<value xsi:type="xsd:string">0px</value>
-									</entry>
-									<entry>
 										<key>overflow</key>
 										<value xsi:type="xsd:string">visible</value>
-									</entry>
-									<entry>
-										<key>padding</key>
-										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -1500,8 +1376,8 @@
 											<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 										</entry>
 										<entry>
-											<key>border</key>
-											<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+											<key>border-color</key>
+											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 										</entry>
 										<entry>
 											<key>box-sizing</key>
@@ -1542,10 +1418,6 @@
 										<entry>
 											<key>overflow</key>
 											<value xsi:type="xsd:string">visible</value>
-										</entry>
-										<entry>
-											<key>padding</key>
-											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>text-align</key>
@@ -1578,8 +1450,8 @@
 											<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 										</entry>
 										<entry>
-											<key>border</key>
-											<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+											<key>border-color</key>
+											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 										</entry>
 										<entry>
 											<key>box-sizing</key>
@@ -1620,10 +1492,6 @@
 										<entry>
 											<key>overflow</key>
 											<value xsi:type="xsd:string">visible</value>
-										</entry>
-										<entry>
-											<key>padding</key>
-											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>text-align</key>
@@ -1657,8 +1525,8 @@
 										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 									</entry>
 									<entry>
-										<key>border</key>
-										<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+										<key>border-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 									</entry>
 									<entry>
 										<key>box-sizing</key>
@@ -1701,10 +1569,6 @@
 										<value xsi:type="xsd:string">visible</value>
 									</entry>
 									<entry>
-										<key>padding</key>
-										<value xsi:type="xsd:string">0px</value>
-									</entry>
-									<entry>
 										<key>text-align</key>
 										<value xsi:type="xsd:string">start</value>
 									</entry>
@@ -1737,8 +1601,8 @@
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -1773,16 +1637,8 @@
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -1814,8 +1670,8 @@
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -1850,16 +1706,8 @@
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -1892,8 +1740,8 @@
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -1928,16 +1776,8 @@
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -1970,8 +1810,8 @@
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -2006,16 +1846,8 @@
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -2049,8 +1881,8 @@
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -2085,16 +1917,8 @@
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -2127,8 +1951,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -2159,16 +1983,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -2202,8 +2018,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -2238,16 +2054,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -2279,8 +2087,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 238)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -2315,16 +2123,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -2357,8 +2157,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 238)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -2393,16 +2193,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -2435,8 +2227,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 238)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -2471,16 +2263,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -2512,8 +2296,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 									</entry>
 									<entry>
-										<key>border</key>
-										<value xsi:type="xsd:string">0px none rgb(0, 0, 238)</value>
+										<key>border-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 									</entry>
 									<entry>
 										<key>box-sizing</key>
@@ -2548,16 +2332,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">16px</value>
 									</entry>
 									<entry>
-										<key>margin</key>
-										<value xsi:type="xsd:string">0px</value>
-									</entry>
-									<entry>
 										<key>overflow</key>
 										<value xsi:type="xsd:string">visible</value>
-									</entry>
-									<entry>
-										<key>padding</key>
-										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -2591,8 +2367,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 238)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -2627,16 +2403,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -2669,8 +2437,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 238)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -2705,16 +2473,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -2747,8 +2507,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 238)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -2783,16 +2543,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -2826,8 +2578,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -2862,16 +2614,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -2903,8 +2647,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 238)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -2939,16 +2683,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -2980,8 +2716,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 									</entry>
 									<entry>
-										<key>border</key>
-										<value xsi:type="xsd:string">0px none rgb(0, 0, 238)</value>
+										<key>border-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 									</entry>
 									<entry>
 										<key>box-sizing</key>
@@ -3016,16 +2752,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">16px</value>
 									</entry>
 									<entry>
-										<key>margin</key>
-										<value xsi:type="xsd:string">0px</value>
-									</entry>
-									<entry>
 										<key>overflow</key>
 										<value xsi:type="xsd:string">visible</value>
-									</entry>
-									<entry>
-										<key>padding</key>
-										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -3060,8 +2788,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -3096,16 +2824,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -3138,8 +2858,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -3182,10 +2902,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">visible</value>
 							</entry>
 							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>text-align</key>
 								<value xsi:type="xsd:string">start</value>
 							</entry>
@@ -3215,8 +2931,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -3259,10 +2975,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">visible</value>
 								</entry>
 								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>text-align</key>
 									<value xsi:type="xsd:string">start</value>
 								</entry>
@@ -3292,8 +3004,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 									</entry>
 									<entry>
-										<key>border</key>
-										<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+										<key>border-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 									</entry>
 									<entry>
 										<key>box-sizing</key>
@@ -3321,23 +3033,19 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									</entry>
 									<entry>
 										<key>font-family</key>
-										<value xsi:type="xsd:string">Arial</value>
+										<value xsi:type="xsd:string">system-ui</value>
 									</entry>
 									<entry>
 										<key>font-size</key>
-										<value xsi:type="xsd:string">13.3333px</value>
+										<value xsi:type="xsd:string">11px</value>
 									</entry>
 									<entry>
 										<key>margin</key>
-										<value xsi:type="xsd:string">3px 3px 3px 4px</value>
+										<value xsi:type="xsd:string">3px 2.89502px</value>
 									</entry>
 									<entry>
 										<key>overflow</key>
 										<value xsi:type="xsd:string">visible</value>
-									</entry>
-									<entry>
-										<key>padding</key>
-										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -3370,8 +3078,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 									</entry>
 									<entry>
-										<key>border</key>
-										<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+										<key>border-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 									</entry>
 									<entry>
 										<key>box-sizing</key>
@@ -3406,16 +3114,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">16px</value>
 									</entry>
 									<entry>
-										<key>margin</key>
-										<value xsi:type="xsd:string">0px</value>
-									</entry>
-									<entry>
 										<key>overflow</key>
 										<value xsi:type="xsd:string">visible</value>
-									</entry>
-									<entry>
-										<key>padding</key>
-										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -3447,8 +3147,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 										</entry>
 										<entry>
-											<key>border</key>
-											<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+											<key>border-color</key>
+											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 										</entry>
 										<entry>
 											<key>box-sizing</key>
@@ -3483,16 +3183,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											<value xsi:type="xsd:string">16px</value>
 										</entry>
 										<entry>
-											<key>margin</key>
-											<value xsi:type="xsd:string">0px</value>
-										</entry>
-										<entry>
 											<key>overflow</key>
 											<value xsi:type="xsd:string">visible</value>
-										</entry>
-										<entry>
-											<key>padding</key>
-											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>text-align</key>
@@ -3528,8 +3220,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -3572,10 +3264,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">visible</value>
 							</entry>
 							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>text-align</key>
 								<value xsi:type="xsd:string">start</value>
 							</entry>
@@ -3606,8 +3294,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -3642,16 +3330,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -3684,8 +3364,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -3720,16 +3400,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -3762,8 +3434,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -3804,10 +3476,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -3840,8 +3508,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -3882,10 +3550,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -3920,8 +3584,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -3962,10 +3626,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -3998,8 +3658,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -4040,10 +3700,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -4076,8 +3732,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -4118,10 +3774,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -4154,8 +3806,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -4198,10 +3850,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">visible</value>
 							</entry>
 							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>text-align</key>
 								<value xsi:type="xsd:string">start</value>
 							</entry>
@@ -4231,8 +3879,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -4267,16 +3915,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -4310,8 +3950,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -4354,10 +3994,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">visible</value>
 							</entry>
 							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>text-align</key>
 								<value xsi:type="xsd:string">start</value>
 							</entry>
@@ -4387,8 +4023,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -4423,16 +4059,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -4464,8 +4092,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 									</entry>
 									<entry>
-										<key>border</key>
-										<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+										<key>border-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 									</entry>
 									<entry>
 										<key>box-sizing</key>
@@ -4500,16 +4128,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">16px</value>
 									</entry>
 									<entry>
-										<key>margin</key>
-										<value xsi:type="xsd:string">0px</value>
-									</entry>
-									<entry>
 										<key>overflow</key>
 										<value xsi:type="xsd:string">visible</value>
-									</entry>
-									<entry>
-										<key>padding</key>
-										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -4544,8 +4164,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -4580,16 +4200,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -4622,8 +4234,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -4658,16 +4270,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -4700,8 +4304,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -4736,16 +4340,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -4778,8 +4374,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -4814,16 +4410,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -4856,8 +4444,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(128, 128, 128)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -4892,16 +4480,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
@@ -4933,8 +4513,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 								</entry>
 								<entry>
-									<key>border</key>
-									<value xsi:type="xsd:string">0px none rgb(128, 128, 128)</value>
+									<key>border-color</key>
+									<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 								</entry>
 								<entry>
 									<key>box-sizing</key>
@@ -4969,16 +4549,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
 									<key>overflow</key>
 									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>padding</key>
-									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>text-align</key>
@@ -5010,8 +4582,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 									</entry>
 									<entry>
-										<key>border</key>
-										<value xsi:type="xsd:string">0px none rgb(128, 128, 128)</value>
+										<key>border-color</key>
+										<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 									</entry>
 									<entry>
 										<key>box-sizing</key>
@@ -5046,16 +4618,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">16px</value>
 									</entry>
 									<entry>
-										<key>margin</key>
-										<value xsi:type="xsd:string">0px</value>
-									</entry>
-									<entry>
 										<key>overflow</key>
 										<value xsi:type="xsd:string">visible</value>
-									</entry>
-									<entry>
-										<key>padding</key>
-										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -5087,8 +4651,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 										</entry>
 										<entry>
-											<key>border</key>
-											<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+											<key>border-color</key>
+											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 										</entry>
 										<entry>
 											<key>box-sizing</key>
@@ -5121,10 +4685,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<entry>
 											<key>font-size</key>
 											<value xsi:type="xsd:string">16px</value>
-										</entry>
-										<entry>
-											<key>margin</key>
-											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>overflow</key>
@@ -5164,8 +4724,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 												<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 											</entry>
 											<entry>
-												<key>border</key>
-												<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+												<key>border-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 											</entry>
 											<entry>
 												<key>box-sizing</key>
@@ -5200,16 +4760,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 												<value xsi:type="xsd:string">16px</value>
 											</entry>
 											<entry>
-												<key>margin</key>
-												<value xsi:type="xsd:string">0px</value>
-											</entry>
-											<entry>
 												<key>overflow</key>
 												<value xsi:type="xsd:string">visible</value>
-											</entry>
-											<entry>
-												<key>padding</key>
-												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>text-align</key>
@@ -5242,8 +4794,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 												<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 											</entry>
 											<entry>
-												<key>border</key>
-												<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+												<key>border-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 											</entry>
 											<entry>
 												<key>box-sizing</key>
@@ -5278,16 +4830,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 												<value xsi:type="xsd:string">16px</value>
 											</entry>
 											<entry>
-												<key>margin</key>
-												<value xsi:type="xsd:string">0px</value>
-											</entry>
-											<entry>
 												<key>overflow</key>
 												<value xsi:type="xsd:string">visible</value>
-											</entry>
-											<entry>
-												<key>padding</key>
-												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>text-align</key>
@@ -5320,8 +4864,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 												<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 											</entry>
 											<entry>
-												<key>border</key>
-												<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+												<key>border-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 											</entry>
 											<entry>
 												<key>box-sizing</key>
@@ -5356,16 +4900,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 												<value xsi:type="xsd:string">16px</value>
 											</entry>
 											<entry>
-												<key>margin</key>
-												<value xsi:type="xsd:string">0px</value>
-											</entry>
-											<entry>
 												<key>overflow</key>
 												<value xsi:type="xsd:string">visible</value>
-											</entry>
-											<entry>
-												<key>padding</key>
-												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>text-align</key>
@@ -5403,8 +4939,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 						</entry>
 						<entry>
-							<key>border</key>
-							<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+							<key>border-color</key>
+							<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 						</entry>
 						<entry>
 							<key>box-sizing</key>
@@ -5435,16 +4971,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<value xsi:type="xsd:string">16px</value>
 						</entry>
 						<entry>
-							<key>margin</key>
-							<value xsi:type="xsd:string">0px</value>
-						</entry>
-						<entry>
 							<key>overflow</key>
 							<value xsi:type="xsd:string">visible</value>
-						</entry>
-						<entry>
-							<key>padding</key>
-							<value xsi:type="xsd:string">0px</value>
 						</entry>
 						<entry>
 							<key>text-align</key>
@@ -5476,8 +5004,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
 							</entry>
 							<entry>
-								<key>border</key>
-								<value xsi:type="xsd:string">0px none rgb(0, 0, 0)</value>
+								<key>border-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 							</entry>
 							<entry>
 								<key>box-sizing</key>
@@ -5508,16 +5036,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
 								<key>overflow</key>
 								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>padding</key>
-								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>text-align</key>
