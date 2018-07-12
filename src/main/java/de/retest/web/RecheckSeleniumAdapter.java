@@ -81,7 +81,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 				root = new RootElementPeer( webData, path, title, screenshot );
 				peer = root;
 			} else {
-				peer = new WebElementPeer( webData, path, screenshot );
+				peer = new WebElementPeer( webData, path );
 				final WebElementPeer parent = converted.get( parentPath );
 				assert parent != null : "We sorted the map, parent should already be there.";
 				parent.addChild( peer );
