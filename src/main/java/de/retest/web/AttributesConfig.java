@@ -12,21 +12,21 @@ public class AttributesConfig {
 	public static final String WIDTH = "width";
 	public static final String HEIGHT = "height";
 
-	private final List<String> attributes;
+	private final List<String> textualAttributes;
 	private final List<String> numericalAttributes;
 	private final List<String> identifyingAttributes;
 
 	@JsonCreator
-	public AttributesConfig( @JsonProperty( "attributes" ) final List<String> attributes,
+	public AttributesConfig( @JsonProperty( "textualAttributes" ) final List<String> textualAttributes,
 			@JsonProperty( "numericalAttributes" ) final List<String> numericalAttributes,
 			@JsonProperty( "identifyingAttributes" ) final List<String> identifyingAttributes ) {
-		this.attributes = attributes;
+		this.textualAttributes = textualAttributes;
 		this.numericalAttributes = numericalAttributes;
 		this.identifyingAttributes = identifyingAttributes;
 	}
 
-	public List<String> getAttributes() {
-		return attributes;
+	public List<String> getTextualAttributes() {
+		return textualAttributes;
 	}
 
 	public List<String> getNumericalAttributes() {

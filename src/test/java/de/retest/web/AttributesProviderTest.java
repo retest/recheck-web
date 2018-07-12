@@ -16,7 +16,7 @@ class AttributesProviderTest {
 	void joined_attributes_should_equal_concated_attributes() throws Exception {
 		final AttributesProvider cut = AttributesProvider.getInstance();
 		final List<String> concatedAttributes =
-				Stream.concat( cut.getIdentifyingAttributes().stream(), cut.getAttributes().stream() )
+				Stream.concat( cut.getIdentifyingAttributes().stream(), cut.getTextualAttributes().stream() )
 						.collect( Collectors.toList() );
 		assertThat( cut.getJoinedAttributes() ).containsExactlyElementsOf( concatedAttributes );
 	}

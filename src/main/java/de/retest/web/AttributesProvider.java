@@ -55,8 +55,8 @@ public class AttributesProvider {
 		}
 	}
 
-	public List<String> getAttributes() {
-		return attributesConfig.getAttributes();
+	public List<String> getTextualAttributes() {
+		return attributesConfig.getTextualAttributes();
 	}
 
 	public List<String> getNumericalAttributes() {
@@ -69,7 +69,7 @@ public class AttributesProvider {
 
 	public List<String> getJoinedAttributes() {
 		final List<String> joined = new ArrayList<>();
-		joined.addAll( getAttributes() );
+		joined.addAll( getTextualAttributes() );
 		joined.addAll( getNumericalAttributes() );
 		joined.addAll( getIdentifyingAttributes() );
 		return joined;
