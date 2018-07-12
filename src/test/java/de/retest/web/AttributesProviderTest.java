@@ -3,6 +3,7 @@ package de.retest.web;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -16,7 +17,8 @@ class AttributesProviderTest {
 	void joined_attributes_should_equal_concated_attributes() throws Exception {
 		final AttributesProvider cut = AttributesProvider.getInstance();
 		final List<String> concatedAttributes =
-				Stream.concat( cut.getIdentifyingAttributes().stream(), cut.getTextualAttributes().stream() )
+				Stream.of( cut.getTextualAttributes(), cut.getNumericalAttributes(), cut.getIdentifyingAttributes() ) //
+						.flatMap( Collection::stream ) //
 						.collect( Collectors.toList() );
 		assertThat( cut.getJoinedAttributes() ).containsExactlyElementsOf( concatedAttributes );
 	}
