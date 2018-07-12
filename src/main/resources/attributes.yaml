@@ -1,10 +1,8 @@
 attributes:
   - animation
   - background
-  - border-width
   - border-color
   - border-style
-  - border-radius
   - box-shadow
   - box-sizing
   - break-after
@@ -24,10 +22,6 @@ attributes:
   - line-height
   - text-align
   - float
-  - margin
-  - padding
-  - offsetHeight
-  - offsetWidth
   - overflow
   - visibility
 
