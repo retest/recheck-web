@@ -1,7 +1,10 @@
 attributes:
   - animation
   - background
-  - border
+  - border-width
+  - border-color
+  - border-style
+  - border-radius
   - box-shadow
   - box-sizing
   - break-after
@@ -32,3 +35,13 @@ identifyingAttributes:
   - class
   - id
   - name
+
+sizes:
+  - border-radius
+  - border-width
+  - height 
+  - margin
+  - padding
+  - offsetHeight
+  - offsetWidth
+  - width

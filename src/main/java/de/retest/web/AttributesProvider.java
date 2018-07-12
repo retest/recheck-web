@@ -70,4 +70,8 @@ public class AttributesProvider {
 		return result;
 	}
 
+	public List<String> getSizes() {
+		return attributesConfig.getSizes();
+	}
+
 }
