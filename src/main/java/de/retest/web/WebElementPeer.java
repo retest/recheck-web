@@ -98,8 +98,11 @@ public class WebElementPeer {
 	}
 
 	protected MutableAttributes retrieveStateAttributes() {
+		final List<String> stateAttributes = new ArrayList<>();
+		stateAttributes.addAll( AttributesProvider.getInstance().getTextualAttributes() );
+		stateAttributes.addAll( AttributesProvider.getInstance().getNumericalAttributes() );
 		final MutableAttributes state = new MutableAttributes();
-		for ( final String attribute : AttributesProvider.getInstance().getTextualAttributes() ) {
+		for ( final String attribute : stateAttributes ) {
 			final String attributeValue = webData.get( attribute );
 			if ( attributeValue != null && !isDefault( attribute, attributeValue ) ) {
 				state.put( attribute, attributeValue );
