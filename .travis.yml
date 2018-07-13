@@ -8,7 +8,7 @@ addons:
     packages:
       - chromium-chromedriver
   sonarcloud:
-    organization: "retest"
+    organization: retest
     token:
       secure: "${SONAR_CLOUD_TOKEN}"
 
