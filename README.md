@@ -28,7 +28,7 @@ Even better: Using the [retest GUI](https://retest.de/en/) (or the soon to come 
 
 ## Prerequisites
 
-Currently available as a Java API with support for JUnit 4.
+Currently available as a Java API with support for JUnit 4 and 5 as well as TestNG.
 
 
 ## Usage
