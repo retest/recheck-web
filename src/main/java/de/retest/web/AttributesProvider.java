@@ -1,7 +1,10 @@
 package de.retest.web;
 
-import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +22,11 @@ public class AttributesProvider {
 	private static final Logger logger = LoggerFactory.getLogger( AttributesProvider.class );
 
 	private static AttributesProvider instance;
+	private final AttributesConfig attributesConfig;
+
+	private AttributesProvider() {
+		attributesConfig = readAttributesConfig();
+	}
 
 	public static AttributesProvider getInstance() {
 		if ( instance == null ) {
@@ -27,32 +35,29 @@ public class AttributesProvider {
 		return instance;
 	}
 
-	private final AttributesConfig attributesConfig;
-
-	private AttributesProvider() {
-		attributesConfig = readAttributesConfig();
-	}
-
 	private AttributesConfig readAttributesConfig() {
 		final String userAttributesFilePath = System.getProperty( ATTRIBUTES_FILE_PROPERTY );
 		if ( userAttributesFilePath != null ) {
-			final File userAttributes = new File( userAttributesFilePath );
-			logger.debug( "Loading user-defined attribues file '{}'.", userAttributes );
-			return readAttributesConfigFromFile( userAttributes );
+			final Path userAttributes = Paths.get( userAttributesFilePath );
+			logger.debug( "Loading user-defined attributes file '{}'.", userAttributes );
+			try ( final InputStream in = Files.newInputStream( userAttributes ) ) {
+				return readAttributesConfigFromFile( in );
+			} catch ( final IOException e ) {
+				throw new RuntimeException( "Cannot read attributes file '" + userAttributes + "'.", e );
+			}
 		} else {
-			final File defaultAttributes = new File( getClass().getResource( DEFAULT_ATTRIBUTES_FILE_PATH ).getPath() );
-			logger.debug( "Loading default attributes file '{}'", defaultAttributes );
-			return readAttributesConfigFromFile( defaultAttributes );
+			logger.debug( "Loading default attributes file '{}'", DEFAULT_ATTRIBUTES_FILE_PATH );
+			try ( final InputStream url = getClass().getResourceAsStream( DEFAULT_ATTRIBUTES_FILE_PATH ) ) {
+				return readAttributesConfigFromFile( url );
+			} catch ( final IOException e ) {
+				throw new RuntimeException( "Cannot read attributes file '" + DEFAULT_ATTRIBUTES_FILE_PATH + "'.", e );
+			}
 		}
 	}
 
-	private AttributesConfig readAttributesConfigFromFile( final File attributesFile ) {
+	private AttributesConfig readAttributesConfigFromFile( final InputStream in ) throws IOException {
 		final ObjectMapper mapper = new ObjectMapper( new YAMLFactory() );
-		try {
-			return mapper.readValue( attributesFile, AttributesConfig.class );
-		} catch ( final IOException e ) {
-			throw new RuntimeException( "Cannot read attributes file '" + attributesFile + "'.", e );
-		}
+		return mapper.readValue( in, AttributesConfig.class );
 	}
 
 	public List<String> getAttributes() {
