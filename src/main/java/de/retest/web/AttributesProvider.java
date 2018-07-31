@@ -43,14 +43,14 @@ public class AttributesProvider {
 			try ( final InputStream in = Files.newInputStream( userAttributes ) ) {
 				return readAttributesConfigFromFile( in );
 			} catch ( final IOException e ) {
-				throw new RuntimeException( "Cannot read attributes file '" + userAttributes + "'.", e );
+				throw new AttributesConfigLoadException( userAttributes.toString(), e );
 			}
 		} else {
 			logger.debug( "Loading default attributes file '{}'", DEFAULT_ATTRIBUTES_FILE_PATH );
 			try ( final InputStream url = getClass().getResourceAsStream( DEFAULT_ATTRIBUTES_FILE_PATH ) ) {
 				return readAttributesConfigFromFile( url );
 			} catch ( final IOException e ) {
-				throw new RuntimeException( "Cannot read attributes file '" + DEFAULT_ATTRIBUTES_FILE_PATH + "'.", e );
+				throw new AttributesConfigLoadException( DEFAULT_ATTRIBUTES_FILE_PATH, e );
 			}
 		}
 	}
