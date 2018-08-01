@@ -60,8 +60,12 @@ public class AttributesProvider {
 		return mapper.readValue( in, AttributesConfig.class );
 	}
 
-	public List<String> getAttributes() {
-		return attributesConfig.getAttributes();
+	public List<String> getTextualAttributes() {
+		return attributesConfig.getTextualAttributes();
+	}
+
+	public List<String> getNumericalAttributes() {
+		return attributesConfig.getNumericalAttributes();
 	}
 
 	public List<String> getIdentifyingAttributes() {
@@ -69,10 +73,11 @@ public class AttributesProvider {
 	}
 
 	public List<String> getJoinedAttributes() {
-		final List<String> result = new ArrayList<>();
-		result.addAll( getIdentifyingAttributes() );
-		result.addAll( getAttributes() );
-		return result;
+		final List<String> joined = new ArrayList<>();
+		joined.addAll( getTextualAttributes() );
+		joined.addAll( getNumericalAttributes() );
+		joined.addAll( getIdentifyingAttributes() );
+		return joined;
 	}
 
 }

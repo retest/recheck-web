@@ -1,7 +1,8 @@
-attributes:
+textualAttributes:
   - animation
   - background
-  - border
+  - border-color
+  - border-style
   - box-shadow
   - box-sizing
   - break-after
@@ -21,12 +22,16 @@ attributes:
   - line-height
   - text-align
   - float
+  - overflow
+  - visibility
+
+numericalAttributes:
+  - border-radius
+  - border-width
   - margin
   - padding
   - offsetHeight
   - offsetWidth
-  - overflow
-  - visibility
 
 identifyingAttributes:
   - class
