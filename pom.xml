@@ -4,7 +4,7 @@
 
 	<groupId>de.retest</groupId>
 	<artifactId>recheck-web</artifactId>
-	<version>0.3.0-SNAPSHOT</version>
+	<version>0.2.1</version>
 	<packaging>jar</packaging>
 
 	<name>recheck - web</name>
@@ -58,7 +58,7 @@
 		<url>https://github.com/retest/recheck-web/</url>
 		<connection>scm:git:git@github.com:retest/recheck-web.git</connection>
 		<developerConnection>scm:git:git@github.com:retest/recheck-web.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>v0.2.1</tag>
 	</scm>
 
 	<distributionManagement>
