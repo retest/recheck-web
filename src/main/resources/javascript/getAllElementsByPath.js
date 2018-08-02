@@ -34,10 +34,6 @@ function transform(node) {
 	var result = {
 		"tagName" : node.tagName,
 		"text" : getText(node),
-		"x" : getX(node),
-		"y" : getY(node),
-		"width" : node.getBoundingClientRect().width,
-		"height" : node.getBoundingClientRect().height,
 		"shown" : isShown(node)
 	};
 	var attrs = node.attributes;
@@ -48,6 +44,11 @@ function transform(node) {
 	for (var i = 0; i < args.length; i++) {
 		result[args[i]] = style[args[i]];
 	}
+	// They need special treatment
+	result["x"] = getX(node);
+	result["y"] = getY(node);
+	result["width"] = node.getBoundingClientRect().width;
+	result["height"] = node.getBoundingClientRect().height;
 	return result;
 }
 
