@@ -69,7 +69,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 			final String path = entry.getKey();
 			logger.debug( "Found element with path '{}'.", path );
 			final String parentPath = getParentPath( path );
-			final Map<String, Object> webData = entry.getValue();
+			final WebData webData = new WebData( entry.getValue() );
 			WebElementPeer peer = converted.get( path );
 
 			assert peer == null : "List is sorted, we should not have path twice.";

@@ -3,7 +3,6 @@ package de.retest.web;
 import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,10 +23,10 @@ public class WebElementPeer {
 	private static final Logger logger = LoggerFactory.getLogger( WebElementPeer.class );
 
 	protected final List<WebElementPeer> children = new ArrayList<>();
-	protected final Map<String, Object> webData;
+	protected final WebData webData;
 	protected final String path;
 
-	public WebElementPeer( final Map<String, Object> webData, final String path ) {
+	public WebElementPeer( final WebData webData, final String path ) {
 		this.webData = webData;
 		this.path = path;
 	}
@@ -50,22 +49,16 @@ public class WebElementPeer {
 		final List<Attribute> attributes = new ArrayList<>();
 		attributes.add( new PathAttribute( Path.fromString( path ) ) );
 		attributes.add( new SuffixAttribute( path.substring( path.lastIndexOf( '[' ) + 1, path.lastIndexOf( ']' ) ) ) );
-		attributes.add( new StringAttribute( "type", (String) webData.get( "tagName" ) ) );
-		attributes.add( new TextAttribute( "text", (String) webData.get( "text" ) ) );
+		attributes.add( new StringAttribute( "type", webData.get( "tagName" ) ) );
+		attributes.add( new TextAttribute( "text", webData.get( "text" ) ) );
+		final Rectangle outline = webData.getOutline();
+		if ( outline != null ) {
+			attributes.add( new OutlineAttribute( outline ) );
+		}
 		final List<String> userDefinedAttributes =
 				new ArrayList<>( AttributesProvider.getInstance().getIdentifyingAttributes() );
-		if ( containsOutline( userDefinedAttributes ) ) {
-			userDefinedAttributes.remove( AttributesConfig.X );
-			userDefinedAttributes.remove( AttributesConfig.Y );
-			userDefinedAttributes.remove( AttributesConfig.WIDTH );
-			userDefinedAttributes.remove( AttributesConfig.HEIGHT );
-			final OutlineAttribute outline = retrieveOutline();
-			if ( outline != null ) {
-				attributes.add( outline );
-			}
-		}
 		for ( final String attribute : userDefinedAttributes ) {
-			final String attributeValue = (String) webData.get( attribute );
+			final String attributeValue = webData.get( attribute );
 			if ( attributeValue != null ) {
 				attributes.add( new StringAttribute( attribute, attributeValue ) );
 			}
@@ -73,66 +66,15 @@ public class WebElementPeer {
 		return new IdentifyingAttributes( attributes );
 	}
 
-	public boolean containsOutline( final List<String> userDefinedAttributes ) {
-		return userDefinedAttributes.contains( AttributesConfig.X ) //
-				&& userDefinedAttributes.contains( AttributesConfig.Y ) //
-				&& userDefinedAttributes.contains( AttributesConfig.WIDTH ) //
-				&& userDefinedAttributes.contains( AttributesConfig.HEIGHT );
-	}
-
-	public OutlineAttribute retrieveOutline() {
-		if ( webData.get( AttributesConfig.X ) == null || webData.get( AttributesConfig.Y ) == null //
-				|| webData.get( AttributesConfig.WIDTH ) == null || webData.get( AttributesConfig.HEIGHT ) == null ) {
-			return null;
-		}
-		try {
-			final int x = toInt( webData.get( AttributesConfig.X ) );
-			final int y = toInt( webData.get( AttributesConfig.Y ) );
-			final int width = toInt( webData.get( AttributesConfig.WIDTH ) );
-			final int height = toInt( webData.get( AttributesConfig.HEIGHT ) );
-			return new OutlineAttribute( new Rectangle( x, y, width, height ) );
-		} catch ( final Exception e ) {
-			logger.error( "Exception retrieving outline: ", e );
-		}
-		return null;
-	}
-
-	private int toInt( final Object value ) {
-		if ( value instanceof Integer ) {
-			return (Integer) value;
-		}
-		if ( value instanceof String ) {
-			return Integer.parseInt( (String) value );
-		}
-		if ( value instanceof Double ) {
-			return Math.toIntExact( Math.round( (Double) value ) );
-		}
-		if ( value instanceof Long ) {
-			return Math.toIntExact( Math.round( (Long) value ) );
-		}
-		throw new IllegalArgumentException( "Don't know how to convert a " + value.getClass() + " to int!" );
-	}
-
 	protected MutableAttributes retrieveStateAttributes() {
 		final MutableAttributes state = new MutableAttributes();
 		for ( final String attribute : AttributesProvider.getInstance().getAttributes() ) {
-			final String attributeValue = normalize( (String) webData.get( attribute ) );
+			final String attributeValue = webData.get( attribute );
 			if ( attributeValue != null && !isDefault( attributeValue ) ) {
 				state.put( attribute, attributeValue );
 			}
 		}
 		return state;
-	}
-
-	protected static String normalize( final String value ) {
-		if ( value == null ) {
-			return value;
-		}
-		String result = value;
-		if ( result.startsWith( "\"" ) && result.endsWith( "\"" ) ) {
-			result = result.substring( 1, result.length() - 1 );
-		}
-		return result.trim();
 	}
 
 	private boolean isDefault( final String attributeValue ) {
