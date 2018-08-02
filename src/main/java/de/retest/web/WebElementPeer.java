@@ -24,10 +24,10 @@ public class WebElementPeer {
 	private static final Logger logger = LoggerFactory.getLogger( WebElementPeer.class );
 
 	protected final List<WebElementPeer> children = new ArrayList<>();
-	protected final Map<String, String> webData;
+	protected final Map<String, Object> webData;
 	protected final String path;
 
-	public WebElementPeer( final Map<String, String> webData, final String path ) {
+	public WebElementPeer( final Map<String, Object> webData, final String path ) {
 		this.webData = webData;
 		this.path = path;
 	}
@@ -50,8 +50,8 @@ public class WebElementPeer {
 		final List<Attribute> attributes = new ArrayList<>();
 		attributes.add( new PathAttribute( Path.fromString( path ) ) );
 		attributes.add( new SuffixAttribute( path.substring( path.lastIndexOf( '[' ) + 1, path.lastIndexOf( ']' ) ) ) );
-		attributes.add( new StringAttribute( "type", webData.get( "tagName" ) ) );
-		attributes.add( new TextAttribute( "text", webData.get( "text" ) ) );
+		attributes.add( new StringAttribute( "type", (String) webData.get( "tagName" ) ) );
+		attributes.add( new TextAttribute( "text", (String) webData.get( "text" ) ) );
 		final List<String> userDefinedAttributes =
 				new ArrayList<>( AttributesProvider.getInstance().getIdentifyingAttributes() );
 		if ( containsOutline( userDefinedAttributes ) ) {
@@ -65,7 +65,7 @@ public class WebElementPeer {
 			}
 		}
 		for ( final String attribute : userDefinedAttributes ) {
-			final String attributeValue = webData.get( attribute );
+			final String attributeValue = (String) webData.get( attribute );
 			if ( attributeValue != null ) {
 				attributes.add( new StringAttribute( attribute, attributeValue ) );
 			}
@@ -116,7 +116,7 @@ public class WebElementPeer {
 	protected MutableAttributes retrieveStateAttributes() {
 		final MutableAttributes state = new MutableAttributes();
 		for ( final String attribute : AttributesProvider.getInstance().getAttributes() ) {
-			final String attributeValue = normalize( webData.get( attribute ) );
+			final String attributeValue = normalize( (String) webData.get( attribute ) );
 			if ( attributeValue != null && !isDefault( attributeValue ) ) {
 				state.put( attribute, attributeValue );
 			}

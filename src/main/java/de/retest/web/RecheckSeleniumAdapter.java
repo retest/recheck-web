@@ -44,8 +44,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		logger.info( "Retrieving {} attributes for each element.", attributes.size() );
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		@SuppressWarnings( "unchecked" )
-		final Map<String, Map<String, String>> result =
-				(Map<String, Map<String, String>>) jsExecutor.executeScript( getQueryJS(), attributes );
+		final Map<String, Map<String, Object>> result =
+				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), attributes );
 
 		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), result.size() );
 
@@ -60,16 +60,16 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		}
 	}
 
-	public RootElement convertToPeers( final Map<String, Map<String, String>> data, final String title,
+	public RootElement convertToPeers( final Map<String, Map<String, Object>> data, final String title,
 			final BufferedImage screenshot ) {
 		final Map<String, WebElementPeer> converted = new HashMap<>();
 		RootElementPeer root = null;
 
-		for ( final Map.Entry<String, Map<String, String>> entry : sort( data ) ) {
+		for ( final Map.Entry<String, Map<String, Object>> entry : sort( data ) ) {
 			final String path = entry.getKey();
 			logger.debug( "Found element with path '{}'.", path );
 			final String parentPath = getParentPath( path );
-			final Map<String, String> webData = entry.getValue();
+			final Map<String, Object> webData = entry.getValue();
 			WebElementPeer peer = converted.get( path );
 
 			assert peer == null : "List is sorted, we should not have path twice.";
@@ -94,7 +94,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		return root.toElement();
 	}
 
-	private List<Map.Entry<String, Map<String, String>>> sort( final Map<String, Map<String, String>> data ) {
+	private List<Map.Entry<String, Map<String, Object>>> sort( final Map<String, Map<String, Object>> data ) {
 		// Sorting ensures that parents are already created.
 		return data.entrySet().stream() //
 				.sorted( Comparator.comparing( Entry::getKey ) ) //

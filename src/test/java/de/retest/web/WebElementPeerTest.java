@@ -13,7 +13,7 @@ import de.retest.ui.descriptors.OutlineAttribute;
 
 class WebElementPeerTest {
 
-	Map<String, String> webData;
+	Map<String, Object> webData;
 	WebElementPeer cut;
 
 	@BeforeEach
