@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="2.3.2" dataType="de.retest.ui.descriptors.SutState" dataTypeVersion="1">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="2.4.0" dataType="de.retest.ui.descriptors.SutState" dataTypeVersion="1">
 	<data xsi:type="sutState">
 		<descriptors screenId="1" screen="retest - Java Swing GUI Testing" title="retest - Java Swing GUI Testing">
 			<identifyingAttributes>
 				<attributes>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>0</x>
+						<y>0</y>
+						<height>3074</height>
+						<width>1185</width>
+					</attribute>
 					<attribute key="path" xsi:type="pathAttribute">//HTML[1]</attribute>
 					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 					<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -81,6 +87,12 @@
 			<containedComponents>
 				<identifyingAttributes>
 					<attributes>
+						<attribute key="outline" xsi:type="outlineAttribute">
+							<x>0</x>
+							<y>0</y>
+							<height>3074</height>
+							<width>1185</width>
+						</attribute>
 						<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 						<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -162,6 +174,12 @@
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>2966</y>
+								<height>108</height>
+								<width>1185</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FOOTER[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -243,6 +261,12 @@
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>83</x>
+									<y>3032</y>
+									<height>42</height>
+									<width>1020</width>
+								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -324,6 +348,12 @@
 						<containedComponents>
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>83</x>
+										<y>3032</y>
+										<height>42</height>
+										<width>1020</width>
+									</attribute>
 									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -409,6 +439,12 @@
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>103</x>
+											<y>3032</y>
+											<height>42</height>
+											<width>980</width>
+										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 										<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -490,6 +526,12 @@
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>449</x>
+												<y>3047</y>
+												<height>24</height>
+												<width>201</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute">Copyright © 2018 ReTest GmbH</attribute>
@@ -572,6 +614,12 @@
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>654</x>
+												<y>3047</y>
+												<height>24</height>
+												<width>82</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[2]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 											<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -653,6 +701,12 @@
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>688</x>
+													<y>3051</y>
+													<height>16</height>
+													<width>48</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 												<attribute key="text" xsi:type="textAttribute">Contact</attribute>
@@ -740,6 +794,12 @@
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>96</height>
+								<width>1185</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -821,6 +881,12 @@
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>83</x>
+									<y>0</y>
+									<height>84</height>
+									<width>1020</width>
+								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -902,6 +968,12 @@
 						<containedComponents>
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>83</x>
+										<y>0</y>
+										<height>84</height>
+										<width>1020</width>
+									</attribute>
 									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -987,6 +1059,12 @@
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>103</x>
+											<y>10</y>
+											<height>24</height>
+											<width>180</width>
+										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/DIV[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 										<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -1068,6 +1146,12 @@
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>103</x>
+												<y>10</y>
+												<height>24</height>
+												<width>180</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/DIV[1]/A[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -1149,6 +1233,12 @@
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>103</x>
+													<y>10</y>
+													<height>56</height>
+													<width>180</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/DIV[1]/A[1]/IMG[1]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -1233,6 +1323,12 @@
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>602</x>
+											<y>36</y>
+											<height>48</height>
+											<width>460</width>
+										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 										<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -1314,6 +1410,12 @@
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>0</x>
+												<y>0</y>
+												<height>0</height>
+												<width>0</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/A[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute">Show navigation</attribute>
@@ -1388,6 +1490,12 @@
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>0</x>
+												<y>0</y>
+												<height>0</height>
+												<width>0</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/A[2]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 											<attribute key="text" xsi:type="textAttribute">Hide navigation</attribute>
@@ -1462,6 +1570,12 @@
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>602</x>
+												<y>52</y>
+												<height>16</height>
+												<width>460</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -1539,6 +1653,12 @@
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>602</x>
+													<y>36</y>
+													<height>48</height>
+													<width>100</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[1]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -1616,6 +1736,12 @@
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>602</x>
+														<y>52</y>
+														<height>16</height>
+														<width>100</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[1]/SPAN[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -1693,6 +1819,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>602</x>
+															<y>36</y>
+															<height>48</height>
+															<width>92</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[1]/SPAN[1]/A[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute">For Testers</attribute>
@@ -1776,6 +1908,12 @@
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>602</x>
+														<y>84</y>
+														<height>0</height>
+														<width>222</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[1]/UL[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -1853,6 +1991,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>602</x>
+															<y>84</y>
+															<height>0</height>
+															<width>222</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[1]/UL[1]/LI[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -1930,6 +2074,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>602</x>
+																<y>84</y>
+																<height>44</height>
+																<width>222</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[1]/UL[1]/LI[1]/A[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">Automation without Programming</attribute>
@@ -2013,6 +2163,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>602</x>
+															<y>84</y>
+															<height>0</height>
+															<width>222</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[1]/UL[1]/LI[2]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -2090,6 +2246,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>602</x>
+																<y>84</y>
+																<height>44</height>
+																<width>105</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[1]/UL[1]/LI[2]/A[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">Robust Tests</attribute>
@@ -2173,6 +2335,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>602</x>
+															<y>84</y>
+															<height>0</height>
+															<width>222</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[1]/UL[1]/LI[3]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -2250,6 +2418,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>602</x>
+																<y>84</y>
+																<height>44</height>
+																<width>120</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[1]/UL[1]/LI[3]/A[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">Become a Hero</attribute>
@@ -2333,6 +2507,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>602</x>
+															<y>84</y>
+															<height>0</height>
+															<width>222</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[1]/UL[1]/LI[4]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -2410,6 +2590,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>602</x>
+																<y>84</y>
+																<height>44</height>
+																<width>167</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[1]/UL[1]/LI[4]/A[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">Perfect for Agile Testing</attribute>
@@ -2495,6 +2681,12 @@
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>706</x>
+													<y>36</y>
+													<height>48</height>
+													<width>126</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[2]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -2572,6 +2764,12 @@
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>706</x>
+														<y>52</y>
+														<height>16</height>
+														<width>126</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[2]/SPAN[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -2649,6 +2847,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>706</x>
+															<y>36</y>
+															<height>48</height>
+															<width>118</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[2]/SPAN[1]/A[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute">For Developers</attribute>
@@ -2732,6 +2936,12 @@
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>706</x>
+														<y>84</y>
+														<height>0</height>
+														<width>126</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[2]/UL[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -2809,6 +3019,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>706</x>
+															<y>84</y>
+															<height>0</height>
+															<width>126</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[2]/UL[1]/LI[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -2886,6 +3102,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>706</x>
+																<y>84</y>
+																<height>44</height>
+																<width>117</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">No more Brittle</attribute>
@@ -2969,6 +3191,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>706</x>
+															<y>84</y>
+															<height>0</height>
+															<width>126</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[2]/UL[1]/LI[2]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -3046,6 +3274,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>706</x>
+																<y>84</y>
+																<height>44</height>
+																<width>115</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">No more Flaky</attribute>
@@ -3129,6 +3363,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>706</x>
+															<y>84</y>
+															<height>0</height>
+															<width>126</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[2]/UL[1]/LI[3]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -3206,6 +3446,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>706</x>
+																<y>84</y>
+																<height>44</height>
+																<width>90</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[2]/UL[1]/LI[3]/A[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">Extensible</attribute>
@@ -3291,6 +3537,12 @@
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>836</x>
+													<y>36</y>
+													<height>48</height>
+													<width>117</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[3]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -3368,6 +3620,12 @@
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>836</x>
+														<y>52</y>
+														<height>16</height>
+														<width>117</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[3]/SPAN[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -3445,6 +3703,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>836</x>
+															<y>36</y>
+															<height>48</height>
+															<width>109</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[3]/SPAN[1]/A[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute">For Managers</attribute>
@@ -3528,6 +3792,12 @@
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>836</x>
+														<y>84</y>
+														<height>0</height>
+														<width>196</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[3]/UL[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -3605,6 +3875,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>836</x>
+															<y>84</y>
+															<height>0</height>
+															<width>196</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[3]/UL[1]/LI[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -3682,6 +3958,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>836</x>
+																<y>84</y>
+																<height>44</height>
+																<width>89</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">Audit-safe</attribute>
@@ -3765,6 +4047,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>836</x>
+															<y>84</y>
+															<height>0</height>
+															<width>196</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[3]/UL[1]/LI[2]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -3842,6 +4130,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>836</x>
+																<y>84</y>
+																<height>44</height>
+																<width>196</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">Reduced Risk, Efforts, Costs</attribute>
@@ -3925,6 +4219,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>836</x>
+															<y>84</y>
+															<height>0</height>
+															<width>196</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[3]/UL[1]/LI[3]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -4002,6 +4302,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>836</x>
+																<y>84</y>
+																<height>44</height>
+																<width>172</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[3]/UL[1]/LI[3]/A[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">Full Support and Service</attribute>
@@ -4087,6 +4393,12 @@
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>957</x>
+													<y>36</y>
+													<height>48</height>
+													<width>67</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[4]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -4164,6 +4476,12 @@
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>957</x>
+														<y>52</y>
+														<height>16</height>
+														<width>67</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[4]/SPAN[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -4241,6 +4559,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>957</x>
+															<y>36</y>
+															<height>48</height>
+															<width>59</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[4]/SPAN[1]/A[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute">About</attribute>
@@ -4324,6 +4648,12 @@
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>957</x>
+														<y>84</y>
+														<height>0</height>
+														<width>117</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[4]/UL[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -4401,6 +4731,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>957</x>
+															<y>84</y>
+															<height>0</height>
+															<width>117</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[4]/UL[1]/LI[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -4478,6 +4814,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>957</x>
+																<y>84</y>
+																<height>44</height>
+																<width>56</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[4]/UL[1]/LI[1]/A[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">Blog</attribute>
@@ -4561,6 +4903,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>957</x>
+															<y>84</y>
+															<height>0</height>
+															<width>117</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[4]/UL[1]/LI[2]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -4638,6 +4986,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>957</x>
+																<y>84</y>
+																<height>44</height>
+																<width>117</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[4]/UL[1]/LI[2]/A[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">Documentation</attribute>
@@ -4721,6 +5075,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>957</x>
+															<y>84</y>
+															<height>0</height>
+															<width>117</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[4]/UL[1]/LI[3]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -4798,6 +5158,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>957</x>
+																<y>84</y>
+																<height>44</height>
+																<width>76</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[4]/UL[1]/LI[3]/A[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">Support</attribute>
@@ -4883,6 +5249,12 @@
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>1027</x>
+													<y>36</y>
+													<height>48</height>
+													<width>35</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[5]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -4960,6 +5332,12 @@
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>1027</x>
+														<y>36</y>
+														<height>48</height>
+														<width>35</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[5]/A[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -5041,6 +5419,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>1038</x>
+															<y>52</y>
+															<height>16</height>
+															<width>0</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[5]/A[1]/I[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -5123,6 +5507,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>1043</x>
+															<y>52</y>
+															<height>16</height>
+															<width>8</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[5]/A[1]/SPAN[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -5206,6 +5596,12 @@
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>902</x>
+														<y>79</y>
+														<height>38</height>
+														<width>160</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[5]/UL[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -5287,6 +5683,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>903</x>
+															<y>85</y>
+															<height>0</height>
+															<width>158</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[5]/UL[1]/LI[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -5364,6 +5766,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>903</x>
+																<y>85</y>
+																<height>42</height>
+																<width>116</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[5]/UL[1]/LI[1]/A[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -5445,6 +5853,12 @@
 													<containedComponents>
 														<identifyingAttributes>
 															<attributes>
+																<attribute key="outline" xsi:type="outlineAttribute">
+																	<x>923</x>
+																	<y>99</y>
+																	<height>12</height>
+																	<width>18</width>
+																</attribute>
 																<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[5]/UL[1]/LI[1]/A[1]/IMG[1]</attribute>
 																<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 																<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -5529,6 +5943,12 @@
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>903</x>
+															<y>80</y>
+															<height>31</height>
+															<width>158</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[5]/UL[1]/LI[2]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -5610,6 +6030,12 @@
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>923</x>
+																<y>97</y>
+																<height>12</height>
+																<width>18</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]/UL[1]/LI[5]/UL[1]/LI[2]/IMG[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -5696,6 +6122,12 @@
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SCRIPT[10]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -5774,6 +6206,12 @@
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SCRIPT[11]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">11</attribute>
 							<attribute key="text" xsi:type="textAttribute">console.log(&quot;retest rocks!&quot;);
@@ -5854,6 +6292,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SCRIPT[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -5932,6 +6376,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SCRIPT[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="text" xsi:type="textAttribute">window.jQuery || document.write('&lt;script src=&quot;https://www.retest.de/js/jquery-1.10.2.min.js&quot;>&lt;\/script>')</attribute>
@@ -6010,6 +6460,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SCRIPT[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -6088,6 +6544,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SCRIPT[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -6166,6 +6628,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SCRIPT[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -6244,6 +6712,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SCRIPT[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -6322,6 +6796,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SCRIPT[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -6400,6 +6880,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SCRIPT[8]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -6478,6 +6964,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SCRIPT[9]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -6556,6 +7048,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>96</y>
+								<height>2462</height>
+								<width>1185</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -6637,6 +7135,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>875</x>
+									<y>106</y>
+									<height>0</height>
+									<width>300</width>
+								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -6719,6 +7223,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>96</y>
+									<height>2462</height>
+									<width>1185</width>
+								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 								<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -6800,6 +7310,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 						<containedComponents>
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>0</x>
+										<y>96</y>
+										<height>2462</height>
+										<width>1185</width>
+									</attribute>
 									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -6881,6 +7397,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>0</x>
+											<y>96</y>
+											<height>633</height>
+											<width>1185</width>
+										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 										<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -6962,6 +7484,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>83</x>
+												<y>96</y>
+												<height>633</height>
+												<width>1020</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -7039,6 +7567,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>134</x>
+													<y>126</y>
+													<height>92</height>
+													<width>918</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[1]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -7120,6 +7654,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>134</x>
+														<y>126</y>
+														<height>92</height>
+														<width>918</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[1]/H1[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute">Has traditional GUI test automation failed you</attribute>
@@ -7197,6 +7737,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>899</x>
+															<y>126</y>
+															<height>46</height>
+															<width>13</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[1]/H1[1]/SPAN[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute">?</attribute>
@@ -7275,6 +7821,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>197</x>
+															<y>172</y>
+															<height>46</height>
+															<width>107</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[1]/H1[1]/SPAN[2]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 														<attribute key="text" xsi:type="textAttribute">robust</attribute>
@@ -7353,6 +7905,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>484</x>
+															<y>172</y>
+															<height>46</height>
+															<width>59</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[1]/H1[1]/SPAN[3]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 														<attribute key="text" xsi:type="textAttribute">less</attribute>
@@ -7431,6 +7989,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>706</x>
+															<y>172</y>
+															<height>46</height>
+															<width>87</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[1]/H1[1]/SPAN[4]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 														<attribute key="text" xsi:type="textAttribute">easily</attribute>
@@ -7509,6 +8073,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>980</x>
+															<y>172</y>
+															<height>46</height>
+															<width>9</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[1]/H1[1]/SPAN[5]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 														<attribute key="text" xsi:type="textAttribute">.</attribute>
@@ -7589,6 +8159,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>508</x>
+													<y>254</y>
+													<height>388</height>
+													<width>595</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[2]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -7674,6 +8250,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>528</x>
+														<y>260</y>
+														<height>17</height>
+														<width>0</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[2]/BR[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -7756,6 +8338,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>528</x>
+														<y>290</y>
+														<height>17</height>
+														<width>0</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[2]/BR[2]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -7838,6 +8426,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>528</x>
+														<y>320</y>
+														<height>17</height>
+														<width>0</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[2]/BR[3]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -7920,6 +8514,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>528</x>
+														<y>344</y>
+														<height>288</height>
+														<width>514</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[2]/IFRAME[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -8003,6 +8603,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>83</x>
+													<y>254</y>
+													<height>408</height>
+													<width>425</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[3]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -8088,6 +8694,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>133</x>
+														<y>266</y>
+														<height>396</height>
+														<width>323</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[3]/P[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -8169,6 +8781,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>457</x>
+															<y>310</y>
+															<height>20</height>
+															<width>0</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[3]/P[1]/BR[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -8251,6 +8869,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>0</x>
+															<y>0</y>
+															<height>0</height>
+															<width>0</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[3]/P[1]/BR[2]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -8333,6 +8957,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>199</x>
+															<y>274</y>
+															<height>56</height>
+															<width>258</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[3]/P[1]/EM[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute">Have you had enough</attribute>
@@ -8414,6 +9044,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>457</x>
+																<y>274</y>
+																<height>20</height>
+																<width>0</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[3]/P[1]/EM[1]/BR[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -8497,6 +9133,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>134</x>
+															<y>598</y>
+															<height>20</height>
+															<width>205</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[3]/P[1]/EM[2]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 														<attribute key="text" xsi:type="textAttribute">Use an artificially intelligent</attribute>
@@ -8579,6 +9221,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>197</x>
+															<y>598</y>
+															<height>56</height>
+															<width>260</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[3]/P[1]/EM[3]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 														<attribute key="text" xsi:type="textAttribute">to fully automatically test your application.</attribute>
@@ -8661,6 +9309,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>447</x>
+															<y>310</y>
+															<height>20</height>
+															<width>9</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[3]/P[1]/SPAN[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute">?</attribute>
@@ -8743,6 +9397,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>343</x>
+															<y>598</y>
+															<height>20</height>
+															<width>60</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[1]/DIV[1]/DIV[3]/P[1]/SPAN[2]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 														<attribute key="text" xsi:type="textAttribute">monkey</attribute>
@@ -8829,6 +9489,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>0</x>
+											<y>729</y>
+											<height>617</height>
+											<width>1185</width>
+										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 										<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -8910,6 +9576,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>83</x>
+												<y>729</y>
+												<height>617</height>
+												<width>1020</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -8987,6 +9659,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>134</x>
+													<y>759</y>
+													<height>90</height>
+													<width>918</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[1]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -9068,6 +9746,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>134</x>
+														<y>759</y>
+														<height>90</height>
+														<width>918</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[1]/H2[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -9149,6 +9833,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>482</x>
+															<y>759</y>
+															<height>90</height>
+															<width>90</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[1]/H2[1]/IMG[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -9231,6 +9921,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>541</x>
+															<y>810</y>
+															<height>35</height>
+															<width>68</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[1]/H2[1]/SPAN[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute">Less</attribute>
@@ -9313,6 +10009,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>695</x>
+															<y>810</y>
+															<height>35</height>
+															<width>8</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[1]/H2[1]/SPAN[2]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 														<attribute key="text" xsi:type="textAttribute">.</attribute>
@@ -9397,6 +10099,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>83</x>
+													<y>885</y>
+													<height>430</height>
+													<width>425</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[2]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -9482,6 +10190,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>103</x>
+														<y>885</y>
+														<height>430</height>
+														<width>309</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[2]/IMG[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -9565,6 +10279,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>508</x>
+													<y>885</y>
+													<height>408</height>
+													<width>595</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[3]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -9650,6 +10370,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>528</x>
+														<y>897</y>
+														<height>396</height>
+														<width>499</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[3]/DIV[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -9731,6 +10457,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>567</x>
+															<y>897</y>
+															<height>396</height>
+															<width>420</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[3]/DIV[1]/P[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -9812,6 +10544,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>0</x>
+																<y>0</y>
+																<height>0</height>
+																<width>0</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[3]/DIV[1]/P[1]/BR[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -9894,6 +10632,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>567</x>
+																<y>905</y>
+																<height>20</height>
+																<width>217</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[3]/DIV[1]/P[1]/EM[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">No need to create assertions</attribute>
@@ -9976,6 +10720,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>785</x>
+																<y>905</y>
+																<height>20</height>
+																<width>5</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[3]/DIV[1]/P[1]/SPAN[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">:</attribute>
@@ -10058,6 +10808,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>734</x>
+																<y>977</y>
+																<height>20</height>
+																<width>19</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[3]/DIV[1]/P[1]/SPAN[2]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 															<attribute key="text" xsi:type="textAttribute">25</attribute>
@@ -10140,6 +10896,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>878</x>
+																<y>977</y>
+																<height>20</height>
+																<width>44</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/DIV[3]/DIV[1]/P[1]/SPAN[3]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 															<attribute key="text" xsi:type="textAttribute">single</attribute>
@@ -10227,6 +10989,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>0</x>
+											<y>1346</y>
+											<height>617</height>
+											<width>1185</width>
+										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 										<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -10308,6 +11076,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>83</x>
+												<y>1346</y>
+												<height>617</height>
+												<width>1020</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -10385,6 +11159,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>134</x>
+													<y>1376</y>
+													<height>90</height>
+													<width>918</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[1]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -10466,6 +11246,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>134</x>
+														<y>1376</y>
+														<height>90</height>
+														<width>918</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[1]/H2[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -10547,6 +11333,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>468</x>
+															<y>1376</y>
+															<height>90</height>
+															<width>90</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[1]/H2[1]/IMG[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -10629,6 +11421,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>527</x>
+															<y>1427</y>
+															<height>35</height>
+															<width>103</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[1]/H2[1]/SPAN[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute">Robust</attribute>
@@ -10711,6 +11509,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>709</x>
+															<y>1427</y>
+															<height>35</height>
+															<width>8</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[1]/H2[1]/SPAN[2]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 														<attribute key="text" xsi:type="textAttribute">.</attribute>
@@ -10795,6 +11599,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>83</x>
+													<y>1502</y>
+													<height>408</height>
+													<width>510</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[2]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -10880,6 +11690,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>103</x>
+														<y>1514</y>
+														<height>396</height>
+														<width>470</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[2]/DIV[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -10961,6 +11777,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>140</x>
+															<y>1514</y>
+															<height>396</height>
+															<width>395</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[2]/DIV[1]/P[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute">With traditional GUI test automation, you have to decide with which attribute you want to identify a component.
@@ -11047,6 +11869,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>535</x>
+																<y>1810</y>
+																<height>20</height>
+																<width>0</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[2]/DIV[1]/P[1]/BR[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -11129,6 +11957,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>187</x>
+																<y>1846</y>
+																<height>56</height>
+																<width>348</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[2]/DIV[1]/P[1]/EM[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">retest compares the whole picture instead of a single piece of the puzzle.</attribute>
@@ -11214,6 +12048,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>593</x>
+													<y>1502</y>
+													<height>430</height>
+													<width>510</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[3]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -11299,6 +12139,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>613</x>
+														<y>1708</y>
+														<height>17</height>
+														<width>0</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[3]/BR[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -11381,6 +12227,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>613</x>
+														<y>1502</y>
+														<height>200</height>
+														<width>365</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[3]/IMG[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -11463,6 +12315,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>613</x>
+														<y>1732</y>
+														<height>200</height>
+														<width>400</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[3]/IMG[2]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -11548,6 +12406,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>0</x>
+											<y>1963</y>
+											<height>595</height>
+											<width>1185</width>
+										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 										<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -11629,6 +12493,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>83</x>
+												<y>1963</y>
+												<height>595</height>
+												<width>1020</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -11706,6 +12576,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>134</x>
+													<y>1993</y>
+													<height>90</height>
+													<width>918</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[1]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -11787,6 +12663,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>134</x>
+														<y>1993</y>
+														<height>90</height>
+														<width>918</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[1]/H2[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -11868,6 +12750,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>373</x>
+															<y>1993</y>
+															<height>90</height>
+															<width>90</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[1]/H2[1]/IMG[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -11950,6 +12838,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>583</x>
+															<y>2044</y>
+															<height>35</height>
+															<width>113</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[1]/H2[1]/SPAN[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute">monkey</attribute>
@@ -12032,6 +12926,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>803</x>
+															<y>2044</y>
+															<height>35</height>
+															<width>8</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[1]/H2[1]/SPAN[2]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 														<attribute key="text" xsi:type="textAttribute">.</attribute>
@@ -12116,6 +13016,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>83</x>
+													<y>2119</y>
+													<height>337</height>
+													<width>425</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[2]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -12201,6 +13107,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>103</x>
+														<y>2125</y>
+														<height>17</height>
+														<width>0</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[2]/BR[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -12283,6 +13195,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>103</x>
+														<y>2155</y>
+														<height>17</height>
+														<width>0</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[2]/BR[2]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -12365,6 +13283,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>103</x>
+														<y>2185</y>
+														<height>17</height>
+														<width>0</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[2]/BR[3]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -12447,6 +13371,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>88</x>
+														<y>2209</y>
+														<height>247</height>
+														<width>400</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[2]/IMG[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -12534,6 +13464,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>508</x>
+													<y>2119</y>
+													<height>408</height>
+													<width>595</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[3]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -12619,6 +13555,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents>
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="outline" xsi:type="outlineAttribute">
+														<x>528</x>
+														<y>2131</y>
+														<height>396</height>
+														<width>499</width>
+													</attribute>
 													<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[3]/DIV[1]</attribute>
 													<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 													<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -12700,6 +13642,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents>
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>567</x>
+															<y>2131</y>
+															<height>396</height>
+															<width>420</width>
+														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[3]/DIV[1]/P[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 														<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -12781,6 +13729,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>779</x>
+																<y>2139</y>
+																<height>20</height>
+																<width>0</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[3]/DIV[1]/P[1]/BR[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -12863,6 +13817,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>636</x>
+																<y>2463</y>
+																<height>20</height>
+																<width>0</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[3]/DIV[1]/P[1]/BR[2]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 															<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -12945,6 +13905,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>567</x>
+																<y>2139</y>
+																<height>20</height>
+																<width>212</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[3]/DIV[1]/P[1]/EM[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">The future of testing is in AI.</attribute>
@@ -13027,6 +13993,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>567</x>
+																<y>2499</y>
+																<height>20</height>
+																<width>204</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[3]/DIV[1]/P[1]/EM[2]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 															<attribute key="text" xsi:type="textAttribute">The future of testing is now</attribute>
@@ -13109,6 +14081,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<containedComponents>
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>772</x>
+																<y>2499</y>
+																<height>20</height>
+																<width>5</width>
+															</attribute>
 															<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[1]/DIV[2]/UL[1]/LI[4]/DIV[1]/DIV[3]/DIV[1]/P[1]/SPAN[1]</attribute>
 															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 															<attribute key="text" xsi:type="textAttribute">.</attribute>
@@ -13199,6 +14177,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>2558</y>
+								<height>408</height>
+								<width>1185</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -13280,6 +14264,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>83</x>
+									<y>2618</y>
+									<height>306</height>
+									<width>1020</width>
+								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[2]/DIV[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -13361,6 +14351,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 						<containedComponents>
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>83</x>
+										<y>2618</y>
+										<height>0</height>
+										<width>1020</width>
+									</attribute>
 									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[2]/DIV[1]/DIV[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -13442,6 +14438,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>83</x>
+											<y>2618</y>
+											<height>306</height>
+											<width>340</width>
+										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[2]/DIV[1]/DIV[1]/DIV[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 										<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -13527,6 +14529,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>103</x>
+												<y>2618</y>
+												<height>30</height>
+												<width>300</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[2]/DIV[1]/DIV[1]/DIV[1]/H2[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute">Recording tests by users.</attribute>
@@ -13609,6 +14617,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>103</x>
+												<y>2654</y>
+												<height>240</height>
+												<width>300</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[2]/DIV[1]/DIV[1]/DIV[1]/P[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute">Modern test capturing tools are so complex, professional testers need weeks of training.
@@ -13691,6 +14705,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents>
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="outline" xsi:type="outlineAttribute">
+													<x>228</x>
+													<y>2750</y>
+													<height>17</height>
+													<width>0</width>
+												</attribute>
 												<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[2]/DIV[1]/DIV[1]/DIV[1]/P[1]/BR[1]</attribute>
 												<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 												<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -13775,6 +14795,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>422</x>
+											<y>2618</y>
+											<height>246</height>
+											<width>340</width>
+										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[2]/DIV[1]/DIV[1]/DIV[2]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 										<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -13860,6 +14886,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>442</x>
+												<y>2618</y>
+												<height>30</height>
+												<width>300</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[2]/DIV[1]/DIV[1]/DIV[2]/H2[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute">No more brittle tests.</attribute>
@@ -13942,6 +14974,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>442</x>
+												<y>2654</y>
+												<height>180</height>
+												<width>300</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[2]/DIV[1]/DIV[1]/DIV[2]/P[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute">Our innovative new approach to GUI testing (patent pending)
@@ -14027,6 +15065,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>762</x>
+											<y>2618</y>
+											<height>276</height>
+											<width>340</width>
+										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[2]/DIV[1]/DIV[1]/DIV[3]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 										<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -14112,6 +15156,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>782</x>
+												<y>2618</y>
+												<height>30</height>
+												<width>300</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[2]/DIV[1]/DIV[1]/DIV[3]/H2[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute">Maintenance with a single click.</attribute>
@@ -14194,6 +15244,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<containedComponents>
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>782</x>
+												<y>2654</y>
+												<height>210</height>
+												<width>300</width>
+											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SECTION[2]/DIV[1]/DIV[1]/DIV[3]/P[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute">The more tests you have, the more test maintenance becomes a burden.
@@ -14285,6 +15341,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 			<containedComponents>
 				<identifyingAttributes>
 					<attributes>
+						<attribute key="outline" xsi:type="outlineAttribute">
+							<x>0</x>
+							<y>0</y>
+							<height>0</height>
+							<width>0</width>
+						</attribute>
 						<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 						<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -14358,6 +15420,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/LINK[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -14432,6 +15500,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/LINK[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -14506,6 +15580,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/LINK[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -14580,6 +15660,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/LINK[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -14654,6 +15740,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/LINK[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -14728,6 +15820,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/LINK[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -14802,6 +15900,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/LINK[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -14876,6 +15980,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/LINK[8]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -14950,6 +16060,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[10]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -15024,6 +16140,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[11]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">11</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -15098,6 +16220,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[12]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">12</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -15172,6 +16300,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[13]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">13</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -15246,6 +16380,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[14]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">14</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -15320,6 +16460,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[15]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">15</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -15394,6 +16540,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[16]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">16</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -15468,6 +16620,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[17]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">17</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -15542,6 +16700,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -15616,6 +16780,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -15690,6 +16860,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -15764,6 +16940,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -15838,6 +17020,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -15912,6 +17100,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -15986,6 +17180,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -16060,6 +17260,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[8]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -16134,6 +17340,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/META[9]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
 							<attribute key="text" xsi:type="textAttribute"></attribute>
@@ -16208,6 +17420,12 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/TITLE[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute">retest - Java Swing GUI Testing</attribute>
