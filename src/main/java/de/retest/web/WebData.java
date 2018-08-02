@@ -17,7 +17,7 @@ public class WebData {
 	}
 
 	/**
-	 * @throws IllegalStateException
+	 * @throws ConversionException
 	 *             if the value for the given key is not a String.
 	 */
 	public String getAsString( final String key ) {
@@ -28,7 +28,7 @@ public class WebData {
 		if ( result instanceof String ) {
 			return normalize( (String) result );
 		}
-		throw new RuntimeException(
+		throw new ConversionException(
 				"Attribute value for " + key + " was of " + result.getClass() + ", not of type String." );
 	}
 
@@ -81,10 +81,10 @@ public class WebData {
 				return Math.toIntExact( Math.round( (Long) value ) );
 			}
 		} catch ( final Exception e ) {
-			throw new IllegalStateException(
+			throw new ConversionException(
 					"Converting " + value + " of " + value.getClass() + " to int caused an exception!", e );
 		}
-		throw new IllegalStateException( "Don't know how to convert " + value + " of "
+		throw new ConversionException( "Don't know how to convert " + value + " of "
 				+ (value != null ? value.getClass() : "null") + " to int!" );
 	}
 }
