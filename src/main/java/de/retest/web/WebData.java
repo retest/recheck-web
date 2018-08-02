@@ -16,7 +16,11 @@ public class WebData {
 		this.wrappedData = wrappedData;
 	}
 
-	public String get( final String key ) {
+	/**
+	 * @throws IllegalStateException
+	 *             if the value for the given key is not a String.
+	 */
+	public String getAsString( final String key ) {
 		final Object result = wrappedData.get( key );
 		if ( result == null ) {
 			return null;

@@ -49,8 +49,8 @@ public class WebElementPeer {
 		final List<Attribute> attributes = new ArrayList<>();
 		attributes.add( new PathAttribute( Path.fromString( path ) ) );
 		attributes.add( new SuffixAttribute( path.substring( path.lastIndexOf( '[' ) + 1, path.lastIndexOf( ']' ) ) ) );
-		attributes.add( new StringAttribute( "type", webData.get( "tagName" ) ) );
-		attributes.add( new TextAttribute( "text", webData.get( "text" ) ) );
+		attributes.add( new StringAttribute( "type", webData.getAsString( "tagName" ) ) );
+		attributes.add( new TextAttribute( "text", webData.getAsString( "text" ) ) );
 		final Rectangle outline = webData.getOutline();
 		if ( outline != null ) {
 			attributes.add( new OutlineAttribute( outline ) );
@@ -58,7 +58,7 @@ public class WebElementPeer {
 		final List<String> userDefinedAttributes =
 				new ArrayList<>( AttributesProvider.getInstance().getIdentifyingAttributes() );
 		for ( final String attribute : userDefinedAttributes ) {
-			final String attributeValue = webData.get( attribute );
+			final String attributeValue = webData.getAsString( attribute );
 			if ( attributeValue != null ) {
 				attributes.add( new StringAttribute( attribute, attributeValue ) );
 			}
@@ -69,7 +69,7 @@ public class WebElementPeer {
 	protected MutableAttributes retrieveStateAttributes() {
 		final MutableAttributes state = new MutableAttributes();
 		for ( final String attribute : AttributesProvider.getInstance().getAttributes() ) {
-			final String attributeValue = webData.get( attribute );
+			final String attributeValue = webData.getAsString( attribute );
 			if ( attributeValue != null && !isDefault( attributeValue ) ) {
 				state.put( attribute, attributeValue );
 			}
