@@ -10,14 +10,14 @@ public class WebData {
 
 	private static final Logger logger = LoggerFactory.getLogger( WebData.class );
 
-	private final Map<String, Object> webData;
+	private final Map<String, Object> wrappedData;
 
-	public WebData( final Map<String, Object> webData ) {
-		this.webData = webData;
+	public WebData( final Map<String, Object> wrappedData ) {
+		this.wrappedData = wrappedData;
 	}
 
 	public String get( final String key ) {
-		final Object result = webData.get( key );
+		final Object result = wrappedData.get( key );
 		if ( result == null ) {
 			return null;
 		}
@@ -40,15 +40,16 @@ public class WebData {
 	}
 
 	public Rectangle getOutline() {
-		if ( webData.get( AttributesConfig.X ) == null || webData.get( AttributesConfig.Y ) == null //
-				|| webData.get( AttributesConfig.WIDTH ) == null || webData.get( AttributesConfig.HEIGHT ) == null ) {
+		if ( wrappedData.get( AttributesConfig.X ) == null || wrappedData.get( AttributesConfig.Y ) == null //
+				|| wrappedData.get( AttributesConfig.WIDTH ) == null
+				|| wrappedData.get( AttributesConfig.HEIGHT ) == null ) {
 			return null;
 		}
 		try {
-			final int x = toInt( webData.get( AttributesConfig.X ) );
-			final int y = toInt( webData.get( AttributesConfig.Y ) );
-			final int width = toInt( webData.get( AttributesConfig.WIDTH ) );
-			final int height = toInt( webData.get( AttributesConfig.HEIGHT ) );
+			final int x = toInt( wrappedData.get( AttributesConfig.X ) );
+			final int y = toInt( wrappedData.get( AttributesConfig.Y ) );
+			final int width = toInt( wrappedData.get( AttributesConfig.WIDTH ) );
+			final int height = toInt( wrappedData.get( AttributesConfig.HEIGHT ) );
 			return new Rectangle( x, y, width, height );
 		} catch ( final Exception e ) {
 			logger.error( "Exception retrieving outline: ", e );
