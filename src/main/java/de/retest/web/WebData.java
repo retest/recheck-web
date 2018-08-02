@@ -50,10 +50,10 @@ public class WebData {
 			return null;
 		}
 		try {
-			final int x = toInt( wrappedData.get( AttributesConfig.X ) );
-			final int y = toInt( wrappedData.get( AttributesConfig.Y ) );
-			final int width = toInt( wrappedData.get( AttributesConfig.WIDTH ) );
-			final int height = toInt( wrappedData.get( AttributesConfig.HEIGHT ) );
+			final int x = getAsInt( AttributesConfig.X );
+			final int y = getAsInt( AttributesConfig.Y );
+			final int width = getAsInt( AttributesConfig.WIDTH );
+			final int height = getAsInt( AttributesConfig.HEIGHT );
 			return new Rectangle( x, y, width, height );
 		} catch ( final Exception e ) {
 			logger.error( "Exception retrieving outline: ", e );
@@ -61,19 +61,30 @@ public class WebData {
 		return null;
 	}
 
-	private int toInt( final Object value ) throws NumberFormatException {
-		if ( value instanceof Integer ) {
-			return (Integer) value;
+	/**
+	 * @throws IllegalStateException
+	 *             if the value for the given key cannot be converted to integer.
+	 */
+	public int getAsInt( final String key ) {
+		final Object value = wrappedData.get( key );
+		try {
+			if ( value instanceof Integer ) {
+				return (Integer) value;
+			}
+			if ( value instanceof String ) {
+				return Integer.parseInt( (String) value );
+			}
+			if ( value instanceof Double ) {
+				return Math.toIntExact( Math.round( (Double) value ) );
+			}
+			if ( value instanceof Long ) {
+				return Math.toIntExact( Math.round( (Long) value ) );
+			}
+		} catch ( final Exception e ) {
+			throw new IllegalStateException(
+					"Converting " + value + " of " + value.getClass() + " to int caused an exception!", e );
 		}
-		if ( value instanceof String ) {
-			return Integer.parseInt( (String) value );
-		}
-		if ( value instanceof Double ) {
-			return Math.toIntExact( Math.round( (Double) value ) );
-		}
-		if ( value instanceof Long ) {
-			return Math.toIntExact( Math.round( (Long) value ) );
-		}
-		throw new IllegalArgumentException( "Don't know how to convert a " + value.getClass() + " to int!" );
+		throw new IllegalStateException( "Don't know how to convert " + value + " of "
+				+ (value != null ? value.getClass() : "null") + " to int!" );
 	}
 }
