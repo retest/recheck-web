@@ -35,7 +35,7 @@ class RecheckSeleniumAdapterTest {
 
 	@Test
 	void convertToPeers_should_result_in_valid_tree() throws Exception {
-		final Map<String, Map<String, String>> input = new HashMap<>();
+		final Map<String, Map<String, Object>> input = new HashMap<>();
 		input.put( "//HTML[1]/BODY[1]", toHashMap( "BODY" ) );
 		input.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]", toHashMap( "DIV" ) );
 		input.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]", toHashMap( "DIV" ) );
@@ -58,8 +58,8 @@ class RecheckSeleniumAdapterTest {
 		assertThat( diffs ).isEmpty();
 	}
 
-	private Map<String, String> toHashMap( final String tagName ) {
-		final Map<String, String> result = new HashMap<>();
+	private Map<String, Object> toHashMap( final String tagName ) {
+		final Map<String, Object> result = new HashMap<>();
 		result.put( "tagName", tagName );
 		return result;
 	}

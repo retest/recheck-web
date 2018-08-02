@@ -1,7 +1,6 @@
 package de.retest.web;
 
 import java.awt.image.BufferedImage;
-import java.util.Map;
 
 import de.retest.ui.descriptors.IdentifyingAttributes;
 import de.retest.ui.descriptors.MutableAttributes;
@@ -15,7 +14,7 @@ public class RootElementPeer extends WebElementPeer {
 	private final String title;
 	private final BufferedImage screenshot;
 
-	public RootElementPeer( final Map<String, String> webData, final String path, final String title,
+	public RootElementPeer( final WebData webData, final String path, final String title,
 			final BufferedImage screenshot ) {
 		super( webData, path );
 		this.screenshot = screenshot;
