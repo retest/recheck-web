@@ -97,8 +97,20 @@ public class WebElementPeer {
 		return null;
 	}
 
-	private int toInt( final String value ) {
-		return Integer.parseInt( value );
+	private int toInt( final Object value ) {
+		if ( value instanceof Integer ) {
+			return (Integer) value;
+		}
+		if ( value instanceof String ) {
+			return Integer.parseInt( (String) value );
+		}
+		if ( value instanceof Double ) {
+			return Math.toIntExact( Math.round( (Double) value ) );
+		}
+		if ( value instanceof Long ) {
+			return Math.toIntExact( Math.round( (Long) value ) );
+		}
+		throw new IllegalArgumentException( "Don't know how to convert a " + value.getClass() + " to int!" );
 	}
 
 	protected MutableAttributes retrieveStateAttributes() {
