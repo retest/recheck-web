@@ -48,5 +48,6 @@ class WebElementPeerTest {
 	void normalize_should_remove_apostrophe() {
 		assertThat( WebElementPeer.normalize( null ) ).isEqualTo( null );
 		assertThat( WebElementPeer.normalize( "\"Times New Roman\"" ) ).isEqualTo( "Times New Roman" );
+		assertThat( WebElementPeer.normalize( "\" Times New Roman \"" ) ).isEqualTo( "Times New Roman" );
 	}
 }

@@ -109,10 +109,14 @@ public class WebElementPeer {
 	}
 
 	protected static String normalize( final String value ) {
-		if ( value != null && value.startsWith( "\"" ) && value.endsWith( "\"" ) ) {
-			return value.substring( 1, value.length() - 1 );
+		if ( value == null ) {
+			return value;
 		}
-		return value;
+		String result = value;
+		if ( result.startsWith( "\"" ) && result.endsWith( "\"" ) ) {
+			result = result.substring( 1, result.length() - 1 );
+		}
+		return result.trim();
 	}
 
 	private boolean isDefault( final String attributeValue ) {
