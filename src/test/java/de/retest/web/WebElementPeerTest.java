@@ -44,4 +44,10 @@ class WebElementPeerTest {
 		assertThat( rectangle.getHeight() ).isEqualTo( 4.0 );
 	}
 
+	@Test
+	void normalize_should_remove_apostrophe() {
+		assertThat( WebElementPeer.normalize( null ) ).isEqualTo( null );
+		assertThat( WebElementPeer.normalize( "\"Times New Roman\"" ) ).isEqualTo( "Times New Roman" );
+		assertThat( WebElementPeer.normalize( "\" Times New Roman \"" ) ).isEqualTo( "Times New Roman" );
+	}
 }

@@ -100,12 +100,23 @@ public class WebElementPeer {
 	protected MutableAttributes retrieveStateAttributes() {
 		final MutableAttributes state = new MutableAttributes();
 		for ( final String attribute : AttributesProvider.getInstance().getAttributes() ) {
-			final String attributeValue = webData.get( attribute );
+			final String attributeValue = normalize( webData.get( attribute ) );
 			if ( attributeValue != null && !isDefault( attributeValue ) ) {
 				state.put( attribute, attributeValue );
 			}
 		}
 		return state;
+	}
+
+	protected static String normalize( final String value ) {
+		if ( value == null ) {
+			return value;
+		}
+		String result = value;
+		if ( result.startsWith( "\"" ) && result.endsWith( "\"" ) ) {
+			result = result.substring( 1, result.length() - 1 );
+		}
+		return result.trim();
 	}
 
 	private boolean isDefault( final String attributeValue ) {
