@@ -40,8 +40,20 @@ public class WebData {
 		if ( result.startsWith( "\"" ) && result.endsWith( "\"" ) ) {
 			result = result.substring( 1, result.length() - 1 );
 		}
-		result = result.replaceAll( ",", "" );
+		result = normalizeComma( result );
 		return result.trim();
+	}
+
+	private static String normalizeComma( final String input ) {
+		if ( !input.contains( "," ) ) {
+			return input;
+		}
+		final String[] parts = input.split( "," );
+		final StringBuffer result = new StringBuffer( parts[0] );
+		for ( int idx = 1; idx < parts.length; idx++ ) {
+			result.append( " " ).append( parts[idx].trim() );
+		}
+		return result.toString();
 	}
 
 	public Rectangle getOutline() {

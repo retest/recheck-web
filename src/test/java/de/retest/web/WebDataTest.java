@@ -51,6 +51,6 @@ class WebDataTest {
 	void normalize_should_remove_comma() {
 		// e.g. the clip attribute comes in flavors
 		assertThat( WebData.normalize( "rect(0px, 0px, 0px, 0px)" ) ).isEqualTo( "rect(0px 0px 0px 0px)" );
-
+		assertThat( WebData.normalize( "rect(0px,0px,0px,0px)" ) ).isEqualTo( "rect(0px 0px 0px 0px)" );
 	}
 }
