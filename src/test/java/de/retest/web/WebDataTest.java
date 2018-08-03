@@ -33,9 +33,24 @@ class WebDataTest {
 	}
 
 	@Test
-	void normalize_should_remove_apostrophe() {
-		assertThat( WebData.normalize( null ) ).isEqualTo( null );
-		assertThat( WebData.normalize( "\"Times New Roman\"" ) ).isEqualTo( "Times New Roman" );
+	void normalize_should_trim() {
 		assertThat( WebData.normalize( "\" Times New Roman \"" ) ).isEqualTo( "Times New Roman" );
+	}
+
+	@Test
+	void normalize_should_be_null_safe() {
+		assertThat( WebData.normalize( null ) ).isEqualTo( null );
+	}
+
+	@Test
+	void normalize_should_remove_apostrophe() {
+		assertThat( WebData.normalize( "\"Times New Roman\"" ) ).isEqualTo( "Times New Roman" );
+	}
+
+	@Test
+	void normalize_should_remove_comma() {
+		// e.g. the clip attribute comes in flavors
+		assertThat( WebData.normalize( "rect(0px, 0px, 0px, 0px)" ) ).isEqualTo( "rect(0px 0px 0px 0px)" );
+		assertThat( WebData.normalize( "rect(0px,0px,0px,0px)" ) ).isEqualTo( "rect(0px 0px 0px 0px)" );
 	}
 }
