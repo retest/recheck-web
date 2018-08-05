@@ -1,6 +1,13 @@
 attributes:
   - animation
-  - background
+  - background-color
+  - background-image
+  - background-position
+  - background-size
+  - background-repeat
+  - background-origin
+  - background-clip
+  - background-attachment
   - border-width
   - border-color
   - border-style
