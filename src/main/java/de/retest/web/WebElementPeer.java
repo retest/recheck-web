@@ -90,6 +90,9 @@ public class WebElementPeer {
 		if ( attributeValue.equals( "normal" ) ) {
 			return true;
 		}
+		if ( attributeValue.equals( "0px" ) ) {
+			return true;
+		}
 		return false;
 	}
 

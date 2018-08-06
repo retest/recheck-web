@@ -1,7 +1,10 @@
 attributes:
   - animation
   - background
-  - border
+  - border-width
+  - border-color
+  - border-style
+  - border-radius
   - box-shadow
   - box-sizing
   - break-after
