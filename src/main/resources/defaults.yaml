@@ -1,5 +1,38 @@
 a:link:
   - text-decoration: underline
+all:
+  - animation-delay: 0s
+  - animation-duration: 0s
+  - animation-iteration-count: 1
+  - animation-play-state: running
+  - animation-timing-function: ease
+  - background-attachment: scroll
+  - background-clip: border-box
+  - background-color: rgba(0, 0, 0, 0)
+  - background-position: 0% 0%
+  - background-origin: padding-box
+  - background-repeat: repeat
+  - border-color: rgb(0, 0, 0)
+  - box-sizing: content-box
+  - caption-side: top
+  - color: rgb(0, 0, 0)
+  - direction: ltr
+  - display: block
+  - empty-cells: show
+  - font-family: Times New Roman
+  - font-size: 16px
+  - margin-top: 0px
+  - margin-right: 0px
+  - margin-bottom: 0px
+  - margin-left: 0px
+  - overflow: visible
+  - padding-top: 0px
+  - padding-bottom: 0px
+  - padding-left: 0px
+  - padding-right: 0px
+  - text-align: start
+  - visibility: visible
+
   - cursor: auto
 
 a:visited:
