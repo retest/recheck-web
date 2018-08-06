@@ -83,9 +83,6 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 		if ( attributeValue.equals( "auto" ) ) {
 			return true;
 		}
-		if ( attributeValue.equals( "none" ) ) {
-			return true;
-		}
 		if ( attributeValue.equals( "normal" ) ) {
 			return true;
 		}
