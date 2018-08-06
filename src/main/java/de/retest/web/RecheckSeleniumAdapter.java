@@ -31,6 +31,12 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	private static final Logger logger = LoggerFactory.getLogger( RecheckSeleniumAdapter.class );
 
+	private final DefaultValuesProvider defaultValuesProvider;
+
+	public RecheckSeleniumAdapter() {
+		defaultValuesProvider = new DefaultValuesProvider();
+	}
+
 	@Override
 	public boolean canCheck( final Object toVerify ) {
 		return toVerify instanceof WebDriver;
@@ -64,7 +70,6 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 			final BufferedImage screenshot ) {
 		final Map<String, WebElementPeer> converted = new HashMap<>();
 		RootElementPeer root = null;
-
 		for ( final Map.Entry<String, Map<String, Object>> entry : sort( data ) ) {
 			final String path = entry.getKey();
 			logger.debug( "Found element with path '{}'.", path );
@@ -75,10 +80,10 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 			assert peer == null : "List is sorted, we should not have path twice.";
 
 			if ( parentPath == null ) {
-				root = new RootElementPeer( webData, path, title, screenshot );
+				root = new RootElementPeer( defaultValuesProvider, webData, path, title, screenshot );
 				peer = root;
 			} else {
-				peer = new WebElementPeer( webData, path );
+				peer = new WebElementPeer( defaultValuesProvider, webData, path );
 				final WebElementPeer parent = converted.get( parentPath );
 				assert parent != null : "We sorted the map, parent should already be there.";
 				parent.addChild( peer );
