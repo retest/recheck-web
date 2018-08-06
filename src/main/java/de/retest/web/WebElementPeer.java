@@ -53,7 +53,10 @@ public class WebElementPeer {
 		attributes.add( new PathAttribute( Path.fromString( path ) ) );
 		attributes.add( new SuffixAttribute( path.substring( path.lastIndexOf( '[' ) + 1, path.lastIndexOf( ']' ) ) ) );
 		attributes.add( new StringAttribute( "type", webData.getAsString( "tagName" ) ) );
-		attributes.add( new TextAttribute( "text", webData.getAsString( "text" ) ) );
+		final String text = webData.getAsString( "text" );
+		if ( text != null && !text.trim().isEmpty() ) {
+			attributes.add( new TextAttribute( "text", text ) );
+		}
 		final Rectangle outline = webData.getOutline();
 		if ( outline != null ) {
 			attributes.add( new OutlineAttribute( outline ) );
