@@ -56,30 +56,31 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 		return defaultValues;
 	}
 
+	public String getDefaultValue( final String tag, final String attribute ) {
+		final Map<String, String> defaults = defaultValues.get( tag.toLowerCase() );
+		if ( defaults != null ) {
+			final String defaultValue = defaults.get( attribute.toLowerCase() );
+			if ( defaultValue != null ) {
+				return defaultValue;
+			}
+		}
+		return defaultValues.get( "all" ).get( attribute.toLowerCase() );
+	}
+
 	@Override
 	public Serializable getDefaultValue( final IdentifyingAttributes comp, final String attributesKey ) {
-		final Map<String, String> defaults = defaultValues.get( comp.getType() );
-		if ( defaults != null ) {
-			return defaults.get( attributesKey );
-		}
-		return null;
+		return getDefaultValue( comp.getType(), attributesKey );
 	}
 
 	public boolean isDefault( final String tag, final String attribute, final String attributeValue ) {
-		final Map<String, String> defaults = defaultValues.get( tag );
-		if ( defaults != null ) {
-			final String defaultValue = defaults.get( attribute );
-			if ( defaultValue != null ) {
-				return defaultValue.equalsIgnoreCase( attributeValue );
-			}
+		final String defaultValue = getDefaultValue( tag, attribute );
+		if ( defaultValue != null ) {
+			return defaultValue.equalsIgnoreCase( attributeValue );
 		}
 		if ( attributeValue == null || attributeValue.trim().isEmpty() ) {
 			return true;
 		}
 		if ( attributeValue.equals( "auto" ) ) {
-			return true;
-		}
-		if ( attributeValue.equals( "none" ) ) {
 			return true;
 		}
 		if ( attributeValue.equals( "normal" ) ) {

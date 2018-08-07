@@ -4,6 +4,7 @@ import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -53,7 +54,10 @@ public class WebElementPeer {
 		attributes.add( new PathAttribute( Path.fromString( path ) ) );
 		attributes.add( new SuffixAttribute( path.substring( path.lastIndexOf( '[' ) + 1, path.lastIndexOf( ']' ) ) ) );
 		attributes.add( new StringAttribute( "type", webData.getAsString( "tagName" ) ) );
-		attributes.add( new TextAttribute( "text", webData.getAsString( "text" ) ) );
+		final String text = webData.getAsString( "text" );
+		if ( StringUtils.isNotBlank( text ) ) {
+			attributes.add( new TextAttribute( "text", text ) );
+		}
 		final Rectangle outline = webData.getOutline();
 		if ( outline != null ) {
 			attributes.add( new OutlineAttribute( outline ) );

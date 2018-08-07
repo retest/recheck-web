@@ -30,10 +30,19 @@ class DefaultValuesProviderTest {
 	}
 
 	@Test
-	void getDefaultValue_should_return_same() {
+	void getDefaultValue_should_be_CASE_INSENSITIVE() {
 		final DefaultValuesProvider cut = new DefaultValuesProvider();
-		final IdentifyingAttributes identifyingAttributes =
-				IdentifyingAttributes.create( Path.fromString( "/HTML/BODY/DIV/" ), "p" );
-		assertThat( cut.getDefaultValue( identifyingAttributes, "display" ) ).isEqualTo( "block" );
+		final IdentifyingAttributes IDENT = IdentifyingAttributes.create( Path.fromString( "/HTML/BODY/DIV/" ), "P" );
+		assertThat( cut.getDefaultValue( IDENT, "DISPLAY" ) ).isEqualTo( "block" );
+
+		final IdentifyingAttributes ident = IdentifyingAttributes.create( Path.fromString( "/html/body/div/" ), "p" );
+		assertThat( cut.getDefaultValue( ident, "display" ) ).isEqualTo( "block" );
+	}
+
+	@Test
+	void getDefaultValue_should_prefer_specific_over_general_values() {
+		final DefaultValuesProvider cut = new DefaultValuesProvider();
+		assertThat( cut.getDefaultValue( "body", "margin-top" ) ).isEqualTo( "8px" );
+		assertThat( cut.getDefaultValue( "boody", "margin-top" ) ).isEqualTo( "0px" );
 	}
 }

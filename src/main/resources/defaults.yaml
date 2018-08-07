@@ -1,6 +1,49 @@
-a:link:
-  - text-decoration: underline
+all:
+  - animation-delay: 0s
+  - animation-duration: 0s
+  - animation-fill-mode: none
+  - animation-iteration-count: 1
+  - animation-name: none
+  - animation-play-state: running
+  - animation-timing-function: ease
+  - background-attachment: scroll
+  - background-clip: border-box
+  - background-color: rgba(0, 0, 0, 0)
+  - background-image: none
+  - background-position: 0% 0%
+  - background-origin: padding-box
+  - background-repeat: repeat
+  - border-color: rgb(0, 0, 0)
+  - border-style: none
+  - box-sizing: content-box
+  - box-shadow: none  
+  - caption-side: top
+  - clear: none  
+  - color: rgb(0, 0, 0)
+  - direction: ltr
+  - display: block
+  - empty-cells: show
+  - float: none
+  - font-family: Times New Roman
+  - font-size: 16px
+  - margin-top: 0px
+  - margin-right: 0px
+  - margin-bottom: 0px
+  - margin-left: 0px
+  - overflow: visible
+  - padding-top: 0px
+  - padding-bottom: 0px
+  - padding-left: 0px
+  - padding-right: 0px
+  - text-align: start
+  - visibility: visible
+
+a:
+  - display: inline
+  - border-color: rgb(0, 0, 238)
+  - color: rgb(0, 0, 238)
   - cursor: auto
+  - text-decoration: underline
 
 a:visited:
   - text-decoration: underline
@@ -28,16 +71,22 @@ bdo:
 blockquote:
   - display: block
   - margin-top: 1em
+  - margin-right: 40px
   - margin-bottom: 1em
   - margin-left: 40px
-  - margin-right: 40px
 
 body:
   - display: block
-  - margin: 8px
+  - margin-top: 8px
+  - margin-right: 8px
+  - margin-bottom: 8px
+  - margin-left: 8px
 
 body:focus:
   - outline: none
+  
+br:
+  - display: inline
   
 caption:
   - display: table-caption
@@ -78,8 +127,8 @@ dl:
   - display: block
   - margin-top: 1em
   - margin-bottom: 1em
-  - margin-left: 0
-  - margin-right: 0
+  - margin-left: 0px
+  - margin-right: 0px
 
 dt:
   - display: block
@@ -115,15 +164,15 @@ footer:
   
 form:
   - display: block
-  - margin-top: 0em
+  - margin-top: 0px
 
 h1:
   - display: block
   - font-size: 2em
   - margin-top: 0.67em
   - margin-bottom: 0.67em
-  - margin-left: 0
-  - margin-right: 0
+  - margin-left: 0px
+  - margin-right: 0px
   - font-weight: bold
 
 h2:
@@ -131,8 +180,8 @@ h2:
   - font-size: 1.5em
   - margin-top: 0.83em
   - margin-bottom: 0.83em
-  - margin-left: 0
-  - margin-right: 0
+  - margin-left: 0px
+  - margin-right: 0px
   - font-weight: bold
 
 h3:
@@ -140,16 +189,16 @@ h3:
   - font-size: 1.17em
   - margin-top: 1em
   - margin-bottom: 1em
-  - margin-left: 0
-  - margin-right: 0
+  - margin-left: 0px
+  - margin-right: 0px
   - font-weight: bold
 
 h4:
   - display: block
   - margin-top: 1.33em
   - margin-bottom: 1.33em
-  - margin-left: 0
-  - margin-right: 0
+  - margin-left: 0px
+  - margin-right: 0px
   - font-weight: bold
 
 h5:
@@ -157,8 +206,8 @@ h5:
   - font-size: .83em
   - margin-top: 1.67em
   - margin-bottom: 1.67em
-  - margin-left: 0
-  - margin-right: 0
+  - margin-left: 0px
+  - margin-right: 0px
   - font-weight: bold
 
 h6:
@@ -166,8 +215,8 @@ h6:
   - font-size: .67em
   - margin-top: 2.33em
   - margin-bottom: 2.33em
-  - margin-left: 0
-  - margin-right: 0
+  - margin-left: 0px
+  - margin-right: 0px
   - font-weight: bold
 
 head:
@@ -208,7 +257,8 @@ kbd:
   
 label:
   - cursor: default
-  
+  - display: inline
+
 legend:
   - display: block
   - padding-left: 2px
@@ -233,8 +283,8 @@ menu:
   - list-style-type: disc
   - margin-top: 1em
   - margin-bottom: 1em
-  - margin-left: 0
-  - margin-right: 0
+  - margin-left: 0px
+  - margin-right: 0px
   - padding-left: 40px
 
 nav:
@@ -248,8 +298,8 @@ ol:
   - list-style-type: decimal
   - margin-top: 1em
   - margin-bottom: 1em
-  - margin-left: 0
-  - margin-right: 0
+  - margin-left: 0px
+  - margin-right: 0px
   - padding-left: 40px
 
 output:
@@ -259,8 +309,8 @@ p:
   - display: block
   - margin-top: 1em
   - margin-bottom: 1em
-  - margin-left: 0
-  - margin-right: 0
+  - margin-left: 0px
+  - margin-right: 0px
 
 param:
   - display: none
@@ -269,7 +319,10 @@ pre:
   - display: block
   - font-family: monospace
   - white-space: pre
-  - margin: 1em 0
+  - margin-top: 1em
+  - margin-bottom: 1em
+  - margin-left: 0px
+  - margin-right: 0px
 
 q:
   - display: inline
@@ -285,7 +338,10 @@ rt:
   
 s:
   - text-decoration: line-through
-  
+
+span:
+  - display: inline
+
 samp:
   - font-family: monospace
   
@@ -364,9 +420,9 @@ ul:
   - display: block
   - list-style-type: disc
   - margin-top: 1em
-  - margin-bottom: 1 em
-  - margin-left: 0
-  - margin-right: 0
+  - margin-bottom: 1em
+  - margin-left: 0px
+  - margin-right: 0px
   - padding-left: 40px
 
 var:

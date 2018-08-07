@@ -1,10 +1,24 @@
 attributes:
-  - animation
-  - background
-  - border-width
+  - animation-name
+  - animation-duration
+  - animation-timing-function
+  - animation-delay
+  - animation-iteration-count
+  - animation-direction
+  - animation-fill-mode
+  - animation-play-state
+  - background-attachment
+  - background-clip
+  - background-color
+  - background-image
+  - background-origin
+  - background-position
+  - background-repeat
+  - background-size
   - border-color
   - border-style
   - border-radius
+  - border-width
   - box-shadow
   - box-sizing
   - break-after
@@ -22,9 +36,16 @@ attributes:
   - font-size
   - line-height
   - text-align
+  - text-indent
   - float
-  - margin
-  - padding
+  - margin-top
+  - margin-right
+  - margin-bottom
+  - margin-left
+  - padding-top
+  - padding-right
+  - padding-bottom
+  - padding-left
   - offsetHeight
   - offsetWidth
   - overflow

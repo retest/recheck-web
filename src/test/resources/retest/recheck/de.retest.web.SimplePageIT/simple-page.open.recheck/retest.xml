@@ -12,70 +12,10 @@
 					</attribute>
 					<attribute key="path" xsi:type="pathAttribute">//HTML[1]</attribute>
 					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-					<attribute key="text" xsi:type="textAttribute"></attribute>
 					<attribute key="type" xsi:type="stringAttribute">HTML</attribute>
 				</attributes>
 			</identifyingAttributes>
-			<attributes>
-				<attributes>
-					<entry>
-						<key>animation</key>
-						<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-					</entry>
-					<entry>
-						<key>background</key>
-						<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-					</entry>
-					<entry>
-						<key>border-color</key>
-						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-					</entry>
-					<entry>
-						<key>box-sizing</key>
-						<value xsi:type="xsd:string">content-box</value>
-					</entry>
-					<entry>
-						<key>caption-side</key>
-						<value xsi:type="xsd:string">top</value>
-					</entry>
-					<entry>
-						<key>color</key>
-						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-					</entry>
-					<entry>
-						<key>direction</key>
-						<value xsi:type="xsd:string">ltr</value>
-					</entry>
-					<entry>
-						<key>display</key>
-						<value xsi:type="xsd:string">block</value>
-					</entry>
-					<entry>
-						<key>empty-cells</key>
-						<value xsi:type="xsd:string">show</value>
-					</entry>
-					<entry>
-						<key>font-family</key>
-						<value xsi:type="xsd:string">Times New Roman</value>
-					</entry>
-					<entry>
-						<key>font-size</key>
-						<value xsi:type="xsd:string">16px</value>
-					</entry>
-					<entry>
-						<key>overflow</key>
-						<value xsi:type="xsd:string">visible</value>
-					</entry>
-					<entry>
-						<key>text-align</key>
-						<value xsi:type="xsd:string">start</value>
-					</entry>
-					<entry>
-						<key>visibility</key>
-						<value xsi:type="xsd:string">visible</value>
-					</entry>
-				</attributes>
-			</attributes>
+			<attributes/>
 			<containedComponents>
 				<identifyingAttributes>
 					<attributes>
@@ -87,74 +27,10 @@
 						</attribute>
 						<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-						<attribute key="text" xsi:type="textAttribute"></attribute>
 						<attribute key="type" xsi:type="stringAttribute">BODY</attribute>
 					</attributes>
 				</identifyingAttributes>
-				<attributes>
-					<attributes>
-						<entry>
-							<key>animation</key>
-							<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-						</entry>
-						<entry>
-							<key>background</key>
-							<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-						</entry>
-						<entry>
-							<key>border-color</key>
-							<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-						</entry>
-						<entry>
-							<key>box-sizing</key>
-							<value xsi:type="xsd:string">content-box</value>
-						</entry>
-						<entry>
-							<key>caption-side</key>
-							<value xsi:type="xsd:string">top</value>
-						</entry>
-						<entry>
-							<key>color</key>
-							<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-						</entry>
-						<entry>
-							<key>direction</key>
-							<value xsi:type="xsd:string">ltr</value>
-						</entry>
-						<entry>
-							<key>display</key>
-							<value xsi:type="xsd:string">block</value>
-						</entry>
-						<entry>
-							<key>empty-cells</key>
-							<value xsi:type="xsd:string">show</value>
-						</entry>
-						<entry>
-							<key>font-family</key>
-							<value xsi:type="xsd:string">Times New Roman</value>
-						</entry>
-						<entry>
-							<key>font-size</key>
-							<value xsi:type="xsd:string">16px</value>
-						</entry>
-						<entry>
-							<key>margin</key>
-							<value xsi:type="xsd:string">8px</value>
-						</entry>
-						<entry>
-							<key>overflow</key>
-							<value xsi:type="xsd:string">visible</value>
-						</entry>
-						<entry>
-							<key>text-align</key>
-							<value xsi:type="xsd:string">start</value>
-						</entry>
-						<entry>
-							<key>visibility</key>
-							<value xsi:type="xsd:string">visible</value>
-						</entry>
-					</attributes>
-				</attributes>
+				<attributes/>
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
@@ -170,66 +46,7 @@
 							<attribute key="type" xsi:type="stringAttribute">A</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -242,70 +59,10 @@
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[10]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
-							<attribute key="text" xsi:type="textAttribute"></attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -321,66 +78,7 @@
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">block</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents>
@@ -394,70 +92,10 @@
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="text" xsi:type="textAttribute"></attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -469,70 +107,10 @@
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[1]/BR[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="text" xsi:type="textAttribute"></attribute>
 								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -549,66 +127,7 @@
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">block</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -628,64 +147,12 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">block</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
+									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">16px 0px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">16px</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -702,70 +169,10 @@
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-							<attribute key="text" xsi:type="textAttribute"></attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -786,64 +193,16 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">block</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">monospace</value>
-								</entry>
-								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">13px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">13px 0px</value>
+									<key>margin-bottom</key>
+									<value xsi:type="xsd:string">13px</value>
 								</entry>
 								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">13px</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -866,64 +225,12 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">block</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
+									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">16px 0px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">16px</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -946,64 +253,12 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">block</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
+									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">16px 0px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">16px</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -1020,70 +275,10 @@
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-							<attribute key="text" xsi:type="textAttribute"></attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -1102,64 +297,12 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">block</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
+									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">16px 0px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">16px</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -1182,64 +325,12 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">block</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
+									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">16px 0px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">16px</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -1260,66 +351,7 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -1331,70 +363,10 @@
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="text" xsi:type="textAttribute"></attribute>
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">block</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents>
 							<identifyingAttributes>
 								<attributes>
@@ -1402,74 +374,14 @@
 										<x>8</x>
 										<y>706</y>
 										<height>52</height>
-										<width>1184</width>
+										<width>1169</width>
 									</attribute>
 									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-									<attribute key="text" xsi:type="textAttribute"></attribute>
 									<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>animation</key>
-										<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-									</entry>
-									<entry>
-										<key>background</key>
-										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-									</entry>
-									<entry>
-										<key>border-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-									</entry>
-									<entry>
-										<key>box-sizing</key>
-										<value xsi:type="xsd:string">content-box</value>
-									</entry>
-									<entry>
-										<key>caption-side</key>
-										<value xsi:type="xsd:string">top</value>
-									</entry>
-									<entry>
-										<key>color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-									</entry>
-									<entry>
-										<key>direction</key>
-										<value xsi:type="xsd:string">ltr</value>
-									</entry>
-									<entry>
-										<key>display</key>
-										<value xsi:type="xsd:string">block</value>
-									</entry>
-									<entry>
-										<key>empty-cells</key>
-										<value xsi:type="xsd:string">show</value>
-									</entry>
-									<entry>
-										<key>font-family</key>
-										<value xsi:type="xsd:string">Times New Roman</value>
-									</entry>
-									<entry>
-										<key>font-size</key>
-										<value xsi:type="xsd:string">16px</value>
-									</entry>
-									<entry>
-										<key>overflow</key>
-										<value xsi:type="xsd:string">visible</value>
-									</entry>
-									<entry>
-										<key>text-align</key>
-										<value xsi:type="xsd:string">start</value>
-									</entry>
-									<entry>
-										<key>visibility</key>
-										<value xsi:type="xsd:string">visible</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
@@ -1477,7 +389,7 @@
 											<x>8</x>
 											<y>706</y>
 											<height>18</height>
-											<width>1184</width>
+											<width>1169</width>
 										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]/P[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -1488,64 +400,12 @@
 								<attributes>
 									<attributes>
 										<entry>
-											<key>animation</key>
-											<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-										</entry>
-										<entry>
-											<key>background</key>
-											<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-										</entry>
-										<entry>
-											<key>border-color</key>
-											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-										</entry>
-										<entry>
-											<key>box-sizing</key>
-											<value xsi:type="xsd:string">content-box</value>
-										</entry>
-										<entry>
-											<key>caption-side</key>
-											<value xsi:type="xsd:string">top</value>
-										</entry>
-										<entry>
-											<key>color</key>
-											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-										</entry>
-										<entry>
-											<key>direction</key>
-											<value xsi:type="xsd:string">ltr</value>
-										</entry>
-										<entry>
-											<key>display</key>
-											<value xsi:type="xsd:string">block</value>
-										</entry>
-										<entry>
-											<key>empty-cells</key>
-											<value xsi:type="xsd:string">show</value>
-										</entry>
-										<entry>
-											<key>font-family</key>
-											<value xsi:type="xsd:string">Times New Roman</value>
-										</entry>
-										<entry>
-											<key>font-size</key>
+											<key>margin-bottom</key>
 											<value xsi:type="xsd:string">16px</value>
 										</entry>
 										<entry>
-											<key>margin</key>
-											<value xsi:type="xsd:string">16px 0px</value>
-										</entry>
-										<entry>
-											<key>overflow</key>
-											<value xsi:type="xsd:string">visible</value>
-										</entry>
-										<entry>
-											<key>text-align</key>
-											<value xsi:type="xsd:string">start</value>
-										</entry>
-										<entry>
-											<key>visibility</key>
-											<value xsi:type="xsd:string">visible</value>
+											<key>margin-top</key>
+											<value xsi:type="xsd:string">16px</value>
 										</entry>
 									</attributes>
 								</attributes>
@@ -1557,7 +417,7 @@
 											<x>8</x>
 											<y>740</y>
 											<height>18</height>
-											<width>1184</width>
+											<width>1169</width>
 										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]/P[2]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -1568,64 +428,12 @@
 								<attributes>
 									<attributes>
 										<entry>
-											<key>animation</key>
-											<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-										</entry>
-										<entry>
-											<key>background</key>
-											<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-										</entry>
-										<entry>
-											<key>border-color</key>
-											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-										</entry>
-										<entry>
-											<key>box-sizing</key>
-											<value xsi:type="xsd:string">content-box</value>
-										</entry>
-										<entry>
-											<key>caption-side</key>
-											<value xsi:type="xsd:string">top</value>
-										</entry>
-										<entry>
-											<key>color</key>
-											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-										</entry>
-										<entry>
-											<key>direction</key>
-											<value xsi:type="xsd:string">ltr</value>
-										</entry>
-										<entry>
-											<key>display</key>
-											<value xsi:type="xsd:string">block</value>
-										</entry>
-										<entry>
-											<key>empty-cells</key>
-											<value xsi:type="xsd:string">show</value>
-										</entry>
-										<entry>
-											<key>font-family</key>
-											<value xsi:type="xsd:string">Times New Roman</value>
-										</entry>
-										<entry>
-											<key>font-size</key>
+											<key>margin-bottom</key>
 											<value xsi:type="xsd:string">16px</value>
 										</entry>
 										<entry>
-											<key>margin</key>
-											<value xsi:type="xsd:string">16px 0px</value>
-										</entry>
-										<entry>
-											<key>overflow</key>
-											<value xsi:type="xsd:string">visible</value>
-										</entry>
-										<entry>
-											<key>text-align</key>
-											<value xsi:type="xsd:string">start</value>
-										</entry>
-										<entry>
-											<key>visibility</key>
-											<value xsi:type="xsd:string">visible</value>
+											<key>margin-top</key>
+											<value xsi:type="xsd:string">16px</value>
 										</entry>
 									</attributes>
 								</attributes>
@@ -1638,7 +446,7 @@
 										<x>8</x>
 										<y>672</y>
 										<height>18</height>
-										<width>1184</width>
+										<width>1169</width>
 									</attribute>
 									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/P[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -1649,64 +457,12 @@
 							<attributes>
 								<attributes>
 									<entry>
-										<key>animation</key>
-										<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-									</entry>
-									<entry>
-										<key>background</key>
-										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-									</entry>
-									<entry>
-										<key>border-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-									</entry>
-									<entry>
-										<key>box-sizing</key>
-										<value xsi:type="xsd:string">content-box</value>
-									</entry>
-									<entry>
-										<key>caption-side</key>
-										<value xsi:type="xsd:string">top</value>
-									</entry>
-									<entry>
-										<key>color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-									</entry>
-									<entry>
-										<key>direction</key>
-										<value xsi:type="xsd:string">ltr</value>
-									</entry>
-									<entry>
-										<key>display</key>
-										<value xsi:type="xsd:string">block</value>
-									</entry>
-									<entry>
-										<key>empty-cells</key>
-										<value xsi:type="xsd:string">show</value>
-									</entry>
-									<entry>
-										<key>font-family</key>
-										<value xsi:type="xsd:string">Times New Roman</value>
-									</entry>
-									<entry>
-										<key>font-size</key>
+										<key>margin-bottom</key>
 										<value xsi:type="xsd:string">16px</value>
 									</entry>
 									<entry>
-										<key>margin</key>
-										<value xsi:type="xsd:string">16px 0px</value>
-									</entry>
-									<entry>
-										<key>overflow</key>
-										<value xsi:type="xsd:string">visible</value>
-									</entry>
-									<entry>
-										<key>text-align</key>
-										<value xsi:type="xsd:string">start</value>
-									</entry>
-									<entry>
-										<key>visibility</key>
-										<value xsi:type="xsd:string">visible</value>
+										<key>margin-top</key>
+										<value xsi:type="xsd:string">16px</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -1720,74 +476,14 @@
 								<x>8</x>
 								<y>792</y>
 								<height>18</height>
-								<width>1184</width>
+								<width>1169</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
-							<attribute key="text" xsi:type="textAttribute"></attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -1795,7 +491,7 @@
 									<x>8</x>
 									<y>792</y>
 									<height>18</height>
-									<width>1184</width>
+									<width>1169</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[5]/DIV[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -1803,66 +499,7 @@
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">block</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -1875,70 +512,10 @@
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[5]/SPAN[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="text" xsi:type="textAttribute"></attribute>
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -1951,70 +528,10 @@
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[5]/SPAN[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-								<attribute key="text" xsi:type="textAttribute"></attribute>
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents>
@@ -2024,74 +541,14 @@
 								<x>8</x>
 								<y>810</y>
 								<height>18</height>
-								<width>1184</width>
+								<width>1169</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
-							<attribute key="text" xsi:type="textAttribute"></attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -2108,62 +565,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">SCRIPT</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents>
@@ -2173,74 +575,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>897</y>
 								<height>18</height>
-								<width>1184</width>
+								<width>1169</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
-							<attribute key="text" xsi:type="textAttribute"></attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -2256,66 +598,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -2332,66 +615,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -2404,70 +628,10 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-								<attribute key="text" xsi:type="textAttribute"></attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents>
 							<identifyingAttributes>
 								<attributes>
@@ -2486,60 +650,16 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attributes>
 								<attributes>
 									<entry>
-										<key>animation</key>
-										<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-									</entry>
-									<entry>
-										<key>background</key>
-										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-									</entry>
-									<entry>
 										<key>border-color</key>
 										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>box-sizing</key>
-										<value xsi:type="xsd:string">content-box</value>
-									</entry>
-									<entry>
-										<key>caption-side</key>
-										<value xsi:type="xsd:string">top</value>
 									</entry>
 									<entry>
 										<key>color</key>
 										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 									</entry>
 									<entry>
-										<key>direction</key>
-										<value xsi:type="xsd:string">ltr</value>
-									</entry>
-									<entry>
 										<key>display</key>
 										<value xsi:type="xsd:string">inline</value>
-									</entry>
-									<entry>
-										<key>empty-cells</key>
-										<value xsi:type="xsd:string">show</value>
-									</entry>
-									<entry>
-										<key>font-family</key>
-										<value xsi:type="xsd:string">Times New Roman</value>
-									</entry>
-									<entry>
-										<key>font-size</key>
-										<value xsi:type="xsd:string">16px</value>
-									</entry>
-									<entry>
-										<key>overflow</key>
-										<value xsi:type="xsd:string">visible</value>
-									</entry>
-									<entry>
-										<key>text-align</key>
-										<value xsi:type="xsd:string">start</value>
-									</entry>
-									<entry>
-										<key>visibility</key>
-										<value xsi:type="xsd:string">visible</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -2560,66 +680,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -2636,66 +697,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -2712,66 +714,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents>
@@ -2781,71 +724,18 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>915</y>
 								<height>36</height>
-								<width>1184</width>
+								<width>1169</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[8]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
-							<attribute key="text" xsi:type="textAttribute"></attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
+								<key>text-indent</key>
+								<value xsi:type="xsd:string">80%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -2856,7 +746,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<x>8</x>
 									<y>915</y>
 									<height>36</height>
-									<width>1085</width>
+									<width>1073</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[8]/A[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -2867,60 +757,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						<attributes>
 							<attributes>
 								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
+									<key>text-indent</key>
+									<value xsi:type="xsd:string">80%</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -2928,74 +766,29 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="outline" xsi:type="outlineAttribute">
-										<x>1093</x>
+										<x>1081</x>
 										<y>929</y>
 										<height>0</height>
 										<width>0</width>
 									</attribute>
 									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[8]/A[1]/BR[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-									<attribute key="text" xsi:type="textAttribute"></attribute>
 									<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
 									<entry>
-										<key>animation</key>
-										<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-									</entry>
-									<entry>
-										<key>background</key>
-										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-									</entry>
-									<entry>
 										<key>border-color</key>
 										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>box-sizing</key>
-										<value xsi:type="xsd:string">content-box</value>
-									</entry>
-									<entry>
-										<key>caption-side</key>
-										<value xsi:type="xsd:string">top</value>
 									</entry>
 									<entry>
 										<key>color</key>
 										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 									</entry>
 									<entry>
-										<key>direction</key>
-										<value xsi:type="xsd:string">ltr</value>
-									</entry>
-									<entry>
-										<key>display</key>
-										<value xsi:type="xsd:string">inline</value>
-									</entry>
-									<entry>
-										<key>empty-cells</key>
-										<value xsi:type="xsd:string">show</value>
-									</entry>
-									<entry>
-										<key>font-family</key>
-										<value xsi:type="xsd:string">Times New Roman</value>
-									</entry>
-									<entry>
-										<key>font-size</key>
-										<value xsi:type="xsd:string">16px</value>
-									</entry>
-									<entry>
-										<key>overflow</key>
-										<value xsi:type="xsd:string">visible</value>
-									</entry>
-									<entry>
-										<key>text-align</key>
-										<value xsi:type="xsd:string">start</value>
-									</entry>
-									<entry>
-										<key>visibility</key>
-										<value xsi:type="xsd:string">visible</value>
+										<key>text-indent</key>
+										<value xsi:type="xsd:string">80%</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -3009,7 +802,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>951</y>
 								<height>18</height>
-								<width>1184</width>
+								<width>1169</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[9]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
@@ -3017,66 +810,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -3085,75 +819,18 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>844</y>
 								<height>37</height>
-								<width>1184</width>
+								<width>1169</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="text" xsi:type="textAttribute"></attribute>
 							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
+								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">0px 0px 16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -3164,75 +841,22 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<x>8</x>
 									<y>844</y>
 									<height>37</height>
-									<width>1184</width>
+									<width>1169</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]/P[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="text" xsi:type="textAttribute"></attribute>
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
 								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">block</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
+									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
-									<key>margin</key>
-									<value xsi:type="xsd:string">16px 0px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">16px</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -3247,47 +871,18 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									</attribute>
 									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]/P[1]/INPUT[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-									<attribute key="text" xsi:type="textAttribute"></attribute>
 									<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
 									<entry>
-										<key>animation</key>
-										<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-									</entry>
-									<entry>
-										<key>background</key>
-										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-									</entry>
-									<entry>
-										<key>border-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-									</entry>
-									<entry>
 										<key>box-sizing</key>
 										<value xsi:type="xsd:string">border-box</value>
 									</entry>
 									<entry>
-										<key>caption-side</key>
-										<value xsi:type="xsd:string">top</value>
-									</entry>
-									<entry>
-										<key>color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-									</entry>
-									<entry>
-										<key>direction</key>
-										<value xsi:type="xsd:string">ltr</value>
-									</entry>
-									<entry>
 										<key>display</key>
 										<value xsi:type="xsd:string">inline-block</value>
-									</entry>
-									<entry>
-										<key>empty-cells</key>
-										<value xsi:type="xsd:string">show</value>
 									</entry>
 									<entry>
 										<key>font-family</key>
@@ -3298,20 +893,20 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">11px</value>
 									</entry>
 									<entry>
-										<key>margin</key>
-										<value xsi:type="xsd:string">3px 2.89502px</value>
+										<key>margin-bottom</key>
+										<value xsi:type="xsd:string">3px</value>
 									</entry>
 									<entry>
-										<key>overflow</key>
-										<value xsi:type="xsd:string">visible</value>
+										<key>margin-left</key>
+										<value xsi:type="xsd:string">2.89502px</value>
 									</entry>
 									<entry>
-										<key>text-align</key>
-										<value xsi:type="xsd:string">start</value>
+										<key>margin-right</key>
+										<value xsi:type="xsd:string">2.89502px</value>
 									</entry>
 									<entry>
-										<key>visibility</key>
-										<value xsi:type="xsd:string">visible</value>
+										<key>margin-top</key>
+										<value xsi:type="xsd:string">3px</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -3331,66 +926,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<attribute key="type" xsi:type="stringAttribute">LABEL</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>animation</key>
-										<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-									</entry>
-									<entry>
-										<key>background</key>
-										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-									</entry>
-									<entry>
-										<key>border-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-									</entry>
-									<entry>
-										<key>box-sizing</key>
-										<value xsi:type="xsd:string">content-box</value>
-									</entry>
-									<entry>
-										<key>caption-side</key>
-										<value xsi:type="xsd:string">top</value>
-									</entry>
-									<entry>
-										<key>color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-									</entry>
-									<entry>
-										<key>direction</key>
-										<value xsi:type="xsd:string">ltr</value>
-									</entry>
-									<entry>
-										<key>display</key>
-										<value xsi:type="xsd:string">inline</value>
-									</entry>
-									<entry>
-										<key>empty-cells</key>
-										<value xsi:type="xsd:string">show</value>
-									</entry>
-									<entry>
-										<key>font-family</key>
-										<value xsi:type="xsd:string">Times New Roman</value>
-									</entry>
-									<entry>
-										<key>font-size</key>
-										<value xsi:type="xsd:string">16px</value>
-									</entry>
-									<entry>
-										<key>overflow</key>
-										<value xsi:type="xsd:string">visible</value>
-									</entry>
-									<entry>
-										<key>text-align</key>
-										<value xsi:type="xsd:string">start</value>
-									</entry>
-									<entry>
-										<key>visibility</key>
-										<value xsi:type="xsd:string">visible</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
@@ -3402,70 +938,10 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]/P[1]/LABEL[1]/BR[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-										<attribute key="text" xsi:type="textAttribute"></attribute>
 										<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 									</attributes>
 								</identifyingAttributes>
-								<attributes>
-									<attributes>
-										<entry>
-											<key>animation</key>
-											<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-										</entry>
-										<entry>
-											<key>background</key>
-											<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-										</entry>
-										<entry>
-											<key>border-color</key>
-											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-										</entry>
-										<entry>
-											<key>box-sizing</key>
-											<value xsi:type="xsd:string">content-box</value>
-										</entry>
-										<entry>
-											<key>caption-side</key>
-											<value xsi:type="xsd:string">top</value>
-										</entry>
-										<entry>
-											<key>color</key>
-											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-										</entry>
-										<entry>
-											<key>direction</key>
-											<value xsi:type="xsd:string">ltr</value>
-										</entry>
-										<entry>
-											<key>display</key>
-											<value xsi:type="xsd:string">inline</value>
-										</entry>
-										<entry>
-											<key>empty-cells</key>
-											<value xsi:type="xsd:string">show</value>
-										</entry>
-										<entry>
-											<key>font-family</key>
-											<value xsi:type="xsd:string">Times New Roman</value>
-										</entry>
-										<entry>
-											<key>font-size</key>
-											<value xsi:type="xsd:string">16px</value>
-										</entry>
-										<entry>
-											<key>overflow</key>
-											<value xsi:type="xsd:string">visible</value>
-										</entry>
-										<entry>
-											<key>text-align</key>
-											<value xsi:type="xsd:string">start</value>
-										</entry>
-										<entry>
-											<key>visibility</key>
-											<value xsi:type="xsd:string">visible</value>
-										</entry>
-									</attributes>
-								</attributes>
+								<attributes/>
 							</containedComponents>
 						</containedComponents>
 					</containedComponents>
@@ -3477,7 +953,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>8</y>
 								<height>37</height>
-								<width>1184</width>
+								<width>1169</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/H1[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -3488,64 +964,16 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
 								<key>font-size</key>
 								<value xsi:type="xsd:string">32px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">21.44px 0px</value>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">21.44px</value>
 							</entry>
 							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">21.44px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -3561,67 +989,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/IMG[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="text" xsi:type="textAttribute"></attribute>
 							<attribute key="type" xsi:type="stringAttribute">IMG</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -3637,67 +1012,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/IMG[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-							<attribute key="text" xsi:type="textAttribute"></attribute>
 							<attribute key="type" xsi:type="stringAttribute">IMG</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -3709,7 +1031,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>66</y>
 								<height>18</height>
-								<width>1184</width>
+								<width>1169</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -3720,64 +1042,12 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
+								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">16px 0px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -3789,7 +1059,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>100</y>
 								<height>18</height>
-								<width>1184</width>
+								<width>1169</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -3800,60 +1070,12 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
+								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">16px 0px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
 								<key>visibility</key>
@@ -3869,7 +1091,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>238</y>
 								<height>18</height>
-								<width>1184</width>
+								<width>1169</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
@@ -3882,64 +1104,12 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
+								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">16px 0px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -3951,7 +1121,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>272</y>
 								<height>18</height>
-								<width>1184</width>
+								<width>1169</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
@@ -3962,64 +1132,12 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
+								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">16px 0px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -4031,7 +1149,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>306</y>
 								<height>18</height>
-								<width>1184</width>
+								<width>1169</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
@@ -4042,64 +1160,12 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
+								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">16px 0px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -4122,64 +1188,12 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
+								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">16px 0px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -4194,70 +1208,10 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[6]/BR[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="text" xsi:type="textAttribute"></attribute>
 								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents>
@@ -4278,64 +1232,12 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">block</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
+								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
 							<entry>
-								<key>margin</key>
-								<value xsi:type="xsd:string">16px 0px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -4354,66 +1256,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents>
 							<identifyingAttributes>
 								<attributes>
@@ -4432,60 +1275,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attributes>
 								<attributes>
 									<entry>
-										<key>animation</key>
-										<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-									</entry>
-									<entry>
-										<key>background</key>
-										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-									</entry>
-									<entry>
-										<key>border-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-									</entry>
-									<entry>
-										<key>box-sizing</key>
-										<value xsi:type="xsd:string">content-box</value>
-									</entry>
-									<entry>
-										<key>caption-side</key>
-										<value xsi:type="xsd:string">top</value>
-									</entry>
-									<entry>
-										<key>color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-									</entry>
-									<entry>
-										<key>direction</key>
-										<value xsi:type="xsd:string">ltr</value>
-									</entry>
-									<entry>
 										<key>display</key>
 										<value xsi:type="xsd:string">inline</value>
-									</entry>
-									<entry>
-										<key>empty-cells</key>
-										<value xsi:type="xsd:string">show</value>
-									</entry>
-									<entry>
-										<key>font-family</key>
-										<value xsi:type="xsd:string">Times New Roman</value>
-									</entry>
-									<entry>
-										<key>font-size</key>
-										<value xsi:type="xsd:string">16px</value>
-									</entry>
-									<entry>
-										<key>overflow</key>
-										<value xsi:type="xsd:string">visible</value>
-									</entry>
-									<entry>
-										<key>text-align</key>
-										<value xsi:type="xsd:string">start</value>
-									</entry>
-									<entry>
-										<key>visibility</key>
-										<value xsi:type="xsd:string">visible</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -4507,66 +1298,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -4583,66 +1315,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -4659,66 +1332,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -4735,66 +1349,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -4807,67 +1362,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="text" xsi:type="textAttribute"></attribute>
 							<attribute key="type" xsi:type="stringAttribute">TABLE</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">table</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -4882,67 +1384,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="text" xsi:type="textAttribute"></attribute>
 								<attribute key="type" xsi:type="stringAttribute">TBODY</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
 								<entry>
-									<key>animation</key>
-									<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-								</entry>
-								<entry>
-									<key>background</key>
-									<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-								</entry>
-								<entry>
 									<key>border-color</key>
 									<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-								</entry>
-								<entry>
-									<key>box-sizing</key>
-									<value xsi:type="xsd:string">content-box</value>
-								</entry>
-								<entry>
-									<key>caption-side</key>
-									<value xsi:type="xsd:string">top</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-								</entry>
-								<entry>
-									<key>direction</key>
-									<value xsi:type="xsd:string">ltr</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">table-row-group</value>
-								</entry>
-								<entry>
-									<key>empty-cells</key>
-									<value xsi:type="xsd:string">show</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Times New Roman</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>overflow</key>
-									<value xsi:type="xsd:string">visible</value>
-								</entry>
-								<entry>
-									<key>text-align</key>
-									<value xsi:type="xsd:string">start</value>
-								</entry>
-								<entry>
-									<key>visibility</key>
-									<value xsi:type="xsd:string">visible</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -4957,67 +1406,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									</attribute>
 									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-									<attribute key="text" xsi:type="textAttribute"></attribute>
 									<attribute key="type" xsi:type="stringAttribute">TR</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
 									<entry>
-										<key>animation</key>
-										<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-									</entry>
-									<entry>
-										<key>background</key>
-										<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-									</entry>
-									<entry>
 										<key>border-color</key>
 										<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-									</entry>
-									<entry>
-										<key>box-sizing</key>
-										<value xsi:type="xsd:string">content-box</value>
-									</entry>
-									<entry>
-										<key>caption-side</key>
-										<value xsi:type="xsd:string">top</value>
-									</entry>
-									<entry>
-										<key>color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-									</entry>
-									<entry>
-										<key>direction</key>
-										<value xsi:type="xsd:string">ltr</value>
-									</entry>
-									<entry>
-										<key>display</key>
-										<value xsi:type="xsd:string">table-row</value>
-									</entry>
-									<entry>
-										<key>empty-cells</key>
-										<value xsi:type="xsd:string">show</value>
-									</entry>
-									<entry>
-										<key>font-family</key>
-										<value xsi:type="xsd:string">Times New Roman</value>
-									</entry>
-									<entry>
-										<key>font-size</key>
-										<value xsi:type="xsd:string">16px</value>
-									</entry>
-									<entry>
-										<key>overflow</key>
-										<value xsi:type="xsd:string">visible</value>
-									</entry>
-									<entry>
-										<key>text-align</key>
-										<value xsi:type="xsd:string">start</value>
-									</entry>
-									<entry>
-										<key>visibility</key>
-										<value xsi:type="xsd:string">visible</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -5032,71 +1428,26 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-										<attribute key="text" xsi:type="textAttribute"></attribute>
 										<attribute key="type" xsi:type="stringAttribute">TD</attribute>
 									</attributes>
 								</identifyingAttributes>
 								<attributes>
 									<attributes>
 										<entry>
-											<key>animation</key>
-											<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-										</entry>
-										<entry>
-											<key>background</key>
-											<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-										</entry>
-										<entry>
-											<key>border-color</key>
-											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-										</entry>
-										<entry>
-											<key>box-sizing</key>
-											<value xsi:type="xsd:string">content-box</value>
-										</entry>
-										<entry>
-											<key>caption-side</key>
-											<value xsi:type="xsd:string">top</value>
-										</entry>
-										<entry>
-											<key>color</key>
-											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-										</entry>
-										<entry>
-											<key>direction</key>
-											<value xsi:type="xsd:string">ltr</value>
-										</entry>
-										<entry>
-											<key>display</key>
-											<value xsi:type="xsd:string">table-cell</value>
-										</entry>
-										<entry>
-											<key>empty-cells</key>
-											<value xsi:type="xsd:string">show</value>
-										</entry>
-										<entry>
-											<key>font-family</key>
-											<value xsi:type="xsd:string">Times New Roman</value>
-										</entry>
-										<entry>
-											<key>font-size</key>
-											<value xsi:type="xsd:string">16px</value>
-										</entry>
-										<entry>
-											<key>overflow</key>
-											<value xsi:type="xsd:string">visible</value>
-										</entry>
-										<entry>
-											<key>padding</key>
+											<key>padding-bottom</key>
 											<value xsi:type="xsd:string">1px</value>
 										</entry>
 										<entry>
-											<key>text-align</key>
-											<value xsi:type="xsd:string">start</value>
+											<key>padding-left</key>
+											<value xsi:type="xsd:string">1px</value>
 										</entry>
 										<entry>
-											<key>visibility</key>
-											<value xsi:type="xsd:string">visible</value>
+											<key>padding-right</key>
+											<value xsi:type="xsd:string">1px</value>
+										</entry>
+										<entry>
+											<key>padding-top</key>
+											<value xsi:type="xsd:string">1px</value>
 										</entry>
 									</attributes>
 								</attributes>
@@ -5115,66 +1466,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 										</attributes>
 									</identifyingAttributes>
-									<attributes>
-										<attributes>
-											<entry>
-												<key>animation</key>
-												<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-											</entry>
-											<entry>
-												<key>background</key>
-												<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-											</entry>
-											<entry>
-												<key>border-color</key>
-												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-											</entry>
-											<entry>
-												<key>box-sizing</key>
-												<value xsi:type="xsd:string">content-box</value>
-											</entry>
-											<entry>
-												<key>caption-side</key>
-												<value xsi:type="xsd:string">top</value>
-											</entry>
-											<entry>
-												<key>color</key>
-												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-											</entry>
-											<entry>
-												<key>direction</key>
-												<value xsi:type="xsd:string">ltr</value>
-											</entry>
-											<entry>
-												<key>display</key>
-												<value xsi:type="xsd:string">inline</value>
-											</entry>
-											<entry>
-												<key>empty-cells</key>
-												<value xsi:type="xsd:string">show</value>
-											</entry>
-											<entry>
-												<key>font-family</key>
-												<value xsi:type="xsd:string">Times New Roman</value>
-											</entry>
-											<entry>
-												<key>font-size</key>
-												<value xsi:type="xsd:string">16px</value>
-											</entry>
-											<entry>
-												<key>overflow</key>
-												<value xsi:type="xsd:string">visible</value>
-											</entry>
-											<entry>
-												<key>text-align</key>
-												<value xsi:type="xsd:string">start</value>
-											</entry>
-											<entry>
-												<key>visibility</key>
-												<value xsi:type="xsd:string">visible</value>
-											</entry>
-										</attributes>
-									</attributes>
+									<attributes/>
 								</containedComponents>
 								<containedComponents>
 									<identifyingAttributes>
@@ -5187,70 +1479,10 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											</attribute>
 											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[2]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-											<attribute key="text" xsi:type="textAttribute"></attribute>
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 										</attributes>
 									</identifyingAttributes>
-									<attributes>
-										<attributes>
-											<entry>
-												<key>animation</key>
-												<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-											</entry>
-											<entry>
-												<key>background</key>
-												<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-											</entry>
-											<entry>
-												<key>border-color</key>
-												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-											</entry>
-											<entry>
-												<key>box-sizing</key>
-												<value xsi:type="xsd:string">content-box</value>
-											</entry>
-											<entry>
-												<key>caption-side</key>
-												<value xsi:type="xsd:string">top</value>
-											</entry>
-											<entry>
-												<key>color</key>
-												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-											</entry>
-											<entry>
-												<key>direction</key>
-												<value xsi:type="xsd:string">ltr</value>
-											</entry>
-											<entry>
-												<key>display</key>
-												<value xsi:type="xsd:string">inline</value>
-											</entry>
-											<entry>
-												<key>empty-cells</key>
-												<value xsi:type="xsd:string">show</value>
-											</entry>
-											<entry>
-												<key>font-family</key>
-												<value xsi:type="xsd:string">Times New Roman</value>
-											</entry>
-											<entry>
-												<key>font-size</key>
-												<value xsi:type="xsd:string">16px</value>
-											</entry>
-											<entry>
-												<key>overflow</key>
-												<value xsi:type="xsd:string">visible</value>
-											</entry>
-											<entry>
-												<key>text-align</key>
-												<value xsi:type="xsd:string">start</value>
-											</entry>
-											<entry>
-												<key>visibility</key>
-												<value xsi:type="xsd:string">visible</value>
-											</entry>
-										</attributes>
-									</attributes>
+									<attributes/>
 								</containedComponents>
 								<containedComponents>
 									<identifyingAttributes>
@@ -5267,66 +1499,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 										</attributes>
 									</identifyingAttributes>
-									<attributes>
-										<attributes>
-											<entry>
-												<key>animation</key>
-												<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-											</entry>
-											<entry>
-												<key>background</key>
-												<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-											</entry>
-											<entry>
-												<key>border-color</key>
-												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-											</entry>
-											<entry>
-												<key>box-sizing</key>
-												<value xsi:type="xsd:string">content-box</value>
-											</entry>
-											<entry>
-												<key>caption-side</key>
-												<value xsi:type="xsd:string">top</value>
-											</entry>
-											<entry>
-												<key>color</key>
-												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-											</entry>
-											<entry>
-												<key>direction</key>
-												<value xsi:type="xsd:string">ltr</value>
-											</entry>
-											<entry>
-												<key>display</key>
-												<value xsi:type="xsd:string">inline</value>
-											</entry>
-											<entry>
-												<key>empty-cells</key>
-												<value xsi:type="xsd:string">show</value>
-											</entry>
-											<entry>
-												<key>font-family</key>
-												<value xsi:type="xsd:string">Times New Roman</value>
-											</entry>
-											<entry>
-												<key>font-size</key>
-												<value xsi:type="xsd:string">16px</value>
-											</entry>
-											<entry>
-												<key>overflow</key>
-												<value xsi:type="xsd:string">visible</value>
-											</entry>
-											<entry>
-												<key>text-align</key>
-												<value xsi:type="xsd:string">start</value>
-											</entry>
-											<entry>
-												<key>visibility</key>
-												<value xsi:type="xsd:string">visible</value>
-											</entry>
-										</attributes>
-									</attributes>
+									<attributes/>
 								</containedComponents>
 							</containedComponents>
 						</containedComponents>
@@ -5344,66 +1517,10 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attribute>
 						<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-						<attribute key="text" xsi:type="textAttribute"></attribute>
 						<attribute key="type" xsi:type="stringAttribute">HEAD</attribute>
 					</attributes>
 				</identifyingAttributes>
-				<attributes>
-					<attributes>
-						<entry>
-							<key>animation</key>
-							<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-						</entry>
-						<entry>
-							<key>background</key>
-							<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-						</entry>
-						<entry>
-							<key>border-color</key>
-							<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-						</entry>
-						<entry>
-							<key>box-sizing</key>
-							<value xsi:type="xsd:string">content-box</value>
-						</entry>
-						<entry>
-							<key>caption-side</key>
-							<value xsi:type="xsd:string">top</value>
-						</entry>
-						<entry>
-							<key>color</key>
-							<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-						</entry>
-						<entry>
-							<key>direction</key>
-							<value xsi:type="xsd:string">ltr</value>
-						</entry>
-						<entry>
-							<key>empty-cells</key>
-							<value xsi:type="xsd:string">show</value>
-						</entry>
-						<entry>
-							<key>font-family</key>
-							<value xsi:type="xsd:string">Times New Roman</value>
-						</entry>
-						<entry>
-							<key>font-size</key>
-							<value xsi:type="xsd:string">16px</value>
-						</entry>
-						<entry>
-							<key>overflow</key>
-							<value xsi:type="xsd:string">visible</value>
-						</entry>
-						<entry>
-							<key>text-align</key>
-							<value xsi:type="xsd:string">start</value>
-						</entry>
-						<entry>
-							<key>visibility</key>
-							<value xsi:type="xsd:string">visible</value>
-						</entry>
-					</attributes>
-				</attributes>
+				<attributes/>
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
@@ -5419,66 +1536,11 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">TITLE</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>animation</key>
-								<value xsi:type="xsd:string">none 0s ease 0s 1 normal none running</value>
-							</entry>
-							<entry>
-								<key>background</key>
-								<value xsi:type="xsd:string">rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">content-box</value>
-							</entry>
-							<entry>
-								<key>caption-side</key>
-								<value xsi:type="xsd:string">top</value>
-							</entry>
-							<entry>
-								<key>color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
-							</entry>
-							<entry>
-								<key>direction</key>
-								<value xsi:type="xsd:string">ltr</value>
-							</entry>
-							<entry>
-								<key>empty-cells</key>
-								<value xsi:type="xsd:string">show</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">Times New Roman</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>overflow</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-							<entry>
-								<key>text-align</key>
-								<value xsi:type="xsd:string">start</value>
-							</entry>
-							<entry>
-								<key>visibility</key>
-								<value xsi:type="xsd:string">visible</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 			</containedComponents>
 			<screenshot>
-				<persistenceId>window_26bc284b4f68ff6be2db155fc65b76d2895968a3ce433d2b65eefd7b81e05aee</persistenceId>
+				<persistenceId>window_9fdc6b5c41d83b93e3ed59812d8459a2c71493e7e1e75cc4c29cf40c8fd5704d</persistenceId>
 				<type>PNG</type>
 			</screenshot>
 		</descriptors>
