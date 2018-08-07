@@ -22,11 +22,14 @@ public class WebElementPeer {
 
 	private static final Logger logger = LoggerFactory.getLogger( WebElementPeer.class );
 
+	private final DefaultValuesProvider defaults;
+
 	protected final List<WebElementPeer> children = new ArrayList<>();
 	protected final WebData webData;
 	protected final String path;
 
-	public WebElementPeer( final WebData webData, final String path ) {
+	public WebElementPeer( final DefaultValuesProvider defaults, final WebData webData, final String path ) {
+		this.defaults = defaults;
 		this.webData = webData;
 		this.path = path;
 	}
@@ -70,30 +73,12 @@ public class WebElementPeer {
 		final MutableAttributes state = new MutableAttributes();
 		for ( final String attribute : AttributesProvider.getInstance().getAttributes() ) {
 			final String attributeValue = webData.getAsString( attribute );
-			if ( attributeValue != null && !isDefault( attributeValue ) ) {
+			if ( attributeValue != null
+					&& !defaults.isDefault( webData.getAsString( "tagName" ), attribute, attributeValue ) ) {
 				state.put( attribute, attributeValue );
 			}
 		}
 		return state;
-	}
-
-	private boolean isDefault( final String attributeValue ) {
-		if ( attributeValue == null || attributeValue.isEmpty() ) {
-			return true;
-		}
-		if ( attributeValue.equals( "auto" ) ) {
-			return true;
-		}
-		if ( attributeValue.equals( "none" ) ) {
-			return true;
-		}
-		if ( attributeValue.equals( "normal" ) ) {
-			return true;
-		}
-		if ( attributeValue.equals( "0px" ) ) {
-			return true;
-		}
-		return false;
 	}
 
 	protected List<Element> convertChildren() {
