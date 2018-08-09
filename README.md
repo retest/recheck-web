@@ -84,7 +84,7 @@ public class MyRecheckWebTest {
 }
 ```
 
-Running such a test for the first time will result in an output like so:
+Running such a test for the first time will result in a failure with an output like so:
 
 ```
 java.lang.AssertionError: Found 1 differences in 1 checks of which 1 are unique: [[expected=null, actual=HTML]]
@@ -96,9 +96,9 @@ index resulted in: [HTML: [expected=null, actual=HTML]]
 	at de.retest.recheck.RecheckImpl.capTest(SourceFile:170)
 ```
 
-Running such a test will also create a folder structure containing a `retest.xml` file and a screenshot per check (depending on your chosen names and configuration). These are now the Golden Master, the baseline which future executions of this test are compared against. If you use version control, you should commit those files. Note that the `retest.xml` contains a full description of the _rendered_ web site, including all relevant information such as text, source, etc. and all non-default CSS attributes such as font and margin.
+Running such a test will also create a folder structure containing a `retest.xml` file and a screenshot per check (depending on your chosen names and configuration). These are now the Golden Master, the baseline which future executions of this test are compared against. If you use version control, you should commit those files. Note that the `retest.xml` contains a full description of the _rendered_ website, including all relevant information such as text, source, etc. and all non-default CSS attributes such as font and margin.
 
-Executing the same test again should not result in any differences. But after changing the web site and executing the test, you should see the test reporting your changes.
+Executing the same test again should not result in any differences. But after changing the website and executing the test, you should see the test reporting your changes.
 
 E.g. if you change a single CSS rule, you will find all elements that are affected by this change. Like so:
 
@@ -110,7 +110,7 @@ test showcase has 8 differences (2 unique):
 index resulted in: [EM [Have you had enough]: {color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}, BR: {border-color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)", color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}, EM [Use an artificially intelligent]: {color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}, EM [to fully automatically test your application.]: {color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}, EM [No need to create assertions]: {color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}, EM [retest compares the whole picture instead of a single piece of the puzzle.]: {color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}, EM [The future of testing is in AI.]: {color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}, EM [The future of testing is now]: {color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}]
 ```
 
-Additionally, a file named `replay.result` will be created, typically located in your `target/test-classes` folder. This file can now be used to apply those changes to your baseline, using either the [recheck-cli](https://github.com/retest/recheck-cli) or the [retest-GUI](http://retest.org).
+Additionally, a file named `replay.result` will be created upon test failure, typically located in your `target/test-classes` folder. This file can now be used to apply those changes to your baseline, using either the [recheck-cli](https://github.com/retest/recheck-cli) or the [retest-GUI](http://retest.org).
 
 
 ## Building and Deploying locally
