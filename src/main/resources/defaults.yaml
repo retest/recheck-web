@@ -10,15 +10,15 @@ all:
   - background-clip: border-box
   - background-color: rgba(0, 0, 0, 0)
   - background-image: none
-  - background-position: 0% 0%
   - background-origin: padding-box
+  - background-position: 0% 0%
   - background-repeat: repeat
   - border-color: rgb(0, 0, 0)
   - border-style: none
+  - box-shadow: none
   - box-sizing: content-box
-  - box-shadow: none  
   - caption-side: top
-  - clear: none  
+  - clear: none
   - color: rgb(0, 0, 0)
   - direction: ltr
   - display: block
@@ -26,72 +26,72 @@ all:
   - float: none
   - font-family: Times New Roman
   - font-size: 16px
-  - margin-top: 0px
-  - margin-right: 0px
   - margin-bottom: 0px
   - margin-left: 0px
+  - margin-right: 0px
+  - margin-top: 0px
   - overflow: visible
-  - padding-top: 0px
   - padding-bottom: 0px
   - padding-left: 0px
   - padding-right: 0px
+  - padding-top: 0px
   - text-align: start
   - visibility: visible
 
 a:
-  - display: inline
   - border-color: rgb(0, 0, 238)
   - color: rgb(0, 0, 238)
   - cursor: auto
+  - display: inline
   - text-decoration: underline
 
 a:visited:
-  - text-decoration: underline
   - cursor: auto
-  
+  - text-decoration: underline
+
 address:
   - display: block
   - font-style: italic
-  
+
 area:
   - display: none
 
 article:
   - display: block
-  
+
 aside:
   - display: block
 
 b:
   - font-weight: bold
-  
+
 bdo:
   - unicode-bidi: bidi-override
 
 blockquote:
   - display: block
-  - margin-top: 1em
-  - margin-right: 40px
   - margin-bottom: 1em
   - margin-left: 40px
+  - margin-right: 40px
+  - margin-top: 1em
 
 body:
   - display: block
-  - margin-top: 8px
-  - margin-right: 8px
   - margin-bottom: 8px
   - margin-left: 8px
+  - margin-right: 8px
+  - margin-top: 8px
 
 body:focus:
   - outline: none
-  
+
 br:
   - display: inline
-  
+
 caption:
   - display: table-caption
   - text-align: center
-  
+
 cite:
   - font-style: italic
 
@@ -113,55 +113,55 @@ dd:
 
 del:
   - text-decoration: line-through
-  
+
 details:
   - display: block
-  
+
 dfn:
   - font-style: italic
-  
+
 div:
   - display: block
-  
+
 dl:
   - display: block
-  - margin-top: 1em
   - margin-bottom: 1em
   - margin-left: 0px
   - margin-right: 0px
+  - margin-top: 1em
 
 dt:
   - display: block
-  
+
 em:
   - font-style: italic
 
 embed:focus:
   - outline: none
-  
+
 fieldset:
+  - border: 2px groove
   - display: block
   - margin-left: 2px
   - margin-right: 2px
-  - padding-top: 0.35em
   - padding-bottom: 0.625em
   - padding-left: 0.75em
   - padding-right: 0.75em
-  - border: 2px groove
+  - padding-top: 0.35em
 
 figcaption:
   - display: block
-  
+
 figure:
   - display: block
-  - margin-top: 1em
   - margin-bottom: 1em
   - margin-left: 40px
   - margin-right: 40px
+  - margin-top: 1em
 
 footer:
   - display: block
-  
+
 form:
   - display: block
   - margin-top: 0px
@@ -169,111 +169,111 @@ form:
 h1:
   - display: block
   - font-size: 2em
-  - margin-top: 0.67em
+  - font-weight: bold
   - margin-bottom: 0.67em
   - margin-left: 0px
   - margin-right: 0px
-  - font-weight: bold
+  - margin-top: 0.67em
 
 h2:
   - display: block
   - font-size: 1.5em
-  - margin-top: 0.83em
+  - font-weight: bold
   - margin-bottom: 0.83em
   - margin-left: 0px
   - margin-right: 0px
-  - font-weight: bold
+  - margin-top: 0.83em
 
 h3:
   - display: block
   - font-size: 1.17em
-  - margin-top: 1em
+  - font-weight: bold
   - margin-bottom: 1em
   - margin-left: 0px
   - margin-right: 0px
-  - font-weight: bold
+  - margin-top: 1em
 
 h4:
   - display: block
-  - margin-top: 1.33em
+  - font-weight: bold
   - margin-bottom: 1.33em
   - margin-left: 0px
   - margin-right: 0px
-  - font-weight: bold
+  - margin-top: 1.33em
 
 h5:
   - display: block
   - font-size: .83em
-  - margin-top: 1.67em
+  - font-weight: bold
   - margin-bottom: 1.67em
   - margin-left: 0px
   - margin-right: 0px
-  - font-weight: bold
+  - margin-top: 1.67em
 
 h6:
   - display: block
   - font-size: .67em
-  - margin-top: 2.33em
+  - font-weight: bold
   - margin-bottom: 2.33em
   - margin-left: 0px
   - margin-right: 0px
-  - font-weight: bold
+  - margin-top: 2.33em
 
 head:
   - display: none
-  
+
 header:
   - display: block
 
 hr:
+  - border-style: inset
+  - border-width: 1px
   - display: block
-  - margin-top: 0.5em
   - margin-bottom: 0.5em
   - margin-left: auto
   - margin-right: auto
-  - border-style: inset
-  - border-width: 1px
+  - margin-top: 0.5em
 
 html:
   - display: block
-  
+
 html:focus:
   - outline: none
-  
+
 i:
   - font-style: italic
-  
+
 iframe:focus:
   - outline: none
-  
+
 img:
   - display: inline-block
 
 ins:
   - text-decoration: underline
-  
+
 kbd:
   - font-family: monospace
-  
+
 label:
   - cursor: default
   - display: inline
 
 legend:
+  - border: none
   - display: block
   - padding-left: 2px
   - padding-right: 2px
-  - border: none
 
 li:
   - display: list-item
-  
+
 link:
   - display: none
-  
+
 map:
   - display: inline
-  
+
 mark:
   - background-color: yellow
   - color: black
@@ -281,148 +281,148 @@ mark:
 menu:
   - display: block
   - list-style-type: disc
-  - margin-top: 1em
   - margin-bottom: 1em
   - margin-left: 0px
   - margin-right: 0px
+  - margin-top: 1em
   - padding-left: 40px
 
 nav:
   - display: block
-  
+
 object:focus:
   - outline: none
-  
+
 ol:
   - display: block
   - list-style-type: decimal
-  - margin-top: 1em
   - margin-bottom: 1em
   - margin-left: 0px
   - margin-right: 0px
+  - margin-top: 1em
   - padding-left: 40px
 
 output:
   - display: inline
-  
+
 p:
   - display: block
-  - margin-top: 1em
   - margin-bottom: 1em
   - margin-left: 0px
   - margin-right: 0px
+  - margin-top: 1em
 
 param:
   - display: none
-  
+
 pre:
   - display: block
   - font-family: monospace
-  - white-space: pre
-  - margin-top: 1em
   - margin-bottom: 1em
   - margin-left: 0px
   - margin-right: 0px
+  - margin-top: 1em
+  - white-space: pre
 
 q:
   - display: inline
-  
-q::before:
-  - content: open-quote
-  
+
 q::after:
   - content: close-quote
-  
+
+q::before:
+  - content: open-quote
+
 rt:
   - line-height: normal
-  
+
 s:
   - text-decoration: line-through
+
+samp:
+  - font-family: monospace
+
+script:
+  - display: none
+
+section:
+  - display: block
+
+small:
+  - font-size: smaller
 
 span:
   - display: inline
 
-samp:
-  - font-family: monospace
-  
-script:
-  - display: none
-  
-section:
-  - display: block
-  
-small:
-  - font-size: smaller
-  
 strike:
   - text-decoration: line-through
-  
+
 strong:
   - font-weight: bold
-  
+
 style:
   - display: none
-  
+
 sub:
-  - vertical-align: sub
   - font-size: smaller
+  - vertical-align: sub
 
 summary:
   - display: block
-  
+
 sup:
-  - vertical-align: super
   - font-size: smaller
+  - vertical-align: super
 
 table:
-  - display: table
   - border-collapse: separate
-  - border-spacing: 2px
   - border-color: gray
+  - border-spacing: 2px
+  - display: table
 
 tbody:
+  - border-color: inherit
   - display: table-row-group
   - vertical-align: middle
-  - border-color: inherit
 
 td:
   - display: table-cell
   - vertical-align: inherit
 
 tfoot:
+  - border-color: inherit
   - display: table-footer-group
   - vertical-align: middle
-  - border-color: inherit
 
 th:
   - display: table-cell
-  - vertical-align: inherit
   - font-weight: bold
   - text-align: center
+  - vertical-align: inherit
 
 thead:
+  - border-color: inherit
   - display: table-header-group
   - vertical-align: middle
-  - border-color: inherit
 
 title:
   - display: none
-  
+
 tr:
+  - border-color: inherit
   - display: table-row
   - vertical-align: inherit
-  - border-color: inherit
 
 u:
   - text-decoration: underline
-  
+
 ul:
   - display: block
   - list-style-type: disc
-  - margin-top: 1em
   - margin-bottom: 1em
   - margin-left: 0px
   - margin-right: 0px
+  - margin-top: 1em
   - padding-left: 40px
 
 var:
