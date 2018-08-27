@@ -115,15 +115,6 @@ index resulted in: [EM [Have you had enough]: {color: expected="rgb(65, 65, 65)"
 Additionally, a file named `replay.result` will be created upon test failure, typically located in your `target/test-classes` folder. This file can now be used to apply those changes to your baseline, using either the [recheck-cli](https://github.com/retest/recheck-cli) or the [retest-GUI](http://retest.org).
 
 
-## Building and Deploying locally
-
-To trigger a deployment via Travis CI, you have to skip JAR signing locally:
-
-```bash
-mvn release:prepare -Darguments="-Dgpg.skip=true"
-```
-
-
 ## License
 
 This project is licensed under the [AGPL license](LICENSE).
