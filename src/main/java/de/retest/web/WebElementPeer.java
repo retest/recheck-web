@@ -3,10 +3,10 @@ package de.retest.web;
 import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import de.retest.ui.Path;
 import de.retest.ui.descriptors.Attribute;
@@ -20,8 +20,6 @@ import de.retest.ui.descriptors.SuffixAttribute;
 import de.retest.ui.descriptors.TextAttribute;
 
 public class WebElementPeer {
-
-	private static final Logger logger = LoggerFactory.getLogger( WebElementPeer.class );
 
 	private final DefaultValuesProvider defaults;
 
@@ -51,17 +49,21 @@ public class WebElementPeer {
 
 	protected IdentifyingAttributes retrieveIdentifyingAttributes() {
 		final List<Attribute> attributes = new ArrayList<>();
+
 		attributes.add( new PathAttribute( Path.fromString( path ) ) );
 		attributes.add( new SuffixAttribute( path.substring( path.lastIndexOf( '[' ) + 1, path.lastIndexOf( ']' ) ) ) );
 		attributes.add( new StringAttribute( "type", webData.getAsString( "tagName" ) ) );
+
 		final String text = webData.getAsString( "text" );
 		if ( StringUtils.isNotBlank( text ) ) {
 			attributes.add( new TextAttribute( "text", text ) );
 		}
+
 		final Rectangle outline = webData.getOutline();
 		if ( outline != null ) {
 			attributes.add( new OutlineAttribute( outline ) );
 		}
+
 		final List<String> userDefinedAttributes =
 				new ArrayList<>( AttributesProvider.getInstance().getIdentifyingAttributes() );
 		for ( final String attribute : userDefinedAttributes ) {
@@ -70,6 +72,7 @@ public class WebElementPeer {
 				attributes.add( new StringAttribute( attribute, attributeValue ) );
 			}
 		}
+
 		return new IdentifyingAttributes( attributes );
 	}
 
@@ -86,16 +89,10 @@ public class WebElementPeer {
 	}
 
 	protected List<Element> convertChildren() {
-		final List<Element> result = new ArrayList<>();
-		for ( int idx = 0; idx < children.size(); idx++ ) {
-			final Element element = children.get( idx ).toElement();
-			if ( element != null ) {
-				result.add( element );
-			} else {
-				logger.warn( "Element was null: {}.", children.get( idx ).path );
-			}
-		}
-		return result;
+		return children.stream() //
+				.map( WebElementPeer::toElement ) //
+				.filter( Objects::nonNull ) //
+				.collect( Collectors.toList() );
 	}
 
 	@Override

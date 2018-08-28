@@ -78,7 +78,7 @@ public class WebData {
 				return Math.toIntExact( Math.round( (Double) value ) );
 			}
 			if ( value instanceof Long ) {
-				return Math.toIntExact( Math.round( (Long) value ) );
+				return Math.toIntExact( (Long) value );
 			}
 		} catch ( final Exception e ) {
 			throw new ConversionException(
