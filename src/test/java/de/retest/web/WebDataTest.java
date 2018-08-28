@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -15,11 +16,16 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 class WebDataTest {
 
+	WebData cut;
+
+	@BeforeEach
+	void setUp() {
+		cut = new WebData( new HashMap<>() );
+	}
+
 	@Test
 	void null_web_data_should_result_in_null_outline() throws Exception {
-		final WebData webData = new WebData( new HashMap<>() );
-		final Rectangle outline = webData.getOutline();
-		assertThat( outline ).isNull();
+		assertThat( cut.getOutline() ).isNull();
 	}
 
 	@Test
@@ -30,11 +36,11 @@ class WebDataTest {
 		input.put( AttributesConfig.WIDTH, "3" );
 		input.put( AttributesConfig.HEIGHT, "4" );
 
-		final Rectangle rectangle = new WebData( input ).getOutline();
-		assertThat( rectangle.getX() ).isEqualTo( 1.0 );
-		assertThat( rectangle.getY() ).isEqualTo( 2.0 );
-		assertThat( rectangle.getWidth() ).isEqualTo( 3.0 );
-		assertThat( rectangle.getHeight() ).isEqualTo( 4.0 );
+		final Rectangle outline = new WebData( input ).getOutline();
+		assertThat( outline.getX() ).isEqualTo( 1.0 );
+		assertThat( outline.getY() ).isEqualTo( 2.0 );
+		assertThat( outline.getWidth() ).isEqualTo( 3.0 );
+		assertThat( outline.getHeight() ).isEqualTo( 4.0 );
 	}
 
 	@Test
@@ -46,7 +52,6 @@ class WebDataTest {
 
 	@Test
 	void int_conversion_should_throw_an_exception_for_unknown_types() throws Exception {
-		final WebData cut = new WebData( new HashMap<>() );
 		assertThatThrownBy( () -> cut.getAsInt( "foo" ) ) //
 				.isInstanceOf( ConversionException.class ) //
 				.hasMessage( "Don't know how to convert null of null to int!" );
@@ -70,19 +75,24 @@ class WebDataTest {
 		final Map<String, Object> wrappedData1 = new HashMap<>();
 		wrappedData1.put( key, value1 );
 
-		final Double value2 = 2.3;
+		final Double value2 = 2.4;
 		final Map<String, Object> wrappedData2 = new HashMap<>();
 		wrappedData2.put( key, value2 );
 
-		final Long value3 = 3L;
+		final Double value3 = 2.5;
 		final Map<String, Object> wrappedData3 = new HashMap<>();
 		wrappedData3.put( key, value3 );
+
+		final Long value4 = 4L;
+		final Map<String, Object> wrappedData4 = new HashMap<>();
+		wrappedData4.put( key, value4 );
 
 		return Stream.of( //
 				Arguments.of( new WebData( wrappedData0 ), key, 0 ), //
 				Arguments.of( new WebData( wrappedData1 ), key, 1 ), //
 				Arguments.of( new WebData( wrappedData2 ), key, 2 ), //
-				Arguments.of( new WebData( wrappedData3 ), key, 3 ) );
+				Arguments.of( new WebData( wrappedData3 ), key, 3 ), //
+				Arguments.of( new WebData( wrappedData4 ), key, 4 ) );
 	}
 
 }
