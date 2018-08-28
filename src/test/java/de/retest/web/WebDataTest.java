@@ -33,7 +33,7 @@ class WebDataTest {
 	}
 
 	@Test
-	void normalize_should_remove_apostrophe() {
+	void normalize_should_remove_quotes_and_trim() {
 		assertThat( WebData.normalize( null ) ).isEqualTo( null );
 		assertThat( WebData.normalize( "\"Times New Roman\"" ) ).isEqualTo( "Times New Roman" );
 		assertThat( WebData.normalize( "\" Times New Roman \"" ) ).isEqualTo( "Times New Roman" );
