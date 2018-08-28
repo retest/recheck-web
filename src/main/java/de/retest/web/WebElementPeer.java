@@ -49,17 +49,21 @@ public class WebElementPeer {
 
 	protected IdentifyingAttributes retrieveIdentifyingAttributes() {
 		final List<Attribute> attributes = new ArrayList<>();
+
 		attributes.add( new PathAttribute( Path.fromString( path ) ) );
 		attributes.add( new SuffixAttribute( path.substring( path.lastIndexOf( '[' ) + 1, path.lastIndexOf( ']' ) ) ) );
 		attributes.add( new StringAttribute( "type", webData.getAsString( "tagName" ) ) );
+
 		final String text = webData.getAsString( "text" );
 		if ( StringUtils.isNotBlank( text ) ) {
 			attributes.add( new TextAttribute( "text", text ) );
 		}
+
 		final Rectangle outline = webData.getOutline();
 		if ( outline != null ) {
 			attributes.add( new OutlineAttribute( outline ) );
 		}
+
 		final List<String> userDefinedAttributes =
 				new ArrayList<>( AttributesProvider.getInstance().getIdentifyingAttributes() );
 		for ( final String attribute : userDefinedAttributes ) {
@@ -68,6 +72,7 @@ public class WebElementPeer {
 				attributes.add( new StringAttribute( attribute, attributeValue ) );
 			}
 		}
+
 		return new IdentifyingAttributes( attributes );
 	}
 
