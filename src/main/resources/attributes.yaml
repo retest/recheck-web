@@ -7,7 +7,9 @@ attributes:
   - animation-direction
   - animation-fill-mode
   - animation-play-state
+  - backface-visibility
   - background-attachment
+  - background-blend-mode
   - background-clip
   - background-color
   - background-image
@@ -15,6 +17,8 @@ attributes:
   - background-position
   - background-repeat
   - background-size
+  - border-bottom-left-radius
+  - border-bottom-right-radius
   - border-color
   - border-style
   - border-radius

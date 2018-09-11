@@ -6,13 +6,18 @@ all:
   - animation-name: none
   - animation-play-state: running
   - animation-timing-function: ease
+  - backface-visibility: visible
   - background-attachment: scroll
+  - background-blend-mode: normal
   - background-clip: border-box
   - background-color: rgba(0, 0, 0, 0)
   - background-image: none
   - background-origin: padding-box
   - background-position: 0% 0%
   - background-repeat: repeat
+  - background-size: auto
+  - border-bottom-left-radius: 0px
+  - border-bottom-right-radius: 0px
   - border-color: rgb(0, 0, 0)
   - border-style: none
   - box-shadow: none

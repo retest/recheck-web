@@ -715,6 +715,14 @@
 										<attributes>
 											<attributes>
 												<entry>
+													<key>border-bottom-left-radius</key>
+													<value xsi:type="xsd:string">3px</value>
+												</entry>
+												<entry>
+													<key>border-bottom-right-radius</key>
+													<value xsi:type="xsd:string">3px</value>
+												</entry>
+												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 												</entry>
@@ -819,6 +827,14 @@
 									<attributes>
 										<attributes>
 											<entry>
+												<key>border-bottom-left-radius</key>
+												<value xsi:type="xsd:string">3px</value>
+											</entry>
+											<entry>
+												<key>border-bottom-right-radius</key>
+												<value xsi:type="xsd:string">3px</value>
+											</entry>
+											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 											</entry>
@@ -866,6 +882,14 @@
 									</identifyingAttributes>
 									<attributes>
 										<attributes>
+											<entry>
+												<key>border-bottom-left-radius</key>
+												<value xsi:type="xsd:string">3px</value>
+											</entry>
+											<entry>
+												<key>border-bottom-right-radius</key>
+												<value xsi:type="xsd:string">3px</value>
+											</entry>
 											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
@@ -1131,6 +1155,14 @@
 													<entry>
 														<key>background-color</key>
 														<value xsi:type="xsd:string">rgb(212, 218, 223)</value>
+													</entry>
+													<entry>
+														<key>border-bottom-left-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-bottom-right-radius</key>
+														<value xsi:type="xsd:string">3px</value>
 													</entry>
 													<entry>
 														<key>border-color</key>
@@ -1830,6 +1862,14 @@
 														<value xsi:type="xsd:string">rgb(212, 218, 223)</value>
 													</entry>
 													<entry>
+														<key>border-bottom-left-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-bottom-right-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -2408,6 +2448,14 @@
 														<value xsi:type="xsd:string">rgb(212, 218, 223)</value>
 													</entry>
 													<entry>
+														<key>border-bottom-left-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-bottom-right-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -2984,6 +3032,14 @@
 													<entry>
 														<key>background-color</key>
 														<value xsi:type="xsd:string">rgb(212, 218, 223)</value>
+													</entry>
+													<entry>
+														<key>border-bottom-left-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-bottom-right-radius</key>
+														<value xsi:type="xsd:string">3px</value>
 													</entry>
 													<entry>
 														<key>border-color</key>
@@ -3622,6 +3678,14 @@
 														<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
 													</entry>
 													<entry>
+														<key>border-bottom-left-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-bottom-right-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgba(0, 0, 0, 0.15)</value>
 													</entry>
@@ -3808,6 +3872,14 @@
 														<attributes>
 															<attributes>
 																<entry>
+																	<key>border-bottom-left-radius</key>
+																	<value xsi:type="xsd:string">3px</value>
+																</entry>
+																<entry>
+																	<key>border-bottom-right-radius</key>
+																	<value xsi:type="xsd:string">3px</value>
+																</entry>
+																<entry>
 																	<key>border-color</key>
 																	<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
 																</entry>
@@ -3958,6 +4030,14 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-left-radius</key>
+																<value xsi:type="xsd:string">3px</value>
+															</entry>
+															<entry>
+																<key>border-bottom-right-radius</key>
+																<value xsi:type="xsd:string">3px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(63, 60, 57)</value>
@@ -6135,6 +6215,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-left-radius</key>
+															<value xsi:type="xsd:string">3px</value>
+														</entry>
+														<entry>
+															<key>border-bottom-right-radius</key>
+															<value xsi:type="xsd:string">3px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 														</entry>
@@ -6349,6 +6437,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											</identifyingAttributes>
 											<attributes>
 												<attributes>
+													<entry>
+														<key>border-bottom-left-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-bottom-right-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
 													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -7048,6 +7144,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-left-radius</key>
+															<value xsi:type="xsd:string">3px</value>
+														</entry>
+														<entry>
+															<key>border-bottom-right-radius</key>
+															<value xsi:type="xsd:string">3px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 														</entry>
@@ -7584,6 +7688,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-left-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-bottom-right-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -7638,6 +7750,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											</identifyingAttributes>
 											<attributes>
 												<attributes>
+													<entry>
+														<key>border-bottom-left-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-bottom-right-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
 													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -7924,6 +8044,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-left-radius</key>
+															<value xsi:type="xsd:string">3px</value>
+														</entry>
+														<entry>
+															<key>border-bottom-right-radius</key>
+															<value xsi:type="xsd:string">3px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
@@ -8280,6 +8408,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											</identifyingAttributes>
 											<attributes>
 												<attributes>
+													<entry>
+														<key>border-bottom-left-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-bottom-right-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
 													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
