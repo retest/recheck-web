@@ -1,4 +1,8 @@
 attributes:
+  - align-content
+  - align-items
+  - align-self
+  - all
   - animation-name
   - animation-duration
   - animation-timing-function
@@ -17,13 +21,38 @@ attributes:
   - background-position
   - background-repeat
   - background-size
+  - border-bottom-style
+  - border-bottom-color
   - border-bottom-left-radius
   - border-bottom-right-radius
   - border-bottom-width
+  - border-collapse
   - border-color
+  - border-image-outset
+  - border-image-repeat
+  - border-image-slice
+  - border-image-source
+  - border-image-width
+  - border-left-color
+  - border-left-style
+  - border-left-width
+  - border-radius
+  - border-right-color
+  - border-right-style
+  - border-right-width
+  - border-spacing
+  - border-style
+  - border-top-color
+  - border-top-left-radius
+  - border-top-right-radius
+  - border-top-style
+  - border-top-width
+  - border-width
   - border-style
   - border-radius
   - border-width
+  - bottom
+  - box-decoration-break
   - box-shadow
   - box-sizing
   - break-after
