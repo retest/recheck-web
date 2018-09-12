@@ -35,6 +35,11 @@ public class AttributesProvider {
 		return instance;
 	}
 
+	static AttributesProvider getTestInstance() {
+		logger.warn( "A test instance of {} is being used.", AttributesProvider.class.getSimpleName() );
+		return new AttributesProvider();
+	}
+
 	private AttributesConfig readAttributesConfig() {
 		final String userAttributesFilePath = System.getProperty( ATTRIBUTES_FILE_PROPERTY );
 		if ( userAttributesFilePath != null ) {

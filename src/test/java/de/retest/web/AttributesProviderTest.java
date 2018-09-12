@@ -16,7 +16,7 @@ class AttributesProviderTest {
 
 	@Test
 	void joined_attributes_should_equal_concated_attributes() throws Exception {
-		final AttributesProvider cut = AttributesProvider.getInstance();
+		final AttributesProvider cut = AttributesProvider.getTestInstance();
 		final List<String> concatedAttributes =
 				Stream.concat( cut.getIdentifyingAttributes().stream(), cut.getAttributes().stream() )
 						.collect( Collectors.toList() );
@@ -28,7 +28,7 @@ class AttributesProviderTest {
 	void invalid_attributes_file_should_yield_RuntimeException() throws Exception {
 		final String attributesFile = "foo";
 		System.setProperty( AttributesProvider.ATTRIBUTES_FILE_PROPERTY, attributesFile );
-		assertThatThrownBy( AttributesProvider::getInstance ) //
+		assertThatThrownBy( AttributesProvider::getTestInstance ) //
 				.isInstanceOf( RuntimeException.class ) //
 				.hasMessage( "Cannot read attributes file '" + attributesFile + "'." );
 		System.clearProperty( AttributesProvider.ATTRIBUTES_FILE_PROPERTY );
