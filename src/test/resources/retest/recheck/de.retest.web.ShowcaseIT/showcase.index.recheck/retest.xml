@@ -18,6 +18,10 @@
 			<attributes>
 				<attributes>
 					<entry>
+						<key>border-bottom-width</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
 						<key>box-sizing</key>
 						<value xsi:type="xsd:string">border-box</value>
 					</entry>
@@ -46,6 +50,10 @@
 						<entry>
 							<key>background-color</key>
 							<value xsi:type="xsd:string">rgb(212, 218, 223)</value>
+						</entry>
+						<entry>
+							<key>border-bottom-width</key>
+							<value xsi:type="xsd:string">0px</value>
 						</entry>
 						<entry>
 							<key>border-color</key>
@@ -110,6 +118,10 @@
 								<value xsi:type="xsd:string">rgb(212, 218, 223)</value>
 							</entry>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
@@ -155,6 +167,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>border-bottom-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
 								<entry>
 									<key>border-color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -205,6 +221,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>border-bottom-width</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
 									<entry>
 										<key>border-color</key>
 										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -259,6 +279,10 @@
 								</identifyingAttributes>
 								<attributes>
 									<attributes>
+										<entry>
+											<key>border-bottom-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
 										<entry>
 											<key>border-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -323,6 +347,10 @@
 									<attributes>
 										<attributes>
 											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 											</entry>
@@ -374,6 +402,10 @@
 									<attributes>
 										<attributes>
 											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 											</entry>
@@ -424,6 +456,10 @@
 										</identifyingAttributes>
 										<attributes>
 											<attributes>
+												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
 												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
@@ -481,6 +517,10 @@
 								<value xsi:type="xsd:string">rgb(212, 218, 223)</value>
 							</entry>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
@@ -522,6 +562,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>border-bottom-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
 								<entry>
 									<key>border-color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -572,6 +616,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>border-bottom-width</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
 									<entry>
 										<key>border-color</key>
 										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -627,6 +675,10 @@
 								<attributes>
 									<attributes>
 										<entry>
+											<key>border-bottom-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
 											<key>border-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 										</entry>
@@ -668,6 +720,10 @@
 									</identifyingAttributes>
 									<attributes>
 										<attributes>
+											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
 											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
@@ -723,6 +779,10 @@
 													<value xsi:type="xsd:string">3px</value>
 												</entry>
 												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 												</entry>
@@ -775,6 +835,10 @@
 								</identifyingAttributes>
 								<attributes>
 									<attributes>
+										<entry>
+											<key>border-bottom-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
 										<entry>
 											<key>border-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -835,6 +899,10 @@
 												<value xsi:type="xsd:string">3px</value>
 											</entry>
 											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 											</entry>
@@ -891,6 +959,10 @@
 												<value xsi:type="xsd:string">3px</value>
 											</entry>
 											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 											</entry>
@@ -937,6 +1009,10 @@
 									</identifyingAttributes>
 									<attributes>
 										<attributes>
+											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
 											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -996,6 +1072,10 @@
 										<attributes>
 											<attributes>
 												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
@@ -1042,6 +1122,10 @@
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -1084,6 +1168,10 @@
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -1165,6 +1253,10 @@
 														<value xsi:type="xsd:string">3px</value>
 													</entry>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -1223,6 +1315,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
@@ -1273,6 +1369,10 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -1342,6 +1442,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
@@ -1392,6 +1496,10 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -1461,6 +1569,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
@@ -1511,6 +1623,10 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -1580,6 +1696,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
@@ -1630,6 +1750,10 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -1701,6 +1825,10 @@
 										<attributes>
 											<attributes>
 												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
@@ -1747,6 +1875,10 @@
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -1789,6 +1921,10 @@
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -1870,6 +2006,10 @@
 														<value xsi:type="xsd:string">3px</value>
 													</entry>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -1928,6 +2068,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
@@ -1978,6 +2122,10 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -2047,6 +2195,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
@@ -2097,6 +2249,10 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -2166,6 +2322,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
@@ -2216,6 +2376,10 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -2287,6 +2451,10 @@
 										<attributes>
 											<attributes>
 												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
@@ -2333,6 +2501,10 @@
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -2375,6 +2547,10 @@
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -2456,6 +2632,10 @@
 														<value xsi:type="xsd:string">3px</value>
 													</entry>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -2514,6 +2694,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
@@ -2564,6 +2748,10 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -2633,6 +2821,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
@@ -2683,6 +2875,10 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -2752,6 +2948,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
@@ -2802,6 +3002,10 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -2873,6 +3077,10 @@
 										<attributes>
 											<attributes>
 												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
@@ -2919,6 +3127,10 @@
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -2961,6 +3173,10 @@
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -3042,6 +3258,10 @@
 														<value xsi:type="xsd:string">3px</value>
 													</entry>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -3100,6 +3320,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
@@ -3150,6 +3374,10 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -3219,6 +3447,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
@@ -3269,6 +3501,10 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -3338,6 +3574,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
@@ -3388,6 +3628,10 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -3459,6 +3703,10 @@
 										<attributes>
 											<attributes>
 												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
@@ -3504,6 +3752,10 @@
 											</identifyingAttributes>
 											<attributes>
 												<attributes>
+													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
 													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -3571,6 +3823,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
 														</entry>
@@ -3625,6 +3881,10 @@
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -3684,6 +3944,10 @@
 													<entry>
 														<key>border-bottom-right-radius</key>
 														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">1px</value>
 													</entry>
 													<entry>
 														<key>border-color</key>
@@ -3760,6 +4024,10 @@
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
@@ -3805,6 +4073,10 @@
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
@@ -3880,6 +4152,10 @@
 																	<value xsi:type="xsd:string">3px</value>
 																</entry>
 																<entry>
+																	<key>border-bottom-width</key>
+																	<value xsi:type="xsd:string">0px</value>
+																</entry>
+																<entry>
 																	<key>border-color</key>
 																	<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
 																</entry>
@@ -3943,6 +4219,10 @@
 														<entry>
 															<key>background-color</key>
 															<value xsi:type="xsd:string">rgb(249, 249, 249)</value>
+														</entry>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">1px</value>
 														</entry>
 														<entry>
 															<key>border-color</key>
@@ -4039,6 +4319,10 @@
 																<value xsi:type="xsd:string">3px</value>
 															</entry>
 															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
+															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(63, 60, 57)</value>
 															</entry>
@@ -4102,6 +4386,10 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
@@ -4148,6 +4436,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
@@ -4190,6 +4482,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -4235,6 +4531,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
@@ -4277,6 +4577,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -4321,6 +4625,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
@@ -4363,6 +4671,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -4407,6 +4719,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
@@ -4449,6 +4765,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -4493,6 +4813,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
@@ -4535,6 +4859,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -4583,6 +4911,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
 							</entry>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
@@ -4624,6 +4956,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>border-bottom-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
 								<entry>
 									<key>border-color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -4668,6 +5004,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 						<attributes>
 							<attributes>
 								<entry>
+									<key>border-bottom-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
 									<key>border-color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 								</entry>
@@ -4709,6 +5049,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>border-bottom-width</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
 									<entry>
 										<key>border-color</key>
 										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -4768,6 +5112,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<attributes>
 									<attributes>
 										<entry>
+											<key>border-bottom-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
 											<key>border-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 										</entry>
@@ -4813,6 +5161,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									</identifyingAttributes>
 									<attributes>
 										<attributes>
+											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">1px</value>
+											</entry>
 											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149) rgb(131, 140, 149) rgb(175, 175, 175)</value>
@@ -4880,6 +5232,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<attributes>
 											<attributes>
 												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 												</entry>
@@ -4943,6 +5299,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
 													</entry>
@@ -4994,6 +5354,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 														</entry>
@@ -5037,6 +5401,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
@@ -5082,6 +5450,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 														</entry>
@@ -5125,6 +5497,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
@@ -5170,6 +5546,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 														</entry>
@@ -5214,6 +5594,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										</identifyingAttributes>
 										<attributes>
 											<attributes>
+												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
 												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -5273,6 +5657,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -5319,6 +5707,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											</identifyingAttributes>
 											<attributes>
 												<attributes>
+													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
 													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -5367,6 +5759,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -5413,6 +5809,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											</identifyingAttributes>
 											<attributes>
 												<attributes>
+													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
 													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -5465,6 +5865,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										</identifyingAttributes>
 										<attributes>
 											<attributes>
+												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
 												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
@@ -5528,6 +5932,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 													</entry>
@@ -5590,6 +5998,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 														</entry>
@@ -5636,6 +6048,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
@@ -5684,6 +6100,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
@@ -5735,6 +6155,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<attributes>
 														<attributes>
 															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
+															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
 															</entry>
@@ -5783,6 +6207,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
@@ -5836,6 +6264,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
 														</entry>
@@ -5888,6 +6320,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 														</entry>
@@ -5935,6 +6371,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
@@ -5987,6 +6427,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<attributes>
 									<attributes>
 										<entry>
+											<key>border-bottom-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
 											<key>border-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 										</entry>
@@ -6032,6 +6476,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									</identifyingAttributes>
 									<attributes>
 										<attributes>
+											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">1px</value>
+											</entry>
 											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149) rgb(131, 140, 149) rgb(175, 175, 175)</value>
@@ -6099,6 +6547,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<attributes>
 											<attributes>
 												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 												</entry>
@@ -6160,6 +6612,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											</identifyingAttributes>
 											<attributes>
 												<attributes>
+													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
 													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
@@ -6223,6 +6679,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">3px</value>
 														</entry>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 														</entry>
@@ -6283,6 +6743,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 														</entry>
@@ -6330,6 +6794,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
@@ -6379,6 +6847,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										</identifyingAttributes>
 										<attributes>
 											<attributes>
+												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
 												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -6446,6 +6918,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">3px</value>
 													</entry>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -6501,6 +6977,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										</identifyingAttributes>
 										<attributes>
 											<attributes>
+												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
 												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -6560,6 +7040,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 													</entry>
@@ -6605,6 +7089,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
@@ -6668,6 +7156,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<attributes>
 														<attributes>
 															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
+															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 															</entry>
@@ -6715,6 +7207,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
@@ -6768,6 +7264,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<attributes>
 														<attributes>
 															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
+															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 															</entry>
@@ -6816,6 +7316,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<attributes>
 														<attributes>
 															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
+															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 															</entry>
@@ -6863,6 +7367,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
@@ -6916,6 +7424,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<attributes>
 									<attributes>
 										<entry>
+											<key>border-bottom-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
 											<key>border-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 										</entry>
@@ -6961,6 +7473,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									</identifyingAttributes>
 									<attributes>
 										<attributes>
+											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">1px</value>
+											</entry>
 											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149) rgb(131, 140, 149) rgb(175, 175, 175)</value>
@@ -7028,6 +7544,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<attributes>
 											<attributes>
 												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 												</entry>
@@ -7089,6 +7609,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											</identifyingAttributes>
 											<attributes>
 												<attributes>
+													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
 													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
@@ -7152,6 +7676,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">3px</value>
 														</entry>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 														</entry>
@@ -7212,6 +7740,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 														</entry>
@@ -7259,6 +7791,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
@@ -7308,6 +7844,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										</identifyingAttributes>
 										<attributes>
 											<attributes>
+												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
 												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -7367,6 +7907,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 													</entry>
@@ -7418,6 +7962,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
@@ -7481,6 +8029,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<attributes>
 														<attributes>
 															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
+															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 															</entry>
@@ -7528,6 +8080,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
@@ -7582,6 +8138,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										</identifyingAttributes>
 										<attributes>
 											<attributes>
+												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
 												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -7641,6 +8201,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -7694,6 +8258,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>border-bottom-right-radius</key>
 														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>border-color</key>
@@ -7759,6 +8327,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">3px</value>
 													</entry>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -7817,6 +8389,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<attributes>
 									<attributes>
 										<entry>
+											<key>border-bottom-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
 											<key>border-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 										</entry>
@@ -7862,6 +8438,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									</identifyingAttributes>
 									<attributes>
 										<attributes>
+											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">1px</value>
+											</entry>
 											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149) rgb(131, 140, 149) rgb(175, 175, 175)</value>
@@ -7929,6 +8509,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<attributes>
 											<attributes>
 												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 												</entry>
@@ -7990,6 +8574,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											</identifyingAttributes>
 											<attributes>
 												<attributes>
+													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
 													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
@@ -8053,6 +8641,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">3px</value>
 														</entry>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 														</entry>
@@ -8113,6 +8705,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<attributes>
 													<attributes>
 														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 														</entry>
@@ -8160,6 +8756,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
@@ -8209,6 +8809,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										</identifyingAttributes>
 										<attributes>
 											<attributes>
+												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
 												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -8268,6 +8872,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -8315,6 +8923,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
@@ -8361,6 +8973,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											</identifyingAttributes>
 											<attributes>
 												<attributes>
+													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
 													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -8415,6 +9031,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>border-bottom-right-radius</key>
 														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>border-color</key>
@@ -8477,6 +9097,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<attributes>
 											<attributes>
 												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
@@ -8535,6 +9159,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<attributes>
 												<attributes>
 													<entry>
+														<key>border-bottom-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>border-color</key>
 														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 													</entry>
@@ -8580,6 +9208,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												</identifyingAttributes>
 												<attributes>
 													<attributes>
+														<entry>
+															<key>border-bottom-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
 														<entry>
 															<key>border-color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
@@ -8643,6 +9275,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<attributes>
 														<attributes>
 															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
+															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 															</entry>
@@ -8689,6 +9325,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
@@ -8737,6 +9377,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
@@ -8790,6 +9434,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<attributes>
 														<attributes>
 															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
+															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
 															</entry>
@@ -8841,6 +9489,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													</identifyingAttributes>
 													<attributes>
 														<attributes>
+															<entry>
+																<key>border-bottom-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
 															<entry>
 																<key>border-color</key>
 																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
@@ -8901,6 +9553,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
 							</entry>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>border-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
@@ -8950,6 +9606,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>border-bottom-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
 								<entry>
 									<key>border-color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -9001,6 +9661,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<attributes>
 								<attributes>
 									<entry>
+										<key>border-bottom-width</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
 										<key>border-color</key>
 										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 									</entry>
@@ -9042,6 +9706,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								</identifyingAttributes>
 								<attributes>
 									<attributes>
+										<entry>
+											<key>border-bottom-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
 										<entry>
 											<key>border-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -9098,6 +9766,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<attributes>
 										<attributes>
 											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 											</entry>
@@ -9151,6 +9823,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<attributes>
 										<attributes>
 											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 											</entry>
@@ -9201,6 +9877,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<attributes>
 											<attributes>
 												<entry>
+													<key>border-bottom-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>border-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
@@ -9245,6 +9925,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								</identifyingAttributes>
 								<attributes>
 									<attributes>
+										<entry>
+											<key>border-bottom-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
 										<entry>
 											<key>border-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -9301,6 +9985,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<attributes>
 										<attributes>
 											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 											</entry>
@@ -9355,6 +10043,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<attributes>
 										<attributes>
 											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 											</entry>
@@ -9406,6 +10098,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								</identifyingAttributes>
 								<attributes>
 									<attributes>
+										<entry>
+											<key>border-bottom-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
 										<entry>
 											<key>border-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
@@ -9461,6 +10157,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									</identifyingAttributes>
 									<attributes>
 										<attributes>
+											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
 											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
@@ -9518,6 +10218,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<attributes>
 										<attributes>
 											<entry>
+												<key>border-bottom-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>border-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 											</entry>
@@ -9574,6 +10278,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<attributes>
 					<attributes>
 						<entry>
+							<key>border-bottom-width</key>
+							<value xsi:type="xsd:string">0px</value>
+						</entry>
+						<entry>
 							<key>box-sizing</key>
 							<value xsi:type="xsd:string">border-box</value>
 						</entry>
@@ -9599,6 +10307,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
@@ -9627,6 +10339,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
@@ -9653,6 +10369,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
@@ -9681,6 +10401,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
@@ -9707,6 +10431,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
@@ -9735,6 +10463,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
@@ -9761,6 +10493,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
@@ -9789,6 +10525,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
@@ -9815,6 +10555,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
@@ -9847,6 +10591,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
@@ -9877,6 +10625,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
@@ -9909,6 +10661,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
@@ -9939,6 +10695,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
@@ -9971,6 +10731,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
@@ -10001,6 +10765,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
@@ -10033,6 +10801,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
@@ -10063,6 +10835,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
@@ -10095,6 +10871,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
@@ -10125,6 +10905,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
@@ -10157,6 +10941,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
@@ -10187,6 +10975,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
@@ -10219,6 +11011,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
@@ -10249,6 +11045,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
@@ -10281,6 +11081,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
@@ -10311,6 +11115,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
@@ -10343,6 +11151,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>border-bottom-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
