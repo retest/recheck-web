@@ -62,6 +62,14 @@
 						<value xsi:type="xsd:string">border-box</value>
 					</entry>
 					<entry>
+						<key>caret-color</key>
+						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+					</entry>
+					<entry>
+						<key>column-rule-width</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
 						<key>font-size</key>
 						<value xsi:type="xsd:string">10px</value>
 					</entry>
@@ -152,8 +160,20 @@
 							<value xsi:type="xsd:string">border-box</value>
 						</entry>
 						<entry>
+							<key>caret-color</key>
+							<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+						</entry>
+						<entry>
 							<key>color</key>
 							<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+						</entry>
+						<entry>
+							<key>column-rule-color</key>
+							<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+						</entry>
+						<entry>
+							<key>column-rule-width</key>
+							<value xsi:type="xsd:string">0px</value>
 						</entry>
 						<entry>
 							<key>font-family</key>
@@ -270,8 +290,20 @@
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -372,8 +404,20 @@
 									<value xsi:type="xsd:string">border-box</value>
 								</entry>
 								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
 									<key>color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -482,8 +526,20 @@
 										<value xsi:type="xsd:string">border-box</value>
 									</entry>
 									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
 										<key>color</key>
 										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
+										<key>column-rule-color</key>
+										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
+										<key>column-rule-width</key>
+										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
 										<key>float</key>
@@ -592,8 +648,20 @@
 											<value xsi:type="xsd:string">border-box</value>
 										</entry>
 										<entry>
+											<key>caret-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
 											<key>color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>font-family</key>
@@ -711,8 +779,20 @@
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>display</key>
@@ -818,8 +898,20 @@
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>display</key>
@@ -925,8 +1017,20 @@
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>font-family</key>
@@ -1037,8 +1141,20 @@
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -1135,8 +1251,20 @@
 									<value xsi:type="xsd:string">border-box</value>
 								</entry>
 								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
 									<key>color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -1245,8 +1373,20 @@
 										<value xsi:type="xsd:string">border-box</value>
 									</entry>
 									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
 										<key>color</key>
 										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
+										<key>column-rule-color</key>
+										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
+										<key>column-rule-width</key>
+										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
 										<key>float</key>
@@ -1359,8 +1499,20 @@
 											<value xsi:type="xsd:string">border-box</value>
 										</entry>
 										<entry>
+											<key>caret-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
 											<key>color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>font-family</key>
@@ -1457,8 +1609,20 @@
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>display</key>
@@ -1579,8 +1743,20 @@
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>display</key>
@@ -1688,8 +1864,20 @@
 											<value xsi:type="xsd:string">border-box</value>
 										</entry>
 										<entry>
+											<key>caret-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
 											<key>color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>float</key>
@@ -1815,8 +2003,20 @@
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>display</key>
@@ -1935,8 +2135,20 @@
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>display</key>
@@ -2034,8 +2246,20 @@
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>display</key>
@@ -2152,8 +2376,20 @@
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>display</key>
@@ -2254,8 +2490,20 @@
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -2353,8 +2601,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -2497,8 +2757,20 @@
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -2611,8 +2883,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -2718,8 +3002,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -2846,8 +3142,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -2953,8 +3261,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -3081,8 +3401,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -3188,8 +3520,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -3316,8 +3660,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -3423,8 +3779,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -3553,8 +3921,20 @@
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>display</key>
@@ -3655,8 +4035,20 @@
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -3754,8 +4146,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -3898,8 +4302,20 @@
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -4012,8 +4428,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -4119,8 +4547,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -4247,8 +4687,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -4354,8 +4806,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -4482,8 +4946,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -4589,8 +5065,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -4719,8 +5207,20 @@
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>display</key>
@@ -4821,8 +5321,20 @@
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -4920,8 +5432,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -5064,8 +5588,20 @@
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -5178,8 +5714,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -5285,8 +5833,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -5413,8 +5973,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -5520,8 +6092,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -5648,8 +6232,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -5755,8 +6351,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -5885,8 +6493,20 @@
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>display</key>
@@ -5987,8 +6607,20 @@
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -6086,8 +6718,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -6230,8 +6874,20 @@
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -6344,8 +7000,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -6451,8 +7119,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -6579,8 +7259,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -6686,8 +7378,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -6814,8 +7518,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -6921,8 +7637,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -7051,8 +7779,20 @@
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>display</key>
@@ -7153,8 +7893,20 @@
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>display</key>
@@ -7275,8 +8027,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -7386,8 +8150,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -7534,8 +8310,20 @@
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -7652,8 +8440,20 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -7754,8 +8554,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -7896,8 +8708,20 @@
 																	<value xsi:type="xsd:string">border-box</value>
 																</entry>
 																<entry>
+																	<key>caret-color</key>
+																	<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+																</entry>
+																<entry>
 																	<key>color</key>
 																	<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+																</entry>
+																<entry>
+																	<key>column-rule-color</key>
+																	<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+																</entry>
+																<entry>
+																	<key>column-rule-width</key>
+																	<value xsi:type="xsd:string">0px</value>
 																</entry>
 																<entry>
 																	<key>display</key>
@@ -8029,12 +8853,24 @@
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(63, 60, 57)</value>
+														</entry>
+														<entry>
 															<key>clear</key>
 															<value xsi:type="xsd:string">both</value>
 														</entry>
 														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(63, 60, 57)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(63, 60, 57)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -8179,8 +9015,20 @@
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(63, 60, 57)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(63, 60, 57)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(63, 60, 57)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -8294,8 +9142,20 @@
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -8396,8 +9256,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -8495,8 +9367,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -8595,8 +9479,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -8694,8 +9590,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -8793,8 +9701,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -8892,8 +9812,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -8991,8 +9923,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -9090,8 +10034,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -9189,8 +10145,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -9288,8 +10256,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -9391,8 +10371,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -9493,8 +10485,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<value xsi:type="xsd:string">border-box</value>
 								</entry>
 								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
 									<key>color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -9592,8 +10596,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<value xsi:type="xsd:string">border-box</value>
 								</entry>
 								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
 									<key>color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -9694,8 +10710,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<value xsi:type="xsd:string">border-box</value>
 									</entry>
 									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
 										<key>color</key>
 										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
+										<key>column-rule-color</key>
+										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
+										<key>column-rule-width</key>
+										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
 										<key>font-family</key>
@@ -9808,8 +10836,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<value xsi:type="xsd:string">border-box</value>
 										</entry>
 										<entry>
+											<key>caret-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
 											<key>color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>font-family</key>
@@ -9918,8 +10958,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>font-family</key>
@@ -10032,8 +11084,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>font-family</key>
@@ -10151,8 +11215,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -10258,8 +11334,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -10358,8 +11446,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -10458,8 +11558,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -10558,8 +11670,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -10658,8 +11782,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -10763,8 +11899,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>float</key>
@@ -10877,8 +12025,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -10980,8 +12140,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -11083,8 +12255,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -11186,8 +12370,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>display</key>
@@ -11298,8 +12494,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>float</key>
@@ -11416,8 +12624,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -11534,8 +12754,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -11637,8 +12869,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -11741,8 +12985,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -11847,8 +13103,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>font-family</key>
@@ -11952,8 +13220,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -12060,8 +13340,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -12168,8 +13460,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -12272,8 +13576,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -12379,8 +13695,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<value xsi:type="xsd:string">border-box</value>
 										</entry>
 										<entry>
+											<key>caret-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
 											<key>color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>font-family</key>
@@ -12489,8 +13817,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>font-family</key>
@@ -12603,8 +13943,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>font-family</key>
@@ -12721,8 +14073,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -12851,8 +14215,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -12963,8 +14339,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -13067,8 +14455,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -13176,8 +14576,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>float</key>
@@ -13310,8 +14722,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>display</key>
@@ -13422,8 +14846,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>float</key>
@@ -13536,8 +14972,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -13638,8 +15086,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -13756,8 +15216,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>font-family</key>
@@ -13860,8 +15332,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -13968,8 +15452,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>font-family</key>
@@ -14072,8 +15568,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>font-family</key>
@@ -14176,8 +15684,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>font-family</key>
@@ -14284,8 +15804,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<value xsi:type="xsd:string">border-box</value>
 										</entry>
 										<entry>
+											<key>caret-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
 											<key>color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>font-family</key>
@@ -14394,8 +15926,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>font-family</key>
@@ -14508,8 +16052,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>font-family</key>
@@ -14626,8 +16182,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -14756,8 +16324,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -14868,8 +16448,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -14972,8 +16564,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -15081,8 +16685,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>float</key>
@@ -15195,8 +16811,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -15303,8 +16931,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -15421,8 +17061,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>font-family</key>
@@ -15525,8 +17177,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -15639,8 +17303,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>float</key>
@@ -15753,8 +17429,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -15876,8 +17564,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>display</key>
@@ -16003,8 +17703,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>display</key>
@@ -16113,8 +17825,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<value xsi:type="xsd:string">border-box</value>
 										</entry>
 										<entry>
+											<key>caret-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
 											<key>color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>font-family</key>
@@ -16223,8 +17947,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>font-family</key>
@@ -16337,8 +18073,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>font-family</key>
@@ -16455,8 +18203,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -16585,8 +18345,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>display</key>
@@ -16697,8 +18469,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -16801,8 +18585,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -16910,8 +18706,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>float</key>
@@ -17024,8 +18832,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -17127,8 +18947,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -17230,8 +19062,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -17353,8 +19197,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>display</key>
@@ -17469,8 +19325,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>float</key>
@@ -17583,8 +19451,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">border-box</value>
 													</entry>
 													<entry>
+														<key>caret-color</key>
+														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
 														<key>color</key>
 														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>column-rule-color</key>
+														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>column-rule-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>font-family</key>
@@ -17685,8 +19565,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">border-box</value>
 														</entry>
 														<entry>
+															<key>caret-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
 															<key>color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>column-rule-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>column-rule-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>font-family</key>
@@ -17803,8 +19695,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>font-family</key>
@@ -17906,8 +19810,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>font-family</key>
@@ -18010,8 +19926,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -18118,8 +20046,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>display</key>
@@ -18226,8 +20166,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">border-box</value>
 															</entry>
 															<entry>
+																<key>caret-color</key>
+																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
 																<key>color</key>
 																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>column-rule-color</key>
+																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>column-rule-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>font-family</key>
@@ -18341,8 +20293,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -18447,8 +20411,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<value xsi:type="xsd:string">border-box</value>
 								</entry>
 								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
 									<key>color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -18553,8 +20529,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<value xsi:type="xsd:string">border-box</value>
 									</entry>
 									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
 										<key>color</key>
 										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
+										<key>column-rule-color</key>
+										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
+										<key>column-rule-width</key>
+										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
 										<key>font-family</key>
@@ -18655,8 +20643,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<value xsi:type="xsd:string">border-box</value>
 										</entry>
 										<entry>
+											<key>caret-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
 											<key>color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>float</key>
@@ -18766,8 +20766,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>font-family</key>
@@ -18875,8 +20887,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>font-family</key>
@@ -18981,8 +21005,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">border-box</value>
 												</entry>
 												<entry>
+													<key>caret-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
 													<key>color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>column-rule-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>font-family</key>
@@ -19086,8 +21122,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<value xsi:type="xsd:string">border-box</value>
 										</entry>
 										<entry>
+											<key>caret-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
 											<key>color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>float</key>
@@ -19197,8 +21245,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>font-family</key>
@@ -19307,8 +21367,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>font-family</key>
@@ -19419,8 +21491,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<value xsi:type="xsd:string">border-box</value>
 										</entry>
 										<entry>
+											<key>caret-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
 											<key>color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>column-rule-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>float</key>
@@ -19530,8 +21614,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>font-family</key>
@@ -19642,8 +21738,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">border-box</value>
 											</entry>
 											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
 												<key>color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>font-family</key>
@@ -19734,6 +21842,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<value xsi:type="xsd:string">border-box</value>
 						</entry>
 						<entry>
+							<key>caret-color</key>
+							<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+						</entry>
+						<entry>
+							<key>column-rule-width</key>
+							<value xsi:type="xsd:string">0px</value>
+						</entry>
+						<entry>
 							<key>font-size</key>
 							<value xsi:type="xsd:string">10px</value>
 						</entry>
@@ -19798,6 +21914,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-size</key>
@@ -19867,6 +21991,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>font-size</key>
 								<value xsi:type="xsd:string">10px</value>
 							</entry>
@@ -19932,6 +22064,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-size</key>
@@ -20001,6 +22141,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>font-size</key>
 								<value xsi:type="xsd:string">10px</value>
 							</entry>
@@ -20066,6 +22214,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-size</key>
@@ -20135,6 +22291,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>font-size</key>
 								<value xsi:type="xsd:string">10px</value>
 							</entry>
@@ -20200,6 +22364,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-size</key>
@@ -20269,6 +22441,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>font-size</key>
 								<value xsi:type="xsd:string">10px</value>
 							</entry>
@@ -20334,6 +22514,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>display</key>
@@ -20407,6 +22595,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">none</value>
 							</entry>
@@ -20476,6 +22672,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>display</key>
@@ -20549,6 +22753,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">none</value>
 							</entry>
@@ -20618,6 +22830,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>display</key>
@@ -20691,6 +22911,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">none</value>
 							</entry>
@@ -20760,6 +22988,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>display</key>
@@ -20833,6 +23069,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">none</value>
 							</entry>
@@ -20902,6 +23146,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>display</key>
@@ -20975,6 +23227,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">none</value>
 							</entry>
@@ -21044,6 +23304,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>display</key>
@@ -21117,6 +23385,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">none</value>
 							</entry>
@@ -21186,6 +23462,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>display</key>
@@ -21259,6 +23543,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">none</value>
 							</entry>
@@ -21328,6 +23620,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>display</key>
@@ -21401,6 +23701,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">none</value>
 							</entry>
@@ -21470,6 +23778,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>display</key>
@@ -21542,6 +23858,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>font-size</key>

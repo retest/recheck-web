@@ -54,8 +54,21 @@ all:
   - box-shadow: none
   - box-sizing: content-box
   - caption-side: top
+  - caret-color: auto
   - clear: none
+  - clip: auto
   - color: rgb(0, 0, 0)
+  - column-count: auto
+  - column-fill: balance
+  - column-gap: normal
+  - column-rule-color: rgb(0, 0, 0)
+  - column-rule-style: none
+  - column-rule-width: medium
+  - column-span: none
+  - column-width: auto
+  - counter-increment: none
+  - counter-reset: none
+  - cursor: auto
   - direction: ltr
   - display: block
   - empty-cells: show

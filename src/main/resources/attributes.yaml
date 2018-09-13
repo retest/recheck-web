@@ -59,9 +59,21 @@ attributes:
   - break-before
   - break-inside
   - caption-side
+  - caret-color
   - clear
+  - clip
   - color
+  - column-count
+  - column-fill
+  - column-gap
+  - column-rule-color
+  - column-rule-style
+  - column-rule-width
+  - column-span
+  - column-width
   - content
+  - counter-increment
+  - counter-reset
   - direction
   - display
   - empty-cells

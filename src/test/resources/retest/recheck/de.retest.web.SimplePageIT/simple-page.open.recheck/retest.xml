@@ -57,6 +57,14 @@
 						<key>border-width</key>
 						<value xsi:type="xsd:string">0px</value>
 					</entry>
+					<entry>
+						<key>caret-color</key>
+						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+					</entry>
+					<entry>
+						<key>column-rule-width</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
 				</attributes>
 			</attributes>
 			<containedComponents>
@@ -113,6 +121,14 @@
 						</entry>
 						<entry>
 							<key>border-width</key>
+							<value xsi:type="xsd:string">0px</value>
+						</entry>
+						<entry>
+							<key>caret-color</key>
+							<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+						</entry>
+						<entry>
+							<key>column-rule-width</key>
 							<value xsi:type="xsd:string">0px</value>
 						</entry>
 					</attributes>
@@ -190,6 +206,18 @@
 								<key>border-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -249,6 +277,14 @@
 								<key>border-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 					<containedComponents>
@@ -306,6 +342,14 @@
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 							</attributes>
@@ -368,6 +412,14 @@
 								<key>border-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 					<containedComponents>
@@ -424,6 +476,14 @@
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 							</attributes>
@@ -486,6 +546,14 @@
 									<key>border-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
 							</attributes>
 						</attributes>
 					</containedComponents>
@@ -544,6 +612,14 @@
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
@@ -614,6 +690,14 @@
 								<key>border-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 					<containedComponents>
@@ -673,6 +757,14 @@
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
@@ -748,6 +840,14 @@
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
@@ -813,6 +913,14 @@
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
@@ -883,6 +991,14 @@
 								<key>border-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 					<containedComponents>
@@ -940,6 +1056,14 @@
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
@@ -1011,6 +1135,14 @@
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
@@ -1079,6 +1211,14 @@
 								<key>border-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 					<containedComponents>
@@ -1135,6 +1275,14 @@
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 							</attributes>
@@ -1195,6 +1343,14 @@
 										<key>border-width</key>
 										<value xsi:type="xsd:string">0px</value>
 									</entry>
+									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+									</entry>
+									<entry>
+										<key>column-rule-width</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
 								</attributes>
 							</attributes>
 							<containedComponents>
@@ -1252,6 +1408,14 @@
 										</entry>
 										<entry>
 											<key>border-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
+											<key>caret-color</key>
+											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+										</entry>
+										<entry>
+											<key>column-rule-width</key>
 											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
@@ -1320,6 +1484,14 @@
 										</entry>
 										<entry>
 											<key>border-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
+											<key>caret-color</key>
+											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+										</entry>
+										<entry>
+											<key>column-rule-width</key>
 											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
@@ -1392,6 +1564,14 @@
 										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+									</entry>
+									<entry>
+										<key>column-rule-width</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
 										<key>margin-bottom</key>
 										<value xsi:type="xsd:string">16px</value>
 									</entry>
@@ -1460,6 +1640,14 @@
 								<key>border-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 					<containedComponents>
@@ -1517,6 +1705,14 @@
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 							</attributes>
@@ -1578,6 +1774,14 @@
 									<key>border-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
 							</attributes>
 						</attributes>
 					</containedComponents>
@@ -1635,6 +1839,14 @@
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 							</attributes>
@@ -1697,6 +1909,14 @@
 								<key>border-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 					<containedComponents>
@@ -1757,6 +1977,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<key>border-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
 							</attributes>
 						</attributes>
 					</containedComponents>
@@ -1815,6 +2043,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 							<entry>
 								<key>border-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
@@ -1890,6 +2126,18 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 							</attributes>
@@ -1968,6 +2216,18 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<key>border-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
 							</attributes>
 						</attributes>
 					</containedComponents>
@@ -2041,6 +2301,18 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 							</attributes>
@@ -2123,8 +2395,20 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
 										<key>color</key>
 										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>column-rule-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>column-rule-width</key>
+										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
 										<key>display</key>
@@ -2207,6 +2491,18 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<key>border-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
 							</attributes>
 						</attributes>
 					</containedComponents>
@@ -2281,6 +2577,18 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 							</attributes>
@@ -2359,6 +2667,18 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<key>border-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
 							</attributes>
 						</attributes>
 					</containedComponents>
@@ -2417,6 +2737,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 							<entry>
 								<key>border-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
@@ -2496,6 +2824,18 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
@@ -2581,8 +2921,20 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
 										<key>color</key>
 										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>column-rule-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>column-rule-width</key>
+										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
 										<key>text-indent</key>
@@ -2650,6 +3002,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<key>border-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -2707,6 +3067,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 							<entry>
 								<key>border-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
@@ -2769,6 +3137,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
@@ -2842,16 +3218,24 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">border-box</value>
 									</entry>
 									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+									</entry>
+									<entry>
+										<key>column-rule-width</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
 										<key>display</key>
 										<value xsi:type="xsd:string">inline-block</value>
 									</entry>
 									<entry>
 										<key>font-family</key>
-										<value xsi:type="xsd:string">Arial</value>
+										<value xsi:type="xsd:string">system-ui</value>
 									</entry>
 									<entry>
 										<key>font-size</key>
-										<value xsi:type="xsd:string">13.3333px</value>
+										<value xsi:type="xsd:string">11px</value>
 									</entry>
 									<entry>
 										<key>margin-bottom</key>
@@ -2859,11 +3243,11 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									</entry>
 									<entry>
 										<key>margin-left</key>
-										<value xsi:type="xsd:string">4px</value>
+										<value xsi:type="xsd:string">2.89502px</value>
 									</entry>
 									<entry>
 										<key>margin-right</key>
-										<value xsi:type="xsd:string">3px</value>
+										<value xsi:type="xsd:string">2.89502px</value>
 									</entry>
 									<entry>
 										<key>margin-top</key>
@@ -2929,6 +3313,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<key>border-width</key>
 										<value xsi:type="xsd:string">0px</value>
 									</entry>
+									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+									</entry>
+									<entry>
+										<key>column-rule-width</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
 								</attributes>
 							</attributes>
 							<containedComponents>
@@ -2985,6 +3377,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										</entry>
 										<entry>
 											<key>border-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
+											<key>caret-color</key>
+											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+										</entry>
+										<entry>
+											<key>column-rule-width</key>
 											<value xsi:type="xsd:string">0px</value>
 										</entry>
 									</attributes>
@@ -3048,6 +3448,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 							<entry>
 								<key>border-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
@@ -3122,6 +3530,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">inline</value>
 							</entry>
@@ -3182,6 +3598,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 							<entry>
 								<key>border-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
@@ -3246,6 +3670,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 							<entry>
 								<key>border-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
@@ -3314,6 +3746,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 							<entry>
 								<key>border-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
@@ -3391,6 +3831,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
@@ -3456,6 +3904,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 							<entry>
 								<key>border-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
@@ -3527,6 +3983,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
@@ -3595,6 +4059,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
@@ -3660,6 +4132,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<key>border-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
 							</attributes>
 						</attributes>
 					</containedComponents>
@@ -3719,6 +4199,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 							<entry>
 								<key>border-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
@@ -3788,6 +4276,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<key>border-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
 							</attributes>
 						</attributes>
 						<containedComponents>
@@ -3845,6 +4341,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									</entry>
 									<entry>
 										<key>border-width</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+									</entry>
+									<entry>
+										<key>column-rule-width</key>
 										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
@@ -3913,6 +4417,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<key>border-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -3971,6 +4483,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 							<entry>
 								<key>border-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
@@ -4033,6 +4553,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<key>border-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -4091,6 +4619,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 							<entry>
 								<key>border-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
@@ -4172,6 +4708,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<key>border-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 					<containedComponents>
@@ -4248,6 +4792,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</entry>
 								<entry>
 									<key>border-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-width</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 							</attributes>
@@ -4328,6 +4880,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<key>border-width</key>
 										<value xsi:type="xsd:string">0px</value>
 									</entry>
+									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+									</entry>
+									<entry>
+										<key>column-rule-width</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
 								</attributes>
 							</attributes>
 							<containedComponents>
@@ -4384,6 +4944,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										</entry>
 										<entry>
 											<key>border-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
+											<key>caret-color</key>
+											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+										</entry>
+										<entry>
+											<key>column-rule-width</key>
 											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
@@ -4461,6 +5029,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 												<key>border-width</key>
 												<value xsi:type="xsd:string">0px</value>
 											</entry>
+											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
 										</attributes>
 									</attributes>
 								</containedComponents>
@@ -4518,6 +5094,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											</entry>
 											<entry>
 												<key>border-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
 												<value xsi:type="xsd:string">0px</value>
 											</entry>
 										</attributes>
@@ -4578,6 +5162,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											</entry>
 											<entry>
 												<key>border-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>caret-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>column-rule-width</key>
 												<value xsi:type="xsd:string">0px</value>
 											</entry>
 										</attributes>
@@ -4644,6 +5236,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<key>border-width</key>
 							<value xsi:type="xsd:string">0px</value>
 						</entry>
+						<entry>
+							<key>caret-color</key>
+							<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+						</entry>
+						<entry>
+							<key>column-rule-width</key>
+							<value xsi:type="xsd:string">0px</value>
+						</entry>
 					</attributes>
 				</attributes>
 				<containedComponents>
@@ -4701,6 +5301,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 							<entry>
 								<key>border-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
