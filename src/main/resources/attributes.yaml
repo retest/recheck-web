@@ -77,6 +77,12 @@ attributes:
   - direction
   - display
   - empty-cells
+  - filter
+  - flex-basis
+  - flex-direction
+  - flex-grow
+  - flex-shrink
+  - flex-wrap
   - float
   - font-family
   - font-size
@@ -84,6 +90,13 @@ attributes:
   - text-align
   - text-indent
   - float
+  - font-kerning
+  - font-size
+  - font-size-adjust
+  - font-stretch
+  - font-style
+  - font-variant
+  - font-weight
   - margin-top
   - margin-right
   - margin-bottom
