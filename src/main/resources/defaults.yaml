@@ -138,7 +138,21 @@ all:
   - perspective-origin: 50% 50%
   - pointer-events: auto
   - position: static
+  - resize: none
+  - right: auto
+  - scroll-behavior: auto
+  - tab-size: 8
+  - table-layout: auto
   - text-align: start
+  - text-align-last: auto
+  - text-decoration-color: rgb(0, 0, 0)
+  - text-decoration-line: none
+  - text-decoration-style: solid
+  - text-indent: 0px
+  - text-justify: auto
+  - text-overflow: clip
+  - text-shadow: none
+  - text-transform: none
   - visibility: visible
 
 a:
