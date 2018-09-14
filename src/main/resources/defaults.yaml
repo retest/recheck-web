@@ -101,10 +101,21 @@ all:
   - hyphens: manual
   - isolation: auto
   - justify-content: flex-start
+  - left: auto
+  - letter-spacing: normal
+  - line-height: normal
+  - list-style-image: none
+  - list-style-position: outside
+  - list-style-type: disc
   - margin-bottom: 0px
   - margin-left: 0px
   - margin-right: 0px
   - margin-top: 0px
+  - max-height: none
+  - max-width: none
+  - min-height: 0px
+  - min-width: 0px
+  - mix-blend-mode: normal
   - overflow: visible
   - padding-bottom: 0px
   - padding-left: 0px

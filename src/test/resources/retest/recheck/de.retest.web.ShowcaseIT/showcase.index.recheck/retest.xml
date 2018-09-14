@@ -487,6 +487,10 @@
 									<key>margin-right</key>
 									<value xsi:type="xsd:string">82.5px</value>
 								</entry>
+								<entry>
+									<key>max-width</key>
+									<value xsi:type="xsd:string">1020px</value>
+								</entry>
 							</attributes>
 						</attributes>
 						<containedComponents>
@@ -614,8 +618,16 @@
 										<value xsi:type="xsd:string">normal</value>
 									</entry>
 									<entry>
+										<key>left</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
 										<key>line-height</key>
 										<value xsi:type="xsd:string">30px</value>
+									</entry>
+									<entry>
+										<key>min-height</key>
+										<value xsi:type="xsd:string">1px</value>
 									</entry>
 									<entry>
 										<key>padding-left</key>
@@ -1418,6 +1430,10 @@
 									<key>margin-right</key>
 									<value xsi:type="xsd:string">82.5px</value>
 								</entry>
+								<entry>
+									<key>max-width</key>
+									<value xsi:type="xsd:string">1020px</value>
+								</entry>
 							</attributes>
 						</attributes>
 						<containedComponents>
@@ -1545,8 +1561,16 @@
 										<value xsi:type="xsd:string">normal</value>
 									</entry>
 									<entry>
+										<key>left</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
 										<key>line-height</key>
 										<value xsi:type="xsd:string">30px</value>
+									</entry>
+									<entry>
+										<key>min-height</key>
+										<value xsi:type="xsd:string">1px</value>
 									</entry>
 									<entry>
 										<key>padding-left</key>
@@ -1677,6 +1701,10 @@
 										<entry>
 											<key>justify-content</key>
 											<value xsi:type="xsd:string">normal</value>
+										</entry>
+										<entry>
+											<key>left</key>
+											<value xsi:type="xsd:string">20px</value>
 										</entry>
 										<entry>
 											<key>line-height</key>
@@ -1954,6 +1982,10 @@
 													<key>line-height</key>
 													<value xsi:type="xsd:string">30px</value>
 												</entry>
+												<entry>
+													<key>max-width</key>
+													<value xsi:type="xsd:string">100%</value>
+												</entry>
 											</attributes>
 										</attributes>
 									</containedComponents>
@@ -2082,6 +2114,10 @@
 										<entry>
 											<key>justify-content</key>
 											<value xsi:type="xsd:string">normal</value>
+										</entry>
+										<entry>
+											<key>left</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>margin-right</key>
@@ -2510,6 +2546,10 @@
 												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
+												<key>min-height</key>
+												<value xsi:type="xsd:string">48px</value>
+											</entry>
+											<entry>
 												<key>padding-left</key>
 												<value xsi:type="xsd:string">0px</value>
 											</entry>
@@ -2644,6 +2684,14 @@
 													<value xsi:type="xsd:string">normal</value>
 												</entry>
 												<entry>
+													<key>left</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
+												</entry>
+												<entry>
 													<key>text-align</key>
 													<value xsi:type="xsd:string">left</value>
 												</entry>
@@ -2764,6 +2812,10 @@
 													<entry>
 														<key>justify-content</key>
 														<value xsi:type="xsd:string">normal</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -2895,6 +2947,10 @@
 														<entry>
 															<key>line-height</key>
 															<value xsi:type="xsd:string">32px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>padding-bottom</key>
@@ -3057,12 +3113,24 @@
 														<value xsi:type="xsd:string">normal</value>
 													</entry>
 													<entry>
+														<key>left</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">circle</value>
+													</entry>
+													<entry>
 														<key>margin-bottom</key>
 														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>margin-top</key>
 														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
+														<key>min-width</key>
+														<value xsi:type="xsd:string">100%</value>
 													</entry>
 													<entry>
 														<key>padding-left</key>
@@ -3199,6 +3267,14 @@
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
@@ -3332,6 +3408,10 @@
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">32px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -3482,6 +3562,14 @@
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
@@ -3615,6 +3703,10 @@
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">32px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -3765,6 +3857,14 @@
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
@@ -3898,6 +3998,10 @@
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">32px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -4048,6 +4152,14 @@
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
@@ -4181,6 +4293,10 @@
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">32px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -4333,6 +4449,14 @@
 													<value xsi:type="xsd:string">normal</value>
 												</entry>
 												<entry>
+													<key>left</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
+												</entry>
+												<entry>
 													<key>text-align</key>
 													<value xsi:type="xsd:string">left</value>
 												</entry>
@@ -4453,6 +4577,10 @@
 													<entry>
 														<key>justify-content</key>
 														<value xsi:type="xsd:string">normal</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -4584,6 +4712,10 @@
 														<entry>
 															<key>line-height</key>
 															<value xsi:type="xsd:string">32px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>padding-bottom</key>
@@ -4746,12 +4878,24 @@
 														<value xsi:type="xsd:string">normal</value>
 													</entry>
 													<entry>
+														<key>left</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">circle</value>
+													</entry>
+													<entry>
 														<key>margin-bottom</key>
 														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>margin-top</key>
 														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
+														<key>min-width</key>
+														<value xsi:type="xsd:string">100%</value>
 													</entry>
 													<entry>
 														<key>padding-left</key>
@@ -4888,6 +5032,14 @@
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
@@ -5021,6 +5173,10 @@
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">32px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -5171,6 +5327,14 @@
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
@@ -5304,6 +5468,10 @@
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">32px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -5454,6 +5622,14 @@
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
@@ -5587,6 +5763,10 @@
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">32px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -5739,6 +5919,14 @@
 													<value xsi:type="xsd:string">normal</value>
 												</entry>
 												<entry>
+													<key>left</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
+												</entry>
+												<entry>
 													<key>text-align</key>
 													<value xsi:type="xsd:string">left</value>
 												</entry>
@@ -5859,6 +6047,10 @@
 													<entry>
 														<key>justify-content</key>
 														<value xsi:type="xsd:string">normal</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -5990,6 +6182,10 @@
 														<entry>
 															<key>line-height</key>
 															<value xsi:type="xsd:string">32px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>padding-bottom</key>
@@ -6152,12 +6348,24 @@
 														<value xsi:type="xsd:string">normal</value>
 													</entry>
 													<entry>
+														<key>left</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">circle</value>
+													</entry>
+													<entry>
 														<key>margin-bottom</key>
 														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>margin-top</key>
 														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
+														<key>min-width</key>
+														<value xsi:type="xsd:string">100%</value>
 													</entry>
 													<entry>
 														<key>padding-left</key>
@@ -6294,6 +6502,14 @@
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
@@ -6427,6 +6643,10 @@
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">32px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -6577,6 +6797,14 @@
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
@@ -6710,6 +6938,10 @@
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">32px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -6860,6 +7092,14 @@
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
@@ -6993,6 +7233,10 @@
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">32px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -7145,6 +7389,14 @@
 													<value xsi:type="xsd:string">normal</value>
 												</entry>
 												<entry>
+													<key>left</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
+												</entry>
+												<entry>
 													<key>text-align</key>
 													<value xsi:type="xsd:string">left</value>
 												</entry>
@@ -7265,6 +7517,10 @@
 													<entry>
 														<key>justify-content</key>
 														<value xsi:type="xsd:string">normal</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -7396,6 +7652,10 @@
 														<entry>
 															<key>line-height</key>
 															<value xsi:type="xsd:string">32px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>padding-bottom</key>
@@ -7558,12 +7818,24 @@
 														<value xsi:type="xsd:string">normal</value>
 													</entry>
 													<entry>
+														<key>left</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">circle</value>
+													</entry>
+													<entry>
 														<key>margin-bottom</key>
 														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>margin-top</key>
 														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
+														<key>min-width</key>
+														<value xsi:type="xsd:string">100%</value>
 													</entry>
 													<entry>
 														<key>padding-left</key>
@@ -7700,6 +7972,14 @@
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
@@ -7833,6 +8113,10 @@
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">32px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -7983,6 +8267,14 @@
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
@@ -8116,6 +8408,10 @@
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">32px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -8266,6 +8562,14 @@
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
@@ -8399,6 +8703,10 @@
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">32px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -8551,6 +8859,14 @@
 													<value xsi:type="xsd:string">normal</value>
 												</entry>
 												<entry>
+													<key>left</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
+												</entry>
+												<entry>
 													<key>text-align</key>
 													<value xsi:type="xsd:string">left</value>
 												</entry>
@@ -8679,6 +8995,10 @@
 													<entry>
 														<key>line-height</key>
 														<value xsi:type="xsd:string">32px</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
 														<key>padding-bottom</key>
@@ -8827,6 +9147,10 @@
 															<value xsi:type="xsd:string">32px</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>margin-right</key>
 															<value xsi:type="xsd:string">5px</value>
 														</entry>
@@ -8956,6 +9280,10 @@
 														<entry>
 															<key>line-height</key>
 															<value xsi:type="xsd:string">32px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -9122,12 +9450,24 @@
 														<value xsi:type="xsd:string">normal</value>
 													</entry>
 													<entry>
+														<key>left</key>
+														<value xsi:type="xsd:string">-125px</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
 														<key>margin-bottom</key>
 														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>margin-top</key>
 														<value xsi:type="xsd:string">-5px</value>
+													</entry>
+													<entry>
+														<key>min-width</key>
+														<value xsi:type="xsd:string">160px</value>
 													</entry>
 													<entry>
 														<key>padding-bottom</key>
@@ -9268,6 +9608,14 @@
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
@@ -9400,6 +9748,10 @@
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">32px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -9568,8 +9920,16 @@
 																	<value xsi:type="xsd:string">32px</value>
 																</entry>
 																<entry>
+																	<key>list-style-type</key>
+																	<value xsi:type="xsd:string">none</value>
+																</entry>
+																<entry>
 																	<key>margin-right</key>
 																	<value xsi:type="xsd:string">8px</value>
+																</entry>
+																<entry>
+																	<key>max-width</key>
+																	<value xsi:type="xsd:string">100%</value>
 																</entry>
 																<entry>
 																	<key>text-align</key>
@@ -9723,6 +10083,14 @@
 														<entry>
 															<key>justify-content</key>
 															<value xsi:type="xsd:string">normal</value>
+														</entry>
+														<entry>
+															<key>left</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>margin-top</key>
@@ -9895,8 +10263,16 @@
 																<value xsi:type="xsd:string">normal</value>
 															</entry>
 															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
 																<key>margin-right</key>
 																<value xsi:type="xsd:string">8px</value>
+															</entry>
+															<entry>
+																<key>max-width</key>
+																<value xsi:type="xsd:string">100%</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -11517,6 +11893,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<value xsi:type="xsd:string">normal</value>
 								</entry>
 								<entry>
+									<key>left</key>
+									<value xsi:type="xsd:string">875px</value>
+								</entry>
+								<entry>
 									<key>line-height</key>
 									<value xsi:type="xsd:string">30px</value>
 								</entry>
@@ -11766,8 +12146,16 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<value xsi:type="xsd:string">normal</value>
 									</entry>
 									<entry>
+										<key>left</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
 										<key>line-height</key>
 										<value xsi:type="xsd:string">30px</value>
+									</entry>
+									<entry>
+										<key>list-style-type</key>
+										<value xsi:type="xsd:string">none</value>
 									</entry>
 									<entry>
 										<key>margin-bottom</key>
@@ -11908,6 +12296,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<value xsi:type="xsd:string">30px</value>
 										</entry>
 										<entry>
+											<key>list-style-type</key>
+											<value xsi:type="xsd:string">none</value>
+										</entry>
+										<entry>
 											<key>text-align</key>
 											<value xsi:type="xsd:string">left</value>
 										</entry>
@@ -12042,12 +12434,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">30px</value>
 											</entry>
 											<entry>
+												<key>list-style-type</key>
+												<value xsi:type="xsd:string">none</value>
+											</entry>
+											<entry>
 												<key>margin-left</key>
 												<value xsi:type="xsd:string">82.5px</value>
 											</entry>
 											<entry>
 												<key>margin-right</key>
 												<value xsi:type="xsd:string">82.5px</value>
+											</entry>
+											<entry>
+												<key>max-width</key>
+												<value xsi:type="xsd:string">1020px</value>
 											</entry>
 											<entry>
 												<key>padding-bottom</key>
@@ -12178,6 +12578,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<entry>
 													<key>line-height</key>
 													<value xsi:type="xsd:string">30px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
 												</entry>
 												<entry>
 													<key>margin-bottom</key>
@@ -12319,6 +12723,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">normal</value>
 													</entry>
 													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
 														<key>margin-bottom</key>
 														<value xsi:type="xsd:string">18px</value>
 													</entry>
@@ -12450,6 +12858,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">center</value>
 														</entry>
@@ -12572,6 +12984,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>justify-content</key>
 															<value xsi:type="xsd:string">normal</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -12698,6 +13114,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">center</value>
 														</entry>
@@ -12822,6 +13242,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">normal</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">center</value>
 														</entry>
@@ -12944,6 +13368,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>justify-content</key>
 															<value xsi:type="xsd:string">normal</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -13079,8 +13507,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">normal</value>
 												</entry>
 												<entry>
+													<key>left</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>line-height</key>
 													<value xsi:type="xsd:string">30px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
+												</entry>
+												<entry>
+													<key>min-height</key>
+													<value xsi:type="xsd:string">1px</value>
 												</entry>
 												<entry>
 													<key>padding-left</key>
@@ -13217,6 +13657,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">30px</value>
 													</entry>
 													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -13344,6 +13788,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">30px</value>
 													</entry>
 													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -13469,6 +13917,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>line-height</key>
 														<value xsi:type="xsd:string">30px</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -13600,6 +14052,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>line-height</key>
 														<value xsi:type="xsd:string">30px</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -13734,12 +14190,24 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">normal</value>
 												</entry>
 												<entry>
+													<key>left</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>line-height</key>
 													<value xsi:type="xsd:string">30px</value>
 												</entry>
 												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
+												</entry>
+												<entry>
 													<key>margin-bottom</key>
 													<value xsi:type="xsd:string">36px</value>
+												</entry>
+												<entry>
+													<key>min-height</key>
+													<value xsi:type="xsd:string">1px</value>
 												</entry>
 												<entry>
 													<key>padding-left</key>
@@ -13874,6 +14342,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>line-height</key>
 														<value xsi:type="xsd:string">36px</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
 														<key>margin-bottom</key>
@@ -14018,6 +14490,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">36px</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">right</value>
 														</entry>
@@ -14143,6 +14619,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>line-height</key>
 															<value xsi:type="xsd:string">36px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -14281,6 +14761,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">36px</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">right</value>
 														</entry>
@@ -14405,6 +14889,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">36px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -14544,6 +15032,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">36px</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">right</value>
 														</entry>
@@ -14680,6 +15172,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">36px</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">right</value>
 														</entry>
@@ -14808,6 +15304,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">36px</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">right</value>
 														</entry>
@@ -14934,6 +15434,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>line-height</key>
 															<value xsi:type="xsd:string">36px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -15065,6 +15569,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<entry>
 											<key>line-height</key>
 											<value xsi:type="xsd:string">30px</value>
+										</entry>
+										<entry>
+											<key>list-style-type</key>
+											<value xsi:type="xsd:string">none</value>
 										</entry>
 										<entry>
 											<key>text-align</key>
@@ -15201,12 +15709,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">30px</value>
 											</entry>
 											<entry>
+												<key>list-style-type</key>
+												<value xsi:type="xsd:string">none</value>
+											</entry>
+											<entry>
 												<key>margin-left</key>
 												<value xsi:type="xsd:string">82.5px</value>
 											</entry>
 											<entry>
 												<key>margin-right</key>
 												<value xsi:type="xsd:string">82.5px</value>
+											</entry>
+											<entry>
+												<key>max-width</key>
+												<value xsi:type="xsd:string">1020px</value>
 											</entry>
 											<entry>
 												<key>padding-bottom</key>
@@ -15337,6 +15853,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<entry>
 													<key>line-height</key>
 													<value xsi:type="xsd:string">30px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
 												</entry>
 												<entry>
 													<key>margin-bottom</key>
@@ -15479,6 +15999,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>line-height</key>
 														<value xsi:type="xsd:string">42px</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
 														<key>margin-bottom</key>
@@ -15639,8 +16163,16 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">42px</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>margin-right</key>
 															<value xsi:type="xsd:string">-30px</value>
+														</entry>
+														<entry>
+															<key>max-width</key>
+															<value xsi:type="xsd:string">100%</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -15771,6 +16303,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">42px</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">center</value>
 														</entry>
@@ -15897,6 +16433,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>line-height</key>
 															<value xsi:type="xsd:string">42px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -16032,8 +16572,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">normal</value>
 												</entry>
 												<entry>
+													<key>left</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>line-height</key>
 													<value xsi:type="xsd:string">30px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
+												</entry>
+												<entry>
+													<key>min-height</key>
+													<value xsi:type="xsd:string">1px</value>
 												</entry>
 												<entry>
 													<key>padding-left</key>
@@ -16194,6 +16746,18 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">30px</value>
 													</entry>
 													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>max-height</key>
+														<value xsi:type="xsd:string">430px</value>
+													</entry>
+													<entry>
+														<key>max-width</key>
+														<value xsi:type="xsd:string">100%</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -16326,8 +16890,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">normal</value>
 												</entry>
 												<entry>
+													<key>left</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>line-height</key>
 													<value xsi:type="xsd:string">30px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
+												</entry>
+												<entry>
+													<key>min-height</key>
+													<value xsi:type="xsd:string">1px</value>
 												</entry>
 												<entry>
 													<key>padding-left</key>
@@ -16464,6 +17040,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">30px</value>
 													</entry>
 													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -16588,6 +17168,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>line-height</key>
 															<value xsi:type="xsd:string">36px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>margin-bottom</key>
@@ -16732,6 +17316,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">36px</value>
 															</entry>
 															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
 																<key>text-align</key>
 																<value xsi:type="xsd:string">left</value>
 															</entry>
@@ -16868,6 +17456,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">36px</value>
 															</entry>
 															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
 																<key>text-align</key>
 																<value xsi:type="xsd:string">left</value>
 															</entry>
@@ -16994,6 +17586,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">36px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -17124,6 +17720,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">36px</value>
 															</entry>
 															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
 																<key>text-align</key>
 																<value xsi:type="xsd:string">left</value>
 															</entry>
@@ -17250,6 +17850,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">36px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -17382,6 +17986,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<entry>
 											<key>line-height</key>
 											<value xsi:type="xsd:string">30px</value>
+										</entry>
+										<entry>
+											<key>list-style-type</key>
+											<value xsi:type="xsd:string">none</value>
 										</entry>
 										<entry>
 											<key>text-align</key>
@@ -17518,12 +18126,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">30px</value>
 											</entry>
 											<entry>
+												<key>list-style-type</key>
+												<value xsi:type="xsd:string">none</value>
+											</entry>
+											<entry>
 												<key>margin-left</key>
 												<value xsi:type="xsd:string">82.5px</value>
 											</entry>
 											<entry>
 												<key>margin-right</key>
 												<value xsi:type="xsd:string">82.5px</value>
+											</entry>
+											<entry>
+												<key>max-width</key>
+												<value xsi:type="xsd:string">1020px</value>
 											</entry>
 											<entry>
 												<key>padding-bottom</key>
@@ -17654,6 +18270,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<entry>
 													<key>line-height</key>
 													<value xsi:type="xsd:string">30px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
 												</entry>
 												<entry>
 													<key>margin-bottom</key>
@@ -17796,6 +18416,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>line-height</key>
 														<value xsi:type="xsd:string">42px</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
 														<key>margin-bottom</key>
@@ -17956,8 +18580,16 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">42px</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>margin-right</key>
 															<value xsi:type="xsd:string">-30px</value>
+														</entry>
+														<entry>
+															<key>max-width</key>
+															<value xsi:type="xsd:string">100%</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -18088,6 +18720,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">42px</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">center</value>
 														</entry>
@@ -18214,6 +18850,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>line-height</key>
 															<value xsi:type="xsd:string">42px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -18349,8 +18989,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">normal</value>
 												</entry>
 												<entry>
+													<key>left</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>line-height</key>
 													<value xsi:type="xsd:string">30px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
+												</entry>
+												<entry>
+													<key>min-height</key>
+													<value xsi:type="xsd:string">1px</value>
 												</entry>
 												<entry>
 													<key>padding-left</key>
@@ -18487,6 +19139,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">30px</value>
 													</entry>
 													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">right</value>
 													</entry>
@@ -18617,6 +19273,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>line-height</key>
 															<value xsi:type="xsd:string">36px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>margin-bottom</key>
@@ -18761,6 +19421,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">36px</value>
 															</entry>
 															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
 																<key>text-align</key>
 																<value xsi:type="xsd:string">right</value>
 															</entry>
@@ -18897,6 +19561,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">36px</value>
 															</entry>
 															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
 																<key>text-align</key>
 																<value xsi:type="xsd:string">right</value>
 															</entry>
@@ -19031,8 +19699,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">normal</value>
 												</entry>
 												<entry>
+													<key>left</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>line-height</key>
 													<value xsi:type="xsd:string">30px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
+												</entry>
+												<entry>
+													<key>min-height</key>
+													<value xsi:type="xsd:string">1px</value>
 												</entry>
 												<entry>
 													<key>padding-left</key>
@@ -19167,6 +19847,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>line-height</key>
 														<value xsi:type="xsd:string">30px</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -19320,6 +20004,18 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">30px</value>
 													</entry>
 													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>max-height</key>
+														<value xsi:type="xsd:string">200px</value>
+													</entry>
+													<entry>
+														<key>max-width</key>
+														<value xsi:type="xsd:string">100%</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -19471,6 +20167,18 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">30px</value>
 													</entry>
 													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>max-height</key>
+														<value xsi:type="xsd:string">200px</value>
+													</entry>
+													<entry>
+														<key>max-width</key>
+														<value xsi:type="xsd:string">100%</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -19599,6 +20307,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<entry>
 											<key>line-height</key>
 											<value xsi:type="xsd:string">30px</value>
+										</entry>
+										<entry>
+											<key>list-style-type</key>
+											<value xsi:type="xsd:string">none</value>
 										</entry>
 										<entry>
 											<key>text-align</key>
@@ -19735,12 +20447,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">30px</value>
 											</entry>
 											<entry>
+												<key>list-style-type</key>
+												<value xsi:type="xsd:string">none</value>
+											</entry>
+											<entry>
 												<key>margin-left</key>
 												<value xsi:type="xsd:string">82.5px</value>
 											</entry>
 											<entry>
 												<key>margin-right</key>
 												<value xsi:type="xsd:string">82.5px</value>
+											</entry>
+											<entry>
+												<key>max-width</key>
+												<value xsi:type="xsd:string">1020px</value>
 											</entry>
 											<entry>
 												<key>padding-bottom</key>
@@ -19871,6 +20591,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<entry>
 													<key>line-height</key>
 													<value xsi:type="xsd:string">30px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
 												</entry>
 												<entry>
 													<key>margin-bottom</key>
@@ -20013,6 +20737,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>line-height</key>
 														<value xsi:type="xsd:string">42px</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
 														<key>margin-bottom</key>
@@ -20173,8 +20901,16 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">42px</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>margin-right</key>
 															<value xsi:type="xsd:string">-30px</value>
+														</entry>
+														<entry>
+															<key>max-width</key>
+															<value xsi:type="xsd:string">100%</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -20305,6 +21041,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">42px</value>
 														</entry>
 														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">center</value>
 														</entry>
@@ -20431,6 +21171,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>line-height</key>
 															<value xsi:type="xsd:string">42px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -20566,8 +21310,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">normal</value>
 												</entry>
 												<entry>
+													<key>left</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>line-height</key>
 													<value xsi:type="xsd:string">30px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
+												</entry>
+												<entry>
+													<key>min-height</key>
+													<value xsi:type="xsd:string">1px</value>
 												</entry>
 												<entry>
 													<key>padding-left</key>
@@ -20704,6 +21460,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">30px</value>
 													</entry>
 													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -20831,6 +21591,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">30px</value>
 													</entry>
 													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -20956,6 +21720,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>line-height</key>
 														<value xsi:type="xsd:string">30px</value>
+													</entry>
+													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -21113,6 +21881,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">30px</value>
 													</entry>
 													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>max-width</key>
+														<value xsi:type="xsd:string">400px</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -21245,8 +22021,20 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">normal</value>
 												</entry>
 												<entry>
+													<key>left</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>line-height</key>
 													<value xsi:type="xsd:string">30px</value>
+												</entry>
+												<entry>
+													<key>list-style-type</key>
+													<value xsi:type="xsd:string">none</value>
+												</entry>
+												<entry>
+													<key>min-height</key>
+													<value xsi:type="xsd:string">1px</value>
 												</entry>
 												<entry>
 													<key>padding-left</key>
@@ -21383,6 +22171,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">30px</value>
 													</entry>
 													<entry>
+														<key>list-style-type</key>
+														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -21507,6 +22299,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>line-height</key>
 															<value xsi:type="xsd:string">36px</value>
+														</entry>
+														<entry>
+															<key>list-style-type</key>
+															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
 															<key>margin-bottom</key>
@@ -21651,6 +22447,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">36px</value>
 															</entry>
 															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
 																<key>text-align</key>
 																<value xsi:type="xsd:string">left</value>
 															</entry>
@@ -21776,6 +22576,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">36px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -21914,6 +22718,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">36px</value>
 															</entry>
 															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
 																<key>text-align</key>
 																<value xsi:type="xsd:string">left</value>
 															</entry>
@@ -22050,6 +22858,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">36px</value>
 															</entry>
 															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
 																<key>text-align</key>
 																<value xsi:type="xsd:string">left</value>
 															</entry>
@@ -22176,6 +22988,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>line-height</key>
 																<value xsi:type="xsd:string">36px</value>
+															</entry>
+															<entry>
+																<key>list-style-type</key>
+																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -22454,6 +23270,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<key>margin-right</key>
 									<value xsi:type="xsd:string">82.5px</value>
 								</entry>
+								<entry>
+									<key>max-width</key>
+									<value xsi:type="xsd:string">1020px</value>
+								</entry>
 							</attributes>
 						</attributes>
 						<containedComponents>
@@ -22703,8 +23523,16 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<value xsi:type="xsd:string">normal</value>
 										</entry>
 										<entry>
+											<key>left</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
 											<key>line-height</key>
 											<value xsi:type="xsd:string">30px</value>
+										</entry>
+										<entry>
+											<key>min-height</key>
+											<value xsi:type="xsd:string">1px</value>
 										</entry>
 										<entry>
 											<key>padding-left</key>
@@ -23230,8 +24058,16 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<value xsi:type="xsd:string">normal</value>
 										</entry>
 										<entry>
+											<key>left</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
 											<key>line-height</key>
 											<value xsi:type="xsd:string">30px</value>
+										</entry>
+										<entry>
+											<key>min-height</key>
+											<value xsi:type="xsd:string">1px</value>
 										</entry>
 										<entry>
 											<key>padding-left</key>
@@ -23635,8 +24471,16 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<value xsi:type="xsd:string">normal</value>
 										</entry>
 										<entry>
+											<key>left</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
 											<key>line-height</key>
 											<value xsi:type="xsd:string">30px</value>
+										</entry>
+										<entry>
+											<key>min-height</key>
+											<value xsi:type="xsd:string">1px</value>
 										</entry>
 										<entry>
 											<key>padding-left</key>

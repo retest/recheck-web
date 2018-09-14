@@ -3769,6 +3769,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<key>margin-top</key>
 										<value xsi:type="xsd:string">3px</value>
 									</entry>
+									<entry>
+										<key>min-height</key>
+										<value xsi:type="xsd:string">12px</value>
+									</entry>
+									<entry>
+										<key>min-width</key>
+										<value xsi:type="xsd:string">12px</value>
+									</entry>
 								</attributes>
 							</attributes>
 						</containedComponents>
