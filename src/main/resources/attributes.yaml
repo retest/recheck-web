@@ -126,13 +126,23 @@ attributes:
   - min-height
   - min-width
   - mix-blend-mode
+  - object-fit
+  - object-position
+  - opacity
+  - order
+  - outline-color
+  - outline-offset
+  - outline-style
+  - outline-width
+  - overflow
+  - overflow-x
+  - overflow-y
   - padding-top
   - padding-right
   - padding-bottom
   - padding-left
   - offsetHeight
   - offsetWidth
-  - overflow
   - visibility
 
 identifyingAttributes:

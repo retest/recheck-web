@@ -85,6 +85,14 @@
 						<key>justify-content</key>
 						<value xsi:type="xsd:string">normal</value>
 					</entry>
+					<entry>
+						<key>outline-color</key>
+						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+					</entry>
+					<entry>
+						<key>outline-width</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
 				</attributes>
 			</attributes>
 			<containedComponents>
@@ -227,6 +235,14 @@
 							<key>margin-top</key>
 							<value xsi:type="xsd:string">0px</value>
 						</entry>
+						<entry>
+							<key>outline-color</key>
+							<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+						</entry>
+						<entry>
+							<key>outline-width</key>
+							<value xsi:type="xsd:string">0px</value>
+						</entry>
 					</attributes>
 				</attributes>
 				<containedComponents>
@@ -352,6 +368,14 @@
 							<entry>
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>padding-top</key>
@@ -490,6 +514,14 @@
 								<entry>
 									<key>max-width</key>
 									<value xsi:type="xsd:string">1020px</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>outline-width</key>
+									<value xsi:type="xsd:string">0px</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -630,6 +662,14 @@
 										<value xsi:type="xsd:string">1px</value>
 									</entry>
 									<entry>
+										<key>outline-color</key>
+										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
+										<key>outline-width</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
 										<key>padding-left</key>
 										<value xsi:type="xsd:string">20px</value>
 									</entry>
@@ -765,6 +805,14 @@
 										</entry>
 										<entry>
 											<key>margin-top</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
+											<key>outline-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>outline-width</key>
 											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
@@ -907,6 +955,14 @@
 												<value xsi:type="xsd:string">24px</value>
 											</entry>
 											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>text-align</key>
 												<value xsi:type="xsd:string">center</value>
 											</entry>
@@ -1038,6 +1094,14 @@
 												<value xsi:type="xsd:string">24px</value>
 											</entry>
 											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>text-align</key>
 												<value xsi:type="xsd:string">center</value>
 											</entry>
@@ -1163,6 +1227,14 @@
 												<entry>
 													<key>line-height</key>
 													<value xsi:type="xsd:string">24px</value>
+												</entry>
+												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>text-align</key>
@@ -1300,6 +1372,14 @@
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 					<containedComponents>
@@ -1433,6 +1513,14 @@
 								<entry>
 									<key>max-width</key>
 									<value xsi:type="xsd:string">1020px</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>outline-width</key>
+									<value xsi:type="xsd:string">0px</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -1573,6 +1661,14 @@
 										<value xsi:type="xsd:string">1px</value>
 									</entry>
 									<entry>
+										<key>outline-color</key>
+										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
+										<key>outline-width</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
 										<key>padding-left</key>
 										<value xsi:type="xsd:string">20px</value>
 									</entry>
@@ -1710,6 +1806,14 @@
 											<key>line-height</key>
 											<value xsi:type="xsd:string">30px</value>
 										</entry>
+										<entry>
+											<key>outline-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>outline-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
 									</attributes>
 								</attributes>
 								<containedComponents>
@@ -1835,6 +1939,14 @@
 											<entry>
 												<key>line-height</key>
 												<value xsi:type="xsd:string">30px</value>
+											</entry>
+											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -1986,6 +2098,14 @@
 													<key>max-width</key>
 													<value xsi:type="xsd:string">100%</value>
 												</entry>
+												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
 											</attributes>
 										</attributes>
 									</containedComponents>
@@ -2126,6 +2246,14 @@
 										<entry>
 											<key>margin-top</key>
 											<value xsi:type="xsd:string">36px</value>
+										</entry>
+										<entry>
+											<key>outline-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>outline-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 									</attributes>
 								</attributes>
@@ -2269,6 +2397,14 @@
 											<entry>
 												<key>justify-content</key>
 												<value xsi:type="xsd:string">normal</value>
+											</entry>
+											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -2414,6 +2550,14 @@
 												<key>justify-content</key>
 												<value xsi:type="xsd:string">normal</value>
 											</entry>
+											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
 										</attributes>
 									</attributes>
 								</containedComponents>
@@ -2548,6 +2692,14 @@
 											<entry>
 												<key>min-height</key>
 												<value xsi:type="xsd:string">48px</value>
+											</entry>
+											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
 											</entry>
 											<entry>
 												<key>padding-left</key>
@@ -2692,6 +2844,14 @@
 													<value xsi:type="xsd:string">none</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>text-align</key>
 													<value xsi:type="xsd:string">left</value>
 												</entry>
@@ -2816,6 +2976,14 @@
 													<entry>
 														<key>list-style-type</key>
 														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -2951,6 +3119,14 @@
 														<entry>
 															<key>list-style-type</key>
 															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>padding-bottom</key>
@@ -3133,6 +3309,18 @@
 														<value xsi:type="xsd:string">100%</value>
 													</entry>
 													<entry>
+														<key>opacity</key>
+														<value xsi:type="xsd:string">0</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>padding-left</key>
 														<value xsi:type="xsd:string">0px</value>
 													</entry>
@@ -3275,7 +3463,23 @@
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -3412,6 +3616,14 @@
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -3570,7 +3782,23 @@
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -3707,6 +3935,14 @@
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -3865,7 +4101,23 @@
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -4002,6 +4254,14 @@
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -4160,7 +4420,23 @@
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -4297,6 +4573,14 @@
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -4457,6 +4741,14 @@
 													<value xsi:type="xsd:string">none</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>text-align</key>
 													<value xsi:type="xsd:string">left</value>
 												</entry>
@@ -4581,6 +4873,14 @@
 													<entry>
 														<key>list-style-type</key>
 														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -4716,6 +5016,14 @@
 														<entry>
 															<key>list-style-type</key>
 															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>padding-bottom</key>
@@ -4898,6 +5206,18 @@
 														<value xsi:type="xsd:string">100%</value>
 													</entry>
 													<entry>
+														<key>opacity</key>
+														<value xsi:type="xsd:string">0</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>padding-left</key>
 														<value xsi:type="xsd:string">0px</value>
 													</entry>
@@ -5040,7 +5360,23 @@
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -5177,6 +5513,14 @@
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -5335,7 +5679,23 @@
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -5472,6 +5832,14 @@
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -5630,7 +5998,23 @@
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -5767,6 +6151,14 @@
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -5927,6 +6319,14 @@
 													<value xsi:type="xsd:string">none</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>text-align</key>
 													<value xsi:type="xsd:string">left</value>
 												</entry>
@@ -6051,6 +6451,14 @@
 													<entry>
 														<key>list-style-type</key>
 														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -6186,6 +6594,14 @@
 														<entry>
 															<key>list-style-type</key>
 															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>padding-bottom</key>
@@ -6368,6 +6784,18 @@
 														<value xsi:type="xsd:string">100%</value>
 													</entry>
 													<entry>
+														<key>opacity</key>
+														<value xsi:type="xsd:string">0</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>padding-left</key>
 														<value xsi:type="xsd:string">0px</value>
 													</entry>
@@ -6510,7 +6938,23 @@
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -6647,6 +7091,14 @@
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -6805,7 +7257,23 @@
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -6942,6 +7410,14 @@
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -7100,7 +7576,23 @@
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -7237,6 +7729,14 @@
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -7397,6 +7897,14 @@
 													<value xsi:type="xsd:string">none</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>text-align</key>
 													<value xsi:type="xsd:string">left</value>
 												</entry>
@@ -7521,6 +8029,14 @@
 													<entry>
 														<key>list-style-type</key>
 														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -7656,6 +8172,14 @@
 														<entry>
 															<key>list-style-type</key>
 															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>padding-bottom</key>
@@ -7838,6 +8362,18 @@
 														<value xsi:type="xsd:string">100%</value>
 													</entry>
 													<entry>
+														<key>opacity</key>
+														<value xsi:type="xsd:string">0</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>padding-left</key>
 														<value xsi:type="xsd:string">0px</value>
 													</entry>
@@ -7980,7 +8516,23 @@
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -8117,6 +8669,14 @@
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -8275,7 +8835,23 @@
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -8412,6 +8988,14 @@
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -8570,7 +9154,23 @@
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -8707,6 +9307,14 @@
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -8867,6 +9475,14 @@
 													<value xsi:type="xsd:string">none</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>text-align</key>
 													<value xsi:type="xsd:string">left</value>
 												</entry>
@@ -8999,6 +9615,14 @@
 													<entry>
 														<key>list-style-type</key>
 														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>padding-bottom</key>
@@ -9155,6 +9779,14 @@
 															<value xsi:type="xsd:string">5px</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">left</value>
 														</entry>
@@ -9284,6 +9916,14 @@
 														<entry>
 															<key>list-style-type</key>
 															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -9470,6 +10110,18 @@
 														<value xsi:type="xsd:string">160px</value>
 													</entry>
 													<entry>
+														<key>opacity</key>
+														<value xsi:type="xsd:string">0</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>padding-bottom</key>
 														<value xsi:type="xsd:string">5px</value>
 													</entry>
@@ -9616,7 +10268,23 @@
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -9752,6 +10420,14 @@
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>padding-bottom</key>
@@ -9932,6 +10608,14 @@
 																	<value xsi:type="xsd:string">100%</value>
 																</entry>
 																<entry>
+																	<key>outline-color</key>
+																	<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+																</entry>
+																<entry>
+																	<key>outline-width</key>
+																	<value xsi:type="xsd:string">0px</value>
+																</entry>
+																<entry>
 																	<key>text-align</key>
 																	<value xsi:type="xsd:string">left</value>
 																</entry>
@@ -10097,7 +10781,23 @@
 															<value xsi:type="xsd:string">-5px</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(63, 60, 57)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>overflow</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-x</key>
+															<value xsi:type="xsd:string">hidden</value>
+														</entry>
+														<entry>
+															<key>overflow-y</key>
 															<value xsi:type="xsd:string">hidden</value>
 														</entry>
 														<entry>
@@ -10275,6 +10975,14 @@
 																<value xsi:type="xsd:string">100%</value>
 															</entry>
 															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(63, 60, 57)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
+															<entry>
 																<key>text-align</key>
 																<value xsi:type="xsd:string">left</value>
 															</entry>
@@ -10409,6 +11117,14 @@
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -10535,6 +11251,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -10657,6 +11381,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -10782,6 +11514,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -10904,6 +11644,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -11028,6 +11776,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -11150,6 +11906,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -11274,6 +12038,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -11396,6 +12168,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -11520,6 +12300,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -11642,6 +12430,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -11769,6 +12565,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -11900,6 +12704,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<key>line-height</key>
 									<value xsi:type="xsd:string">30px</value>
 								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>outline-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
 							</attributes>
 						</attributes>
 					</containedComponents>
@@ -12022,6 +12834,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<entry>
 									<key>line-height</key>
 									<value xsi:type="xsd:string">30px</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>outline-width</key>
+									<value xsi:type="xsd:string">0px</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -12166,7 +12986,23 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<value xsi:type="xsd:string">0px</value>
 									</entry>
 									<entry>
+										<key>outline-color</key>
+										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
+										<key>outline-width</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
 										<key>overflow</key>
+										<value xsi:type="xsd:string">hidden</value>
+									</entry>
+									<entry>
+										<key>overflow-x</key>
+										<value xsi:type="xsd:string">hidden</value>
+									</entry>
+									<entry>
+										<key>overflow-y</key>
 										<value xsi:type="xsd:string">hidden</value>
 									</entry>
 									<entry>
@@ -12298,6 +13134,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<entry>
 											<key>list-style-type</key>
 											<value xsi:type="xsd:string">none</value>
+										</entry>
+										<entry>
+											<key>outline-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>outline-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>text-align</key>
@@ -12450,6 +13294,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">1020px</value>
 											</entry>
 											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>padding-bottom</key>
 												<value xsi:type="xsd:string">30px</value>
 											</entry>
@@ -12600,6 +13452,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">30px</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>text-align</key>
 													<value xsi:type="xsd:string">center</value>
 												</entry>
@@ -12735,6 +13595,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">center</value>
 													</entry>
@@ -12860,6 +13728,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>list-style-type</key>
 															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -12990,6 +13866,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">center</value>
 														</entry>
@@ -13116,6 +14000,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>list-style-type</key>
 															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -13246,6 +14138,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">center</value>
 														</entry>
@@ -13372,6 +14272,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>list-style-type</key>
 															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -13523,6 +14431,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">1px</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>padding-left</key>
 													<value xsi:type="xsd:string">20px</value>
 												</entry>
@@ -13661,6 +14577,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -13792,6 +14716,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -13921,6 +14853,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>list-style-type</key>
 														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -14056,6 +14996,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>list-style-type</key>
 														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -14208,6 +15156,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<entry>
 													<key>min-height</key>
 													<value xsi:type="xsd:string">1px</value>
+												</entry>
+												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>padding-left</key>
@@ -14364,6 +15320,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">12px</value>
 													</entry>
 													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">right</value>
 													</entry>
@@ -14492,6 +15456,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>list-style-type</key>
 															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -14623,6 +15595,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>list-style-type</key>
 															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -14765,6 +15745,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">right</value>
 														</entry>
@@ -14893,6 +15881,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -15036,6 +16032,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">right</value>
 														</entry>
@@ -15176,6 +16180,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">right</value>
 														</entry>
@@ -15308,6 +16320,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">right</value>
 														</entry>
@@ -15438,6 +16458,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>list-style-type</key>
 															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -15573,6 +16601,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<entry>
 											<key>list-style-type</key>
 											<value xsi:type="xsd:string">none</value>
+										</entry>
+										<entry>
+											<key>outline-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>outline-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>text-align</key>
@@ -15725,6 +16761,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">1020px</value>
 											</entry>
 											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>padding-bottom</key>
 												<value xsi:type="xsd:string">30px</value>
 											</entry>
@@ -15875,6 +16919,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">30px</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>text-align</key>
 													<value xsi:type="xsd:string">center</value>
 												</entry>
@@ -16010,6 +17062,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													</entry>
 													<entry>
 														<key>margin-top</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
 														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
@@ -16175,6 +17235,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">100%</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">center</value>
 														</entry>
@@ -16307,6 +17375,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">center</value>
 														</entry>
@@ -16437,6 +17513,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>list-style-type</key>
 															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -16586,6 +17670,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<entry>
 													<key>min-height</key>
 													<value xsi:type="xsd:string">1px</value>
+												</entry>
+												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 												<entry>
 													<key>padding-left</key>
@@ -16758,6 +17850,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">100%</value>
 													</entry>
 													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -16906,6 +18006,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">1px</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>padding-left</key>
 													<value xsi:type="xsd:string">20px</value>
 												</entry>
@@ -17042,6 +18150,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>list-style-type</key>
 														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -17190,6 +18306,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">12px</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">left</value>
 														</entry>
@@ -17318,6 +18442,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -17460,6 +18592,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
+															<entry>
 																<key>text-align</key>
 																<value xsi:type="xsd:string">left</value>
 															</entry>
@@ -17590,6 +18730,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -17724,6 +18872,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
+															<entry>
 																<key>text-align</key>
 																<value xsi:type="xsd:string">left</value>
 															</entry>
@@ -17854,6 +19010,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -17990,6 +19154,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<entry>
 											<key>list-style-type</key>
 											<value xsi:type="xsd:string">none</value>
+										</entry>
+										<entry>
+											<key>outline-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>outline-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>text-align</key>
@@ -18142,6 +19314,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">1020px</value>
 											</entry>
 											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>padding-bottom</key>
 												<value xsi:type="xsd:string">30px</value>
 											</entry>
@@ -18292,6 +19472,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">30px</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>text-align</key>
 													<value xsi:type="xsd:string">center</value>
 												</entry>
@@ -18427,6 +19615,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													</entry>
 													<entry>
 														<key>margin-top</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
 														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
@@ -18592,6 +19788,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">100%</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">center</value>
 														</entry>
@@ -18724,6 +19928,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">center</value>
 														</entry>
@@ -18854,6 +20066,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>list-style-type</key>
 															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -19005,6 +20225,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">1px</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>padding-left</key>
 													<value xsi:type="xsd:string">20px</value>
 												</entry>
@@ -19141,6 +20369,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>list-style-type</key>
 														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -19295,6 +20531,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">12px</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">right</value>
 														</entry>
@@ -19423,6 +20667,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -19563,6 +20815,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -19715,6 +20975,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">1px</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>padding-left</key>
 													<value xsi:type="xsd:string">20px</value>
 												</entry>
@@ -19851,6 +21119,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>list-style-type</key>
 														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -20016,6 +21292,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">100%</value>
 													</entry>
 													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -20179,6 +21463,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">100%</value>
 													</entry>
 													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -20311,6 +21603,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<entry>
 											<key>list-style-type</key>
 											<value xsi:type="xsd:string">none</value>
+										</entry>
+										<entry>
+											<key>outline-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>outline-width</key>
+											<value xsi:type="xsd:string">0px</value>
 										</entry>
 										<entry>
 											<key>text-align</key>
@@ -20463,6 +21763,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<value xsi:type="xsd:string">1020px</value>
 											</entry>
 											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
 												<key>padding-bottom</key>
 												<value xsi:type="xsd:string">30px</value>
 											</entry>
@@ -20613,6 +21921,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">30px</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>text-align</key>
 													<value xsi:type="xsd:string">center</value>
 												</entry>
@@ -20748,6 +22064,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													</entry>
 													<entry>
 														<key>margin-top</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
 														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
@@ -20913,6 +22237,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">100%</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">center</value>
 														</entry>
@@ -21045,6 +22377,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">none</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">center</value>
 														</entry>
@@ -21175,6 +22515,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>list-style-type</key>
 															<value xsi:type="xsd:string">none</value>
+														</entry>
+														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
 														</entry>
 														<entry>
 															<key>text-align</key>
@@ -21326,6 +22674,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">1px</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>padding-left</key>
 													<value xsi:type="xsd:string">20px</value>
 												</entry>
@@ -21464,6 +22820,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -21595,6 +22959,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">none</value>
 													</entry>
 													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -21724,6 +23096,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>list-style-type</key>
 														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -21889,6 +23269,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<value xsi:type="xsd:string">400px</value>
 													</entry>
 													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
+													</entry>
+													<entry>
 														<key>text-align</key>
 														<value xsi:type="xsd:string">left</value>
 													</entry>
@@ -22037,6 +23425,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<value xsi:type="xsd:string">1px</value>
 												</entry>
 												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
 													<key>padding-left</key>
 													<value xsi:type="xsd:string">20px</value>
 												</entry>
@@ -22173,6 +23569,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>list-style-type</key>
 														<value xsi:type="xsd:string">none</value>
+													</entry>
+													<entry>
+														<key>outline-color</key>
+														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>outline-width</key>
+														<value xsi:type="xsd:string">0px</value>
 													</entry>
 													<entry>
 														<key>text-align</key>
@@ -22321,6 +23725,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<value xsi:type="xsd:string">12px</value>
 														</entry>
 														<entry>
+															<key>outline-color</key>
+															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>outline-width</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
 															<key>text-align</key>
 															<value xsi:type="xsd:string">left</value>
 														</entry>
@@ -22449,6 +23861,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -22580,6 +24000,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -22722,6 +24150,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
+															<entry>
 																<key>text-align</key>
 																<value xsi:type="xsd:string">left</value>
 															</entry>
@@ -22862,6 +24298,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<value xsi:type="xsd:string">none</value>
 															</entry>
 															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
+															</entry>
+															<entry>
 																<key>text-align</key>
 																<value xsi:type="xsd:string">left</value>
 															</entry>
@@ -22992,6 +24436,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>list-style-type</key>
 																<value xsi:type="xsd:string">none</value>
+															</entry>
+															<entry>
+																<key>outline-color</key>
+																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>outline-width</key>
+																<value xsi:type="xsd:string">0px</value>
 															</entry>
 															<entry>
 																<key>text-align</key>
@@ -23131,6 +24583,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>line-height</key>
 								<value xsi:type="xsd:string">30px</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 							<entry>
 								<key>padding-bottom</key>
@@ -23274,6 +24734,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<key>max-width</key>
 									<value xsi:type="xsd:string">1020px</value>
 								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>outline-width</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
 							</attributes>
 						</attributes>
 						<containedComponents>
@@ -23395,6 +24863,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<entry>
 										<key>line-height</key>
 										<value xsi:type="xsd:string">30px</value>
+									</entry>
+									<entry>
+										<key>outline-color</key>
+										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
+										<key>outline-width</key>
+										<value xsi:type="xsd:string">0px</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -23535,6 +25011,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<value xsi:type="xsd:string">1px</value>
 										</entry>
 										<entry>
+											<key>outline-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>outline-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
 											<key>padding-left</key>
 											<value xsi:type="xsd:string">20px</value>
 										</entry>
@@ -23673,6 +25157,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<key>margin-top</key>
 												<value xsi:type="xsd:string">0px</value>
 											</entry>
+											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
 										</attributes>
 									</attributes>
 								</containedComponents>
@@ -23806,6 +25298,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<key>margin-top</key>
 												<value xsi:type="xsd:string">0px</value>
 											</entry>
+											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
 										</attributes>
 									</attributes>
 									<containedComponents>
@@ -23927,6 +25427,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<entry>
 													<key>line-height</key>
 													<value xsi:type="xsd:string">30px</value>
+												</entry>
+												<entry>
+													<key>outline-color</key>
+													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>outline-width</key>
+													<value xsi:type="xsd:string">0px</value>
 												</entry>
 											</attributes>
 										</attributes>
@@ -24070,6 +25578,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<value xsi:type="xsd:string">1px</value>
 										</entry>
 										<entry>
+											<key>outline-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>outline-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
 											<key>padding-left</key>
 											<value xsi:type="xsd:string">20px</value>
 										</entry>
@@ -24208,6 +25724,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<key>margin-top</key>
 												<value xsi:type="xsd:string">0px</value>
 											</entry>
+											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
 										</attributes>
 									</attributes>
 								</containedComponents>
@@ -24340,6 +25864,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											</entry>
 											<entry>
 												<key>margin-top</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
 												<value xsi:type="xsd:string">0px</value>
 											</entry>
 										</attributes>
@@ -24483,6 +26015,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<value xsi:type="xsd:string">1px</value>
 										</entry>
 										<entry>
+											<key>outline-color</key>
+											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>outline-width</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
 											<key>padding-left</key>
 											<value xsi:type="xsd:string">20px</value>
 										</entry>
@@ -24621,6 +26161,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<key>margin-top</key>
 												<value xsi:type="xsd:string">0px</value>
 											</entry>
+											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
 										</attributes>
 									</attributes>
 								</containedComponents>
@@ -24757,6 +26305,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<key>margin-top</key>
 												<value xsi:type="xsd:string">0px</value>
 											</entry>
+											<entry>
+												<key>outline-color</key>
+												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>outline-width</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
 										</attributes>
 									</attributes>
 								</containedComponents>
@@ -24849,6 +26405,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<key>justify-content</key>
 							<value xsi:type="xsd:string">normal</value>
 						</entry>
+						<entry>
+							<key>outline-color</key>
+							<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+						</entry>
+						<entry>
+							<key>outline-width</key>
+							<value xsi:type="xsd:string">0px</value>
+						</entry>
 					</attributes>
 				</attributes>
 				<containedComponents>
@@ -24934,6 +26498,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -25022,6 +26594,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -25108,6 +26688,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -25196,6 +26784,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -25282,6 +26878,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -25370,6 +26974,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -25457,6 +27069,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -25543,6 +27163,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -25635,6 +27263,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -25725,6 +27361,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -25817,6 +27461,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -25907,6 +27559,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -25999,6 +27659,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -26089,6 +27757,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -26181,6 +27857,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -26271,6 +27955,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -26363,6 +28055,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -26453,6 +28153,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -26545,6 +28253,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -26635,6 +28351,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -26727,6 +28451,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -26817,6 +28549,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -26909,6 +28649,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -26999,6 +28747,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -27091,6 +28847,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
 							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -27178,6 +28942,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>justify-content</key>
 								<value xsi:type="xsd:string">normal</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>

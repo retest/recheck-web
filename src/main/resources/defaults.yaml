@@ -116,7 +116,17 @@ all:
   - min-height: 0px
   - min-width: 0px
   - mix-blend-mode: normal
+  - object-fit: fill
+  - object-position: 50% 50%
+  - opacity: 1
+  - order: 0
+  - outline-color: invert
+  - outline-offset: 0px
+  - outline-style: none
+  - outline-width: medium
   - overflow: visible
+  - overflow-x: visible
+  - overflow-y: visible
   - padding-bottom: 0px
   - padding-left: 0px
   - padding-right: 0px
