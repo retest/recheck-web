@@ -97,6 +97,10 @@
 						<key>perspective-origin</key>
 						<value xsi:type="xsd:string">592.5px 1558.5px</value>
 					</entry>
+					<entry>
+						<key>transform-origin</key>
+						<value xsi:type="xsd:string">592.5px 1558.5px</value>
+					</entry>
 				</attributes>
 			</attributes>
 			<containedComponents>
@@ -255,6 +259,10 @@
 							<key>text-decoration-color</key>
 							<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 						</entry>
+						<entry>
+							<key>transform-origin</key>
+							<value xsi:type="xsd:string">592.5px 1558.5px</value>
+						</entry>
 					</attributes>
 				</attributes>
 				<containedComponents>
@@ -400,6 +408,10 @@
 							<entry>
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">592.5px 54px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -550,6 +562,10 @@
 								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>transform-origin</key>
+									<value xsi:type="xsd:string">510px 21px</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -721,6 +737,14 @@
 										<key>text-decoration-color</key>
 										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 									</entry>
+									<entry>
+										<key>top</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
+										<key>transform-origin</key>
+										<value xsi:type="xsd:string">510px 21px</value>
+									</entry>
 								</attributes>
 							</attributes>
 							<containedComponents>
@@ -879,6 +903,10 @@
 											<key>text-decoration-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 										</entry>
+										<entry>
+											<key>transform-origin</key>
+											<value xsi:type="xsd:string">490px 21px</value>
+										</entry>
 									</attributes>
 								</attributes>
 								<containedComponents>
@@ -1025,6 +1053,10 @@
 											<entry>
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">100.484px 12px</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -1173,6 +1205,10 @@
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">40.9375px 12px</value>
+											</entry>
 										</attributes>
 									</attributes>
 									<containedComponents>
@@ -1315,6 +1351,22 @@
 												<entry>
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">0px 0px</value>
+												</entry>
+												<entry>
+													<key>transition-duration</key>
+													<value xsi:type="xsd:string">0.3s</value>
+												</entry>
+												<entry>
+													<key>transition-property</key>
+													<value xsi:type="xsd:string">color</value>
+												</entry>
+												<entry>
+													<key>transition-timing-function</key>
+													<value xsi:type="xsd:string">ease-in-out</value>
 												</entry>
 											</attributes>
 										</attributes>
@@ -1463,6 +1515,10 @@
 							<entry>
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">592.5px 48px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -1613,6 +1669,10 @@
 								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>transform-origin</key>
+									<value xsi:type="xsd:string">510px 42px</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -1784,6 +1844,14 @@
 										<key>text-decoration-color</key>
 										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 									</entry>
+									<entry>
+										<key>top</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
+										<key>transform-origin</key>
+										<value xsi:type="xsd:string">510px 42px</value>
+									</entry>
 								</attributes>
 							</attributes>
 							<containedComponents>
@@ -1938,6 +2006,14 @@
 											<key>text-decoration-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 										</entry>
+										<entry>
+											<key>top</key>
+											<value xsi:type="xsd:string">10px</value>
+										</entry>
+										<entry>
+											<key>transform-origin</key>
+											<value xsi:type="xsd:string">90px 12px</value>
+										</entry>
 									</attributes>
 								</attributes>
 								<containedComponents>
@@ -2079,6 +2155,22 @@
 											<entry>
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">90px 12px</value>
+											</entry>
+											<entry>
+												<key>transition-duration</key>
+												<value xsi:type="xsd:string">0.3s</value>
+											</entry>
+											<entry>
+												<key>transition-property</key>
+												<value xsi:type="xsd:string">color</value>
+											</entry>
+											<entry>
+												<key>transition-timing-function</key>
+												<value xsi:type="xsd:string">ease-in-out</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -2246,6 +2338,10 @@
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">90px 28.2188px</value>
+												</entry>
 											</attributes>
 										</attributes>
 									</containedComponents>
@@ -2411,6 +2507,14 @@
 											<key>text-decoration-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 										</entry>
+										<entry>
+											<key>top</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
+											<key>transform-origin</key>
+											<value xsi:type="xsd:string">230.016px 24px</value>
+										</entry>
 									</attributes>
 								</attributes>
 								<containedComponents>
@@ -2565,6 +2669,22 @@
 											<entry>
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">50% 50%</value>
+											</entry>
+											<entry>
+												<key>transition-duration</key>
+												<value xsi:type="xsd:string">0.3s</value>
+											</entry>
+											<entry>
+												<key>transition-property</key>
+												<value xsi:type="xsd:string">color</value>
+											</entry>
+											<entry>
+												<key>transition-timing-function</key>
+												<value xsi:type="xsd:string">ease-in-out</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -2721,6 +2841,22 @@
 											<entry>
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">50% 50%</value>
+											</entry>
+											<entry>
+												<key>transition-duration</key>
+												<value xsi:type="xsd:string">0.3s</value>
+											</entry>
+											<entry>
+												<key>transition-property</key>
+												<value xsi:type="xsd:string">color</value>
+											</entry>
+											<entry>
+												<key>transition-timing-function</key>
+												<value xsi:type="xsd:string">ease-in-out</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -2880,6 +3016,10 @@
 											<entry>
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">0px 0px</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -3043,6 +3183,14 @@
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
+												<entry>
+													<key>top</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">50px 24px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -3184,6 +3332,10 @@
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">0px 0px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -3351,6 +3503,22 @@
 														<entry>
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">46px 24px</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.2s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">color</value>
+														</entry>
+														<entry>
+															<key>transition-timing-function</key>
+															<value xsi:type="xsd:string">ease-in-out</value>
 														</entry>
 													</attributes>
 												</attributes>
@@ -3548,6 +3716,26 @@
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
+													<entry>
+														<key>top</key>
+														<value xsi:type="xsd:string">48px</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">111.094px 0px</value>
+													</entry>
+													<entry>
+														<key>transition-delay</key>
+														<value xsi:type="xsd:string">0.1s</value>
+													</entry>
+													<entry>
+														<key>transition-duration</key>
+														<value xsi:type="xsd:string">0.25s</value>
+													</entry>
+													<entry>
+														<key>transition-property</key>
+														<value xsi:type="xsd:string">opacity</value>
+													</entry>
 												</attributes>
 											</attributes>
 											<containedComponents>
@@ -3722,6 +3910,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">111.094px 0px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -3888,6 +4096,22 @@
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">111.094px 22px</value>
+															</entry>
+															<entry>
+																<key>transition-duration</key>
+																<value xsi:type="xsd:string">0.2s</value>
+															</entry>
+															<entry>
+																<key>transition-property</key>
+																<value xsi:type="xsd:string">color</value>
+															</entry>
+															<entry>
+																<key>transition-timing-function</key>
+																<value xsi:type="xsd:string">ease-in-out</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -4065,6 +4289,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">111.094px 0px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -4231,6 +4475,22 @@
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">52.5781px 22px</value>
+															</entry>
+															<entry>
+																<key>transition-duration</key>
+																<value xsi:type="xsd:string">0.2s</value>
+															</entry>
+															<entry>
+																<key>transition-property</key>
+																<value xsi:type="xsd:string">color</value>
+															</entry>
+															<entry>
+																<key>transition-timing-function</key>
+																<value xsi:type="xsd:string">ease-in-out</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -4408,6 +4668,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">111.094px 0px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -4574,6 +4854,22 @@
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">60.1562px 22px</value>
+															</entry>
+															<entry>
+																<key>transition-duration</key>
+																<value xsi:type="xsd:string">0.2s</value>
+															</entry>
+															<entry>
+																<key>transition-property</key>
+																<value xsi:type="xsd:string">color</value>
+															</entry>
+															<entry>
+																<key>transition-timing-function</key>
+																<value xsi:type="xsd:string">ease-in-out</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -4751,6 +5047,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">111.094px 0px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -4918,6 +5234,22 @@
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
 															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">83.6406px 22px</value>
+															</entry>
+															<entry>
+																<key>transition-duration</key>
+																<value xsi:type="xsd:string">0.2s</value>
+															</entry>
+															<entry>
+																<key>transition-property</key>
+																<value xsi:type="xsd:string">color</value>
+															</entry>
+															<entry>
+																<key>transition-timing-function</key>
+																<value xsi:type="xsd:string">ease-in-out</value>
+															</entry>
 														</attributes>
 													</attributes>
 												</containedComponents>
@@ -5084,6 +5416,14 @@
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
+												<entry>
+													<key>top</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">62.8438px 24px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -5225,6 +5565,10 @@
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">0px 0px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -5392,6 +5736,22 @@
 														<entry>
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">58.8438px 24px</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.2s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">color</value>
+														</entry>
+														<entry>
+															<key>transition-timing-function</key>
+															<value xsi:type="xsd:string">ease-in-out</value>
 														</entry>
 													</attributes>
 												</attributes>
@@ -5589,6 +5949,26 @@
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
+													<entry>
+														<key>top</key>
+														<value xsi:type="xsd:string">48px</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">62.8438px 0px</value>
+													</entry>
+													<entry>
+														<key>transition-delay</key>
+														<value xsi:type="xsd:string">0.1s</value>
+													</entry>
+													<entry>
+														<key>transition-duration</key>
+														<value xsi:type="xsd:string">0.25s</value>
+													</entry>
+													<entry>
+														<key>transition-property</key>
+														<value xsi:type="xsd:string">opacity</value>
+													</entry>
 												</attributes>
 											</attributes>
 											<containedComponents>
@@ -5763,6 +6143,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">62.8438px 0px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -5929,6 +6329,22 @@
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">58.3438px 22px</value>
+															</entry>
+															<entry>
+																<key>transition-duration</key>
+																<value xsi:type="xsd:string">0.2s</value>
+															</entry>
+															<entry>
+																<key>transition-property</key>
+																<value xsi:type="xsd:string">color</value>
+															</entry>
+															<entry>
+																<key>transition-timing-function</key>
+																<value xsi:type="xsd:string">ease-in-out</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -6106,6 +6522,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">62.8438px 0px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -6272,6 +6708,22 @@
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">57.2656px 22px</value>
+															</entry>
+															<entry>
+																<key>transition-duration</key>
+																<value xsi:type="xsd:string">0.2s</value>
+															</entry>
+															<entry>
+																<key>transition-property</key>
+																<value xsi:type="xsd:string">color</value>
+															</entry>
+															<entry>
+																<key>transition-timing-function</key>
+																<value xsi:type="xsd:string">ease-in-out</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -6449,6 +6901,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">62.8438px 0px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -6616,6 +7088,22 @@
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
 															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">44.9844px 22px</value>
+															</entry>
+															<entry>
+																<key>transition-duration</key>
+																<value xsi:type="xsd:string">0.2s</value>
+															</entry>
+															<entry>
+																<key>transition-property</key>
+																<value xsi:type="xsd:string">color</value>
+															</entry>
+															<entry>
+																<key>transition-timing-function</key>
+																<value xsi:type="xsd:string">ease-in-out</value>
+															</entry>
 														</attributes>
 													</attributes>
 												</containedComponents>
@@ -6782,6 +7270,14 @@
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
+												<entry>
+													<key>top</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">58.5781px 24px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -6923,6 +7419,10 @@
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">0px 0px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -7090,6 +7590,22 @@
 														<entry>
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">54.5781px 24px</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.2s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">color</value>
+														</entry>
+														<entry>
+															<key>transition-timing-function</key>
+															<value xsi:type="xsd:string">ease-in-out</value>
 														</entry>
 													</attributes>
 												</attributes>
@@ -7287,6 +7803,26 @@
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
+													<entry>
+														<key>top</key>
+														<value xsi:type="xsd:string">48px</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">97.9688px 0px</value>
+													</entry>
+													<entry>
+														<key>transition-delay</key>
+														<value xsi:type="xsd:string">0.1s</value>
+													</entry>
+													<entry>
+														<key>transition-duration</key>
+														<value xsi:type="xsd:string">0.25s</value>
+													</entry>
+													<entry>
+														<key>transition-property</key>
+														<value xsi:type="xsd:string">opacity</value>
+													</entry>
 												</attributes>
 											</attributes>
 											<containedComponents>
@@ -7461,6 +7997,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">97.9688px 0px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -7627,6 +8183,22 @@
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">44.2656px 22px</value>
+															</entry>
+															<entry>
+																<key>transition-duration</key>
+																<value xsi:type="xsd:string">0.2s</value>
+															</entry>
+															<entry>
+																<key>transition-property</key>
+																<value xsi:type="xsd:string">color</value>
+															</entry>
+															<entry>
+																<key>transition-timing-function</key>
+																<value xsi:type="xsd:string">ease-in-out</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -7804,6 +8376,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">97.9688px 0px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -7970,6 +8562,22 @@
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">97.9688px 22px</value>
+															</entry>
+															<entry>
+																<key>transition-duration</key>
+																<value xsi:type="xsd:string">0.2s</value>
+															</entry>
+															<entry>
+																<key>transition-property</key>
+																<value xsi:type="xsd:string">color</value>
+															</entry>
+															<entry>
+																<key>transition-timing-function</key>
+																<value xsi:type="xsd:string">ease-in-out</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -8147,6 +8755,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">97.9688px 0px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -8314,6 +8942,22 @@
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
 															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">86.1719px 22px</value>
+															</entry>
+															<entry>
+																<key>transition-duration</key>
+																<value xsi:type="xsd:string">0.2s</value>
+															</entry>
+															<entry>
+																<key>transition-property</key>
+																<value xsi:type="xsd:string">color</value>
+															</entry>
+															<entry>
+																<key>transition-timing-function</key>
+																<value xsi:type="xsd:string">ease-in-out</value>
+															</entry>
 														</attributes>
 													</attributes>
 												</containedComponents>
@@ -8480,6 +9124,14 @@
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
+												<entry>
+													<key>top</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">33.2969px 24px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -8621,6 +9273,10 @@
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">0px 0px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -8788,6 +9444,22 @@
 														<entry>
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">29.2969px 24px</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.2s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">color</value>
+														</entry>
+														<entry>
+															<key>transition-timing-function</key>
+															<value xsi:type="xsd:string">ease-in-out</value>
 														</entry>
 													</attributes>
 												</attributes>
@@ -8985,6 +9657,26 @@
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
+													<entry>
+														<key>top</key>
+														<value xsi:type="xsd:string">48px</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">58.7188px 0px</value>
+													</entry>
+													<entry>
+														<key>transition-delay</key>
+														<value xsi:type="xsd:string">0.1s</value>
+													</entry>
+													<entry>
+														<key>transition-duration</key>
+														<value xsi:type="xsd:string">0.25s</value>
+													</entry>
+													<entry>
+														<key>transition-property</key>
+														<value xsi:type="xsd:string">opacity</value>
+													</entry>
 												</attributes>
 											</attributes>
 											<containedComponents>
@@ -9159,6 +9851,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">58.7188px 0px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -9325,6 +10037,22 @@
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">28.0156px 22px</value>
+															</entry>
+															<entry>
+																<key>transition-duration</key>
+																<value xsi:type="xsd:string">0.2s</value>
+															</entry>
+															<entry>
+																<key>transition-property</key>
+																<value xsi:type="xsd:string">color</value>
+															</entry>
+															<entry>
+																<key>transition-timing-function</key>
+																<value xsi:type="xsd:string">ease-in-out</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -9502,6 +10230,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">58.7188px 0px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -9668,6 +10416,22 @@
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">58.7188px 22px</value>
+															</entry>
+															<entry>
+																<key>transition-duration</key>
+																<value xsi:type="xsd:string">0.2s</value>
+															</entry>
+															<entry>
+																<key>transition-property</key>
+																<value xsi:type="xsd:string">color</value>
+															</entry>
+															<entry>
+																<key>transition-timing-function</key>
+																<value xsi:type="xsd:string">ease-in-out</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -9845,6 +10609,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">58.7188px 0px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -10012,6 +10796,22 @@
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
 															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">37.7656px 22px</value>
+															</entry>
+															<entry>
+																<key>transition-duration</key>
+																<value xsi:type="xsd:string">0.2s</value>
+															</entry>
+															<entry>
+																<key>transition-property</key>
+																<value xsi:type="xsd:string">color</value>
+															</entry>
+															<entry>
+																<key>transition-timing-function</key>
+																<value xsi:type="xsd:string">ease-in-out</value>
+															</entry>
 														</attributes>
 													</attributes>
 												</containedComponents>
@@ -10177,6 +10977,14 @@
 												<entry>
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>top</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">17.5px 24px</value>
 												</entry>
 											</attributes>
 										</attributes>
@@ -10344,6 +11152,22 @@
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
 													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">17.5px 24px</value>
+													</entry>
+													<entry>
+														<key>transition-duration</key>
+														<value xsi:type="xsd:string">0.2s</value>
+													</entry>
+													<entry>
+														<key>transition-property</key>
+														<value xsi:type="xsd:string">color</value>
+													</entry>
+													<entry>
+														<key>transition-timing-function</key>
+														<value xsi:type="xsd:string">ease-in-out</value>
+													</entry>
 												</attributes>
 											</attributes>
 											<containedComponents>
@@ -10498,6 +11322,10 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
+														</entry>
 													</attributes>
 												</attributes>
 											</containedComponents>
@@ -10644,6 +11472,10 @@
 														<entry>
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
 														</entry>
 													</attributes>
 												</attributes>
@@ -10869,6 +11701,26 @@
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
+													<entry>
+														<key>top</key>
+														<value xsi:type="xsd:string">48px</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">80px 19px</value>
+													</entry>
+													<entry>
+														<key>transition-delay</key>
+														<value xsi:type="xsd:string">0.1s</value>
+													</entry>
+													<entry>
+														<key>transition-duration</key>
+														<value xsi:type="xsd:string">0.25s</value>
+													</entry>
+													<entry>
+														<key>transition-property</key>
+														<value xsi:type="xsd:string">opacity</value>
+													</entry>
 												</attributes>
 											</attributes>
 											<containedComponents>
@@ -11039,6 +11891,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">79px 0px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -11204,6 +12076,22 @@
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">58.0156px 21px</value>
+															</entry>
+															<entry>
+																<key>transition-duration</key>
+																<value xsi:type="xsd:string">0.2s</value>
+															</entry>
+															<entry>
+																<key>transition-property</key>
+																<value xsi:type="xsd:string">color</value>
+															</entry>
+															<entry>
+																<key>transition-timing-function</key>
+																<value xsi:type="xsd:string">ease-in-out</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -11382,6 +12270,10 @@
 																<entry>
 																	<key>text-decoration-color</key>
 																	<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
+																</entry>
+																<entry>
+																	<key>transform-origin</key>
+																	<value xsi:type="xsd:string">9px 6.1875px</value>
 																</entry>
 															</attributes>
 														</attributes>
@@ -11600,6 +12492,26 @@
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(63, 60, 57)</value>
 														</entry>
+														<entry>
+															<key>top</key>
+															<value xsi:type="xsd:string">0px</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">79px 15.5px</value>
+														</entry>
+														<entry>
+															<key>transition-delay</key>
+															<value xsi:type="xsd:string">0.1s</value>
+														</entry>
+														<entry>
+															<key>transition-duration</key>
+															<value xsi:type="xsd:string">0.25s</value>
+														</entry>
+														<entry>
+															<key>transition-property</key>
+															<value xsi:type="xsd:string">height</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -11774,6 +12686,10 @@
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(63, 60, 57)</value>
 															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">9px 6.1875px</value>
+															</entry>
 														</attributes>
 													</attributes>
 												</containedComponents>
@@ -11917,6 +12833,10 @@
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -12055,6 +12975,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -12189,6 +13113,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -12326,6 +13254,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -12460,6 +13392,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -12596,6 +13532,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -12730,6 +13670,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -12866,6 +13810,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -13000,6 +13948,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -13136,6 +14088,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -13270,6 +14226,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -13413,6 +14373,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">592.5px 1252.5px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -13568,6 +14532,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 								</entry>
+								<entry>
+									<key>top</key>
+									<value xsi:type="xsd:string">106px</value>
+								</entry>
+								<entry>
+									<key>transform-origin</key>
+									<value xsi:type="xsd:string">150px 0px</value>
+								</entry>
 							</attributes>
 						</attributes>
 					</containedComponents>
@@ -13706,6 +14678,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+								</entry>
+								<entry>
+									<key>transform-origin</key>
+									<value xsi:type="xsd:string">592.5px 1252.5px</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -13889,6 +14865,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<key>text-decoration-color</key>
 										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 									</entry>
+									<entry>
+										<key>top</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
+										<key>transform-origin</key>
+										<value xsi:type="xsd:string">592.5px 1252.5px</value>
+									</entry>
 								</attributes>
 							</attributes>
 							<containedComponents>
@@ -14034,6 +15018,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<entry>
 											<key>text-decoration-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>transform-origin</key>
+											<value xsi:type="xsd:string">592.5px 338px</value>
 										</entry>
 									</attributes>
 								</attributes>
@@ -14205,6 +15193,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">510px 338px</value>
+											</entry>
 										</attributes>
 									</attributes>
 									<containedComponents>
@@ -14367,6 +15359,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">459px 67.5px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -14518,6 +15514,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(0, 0, 51)</value>
 													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">459px 67.5px</value>
+													</entry>
 												</attributes>
 											</attributes>
 											<containedComponents>
@@ -14660,6 +15660,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
 														</entry>
 													</attributes>
 												</attributes>
@@ -14805,6 +15809,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
+														</entry>
 													</attributes>
 												</attributes>
 											</containedComponents>
@@ -14948,6 +15956,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
 														</entry>
 													</attributes>
 												</attributes>
@@ -15093,6 +16105,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
+														</entry>
 													</attributes>
 												</attributes>
 											</containedComponents>
@@ -15236,6 +16252,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
 														</entry>
 													</attributes>
 												</attributes>
@@ -15418,6 +16438,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
+												<entry>
+													<key>top</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">297.484px 194px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -15563,6 +16591,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">0px 0px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -15711,6 +16743,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">0px 0px</value>
+													</entry>
 												</attributes>
 											</attributes>
 										</containedComponents>
@@ -15857,6 +16893,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">0px 0px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -16008,6 +17048,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">257px 144px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -16193,6 +17237,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 												</entry>
+												<entry>
+													<key>top</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">212.5px 204px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -16355,6 +17407,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">161.703px 198px</value>
+													</entry>
 												</attributes>
 											</attributes>
 											<containedComponents>
@@ -16500,6 +17556,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
 														</entry>
 													</attributes>
 												</attributes>
@@ -16647,6 +17707,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
 														</entry>
 													</attributes>
 												</attributes>
@@ -16804,6 +17868,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -16949,6 +18017,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">0px 0px</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -17107,6 +18179,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
+														</entry>
 													</attributes>
 												</attributes>
 											</containedComponents>
@@ -17263,6 +18339,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
+														</entry>
 													</attributes>
 												</attributes>
 											</containedComponents>
@@ -17411,6 +18491,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
+														</entry>
 													</attributes>
 												</attributes>
 											</containedComponents>
@@ -17558,6 +18642,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
 														</entry>
 													</attributes>
 												</attributes>
@@ -17709,6 +18797,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<entry>
 											<key>text-decoration-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>transform-origin</key>
+											<value xsi:type="xsd:string">592.5px 308.5px</value>
 										</entry>
 									</attributes>
 								</attributes>
@@ -17880,6 +18972,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">510px 308.5px</value>
+											</entry>
 										</attributes>
 									</attributes>
 									<containedComponents>
@@ -18042,6 +19138,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">459px 45px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -18195,6 +19295,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">459px 45px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -18374,6 +19478,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">44.8281px 45px</value>
+														</entry>
 													</attributes>
 												</attributes>
 											</containedComponents>
@@ -18522,6 +19630,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
+														</entry>
 													</attributes>
 												</attributes>
 											</containedComponents>
@@ -18669,6 +19781,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
 														</entry>
 													</attributes>
 												</attributes>
@@ -18851,6 +19967,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
+												<entry>
+													<key>top</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">212.5px 215px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -19028,6 +20152,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">154.609px 215px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -19209,6 +20337,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
+												<entry>
+													<key>top</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">297.484px 204px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -19354,6 +20490,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">249.734px 198px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -19517,6 +20657,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">209.781px 198px</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -19662,6 +20806,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">0px 0px</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -19819,6 +20967,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
 															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">0px 0px</value>
+															</entry>
 														</attributes>
 													</attributes>
 												</containedComponents>
@@ -19966,6 +21118,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">0px 0px</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -20115,6 +21271,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">0px 0px</value>
+															</entry>
 														</attributes>
 													</attributes>
 												</containedComponents>
@@ -20262,6 +21422,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">0px 0px</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -20414,6 +21578,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<entry>
 											<key>text-decoration-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>transform-origin</key>
+											<value xsi:type="xsd:string">592.5px 308.5px</value>
 										</entry>
 									</attributes>
 								</attributes>
@@ -20585,6 +21753,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">510px 308.5px</value>
+											</entry>
 										</attributes>
 									</attributes>
 									<containedComponents>
@@ -20747,6 +21919,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">459px 45px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -20900,6 +22076,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">459px 45px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -21079,6 +22259,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">44.8281px 45px</value>
+														</entry>
 													</attributes>
 												</attributes>
 											</containedComponents>
@@ -21227,6 +22411,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
+														</entry>
 													</attributes>
 												</attributes>
 											</containedComponents>
@@ -21374,6 +22562,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
 														</entry>
 													</attributes>
 												</attributes>
@@ -21556,6 +22748,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
+												<entry>
+													<key>top</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">255px 204px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -21701,6 +22901,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">235px 198px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -21870,6 +23074,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">197.406px 198px</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -22015,6 +23223,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">0px 0px</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -22171,6 +23383,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">0px 0px</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -22354,6 +23570,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
+												<entry>
+													<key>top</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">255px 215px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -22499,6 +23723,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">0px 0px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -22679,6 +23907,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">182.672px 100px</value>
+													</entry>
 												</attributes>
 											</attributes>
 										</containedComponents>
@@ -22858,6 +24090,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">200px 100px</value>
+													</entry>
 												</attributes>
 											</attributes>
 										</containedComponents>
@@ -23007,6 +24243,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<entry>
 											<key>text-decoration-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+										</entry>
+										<entry>
+											<key>transform-origin</key>
+											<value xsi:type="xsd:string">592.5px 297.5px</value>
 										</entry>
 									</attributes>
 								</attributes>
@@ -23178,6 +24418,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">510px 297.5px</value>
+											</entry>
 										</attributes>
 									</attributes>
 									<containedComponents>
@@ -23340,6 +24584,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">459px 45px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -23493,6 +24741,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">459px 45px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -23672,6 +24924,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">44.8281px 45px</value>
+														</entry>
 													</attributes>
 												</attributes>
 											</containedComponents>
@@ -23820,6 +25076,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
+														</entry>
 													</attributes>
 												</attributes>
 											</containedComponents>
@@ -23967,6 +25227,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<entry>
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">0px 0px</value>
 														</entry>
 													</attributes>
 												</attributes>
@@ -24149,6 +25413,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
+												<entry>
+													<key>top</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">212.5px 168.641px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -24294,6 +25566,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">0px 0px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -24442,6 +25718,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">0px 0px</value>
+													</entry>
 												</attributes>
 											</attributes>
 										</containedComponents>
@@ -24588,6 +25868,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">0px 0px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -24767,6 +26051,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">200px 123.641px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -24948,6 +26236,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 												</entry>
+												<entry>
+													<key>top</key>
+													<value xsi:type="xsd:string">0px</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">297.484px 204px</value>
+												</entry>
 											</attributes>
 										</attributes>
 										<containedComponents>
@@ -25093,6 +26389,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 													<entry>
 														<key>text-decoration-color</key>
 														<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+													</entry>
+													<entry>
+														<key>transform-origin</key>
+														<value xsi:type="xsd:string">249.734px 198px</value>
 													</entry>
 												</attributes>
 											</attributes>
@@ -25256,6 +26556,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<key>text-decoration-color</key>
 															<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 														</entry>
+														<entry>
+															<key>transform-origin</key>
+															<value xsi:type="xsd:string">209.781px 198px</value>
+														</entry>
 													</attributes>
 												</attributes>
 												<containedComponents>
@@ -25401,6 +26705,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">0px 0px</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -25548,6 +26856,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">0px 0px</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -25705,6 +27017,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
 															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">0px 0px</value>
+															</entry>
 														</attributes>
 													</attributes>
 												</containedComponents>
@@ -25861,6 +27177,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(65, 65, 65)</value>
 															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">0px 0px</value>
+															</entry>
 														</attributes>
 													</attributes>
 												</containedComponents>
@@ -26008,6 +27328,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 															<entry>
 																<key>text-decoration-color</key>
 																<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+															</entry>
+															<entry>
+																<key>transform-origin</key>
+																<value xsi:type="xsd:string">0px 0px</value>
 															</entry>
 														</attributes>
 													</attributes>
@@ -26168,6 +27492,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">592.5px 204px</value>
+							</entry>
 						</attributes>
 					</attributes>
 					<containedComponents>
@@ -26318,6 +27646,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 								</entry>
+								<entry>
+									<key>transform-origin</key>
+									<value xsi:type="xsd:string">510px 153px</value>
+								</entry>
 							</attributes>
 						</attributes>
 						<containedComponents>
@@ -26455,6 +27787,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<entry>
 										<key>text-decoration-color</key>
 										<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+									</entry>
+									<entry>
+										<key>transform-origin</key>
+										<value xsi:type="xsd:string">510px 0px</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -26626,6 +27962,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<key>text-decoration-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 										</entry>
+										<entry>
+											<key>top</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
+											<key>transform-origin</key>
+											<value xsi:type="xsd:string">169.984px 153px</value>
+										</entry>
 									</attributes>
 								</attributes>
 								<containedComponents>
@@ -26772,6 +28116,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<entry>
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">149.984px 15px</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -26922,6 +28270,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">149.984px 120px</value>
+											</entry>
 										</attributes>
 									</attributes>
 									<containedComponents>
@@ -27059,6 +28411,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<entry>
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+												</entry>
+												<entry>
+													<key>transform-origin</key>
+													<value xsi:type="xsd:string">0px 0px</value>
 												</entry>
 											</attributes>
 										</attributes>
@@ -27233,6 +28589,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<key>text-decoration-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 										</entry>
+										<entry>
+											<key>top</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
+											<key>transform-origin</key>
+											<value xsi:type="xsd:string">169.984px 123px</value>
+										</entry>
 									</attributes>
 								</attributes>
 								<containedComponents>
@@ -27379,6 +28743,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<entry>
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">149.984px 15px</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -27529,6 +28897,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<entry>
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
+											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">149.984px 90px</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -27702,6 +29074,14 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<key>text-decoration-color</key>
 											<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 										</entry>
+										<entry>
+											<key>top</key>
+											<value xsi:type="xsd:string">0px</value>
+										</entry>
+										<entry>
+											<key>transform-origin</key>
+											<value xsi:type="xsd:string">169.984px 138px</value>
+										</entry>
 									</attributes>
 								</attributes>
 								<containedComponents>
@@ -27848,6 +29228,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<entry>
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
+											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">149.984px 15px</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -28001,6 +29385,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(131, 140, 149)</value>
 											</entry>
+											<entry>
+												<key>transform-origin</key>
+												<value xsi:type="xsd:string">149.984px 105px</value>
+											</entry>
 										</attributes>
 									</attributes>
 								</containedComponents>
@@ -28101,6 +29489,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<key>outline-width</key>
 							<value xsi:type="xsd:string">0px</value>
 						</entry>
+						<entry>
+							<key>transform-origin</key>
+							<value xsi:type="xsd:string">50% 50%</value>
+						</entry>
 					</attributes>
 				</attributes>
 				<containedComponents>
@@ -28194,6 +29586,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -28290,6 +29686,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -28384,6 +29784,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -28480,6 +29884,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -28574,6 +29982,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -28670,6 +30082,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -28765,6 +30181,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -28859,6 +30279,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -28959,6 +30383,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -29057,6 +30485,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -29157,6 +30589,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -29255,6 +30691,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -29355,6 +30795,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -29453,6 +30897,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -29553,6 +31001,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -29651,6 +31103,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -29751,6 +31207,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -29849,6 +31309,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -29949,6 +31413,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -30047,6 +31515,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -30147,6 +31619,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -30245,6 +31721,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -30345,6 +31825,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -30443,6 +31927,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -30543,6 +32031,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
+							</entry>
 						</attributes>
 					</attributes>
 				</containedComponents>
@@ -30638,6 +32130,10 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<entry>
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>transform-origin</key>
+								<value xsi:type="xsd:string">50% 50%</value>
 							</entry>
 						</attributes>
 					</attributes>

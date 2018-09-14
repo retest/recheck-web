@@ -153,6 +153,14 @@ all:
   - text-overflow: clip
   - text-shadow: none
   - text-transform: none
+  - top: auto
+  - transform: none
+  - transform-origin: 50% 50% 0
+  - transform-style: flat
+  - transition-delay: 0s
+  - transition-duration: 0s
+  - transition-property: all
+  - transition-timing-function: ease
   - visibility: visible
 
 a:
