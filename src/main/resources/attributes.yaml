@@ -97,6 +97,20 @@ attributes:
   - font-style
   - font-variant
   - font-weight
+  - grid-auto-columns
+  - grid-auto-flow
+  - grid-auto-rows
+  - grid-column-end
+  - grid-column-start
+  - grid-row-end
+  - grid-row-start
+  - grid-template-areas
+  - grid-template-columns
+  - grid-template-rows
+  - hanging-punctuation
+  - hyphens
+  - isolation
+  - justify-content
   - margin-top
   - margin-right
   - margin-bottom
