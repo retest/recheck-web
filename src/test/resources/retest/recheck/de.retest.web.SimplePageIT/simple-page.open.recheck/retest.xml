@@ -91,7 +91,7 @@
 					</entry>
 					<entry>
 						<key>transform-origin</key>
-						<value xsi:type="xsd:string">592.5px 528.719px</value>
+						<value xsi:type="xsd:string">592.5px 528.219px</value>
 					</entry>
 				</attributes>
 			</attributes>
@@ -185,7 +185,7 @@
 						</entry>
 						<entry>
 							<key>transform-origin</key>
-							<value xsi:type="xsd:string">584.5px 520.719px</value>
+							<value xsi:type="xsd:string">584.5px 520.219px</value>
 						</entry>
 					</attributes>
 				</attributes>
@@ -4295,7 +4295,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 							<entry>
 								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 18.5px</value>
+								<value xsi:type="xsd:string">584.5px 19px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -4397,7 +4397,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</entry>
 								<entry>
 									<key>transform-origin</key>
-									<value xsi:type="xsd:string">584.5px 18.5px</value>
+									<value xsi:type="xsd:string">584.5px 19px</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -4531,7 +4531,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									</entry>
 									<entry>
 										<key>transform-origin</key>
-										<value xsi:type="xsd:string">6px 6px</value>
+										<value xsi:type="xsd:string">6.5px 6.5px</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -5030,7 +5030,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 							<entry>
 								<key>transform-origin</key>
-								<value xsi:type="xsd:string">8px 8px</value>
+								<value xsi:type="xsd:string">0px 0px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -6784,6 +6784,10 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<key>transform-origin</key>
 										<value xsi:type="xsd:string">43px 19px</value>
 									</entry>
+									<entry>
+										<key>vertical-align</key>
+										<value xsi:type="xsd:string">middle</value>
+									</entry>
 								</attributes>
 							</attributes>
 							<containedComponents>
@@ -6893,6 +6897,10 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<entry>
 											<key>transform-origin</key>
 											<value xsi:type="xsd:string">41px 19px</value>
+										</entry>
+										<entry>
+											<key>vertical-align</key>
+											<value xsi:type="xsd:string">middle</value>
 										</entry>
 									</attributes>
 								</attributes>

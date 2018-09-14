@@ -137,6 +137,8 @@ attributes:
   - overflow
   - overflow-x
   - overflow-y
+  - offsetHeight
+  - offsetWidth
   - padding-top
   - padding-right
   - padding-bottom
@@ -172,8 +174,9 @@ attributes:
   - transition-duration
   - transition-property
   - transition-timing-function
-  - offsetHeight
-  - offsetWidth
+  - unicode-bidi
+  - user-select
+  - vertical-align
   - visibility
 
 identifyingAttributes:
