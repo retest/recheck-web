@@ -131,6 +131,13 @@ all:
   - padding-left: 0px
   - padding-right: 0px
   - padding-top: 0px
+  - page-break-after: auto
+  - page-break-before: auto
+  - page-break-inside: auto
+  - perspective: none
+  - perspective-origin: 50% 50%
+  - pointer-events: auto
+  - position: static
   - text-align: start
   - visibility: visible
 

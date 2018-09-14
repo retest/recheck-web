@@ -141,6 +141,13 @@ attributes:
   - padding-right
   - padding-bottom
   - padding-left
+  - page-break-after
+  - page-break-before
+  - page-break-inside
+  - perspective
+  - perspective-origin
+  - pointer-events
+  - position
   - offsetHeight
   - offsetWidth
   - visibility
