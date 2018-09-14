@@ -178,6 +178,12 @@ attributes:
   - user-select
   - vertical-align
   - visibility
+  - white-space
+  - word-break
+  - word-spacing
+  - word-wrap
+  - z-index
+  
 
 identifyingAttributes:
   - class
