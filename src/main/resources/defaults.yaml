@@ -96,7 +96,7 @@ all:
   - grid-row-start: auto
   - grid-template-areas: none
   - grid-template-columns: none
-  - grid-template-rows: none
+  - grid-template-rows: none 
   - hanging-punctuation: none
   - hyphens: manual
   - isolation: auto
