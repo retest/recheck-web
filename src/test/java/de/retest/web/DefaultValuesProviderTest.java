@@ -20,13 +20,13 @@ class DefaultValuesProviderTest {
 	@Test
 	void have_fallbacks_and_general_defaults() {
 		final DefaultValuesProvider cut = new DefaultValuesProvider();
+		assertThat( cut.isDefault( "foo", "box-shadow", "0px" ) ).isTrue();
+		assertThat( cut.isDefault( "foo", "bar", null ) ).isTrue();
+		assertThat( cut.isDefault( "foo", "bar", "" ) ).isTrue();
+		assertThat( cut.isDefault( "foo", "bar", " " ) ).isTrue();
 		assertThat( cut.isDefault( "foo", "bar", "0px" ) ).isTrue();
-		assertThat( cut.isDefault( "fox", "bus", null ) ).isTrue();
-		assertThat( cut.isDefault( "fox", "trot", "normal" ) ).isTrue();
-		assertThat( cut.isDefault( "fug", "bos", "auto" ) ).isTrue();
-		assertThat( cut.isDefault( "fuzz", "bug", "" ) ).isTrue();
-		assertThat( cut.isDefault( "gin", "fitz", " " ) ).isTrue();
-		assertThat( cut.isDefault( "fizz", "bug", "normal" ) ).isTrue();
+		assertThat( cut.isDefault( "foo", "bar", "auto" ) ).isTrue();
+		assertThat( cut.isDefault( "foo", "bar", "normal" ) ).isTrue();
 	}
 
 	@Test
