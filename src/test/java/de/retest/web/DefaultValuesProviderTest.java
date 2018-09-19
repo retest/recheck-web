@@ -52,11 +52,10 @@ class DefaultValuesProviderTest {
 		assertThat( cut.isDefault( "booody", "align-content", null ) ).isTrue();
 		assertThat( cut.isDefault( "fox", "color", null ) ).isTrue();
 		assertThat( cut.isDefault( "div", "outline-width", null ) ).isTrue();
-		assertThat( cut.isDefault( "head", "outline-width", "auto" ) ).isTrue();
-		assertThat( cut.isDefault( "body", "outline-width", "normal" ) ).isTrue();
+		assertThat( cut.isDefault( "body", "outline-width", null ) ).isTrue();
 		assertThat( cut.isDefault( "fox", "null", null ) ).isTrue();
 		assertThat( cut.isDefault( "fox", "resize", null ) ).isTrue();
 		assertThat( cut.isDefault( "div", "animation-delay", null ) ).isTrue();
-		assertThat( cut.isDefault( "P", "margin-top", "0px" ) ).isTrue();
+		assertThat( cut.isDefault( "P", "margin-top", null ) ).isTrue();
 	}
 }
