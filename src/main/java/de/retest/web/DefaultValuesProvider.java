@@ -83,11 +83,10 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 	}
 
 	public boolean isDefault( final String tag, final String attribute, final String attributeValue ) {
-		final String defaultValue = getDefaultValue( tag, attribute );
 		if ( attributeValue == null || attributeValue.trim().isEmpty() ) {
 			return true;
 		}
-		if ( attributeValue.equalsIgnoreCase( defaultValue ) ) {
+		if ( attributeValue.equalsIgnoreCase( getDefaultValue( tag, attribute ) ) ) {
 			return true;
 		}
 		if ( commonDefaults.contains( attributeValue ) ) {
