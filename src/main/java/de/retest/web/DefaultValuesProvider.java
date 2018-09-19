@@ -89,6 +89,12 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 		if ( attributeValue.equals( "0px" ) ) {
 			return true;
 		}
+		if ( attributeValue.equals( "rgb(0, 0, 0)" ) ) {
+			return true;
+		}
+		if ( attributeValue.equals( "0px 0px" ) ) {
+			return true;
+		}
 		return false;
 	}
 

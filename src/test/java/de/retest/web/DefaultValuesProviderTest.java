@@ -27,6 +27,8 @@ class DefaultValuesProviderTest {
 		assertThat( cut.isDefault( "foo", "bar", "0px" ) ).isTrue();
 		assertThat( cut.isDefault( "foo", "bar", "auto" ) ).isTrue();
 		assertThat( cut.isDefault( "foo", "bar", "normal" ) ).isTrue();
+		assertThat( cut.isDefault( "foo", "bar", "rgb(0, 0, 0)" ) ).isTrue();
+		assertThat( cut.isDefault( "foo", "bar", "0px 0px" ) ).isTrue();
 	}
 
 	@Test
