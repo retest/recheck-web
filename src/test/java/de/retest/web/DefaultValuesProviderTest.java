@@ -45,4 +45,18 @@ class DefaultValuesProviderTest {
 		assertThat( cut.getDefaultValue( "body", "margin-top" ) ).isEqualTo( "8px" );
 		assertThat( cut.getDefaultValue( "boody", "margin-top" ) ).isEqualTo( "0px" );
 	}
+
+	@Test
+	void isDefault_handled_two_null_values() {
+		final DefaultValuesProvider cut = new DefaultValuesProvider();
+		assertThat( cut.isDefault( "booody", "align-content", null ) ).isTrue();
+		assertThat( cut.isDefault( "fox", "color", null ) ).isTrue();
+		assertThat( cut.isDefault( "div", "outline-width", null ) ).isTrue();
+		assertThat( cut.isDefault( "head", "outline-width", "auto" ) ).isTrue();
+		assertThat( cut.isDefault( "body", "outline-width", "normal" ) ).isTrue();
+		assertThat( cut.isDefault( "fox", "null", null ) ).isTrue();
+		assertThat( cut.isDefault( "fox", "resize", null ) ).isTrue();
+		assertThat( cut.isDefault( "div", "animation-delay", null ) ).isTrue();
+		assertThat( cut.isDefault( "P", "margin-top", "0px" ) ).isTrue();
+	}
 }

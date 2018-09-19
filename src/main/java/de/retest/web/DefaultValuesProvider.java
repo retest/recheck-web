@@ -8,6 +8,8 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.apache.commons.lang3.StringUtils;
+
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
@@ -74,8 +76,8 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 
 	public boolean isDefault( final String tag, final String attribute, final String attributeValue ) {
 		final String defaultValue = getDefaultValue( tag, attribute );
-		if ( defaultValue != null ) {
-			return defaultValue.equalsIgnoreCase( attributeValue );
+		if ( StringUtils.equalsIgnoreCase( defaultValue, attributeValue ) ) {
+			return true;
 		}
 		if ( attributeValue == null || attributeValue.trim().isEmpty() ) {
 			return true;
