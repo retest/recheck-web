@@ -20,13 +20,13 @@ class DefaultValuesProviderTest {
 	@Test
 	void have_fallbacks_and_general_defaults() {
 		final DefaultValuesProvider cut = new DefaultValuesProvider();
+		assertThat( cut.isDefault( "foo", "box-shadow", "0px" ) ).isTrue();
+		assertThat( cut.isDefault( "foo", "bar", null ) ).isTrue();
+		assertThat( cut.isDefault( "foo", "bar", "" ) ).isTrue();
+		assertThat( cut.isDefault( "foo", "bar", " " ) ).isTrue();
 		assertThat( cut.isDefault( "foo", "bar", "0px" ) ).isTrue();
-		assertThat( cut.isDefault( "fox", "bus", null ) ).isTrue();
-		assertThat( cut.isDefault( "fox", "trot", "normal" ) ).isTrue();
-		assertThat( cut.isDefault( "fug", "bos", "auto" ) ).isTrue();
-		assertThat( cut.isDefault( "fuzz", "bug", "" ) ).isTrue();
-		assertThat( cut.isDefault( "gin", "fitz", " " ) ).isTrue();
-		assertThat( cut.isDefault( "fizz", "bug", "normal" ) ).isTrue();
+		assertThat( cut.isDefault( "foo", "bar", "auto" ) ).isTrue();
+		assertThat( cut.isDefault( "foo", "bar", "normal" ) ).isTrue();
 	}
 
 	@Test
@@ -44,18 +44,5 @@ class DefaultValuesProviderTest {
 		final DefaultValuesProvider cut = new DefaultValuesProvider();
 		assertThat( cut.getDefaultValue( "body", "margin-top" ) ).isEqualTo( "8px" );
 		assertThat( cut.getDefaultValue( "boody", "margin-top" ) ).isEqualTo( "0px" );
-	}
-
-	@Test
-	void isDefault_handled_two_null_values() {
-		final DefaultValuesProvider cut = new DefaultValuesProvider();
-		assertThat( cut.isDefault( "booody", "align-content", null ) ).isTrue();
-		assertThat( cut.isDefault( "fox", "color", null ) ).isTrue();
-		assertThat( cut.isDefault( "div", "outline-width", null ) ).isTrue();
-		assertThat( cut.isDefault( "body", "outline-width", null ) ).isTrue();
-		assertThat( cut.isDefault( "fox", "null", null ) ).isTrue();
-		assertThat( cut.isDefault( "fox", "resize", null ) ).isTrue();
-		assertThat( cut.isDefault( "div", "animation-delay", null ) ).isTrue();
-		assertThat( cut.isDefault( "P", "margin-top", null ) ).isTrue();
 	}
 }
