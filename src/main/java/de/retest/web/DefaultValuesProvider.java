@@ -3,10 +3,13 @@ package de.retest.web;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -28,6 +31,13 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 	}
 
 	public static final String DEFAULTS_FILE_PATH = "/defaults.yaml";
+
+	private static final Set<String> commonDefaults = new HashSet<>( Arrays.asList( //
+			"0px", //
+			"0px 0px", //
+			"auto", //
+			"normal", //
+			"rgb(0, 0, 0)" ) );
 
 	private final Map<String, Map<String, String>> defaultValues;
 
@@ -80,19 +90,7 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 		if ( attributeValue.equalsIgnoreCase( defaultValue ) ) {
 			return true;
 		}
-		if ( attributeValue.equals( "auto" ) ) {
-			return true;
-		}
-		if ( attributeValue.equals( "normal" ) ) {
-			return true;
-		}
-		if ( attributeValue.equals( "0px" ) ) {
-			return true;
-		}
-		if ( attributeValue.equals( "rgb(0, 0, 0)" ) ) {
-			return true;
-		}
-		if ( attributeValue.equals( "0px 0px" ) ) {
+		if ( commonDefaults.contains( attributeValue ) ) {
 			return true;
 		}
 		return false;
