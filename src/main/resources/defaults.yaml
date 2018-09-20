@@ -171,15 +171,22 @@ all:
   - z-index: auto
 
 a:
+  - border-image-width: 1
+  - border-color: rgb(0, 0, 238)
+  - border-bottom-color: rgb(0, 0, 238)
+  - border-left-color: rgb(0, 0, 238)
+  - border-right-color: rgb(0, 0, 238)
+  - border-top-color: rgb(0, 0, 238)
+  - caret-color: rgb(0, 0, 238)
+  - column-rule-color: rgb(0, 0, 238)
+  - outline-color: rgb(0, 0, 238)
+  - text-decoration-color: rgb(0, 0, 238)
   - color: rgb(0, 0, 238)
   - cursor: auto
   - display: inline
   - text-decoration: underline
-
-a:visited:
-  - cursor: auto
-  - text-decoration: underline
-
+  - text-decoration-line: underline
+  
 address:
   - display: block
   - font-style: italic
@@ -195,6 +202,7 @@ aside:
 
 b:
   - font-weight: 700
+  - display: inline
 
 bdo:
   - unicode-bidi: bidi-override
@@ -207,6 +215,8 @@ blockquote:
   - margin-top: 1em
 
 body:
+  - border-image-width: 1
+  - display: block
   - display: block
   - margin-bottom: 8px
   - margin-left: 8px
@@ -217,6 +227,7 @@ body:focus:
   - outline: none
 
 br:
+  - border-image-width: 1
   - display: inline
 
 caption:
@@ -252,6 +263,7 @@ dfn:
   - font-style: italic
 
 div:
+  - border-image-width: 1
   - display: block
 
 dl:
@@ -265,6 +277,8 @@ dt:
   - display: block
 
 em:
+  - border-image-width: 1
+  - display: inline
   - font-style: italic
 
 embed:focus:
@@ -294,10 +308,13 @@ footer:
   - display: block
 
 form:
+  - border-image-width: 1
   - display: block
   - margin-top: 0px
+  - margin-bottom: 16px
 
 h1:
+  - border-image-width: 1
   - display: block
   - font-size: 32px
   - font-weight: 700
@@ -351,6 +368,7 @@ h6:
   - margin-top: 2.33em
 
 head:
+  - border-image-width: 1
   - display: none
 
 header:
@@ -366,6 +384,7 @@ hr:
   - margin-top: 0.5em
 
 html:
+  - border-image-width: 1
   - display: block
 
 html:focus:
@@ -373,12 +392,20 @@ html:focus:
 
 i:
   - font-style: italic
+  
+input:
+  - border-image-width: 1
+  - box-sizing: border-box
+  - display: inline-block
+  - margin-bottom: 3px
+  - margin-top: 3px
 
 iframe:focus:
   - outline: none
 
 img:
-  - display: inline-block
+  - border-image-width: 1
+  - display: inline
 
 ins:
   - text-decoration: underline
@@ -387,6 +414,7 @@ kbd:
   - font-family: monospace
 
 label:
+  - border-image-width: 1
   - cursor: default
   - display: inline
 
@@ -437,6 +465,7 @@ output:
   - display: inline
 
 p:
+  - border-image-width: 1
   - display: block
   - margin-bottom: 16px
   - margin-left: 0px
@@ -447,6 +476,7 @@ param:
   - display: none
 
 pre:
+  - border-image-width: 1
   - display: block
   - font-family: monospace
   - font-size: 13px
@@ -475,6 +505,7 @@ samp:
   - font-family: monospace
 
 script:
+  - border-image-width: 1
   - display: none
 
 section:
@@ -484,6 +515,7 @@ small:
   - font-size: smaller
 
 span:
+  - border-image-width: 1
   - display: inline
 
 strike:
@@ -512,18 +544,27 @@ table:
   - border-left-color: rgb(128, 128, 128)
   - border-right-color: rgb(128, 128, 128)
   - border-top-color: rgb(128, 128, 128)
+  - border-image-width: 1
   - border-spacing: 2px 2px
   - display: table
-
+  
 tbody:
   - border-bottom-color: rgb(128, 128, 128)
   - border-left-color: rgb(128, 128, 128)
   - border-right-color: rgb(128, 128, 128)
   - border-top-color: rgb(128, 128, 128)
+  - border-image-width: 1
+  - border-spacing: 2px 2px
   - display: table-row-group
   - vertical-align: middle
 
 td:
+  - border-bottom-color: rgb(128, 128, 128)
+  - border-left-color: rgb(128, 128, 128)
+  - border-right-color: rgb(128, 128, 128)
+  - border-top-color: rgb(128, 128, 128)
+  - border-image-width: 1
+  - border-spacing: 2px 2px
   - display: table-cell
   - vertical-align: inherit
 
@@ -542,12 +583,18 @@ thead:
   - vertical-align: middle
 
 title:
+  - border-image-width: 1
   - display: none
 
 tr:
-  - border-color: inherit
+  - border-bottom-color: rgb(128, 128, 128)
+  - border-left-color: rgb(128, 128, 128)
+  - border-right-color: rgb(128, 128, 128)
+  - border-top-color: rgb(128, 128, 128)
+  - border-image-width: 1
+  - border-spacing: 2px 2px
   - display: table-row
-  - vertical-align: inherit
+  - vertical-align: middle
 
 u:
   - text-decoration: underline
