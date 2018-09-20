@@ -27,7 +27,6 @@ all:
   - border-bottom-right-radius: 0px
   - border-bottom-width: medium
   - border-collapse: separate
-  - border-color: rgb(0, 0, 0)
   - border-image-outset: 0px
   - border-image-repeat: stretch
   - border-image-slice: 100%
@@ -172,7 +171,6 @@ all:
   - z-index: auto
 
 a:
-  - border-color: rgb(0, 0, 238)
   - color: rgb(0, 0, 238)
   - cursor: auto
   - display: inline
@@ -530,7 +528,6 @@ td:
   - vertical-align: inherit
 
 tfoot:
-  - border-color: inherit
   - display: table-footer-group
   - vertical-align: middle
 
@@ -541,7 +538,6 @@ th:
   - vertical-align: inherit
 
 thead:
-  - border-color: inherit
   - display: table-header-group
   - vertical-align: middle
 
