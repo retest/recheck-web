@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="2.4.0" dataType="de.retest.ui.descriptors.SutState" dataTypeVersion="1">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="2.4.1" dataType="de.retest.ui.descriptors.SutState" dataTypeVersion="1">
 	<data xsi:type="sutState">
 		<descriptors screenId="1" screen="Hello WebDriver" title="Hello WebDriver">
 			<identifyingAttributes>
@@ -8,37 +8,14 @@
 						<x>0</x>
 						<y>0</y>
 						<height>1059</height>
-						<width>1185</width>
+						<width>1200</width>
 					</attribute>
 					<attribute key="path" xsi:type="pathAttribute">//HTML[1]</attribute>
 					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 					<attribute key="type" xsi:type="stringAttribute">HTML</attribute>
 				</attributes>
 			</identifyingAttributes>
-			<attributes>
-				<attributes>
-					<entry>
-						<key>border-image-width</key>
-						<value xsi:type="xsd:string">1</value>
-					</entry>
-					<entry>
-						<key>font-stretch</key>
-						<value xsi:type="xsd:string">100%</value>
-					</entry>
-					<entry>
-						<key>font-weight</key>
-						<value xsi:type="xsd:string">400</value>
-					</entry>
-					<entry>
-						<key>perspective-origin</key>
-						<value xsi:type="xsd:string">592.5px 528.219px</value>
-					</entry>
-					<entry>
-						<key>transform-origin</key>
-						<value xsi:type="xsd:string">592.5px 528.219px</value>
-					</entry>
-				</attributes>
-			</attributes>
+			<attributes/>
 			<containedComponents>
 				<identifyingAttributes>
 					<attributes>
@@ -46,37 +23,14 @@
 							<x>8</x>
 							<y>8</y>
 							<height>1043</height>
-							<width>1169</width>
+							<width>1184</width>
 						</attribute>
 						<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 						<attribute key="type" xsi:type="stringAttribute">BODY</attribute>
 					</attributes>
 				</identifyingAttributes>
-				<attributes>
-					<attributes>
-						<entry>
-							<key>border-image-width</key>
-							<value xsi:type="xsd:string">1</value>
-						</entry>
-						<entry>
-							<key>font-stretch</key>
-							<value xsi:type="xsd:string">100%</value>
-						</entry>
-						<entry>
-							<key>font-weight</key>
-							<value xsi:type="xsd:string">400</value>
-						</entry>
-						<entry>
-							<key>perspective-origin</key>
-							<value xsi:type="xsd:string">584.5px 520.219px</value>
-						</entry>
-						<entry>
-							<key>transform-origin</key>
-							<value xsi:type="xsd:string">584.5px 520.219px</value>
-						</entry>
-					</attributes>
-				</attributes>
+				<attributes/>
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
@@ -92,58 +46,7 @@
 							<attribute key="type" xsi:type="stringAttribute">A</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-bottom-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-							</entry>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>border-left-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-							</entry>
-							<entry>
-								<key>border-right-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-							</entry>
-							<entry>
-								<key>border-top-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-							</entry>
-							<entry>
-								<key>caret-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-							</entry>
-							<entry>
-								<key>column-rule-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>outline-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-							</entry>
-							<entry>
-								<key>text-decoration-color</key>
-								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-							</entry>
-							<entry>
-								<key>text-decoration-line</key>
-								<value xsi:type="xsd:string">underline</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -152,37 +55,14 @@
 								<x>8</x>
 								<y>969</y>
 								<height>18</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[10]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -190,7 +70,7 @@
 									<x>8</x>
 									<y>969</y>
 									<height>18</height>
-									<width>1169</width>
+									<width>1184</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[10]/DIV[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -198,30 +78,7 @@
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>perspective-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-								<entry>
-									<key>transform-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents>
@@ -231,37 +88,14 @@
 								<x>8</x>
 								<y>134</y>
 								<height>70</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 35px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 35px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -276,22 +110,7 @@
 								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -300,7 +119,7 @@
 									<x>8</x>
 									<y>186</y>
 									<height>18</height>
-									<width>1169</width>
+									<width>1184</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[1]/DIV[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -308,30 +127,7 @@
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>perspective-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-								<entry>
-									<key>transform-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -340,7 +136,7 @@
 									<x>8</x>
 									<y>134</y>
 									<height>18</height>
-									<width>1169</width>
+									<width>1184</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[1]/P[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -348,38 +144,7 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>margin-bottom</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>margin-top</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>perspective-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-								<entry>
-									<key>transform-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents>
@@ -389,37 +154,14 @@
 								<x>8</x>
 								<y>426</y>
 								<height>128</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 64px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 64px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -427,7 +169,7 @@
 									<x>8</x>
 									<y>460</y>
 									<height>60</height>
-									<width>1169</width>
+									<width>1184</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[2]/PRE[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -437,42 +179,7 @@
 								<attribute key="type" xsi:type="stringAttribute">PRE</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>margin-bottom</key>
-									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>margin-top</key>
-									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>perspective-origin</key>
-									<value xsi:type="xsd:string">584.5px 30px</value>
-								</entry>
-								<entry>
-									<key>transform-origin</key>
-									<value xsi:type="xsd:string">584.5px 30px</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -481,7 +188,7 @@
 									<x>8</x>
 									<y>426</y>
 									<height>18</height>
-									<width>1169</width>
+									<width>1184</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[2]/P[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -489,38 +196,7 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>margin-bottom</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>margin-top</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>perspective-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-								<entry>
-									<key>transform-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -529,7 +205,7 @@
 									<x>8</x>
 									<y>536</y>
 									<height>18</height>
-									<width>1169</width>
+									<width>1184</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[2]/P[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -537,38 +213,7 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>margin-bottom</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>margin-top</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>perspective-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-								<entry>
-									<key>transform-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents>
@@ -578,37 +223,14 @@
 								<x>8</x>
 								<y>570</y>
 								<height>52</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 26px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 26px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -616,7 +238,7 @@
 									<x>8</x>
 									<y>570</y>
 									<height>18</height>
-									<width>1169</width>
+									<width>1184</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[3]/P[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -624,38 +246,7 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>margin-bottom</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>margin-top</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>perspective-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-								<entry>
-									<key>transform-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -664,7 +255,7 @@
 									<x>8</x>
 									<y>604</y>
 									<height>18</height>
-									<width>1169</width>
+									<width>1184</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[3]/P[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -672,38 +263,7 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>margin-bottom</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>margin-top</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>perspective-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-								<entry>
-									<key>transform-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents>
@@ -713,7 +273,7 @@
 								<x>8</x>
 								<y>638</y>
 								<height>154</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
@@ -721,30 +281,7 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 77px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 77px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -752,37 +289,14 @@
 									<x>8</x>
 									<y>672</y>
 									<height>86</height>
-									<width>1169</width>
+									<width>1184</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>perspective-origin</key>
-									<value xsi:type="xsd:string">584.5px 43px</value>
-								</entry>
-								<entry>
-									<key>transform-origin</key>
-									<value xsi:type="xsd:string">584.5px 43px</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents>
 							<identifyingAttributes>
 								<attributes>
@@ -790,37 +304,14 @@
 										<x>8</x>
 										<y>706</y>
 										<height>52</height>
-										<width>1169</width>
+										<width>1184</width>
 									</attribute>
 									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>border-image-width</key>
-										<value xsi:type="xsd:string">1</value>
-									</entry>
-									<entry>
-										<key>font-stretch</key>
-										<value xsi:type="xsd:string">100%</value>
-									</entry>
-									<entry>
-										<key>font-weight</key>
-										<value xsi:type="xsd:string">400</value>
-									</entry>
-									<entry>
-										<key>perspective-origin</key>
-										<value xsi:type="xsd:string">584.5px 26px</value>
-									</entry>
-									<entry>
-										<key>transform-origin</key>
-										<value xsi:type="xsd:string">584.5px 26px</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
@@ -828,7 +319,7 @@
 											<x>8</x>
 											<y>706</y>
 											<height>18</height>
-											<width>1169</width>
+											<width>1184</width>
 										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]/P[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -836,38 +327,7 @@
 										<attribute key="type" xsi:type="stringAttribute">P</attribute>
 									</attributes>
 								</identifyingAttributes>
-								<attributes>
-									<attributes>
-										<entry>
-											<key>border-image-width</key>
-											<value xsi:type="xsd:string">1</value>
-										</entry>
-										<entry>
-											<key>font-stretch</key>
-											<value xsi:type="xsd:string">100%</value>
-										</entry>
-										<entry>
-											<key>font-weight</key>
-											<value xsi:type="xsd:string">400</value>
-										</entry>
-										<entry>
-											<key>margin-bottom</key>
-											<value xsi:type="xsd:string">16px</value>
-										</entry>
-										<entry>
-											<key>margin-top</key>
-											<value xsi:type="xsd:string">16px</value>
-										</entry>
-										<entry>
-											<key>perspective-origin</key>
-											<value xsi:type="xsd:string">584.5px 9px</value>
-										</entry>
-										<entry>
-											<key>transform-origin</key>
-											<value xsi:type="xsd:string">584.5px 9px</value>
-										</entry>
-									</attributes>
-								</attributes>
+								<attributes/>
 							</containedComponents>
 							<containedComponents>
 								<identifyingAttributes>
@@ -876,7 +336,7 @@
 											<x>8</x>
 											<y>740</y>
 											<height>18</height>
-											<width>1169</width>
+											<width>1184</width>
 										</attribute>
 										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]/P[2]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -884,38 +344,7 @@
 										<attribute key="type" xsi:type="stringAttribute">P</attribute>
 									</attributes>
 								</identifyingAttributes>
-								<attributes>
-									<attributes>
-										<entry>
-											<key>border-image-width</key>
-											<value xsi:type="xsd:string">1</value>
-										</entry>
-										<entry>
-											<key>font-stretch</key>
-											<value xsi:type="xsd:string">100%</value>
-										</entry>
-										<entry>
-											<key>font-weight</key>
-											<value xsi:type="xsd:string">400</value>
-										</entry>
-										<entry>
-											<key>margin-bottom</key>
-											<value xsi:type="xsd:string">16px</value>
-										</entry>
-										<entry>
-											<key>margin-top</key>
-											<value xsi:type="xsd:string">16px</value>
-										</entry>
-										<entry>
-											<key>perspective-origin</key>
-											<value xsi:type="xsd:string">584.5px 9px</value>
-										</entry>
-										<entry>
-											<key>transform-origin</key>
-											<value xsi:type="xsd:string">584.5px 9px</value>
-										</entry>
-									</attributes>
-								</attributes>
+								<attributes/>
 							</containedComponents>
 						</containedComponents>
 						<containedComponents>
@@ -925,7 +354,7 @@
 										<x>8</x>
 										<y>672</y>
 										<height>18</height>
-										<width>1169</width>
+										<width>1184</width>
 									</attribute>
 									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/P[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -933,38 +362,7 @@
 									<attribute key="type" xsi:type="stringAttribute">P</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>border-image-width</key>
-										<value xsi:type="xsd:string">1</value>
-									</entry>
-									<entry>
-										<key>font-stretch</key>
-										<value xsi:type="xsd:string">100%</value>
-									</entry>
-									<entry>
-										<key>font-weight</key>
-										<value xsi:type="xsd:string">400</value>
-									</entry>
-									<entry>
-										<key>margin-bottom</key>
-										<value xsi:type="xsd:string">16px</value>
-									</entry>
-									<entry>
-										<key>margin-top</key>
-										<value xsi:type="xsd:string">16px</value>
-									</entry>
-									<entry>
-										<key>perspective-origin</key>
-										<value xsi:type="xsd:string">584.5px 9px</value>
-									</entry>
-									<entry>
-										<key>transform-origin</key>
-										<value xsi:type="xsd:string">584.5px 9px</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 						</containedComponents>
 					</containedComponents>
 				</containedComponents>
@@ -975,37 +373,14 @@
 								<x>8</x>
 								<y>792</y>
 								<height>18</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -1013,7 +388,7 @@
 									<x>8</x>
 									<y>792</y>
 									<height>18</height>
-									<width>1169</width>
+									<width>1184</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[5]/DIV[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -1021,30 +396,7 @@
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>perspective-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-								<entry>
-									<key>transform-origin</key>
-									<value xsi:type="xsd:string">584.5px 9px</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -1060,22 +412,7 @@
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -1091,22 +428,7 @@
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents>
@@ -1116,37 +438,14 @@
 								<x>8</x>
 								<y>810</y>
 								<height>18</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -1163,26 +462,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">SCRIPT</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>transform-origin</key>
-									<value xsi:type="xsd:string">50% 50%</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents>
@@ -1192,37 +472,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>897</y>
 								<height>18</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -1238,58 +495,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-bottom-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>border-left-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-right-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-top-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>caret-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>column-rule-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>outline-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-line</key>
-									<value xsi:type="xsd:string">underline</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -1306,58 +512,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-bottom-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>border-left-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-right-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-top-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>caret-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>column-rule-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>outline-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-line</key>
-									<value xsi:type="xsd:string">underline</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -1373,58 +528,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-bottom-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>border-left-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-right-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-top-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>caret-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>column-rule-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>outline-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-line</key>
-									<value xsi:type="xsd:string">underline</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents>
 							<identifyingAttributes>
 								<attributes>
@@ -1444,10 +548,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attributes>
 									<entry>
 										<key>border-bottom-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-color</key>
 										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 									</entry>
 									<entry>
@@ -1477,18 +577,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<entry>
 										<key>column-rule-color</key>
 										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>display</key>
-										<value xsi:type="xsd:string">inline</value>
-									</entry>
-									<entry>
-										<key>font-stretch</key>
-										<value xsi:type="xsd:string">100%</value>
-									</entry>
-									<entry>
-										<key>font-weight</key>
-										<value xsi:type="xsd:string">700</value>
 									</entry>
 									<entry>
 										<key>outline-color</key>
@@ -1517,58 +605,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-bottom-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>border-left-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-right-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-top-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>caret-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>column-rule-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>outline-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-line</key>
-									<value xsi:type="xsd:string">underline</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -1585,58 +622,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-bottom-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>border-left-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-right-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-top-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>caret-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>column-rule-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>outline-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-line</key>
-									<value xsi:type="xsd:string">underline</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents>
 						<identifyingAttributes>
@@ -1653,58 +639,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-bottom-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>border-left-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-right-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-top-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>caret-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>column-rule-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>outline-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-line</key>
-									<value xsi:type="xsd:string">underline</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents>
@@ -1714,7 +649,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>915</y>
 								<height>36</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[8]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
@@ -1724,28 +659,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 18px</value>
-							</entry>
-							<entry>
 								<key>text-indent</key>
 								<value xsi:type="xsd:string">80%</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 18px</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -1756,7 +671,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<x>8</x>
 									<y>915</y>
 									<height>36</height>
-									<width>1073</width>
+									<width>1085</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[8]/A[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -1767,54 +682,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						<attributes>
 							<attributes>
 								<entry>
-									<key>border-bottom-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>border-left-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-right-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>border-top-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>caret-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>column-rule-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>outline-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-color</key>
-									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-line</key>
-									<value xsi:type="xsd:string">underline</value>
-								</entry>
-								<entry>
 									<key>text-indent</key>
 									<value xsi:type="xsd:string">80%</value>
 								</entry>
@@ -1824,7 +691,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="outline" xsi:type="outlineAttribute">
-										<x>1081</x>
+										<x>1093</x>
 										<y>929</y>
 										<height>0</height>
 										<width>0</width>
@@ -1839,14 +706,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<entry>
 										<key>border-bottom-color</key>
 										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-image-width</key>
-										<value xsi:type="xsd:string">1</value>
 									</entry>
 									<entry>
 										<key>border-left-color</key>
@@ -1873,14 +732,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 									</entry>
 									<entry>
-										<key>font-stretch</key>
-										<value xsi:type="xsd:string">100%</value>
-									</entry>
-									<entry>
-										<key>font-weight</key>
-										<value xsi:type="xsd:string">400</value>
-									</entry>
-									<entry>
 										<key>outline-color</key>
 										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 									</entry>
@@ -1904,7 +755,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>951</y>
 								<height>18</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[9]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
@@ -1912,30 +763,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -1944,41 +772,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>844</y>
 								<height>37</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>margin-bottom</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 19px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 19px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -1986,45 +787,14 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<x>8</x>
 									<y>844</y>
 									<height>37</height>
-									<width>1169</width>
+									<width>1184</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]/P[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>margin-bottom</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>margin-top</key>
-									<value xsi:type="xsd:string">16px</value>
-								</entry>
-								<entry>
-									<key>perspective-origin</key>
-									<value xsi:type="xsd:string">584.5px 19px</value>
-								</entry>
-								<entry>
-									<key>transform-origin</key>
-									<value xsi:type="xsd:string">584.5px 19px</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents>
 							<identifyingAttributes>
 								<attributes>
@@ -2042,16 +812,12 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attributes>
 								<attributes>
 									<entry>
-										<key>border-image-width</key>
-										<value xsi:type="xsd:string">1</value>
+										<key>margin-left</key>
+										<value xsi:type="xsd:string">4px</value>
 									</entry>
 									<entry>
-										<key>box-sizing</key>
-										<value xsi:type="xsd:string">border-box</value>
-									</entry>
-									<entry>
-										<key>display</key>
-										<value xsi:type="xsd:string">inline-block</value>
+										<key>margin-right</key>
+										<value xsi:type="xsd:string">3px</value>
 									</entry>
 									<entry>
 										<key>font-family</key>
@@ -2062,44 +828,12 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<value xsi:type="xsd:string">13.3333px</value>
 									</entry>
 									<entry>
-										<key>font-stretch</key>
-										<value xsi:type="xsd:string">100%</value>
-									</entry>
-									<entry>
-										<key>font-weight</key>
-										<value xsi:type="xsd:string">400</value>
-									</entry>
-									<entry>
-										<key>margin-bottom</key>
-										<value xsi:type="xsd:string">3px</value>
-									</entry>
-									<entry>
-										<key>margin-left</key>
-										<value xsi:type="xsd:string">4px</value>
-									</entry>
-									<entry>
-										<key>margin-right</key>
-										<value xsi:type="xsd:string">3px</value>
-									</entry>
-									<entry>
-										<key>margin-top</key>
-										<value xsi:type="xsd:string">3px</value>
-									</entry>
-									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">13px</value>
 									</entry>
 									<entry>
 										<key>min-width</key>
 										<value xsi:type="xsd:string">13px</value>
-									</entry>
-									<entry>
-										<key>perspective-origin</key>
-										<value xsi:type="xsd:string">6.5px 6.5px</value>
-									</entry>
-									<entry>
-										<key>transform-origin</key>
-										<value xsi:type="xsd:string">6.5px 6.5px</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -2119,22 +853,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<attribute key="type" xsi:type="stringAttribute">LABEL</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>border-image-width</key>
-										<value xsi:type="xsd:string">1</value>
-									</entry>
-									<entry>
-										<key>font-stretch</key>
-										<value xsi:type="xsd:string">100%</value>
-									</entry>
-									<entry>
-										<key>font-weight</key>
-										<value xsi:type="xsd:string">400</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
@@ -2149,22 +868,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 									</attributes>
 								</identifyingAttributes>
-								<attributes>
-									<attributes>
-										<entry>
-											<key>border-image-width</key>
-											<value xsi:type="xsd:string">1</value>
-										</entry>
-										<entry>
-											<key>font-stretch</key>
-											<value xsi:type="xsd:string">100%</value>
-										</entry>
-										<entry>
-											<key>font-weight</key>
-											<value xsi:type="xsd:string">400</value>
-										</entry>
-									</attributes>
-								</attributes>
+								<attributes/>
 							</containedComponents>
 						</containedComponents>
 					</containedComponents>
@@ -2176,7 +880,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>8</y>
 								<height>37</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/H1[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -2184,42 +888,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">H1</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-size</key>
-								<value xsi:type="xsd:string">32px</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">700</value>
-							</entry>
-							<entry>
-								<key>margin-bottom</key>
-								<value xsi:type="xsd:string">21.44px</value>
-							</entry>
-							<entry>
-								<key>margin-top</key>
-								<value xsi:type="xsd:string">21.44px</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 18.5px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 18.5px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -2235,26 +904,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">IMG</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -2270,26 +920,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">IMG</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -2298,7 +929,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>66</y>
 								<height>18</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -2306,38 +937,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>margin-bottom</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>margin-top</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -2346,7 +946,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>100</y>
 								<height>18</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -2356,34 +956,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>margin-bottom</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>margin-top</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
 							<entry>
 								<key>visibility</key>
 								<value xsi:type="xsd:string">hidden</value>
@@ -2398,7 +970,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>238</y>
 								<height>18</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
@@ -2408,38 +980,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>margin-bottom</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>margin-top</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -2448,7 +989,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>272</y>
 								<height>18</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
@@ -2456,38 +997,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>margin-bottom</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>margin-top</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -2496,7 +1006,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>306</y>
 								<height>18</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
@@ -2504,38 +1014,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>margin-bottom</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>margin-top</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -2544,7 +1023,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>340</y>
 								<height>36</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
@@ -2552,38 +1031,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>margin-bottom</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>margin-top</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 18px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 18px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -2598,22 +1046,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents>
@@ -2623,7 +1056,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<x>8</x>
 								<y>392</y>
 								<height>18</height>
-								<width>1169</width>
+								<width>1184</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
@@ -2631,38 +1064,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>margin-bottom</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>margin-top</key>
-								<value xsi:type="xsd:string">16px</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">584.5px 9px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -2678,22 +1080,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents>
 							<identifyingAttributes>
 								<attributes>
@@ -2709,26 +1096,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<attribute key="type" xsi:type="stringAttribute">EM</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>border-image-width</key>
-										<value xsi:type="xsd:string">1</value>
-									</entry>
-									<entry>
-										<key>display</key>
-										<value xsi:type="xsd:string">inline</value>
-									</entry>
-									<entry>
-										<key>font-stretch</key>
-										<value xsi:type="xsd:string">100%</value>
-									</entry>
-									<entry>
-										<key>font-weight</key>
-										<value xsi:type="xsd:string">400</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 						</containedComponents>
 					</containedComponents>
 				</containedComponents>
@@ -2747,22 +1115,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -2779,22 +1132,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -2811,22 +1149,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -2843,22 +1166,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents>
 					<identifyingAttributes>
@@ -2874,54 +1182,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">TABLE</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-bottom-color</key>
-								<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-							</entry>
-							<entry>
-								<key>border-color</key>
-								<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-							</entry>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>border-left-color</key>
-								<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-							</entry>
-							<entry>
-								<key>border-right-color</key>
-								<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-							</entry>
-							<entry>
-								<key>border-spacing</key>
-								<value xsi:type="xsd:string">2px 2px</value>
-							</entry>
-							<entry>
-								<key>border-top-color</key>
-								<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>perspective-origin</key>
-								<value xsi:type="xsd:string">43px 21px</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">43px 21px</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents>
 						<identifyingAttributes>
 							<attributes>
@@ -2936,54 +1197,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">TBODY</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-bottom-color</key>
-									<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-								</entry>
-								<entry>
-									<key>border-color</key>
-									<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-								</entry>
-								<entry>
-									<key>border-image-width</key>
-									<value xsi:type="xsd:string">1</value>
-								</entry>
-								<entry>
-									<key>border-left-color</key>
-									<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-								</entry>
-								<entry>
-									<key>border-right-color</key>
-									<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-								</entry>
-								<entry>
-									<key>border-spacing</key>
-									<value xsi:type="xsd:string">2px 2px</value>
-								</entry>
-								<entry>
-									<key>border-top-color</key>
-									<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-								</entry>
-								<entry>
-									<key>font-stretch</key>
-									<value xsi:type="xsd:string">100%</value>
-								</entry>
-								<entry>
-									<key>font-weight</key>
-									<value xsi:type="xsd:string">400</value>
-								</entry>
-								<entry>
-									<key>perspective-origin</key>
-									<value xsi:type="xsd:string">43px 21px</value>
-								</entry>
-								<entry>
-									<key>transform-origin</key>
-									<value xsi:type="xsd:string">43px 21px</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents>
 							<identifyingAttributes>
 								<attributes>
@@ -2998,58 +1212,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<attribute key="type" xsi:type="stringAttribute">TR</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>border-bottom-color</key>
-										<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-									</entry>
-									<entry>
-										<key>border-color</key>
-										<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-									</entry>
-									<entry>
-										<key>border-image-width</key>
-										<value xsi:type="xsd:string">1</value>
-									</entry>
-									<entry>
-										<key>border-left-color</key>
-										<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-									</entry>
-									<entry>
-										<key>border-right-color</key>
-										<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-									</entry>
-									<entry>
-										<key>border-spacing</key>
-										<value xsi:type="xsd:string">2px 2px</value>
-									</entry>
-									<entry>
-										<key>border-top-color</key>
-										<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-									</entry>
-									<entry>
-										<key>font-stretch</key>
-										<value xsi:type="xsd:string">100%</value>
-									</entry>
-									<entry>
-										<key>font-weight</key>
-										<value xsi:type="xsd:string">400</value>
-									</entry>
-									<entry>
-										<key>perspective-origin</key>
-										<value xsi:type="xsd:string">43px 19px</value>
-									</entry>
-									<entry>
-										<key>transform-origin</key>
-										<value xsi:type="xsd:string">43px 19px</value>
-									</entry>
-									<entry>
-										<key>vertical-align</key>
-										<value xsi:type="xsd:string">middle</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 							<containedComponents>
 								<identifyingAttributes>
 									<attributes>
@@ -3067,22 +1230,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attributes>
 									<attributes>
 										<entry>
-											<key>border-image-width</key>
-											<value xsi:type="xsd:string">1</value>
-										</entry>
-										<entry>
-											<key>border-spacing</key>
-											<value xsi:type="xsd:string">2px 2px</value>
-										</entry>
-										<entry>
-											<key>font-stretch</key>
-											<value xsi:type="xsd:string">100%</value>
-										</entry>
-										<entry>
-											<key>font-weight</key>
-											<value xsi:type="xsd:string">400</value>
-										</entry>
-										<entry>
 											<key>padding-bottom</key>
 											<value xsi:type="xsd:string">1px</value>
 										</entry>
@@ -3097,14 +1244,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<entry>
 											<key>padding-top</key>
 											<value xsi:type="xsd:string">1px</value>
-										</entry>
-										<entry>
-											<key>perspective-origin</key>
-											<value xsi:type="xsd:string">41px 19px</value>
-										</entry>
-										<entry>
-											<key>transform-origin</key>
-											<value xsi:type="xsd:string">41px 19px</value>
 										</entry>
 										<entry>
 											<key>vertical-align</key>
@@ -3130,20 +1269,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<attributes>
 										<attributes>
 											<entry>
-												<key>border-image-width</key>
-												<value xsi:type="xsd:string">1</value>
-											</entry>
-											<entry>
 												<key>border-spacing</key>
 												<value xsi:type="xsd:string">2px 2px</value>
-											</entry>
-											<entry>
-												<key>font-stretch</key>
-												<value xsi:type="xsd:string">100%</value>
-											</entry>
-											<entry>
-												<key>font-weight</key>
-												<value xsi:type="xsd:string">400</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -3165,20 +1292,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<attributes>
 										<attributes>
 											<entry>
-												<key>border-image-width</key>
-												<value xsi:type="xsd:string">1</value>
-											</entry>
-											<entry>
 												<key>border-spacing</key>
 												<value xsi:type="xsd:string">2px 2px</value>
-											</entry>
-											<entry>
-												<key>font-stretch</key>
-												<value xsi:type="xsd:string">100%</value>
-											</entry>
-											<entry>
-												<key>font-weight</key>
-												<value xsi:type="xsd:string">400</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -3201,20 +1316,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<attributes>
 										<attributes>
 											<entry>
-												<key>border-image-width</key>
-												<value xsi:type="xsd:string">1</value>
-											</entry>
-											<entry>
 												<key>border-spacing</key>
 												<value xsi:type="xsd:string">2px 2px</value>
-											</entry>
-											<entry>
-												<key>font-stretch</key>
-												<value xsi:type="xsd:string">100%</value>
-											</entry>
-											<entry>
-												<key>font-weight</key>
-												<value xsi:type="xsd:string">400</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -3238,26 +1341,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						<attribute key="type" xsi:type="stringAttribute">HEAD</attribute>
 					</attributes>
 				</identifyingAttributes>
-				<attributes>
-					<attributes>
-						<entry>
-							<key>border-image-width</key>
-							<value xsi:type="xsd:string">1</value>
-						</entry>
-						<entry>
-							<key>font-stretch</key>
-							<value xsi:type="xsd:string">100%</value>
-						</entry>
-						<entry>
-							<key>font-weight</key>
-							<value xsi:type="xsd:string">400</value>
-						</entry>
-						<entry>
-							<key>transform-origin</key>
-							<value xsi:type="xsd:string">50% 50%</value>
-						</entry>
-					</attributes>
-				</attributes>
+				<attributes/>
 				<containedComponents>
 					<identifyingAttributes>
 						<attributes>
@@ -3273,26 +1357,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">TITLE</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-image-width</key>
-								<value xsi:type="xsd:string">1</value>
-							</entry>
-							<entry>
-								<key>font-stretch</key>
-								<value xsi:type="xsd:string">100%</value>
-							</entry>
-							<entry>
-								<key>font-weight</key>
-								<value xsi:type="xsd:string">400</value>
-							</entry>
-							<entry>
-								<key>transform-origin</key>
-								<value xsi:type="xsd:string">50% 50%</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 			</containedComponents>
 		</descriptors>

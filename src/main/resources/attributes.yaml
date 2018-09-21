@@ -27,7 +27,6 @@ attributes:
   - border-bottom-right-radius
   - border-bottom-width
   - border-collapse
-  - border-color
   - border-image-outset
   - border-image-repeat
   - border-image-slice
@@ -149,7 +148,7 @@ attributes:
   - page-break-before
   - page-break-inside
   - perspective
-  - perspective-origin
+#  - perspective-origin
   - pointer-events
   - position
   - quotes
@@ -170,7 +169,7 @@ attributes:
   - text-transform
   - top
   - transform
-  - transform-origin
+#  - transform-origin
   - transform-style
   - transition-delay
   - transition-duration
