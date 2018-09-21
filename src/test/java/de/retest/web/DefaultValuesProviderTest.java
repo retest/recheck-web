@@ -20,7 +20,7 @@ class DefaultValuesProviderTest {
 	@Test
 	void have_fallbacks_and_general_defaults() {
 		final DefaultValuesProvider cut = new DefaultValuesProvider();
-		assertThat( cut.isDefault( "foo", "box-shadow", "0px" ) ).isTrue();
+		assertThat( cut.isDefault( "foo", "box-shadow", "none" ) ).isTrue();
 		assertThat( cut.isDefault( "foo", "bar", null ) ).isTrue();
 		assertThat( cut.isDefault( "foo", "bar", "" ) ).isTrue();
 		assertThat( cut.isDefault( "foo", "bar", " " ) ).isTrue();
