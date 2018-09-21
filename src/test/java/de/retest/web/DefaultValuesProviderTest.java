@@ -47,4 +47,12 @@ class DefaultValuesProviderTest {
 		assertThat( cut.getDefaultValue( "body", "margin-top" ) ).isEqualTo( "8px" );
 		assertThat( cut.getDefaultValue( "boody", "margin-top" ) ).isEqualTo( "0px" );
 	}
+
+	@Test
+	void if_we_have_a_default_value_then_null_should_not_be_accepted() {
+		// Unless we have learned otherwise, default beats null or empty
+		final DefaultValuesProvider cut = new DefaultValuesProvider();
+		assertThat( cut.isDefault( "a", "text-decoration", "" ) ).isFalse();
+		assertThat( cut.isDefault( "a", "text-decoration", null ) ).isFalse();
+	}
 }
