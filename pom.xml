@@ -112,7 +112,7 @@
 		<dependency>
 			<groupId>ru.yandex.qatools.ashot</groupId>
 			<artifactId>ashot</artifactId>
-			<version>1.5.2</version>
+			<version>1.5.4</version>
 			<exclusions>
 				<exclusion>
 					<groupId>com.google.code.gson</groupId>
@@ -128,13 +128,13 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-yaml</artifactId>
-			<version>2.9.6</version>
+			<version>2.9.7</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.9.6</version>
+			<version>2.9.7</version>
 		</dependency>
 
 		<!-- only required because they are missing in the retest parent POM -->
@@ -187,7 +187,7 @@
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
-			<version>2.21.0</version>
+			<version>2.22.0</version>
 			<scope>test</scope>
 		</dependency>
 
