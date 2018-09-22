@@ -17,8 +17,11 @@ public class WebData {
 	}
 
 	/**
+	 * @param key
+	 *            the data key
+	 * @return the string value
 	 * @throws ConversionException
-	 *             if the value for the given key is not a String.
+	 *             if the value for the given key is not a String
 	 */
 	public String getAsString( final String key ) {
 		final Object result = wrappedData.get( key );
@@ -29,7 +32,7 @@ public class WebData {
 			return normalize( (String) result );
 		}
 		throw new ConversionException(
-				"Attribute value for " + key + " was of " + result.getClass() + ", not of type String." );
+				"Attribute value for " + key + " was of type " + result.getClass() + ", not of type String." );
 	}
 
 	protected static String normalize( final String value ) {
@@ -62,8 +65,11 @@ public class WebData {
 	}
 
 	/**
-	 * @throws IllegalStateException
-	 *             if the value for the given key cannot be converted to integer.
+	 * @param key
+	 *            the data key
+	 * @return the int value
+	 * @throws ConversionException
+	 *             if the value for the given key cannot be converted to int
 	 */
 	public int getAsInt( final String key ) {
 		final Object value = wrappedData.get( key );
@@ -82,7 +88,7 @@ public class WebData {
 			}
 		} catch ( final Exception e ) {
 			throw new ConversionException(
-					"Converting " + value + " of " + value.getClass() + " to int caused an exception!", e );
+					"Converting " + value + " of type " + value.getClass() + " to int caused an exception!", e );
 		}
 		throw new ConversionException( "Don't know how to convert " + value + " of "
 				+ (value != null ? value.getClass() : "null") + " to int!" );
