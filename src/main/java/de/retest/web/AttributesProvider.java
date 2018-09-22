@@ -2,6 +2,7 @@ package de.retest.web;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -48,14 +49,15 @@ public class AttributesProvider {
 			try ( final InputStream in = Files.newInputStream( userAttributes ) ) {
 				return readAttributesConfigFromFile( in );
 			} catch ( final IOException e ) {
-				throw new AttributesConfigLoadException( userAttributes.toString(), e );
+				throw new UncheckedIOException( "Cannot read attributes file '" + userAttributesFilePath + "'.", e );
 			}
 		} else {
 			logger.debug( "Loading default attributes file '{}'", DEFAULT_ATTRIBUTES_FILE_PATH );
 			try ( final InputStream url = getClass().getResourceAsStream( DEFAULT_ATTRIBUTES_FILE_PATH ) ) {
 				return readAttributesConfigFromFile( url );
 			} catch ( final IOException e ) {
-				throw new AttributesConfigLoadException( DEFAULT_ATTRIBUTES_FILE_PATH, e );
+				throw new UncheckedIOException( "Cannot read attributes file '" + DEFAULT_ATTRIBUTES_FILE_PATH + "'.",
+						e );
 			}
 		}
 	}
