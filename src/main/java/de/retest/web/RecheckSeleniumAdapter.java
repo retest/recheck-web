@@ -3,6 +3,7 @@ package de.retest.web;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UncheckedIOException;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -62,7 +63,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		try ( final InputStream url = getClass().getResourceAsStream( GET_ALL_ELEMENTS_BY_PATH_JS_PATH ) ) {
 			return String.join( "\n", IOUtils.readLines( url ) );
 		} catch ( final IOException e ) {
-			throw new RuntimeException( "Exception reading '" + GET_ALL_ELEMENTS_BY_PATH_JS_PATH + "'.", e );
+			throw new UncheckedIOException( "Exception reading '" + GET_ALL_ELEMENTS_BY_PATH_JS_PATH + "'.", e );
 		}
 	}
 
