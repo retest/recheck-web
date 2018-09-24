@@ -37,7 +37,8 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 			"0px 0px", //
 			"auto", //
 			"normal", //
-			"rgb(0, 0, 0)" ) );
+			"rgb(0, 0, 0)", //
+			"none" ) );
 
 	private final Map<String, Map<String, String>> defaultValues;
 

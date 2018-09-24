@@ -45,7 +45,7 @@ class DefaultValuesProviderTest {
 	void getDefaultValue_should_prefer_specific_over_general_values() {
 		final DefaultValuesProvider cut = new DefaultValuesProvider();
 		assertThat( cut.getDefaultValue( "body", "margin-top" ) ).isEqualTo( "8px" );
-		assertThat( cut.getDefaultValue( "boody", "margin-top" ) ).isEqualTo( "0px" );
+		assertThat( cut.getDefaultValue( "ul", "margin-top" ) ).isEqualTo( "1em" );
 	}
 
 	@Test

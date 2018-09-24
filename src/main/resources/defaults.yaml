@@ -1,174 +1,59 @@
 all:
-  - align-content: stretch
-  - align-items: stretch
-  - align-self: auto
-  - all: none
   - animation-delay: 0s
-  - animation-direction: normal
   - animation-duration: 0s
-  - animation-fill-mode: none
   - animation-iteration-count: 1
-  - animation-name: none
   - animation-play-state: running
   - animation-timing-function: ease
   - backface-visibility: visible
   - background-attachment: scroll
-  - background-blend-mode: normal
   - background-clip: border-box
   - background-color: rgba(0, 0, 0, 0)
-  - background-image: none
   - background-origin: padding-box
   - background-position: 0% 0%
   - background-repeat: repeat
-  - background-size: auto
-  - border-bottom-style: none
-  - border-bottom-color: rgb(0, 0, 0)
-  - border-bottom-left-radius: 0px
-  - border-bottom-right-radius: 0px
-  - border-bottom-width: medium
   - border-collapse: separate
-  - border-image-outset: 0px
   - border-image-repeat: stretch
   - border-image-slice: 100%
-  - border-image-source: none
-  - border-image-width: 1px
-  - border-left-color: rgb(0, 0, 0)
-  - border-left-style: none
-  - border-left-width: medium
-  - border-radius: 0px
-  - border-right-color: rgb(0, 0, 0)
-  - border-right-style: none
-  - border-right-width: medium
-  - border-spacing: 2px
-  - border-style: none
-  - border-top-color: rgb(0, 0, 0)
-  - border-top-left-radius: 0px
-  - border-top-right-radius: 0px
-  - border-top-style: none
-  - border-top-width: medium
-  - border-width: medium
-  - border-style: none
-  - bottom: auto
   - box-decoration-break: slice
-  - box-shadow: none
   - box-sizing: content-box
   - caption-side: top
-  - caret-color: auto
-  - clear: none
-  - clip: auto
-  - color: rgb(0, 0, 0)
-  - column-count: auto
   - column-fill: balance
-  - column-gap: normal
-  - column-rule-color: rgb(0, 0, 0)
-  - column-rule-style: none
-  - column-rule-width: medium
-  - column-span: none
-  - column-width: auto
-  - counter-increment: none
-  - counter-reset: none
-  - cursor: auto
   - direction: ltr
   - display: block
   - empty-cells: show
-  - filter: none
-  - flex-basis: auto
   - flex-direction: row
   - flex-grow: 0
   - flex-shrink: 1
   - flex-wrap: nowrap
-  - float: none
   - font-family: Times New Roman
-  - font-kerning: auto
   - font-size: 16px
-  - font-size-adjust: none
   - font-stretch: 100%
-  - font-style: normal
-  - font-variant: normal
   - font-weight: 400
-  - grid-auto-columns: auto
   - grid-auto-flow: row
-  - grid-auto-rows: auto
-  - grid-column-end: auto
-  - grid-column-start: auto
-  - grid-row-end: auto
-  - grid-row-start: auto
-  - grid-template-areas: none
-  - grid-template-columns: none
-  - grid-template-rows: none 
-  - hanging-punctuation: none
   - hyphens: manual
-  - isolation: auto
-  - justify-content: flex-start
-  - left: auto
-  - letter-spacing: normal
-  - line-height: normal
-  - list-style-image: none
   - list-style-position: outside
   - list-style-type: disc
-  - margin-bottom: 0px
-  - margin-left: 0px
-  - margin-right: 0px
-  - margin-top: 0px
-  - max-height: none
-  - max-width: none
-  - min-height: 0px
-  - min-width: 0px
-  - mix-blend-mode: normal
   - object-fit: fill
   - object-position: 50% 50%
   - opacity: 1
   - order: 0
-  - outline-color: invert
-  - outline-offset: 0px
-  - outline-style: none
-  - outline-width: medium
   - overflow: visible
   - overflow-x: visible
   - overflow-y: visible
-  - padding-bottom: 0px
-  - padding-left: 0px
-  - padding-right: 0px
-  - padding-top: 0px
-  - page-break-after: auto
-  - page-break-before: auto
-  - page-break-inside: auto
-  - perspective: none
   - perspective-origin: 50% 50%
-  - pointer-events: auto
   - position: static
-  - resize: none
-  - right: auto
-  - scroll-behavior: auto
   - tab-size: 8
-  - table-layout: auto
   - text-align: start
-  - text-align-last: auto
-  - text-decoration-color: rgb(0, 0, 0)
-  - text-decoration-line: none
   - text-decoration-style: solid
-  - text-indent: 0px
-  - text-justify: auto
   - text-overflow: clip
-  - text-shadow: none
-  - text-transform: none
-  - top: auto
-  - transform: none
   - transform-origin: 50% 50% 0
   - transform-style: flat
   - transition-delay: 0s
   - transition-duration: 0s
   - transition-property: all
   - transition-timing-function: ease
-  - unicode-bidi: normal
-  - user-select: auto
   - vertical-align: baseline
   - visibility: visible
-  - white-space: normal
-  - word-break: normal
-  - word-spacing: normal
-  - word-wrap: normal
-  - z-index: auto
 
 a:
   - border-image-width: 1
@@ -182,23 +67,16 @@ a:
   - outline-color: rgb(0, 0, 238)
   - text-decoration-color: rgb(0, 0, 238)
   - color: rgb(0, 0, 238)
-  - cursor: auto
   - display: inline
   - text-decoration: underline
   - text-decoration-line: underline
-  
+
 address:
   - display: block
   - font-style: italic
 
 area:
   - display: none
-
-article:
-  - display: block
-
-aside:
-  - display: block
 
 b:
   - font-weight: 700
@@ -208,7 +86,6 @@ bdo:
   - unicode-bidi: bidi-override
 
 blockquote:
-  - display: block
   - margin-bottom: 1em
   - margin-left: 40px
   - margin-right: 40px
@@ -216,15 +93,10 @@ blockquote:
 
 body:
   - border-image-width: 1
-  - display: block
-  - display: block
   - margin-bottom: 8px
   - margin-left: 8px
   - margin-right: 8px
   - margin-top: 8px
-
-body:focus:
-  - outline: none
 
 br:
   - border-image-width: 1
@@ -250,43 +122,30 @@ datalist:
   - display: none
 
 dd:
-  - display: block
   - margin-left: 40px
 
 del:
   - text-decoration: line-through
-
-details:
-  - display: block
 
 dfn:
   - font-style: italic
 
 div:
   - border-image-width: 1
-  - display: block
 
 dl:
-  - display: block
   - margin-bottom: 1em
   - margin-left: 0px
   - margin-right: 0px
   - margin-top: 1em
-
-dt:
-  - display: block
 
 em:
   - border-image-width: 1
   - display: inline
   - font-style: italic
 
-embed:focus:
-  - outline: none
-
 fieldset:
   - border: 2px groove
-  - display: block
   - margin-left: 2px
   - margin-right: 2px
   - padding-bottom: 0.625em
@@ -294,90 +153,59 @@ fieldset:
   - padding-right: 0.75em
   - padding-top: 0.35em
 
-figcaption:
-  - display: block
-
 figure:
-  - display: block
   - margin-bottom: 1em
   - margin-left: 40px
   - margin-right: 40px
   - margin-top: 1em
 
-footer:
-  - display: block
-
 form:
   - border-image-width: 1
-  - display: block
-  - margin-top: 0px
   - margin-bottom: 16px
 
 h1:
   - border-image-width: 1
-  - display: block
   - font-size: 32px
   - font-weight: 700
   - margin-bottom: 21.44px
-  - margin-left: 0px
-  - margin-right: 0px
   - margin-top: 21.44px
 
 h2:
-  - display: block
   - font-size: 1.5em
   - font-weight: bold
   - margin-bottom: 0.83em
-  - margin-left: 0px
-  - margin-right: 0px
   - margin-top: 0.83em
 
 h3:
-  - display: block
   - font-size: 1.17em
   - font-weight: bold
   - margin-bottom: 1em
-  - margin-left: 0px
-  - margin-right: 0px
   - margin-top: 1em
 
 h4:
-  - display: block
   - font-weight: bold
   - margin-bottom: 1.33em
-  - margin-left: 0px
-  - margin-right: 0px
   - margin-top: 1.33em
 
 h5:
-  - display: block
   - font-size: .83em
   - font-weight: bold
   - margin-bottom: 1.67em
-  - margin-left: 0px
-  - margin-right: 0px
   - margin-top: 1.67em
 
 h6:
-  - display: block
   - font-size: .67em
   - font-weight: bold
   - margin-bottom: 2.33em
-  - margin-left: 0px
-  - margin-right: 0px
   - margin-top: 2.33em
 
 head:
   - border-image-width: 1
   - display: none
 
-header:
-  - display: block
-
 hr:
   - border-style: inset
   - border-width: 1px
-  - display: block
   - margin-bottom: 0.5em
   - margin-left: auto
   - margin-right: auto
@@ -385,23 +213,16 @@ hr:
 
 html:
   - border-image-width: 1
-  - display: block
-
-html:focus:
-  - outline: none
 
 i:
   - font-style: italic
-  
+
 input:
   - border-image-width: 1
   - box-sizing: border-box
   - display: inline-block
   - margin-bottom: 3px
   - margin-top: 3px
-
-iframe:focus:
-  - outline: none
 
 img:
   - border-image-width: 1
@@ -419,8 +240,6 @@ label:
   - display: inline
 
 legend:
-  - border: none
-  - display: block
   - padding-left: 2px
   - padding-right: 2px
 
@@ -438,26 +257,14 @@ mark:
   - color: black
 
 menu:
-  - display: block
   - list-style-type: disc
   - margin-bottom: 1em
-  - margin-left: 0px
-  - margin-right: 0px
   - margin-top: 1em
   - padding-left: 40px
 
-nav:
-  - display: block
-
-object:focus:
-  - outline: none
-
 ol:
-  - display: block
   - list-style-type: decimal
   - margin-bottom: 1em
-  - margin-left: 0px
-  - margin-right: 0px
   - margin-top: 1em
   - padding-left: 40px
 
@@ -466,10 +273,7 @@ output:
 
 p:
   - border-image-width: 1
-  - display: block
   - margin-bottom: 16px
-  - margin-left: 0px
-  - margin-right: 0px
   - margin-top: 16px
 
 param:
@@ -477,12 +281,9 @@ param:
 
 pre:
   - border-image-width: 1
-  - display: block
   - font-family: monospace
   - font-size: 13px
   - margin-bottom: 13px
-  - margin-left: 0px
-  - margin-right: 0px
   - margin-top: 13px
   - white-space: pre
 
@@ -508,9 +309,6 @@ script:
   - border-image-width: 1
   - display: none
 
-section:
-  - display: block
-
 small:
   - font-size: smaller
 
@@ -531,9 +329,6 @@ sub:
   - font-size: smaller
   - vertical-align: sub
 
-summary:
-  - display: block
-
 sup:
   - font-size: smaller
   - vertical-align: super
@@ -547,7 +342,7 @@ table:
   - border-image-width: 1
   - border-spacing: 2px 2px
   - display: table
-  
+
 tbody:
   - border-bottom-color: rgb(128, 128, 128)
   - border-left-color: rgb(128, 128, 128)
@@ -559,10 +354,6 @@ tbody:
   - vertical-align: middle
 
 td:
-  - border-bottom-color: rgb(128, 128, 128)
-  - border-left-color: rgb(128, 128, 128)
-  - border-right-color: rgb(128, 128, 128)
-  - border-top-color: rgb(128, 128, 128)
   - border-image-width: 1
   - border-spacing: 2px 2px
   - display: table-cell
@@ -600,11 +391,8 @@ u:
   - text-decoration: underline
 
 ul:
-  - display: block
   - list-style-type: disc
   - margin-bottom: 1em
-  - margin-left: 0px
-  - margin-right: 0px
   - margin-top: 1em
   - padding-left: 40px
 
