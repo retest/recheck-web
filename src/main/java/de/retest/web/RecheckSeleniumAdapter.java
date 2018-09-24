@@ -4,6 +4,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
+import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -61,7 +62,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	public String getQueryJS() {
 		try ( final InputStream url = getClass().getResourceAsStream( GET_ALL_ELEMENTS_BY_PATH_JS_PATH ) ) {
-			return String.join( "\n", IOUtils.readLines( url ) );
+			return String.join( "\n", IOUtils.readLines( url, StandardCharsets.UTF_8 ) );
 		} catch ( final IOException e ) {
 			throw new UncheckedIOException( "Exception reading '" + GET_ALL_ELEMENTS_BY_PATH_JS_PATH + "'.", e );
 		}
