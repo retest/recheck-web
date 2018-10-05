@@ -37,7 +37,8 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 			"0px 0px", //
 			"auto", //
 			"normal", //
-			"rgb(0, 0, 0)" ) );
+			"rgb(0, 0, 0)", //
+			"none" ) );
 
 	private final Map<String, Map<String, String>> defaultValues;
 
@@ -83,10 +84,11 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 	}
 
 	public boolean isDefault( final String tag, final String attribute, final String attributeValue ) {
-		if ( attributeValue == null || attributeValue.trim().isEmpty() ) {
-			return true;
+		final String defaultValue = getDefaultValue( tag, attribute );
+		if ( defaultValue != null ) {
+			return defaultValue.equalsIgnoreCase( attributeValue );
 		}
-		if ( attributeValue.equalsIgnoreCase( getDefaultValue( tag, attribute ) ) ) {
+		if ( attributeValue == null || attributeValue.trim().isEmpty() ) {
 			return true;
 		}
 		if ( commonDefaults.contains( attributeValue ) ) {

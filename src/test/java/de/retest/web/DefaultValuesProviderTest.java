@@ -20,7 +20,7 @@ class DefaultValuesProviderTest {
 	@Test
 	void have_fallbacks_and_general_defaults() {
 		final DefaultValuesProvider cut = new DefaultValuesProvider();
-		assertThat( cut.isDefault( "foo", "box-shadow", "0px" ) ).isTrue();
+		assertThat( cut.isDefault( "foo", "box-shadow", "none" ) ).isTrue();
 		assertThat( cut.isDefault( "foo", "bar", null ) ).isTrue();
 		assertThat( cut.isDefault( "foo", "bar", "" ) ).isTrue();
 		assertThat( cut.isDefault( "foo", "bar", " " ) ).isTrue();
@@ -45,6 +45,14 @@ class DefaultValuesProviderTest {
 	void getDefaultValue_should_prefer_specific_over_general_values() {
 		final DefaultValuesProvider cut = new DefaultValuesProvider();
 		assertThat( cut.getDefaultValue( "body", "margin-top" ) ).isEqualTo( "8px" );
-		assertThat( cut.getDefaultValue( "boody", "margin-top" ) ).isEqualTo( "0px" );
+		assertThat( cut.getDefaultValue( "ul", "margin-top" ) ).isEqualTo( "1em" );
+	}
+
+	@Test
+	void if_we_have_a_default_value_then_null_should_not_be_accepted() {
+		// Unless we have learned otherwise, default beats null or empty
+		final DefaultValuesProvider cut = new DefaultValuesProvider();
+		assertThat( cut.isDefault( "a", "text-decoration", "" ) ).isFalse();
+		assertThat( cut.isDefault( "a", "text-decoration", null ) ).isFalse();
 	}
 }
