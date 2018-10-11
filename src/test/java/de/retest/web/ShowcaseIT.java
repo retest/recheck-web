@@ -3,62 +3,40 @@ package de.retest.web;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
 
-public class ShowcaseIT {
+class ShowcaseIT {
 
-	private WebDriver driver;
-	private Recheck re;
+	Recheck re;
 
-	@Before
-	public void setup() {
-		// If ChromeDriver is not in your PATH, uncomment this and point to your installation.
-		// e.g. it can be downloaded from http://chromedriver.chromium.org/downloads
-		//		System.setProperty( "webdriver.chrome.driver", "path/to/chromedriver" );
-
-		final ChromeOptions opts = new ChromeOptions();
-		opts.addArguments(
-				// Enable headless mode for faster execution.
-				"--headless",
-				// Use Chrome in container-based Travis CI environment (see https://docs.travis-ci.com/user/chrome#Sandboxing).
-				"--no-sandbox",
-				// Fix window size for stable results.
-				"--window-size=1200,800" );
-		driver = new ChromeDriver( opts );
-
-		// Use the default implementation.
+	@BeforeEach
+	void setUp() {
 		re = new RecheckImpl();
 	}
 
-	@Test
-	public void index() throws Exception {
-		// Set the file name of the Golden Master.
-		re.startTest( "showcase" );
+	@ParameterizedTest
+	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
+	void showcase_html_should_be_checked( final WebDriver driver ) throws Exception {
+		re.startTest( "showcase-" + driver.getClass().getSimpleName() );
 
-		// Do your Selenium stuff.
 		final Path showcasePath = Paths.get( "src/test/resources/pages/showcase/retest.html" );
 		driver.get( showcasePath.toUri().toURL().toString() );
 
-		// Single call instead of multiple assertions (doesn't fail on differences).
 		re.check( driver, "index" );
 
-		// Conclude the test case (fails on differences).
-		re.capTest();
+		driver.quit();
 	}
 
-	@After
-	public void tearDown() {
-		driver.quit();
-
-		// Produce the result file.
+	@AfterEach
+	void tearDown() {
+		re.capTest();
 		re.cap();
 	}
 
