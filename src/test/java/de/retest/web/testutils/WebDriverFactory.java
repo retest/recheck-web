@@ -1,6 +1,7 @@
 package de.retest.web.testutils;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Stream;
 
 import org.openqa.selenium.WebDriver;
@@ -19,22 +20,10 @@ public class WebDriverFactory {
 	public static WebDriver driver( final Driver driver ) {
 		switch ( driver ) {
 			case CHROME_DRIVER: {
-				return new ChromeDriver( new ChromeOptions().addArguments(
-						// Enable headless mode for faster execution.
-						"--headless",
-						// Use Chrome in container-based Travis CI environment (see https://docs.travis-ci.com/user/chrome#Sandboxing).
-						"--no-sandbox",
-						// Fix window size for stable results.
-						"--window-size=1200,800" ) );
+				return new ChromeDriver( new ChromeOptions().addArguments( commonArguments() ) );
 			}
 			case FIREFOX_DRIVER: {
-				return new FirefoxDriver( new FirefoxOptions().addArguments(
-						// Enable headless mode for faster execution.
-						"--headless",
-						// Use Firefox in container-based Travis CI environment.
-						"--no-sandbox",
-						// Fix window size for stable results.
-						"--window-size=1200,800" ) );
+				return new FirefoxDriver( new FirefoxOptions().addArguments( commonArguments() ) );
 			}
 			default:
 				throw new IllegalArgumentException( "No \"" + driver + "\" driver available." );
@@ -43,6 +32,16 @@ public class WebDriverFactory {
 
 	public static Stream<WebDriver> drivers() {
 		return Arrays.stream( Driver.values() ).map( WebDriverFactory::driver );
+	}
+
+	public static List<String> commonArguments() {
+		return Arrays.asList(
+				// Enable headless mode for faster execution.
+				"--headless",
+				// Use Chrome in container-based Travis CI environment (see https://docs.travis-ci.com/user/chrome#Sandboxing).
+				"--no-sandbox",
+				// Fix window size for stable results.
+				"--window-size=1200,800" );
 	}
 
 }
