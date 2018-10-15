@@ -13,6 +13,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
 
+/*
+ * Simple recheck-web showcase for a Chrome-based integration test. See other *IT classes for more examples.
+ */
 public class SimpleShowcaseIT {
 
 	private WebDriver driver;
@@ -20,8 +23,7 @@ public class SimpleShowcaseIT {
 
 	@Before
 	public void setup() {
-		// If ChromeDriver is not in your PATH, uncomment this and point to your installation.
-		// e.g. it can be downloaded from http://chromedriver.chromium.org/downloads
+		// If ChromeDriver (http://chromedriver.chromium.org/downloads/) is not in your PATH, uncomment this and point to your installation.
 		//		System.setProperty( "webdriver.chrome.driver", "path/to/chromedriver" );
 
 		final ChromeOptions opts = new ChromeOptions();
