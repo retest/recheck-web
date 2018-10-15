@@ -38,6 +38,10 @@ before_script:
   - export PATH=$PATH:$PWD/geckodriver
   - geckodriver --version
   - export MOZ_HEADLESS=1
+  
+  # connects firefox to the D-BUS daemon
+  - export $(dbus-launch)
+  - export NSS_USE_SHARED_DB=ENABLED
 
 script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar
