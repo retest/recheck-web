@@ -24,22 +24,19 @@ cache:
 install: true
 
 before_script:
-  # include ChromeDriver in PATH
-  - ln --symbolic /usr/lib/chromium-browser/chromedriver "${HOME}/bin/chromedriver"
-  # start Chrome and listen on localhost
-  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
   # copy Maven settings
   - cp .travis.settings.xml "${HOME}/.m2/settings.xml"
-  
-  # include GeckoDriver in PATH
+  # set up ChromeDriver
+  - ln --symbolic /usr/lib/chromium-browser/chromedriver "${HOME}/bin/chromedriver"
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+  # set up GeckoDriver
   - wget https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz
   - mkdir geckodriver
   - tar -xzf geckodriver*.tar.gz -C geckodriver
   - export PATH=$PATH:$PWD/geckodriver
   - geckodriver --version
   - export MOZ_HEADLESS=1
-  
-  # connects firefox to the D-BUS daemon
+  # connect Firefox to the D-BUS daemon
   - export $(dbus-launch)
   - export NSS_USE_SHARED_DB=ENABLED
 
