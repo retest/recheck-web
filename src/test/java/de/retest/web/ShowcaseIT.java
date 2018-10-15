@@ -14,6 +14,7 @@ import de.retest.recheck.RecheckImpl;
 
 class ShowcaseIT {
 
+	WebDriver driver;
 	Recheck re;
 
 	@BeforeEach
@@ -24,19 +25,20 @@ class ShowcaseIT {
 	@ParameterizedTest
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void showcase_html_should_be_checked( final WebDriver driver ) throws Exception {
+		this.driver = driver;
 		re.startTest( "showcase-" + driver.getClass().getSimpleName() );
 
 		final Path showcasePath = Paths.get( "src/test/resources/pages/showcase/retest.html" );
 		driver.get( showcasePath.toUri().toURL().toString() );
 
-		re.check( driver, "index" );
+		re.check( driver, "open" );
 
-		driver.quit();
+		re.capTest();
 	}
 
 	@AfterEach
 	void tearDown() {
-		re.capTest();
+		driver.quit();
 		re.cap();
 	}
 

@@ -14,6 +14,7 @@ import de.retest.recheck.RecheckImpl;
 
 class SimplePageIT {
 
+	WebDriver driver;
 	Recheck re;
 
 	@BeforeEach
@@ -24,6 +25,7 @@ class SimplePageIT {
 	@ParameterizedTest
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void simple_html_page_should_be_checked( final WebDriver driver ) throws Exception {
+		this.driver = driver;
 		re.startTest( "simple-page-" + driver.getClass().getSimpleName() );
 
 		final Path simplePagePath = Paths.get( "src/test/resources/pages/simple-page.html" );
@@ -31,12 +33,12 @@ class SimplePageIT {
 
 		re.check( driver, "open" );
 
-		driver.quit();
+		re.capTest();
 	}
 
 	@AfterEach
 	void tearDown() {
-		re.capTest();
+		driver.quit();
 		re.cap();
 	}
 
