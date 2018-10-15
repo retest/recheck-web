@@ -45,7 +45,7 @@ Download recheck-web [here on GitHub](https://github.com/retest/recheck-web/rele
 </dependency>
 ```
 
-Then replace the assertions in your Selenium test. An example test could look like so ([simplified](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/ShowcaseIT.java)):
+Then replace the assertions in your Selenium test. An example test could look like so ([simplified](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/SimpleShowcaseIT.java)):
 
 ```java
 public class MyRecheckWebTest {
