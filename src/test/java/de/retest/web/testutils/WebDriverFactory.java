@@ -13,16 +13,16 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 public class WebDriverFactory {
 
 	public enum Driver {
-		CHROME_DRIVER,
-		FIREFOX_DRIVER;
+		CHROME,
+		FIREFOX;
 	}
 
 	public static WebDriver driver( final Driver driver ) {
 		switch ( driver ) {
-			case CHROME_DRIVER: {
+			case CHROME: {
 				return new ChromeDriver( new ChromeOptions().addArguments( commonArguments() ) );
 			}
-			case FIREFOX_DRIVER: {
+			case FIREFOX: {
 				return new FirefoxDriver( new FirefoxOptions().addArguments( commonArguments() ) );
 			}
 			default:
