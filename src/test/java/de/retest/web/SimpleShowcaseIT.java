@@ -41,7 +41,7 @@ public class SimpleShowcaseIT {
 	@Test
 	public void index() throws Exception {
 		// Set the file name of the Golden Master.
-		re.startTest( "simpleShowcaseIT" );
+		re.startTest( "simple-showcase" );
 
 		// Do your Selenium stuff.
 		final Path showcasePath = Paths.get( "src/test/resources/pages/showcase/retest.html" );
