@@ -1,5 +1,6 @@
 package de.retest.web.testutils;
 
+import java.util.Arrays;
 import java.util.stream.Stream;
 
 import org.openqa.selenium.WebDriver;
@@ -12,10 +13,7 @@ public class WebDriverFactory {
 
 	public enum Driver {
 		CHROME_DRIVER,
-		FIREFOX_DRIVER,
-		EGE_DRIVER,
-		IE_DRIVER,
-		SAFARI_DRIVER
+		FIREFOX_DRIVER;
 	}
 
 	public static WebDriver driver( final Driver driver ) {
@@ -39,14 +37,12 @@ public class WebDriverFactory {
 						"--window-size=1200,800" ) );
 			}
 			default:
-				throw new RuntimeException( "There is not a supported web-driver named " + driver );
+				throw new IllegalArgumentException( "No \"" + driver + "\" driver available." );
 		}
 	}
 
 	public static Stream<WebDriver> drivers() {
-		return Stream.of( //
-				(WebDriverFactory.driver( WebDriverFactory.Driver.CHROME_DRIVER )), //
-				(WebDriverFactory.driver( WebDriverFactory.Driver.FIREFOX_DRIVER )) );
+		return Arrays.stream( Driver.values() ).map( WebDriverFactory::driver );
 	}
 
 }
