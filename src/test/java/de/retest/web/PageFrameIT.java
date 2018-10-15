@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
 
-public class PageFrameIT {
+class PageFrameIT {
 
 	WebDriver driver;
 	Recheck re;
