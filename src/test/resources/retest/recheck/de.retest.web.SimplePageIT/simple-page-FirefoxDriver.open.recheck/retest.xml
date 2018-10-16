@@ -1,0 +1,3440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="2.4.1" dataType="de.retest.ui.descriptors.SutState" dataTypeVersion="1">
+	<data xsi:type="sutState">
+		<descriptors screenId="1" screen="Hello WebDriver" title="Hello WebDriver">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>0</x>
+						<y>0</y>
+						<height>1102</height>
+						<width>1366</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">//HTML[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="type" xsi:type="stringAttribute">HTML</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>background-size</key>
+						<value xsi:type="xsd:string">auto auto</value>
+					</entry>
+					<entry>
+						<key>border-image-outset</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>border-image-repeat</key>
+						<value xsi:type="xsd:string">stretch stretch</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">serif</value>
+					</entry>
+					<entry>
+						<key>line-height</key>
+						<value xsi:type="xsd:string">19px</value>
+					</entry>
+					<entry>
+						<key>quotes</key>
+						<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+					</entry>
+					<entry>
+						<key>unicode-bidi</key>
+						<value xsi:type="xsd:string">isolate</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<containedComponents>
+				<identifyingAttributes>
+					<attributes>
+						<attribute key="outline" xsi:type="outlineAttribute">
+							<x>8</x>
+							<y>8</y>
+							<height>1086</height>
+							<width>1350</width>
+						</attribute>
+						<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]</attribute>
+						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+						<attribute key="type" xsi:type="stringAttribute">BODY</attribute>
+					</attributes>
+				</identifyingAttributes>
+				<attributes>
+					<attributes>
+						<entry>
+							<key>background-size</key>
+							<value xsi:type="xsd:string">auto auto</value>
+						</entry>
+						<entry>
+							<key>border-image-outset</key>
+							<value xsi:type="xsd:string">0</value>
+						</entry>
+						<entry>
+							<key>border-image-repeat</key>
+							<value xsi:type="xsd:string">stretch stretch</value>
+						</entry>
+						<entry>
+							<key>font-family</key>
+							<value xsi:type="xsd:string">serif</value>
+						</entry>
+						<entry>
+							<key>line-height</key>
+							<value xsi:type="xsd:string">19px</value>
+						</entry>
+						<entry>
+							<key>quotes</key>
+							<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+						</entry>
+						<entry>
+							<key>unicode-bidi</key>
+							<value xsi:type="xsd:string">isolate</value>
+						</entry>
+					</attributes>
+				</attributes>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>36</x>
+								<y>1077</y>
+								<height>16</height>
+								<width>103</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/A[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">a link to an icon</attribute>
+							<attribute key="type" xsi:type="stringAttribute">A</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>1001</y>
+								<height>19</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[10]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
+							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>1001</y>
+									<height>19</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[10]/DIV[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">Nested</attribute>
+								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">isolate</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>138</y>
+								<height>74</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>175</x>
+									<y>187</y>
+									<height>0</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[1]/BR[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>193</y>
+									<height>19</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[1]/DIV[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">and block level elements</attribute>
+								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">isolate</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>138</y>
+									<height>19</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[1]/P[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">A div containing</attribute>
+								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">isolate</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>442</y>
+								<height>126</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[2]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>477</y>
+									<height>56</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[2]/PRE[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">This section has a preformatted
+    text block    
+  split in four lines</attribute>
+								<attribute key="type" xsi:type="stringAttribute">PRE</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">15px</value>
+								</entry>
+								<entry>
+									<key>font-size</key>
+									<value xsi:type="xsd:string">12px</value>
+								</entry>
+								<entry>
+									<key>margin-bottom</key>
+									<value xsi:type="xsd:string">12px</value>
+								</entry>
+								<entry>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">12px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">isolate</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>442</y>
+									<height>19</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[2]/P[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">before pre</attribute>
+								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">isolate</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>549</y>
+									<height>19</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[2]/P[2]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+								<attribute key="text" xsi:type="textAttribute">after pre</attribute>
+								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">isolate</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>585</y>
+								<height>54</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[3]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
+							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>585</y>
+									<height>19</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[3]/P[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">Some text</attribute>
+								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">isolate</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>620</y>
+									<height>19</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[3]/P[2]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+								<attribute key="text" xsi:type="textAttribute">Some more text</attribute>
+								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">isolate</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>655</y>
+								<height>160</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
+							<attribute key="text" xsi:type="textAttribute">Cheese</attribute>
+							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>690</y>
+									<height>90</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">isolate</value>
+								</entry>
+							</attributes>
+						</attributes>
+						<containedComponents>
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>8</x>
+										<y>725</y>
+										<height>54</height>
+										<width>1350</width>
+									</attribute>
+									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>background-size</key>
+										<value xsi:type="xsd:string">auto auto</value>
+									</entry>
+									<entry>
+										<key>border-image-outset</key>
+										<value xsi:type="xsd:string">0</value>
+									</entry>
+									<entry>
+										<key>border-image-repeat</key>
+										<value xsi:type="xsd:string">stretch stretch</value>
+									</entry>
+									<entry>
+										<key>font-family</key>
+										<value xsi:type="xsd:string">serif</value>
+									</entry>
+									<entry>
+										<key>line-height</key>
+										<value xsi:type="xsd:string">19px</value>
+									</entry>
+									<entry>
+										<key>quotes</key>
+										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+									</entry>
+									<entry>
+										<key>unicode-bidi</key>
+										<value xsi:type="xsd:string">isolate</value>
+									</entry>
+								</attributes>
+							</attributes>
+							<containedComponents>
+								<identifyingAttributes>
+									<attributes>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>8</x>
+											<y>725</y>
+											<height>19</height>
+											<width>1350</width>
+										</attribute>
+										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]/P[1]</attribute>
+										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+										<attribute key="text" xsi:type="textAttribute">Some more text</attribute>
+										<attribute key="type" xsi:type="stringAttribute">P</attribute>
+									</attributes>
+								</identifyingAttributes>
+								<attributes>
+									<attributes>
+										<entry>
+											<key>background-size</key>
+											<value xsi:type="xsd:string">auto auto</value>
+										</entry>
+										<entry>
+											<key>border-image-outset</key>
+											<value xsi:type="xsd:string">0</value>
+										</entry>
+										<entry>
+											<key>border-image-repeat</key>
+											<value xsi:type="xsd:string">stretch stretch</value>
+										</entry>
+										<entry>
+											<key>font-family</key>
+											<value xsi:type="xsd:string">serif</value>
+										</entry>
+										<entry>
+											<key>line-height</key>
+											<value xsi:type="xsd:string">19px</value>
+										</entry>
+										<entry>
+											<key>quotes</key>
+											<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+										</entry>
+										<entry>
+											<key>unicode-bidi</key>
+											<value xsi:type="xsd:string">isolate</value>
+										</entry>
+									</attributes>
+								</attributes>
+							</containedComponents>
+							<containedComponents>
+								<identifyingAttributes>
+									<attributes>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>8</x>
+											<y>761</y>
+											<height>19</height>
+											<width>1350</width>
+										</attribute>
+										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]/P[2]</attribute>
+										<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+										<attribute key="text" xsi:type="textAttribute">and also</attribute>
+										<attribute key="type" xsi:type="stringAttribute">P</attribute>
+									</attributes>
+								</identifyingAttributes>
+								<attributes>
+									<attributes>
+										<entry>
+											<key>background-size</key>
+											<value xsi:type="xsd:string">auto auto</value>
+										</entry>
+										<entry>
+											<key>border-image-outset</key>
+											<value xsi:type="xsd:string">0</value>
+										</entry>
+										<entry>
+											<key>border-image-repeat</key>
+											<value xsi:type="xsd:string">stretch stretch</value>
+										</entry>
+										<entry>
+											<key>font-family</key>
+											<value xsi:type="xsd:string">serif</value>
+										</entry>
+										<entry>
+											<key>line-height</key>
+											<value xsi:type="xsd:string">19px</value>
+										</entry>
+										<entry>
+											<key>quotes</key>
+											<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+										</entry>
+										<entry>
+											<key>unicode-bidi</key>
+											<value xsi:type="xsd:string">isolate</value>
+										</entry>
+									</attributes>
+								</attributes>
+							</containedComponents>
+						</containedComponents>
+						<containedComponents>
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>8</x>
+										<y>690</y>
+										<height>19</height>
+										<width>1350</width>
+									</attribute>
+									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/P[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">Some text</attribute>
+									<attribute key="type" xsi:type="stringAttribute">P</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>background-size</key>
+										<value xsi:type="xsd:string">auto auto</value>
+									</entry>
+									<entry>
+										<key>border-image-outset</key>
+										<value xsi:type="xsd:string">0</value>
+									</entry>
+									<entry>
+										<key>border-image-repeat</key>
+										<value xsi:type="xsd:string">stretch stretch</value>
+									</entry>
+									<entry>
+										<key>font-family</key>
+										<value xsi:type="xsd:string">serif</value>
+									</entry>
+									<entry>
+										<key>line-height</key>
+										<value xsi:type="xsd:string">19px</value>
+									</entry>
+									<entry>
+										<key>quotes</key>
+										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+									</entry>
+									<entry>
+										<key>unicode-bidi</key>
+										<value xsi:type="xsd:string">isolate</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedComponents>
+					</containedComponents>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>815</y>
+								<height>19</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[5]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
+							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>815</y>
+									<height>19</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[5]/DIV[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">Hello, world</attribute>
+								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">isolate</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>815</y>
+									<height>0</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[5]/SPAN[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>834</y>
+									<height>0</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[5]/SPAN[2]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>834</y>
+								<height>19</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[6]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
+							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>0</y>
+									<height>0</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[6]/SCRIPT[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">document.write(&quot;with document.write&quot;);
+document.write(&quot; and with document.write again&quot;);</attribute>
+								<attribute key="type" xsi:type="stringAttribute">SCRIPT</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>924</y>
+								<height>19</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
+							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>926</y>
+									<height>16</height>
+									<width>148</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">link with leading space</attribute>
+								<attribute key="type" xsi:type="stringAttribute">A</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>160</x>
+									<y>926</y>
+									<height>16</height>
+									<width>151</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[2]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+								<attribute key="text" xsi:type="textAttribute">link with trailing space</attribute>
+								<attribute key="type" xsi:type="stringAttribute">A</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>311</x>
+									<y>926</y>
+									<height>16</height>
+									<width>170</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[3]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
+								<attribute key="type" xsi:type="stringAttribute">A</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+							</attributes>
+						</attributes>
+						<containedComponents>
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>311</x>
+										<y>926</y>
+										<height>16</height>
+										<width>170</width>
+									</attribute>
+									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[3]/B[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">link with formatting tags</attribute>
+									<attribute key="type" xsi:type="stringAttribute">B</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>background-size</key>
+										<value xsi:type="xsd:string">auto auto</value>
+									</entry>
+									<entry>
+										<key>border-bottom-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>border-image-outset</key>
+										<value xsi:type="xsd:string">0</value>
+									</entry>
+									<entry>
+										<key>border-image-repeat</key>
+										<value xsi:type="xsd:string">stretch stretch</value>
+									</entry>
+									<entry>
+										<key>border-image-width</key>
+										<value xsi:type="xsd:string">1</value>
+									</entry>
+									<entry>
+										<key>border-left-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>border-right-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>border-top-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>column-rule-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>font-family</key>
+										<value xsi:type="xsd:string">serif</value>
+									</entry>
+									<entry>
+										<key>line-height</key>
+										<value xsi:type="xsd:string">20px</value>
+									</entry>
+									<entry>
+										<key>outline-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>quotes</key>
+										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+									</entry>
+									<entry>
+										<key>text-decoration-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedComponents>
+					</containedComponents>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>485</x>
+									<y>926</y>
+									<height>16</height>
+									<width>166</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[4]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
+								<attribute key="text" xsi:type="textAttribute">link with &quot; (double quote)</attribute>
+								<attribute key="type" xsi:type="stringAttribute">A</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>654</x>
+									<y>926</y>
+									<height>16</height>
+									<width>157</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[5]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
+								<attribute key="text" xsi:type="textAttribute">link with ' (single quote)</attribute>
+								<attribute key="type" xsi:type="stringAttribute">A</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>815</x>
+									<y>926</y>
+									<height>16</height>
+									<width>143</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[6]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
+								<attribute key="text" xsi:type="textAttribute">link with \ (backslash)</attribute>
+								<attribute key="type" xsi:type="stringAttribute">A</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>943</y>
+								<height>38</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[8]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
+							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>text-indent</key>
+								<value xsi:type="xsd:string">80%</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>945</y>
+									<height>35</height>
+									<width>1218</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[8]/A[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">this link should break</attribute>
+								<attribute key="type" xsi:type="stringAttribute">A</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+								<entry>
+									<key>text-indent</key>
+									<value xsi:type="xsd:string">80%</value>
+								</entry>
+							</attributes>
+						</attributes>
+						<containedComponents>
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>1226</x>
+										<y>957</y>
+										<height>0</height>
+										<width>0</width>
+									</attribute>
+									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[8]/A[1]/BR[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>background-size</key>
+										<value xsi:type="xsd:string">auto auto</value>
+									</entry>
+									<entry>
+										<key>border-bottom-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>border-image-outset</key>
+										<value xsi:type="xsd:string">0</value>
+									</entry>
+									<entry>
+										<key>border-image-repeat</key>
+										<value xsi:type="xsd:string">stretch stretch</value>
+									</entry>
+									<entry>
+										<key>border-left-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>border-right-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>border-top-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>column-rule-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>font-family</key>
+										<value xsi:type="xsd:string">serif</value>
+									</entry>
+									<entry>
+										<key>line-height</key>
+										<value xsi:type="xsd:string">19px</value>
+									</entry>
+									<entry>
+										<key>outline-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>quotes</key>
+										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+									</entry>
+									<entry>
+										<key>text-decoration-color</key>
+										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+									</entry>
+									<entry>
+										<key>text-indent</key>
+										<value xsi:type="xsd:string">80%</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedComponents>
+					</containedComponents>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>982</y>
+								<height>19</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[9]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
+							<attribute key="text" xsi:type="textAttribute">Top level</attribute>
+							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>869</y>
+								<height>39</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>869</y>
+									<height>39</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]/P[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">isolate</value>
+								</entry>
+							</attributes>
+						</attributes>
+						<containedComponents>
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>12</x>
+										<y>872</y>
+										<height>13</height>
+										<width>13</width>
+									</attribute>
+									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]/P[1]/INPUT[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>background-size</key>
+										<value xsi:type="xsd:string">auto auto</value>
+									</entry>
+									<entry>
+										<key>border-image-outset</key>
+										<value xsi:type="xsd:string">0</value>
+									</entry>
+									<entry>
+										<key>border-image-repeat</key>
+										<value xsi:type="xsd:string">stretch stretch</value>
+									</entry>
+									<entry>
+										<key>font-family</key>
+										<value xsi:type="xsd:string">sans-serif</value>
+									</entry>
+									<entry>
+										<key>font-size</key>
+										<value xsi:type="xsd:string">14px</value>
+									</entry>
+									<entry>
+										<key>line-height</key>
+										<value xsi:type="xsd:string">17px</value>
+									</entry>
+									<entry>
+										<key>margin-left</key>
+										<value xsi:type="xsd:string">4px</value>
+									</entry>
+									<entry>
+										<key>margin-right</key>
+										<value xsi:type="xsd:string">3px</value>
+									</entry>
+									<entry>
+										<key>quotes</key>
+										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedComponents>
+						<containedComponents>
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>8</x>
+										<y>871</y>
+										<height>35</height>
+										<width>45</width>
+									</attribute>
+									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]/P[1]/LABEL[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">foo</attribute>
+									<attribute key="type" xsi:type="stringAttribute">LABEL</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>background-size</key>
+										<value xsi:type="xsd:string">auto auto</value>
+									</entry>
+									<entry>
+										<key>border-image-outset</key>
+										<value xsi:type="xsd:string">0</value>
+									</entry>
+									<entry>
+										<key>border-image-repeat</key>
+										<value xsi:type="xsd:string">stretch stretch</value>
+									</entry>
+									<entry>
+										<key>font-family</key>
+										<value xsi:type="xsd:string">serif</value>
+									</entry>
+									<entry>
+										<key>line-height</key>
+										<value xsi:type="xsd:string">19px</value>
+									</entry>
+									<entry>
+										<key>quotes</key>
+										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+									</entry>
+								</attributes>
+							</attributes>
+							<containedComponents>
+								<identifyingAttributes>
+									<attributes>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>53</x>
+											<y>883</y>
+											<height>0</height>
+											<width>0</width>
+										</attribute>
+										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]/P[1]/LABEL[1]/BR[1]</attribute>
+										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+										<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+									</attributes>
+								</identifyingAttributes>
+								<attributes>
+									<attributes>
+										<entry>
+											<key>background-size</key>
+											<value xsi:type="xsd:string">auto auto</value>
+										</entry>
+										<entry>
+											<key>border-image-outset</key>
+											<value xsi:type="xsd:string">0</value>
+										</entry>
+										<entry>
+											<key>border-image-repeat</key>
+											<value xsi:type="xsd:string">stretch stretch</value>
+										</entry>
+										<entry>
+											<key>font-family</key>
+											<value xsi:type="xsd:string">serif</value>
+										</entry>
+										<entry>
+											<key>line-height</key>
+											<value xsi:type="xsd:string">19px</value>
+										</entry>
+										<entry>
+											<key>quotes</key>
+											<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+										</entry>
+									</attributes>
+								</attributes>
+							</containedComponents>
+						</containedComponents>
+					</containedComponents>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>8</y>
+								<height>38</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/H1[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">Heading</attribute>
+							<attribute key="type" xsi:type="stringAttribute">H1</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">39px</value>
+							</entry>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">21.4333px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>1089</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/IMG[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="type" xsi:type="stringAttribute">IMG</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>1065</y>
+								<height>24</height>
+								<width>24</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/IMG[2]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+							<attribute key="type" xsi:type="stringAttribute">IMG</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>68</y>
+								<height>19</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">A single line of text</attribute>
+							<attribute key="type" xsi:type="stringAttribute">P</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>103</y>
+								<height>19</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[2]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+							<attribute key="text" xsi:type="textAttribute">A hidden line of text</attribute>
+							<attribute key="type" xsi:type="stringAttribute">P</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+							<entry>
+								<key>visibility</key>
+								<value xsi:type="xsd:string">hidden</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>247</y>
+								<height>19</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[3]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
+							<attribute key="text" xsi:type="textAttribute">This line has lots
+
+    of spaces.</attribute>
+							<attribute key="type" xsi:type="stringAttribute">P</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>282</y>
+								<height>19</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[4]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
+							<attribute key="text" xsi:type="textAttribute">This line has a non-breaking space</attribute>
+							<attribute key="type" xsi:type="stringAttribute">P</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>317</y>
+								<height>19</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[5]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
+							<attribute key="text" xsi:type="textAttribute">This line has a   non-breaking space and spaces</attribute>
+							<attribute key="type" xsi:type="stringAttribute">P</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>353</y>
+								<height>38</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[6]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
+							<attribute key="text" xsi:type="textAttribute">These lines  </attribute>
+							<attribute key="type" xsi:type="stringAttribute">P</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>88</x>
+									<y>366</y>
+									<height>0</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[6]/BR[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedComponents>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>407</y>
+								<height>19</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[7]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
+							<attribute key="text" xsi:type="textAttribute">This</attribute>
+							<attribute key="type" xsi:type="stringAttribute">P</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>40</x>
+									<y>409</y>
+									<height>16</height>
+									<width>80</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[7]/SPAN[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">line has</attribute>
+								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+							</attributes>
+						</attributes>
+						<containedComponents>
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>94</x>
+										<y>409</y>
+										<height>16</height>
+										<width>23</width>
+									</attribute>
+									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[7]/SPAN[1]/EM[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">text</attribute>
+									<attribute key="type" xsi:type="stringAttribute">EM</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>background-size</key>
+										<value xsi:type="xsd:string">auto auto</value>
+									</entry>
+									<entry>
+										<key>border-image-outset</key>
+										<value xsi:type="xsd:string">0</value>
+									</entry>
+									<entry>
+										<key>border-image-repeat</key>
+										<value xsi:type="xsd:string">stretch stretch</value>
+									</entry>
+									<entry>
+										<key>font-family</key>
+										<value xsi:type="xsd:string">serif</value>
+									</entry>
+									<entry>
+										<key>line-height</key>
+										<value xsi:type="xsd:string">19px</value>
+									</entry>
+									<entry>
+										<key>quotes</key>
+										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedComponents>
+					</containedComponents>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>213</y>
+								<height>16</height>
+								<width>115</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SPAN[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">An inline element</attribute>
+							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>143</x>
+								<y>1077</y>
+								<height>16</height>
+								<width>134</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SPAN[2]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+							<attribute key="text" xsi:type="textAttribute">{a=&quot;b&quot;, c=1, d=true}</attribute>
+							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>282</x>
+								<y>1077</y>
+								<height>16</height>
+								<width>91</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SPAN[3]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
+							<attribute key="text" xsi:type="textAttribute">{a=&quot;\\b\\\&quot;'\'&quot;}</attribute>
+							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>377</x>
+								<y>1077</y>
+								<height>16</height>
+								<width>956</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SPAN[4]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
+							<attribute key="text" xsi:type="textAttribute">â€€â€â€‚â€ƒâ€„â€…â€†â€‡â€ˆâ€‰â€Šâ€‹â€Œâ€â€¯âŸâ ã€€test  â€€â€â€‚â€ƒâ€„â€…â€†â€‡â€ˆâ€‰â€Šâ€‹â€Œâ€â€¯âŸâ ã€€</attribute>
+							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>1020</y>
+								<height>44</height>
+								<width>85</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="type" xsi:type="stringAttribute">TABLE</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>box-sizing</key>
+								<value xsi:type="xsd:string">border-box</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">isolate</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedComponents>
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>10</x>
+									<y>1022</y>
+									<height>40</height>
+									<width>81</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="type" xsi:type="stringAttribute">TBODY</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-size</key>
+									<value xsi:type="xsd:string">auto auto</value>
+								</entry>
+								<entry>
+									<key>border-image-outset</key>
+									<value xsi:type="xsd:string">0</value>
+								</entry>
+								<entry>
+									<key>border-image-repeat</key>
+									<value xsi:type="xsd:string">stretch stretch</value>
+								</entry>
+								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">serif</value>
+								</entry>
+								<entry>
+									<key>line-height</key>
+									<value xsi:type="xsd:string">19px</value>
+								</entry>
+								<entry>
+									<key>quotes</key>
+									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">isolate</value>
+								</entry>
+							</attributes>
+						</attributes>
+						<containedComponents>
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>10</x>
+										<y>1022</y>
+										<height>40</height>
+										<width>81</width>
+									</attribute>
+									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="type" xsi:type="stringAttribute">TR</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>background-size</key>
+										<value xsi:type="xsd:string">auto auto</value>
+									</entry>
+									<entry>
+										<key>border-image-outset</key>
+										<value xsi:type="xsd:string">0</value>
+									</entry>
+									<entry>
+										<key>border-image-repeat</key>
+										<value xsi:type="xsd:string">stretch stretch</value>
+									</entry>
+									<entry>
+										<key>font-family</key>
+										<value xsi:type="xsd:string">serif</value>
+									</entry>
+									<entry>
+										<key>line-height</key>
+										<value xsi:type="xsd:string">19px</value>
+									</entry>
+									<entry>
+										<key>quotes</key>
+										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+									</entry>
+									<entry>
+										<key>unicode-bidi</key>
+										<value xsi:type="xsd:string">isolate</value>
+									</entry>
+								</attributes>
+							</attributes>
+							<containedComponents>
+								<identifyingAttributes>
+									<attributes>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>10</x>
+											<y>1022</y>
+											<height>40</height>
+											<width>81</width>
+										</attribute>
+										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]</attribute>
+										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+										<attribute key="type" xsi:type="stringAttribute">TD</attribute>
+									</attributes>
+								</identifyingAttributes>
+								<attributes>
+									<attributes>
+										<entry>
+											<key>background-size</key>
+											<value xsi:type="xsd:string">auto auto</value>
+										</entry>
+										<entry>
+											<key>border-bottom-color</key>
+											<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+										</entry>
+										<entry>
+											<key>border-image-outset</key>
+											<value xsi:type="xsd:string">0</value>
+										</entry>
+										<entry>
+											<key>border-image-repeat</key>
+											<value xsi:type="xsd:string">stretch stretch</value>
+										</entry>
+										<entry>
+											<key>border-left-color</key>
+											<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+										</entry>
+										<entry>
+											<key>border-right-color</key>
+											<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+										</entry>
+										<entry>
+											<key>border-top-color</key>
+											<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+										</entry>
+										<entry>
+											<key>font-family</key>
+											<value xsi:type="xsd:string">serif</value>
+										</entry>
+										<entry>
+											<key>line-height</key>
+											<value xsi:type="xsd:string">19px</value>
+										</entry>
+										<entry>
+											<key>padding-bottom</key>
+											<value xsi:type="xsd:string">1px</value>
+										</entry>
+										<entry>
+											<key>padding-left</key>
+											<value xsi:type="xsd:string">1px</value>
+										</entry>
+										<entry>
+											<key>padding-right</key>
+											<value xsi:type="xsd:string">1px</value>
+										</entry>
+										<entry>
+											<key>padding-top</key>
+											<value xsi:type="xsd:string">1px</value>
+										</entry>
+										<entry>
+											<key>quotes</key>
+											<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+										</entry>
+										<entry>
+											<key>unicode-bidi</key>
+											<value xsi:type="xsd:string">isolate</value>
+										</entry>
+										<entry>
+											<key>vertical-align</key>
+											<value xsi:type="xsd:string">middle</value>
+										</entry>
+									</attributes>
+								</attributes>
+								<containedComponents>
+									<identifyingAttributes>
+										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>11</x>
+												<y>1025</y>
+												<height>16</height>
+												<width>79</width>
+											</attribute>
+											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[1]</attribute>
+											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+											<attribute key="text" xsi:type="textAttribute">beforeSpace</attribute>
+											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+										</attributes>
+									</identifyingAttributes>
+									<attributes>
+										<attributes>
+											<entry>
+												<key>background-size</key>
+												<value xsi:type="xsd:string">auto auto</value>
+											</entry>
+											<entry>
+												<key>border-image-outset</key>
+												<value xsi:type="xsd:string">0</value>
+											</entry>
+											<entry>
+												<key>border-image-repeat</key>
+												<value xsi:type="xsd:string">stretch stretch</value>
+											</entry>
+											<entry>
+												<key>border-spacing</key>
+												<value xsi:type="xsd:string">2px 2px</value>
+											</entry>
+											<entry>
+												<key>font-family</key>
+												<value xsi:type="xsd:string">serif</value>
+											</entry>
+											<entry>
+												<key>line-height</key>
+												<value xsi:type="xsd:string">19px</value>
+											</entry>
+											<entry>
+												<key>quotes</key>
+												<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+											</entry>
+										</attributes>
+									</attributes>
+								</containedComponents>
+								<containedComponents>
+									<identifyingAttributes>
+										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>90</x>
+												<y>1025</y>
+												<height>16</height>
+												<width>0</width>
+											</attribute>
+											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[2]</attribute>
+											<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+										</attributes>
+									</identifyingAttributes>
+									<attributes>
+										<attributes>
+											<entry>
+												<key>background-size</key>
+												<value xsi:type="xsd:string">auto auto</value>
+											</entry>
+											<entry>
+												<key>border-image-outset</key>
+												<value xsi:type="xsd:string">0</value>
+											</entry>
+											<entry>
+												<key>border-image-repeat</key>
+												<value xsi:type="xsd:string">stretch stretch</value>
+											</entry>
+											<entry>
+												<key>border-spacing</key>
+												<value xsi:type="xsd:string">2px 2px</value>
+											</entry>
+											<entry>
+												<key>font-family</key>
+												<value xsi:type="xsd:string">serif</value>
+											</entry>
+											<entry>
+												<key>line-height</key>
+												<value xsi:type="xsd:string">19px</value>
+											</entry>
+											<entry>
+												<key>quotes</key>
+												<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+											</entry>
+										</attributes>
+									</attributes>
+								</containedComponents>
+								<containedComponents>
+									<identifyingAttributes>
+										<attributes>
+											<attribute key="outline" xsi:type="outlineAttribute">
+												<x>11</x>
+												<y>1044</y>
+												<height>16</height>
+												<width>67</width>
+											</attribute>
+											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[3]</attribute>
+											<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
+											<attribute key="text" xsi:type="textAttribute">afterSpace</attribute>
+											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+										</attributes>
+									</identifyingAttributes>
+									<attributes>
+										<attributes>
+											<entry>
+												<key>background-size</key>
+												<value xsi:type="xsd:string">auto auto</value>
+											</entry>
+											<entry>
+												<key>border-image-outset</key>
+												<value xsi:type="xsd:string">0</value>
+											</entry>
+											<entry>
+												<key>border-image-repeat</key>
+												<value xsi:type="xsd:string">stretch stretch</value>
+											</entry>
+											<entry>
+												<key>border-spacing</key>
+												<value xsi:type="xsd:string">2px 2px</value>
+											</entry>
+											<entry>
+												<key>font-family</key>
+												<value xsi:type="xsd:string">serif</value>
+											</entry>
+											<entry>
+												<key>line-height</key>
+												<value xsi:type="xsd:string">19px</value>
+											</entry>
+											<entry>
+												<key>quotes</key>
+												<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+											</entry>
+										</attributes>
+									</attributes>
+								</containedComponents>
+							</containedComponents>
+						</containedComponents>
+					</containedComponents>
+				</containedComponents>
+			</containedComponents>
+			<containedComponents>
+				<identifyingAttributes>
+					<attributes>
+						<attribute key="outline" xsi:type="outlineAttribute">
+							<x>0</x>
+							<y>0</y>
+							<height>0</height>
+							<width>0</width>
+						</attribute>
+						<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]</attribute>
+						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+						<attribute key="type" xsi:type="stringAttribute">HEAD</attribute>
+					</attributes>
+				</identifyingAttributes>
+				<attributes>
+					<attributes>
+						<entry>
+							<key>background-size</key>
+							<value xsi:type="xsd:string">auto auto</value>
+						</entry>
+						<entry>
+							<key>border-image-outset</key>
+							<value xsi:type="xsd:string">0</value>
+						</entry>
+						<entry>
+							<key>border-image-repeat</key>
+							<value xsi:type="xsd:string">stretch stretch</value>
+						</entry>
+						<entry>
+							<key>font-family</key>
+							<value xsi:type="xsd:string">serif</value>
+						</entry>
+						<entry>
+							<key>line-height</key>
+							<value xsi:type="xsd:string">19px</value>
+						</entry>
+						<entry>
+							<key>quotes</key>
+							<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+						</entry>
+					</attributes>
+				</attributes>
+				<containedComponents>
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/TITLE[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">Hello WebDriver</attribute>
+							<attribute key="type" xsi:type="stringAttribute">TITLE</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-size</key>
+								<value xsi:type="xsd:string">auto auto</value>
+							</entry>
+							<entry>
+								<key>border-image-outset</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>border-image-repeat</key>
+								<value xsi:type="xsd:string">stretch stretch</value>
+							</entry>
+							<entry>
+								<key>font-family</key>
+								<value xsi:type="xsd:string">serif</value>
+							</entry>
+							<entry>
+								<key>line-height</key>
+								<value xsi:type="xsd:string">19px</value>
+							</entry>
+							<entry>
+								<key>quotes</key>
+								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedComponents>
+			</containedComponents>
+			<screenshot>
+				<persistenceId>window_2acfbce98a52b0ef82008c5d51feadd915da7989edbb73f008dc23c05e5c32f3</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+	</data>
+</reTestXmlDataContainer>
