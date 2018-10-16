@@ -77,6 +77,12 @@
 			<groupId>de.retest</groupId>
 			<artifactId>recheck</artifactId>
 			<version>0.4.2</version>
+			<exclusions>
+				<exclusion>
+					<groupId>de.retest</groupId>
+					<artifactId>retest-model</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
