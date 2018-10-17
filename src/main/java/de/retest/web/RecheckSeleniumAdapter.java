@@ -36,6 +36,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	private final DefaultValuesProvider defaultValuesProvider;
 
 	public RecheckSeleniumAdapter() {
+		System.setProperty( "de.retest.ignoredAttributes", "outline" );
 		defaultValuesProvider = new DefaultValuesProvider();
 	}
 
