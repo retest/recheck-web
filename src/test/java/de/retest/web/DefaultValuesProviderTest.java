@@ -34,10 +34,10 @@ class DefaultValuesProviderTest {
 	@Test
 	void getDefaultValue_should_be_CASE_INSENSITIVE() {
 		final DefaultValuesProvider cut = new DefaultValuesProvider();
-		final IdentifyingAttributes IDENT = IdentifyingAttributes.create( Path.fromString( "/HTML/BODY/DIV/" ), "P" );
+		final IdentifyingAttributes IDENT = IdentifyingAttributes.create( Path.fromString( "/HTML/BODY/DIV" ), "P" );
 		assertThat( cut.getDefaultValue( IDENT, "DISPLAY" ) ).isEqualTo( "block" );
 
-		final IdentifyingAttributes ident = IdentifyingAttributes.create( Path.fromString( "/html/body/div/" ), "p" );
+		final IdentifyingAttributes ident = IdentifyingAttributes.create( Path.fromString( "/html/body/div" ), "p" );
 		assertThat( cut.getDefaultValue( ident, "display" ) ).isEqualTo( "block" );
 	}
 
