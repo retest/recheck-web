@@ -1,5 +1,7 @@
 package de.retest.web;
 
+import static de.retest.ui.descriptors.RetestIdProviderUtil.getRetestId;
+
 import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.List;
@@ -44,7 +46,8 @@ public class WebElementPeer {
 		final List<Element> convertedChildren = convertChildren();
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
 		final MutableAttributes state = retrieveStateAttributes();
-		return new Element( identifyingAttributes, state.immutable(), convertedChildren, null );
+		return new Element( getRetestId( identifyingAttributes ), identifyingAttributes, state.immutable(),
+				convertedChildren, null );
 	}
 
 	protected IdentifyingAttributes retrieveIdentifyingAttributes() {
