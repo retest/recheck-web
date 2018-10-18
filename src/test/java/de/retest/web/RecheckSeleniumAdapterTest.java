@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import de.retest.elementcollection.ElementCollection;
-import de.retest.elementcollection.IgnoredComponents;
+import de.retest.elementcollection.RecheckIgnore;
 import de.retest.ui.descriptors.RootElement;
 import de.retest.ui.diff.RootElementDifference;
 import de.retest.ui.diff.RootElementDifferenceFinder;
@@ -20,7 +20,7 @@ class RecheckSeleniumAdapterTest {
 
 	@BeforeEach
 	void setUp() {
-		IgnoredComponents.getTestInstance( new ElementCollection() );
+		RecheckIgnore.getTestInstance( new ElementCollection() );
 	}
 
 	@Test

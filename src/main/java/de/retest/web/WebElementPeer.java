@@ -1,5 +1,7 @@
 package de.retest.web;
 
+import static de.retest.ui.descriptors.RetestIdProviderUtil.getRetestId;
+
 import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.List;
@@ -44,14 +46,15 @@ public class WebElementPeer {
 		final List<Element> convertedChildren = convertChildren();
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
 		final MutableAttributes state = retrieveStateAttributes();
-		return new Element( identifyingAttributes, state.immutable(), convertedChildren, null );
+		return new Element( getRetestId( identifyingAttributes ), identifyingAttributes, state.immutable(),
+				convertedChildren, null );
 	}
 
 	protected IdentifyingAttributes retrieveIdentifyingAttributes() {
 		final List<Attribute> attributes = new ArrayList<>();
 
 		attributes.add( new PathAttribute( Path.fromString( path ) ) );
-		attributes.add( new SuffixAttribute( path.substring( path.lastIndexOf( '[' ) + 1, path.lastIndexOf( ']' ) ) ) );
+		attributes.add( new SuffixAttribute( extractSuffix() ) );
 		attributes.add( new StringAttribute( "type", webData.getAsString( "tagName" ) ) );
 
 		final String text = webData.getAsString( "text" );
@@ -74,6 +77,11 @@ public class WebElementPeer {
 		}
 
 		return new IdentifyingAttributes( attributes );
+	}
+
+	public Integer extractSuffix() {
+		final String suffix = path.substring( path.lastIndexOf( '[' ) + 1, path.lastIndexOf( ']' ) );
+		return Integer.valueOf( suffix );
 	}
 
 	protected MutableAttributes retrieveStateAttributes() {
