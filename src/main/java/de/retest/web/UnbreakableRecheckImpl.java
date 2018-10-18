@@ -17,7 +17,9 @@ public class UnbreakableRecheckImpl extends RecheckImpl {
 	@Override
 	protected SutState loadExpected( final File file ) {
 		final SutState result = super.loadExpected( file );
-		driver.setLastExpectdState( result.getRootElements().get( 0 ) );
+		if ( result != null ) {
+			driver.setLastExpectdState( result.getRootElements().get( 0 ) );
+		}
 		return result;
 	}
 
