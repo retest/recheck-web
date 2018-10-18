@@ -40,12 +40,12 @@ public class ByRetestId extends By implements Serializable {
 			throw new IllegalArgumentException( "Cannot find element in null state." );
 		}
 		final Element result = findElement( lastExpectedState.getContainedElements() );
-		if ( result != null ) {
-			// TODO Use unobfuscated methods
-			final Alignment alignment = Alignment.a( lastExpectedState, lastActualState );
-			return alignment.a( result );
+		if ( result == null ) {
+			throw new RuntimeException( "No element with retest id '" + retestId + "' found!" );
 		}
-		throw new RuntimeException( "No element with retest id '" + retestId + "' found!" );
+		// TODO Use unobfuscated methods
+		final Alignment alignment = Alignment.a( lastExpectedState, lastActualState );
+		return alignment.a( result );
 	}
 
 	public Element findElement( final List<Element> children ) {
