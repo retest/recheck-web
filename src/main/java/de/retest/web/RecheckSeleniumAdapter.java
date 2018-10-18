@@ -34,6 +34,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	public RecheckSeleniumAdapter() {
 		defaultValuesProvider = new DefaultValuesProvider();
+		logger.debug( "New RecheckSeleniumAdapter created: {}.", System.identityHashCode( this ) );
 	}
 
 	@Override
