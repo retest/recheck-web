@@ -54,7 +54,7 @@ public class WebElementPeer {
 		final List<Attribute> attributes = new ArrayList<>();
 
 		attributes.add( new PathAttribute( Path.fromString( path ) ) );
-		attributes.add( new SuffixAttribute( path.substring( path.lastIndexOf( '[' ) + 1, path.lastIndexOf( ']' ) ) ) );
+		attributes.add( new SuffixAttribute( extractSuffix() ) );
 		attributes.add( new StringAttribute( "type", webData.getAsString( "tagName" ) ) );
 
 		final String text = webData.getAsString( "text" );
@@ -77,6 +77,11 @@ public class WebElementPeer {
 		}
 
 		return new IdentifyingAttributes( attributes );
+	}
+
+	public Integer extractSuffix() {
+		final String suffix = path.substring( path.lastIndexOf( '[' ) + 1, path.lastIndexOf( ']' ) );
+		return Integer.valueOf( suffix );
 	}
 
 	protected MutableAttributes retrieveStateAttributes() {
