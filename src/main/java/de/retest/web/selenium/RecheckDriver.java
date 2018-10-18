@@ -56,7 +56,7 @@ public class RecheckDriver implements WebDriver, JavascriptExecutor, FindsById, 
 	public WebElement findElement( final ByRetestId by ) {
 		if ( lastExpectedState == null ) {
 			throw new IllegalStateException(
-					"You must first check the state before being able to withdraw elements from it." );
+					"You must use the UnbreakableRecheckImpl and first check the state before being able to use the retestId locator." );
 		}
 		final Element searchedFor = by.findElement( lastExpectedState, lastActualState );
 		return wrapped.findElement( By.xpath( searchedFor.getIdentifyingAttributes().getPath() ) );
