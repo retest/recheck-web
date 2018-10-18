@@ -23,6 +23,7 @@ import org.slf4j.LoggerFactory;
 import de.retest.recheck.RecheckAdapter;
 import de.retest.ui.DefaultValueFinder;
 import de.retest.ui.descriptors.RootElement;
+import de.retest.web.selenium.RecheckDriver;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategy;
 import ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator;
@@ -38,6 +39,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	public RecheckSeleniumAdapter() {
 		System.setProperty( "de.retest.ignoredAttributes", "outline" );
 		defaultValuesProvider = new DefaultValuesProvider();
+		logger.debug( "New RecheckSeleniumAdapter created: " + System.identityHashCode( this ) );
 	}
 
 	@Override
@@ -58,7 +60,11 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), result.size() );
 
-		return Collections.singleton( convertToPeers( result, driver.getTitle(), createScreenshot( driver ) ) );
+		final RootElement lastChecked = convertToPeers( result, driver.getTitle(), createScreenshot( driver ) );
+		if ( driver instanceof RecheckDriver ) {
+			((RecheckDriver) driver).setLastActualState( lastChecked );
+		}
+		return Collections.singleton( lastChecked );
 	}
 
 	public String getQueryJS() {

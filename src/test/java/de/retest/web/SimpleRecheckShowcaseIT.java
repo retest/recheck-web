@@ -16,7 +16,7 @@ import de.retest.recheck.RecheckImpl;
 /*
  * Simple recheck-web showcase for a Chrome-based integration test. See other *IT classes for more examples.
  */
-public class SimpleShowcaseIT {
+public class SimpleRecheckShowcaseIT {
 
 	private WebDriver driver;
 	private Recheck re;
