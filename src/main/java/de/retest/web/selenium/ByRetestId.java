@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 
 import de.retest.ui.descriptors.Element;
 import de.retest.ui.descriptors.RootElement;
-import de.retest.ui.diff.Alignment;
+import de.retest.util.Mapping;
 
 public class ByRetestId extends By implements Serializable {
 
@@ -36,28 +36,12 @@ public class ByRetestId extends By implements Serializable {
 	}
 
 	public Element findElement( final RootElement lastExpectedState, final RootElement lastActualState ) {
-		if ( lastExpectedState == null ) {
-			throw new IllegalArgumentException( "Cannot find element in null state." );
+		final Mapping<Element, Element> oldNewMapping = de.retest.web.selenium.By.findElement( lastExpectedState,
+				lastActualState, element -> retestId.equals( element.getRetestId() ) );
+		final Element result = oldNewMapping.getValue();
+		if ( result == null ) {
+			throw new RuntimeException( "No element with retest ID '" + retestId + "' found!" );
 		}
-		final Element result = findElement( lastExpectedState.getContainedElements() );
-		if ( result != null ) {
-			// TODO Use unobfuscated methods
-			final Alignment alignment = Alignment.a( lastExpectedState, lastActualState );
-			return alignment.a( result );
-		}
-		throw new RuntimeException( "No element with retest id '" + retestId + "' found!" );
-	}
-
-	public Element findElement( final List<Element> children ) {
-		for ( final Element element : children ) {
-			if ( retestId.equals( element.getRetestId() ) ) {
-				return element;
-			}
-			final Element result = findElement( element.getContainedElements() );
-			if ( result != null ) {
-				return result;
-			}
-		}
-		return null;
+		return result;
 	}
 }

@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.HasCapabilities;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -29,13 +30,18 @@ import org.openqa.selenium.internal.FindsByLinkText;
 import org.openqa.selenium.internal.FindsByName;
 import org.openqa.selenium.internal.FindsByTagName;
 import org.openqa.selenium.internal.FindsByXPath;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import de.retest.ui.descriptors.Element;
 import de.retest.ui.descriptors.RootElement;
+import de.retest.web.RecheckWebImpl;
 
 public class RecheckDriver implements WebDriver, JavascriptExecutor, FindsById, FindsByClassName, FindsByLinkText,
 		FindsByName, FindsByCssSelector, FindsByTagName, FindsByXPath, HasInputDevices, HasCapabilities,
 		TakesScreenshot, LocationContext, WebStorage, HasTouchScreen {
+
+	private static final Logger logger = LoggerFactory.getLogger( RecheckDriver.class );
 
 	private final WebDriver wrapped;
 	private RootElement lastExpectedState;
@@ -45,25 +51,33 @@ public class RecheckDriver implements WebDriver, JavascriptExecutor, FindsById, 
 		this.wrapped = wrapped;
 	}
 
-	public void setLastExpectdState( final RootElement lastExpectedState ) {
+	public void setLastExpectedState( final RootElement lastExpectedState ) {
 		this.lastExpectedState = lastExpectedState;
+	}
+
+	public RootElement getLastExpectedState() {
+		return lastExpectedState;
 	}
 
 	public void setLastActualState( final RootElement lastActualState ) {
 		this.lastActualState = lastActualState;
 	}
 
+	public RootElement getLastActualState() {
+		return lastActualState;
+	}
+
 	public WebElement findElement( final ByRetestId by ) {
 		if ( lastExpectedState == null ) {
-			throw new IllegalStateException(
-					"You must first check the state before being able to withdraw elements from it." );
+			throw new IllegalStateException( "You must use the " + RecheckWebImpl.class.getSimpleName()
+					+ " and first check the state before being able to use the retest ID locator." );
 		}
 		final Element searchedFor = by.findElement( lastExpectedState, lastActualState );
 		return wrapped.findElement( By.xpath( searchedFor.getIdentifyingAttributes().getPath() ) );
 	}
 
-	public WebElement findElementByRecheckId( final String recheckId ) {
-		return findElement( new ByRetestId( recheckId ) );
+	public WebElement findElementByRetestId( final String retestId ) {
+		return findElement( new ByRetestId( retestId ) );
 	}
 
 	@Override
@@ -71,9 +85,16 @@ public class RecheckDriver implements WebDriver, JavascriptExecutor, FindsById, 
 		if ( by instanceof ByRetestId ) {
 			return findElement( (ByRetestId) by );
 		}
-		// TODO We can implement to find the element with the given value in the lastCheckedState
-		// Should it differ, we can use the new value in the current state and issue a warning!
-		return wrapped.findElement( by );
+		try {
+			return wrapped.findElement( by );
+		} catch ( final NoSuchElementException e ) {
+			try {
+				return TestHealer.findElement( by, this );
+			} catch ( final Exception recheckE ) {
+				logger.error( "Error trying to locate element in old state, throwing original exception.", recheckE );
+				throw e;
+			}
+		}
 	}
 
 	@Override
