@@ -4,6 +4,7 @@
 		<descriptors retestId="html" screenId="1" screen="retest - Java Swing GUI Testing" title="retest - Java Swing GUI Testing">
 			<identifyingAttributes>
 				<attributes>
+					<attribute key="class" xsi:type="stringAttribute">js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths</attribute>
 					<attribute key="outline" xsi:type="outlineAttribute">
 						<x>0</x>
 						<y>0</y>
@@ -202,6 +203,7 @@
 					<containedComponents retestId="div">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="class" xsi:type="stringAttribute">row</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>83</x>
 									<y>3032</y>
@@ -284,6 +286,7 @@
 						<containedComponents retestId="div">
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="class" xsi:type="stringAttribute">twelve columns</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>83</x>
 										<y>3032</y>
@@ -374,6 +377,7 @@
 							<containedComponents retestId="ul">
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="class" xsi:type="stringAttribute">copyright</attribute>
 										<attribute key="outline" xsi:type="outlineAttribute">
 											<x>103</x>
 											<y>3032</y>
@@ -552,6 +556,7 @@
 								<containedComponents retestId="li">
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="id" xsi:type="stringAttribute">impressumslink</attribute>
 											<attribute key="outline" xsi:type="outlineAttribute">
 												<x>654</x>
 												<y>3047</y>
@@ -809,6 +814,7 @@
 					<containedComponents retestId="div">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="class" xsi:type="stringAttribute">row</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>90</x>
 									<y>0</y>
@@ -891,6 +897,7 @@
 						<containedComponents retestId="div">
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="class" xsi:type="stringAttribute">twelve columns</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>90</x>
 										<y>0</y>
@@ -981,6 +988,7 @@
 							<containedComponents retestId="div">
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="class" xsi:type="stringAttribute">logo</attribute>
 										<attribute key="outline" xsi:type="outlineAttribute">
 											<x>110</x>
 											<y>10</y>
@@ -1258,6 +1266,7 @@
 							<containedComponents retestId="nav">
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="id" xsi:type="stringAttribute">nav-wrap</attribute>
 										<attribute key="outline" xsi:type="outlineAttribute">
 											<x>595</x>
 											<y>36</y>
@@ -1348,6 +1357,7 @@
 								<containedComponents retestId="show_navigation">
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="class" xsi:type="stringAttribute">mobile-btn</attribute>
 											<attribute key="outline" xsi:type="outlineAttribute">
 												<x>0</x>
 												<y>0</y>
@@ -1456,6 +1466,7 @@
 								<containedComponents retestId="hide_navigation">
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="class" xsi:type="stringAttribute">mobile-btn</attribute>
 											<attribute key="outline" xsi:type="outlineAttribute">
 												<x>0</x>
 												<y>0</y>
@@ -1564,6 +1575,8 @@
 								<containedComponents retestId="ul">
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="class" xsi:type="stringAttribute">nav</attribute>
+											<attribute key="id" xsi:type="stringAttribute">nav</attribute>
 											<attribute key="outline" xsi:type="outlineAttribute">
 												<x>595</x>
 												<y>52</y>
@@ -6341,6 +6354,7 @@
 									<containedComponents retestId="li">
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="class" xsi:type="stringAttribute">dropdown lang</attribute>
 												<attribute key="outline" xsi:type="outlineAttribute">
 													<x>1035</x>
 													<y>36</y>
@@ -6427,6 +6441,7 @@
 										<containedComponents retestId="a">
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="class" xsi:type="stringAttribute">dropdown-toggle</attribute>
 													<attribute key="outline" xsi:type="outlineAttribute">
 														<x>1035</x>
 														<y>36</y>
@@ -6541,6 +6556,7 @@
 											<containedComponents retestId="i">
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="class" xsi:type="stringAttribute">fa fa-globe</attribute>
 														<attribute key="outline" xsi:type="outlineAttribute">
 															<x>1046</x>
 															<y>52</y>
@@ -6632,6 +6648,7 @@
 											<containedComponents retestId="span">
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="class" xsi:type="stringAttribute">caret</attribute>
 														<attribute key="outline" xsi:type="outlineAttribute">
 															<x>1051</x>
 															<y>52</y>
@@ -6712,6 +6729,8 @@
 										<containedComponents retestId="ul">
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="class" xsi:type="stringAttribute">dropdown-menu</attribute>
+													<attribute key="id" xsi:type="stringAttribute">language</attribute>
 													<attribute key="outline" xsi:type="outlineAttribute">
 														<x>910</x>
 														<y>79</y>
@@ -7130,6 +7149,7 @@
 													<containedComponents retestId="img">
 														<identifyingAttributes>
 															<attributes>
+																<attribute key="class" xsi:type="stringAttribute">img-lang</attribute>
 																<attribute key="outline" xsi:type="outlineAttribute">
 																	<x>931</x>
 																	<y>99</y>
@@ -7243,6 +7263,7 @@
 											<containedComponents retestId="li">
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="class" xsi:type="stringAttribute">lang-selected</attribute>
 														<attribute key="outline" xsi:type="outlineAttribute">
 															<x>911</x>
 															<y>80</y>
@@ -7405,6 +7426,7 @@
 												<containedComponents retestId="img">
 													<identifyingAttributes>
 														<attributes>
+															<attribute key="class" xsi:type="stringAttribute">img-lang</attribute>
 															<attribute key="outline" xsi:type="outlineAttribute">
 																<x>931</x>
 																<y>97</y>
@@ -8305,6 +8327,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents retestId="section">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">intro</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>96</y>
@@ -8383,6 +8406,8 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<containedComponents retestId="div">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="class" xsi:type="stringAttribute">freeow freeow-top-right</attribute>
+								<attribute key="id" xsi:type="stringAttribute">freeow</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>890</x>
 									<y>106</y>
@@ -8478,6 +8503,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<containedComponents retestId="div">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="id" xsi:type="stringAttribute">intro-slider</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>96</y>
@@ -8548,6 +8574,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 						<containedComponents retestId="ul">
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="class" xsi:type="stringAttribute">slides</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>0</x>
 										<y>96</y>
@@ -8736,6 +8763,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<containedComponents retestId="div">
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="class" xsi:type="stringAttribute">row</attribute>
 											<attribute key="outline" xsi:type="outlineAttribute">
 												<x>90</x>
 												<y>96</y>
@@ -8846,6 +8874,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents retestId="div">
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="class" xsi:type="stringAttribute">slider-text</attribute>
 												<attribute key="outline" xsi:type="outlineAttribute">
 													<x>141</x>
 													<y>126</y>
@@ -9409,6 +9438,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents retestId="div">
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="class" xsi:type="stringAttribute">seven columns slider-image right</attribute>
 												<attribute key="outline" xsi:type="outlineAttribute">
 													<x>515</x>
 													<y>254</y>
@@ -9744,6 +9774,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents retestId="iframe">
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="class" xsi:type="stringAttribute">youtube-player</attribute>
 													<attribute key="outline" xsi:type="outlineAttribute">
 														<x>535</x>
 														<y>344</y>
@@ -9832,6 +9863,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents retestId="div">
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="class" xsi:type="stringAttribute">five columns slider-text left</attribute>
 												<attribute key="outline" xsi:type="outlineAttribute">
 													<x>90</x>
 													<y>254</y>
@@ -10763,6 +10795,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<containedComponents retestId="div">
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="class" xsi:type="stringAttribute">row</attribute>
 											<attribute key="outline" xsi:type="outlineAttribute">
 												<x>90</x>
 												<y>729</y>
@@ -10873,6 +10906,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents retestId="div">
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="class" xsi:type="stringAttribute">slider-text</attribute>
 												<attribute key="outline" xsi:type="outlineAttribute">
 													<x>141</x>
 													<y>759</y>
@@ -11061,6 +11095,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents retestId="img">
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="class" xsi:type="stringAttribute">tick</attribute>
 														<attribute key="outline" xsi:type="outlineAttribute">
 															<x>492</x>
 															<y>759</y>
@@ -11346,6 +11381,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents retestId="div">
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="class" xsi:type="stringAttribute">five columns</attribute>
 												<attribute key="outline" xsi:type="outlineAttribute">
 													<x>90</x>
 													<y>885</y>
@@ -11560,6 +11596,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents retestId="div">
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="class" xsi:type="stringAttribute">seven columns</attribute>
 												<attribute key="outline" xsi:type="outlineAttribute">
 													<x>515</x>
 													<y>885</y>
@@ -11658,6 +11695,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents retestId="div">
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="class" xsi:type="stringAttribute">slider-text</attribute>
 													<attribute key="outline" xsi:type="outlineAttribute">
 														<x>535</x>
 														<y>897</y>
@@ -12320,6 +12358,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<containedComponents retestId="div">
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="class" xsi:type="stringAttribute">row</attribute>
 											<attribute key="outline" xsi:type="outlineAttribute">
 												<x>90</x>
 												<y>1346</y>
@@ -12430,6 +12469,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents retestId="div">
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="class" xsi:type="stringAttribute">slider-text</attribute>
 												<attribute key="outline" xsi:type="outlineAttribute">
 													<x>141</x>
 													<y>1376</y>
@@ -12618,6 +12658,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents retestId="img">
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="class" xsi:type="stringAttribute">tick</attribute>
 														<attribute key="outline" xsi:type="outlineAttribute">
 															<x>477</x>
 															<y>1376</y>
@@ -12903,6 +12944,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents retestId="div">
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="class" xsi:type="stringAttribute">six columns</attribute>
 												<attribute key="outline" xsi:type="outlineAttribute">
 													<x>90</x>
 													<y>1502</y>
@@ -13001,6 +13043,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents retestId="div">
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="class" xsi:type="stringAttribute">slider-text</attribute>
 													<attribute key="outline" xsi:type="outlineAttribute">
 														<x>110</x>
 														<y>1514</y>
@@ -13345,6 +13388,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents retestId="div">
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="class" xsi:type="stringAttribute">six columns</attribute>
 												<attribute key="outline" xsi:type="outlineAttribute">
 													<x>600</x>
 													<y>1502</y>
@@ -13837,6 +13881,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 								<containedComponents retestId="div">
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="class" xsi:type="stringAttribute">row</attribute>
 											<attribute key="outline" xsi:type="outlineAttribute">
 												<x>90</x>
 												<y>1963</y>
@@ -13947,6 +13992,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents retestId="div">
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="class" xsi:type="stringAttribute">slider-text</attribute>
 												<attribute key="outline" xsi:type="outlineAttribute">
 													<x>141</x>
 													<y>1993</y>
@@ -14135,6 +14181,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 											<containedComponents retestId="img">
 												<identifyingAttributes>
 													<attributes>
+														<attribute key="class" xsi:type="stringAttribute">tick</attribute>
 														<attribute key="outline" xsi:type="outlineAttribute">
 															<x>378</x>
 															<y>1993</y>
@@ -14420,6 +14467,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents retestId="div">
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="class" xsi:type="stringAttribute">five columns</attribute>
 												<attribute key="outline" xsi:type="outlineAttribute">
 													<x>90</x>
 													<y>2119</y>
@@ -14871,6 +14919,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 									<containedComponents retestId="div">
 										<identifyingAttributes>
 											<attributes>
+												<attribute key="class" xsi:type="stringAttribute">seven columns</attribute>
 												<attribute key="outline" xsi:type="outlineAttribute">
 													<x>515</x>
 													<y>2119</y>
@@ -14969,6 +15018,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 										<containedComponents retestId="div">
 											<identifyingAttributes>
 												<attributes>
+													<attribute key="class" xsi:type="stringAttribute">slider-text</attribute>
 													<attribute key="outline" xsi:type="outlineAttribute">
 														<x>535</x>
 														<y>2131</y>
@@ -15555,6 +15605,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents retestId="section">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">info</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>2558</y>
@@ -15641,6 +15692,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 					<containedComponents retestId="div">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="class" xsi:type="stringAttribute">row</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>90</x>
 									<y>2618</y>
@@ -15723,6 +15775,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 						<containedComponents retestId="div">
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="class" xsi:type="stringAttribute">bgrid-thirds s-bgrid-halves</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>90</x>
 										<y>2618</y>
@@ -15793,6 +15846,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<containedComponents retestId="div">
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="class" xsi:type="stringAttribute">columns</attribute>
 										<attribute key="outline" xsi:type="outlineAttribute">
 											<x>90</x>
 											<y>2618</y>
@@ -16124,6 +16178,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<containedComponents retestId="div">
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="class" xsi:type="stringAttribute">columns s-first</attribute>
 										<attribute key="outline" xsi:type="outlineAttribute">
 											<x>430</x>
 											<y>2618</y>
@@ -16385,6 +16440,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 							<containedComponents retestId="div">
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="class" xsi:type="stringAttribute">columns</attribute>
 										<attribute key="outline" xsi:type="outlineAttribute">
 											<x>770</x>
 											<y>2618</y>
@@ -16926,6 +16982,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents retestId="meta">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="name" xsi:type="stringAttribute">description</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>0</y>
@@ -16961,6 +17018,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents retestId="meta">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="name" xsi:type="stringAttribute">date</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>0</y>
@@ -16996,6 +17054,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents retestId="meta">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="name" xsi:type="stringAttribute">copyright</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>0</y>
@@ -17171,6 +17230,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents retestId="meta">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="name" xsi:type="stringAttribute">viewport</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>0</y>
@@ -17241,6 +17301,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents retestId="meta">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="name" xsi:type="stringAttribute">description</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>0</y>
@@ -17276,6 +17337,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents retestId="meta">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="name" xsi:type="stringAttribute">author</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>0</y>
@@ -17311,6 +17373,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents retestId="meta">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="name" xsi:type="stringAttribute">robots</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>0</y>
@@ -17486,6 +17549,7 @@ console.log(&quot;For more info, please go to https://www.retest.de/karriere.&qu
 				<containedComponents retestId="meta">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="name" xsi:type="stringAttribute">author</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>0</y>
