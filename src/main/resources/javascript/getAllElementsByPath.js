@@ -43,10 +43,17 @@ function transform(node) {
 		result[attributeName] = attributValue;
 	}
 	var style = window.getComputedStyle(node);
+	var parentStyle = [];
+	try {
+	    parentStyle = window.getComputedStyle(node.parentNode);
+	}
+	catch(err) {}
 	for (var i = 0; i < args.length; i++) {
 		var attributeName = args[i];
 		if (!result[attributeName]) {
-			result[attributeName] = style[attributeName];
+			if (parentStyle[attributeName] != style[attributeName]) {
+				result[attributeName] = style[attributeName];
+			}
 		}
 	}
 	// They need special treatment
