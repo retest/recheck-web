@@ -557,50 +557,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<attribute key="type" xsi:type="stringAttribute">B</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>border-bottom-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-image-width</key>
-										<value xsi:type="xsd:string">1</value>
-									</entry>
-									<entry>
-										<key>border-left-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-right-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-top-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>caret-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>column-rule-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>outline-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>text-decoration-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 						</containedComponents>
 					</containedComponents>
 					<containedComponents retestId="link_with_double">
@@ -696,14 +653,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>text-indent</key>
-									<value xsi:type="xsd:string">80%</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents retestId="br">
 							<identifyingAttributes>
 								<attributes>
@@ -718,50 +668,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>border-bottom-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-left-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-right-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-top-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>caret-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>column-rule-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>outline-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>text-decoration-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>text-indent</key>
-										<value xsi:type="xsd:string">80%</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 						</containedComponents>
 					</containedComponents>
 				</containedComponents>
@@ -1280,10 +1187,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											<key>padding-top</key>
 											<value xsi:type="xsd:string">1px</value>
 										</entry>
-										<entry>
-											<key>vertical-align</key>
-											<value xsi:type="xsd:string">middle</value>
-										</entry>
 									</attributes>
 								</attributes>
 								<containedComponents retestId="beforespace">
@@ -1301,14 +1204,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 										</attributes>
 									</identifyingAttributes>
-									<attributes>
-										<attributes>
-											<entry>
-												<key>border-spacing</key>
-												<value xsi:type="xsd:string">2px 2px</value>
-											</entry>
-										</attributes>
-									</attributes>
+									<attributes/>
 								</containedComponents>
 								<containedComponents retestId="span">
 									<identifyingAttributes>
@@ -1324,14 +1220,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 										</attributes>
 									</identifyingAttributes>
-									<attributes>
-										<attributes>
-											<entry>
-												<key>border-spacing</key>
-												<value xsi:type="xsd:string">2px 2px</value>
-											</entry>
-										</attributes>
-									</attributes>
+									<attributes/>
 								</containedComponents>
 								<containedComponents retestId="afterspace">
 									<identifyingAttributes>
@@ -1348,14 +1237,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 										</attributes>
 									</identifyingAttributes>
-									<attributes>
-										<attributes>
-											<entry>
-												<key>border-spacing</key>
-												<value xsi:type="xsd:string">2px 2px</value>
-											</entry>
-										</attributes>
-									</attributes>
+									<attributes/>
 								</containedComponents>
 							</containedComponents>
 						</containedComponents>
@@ -1395,6 +1277,10 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					<attributes/>
 				</containedComponents>
 			</containedComponents>
+			<screenshot>
+				<persistenceId>window_28cf475cece91d84ef7e883d8106baac7747419209c8218b6cd24aa0fb6750a3</persistenceId>
+				<type>PNG</type>
+			</screenshot>
 		</descriptors>
 	</data>
 </reTestXmlDataContainer>

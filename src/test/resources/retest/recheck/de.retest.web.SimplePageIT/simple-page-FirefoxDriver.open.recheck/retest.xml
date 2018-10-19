@@ -62,38 +62,7 @@
 						<attribute key="type" xsi:type="stringAttribute">BODY</attribute>
 					</attributes>
 				</identifyingAttributes>
-				<attributes>
-					<attributes>
-						<entry>
-							<key>background-size</key>
-							<value xsi:type="xsd:string">auto auto</value>
-						</entry>
-						<entry>
-							<key>border-image-outset</key>
-							<value xsi:type="xsd:string">0</value>
-						</entry>
-						<entry>
-							<key>border-image-repeat</key>
-							<value xsi:type="xsd:string">stretch stretch</value>
-						</entry>
-						<entry>
-							<key>font-family</key>
-							<value xsi:type="xsd:string">serif</value>
-						</entry>
-						<entry>
-							<key>line-height</key>
-							<value xsi:type="xsd:string">19px</value>
-						</entry>
-						<entry>
-							<key>quotes</key>
-							<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-						</entry>
-						<entry>
-							<key>unicode-bidi</key>
-							<value xsi:type="xsd:string">isolate</value>
-						</entry>
-					</attributes>
-				</attributes>
+				<attributes/>
 				<containedComponents retestId="a_link_to_an_icon">
 					<identifyingAttributes>
 						<attributes>
@@ -110,34 +79,7 @@
 							<attribute key="type" xsi:type="stringAttribute">A</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents retestId="div">
 					<identifyingAttributes>
@@ -154,38 +96,7 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents retestId="nested">
 						<identifyingAttributes>
 							<attributes>
@@ -202,38 +113,7 @@
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-								<entry>
-									<key>unicode-bidi</key>
-									<value xsi:type="xsd:string">isolate</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents retestId="div">
@@ -251,38 +131,7 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents retestId="br">
 						<identifyingAttributes>
 							<attributes>
@@ -297,34 +146,7 @@
 								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents retestId="and_block_level">
 						<identifyingAttributes>
@@ -341,38 +163,7 @@
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-								<entry>
-									<key>unicode-bidi</key>
-									<value xsi:type="xsd:string">isolate</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents retestId="a_div_containing">
 						<identifyingAttributes>
@@ -389,38 +180,7 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-								<entry>
-									<key>unicode-bidi</key>
-									<value xsi:type="xsd:string">isolate</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents retestId="div">
@@ -438,38 +198,7 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents retestId="this_section">
 						<identifyingAttributes>
 							<attributes>
@@ -491,18 +220,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
 									<key>line-height</key>
 									<value xsi:type="xsd:string">15px</value>
 								</entry>
@@ -517,14 +234,6 @@
 								<entry>
 									<key>margin-top</key>
 									<value xsi:type="xsd:string">12px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-								<entry>
-									<key>unicode-bidi</key>
-									<value xsi:type="xsd:string">isolate</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -544,38 +253,7 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-								<entry>
-									<key>unicode-bidi</key>
-									<value xsi:type="xsd:string">isolate</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents retestId="after_pre">
 						<identifyingAttributes>
@@ -592,38 +270,7 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-								<entry>
-									<key>unicode-bidi</key>
-									<value xsi:type="xsd:string">isolate</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents retestId="div">
@@ -641,38 +288,7 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents retestId="some_text">
 						<identifyingAttributes>
 							<attributes>
@@ -688,38 +304,7 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-								<entry>
-									<key>unicode-bidi</key>
-									<value xsi:type="xsd:string">isolate</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents retestId="some_more_text">
 						<identifyingAttributes>
@@ -736,38 +321,7 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-								<entry>
-									<key>unicode-bidi</key>
-									<value xsi:type="xsd:string">isolate</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents retestId="cheese">
@@ -786,38 +340,7 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents retestId="div">
 						<identifyingAttributes>
 							<attributes>
@@ -832,38 +355,7 @@
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-								<entry>
-									<key>unicode-bidi</key>
-									<value xsi:type="xsd:string">isolate</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents retestId="div">
 							<identifyingAttributes>
 								<attributes>
@@ -878,38 +370,7 @@
 									<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>background-size</key>
-										<value xsi:type="xsd:string">auto auto</value>
-									</entry>
-									<entry>
-										<key>border-image-outset</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>border-image-repeat</key>
-										<value xsi:type="xsd:string">stretch stretch</value>
-									</entry>
-									<entry>
-										<key>font-family</key>
-										<value xsi:type="xsd:string">serif</value>
-									</entry>
-									<entry>
-										<key>line-height</key>
-										<value xsi:type="xsd:string">19px</value>
-									</entry>
-									<entry>
-										<key>quotes</key>
-										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-									</entry>
-									<entry>
-										<key>unicode-bidi</key>
-										<value xsi:type="xsd:string">isolate</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 							<containedComponents retestId="some_more_text">
 								<identifyingAttributes>
 									<attributes>
@@ -925,38 +386,7 @@
 										<attribute key="type" xsi:type="stringAttribute">P</attribute>
 									</attributes>
 								</identifyingAttributes>
-								<attributes>
-									<attributes>
-										<entry>
-											<key>background-size</key>
-											<value xsi:type="xsd:string">auto auto</value>
-										</entry>
-										<entry>
-											<key>border-image-outset</key>
-											<value xsi:type="xsd:string">0</value>
-										</entry>
-										<entry>
-											<key>border-image-repeat</key>
-											<value xsi:type="xsd:string">stretch stretch</value>
-										</entry>
-										<entry>
-											<key>font-family</key>
-											<value xsi:type="xsd:string">serif</value>
-										</entry>
-										<entry>
-											<key>line-height</key>
-											<value xsi:type="xsd:string">19px</value>
-										</entry>
-										<entry>
-											<key>quotes</key>
-											<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-										</entry>
-										<entry>
-											<key>unicode-bidi</key>
-											<value xsi:type="xsd:string">isolate</value>
-										</entry>
-									</attributes>
-								</attributes>
+								<attributes/>
 							</containedComponents>
 							<containedComponents retestId="and_also">
 								<identifyingAttributes>
@@ -973,38 +403,7 @@
 										<attribute key="type" xsi:type="stringAttribute">P</attribute>
 									</attributes>
 								</identifyingAttributes>
-								<attributes>
-									<attributes>
-										<entry>
-											<key>background-size</key>
-											<value xsi:type="xsd:string">auto auto</value>
-										</entry>
-										<entry>
-											<key>border-image-outset</key>
-											<value xsi:type="xsd:string">0</value>
-										</entry>
-										<entry>
-											<key>border-image-repeat</key>
-											<value xsi:type="xsd:string">stretch stretch</value>
-										</entry>
-										<entry>
-											<key>font-family</key>
-											<value xsi:type="xsd:string">serif</value>
-										</entry>
-										<entry>
-											<key>line-height</key>
-											<value xsi:type="xsd:string">19px</value>
-										</entry>
-										<entry>
-											<key>quotes</key>
-											<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-										</entry>
-										<entry>
-											<key>unicode-bidi</key>
-											<value xsi:type="xsd:string">isolate</value>
-										</entry>
-									</attributes>
-								</attributes>
+								<attributes/>
 							</containedComponents>
 						</containedComponents>
 						<containedComponents retestId="some_text">
@@ -1022,38 +421,7 @@
 									<attribute key="type" xsi:type="stringAttribute">P</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>background-size</key>
-										<value xsi:type="xsd:string">auto auto</value>
-									</entry>
-									<entry>
-										<key>border-image-outset</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>border-image-repeat</key>
-										<value xsi:type="xsd:string">stretch stretch</value>
-									</entry>
-									<entry>
-										<key>font-family</key>
-										<value xsi:type="xsd:string">serif</value>
-									</entry>
-									<entry>
-										<key>line-height</key>
-										<value xsi:type="xsd:string">19px</value>
-									</entry>
-									<entry>
-										<key>quotes</key>
-										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-									</entry>
-									<entry>
-										<key>unicode-bidi</key>
-										<value xsi:type="xsd:string">isolate</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 						</containedComponents>
 					</containedComponents>
 				</containedComponents>
@@ -1072,38 +440,7 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents retestId="hello_world">
 						<identifyingAttributes>
 							<attributes>
@@ -1119,38 +456,7 @@
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-								<entry>
-									<key>unicode-bidi</key>
-									<value xsi:type="xsd:string">isolate</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents retestId="span">
 						<identifyingAttributes>
@@ -1166,34 +472,7 @@
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents retestId="span">
 						<identifyingAttributes>
@@ -1209,34 +488,7 @@
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents retestId="div">
@@ -1254,38 +506,7 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents retestId="documentwritewith">
 						<identifyingAttributes>
 							<attributes>
@@ -1302,34 +523,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">SCRIPT</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents retestId="div">
@@ -1347,38 +541,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents retestId="link_with_leadi">
 						<identifyingAttributes>
 							<attributes>
@@ -1394,34 +557,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents retestId="link_with_trail">
 						<identifyingAttributes>
@@ -1439,34 +575,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents retestId="a">
 						<identifyingAttributes>
@@ -1482,34 +591,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents retestId="link_with_forma">
 							<identifyingAttributes>
 								<attributes>
@@ -1528,68 +610,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attributes>
 								<attributes>
 									<entry>
-										<key>background-size</key>
-										<value xsi:type="xsd:string">auto auto</value>
-									</entry>
-									<entry>
-										<key>border-bottom-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-image-outset</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>border-image-repeat</key>
-										<value xsi:type="xsd:string">stretch stretch</value>
-									</entry>
-									<entry>
-										<key>border-image-width</key>
-										<value xsi:type="xsd:string">1</value>
-									</entry>
-									<entry>
-										<key>border-left-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-right-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-top-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>caret-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>column-rule-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>font-family</key>
-										<value xsi:type="xsd:string">serif</value>
-									</entry>
-									<entry>
 										<key>line-height</key>
 										<value xsi:type="xsd:string">20px</value>
-									</entry>
-									<entry>
-										<key>outline-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>quotes</key>
-										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-									</entry>
-									<entry>
-										<key>text-decoration-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -1611,34 +633,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents retestId="link_with_single">
 						<identifyingAttributes>
@@ -1656,34 +651,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 					<containedComponents retestId="link_with_backs">
 						<identifyingAttributes>
@@ -1701,34 +669,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents retestId="div">
@@ -1748,36 +689,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
 								<key>text-indent</key>
 								<value xsi:type="xsd:string">80%</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -1797,38 +710,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-								<entry>
-									<key>text-indent</key>
-									<value xsi:type="xsd:string">80%</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents retestId="br">
 							<identifyingAttributes>
 								<attributes>
@@ -1843,74 +725,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>background-size</key>
-										<value xsi:type="xsd:string">auto auto</value>
-									</entry>
-									<entry>
-										<key>border-bottom-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-image-outset</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>border-image-repeat</key>
-										<value xsi:type="xsd:string">stretch stretch</value>
-									</entry>
-									<entry>
-										<key>border-left-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-right-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>border-top-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>caret-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>column-rule-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>font-family</key>
-										<value xsi:type="xsd:string">serif</value>
-									</entry>
-									<entry>
-										<key>line-height</key>
-										<value xsi:type="xsd:string">19px</value>
-									</entry>
-									<entry>
-										<key>outline-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>quotes</key>
-										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-									</entry>
-									<entry>
-										<key>text-decoration-color</key>
-										<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
-									</entry>
-									<entry>
-										<key>text-indent</key>
-										<value xsi:type="xsd:string">80%</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 						</containedComponents>
 					</containedComponents>
 				</containedComponents>
@@ -1930,38 +745,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents retestId="form">
 					<identifyingAttributes>
@@ -1977,38 +761,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents retestId="p">
 						<identifyingAttributes>
 							<attributes>
@@ -2023,38 +776,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-								<entry>
-									<key>unicode-bidi</key>
-									<value xsi:type="xsd:string">isolate</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents retestId="input">
 							<identifyingAttributes>
 								<attributes>
@@ -2072,18 +794,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>background-size</key>
-										<value xsi:type="xsd:string">auto auto</value>
-									</entry>
-									<entry>
-										<key>border-image-outset</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>border-image-repeat</key>
-										<value xsi:type="xsd:string">stretch stretch</value>
-									</entry>
 									<entry>
 										<key>font-family</key>
 										<value xsi:type="xsd:string">sans-serif</value>
@@ -2104,10 +814,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<key>margin-right</key>
 										<value xsi:type="xsd:string">3px</value>
 									</entry>
-									<entry>
-										<key>quotes</key>
-										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-									</entry>
 								</attributes>
 							</attributes>
 						</containedComponents>
@@ -2127,34 +833,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<attribute key="type" xsi:type="stringAttribute">LABEL</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>background-size</key>
-										<value xsi:type="xsd:string">auto auto</value>
-									</entry>
-									<entry>
-										<key>border-image-outset</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>border-image-repeat</key>
-										<value xsi:type="xsd:string">stretch stretch</value>
-									</entry>
-									<entry>
-										<key>font-family</key>
-										<value xsi:type="xsd:string">serif</value>
-									</entry>
-									<entry>
-										<key>line-height</key>
-										<value xsi:type="xsd:string">19px</value>
-									</entry>
-									<entry>
-										<key>quotes</key>
-										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 							<containedComponents retestId="br">
 								<identifyingAttributes>
 									<attributes>
@@ -2169,34 +848,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 									</attributes>
 								</identifyingAttributes>
-								<attributes>
-									<attributes>
-										<entry>
-											<key>background-size</key>
-											<value xsi:type="xsd:string">auto auto</value>
-										</entry>
-										<entry>
-											<key>border-image-outset</key>
-											<value xsi:type="xsd:string">0</value>
-										</entry>
-										<entry>
-											<key>border-image-repeat</key>
-											<value xsi:type="xsd:string">stretch stretch</value>
-										</entry>
-										<entry>
-											<key>font-family</key>
-											<value xsi:type="xsd:string">serif</value>
-										</entry>
-										<entry>
-											<key>line-height</key>
-											<value xsi:type="xsd:string">19px</value>
-										</entry>
-										<entry>
-											<key>quotes</key>
-											<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-										</entry>
-									</attributes>
-								</attributes>
+								<attributes/>
 							</containedComponents>
 						</containedComponents>
 					</containedComponents>
@@ -2219,22 +871,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
 								<key>line-height</key>
 								<value xsi:type="xsd:string">39px</value>
 							</entry>
@@ -2245,14 +881,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<entry>
 								<key>margin-top</key>
 								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -2272,34 +900,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">IMG</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents retestId="img">
 					<identifyingAttributes>
@@ -2316,34 +917,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">IMG</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents retestId="a_single_line">
 					<identifyingAttributes>
@@ -2361,38 +935,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents retestId="a_hidden_line">
 					<identifyingAttributes>
@@ -2412,34 +955,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
 							<entry>
 								<key>visibility</key>
 								<value xsi:type="xsd:string">hidden</value>
@@ -2465,38 +980,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents retestId="this_line_has">
 					<identifyingAttributes>
@@ -2514,38 +998,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents retestId="this_line_has">
 					<identifyingAttributes>
@@ -2563,38 +1016,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents retestId="these_lines_">
 					<identifyingAttributes>
@@ -2612,38 +1034,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents retestId="br">
 						<identifyingAttributes>
 							<attributes>
@@ -2658,34 +1049,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 					</containedComponents>
 				</containedComponents>
 				<containedComponents retestId="this">
@@ -2704,38 +1068,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 					<containedComponents retestId="line_has">
 						<identifyingAttributes>
 							<attributes>
@@ -2752,34 +1085,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents retestId="text">
 							<identifyingAttributes>
 								<attributes>
@@ -2795,34 +1101,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<attribute key="type" xsi:type="stringAttribute">EM</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>background-size</key>
-										<value xsi:type="xsd:string">auto auto</value>
-									</entry>
-									<entry>
-										<key>border-image-outset</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>border-image-repeat</key>
-										<value xsi:type="xsd:string">stretch stretch</value>
-									</entry>
-									<entry>
-										<key>font-family</key>
-										<value xsi:type="xsd:string">serif</value>
-									</entry>
-									<entry>
-										<key>line-height</key>
-										<value xsi:type="xsd:string">19px</value>
-									</entry>
-									<entry>
-										<key>quotes</key>
-										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 						</containedComponents>
 					</containedComponents>
 				</containedComponents>
@@ -2842,34 +1121,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents retestId="ab_c1_dtrue">
 					<identifyingAttributes>
@@ -2887,34 +1139,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents retestId="ab">
 					<identifyingAttributes>
@@ -2932,34 +1157,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents retestId="test_">
 					<identifyingAttributes>
@@ -2977,34 +1175,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 				<containedComponents retestId="table">
 					<identifyingAttributes>
@@ -3024,36 +1195,8 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					<attributes>
 						<attributes>
 							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-							<entry>
-								<key>unicode-bidi</key>
-								<value xsi:type="xsd:string">isolate</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -3071,38 +1214,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attribute key="type" xsi:type="stringAttribute">TBODY</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-size</key>
-									<value xsi:type="xsd:string">auto auto</value>
-								</entry>
-								<entry>
-									<key>border-image-outset</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>border-image-repeat</key>
-									<value xsi:type="xsd:string">stretch stretch</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">serif</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">19px</value>
-								</entry>
-								<entry>
-									<key>quotes</key>
-									<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-								</entry>
-								<entry>
-									<key>unicode-bidi</key>
-									<value xsi:type="xsd:string">isolate</value>
-								</entry>
-							</attributes>
-						</attributes>
+						<attributes/>
 						<containedComponents retestId="tr">
 							<identifyingAttributes>
 								<attributes>
@@ -3117,38 +1229,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<attribute key="type" xsi:type="stringAttribute">TR</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>background-size</key>
-										<value xsi:type="xsd:string">auto auto</value>
-									</entry>
-									<entry>
-										<key>border-image-outset</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>border-image-repeat</key>
-										<value xsi:type="xsd:string">stretch stretch</value>
-									</entry>
-									<entry>
-										<key>font-family</key>
-										<value xsi:type="xsd:string">serif</value>
-									</entry>
-									<entry>
-										<key>line-height</key>
-										<value xsi:type="xsd:string">19px</value>
-									</entry>
-									<entry>
-										<key>quotes</key>
-										<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-									</entry>
-									<entry>
-										<key>unicode-bidi</key>
-										<value xsi:type="xsd:string">isolate</value>
-									</entry>
-								</attributes>
-							</attributes>
+							<attributes/>
 							<containedComponents retestId="td">
 								<identifyingAttributes>
 									<attributes>
@@ -3166,42 +1247,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<attributes>
 									<attributes>
 										<entry>
-											<key>background-size</key>
-											<value xsi:type="xsd:string">auto auto</value>
-										</entry>
-										<entry>
-											<key>border-bottom-color</key>
-											<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-										</entry>
-										<entry>
-											<key>border-image-outset</key>
-											<value xsi:type="xsd:string">0</value>
-										</entry>
-										<entry>
-											<key>border-image-repeat</key>
-											<value xsi:type="xsd:string">stretch stretch</value>
-										</entry>
-										<entry>
-											<key>border-left-color</key>
-											<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-										</entry>
-										<entry>
-											<key>border-right-color</key>
-											<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-										</entry>
-										<entry>
-											<key>border-top-color</key>
-											<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
-										</entry>
-										<entry>
-											<key>font-family</key>
-											<value xsi:type="xsd:string">serif</value>
-										</entry>
-										<entry>
-											<key>line-height</key>
-											<value xsi:type="xsd:string">19px</value>
-										</entry>
-										<entry>
 											<key>padding-bottom</key>
 											<value xsi:type="xsd:string">1px</value>
 										</entry>
@@ -3216,18 +1261,6 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<entry>
 											<key>padding-top</key>
 											<value xsi:type="xsd:string">1px</value>
-										</entry>
-										<entry>
-											<key>quotes</key>
-											<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-										</entry>
-										<entry>
-											<key>unicode-bidi</key>
-											<value xsi:type="xsd:string">isolate</value>
-										</entry>
-										<entry>
-											<key>vertical-align</key>
-											<value xsi:type="xsd:string">middle</value>
 										</entry>
 									</attributes>
 								</attributes>
@@ -3246,38 +1279,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 										</attributes>
 									</identifyingAttributes>
-									<attributes>
-										<attributes>
-											<entry>
-												<key>background-size</key>
-												<value xsi:type="xsd:string">auto auto</value>
-											</entry>
-											<entry>
-												<key>border-image-outset</key>
-												<value xsi:type="xsd:string">0</value>
-											</entry>
-											<entry>
-												<key>border-image-repeat</key>
-												<value xsi:type="xsd:string">stretch stretch</value>
-											</entry>
-											<entry>
-												<key>border-spacing</key>
-												<value xsi:type="xsd:string">2px 2px</value>
-											</entry>
-											<entry>
-												<key>font-family</key>
-												<value xsi:type="xsd:string">serif</value>
-											</entry>
-											<entry>
-												<key>line-height</key>
-												<value xsi:type="xsd:string">19px</value>
-											</entry>
-											<entry>
-												<key>quotes</key>
-												<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-											</entry>
-										</attributes>
-									</attributes>
+									<attributes/>
 								</containedComponents>
 								<containedComponents retestId="span">
 									<identifyingAttributes>
@@ -3293,38 +1295,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 										</attributes>
 									</identifyingAttributes>
-									<attributes>
-										<attributes>
-											<entry>
-												<key>background-size</key>
-												<value xsi:type="xsd:string">auto auto</value>
-											</entry>
-											<entry>
-												<key>border-image-outset</key>
-												<value xsi:type="xsd:string">0</value>
-											</entry>
-											<entry>
-												<key>border-image-repeat</key>
-												<value xsi:type="xsd:string">stretch stretch</value>
-											</entry>
-											<entry>
-												<key>border-spacing</key>
-												<value xsi:type="xsd:string">2px 2px</value>
-											</entry>
-											<entry>
-												<key>font-family</key>
-												<value xsi:type="xsd:string">serif</value>
-											</entry>
-											<entry>
-												<key>line-height</key>
-												<value xsi:type="xsd:string">19px</value>
-											</entry>
-											<entry>
-												<key>quotes</key>
-												<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-											</entry>
-										</attributes>
-									</attributes>
+									<attributes/>
 								</containedComponents>
 								<containedComponents retestId="afterspace">
 									<identifyingAttributes>
@@ -3341,38 +1312,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 										</attributes>
 									</identifyingAttributes>
-									<attributes>
-										<attributes>
-											<entry>
-												<key>background-size</key>
-												<value xsi:type="xsd:string">auto auto</value>
-											</entry>
-											<entry>
-												<key>border-image-outset</key>
-												<value xsi:type="xsd:string">0</value>
-											</entry>
-											<entry>
-												<key>border-image-repeat</key>
-												<value xsi:type="xsd:string">stretch stretch</value>
-											</entry>
-											<entry>
-												<key>border-spacing</key>
-												<value xsi:type="xsd:string">2px 2px</value>
-											</entry>
-											<entry>
-												<key>font-family</key>
-												<value xsi:type="xsd:string">serif</value>
-											</entry>
-											<entry>
-												<key>line-height</key>
-												<value xsi:type="xsd:string">19px</value>
-											</entry>
-											<entry>
-												<key>quotes</key>
-												<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-											</entry>
-										</attributes>
-									</attributes>
+									<attributes/>
 								</containedComponents>
 							</containedComponents>
 						</containedComponents>
@@ -3393,34 +1333,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						<attribute key="type" xsi:type="stringAttribute">HEAD</attribute>
 					</attributes>
 				</identifyingAttributes>
-				<attributes>
-					<attributes>
-						<entry>
-							<key>background-size</key>
-							<value xsi:type="xsd:string">auto auto</value>
-						</entry>
-						<entry>
-							<key>border-image-outset</key>
-							<value xsi:type="xsd:string">0</value>
-						</entry>
-						<entry>
-							<key>border-image-repeat</key>
-							<value xsi:type="xsd:string">stretch stretch</value>
-						</entry>
-						<entry>
-							<key>font-family</key>
-							<value xsi:type="xsd:string">serif</value>
-						</entry>
-						<entry>
-							<key>line-height</key>
-							<value xsi:type="xsd:string">19px</value>
-						</entry>
-						<entry>
-							<key>quotes</key>
-							<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-						</entry>
-					</attributes>
-				</attributes>
+				<attributes/>
 				<containedComponents retestId="hello_webdriver">
 					<identifyingAttributes>
 						<attributes>
@@ -3436,34 +1349,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<attribute key="type" xsi:type="stringAttribute">TITLE</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>background-size</key>
-								<value xsi:type="xsd:string">auto auto</value>
-							</entry>
-							<entry>
-								<key>border-image-outset</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>border-image-repeat</key>
-								<value xsi:type="xsd:string">stretch stretch</value>
-							</entry>
-							<entry>
-								<key>font-family</key>
-								<value xsi:type="xsd:string">serif</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">19px</value>
-							</entry>
-							<entry>
-								<key>quotes</key>
-								<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
-							</entry>
-						</attributes>
-					</attributes>
+					<attributes/>
 				</containedComponents>
 			</containedComponents>
 			<screenshot>
