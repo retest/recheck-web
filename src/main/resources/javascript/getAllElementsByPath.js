@@ -57,10 +57,17 @@ function transform(node) {
 		}
 	}
 	// They need special treatment
-	result["x"] = getX(node);
-	result["y"] = getY(node);
-	result["width"] = node.getBoundingClientRect().width;
-	result["height"] = node.getBoundingClientRect().height;
+	if (typeof node.parentNode.getBoundingClientRect === "function") {
+		result["x"] = getX(node) - getX(node.parentNode);
+		result["y"] = getY(node) - getY(node.parentNode);
+		result["width"] = node.getBoundingClientRect().width - node.parentNode.getBoundingClientRect().width;
+		result["height"] = node.getBoundingClientRect().height - node.parentNode.getBoundingClientRect().height;
+	} else {
+		result["x"] = getX(node);
+		result["y"] = getY(node);
+		result["width"] = node.getBoundingClientRect().width;
+		result["height"] = node.getBoundingClientRect().height;
+	}
 	return result;
 }
 
