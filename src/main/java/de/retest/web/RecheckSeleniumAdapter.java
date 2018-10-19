@@ -22,12 +22,17 @@ import org.slf4j.LoggerFactory;
 
 import de.retest.recheck.RecheckAdapter;
 import de.retest.ui.DefaultValueFinder;
+import de.retest.ui.descriptors.DefaultRetestIdProvider;
+import de.retest.ui.descriptors.RetestIdProvider;
 import de.retest.ui.descriptors.RootElement;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategy;
 import ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator;
 
 public class RecheckSeleniumAdapter implements RecheckAdapter {
+
+	// TODO Remove again after retest 3.0.1 release...
+	public final static RetestIdProvider idProvider = new DefaultRetestIdProvider();
 
 	private static final String GET_ALL_ELEMENTS_BY_PATH_JS_PATH = "/javascript/getAllElementsByPath.js";
 
@@ -71,6 +76,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	public RootElement convertToPeers( final Map<String, Map<String, Object>> data, final String title,
 			final BufferedImage screenshot ) {
+		idProvider.reset();
 		final Map<String, WebElementPeer> converted = new HashMap<>();
 		RootElementPeer root = null;
 		for ( final Map.Entry<String, Map<String, Object>> entry : sort( data ) ) {

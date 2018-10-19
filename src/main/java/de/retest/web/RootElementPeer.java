@@ -1,6 +1,6 @@
 package de.retest.web;
 
-import static de.retest.ui.descriptors.RetestIdProviderUtil.getRetestId;
+import static de.retest.web.RecheckSeleniumAdapter.idProvider;
 
 import java.awt.image.BufferedImage;
 
@@ -27,8 +27,9 @@ public class RootElementPeer extends WebElementPeer {
 	public RootElement toElement() {
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
 		final MutableAttributes state = retrieveStateAttributes();
-		return new RootElement( getRetestId( identifyingAttributes ), identifyingAttributes, state.immutable(),
-				ImageUtils.image2Screenshot( SCREENSHOT_PREFIX, screenshot ), convertChildren(), title, 1, title );
+		return new RootElement( idProvider.getRetestId( identifyingAttributes ), identifyingAttributes,
+				state.immutable(), ImageUtils.image2Screenshot( SCREENSHOT_PREFIX, screenshot ), convertChildren(),
+				title, 1, title );
 	}
 
 }

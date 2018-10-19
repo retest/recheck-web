@@ -1,6 +1,6 @@
 package de.retest.web;
 
-import static de.retest.ui.descriptors.RetestIdProviderUtil.getRetestId;
+import static de.retest.web.RecheckSeleniumAdapter.idProvider;
 
 import java.awt.Rectangle;
 import java.util.ArrayList;
@@ -46,7 +46,7 @@ public class WebElementPeer {
 		final List<Element> convertedChildren = convertChildren();
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
 		final MutableAttributes state = retrieveStateAttributes();
-		return new Element( getRetestId( identifyingAttributes ), identifyingAttributes, state.immutable(),
+		return new Element( idProvider.getRetestId( identifyingAttributes ), identifyingAttributes, state.immutable(),
 				convertedChildren, null );
 	}
 
