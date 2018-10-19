@@ -38,11 +38,16 @@ function transform(node) {
 	};
 	var attrs = node.attributes;
 	for (var i = 0; i < attrs.length; i++) {
-		result[attrs[i].name] = attrs[i].value;
+		var attributeName = attrs[i].name;
+		var attributValue = attrs[i].value;
+		result[attributeName] = attributValue;
 	}
 	var style = window.getComputedStyle(node);
 	for (var i = 0; i < args.length; i++) {
-		result[args[i]] = style[args[i]];
+		var attributeName = args[i];
+		if (!result[attributeName]) {
+			result[attributeName] = style[attributeName];
+		}
 	}
 	// They need special treatment
 	result["x"] = getX(node);
