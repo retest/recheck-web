@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="2.4.1" dataType="de.retest.ui.descriptors.SutState" dataTypeVersion="1">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="3.0.0" dataType="de.retest.ui.descriptors.SutState" dataTypeVersion="2">
 	<data xsi:type="sutState">
-		<descriptors screenId="1" screen="Hello WebDriver" title="Hello WebDriver">
+		<descriptors retestId="html" screenId="1" screen="Hello WebDriver" title="Hello WebDriver">
 			<identifyingAttributes>
 				<attributes>
 					<attribute key="outline" xsi:type="outlineAttribute">
@@ -10,7 +10,7 @@
 						<height>1102</height>
 						<width>1366</width>
 					</attribute>
-					<attribute key="path" xsi:type="pathAttribute">//HTML[1]</attribute>
+					<attribute key="path" xsi:type="pathAttribute">HTML[1]</attribute>
 					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 					<attribute key="type" xsi:type="stringAttribute">HTML</attribute>
 				</attributes>
@@ -47,16 +47,17 @@
 					</entry>
 				</attributes>
 			</attributes>
-			<containedComponents>
+			<containedComponents retestId="body">
 				<identifyingAttributes>
 					<attributes>
+						<attribute key="name" xsi:type="stringAttribute">body</attribute>
 						<attribute key="outline" xsi:type="outlineAttribute">
 							<x>8</x>
 							<y>8</y>
 							<height>1086</height>
 							<width>1350</width>
 						</attribute>
-						<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 						<attribute key="type" xsi:type="stringAttribute">BODY</attribute>
 					</attributes>
@@ -93,16 +94,17 @@
 						</entry>
 					</attributes>
 				</attributes>
-				<containedComponents>
+				<containedComponents retestId="a_link_to_an_icon">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">validAnchorTag</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>36</x>
 								<y>1077</y>
 								<height>16</height>
 								<width>103</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/A[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/A[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute">a link to an icon</attribute>
 							<attribute key="type" xsi:type="stringAttribute">A</attribute>
@@ -137,16 +139,17 @@
 						</attributes>
 					</attributes>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="div">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">containsSomeDiv</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>1001</y>
 								<height>19</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[10]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[10]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
@@ -183,16 +186,17 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents>
+					<containedComponents retestId="nested">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="name" xsi:type="stringAttribute">someDiv</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>8</x>
 									<y>1001</y>
 									<height>19</height>
 									<width>1350</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[10]/DIV[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[10]/DIV[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">Nested</attribute>
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
@@ -232,16 +236,17 @@
 						</attributes>
 					</containedComponents>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="div">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">multiline</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>138</y>
 								<height>74</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
@@ -278,7 +283,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents>
+					<containedComponents retestId="br">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -287,7 +292,7 @@
 									<height>0</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[1]/BR[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]/BR[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 							</attributes>
@@ -321,7 +326,7 @@
 							</attributes>
 						</attributes>
 					</containedComponents>
-					<containedComponents>
+					<containedComponents retestId="and_block_level">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -330,7 +335,7 @@
 									<height>19</height>
 									<width>1350</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[1]/DIV[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]/DIV[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">and block level elements</attribute>
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
@@ -369,7 +374,7 @@
 							</attributes>
 						</attributes>
 					</containedComponents>
-					<containedComponents>
+					<containedComponents retestId="a_div_containing">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -378,7 +383,7 @@
 									<height>19</height>
 									<width>1350</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[1]/P[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]/P[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">A div containing</attribute>
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
@@ -418,16 +423,17 @@
 						</attributes>
 					</containedComponents>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="div">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">div-with-pre</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>442</y>
 								<height>126</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
@@ -464,16 +470,17 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents>
+					<containedComponents retestId="this_section">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="id" xsi:type="stringAttribute">preformatted</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>8</x>
 									<y>477</y>
 									<height>56</height>
 									<width>1350</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[2]/PRE[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[2]/PRE[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">This section has a preformatted
     text block    
@@ -522,7 +529,7 @@
 							</attributes>
 						</attributes>
 					</containedComponents>
-					<containedComponents>
+					<containedComponents retestId="before_pre">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -531,7 +538,7 @@
 									<height>19</height>
 									<width>1350</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[2]/P[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[2]/P[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">before pre</attribute>
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
@@ -570,7 +577,7 @@
 							</attributes>
 						</attributes>
 					</containedComponents>
-					<containedComponents>
+					<containedComponents retestId="after_pre">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -579,7 +586,7 @@
 									<height>19</height>
 									<width>1350</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[2]/P[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[2]/P[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 								<attribute key="text" xsi:type="textAttribute">after pre</attribute>
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
@@ -619,16 +626,17 @@
 						</attributes>
 					</containedComponents>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="div">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">twoblocks</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>585</y>
 								<height>54</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[3]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
@@ -665,7 +673,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents>
+					<containedComponents retestId="some_text">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -674,7 +682,7 @@
 									<height>19</height>
 									<width>1350</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[3]/P[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[3]/P[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">Some text</attribute>
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
@@ -713,7 +721,7 @@
 							</attributes>
 						</attributes>
 					</containedComponents>
-					<containedComponents>
+					<containedComponents retestId="some_more_text">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -722,7 +730,7 @@
 									<height>19</height>
 									<width>1350</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[3]/P[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[3]/P[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 								<attribute key="text" xsi:type="textAttribute">Some more text</attribute>
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
@@ -762,16 +770,17 @@
 						</attributes>
 					</containedComponents>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="cheese">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">nestedblocks</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>655</y>
 								<height>160</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 							<attribute key="text" xsi:type="textAttribute">Cheese</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
@@ -809,7 +818,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents>
+					<containedComponents retestId="div">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -818,7 +827,7 @@
 									<height>90</height>
 									<width>1350</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]/DIV[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 							</attributes>
@@ -855,7 +864,7 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedComponents>
+						<containedComponents retestId="div">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="outline" xsi:type="outlineAttribute">
@@ -864,7 +873,7 @@
 										<height>54</height>
 										<width>1350</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 								</attributes>
@@ -901,7 +910,7 @@
 									</entry>
 								</attributes>
 							</attributes>
-							<containedComponents>
+							<containedComponents retestId="some_more_text">
 								<identifyingAttributes>
 									<attributes>
 										<attribute key="outline" xsi:type="outlineAttribute">
@@ -910,7 +919,7 @@
 											<height>19</height>
 											<width>1350</width>
 										</attribute>
-										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]/P[1]</attribute>
+										<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]/P[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 										<attribute key="text" xsi:type="textAttribute">Some more text</attribute>
 										<attribute key="type" xsi:type="stringAttribute">P</attribute>
@@ -949,7 +958,7 @@
 									</attributes>
 								</attributes>
 							</containedComponents>
-							<containedComponents>
+							<containedComponents retestId="and_also">
 								<identifyingAttributes>
 									<attributes>
 										<attribute key="outline" xsi:type="outlineAttribute">
@@ -958,7 +967,7 @@
 											<height>19</height>
 											<width>1350</width>
 										</attribute>
-										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]/P[2]</attribute>
+										<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]/P[2]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 										<attribute key="text" xsi:type="textAttribute">and also</attribute>
 										<attribute key="type" xsi:type="stringAttribute">P</attribute>
@@ -998,7 +1007,7 @@
 								</attributes>
 							</containedComponents>
 						</containedComponents>
-						<containedComponents>
+						<containedComponents retestId="some_text">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="outline" xsi:type="outlineAttribute">
@@ -1007,7 +1016,7 @@
 										<height>19</height>
 										<width>1350</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[4]/DIV[1]/P[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]/DIV[1]/P[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">Some text</attribute>
 									<attribute key="type" xsi:type="stringAttribute">P</attribute>
@@ -1048,16 +1057,17 @@
 						</containedComponents>
 					</containedComponents>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="div">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">collapsingtext</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>815</y>
 								<height>19</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[5]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
@@ -1094,7 +1104,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents>
+					<containedComponents retestId="hello_world">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -1103,7 +1113,7 @@
 									<height>19</height>
 									<width>1350</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[5]/DIV[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[5]/DIV[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">Hello, world</attribute>
 								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
@@ -1142,7 +1152,7 @@
 							</attributes>
 						</attributes>
 					</containedComponents>
-					<containedComponents>
+					<containedComponents retestId="span">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -1151,7 +1161,7 @@
 									<height>0</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[5]/SPAN[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[5]/SPAN[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 							</attributes>
@@ -1185,7 +1195,7 @@
 							</attributes>
 						</attributes>
 					</containedComponents>
-					<containedComponents>
+					<containedComponents retestId="span">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -1194,7 +1204,7 @@
 									<height>0</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[5]/SPAN[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[5]/SPAN[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 							</attributes>
@@ -1229,16 +1239,17 @@
 						</attributes>
 					</containedComponents>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="div">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">withDocumentWrite</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>834</y>
 								<height>19</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[6]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
@@ -1275,7 +1286,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents>
+					<containedComponents retestId="documentwritewith">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -1284,7 +1295,7 @@
 									<height>0</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[6]/SCRIPT[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[6]/SCRIPT[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">document.write(&quot;with document.write&quot;);
 document.write(&quot; and with document.write again&quot;);</attribute>
@@ -1321,16 +1332,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</containedComponents>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="div">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">links</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>924</y>
 								<height>19</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
@@ -1367,7 +1379,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents>
+					<containedComponents retestId="link_with_leadi">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -1376,7 +1388,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<height>16</height>
 									<width>148</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">link with leading space</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
@@ -1411,16 +1423,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</attributes>
 						</attributes>
 					</containedComponents>
-					<containedComponents>
+					<containedComponents retestId="link_with_trail">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="id" xsi:type="stringAttribute">linkWithTrailingSpace</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>160</x>
 									<y>926</y>
 									<height>16</height>
 									<width>151</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 								<attribute key="text" xsi:type="textAttribute">link with trailing space</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
@@ -1455,7 +1468,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</attributes>
 						</attributes>
 					</containedComponents>
-					<containedComponents>
+					<containedComponents retestId="a">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -1464,7 +1477,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<height>16</height>
 									<width>170</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[3]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
@@ -1497,7 +1510,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</entry>
 							</attributes>
 						</attributes>
-						<containedComponents>
+						<containedComponents retestId="link_with_forma">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="outline" xsi:type="outlineAttribute">
@@ -1506,7 +1519,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<height>16</height>
 										<width>170</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[3]/B[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[3]/B[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">link with formatting tags</attribute>
 									<attribute key="type" xsi:type="stringAttribute">B</attribute>
@@ -1582,16 +1595,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</attributes>
 						</containedComponents>
 					</containedComponents>
-					<containedComponents>
+					<containedComponents retestId="link_with_double">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="id" xsi:type="stringAttribute">quote</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>485</x>
 									<y>926</y>
 									<height>16</height>
 									<width>166</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[4]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[4]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 								<attribute key="text" xsi:type="textAttribute">link with &quot; (double quote)</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
@@ -1626,16 +1640,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</attributes>
 						</attributes>
 					</containedComponents>
-					<containedComponents>
+					<containedComponents retestId="link_with_single">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="id" xsi:type="stringAttribute">squote</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>654</x>
 									<y>926</y>
 									<height>16</height>
 									<width>157</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[5]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[5]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 								<attribute key="text" xsi:type="textAttribute">link with ' (single quote)</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
@@ -1670,16 +1685,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</attributes>
 						</attributes>
 					</containedComponents>
-					<containedComponents>
+					<containedComponents retestId="link_with_backs">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="id" xsi:type="stringAttribute">backslash</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>815</x>
 									<y>926</y>
 									<height>16</height>
 									<width>143</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[7]/A[6]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[6]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 								<attribute key="text" xsi:type="textAttribute">link with \ (backslash)</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
@@ -1715,7 +1731,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</containedComponents>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="div">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="outline" xsi:type="outlineAttribute">
@@ -1724,7 +1740,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<height>38</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[8]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[8]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
@@ -1765,16 +1781,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents>
+					<containedComponents retestId="this_link_should">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="id" xsi:type="stringAttribute">multilinelink</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>8</x>
 									<y>945</y>
 									<height>35</height>
 									<width>1218</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[8]/A[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[8]/A[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">this link should break</attribute>
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
@@ -1812,7 +1829,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</entry>
 							</attributes>
 						</attributes>
-						<containedComponents>
+						<containedComponents retestId="br">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="outline" xsi:type="outlineAttribute">
@@ -1821,7 +1838,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<height>0</height>
 										<width>0</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[8]/A[1]/BR[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[8]/A[1]/BR[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 								</attributes>
@@ -1897,16 +1914,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</containedComponents>
 					</containedComponents>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="top_level">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="name" xsi:type="stringAttribute">someDiv</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>982</y>
 								<height>19</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/DIV[9]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[9]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
 							<attribute key="text" xsi:type="textAttribute">Top level</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
@@ -1945,7 +1963,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</attributes>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="form">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="outline" xsi:type="outlineAttribute">
@@ -1954,7 +1972,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<height>39</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
 						</attributes>
@@ -1991,7 +2009,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents>
+					<containedComponents retestId="p">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -2000,7 +2018,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<height>39</height>
 									<width>1350</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]/P[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/P[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
@@ -2037,16 +2055,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</entry>
 							</attributes>
 						</attributes>
-						<containedComponents>
+						<containedComponents retestId="input">
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="id" xsi:type="stringAttribute">checkbox1</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>12</x>
 										<y>872</y>
 										<height>13</height>
 										<width>13</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]/P[1]/INPUT[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/P[1]/INPUT[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
 								</attributes>
@@ -2092,16 +2111,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</attributes>
 							</attributes>
 						</containedComponents>
-						<containedComponents>
+						<containedComponents retestId="foo">
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="id" xsi:type="stringAttribute">label1</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>8</x>
 										<y>871</y>
 										<height>35</height>
 										<width>45</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]/P[1]/LABEL[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/P[1]/LABEL[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">foo</attribute>
 									<attribute key="type" xsi:type="stringAttribute">LABEL</attribute>
@@ -2135,7 +2155,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									</entry>
 								</attributes>
 							</attributes>
-							<containedComponents>
+							<containedComponents retestId="br">
 								<identifyingAttributes>
 									<attributes>
 										<attribute key="outline" xsi:type="outlineAttribute">
@@ -2144,7 +2164,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											<height>0</height>
 											<width>0</width>
 										</attribute>
-										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/FORM[1]/P[1]/LABEL[1]/BR[1]</attribute>
+										<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/P[1]/LABEL[1]/BR[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 										<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 									</attributes>
@@ -2181,7 +2201,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</containedComponents>
 					</containedComponents>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="heading">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="outline" xsi:type="outlineAttribute">
@@ -2190,7 +2210,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<height>38</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/H1[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/H1[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute">Heading</attribute>
 							<attribute key="type" xsi:type="stringAttribute">H1</attribute>
@@ -2237,16 +2257,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</attributes>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="img">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">invalidImgTag</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>1089</y>
 								<height>0</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/IMG[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/IMG[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="type" xsi:type="stringAttribute">IMG</attribute>
 						</attributes>
@@ -2280,16 +2301,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</attributes>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="img">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">validImgTag</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>1065</y>
 								<height>24</height>
 								<width>24</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/IMG[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/IMG[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="type" xsi:type="stringAttribute">IMG</attribute>
 						</attributes>
@@ -2323,16 +2345,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</attributes>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="a_single_line">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">oneline</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>68</y>
 								<height>19</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute">A single line of text</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
@@ -2371,16 +2394,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</attributes>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="a_hidden_line">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">hiddenline</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>103</y>
 								<height>19</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="text" xsi:type="textAttribute">A hidden line of text</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
@@ -2423,16 +2447,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</attributes>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="this_line_has">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">lotsofspaces</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>247</y>
 								<height>19</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[3]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="text" xsi:type="textAttribute">This line has lots
 
@@ -2473,16 +2498,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</attributes>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="this_line_has">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">nbsp</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>282</y>
 								<height>19</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[4]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 							<attribute key="text" xsi:type="textAttribute">This line has a non-breaking space</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
@@ -2521,16 +2547,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</attributes>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="this_line_has">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">nbspandspaces</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>317</y>
 								<height>19</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[5]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 							<attribute key="text" xsi:type="textAttribute">This line has a   non-breaking space and spaces</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
@@ -2569,16 +2596,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</attributes>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="these_lines_">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">multilinenbsp</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>353</y>
 								<height>38</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[6]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 							<attribute key="text" xsi:type="textAttribute">These lines  </attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
@@ -2616,7 +2644,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents>
+					<containedComponents retestId="br">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -2625,7 +2653,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<height>0</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[6]/BR[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[6]/BR[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 							</attributes>
@@ -2660,16 +2688,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</containedComponents>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="this">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">inline</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>407</y>
 								<height>19</height>
 								<width>1350</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[7]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
 							<attribute key="text" xsi:type="textAttribute">This</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
@@ -2707,16 +2736,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents>
+					<containedComponents retestId="line_has">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="id" xsi:type="stringAttribute">inlinespan</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>40</x>
 									<y>409</y>
 									<height>16</height>
 									<width>80</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[7]/SPAN[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[7]/SPAN[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">line has</attribute>
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
@@ -2750,7 +2780,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</entry>
 							</attributes>
 						</attributes>
-						<containedComponents>
+						<containedComponents retestId="text">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="outline" xsi:type="outlineAttribute">
@@ -2759,7 +2789,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<height>16</height>
 										<width>23</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/P[7]/SPAN[1]/EM[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[7]/SPAN[1]/EM[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">text</attribute>
 									<attribute key="type" xsi:type="stringAttribute">EM</attribute>
@@ -2796,16 +2826,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</containedComponents>
 					</containedComponents>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="an_inline_element">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">span</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>213</y>
 								<height>16</height>
 								<width>115</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SPAN[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/SPAN[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute">An inline element</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
@@ -2840,16 +2871,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</attributes>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="ab_c1_dtrue">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">simpleJsonText</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>143</x>
 								<y>1077</y>
 								<height>16</height>
 								<width>134</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SPAN[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/SPAN[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="text" xsi:type="textAttribute">{a=&quot;b&quot;, c=1, d=true}</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
@@ -2884,16 +2916,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</attributes>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="ab">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">complexJsonText</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>282</x>
 								<y>1077</y>
 								<height>16</height>
 								<width>91</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SPAN[3]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/SPAN[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="text" xsi:type="textAttribute">{a=&quot;\\b\\\&quot;'\'&quot;}</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
@@ -2928,16 +2961,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</attributes>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="test_">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">trimmedSpace</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>377</x>
 								<y>1077</y>
 								<height>16</height>
 								<width>956</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/SPAN[4]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/SPAN[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 							<attribute key="text" xsi:type="textAttribute">â€€â€â€‚â€ƒâ€„â€…â€†â€‡â€ˆâ€‰â€Šâ€‹â€Œâ€â€¯âŸâ ã€€test  â€€â€â€‚â€ƒâ€„â€…â€†â€‡â€ˆâ€‰â€Šâ€‹â€Œâ€â€¯âŸâ ã€€</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
@@ -2972,16 +3006,17 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</attributes>
 					</attributes>
 				</containedComponents>
-				<containedComponents>
+				<containedComponents retestId="table">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="id" xsi:type="stringAttribute">wrappingtext</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>1020</y>
 								<height>44</height>
 								<width>85</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/TABLE[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="type" xsi:type="stringAttribute">TABLE</attribute>
 						</attributes>
@@ -3022,7 +3057,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents>
+					<containedComponents retestId="tbody">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
@@ -3031,7 +3066,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									<height>40</height>
 									<width>81</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/TABLE[1]/TBODY[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="type" xsi:type="stringAttribute">TBODY</attribute>
 							</attributes>
@@ -3068,7 +3103,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								</entry>
 							</attributes>
 						</attributes>
-						<containedComponents>
+						<containedComponents retestId="tr">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="outline" xsi:type="outlineAttribute">
@@ -3077,7 +3112,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										<height>40</height>
 										<width>81</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="type" xsi:type="stringAttribute">TR</attribute>
 								</attributes>
@@ -3114,7 +3149,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 									</entry>
 								</attributes>
 							</attributes>
-							<containedComponents>
+							<containedComponents retestId="td">
 								<identifyingAttributes>
 									<attributes>
 										<attribute key="outline" xsi:type="outlineAttribute">
@@ -3123,7 +3158,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 											<height>40</height>
 											<width>81</width>
 										</attribute>
-										<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]</attribute>
+										<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 										<attribute key="type" xsi:type="stringAttribute">TD</attribute>
 									</attributes>
@@ -3196,7 +3231,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										</entry>
 									</attributes>
 								</attributes>
-								<containedComponents>
+								<containedComponents retestId="beforespace">
 									<identifyingAttributes>
 										<attributes>
 											<attribute key="outline" xsi:type="outlineAttribute">
@@ -3205,7 +3240,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 												<height>16</height>
 												<width>79</width>
 											</attribute>
-											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[1]</attribute>
+											<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute">beforeSpace</attribute>
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
@@ -3244,7 +3279,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										</attributes>
 									</attributes>
 								</containedComponents>
-								<containedComponents>
+								<containedComponents retestId="span">
 									<identifyingAttributes>
 										<attributes>
 											<attribute key="outline" xsi:type="outlineAttribute">
@@ -3253,7 +3288,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 												<height>16</height>
 												<width>0</width>
 											</attribute>
-											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[2]</attribute>
+											<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[2]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 										</attributes>
@@ -3291,7 +3326,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 										</attributes>
 									</attributes>
 								</containedComponents>
-								<containedComponents>
+								<containedComponents retestId="afterspace">
 									<identifyingAttributes>
 										<attributes>
 											<attribute key="outline" xsi:type="outlineAttribute">
@@ -3300,7 +3335,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 												<height>16</height>
 												<width>67</width>
 											</attribute>
-											<attribute key="path" xsi:type="pathAttribute">//HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[3]</attribute>
+											<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[3]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 											<attribute key="text" xsi:type="textAttribute">afterSpace</attribute>
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
@@ -3344,7 +3379,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 					</containedComponents>
 				</containedComponents>
 			</containedComponents>
-			<containedComponents>
+			<containedComponents retestId="head">
 				<identifyingAttributes>
 					<attributes>
 						<attribute key="outline" xsi:type="outlineAttribute">
@@ -3353,7 +3388,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 							<height>0</height>
 							<width>0</width>
 						</attribute>
-						<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">HTML[1]/HEAD[1]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 						<attribute key="type" xsi:type="stringAttribute">HEAD</attribute>
 					</attributes>
@@ -3386,7 +3421,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 						</entry>
 					</attributes>
 				</attributes>
-				<containedComponents>
+				<containedComponents retestId="hello_webdriver">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="outline" xsi:type="outlineAttribute">
@@ -3395,7 +3430,7 @@ document.write(&quot; and with document.write again&quot;);</attribute>
 								<height>0</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">//HTML[1]/HEAD[1]/TITLE[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/HEAD[1]/TITLE[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute">Hello WebDriver</attribute>
 							<attribute key="type" xsi:type="stringAttribute">TITLE</attribute>
