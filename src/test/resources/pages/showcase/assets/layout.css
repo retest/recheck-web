@@ -449,12 +449,11 @@ ul#nav ul li a {
 	display: inline; 
 	margin: 0 0 3px;
 	font: 15px notosans-bold, sans-serif;
-	line-height: 22px !important; 
+	line-height: 40px !important; 
 }
 
 #signupForm .sign-up-submit {
 	display: inline; 
-	padding: 18px 24px;
 	font-size: 15px;
 	line-height: 22px !important;
 	margin: 0;
