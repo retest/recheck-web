@@ -52,7 +52,14 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	private final DefaultValuesProvider defaultValuesProvider;
 
 	public RecheckSeleniumAdapter() {
-		System.setProperty( "de.retest.ignoredAttributes", "outline" );
+		String ignoredAttributes = System.getProperty( "de.retest.ignoredAttributes" );
+		if ( ignoredAttributes == null ) {
+			ignoredAttributes = "outline";
+		} else {
+			ignoredAttributes += "," + "outline";
+		}
+		System.setProperty( "de.retest.ignoredAttributes", ignoredAttributes );
+
 		defaultValuesProvider = new DefaultValuesProvider();
 	}
 
