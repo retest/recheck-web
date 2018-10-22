@@ -2,6 +2,7 @@ package de.retest.web;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.junit.jupiter.api.parallel.ResourceAccessMode.READ;
 import static org.junit.jupiter.api.parallel.ResourceAccessMode.READ_WRITE;
 import static org.junit.jupiter.api.parallel.Resources.SYSTEM_PROPERTIES;
 
@@ -16,6 +17,7 @@ import org.junit.jupiter.api.parallel.ResourceLock;
 class AttributesProviderTest {
 
 	@Test
+	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ )
 	void joined_attributes_should_equal_concated_attributes() throws Exception {
 		final AttributesProvider cut = AttributesProvider.getTestInstance();
 		final List<String> concatedAttributes =

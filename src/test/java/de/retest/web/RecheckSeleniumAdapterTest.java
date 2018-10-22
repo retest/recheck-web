@@ -39,6 +39,7 @@ class RecheckSeleniumAdapterTest {
 	}
 
 	@Test
+	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ )
 	void convertToPeers_should_result_in_valid_tree() throws Exception {
 		final Map<String, Map<String, Object>> input = new HashMap<>();
 		input.put( "//HTML[1]/BODY[1]", toHashMap( "BODY" ) );
