@@ -21,6 +21,8 @@ import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import de.retest.Properties;
+import de.retest.elementcollection.RecheckIgnore;
 import de.retest.recheck.RecheckAdapter;
 import de.retest.ui.DefaultValueFinder;
 import de.retest.ui.descriptors.IdentifyingAttributes;
@@ -52,7 +54,14 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	private final DefaultValuesProvider defaultValuesProvider;
 
 	public RecheckSeleniumAdapter() {
-		System.setProperty( "de.retest.ignoredAttributes", "outline" );
+		String ignoredAttributes = System.getProperty( RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY );
+		if ( ignoredAttributes == null ) {
+			ignoredAttributes = "outline";
+		} else {
+			ignoredAttributes += Properties.VALUES_SEPARATOR + "outline";
+		}
+		System.setProperty( RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY, ignoredAttributes );
+
 		defaultValuesProvider = new DefaultValuesProvider();
 	}
 
