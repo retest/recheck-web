@@ -2,7 +2,6 @@ package de.retest.web;
 
 import static java.util.Collections.singletonList;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.parallel.ResourceAccessMode.READ;
 import static org.junit.jupiter.api.parallel.ResourceAccessMode.READ_WRITE;
 import static org.junit.jupiter.api.parallel.Resources.SYSTEM_PROPERTIES;
 
@@ -39,7 +38,7 @@ class RecheckSeleniumAdapterTest {
 	}
 
 	@Test
-	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ )
+	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ_WRITE )
 	@SystemProperty( key = RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY )
 	void convertToPeers_should_result_in_valid_tree() throws Exception {
 		final Map<String, Map<String, Object>> input = new HashMap<>();
@@ -73,7 +72,7 @@ class RecheckSeleniumAdapterTest {
 	}
 
 	@Test
-	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ )
+	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ_WRITE )
 	@SystemProperty( key = RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY )
 	void outline_should_be_the_only_ignored_attribute_if_property_is_null() {
 		assertThat( System.getProperty( RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY ) ).isNull();
