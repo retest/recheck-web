@@ -54,11 +54,10 @@ class RecheckSeleniumAdapterTest {
 		input.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[3]", toHashMap( "LI" ) );
 		input.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]", toHashMap( "UL" ) );
 		input.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]", toHashMap( "A" ) );
-		final RecheckSeleniumAdapter adapter = new RecheckSeleniumAdapter();
-		final RootElement root = adapter.convertToPeers( input, "title", null );
+		final RecheckSeleniumAdapter cut = new RecheckSeleniumAdapter();
+		final RootElement root = cut.convertToPeers( input, "title", null );
 
-		final RootElementDifferenceFinder diffFinder =
-				new RootElementDifferenceFinder( adapter.getDefaultValueFinder() );
+		final RootElementDifferenceFinder diffFinder = new RootElementDifferenceFinder( cut.getDefaultValueFinder() );
 		final List<RootElementDifference> diffs =
 				diffFinder.findDifferences( singletonList( root ), singletonList( root ) );
 		assertThat( diffs ).isEmpty();
@@ -66,12 +65,12 @@ class RecheckSeleniumAdapterTest {
 
 	@Test
 	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ_WRITE )
-	void outline_should_be_added_to_ignored_attributes() {
+	void outline_should_be_added_to_ignored_attributes_if_property_is_not_null() {
 		final Properties backup = new Properties();
 		backup.putAll( System.getProperties() );
 
 		System.setProperty( RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY, "foo" );
-		final RecheckSeleniumAdapter cut = new RecheckSeleniumAdapter();
+		new RecheckSeleniumAdapter();
 		assertThat( System.getProperty( RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY ) ).isEqualTo( "foo;outline" );
 
 		System.setProperties( backup );
@@ -79,8 +78,9 @@ class RecheckSeleniumAdapterTest {
 
 	@Test
 	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ )
-	void outline_should_be_the_only_ignored_attribute() {
-		final RecheckSeleniumAdapter cut = new RecheckSeleniumAdapter();
+	void outline_should_be_the_only_ignored_attribute_if_property_is_null() {
+		assertThat( System.getProperty( RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY ) ).isNull();
+		new RecheckSeleniumAdapter();
 		assertThat( System.getProperty( RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY ) ).isEqualTo( "outline" );
 	}
 
