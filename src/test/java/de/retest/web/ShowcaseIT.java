@@ -31,6 +31,8 @@ class ShowcaseIT {
 		final Path showcasePath = Paths.get( "src/test/resources/pages/showcase/retest.html" );
 		driver.get( showcasePath.toUri().toURL().toString() );
 
+		Thread.sleep( 1000 );
+
 		re.check( driver, "open" );
 
 		re.capTest();
