@@ -14,6 +14,8 @@ import java.util.stream.Stream;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.ResourceLock;
 
+import de.retest.web.testutils.SystemProperty;
+
 class AttributesProviderTest {
 
 	@Test
@@ -28,13 +30,11 @@ class AttributesProviderTest {
 
 	@Test
 	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ_WRITE )
+	@SystemProperty( key = AttributesProvider.ATTRIBUTES_FILE_PROPERTY, value = "foo" )
 	void invalid_attributes_file_should_yield_UncheckedIOException() throws Exception {
-		final String attributesFile = "foo";
-		System.setProperty( AttributesProvider.ATTRIBUTES_FILE_PROPERTY, attributesFile );
 		assertThatThrownBy( AttributesProvider::getTestInstance ) //
 				.isExactlyInstanceOf( UncheckedIOException.class ) //
-				.hasMessage( "Cannot read attributes file '" + attributesFile + "'." );
-		System.clearProperty( AttributesProvider.ATTRIBUTES_FILE_PROPERTY );
+				.hasMessage( "Cannot read attributes file 'foo'." );
 	}
 
 }

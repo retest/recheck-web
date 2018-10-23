@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.parallel.Resources.SYSTEM_PROPERTIES;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Properties;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -20,6 +19,7 @@ import de.retest.elementcollection.RecheckIgnore;
 import de.retest.ui.descriptors.RootElement;
 import de.retest.ui.diff.RootElementDifference;
 import de.retest.ui.diff.RootElementDifferenceFinder;
+import de.retest.web.testutils.SystemProperty;
 
 class RecheckSeleniumAdapterTest {
 
@@ -40,6 +40,7 @@ class RecheckSeleniumAdapterTest {
 
 	@Test
 	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ )
+	@SystemProperty( key = RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY )
 	void convertToPeers_should_result_in_valid_tree() throws Exception {
 		final Map<String, Map<String, Object>> input = new HashMap<>();
 		input.put( "//HTML[1]/BODY[1]", toHashMap( "BODY" ) );
@@ -65,19 +66,15 @@ class RecheckSeleniumAdapterTest {
 
 	@Test
 	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ_WRITE )
+	@SystemProperty( key = RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY, value = "foo" )
 	void outline_should_be_added_to_ignored_attributes_if_property_is_not_null() {
-		final Properties backup = new Properties();
-		backup.putAll( System.getProperties() );
-
-		System.setProperty( RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY, "foo" );
 		new RecheckSeleniumAdapter();
 		assertThat( System.getProperty( RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY ) ).isEqualTo( "foo;outline" );
-
-		System.setProperties( backup );
 	}
 
 	@Test
 	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ )
+	@SystemProperty( key = RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY )
 	void outline_should_be_the_only_ignored_attribute_if_property_is_null() {
 		assertThat( System.getProperty( RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY ) ).isNull();
 		new RecheckSeleniumAdapter();
