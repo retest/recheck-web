@@ -2,13 +2,18 @@ package de.retest.web;
 
 import static java.util.Collections.singletonList;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.parallel.ResourceAccessMode.READ;
+import static org.junit.jupiter.api.parallel.ResourceAccessMode.READ_WRITE;
+import static org.junit.jupiter.api.parallel.Resources.SYSTEM_PROPERTIES;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.ResourceLock;
 
 import de.retest.elementcollection.ElementCollection;
 import de.retest.elementcollection.RecheckIgnore;
@@ -56,6 +61,26 @@ class RecheckSeleniumAdapterTest {
 		final List<RootElementDifference> diffs =
 				diffFinder.findDifferences( singletonList( root ), singletonList( root ) );
 		assertThat( diffs ).isEmpty();
+	}
+
+	@Test
+	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ_WRITE )
+	void outline_should_be_added_to_ignored_attributes() {
+		final Properties backup = new Properties();
+		backup.putAll( System.getProperties() );
+
+		System.setProperty( RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY, "foo" );
+		final RecheckSeleniumAdapter cut = new RecheckSeleniumAdapter();
+		assertThat( System.getProperty( RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY ) ).isEqualTo( "foo;outline" );
+
+		System.setProperties( backup );
+	}
+
+	@Test
+	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ )
+	void outline_should_be_the_only_ignored_attribute() {
+		final RecheckSeleniumAdapter cut = new RecheckSeleniumAdapter();
+		assertThat( System.getProperty( RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY ) ).isEqualTo( "outline" );
 	}
 
 	private Map<String, Object> toHashMap( final String tagName ) {
