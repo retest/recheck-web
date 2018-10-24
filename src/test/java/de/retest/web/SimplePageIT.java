@@ -31,6 +31,8 @@ class SimplePageIT {
 		final Path simplePagePath = Paths.get( "src/test/resources/pages/simple-page.html" );
 		driver.get( simplePagePath.toUri().toURL().toString() );
 
+		Thread.sleep( 1000 );
+
 		re.check( driver, "open" );
 
 		re.capTest();

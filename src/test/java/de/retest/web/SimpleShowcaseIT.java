@@ -49,6 +49,8 @@ public class SimpleShowcaseIT {
 		final Path showcasePath = Paths.get( "src/test/resources/pages/showcase/retest.html" );
 		driver.get( showcasePath.toUri().toURL().toString() );
 
+		Thread.sleep( 1000 );
+
 		// Single call instead of multiple assertions (doesn't fail on differences).
 		re.check( driver, "index" );
 
