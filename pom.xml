@@ -75,33 +75,28 @@
 	<dependencies>
 		<dependency>
 			<groupId>de.retest</groupId>
-			<artifactId>recheck</artifactId>
-			<version>0.4.3</version>
-			<exclusions>
-				<exclusion>
-					<groupId>de.retest</groupId>
-					<artifactId>retest-model</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-
-		<dependency>
-			<!-- Remove once transitive dependencies work correctly -->
-			<groupId>de.retest</groupId>
-			<artifactId>retest-model</artifactId>
-			<version>4.0.2</version>
-		</dependency>
-
-		<dependency>
-			<groupId>de.retest</groupId>
 			<artifactId>retest</artifactId>
-			<version>3.0.0</version>
+			<version>3.0.1</version>
 			<exclusions>
 				<exclusion>
 					<groupId>com.google.guava</groupId>
 					<artifactId>guava</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+
+		<!-- TODO Why isn't resolved transitively via retest? -->
+		<dependency>
+			<groupId>de.retest</groupId>
+			<artifactId>recheck</artifactId>
+			<version>0.4.3</version>
+		</dependency>
+
+		<!-- TODO Why isn't resolved transitively via retest? -->
+		<dependency>
+			<groupId>de.retest</groupId>
+			<artifactId>retest-model</artifactId>
+			<version>4.0.4</version>
 		</dependency>
 
 		<dependency>
