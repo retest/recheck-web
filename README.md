@@ -41,7 +41,7 @@ Download recheck-web [here on GitHub](https://github.com/retest/recheck-web/rele
 <dependency>
   <groupId>de.retest</groupId>
   <artifactId>recheck-web</artifactId>
-  <version>0.3.0</version>
+  <version>0.4.0</version>
 </dependency>
 ```
 
