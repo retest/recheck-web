@@ -1,6 +1,7 @@
 # ![recheck logo](https://user-images.githubusercontent.com/1871610/41766965-b69d46a2-7608-11e8-97b4-c6b0f047d455.png) for web apps
 
 [![Build Status](https://travis-ci.com/retest/recheck-web.svg?branch=master)](https://travis-ci.com/retest/recheck-web)
+[![Latest recheck-web on Maven Central](https://maven-badges.herokuapp.com/maven-central/de.retest/recheck-web/badge.svg?style=flat)](https://mvnrepository.com/artifact/de.retest/recheck-web)
 [![license](https://img.shields.io/badge/license-AGPL-brightgreen.svg)](https://github.com/retest/recheck-web/blob/master/LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/retest/recheck-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![code with hearth by retest](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-retest-C1D82F.svg)](https://retest.de/en/)
@@ -32,18 +33,15 @@ Even better: Using the [retest GUI](https://retest.de/en/) (or the soon to come 
 
 Currently available as a Java API with support for JUnit 4 and 5 as well as TestNG.
 
+## Set up
+
+Download recheck-web here on [GitHub](https://https://github.com/retest/recheck-web/releases) or add it as dependency through [Maven Central](https://search.maven.org/search?q=g:de.retest%20a:recheck-web):
+
+* group ID: `de.retest`
+* artifact ID: `recheck-web`
+* version: [![Latest recheck-web on Maven Central](https://maven-badges.herokuapp.com/maven-central/de.retest/recheck-web/badge.svg?style=flat)](https://mvnrepository.com/artifact/de.retest/recheck-web)
 
 ## Usage
-
-Download recheck-web [here on GitHub](https://github.com/retest/recheck-web/releases/) or add it as a Maven dependency in your POM:
-
-```xml
-<dependency>
-  <groupId>de.retest</groupId>
-  <artifactId>recheck-web</artifactId>
-  <version>0.4.0</version>
-</dependency>
-```
 
 Then replace the assertions in your Selenium test. An example test could look like so ([simplified](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/SimpleShowcaseIT.java)):
 
