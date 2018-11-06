@@ -93,4 +93,8 @@ public class WebData {
 		throw new ConversionException( "Don't know how to convert " + value + " of "
 				+ (value != null ? value.getClass() : "null") + " to int!" );
 	}
+
+	public String getTag() {
+		return getAsString( "tagName" );
+	}
 }
