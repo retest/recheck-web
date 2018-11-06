@@ -59,6 +59,10 @@ class RecheckSeleniumAdapterTest {
 	private Map<String, Object> toHashMap( final String tagName ) {
 		final Map<String, Object> result = new HashMap<>();
 		result.put( "tagName", tagName );
+		result.put( "x", "10" );
+		result.put( "y", "10" );
+		result.put( "height", "100" );
+		result.put( "width", "100" );
 		return result;
 	}
 }
