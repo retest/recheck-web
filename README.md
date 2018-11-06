@@ -31,7 +31,9 @@ Even better: Using the [retest GUI](https://retest.de/en/) (or the soon to come 
 
 ## Prerequisites
 
-Currently available as a Java API with support for JUnit 4 and 5 as well as TestNG.
+Operates on top of [Selenium](https://www.seleniumhq.org/projects/webdriver/) only. Selenium has become an official browser standard, supported by all major browsers. Learn more about Selenium and [how to install](https://www.seleniumhq.org/download/).
+
+Currently available as a Java API with support for [JUnit 4](https://junit.org/junit4/) and [JUnit 5](https://junit.org/junit5/) as well as [TestNG](https://testng.org/). 
 
 ## Setup
 
