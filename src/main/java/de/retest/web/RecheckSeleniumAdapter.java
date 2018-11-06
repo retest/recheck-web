@@ -94,8 +94,11 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 			logger.debug( "Found element with path '{}'.", path );
 			final String parentPath = getParentPath( path );
 			final WebData webData = new WebData( entry.getValue() );
-			if ( !webData.isShown() && !webData.getTag().equalsIgnoreCase( "title" )
-					&& !webData.getTag().equalsIgnoreCase( "meta" ) && !webData.getTag().equalsIgnoreCase( "head" ) ) {
+			if ( !webData.isShown() //
+					&& !webData.getTag().equalsIgnoreCase( "title" ) //
+					&& !webData.getTag().equalsIgnoreCase( "meta" ) //
+					&& !webData.getTag().equalsIgnoreCase( "head" )
+					&& !webData.getTag().equalsIgnoreCase( "option" ) ) {
 				continue;
 			}
 			WebElementPeer peer = converted.get( path );
