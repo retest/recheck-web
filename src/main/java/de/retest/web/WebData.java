@@ -94,6 +94,19 @@ public class WebData {
 				+ (value != null ? value.getClass() : "null") + " to int!" );
 	}
 
+	public boolean isShown() {
+		final Boolean shown = (Boolean) wrappedData.get( "shown" );
+		if ( shown != null && !shown ) {
+			return false;
+		}
+		final Rectangle outline = getOutline();
+		if ( outline == null
+				|| outline.getWidth() == 0 && outline.getHeight() == 0 && outline.getX() == 0 && outline.getY() == 0 ) {
+			return false;
+		}
+		return true;
+	}
+
 	public String getTag() {
 		return getAsString( "tagName" );
 	}
