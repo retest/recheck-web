@@ -421,38 +421,6 @@
 						</attributes>
 					</identifyingAttributes>
 					<attributes/>
-					<containedComponents retestId="aed40b81-969f-4e39-8026-0acdb6ce6fbe">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>0</x>
-									<y>0</y>
-									<height>0</height>
-									<width>0</width>
-								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/BR[1]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-					<containedComponents retestId="2197eec8-cc53-4510-9513-00e462cab910">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>0</x>
-									<y>0</y>
-									<height>0</height>
-									<width>0</width>
-								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/BR[2]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
 					<containedComponents retestId="9bf19bee-c4eb-4711-8f43-29679e720ddf">
 						<identifyingAttributes>
 							<attributes>
@@ -516,42 +484,6 @@
 							</attributes>
 						</identifyingAttributes>
 						<attributes/>
-					</containedComponents>
-					<containedComponents retestId="66b2516d-7ea8-4863-b126-7c991b4e7bc9">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="name" xsi:type="stringAttribute">hidden</attribute>
-								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>0</x>
-									<y>0</y>
-									<height>0</height>
-									<width>0</width>
-								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/INPUT[10]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">none</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">Arial</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">13.3333px</value>
-								</entry>
-								<entry>
-									<key>margin-bottom</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-							</attributes>
-						</attributes>
 					</containedComponents>
 					<containedComponents retestId="e2a8d878-a8ab-4667-8e35-40319546183c">
 						<identifyingAttributes>
@@ -6311,26 +6243,6 @@
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="a768d5a9-00b7-43c4-bf0d-b46f4272256e">
-					<identifyingAttributes>
-						<attributes>
-							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>0</x>
-								<y>0</y>
-								<height>0</height>
-								<width>0</width>
-							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/HEAD[1]/SCRIPT[1]</attribute>
-							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="text" xsi:type="textAttribute">function changePage() {
-            var newLocation = '/common/page/3';
-            window.location = newLocation;
-        }</attribute>
-							<attribute key="type" xsi:type="stringAttribute">SCRIPT</attribute>
-						</attributes>
-					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
 				<containedComponents retestId="2073062f-d328-4a04-83c5-55295014a6cd">
 					<identifyingAttributes>
 						<attributes>

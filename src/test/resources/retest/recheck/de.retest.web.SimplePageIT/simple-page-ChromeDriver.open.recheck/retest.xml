@@ -457,24 +457,6 @@
 						</attributes>
 					</identifyingAttributes>
 					<attributes/>
-					<containedComponents retestId="4e6be2fe-273c-413d-950e-147e94a09602">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>0</x>
-									<y>0</y>
-									<height>0</height>
-									<width>0</width>
-								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[6]/SCRIPT[1]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="text" xsi:type="textAttribute">document.write(&quot;with document.write&quot;);
-document.write(&quot; and with document.write again&quot;);</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SCRIPT</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
 				</containedComponents>
 				<containedComponents retestId="9e12e214-2bbe-42dc-a225-154036a83950">
 					<identifyingAttributes>
