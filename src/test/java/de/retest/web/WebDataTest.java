@@ -57,6 +57,28 @@ class WebDataTest {
 				.hasMessage( "Don't know how to convert null of null to int!" );
 	}
 
+	@Test
+	void isShown_should_return_false_if_no_rectangle() {
+		final Map<String, Object> input = new HashMap<>();
+		input.put( AttributesConfig.X, "0" );
+		input.put( AttributesConfig.Y, "0" );
+		input.put( AttributesConfig.WIDTH, "0" );
+		input.put( AttributesConfig.HEIGHT, "0" );
+
+		assertThat( new WebData( input ).isShown() ).isFalse();
+	}
+
+	@Test
+	void isShown_should_return_true_if_proper_outline() {
+		final Map<String, Object> input = new HashMap<>();
+		input.put( AttributesConfig.X, "0" );
+		input.put( AttributesConfig.Y, "0" );
+		input.put( AttributesConfig.WIDTH, "10" );
+		input.put( AttributesConfig.HEIGHT, "10" );
+
+		assertThat( new WebData( input ).isShown() ).isTrue();
+	}
+
 	@ParameterizedTest
 	@MethodSource( "data" )
 	void int_conversion_should_handle_various_types( final WebData cut, final String key, final int expected )
