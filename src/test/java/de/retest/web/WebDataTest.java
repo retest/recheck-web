@@ -58,25 +58,39 @@ class WebDataTest {
 	}
 
 	@Test
-	void isShown_should_return_false_if_no_rectangle() {
-		final Map<String, Object> input = new HashMap<>();
-		input.put( AttributesConfig.X, 0 );
-		input.put( AttributesConfig.Y, 0 );
-		input.put( AttributesConfig.WIDTH, 0 );
-		input.put( AttributesConfig.HEIGHT, 0 );
-
+	void isShown_should_be_false_when_rectangle_is_invisible() {
+		final Map<String, Object> input = getWrappedDataWithRectangle( false );
 		assertThat( new WebData( input ).isShown() ).isFalse();
 	}
 
 	@Test
-	void isShown_should_return_true_if_proper_outline() {
-		final Map<String, Object> input = new HashMap<>();
-		input.put( AttributesConfig.X, 0 );
-		input.put( AttributesConfig.Y, 0 );
-		input.put( AttributesConfig.WIDTH, 10 );
-		input.put( AttributesConfig.HEIGHT, 10 );
-
+	void isShown_should_be_true_when_rectangle_is_visible() {
+		final Map<String, Object> input = getWrappedDataWithRectangle( true );
 		assertThat( new WebData( input ).isShown() ).isTrue();
+	}
+
+	@Test
+	void isShown_should_be_false_when_shown_but_rectangle_is_invisible() throws Exception {
+		final Map<String, Object> input = getWrappedDataWithRectangle( false );
+		input.put( "shown", true );
+		assertThat( new WebData( input ).isShown() ).isFalse();
+	}
+
+	@Test
+	void isShown_should_be_true_when_shown_and_rectangle_is_visible() throws Exception {
+		final Map<String, Object> input = getWrappedDataWithRectangle( true );
+		input.put( "shown", true );
+		assertThat( new WebData( input ).isShown() ).isTrue();
+	}
+
+	private Map<String, Object> getWrappedDataWithRectangle( final boolean isVisible ) {
+		final int size = isVisible ? 1 : 0;
+		final Map<String, Object> wrappedData = new HashMap<>();
+		wrappedData.put( AttributesConfig.X, size );
+		wrappedData.put( AttributesConfig.Y, size );
+		wrappedData.put( AttributesConfig.WIDTH, size );
+		wrappedData.put( AttributesConfig.HEIGHT, size );
+		return wrappedData;
 	}
 
 	@ParameterizedTest
