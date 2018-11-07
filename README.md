@@ -31,7 +31,7 @@ Even better: Using the [retest GUI](https://retest.de/en/) (or the soon to come 
 
 ## Prerequisites
 
-Operates on top of [Selenium](https://www.seleniumhq.org/projects/webdriver/) only. Selenium has become an official browser standard, supported by all major browsers. Learn more about Selenium and [how to install](https://www.seleniumhq.org/download/).
+Operates on top of [Selenium](https://www.seleniumhq.org/projects/webdriver/). Selenium has become an official [W3C standard](https://www.w3.org/TR/webdriver1/), supported by all major browsers. Learn more about Selenium and [how to install it](https://www.seleniumhq.org/download/).
 
 Currently available as a Java API with support for [JUnit 4](https://junit.org/junit4/) and [JUnit 5](https://junit.org/junit5/) as well as [TestNG](https://testng.org/). 
 
