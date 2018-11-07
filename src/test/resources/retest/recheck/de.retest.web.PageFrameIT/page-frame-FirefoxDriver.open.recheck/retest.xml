@@ -668,86 +668,6 @@
 						</identifyingAttributes>
 						<attributes/>
 					</containedComponents>
-					<containedComponents retestId="0b39b221-c940-46e2-a36d-afdabb28e2ed">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="name" xsi:type="stringAttribute">hidden</attribute>
-								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>0</x>
-									<y>0</y>
-									<height>0</height>
-									<width>0</width>
-								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/INPUT[10]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>background-color</key>
-									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-								</entry>
-								<entry>
-									<key>border-bottom-color</key>
-									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>border-left-color</key>
-									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>border-right-color</key>
-									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>border-top-color</key>
-									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>caret-color</key>
-									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>column-rule-color</key>
-									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">none</value>
-								</entry>
-								<entry>
-									<key>font-family</key>
-									<value xsi:type="xsd:string">sans-serif</value>
-								</entry>
-								<entry>
-									<key>font-size</key>
-									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
-									<key>margin-bottom</key>
-									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
-									<key>outline-color</key>
-									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>text-decoration-color</key>
-									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-							</attributes>
-						</attributes>
-					</containedComponents>
 					<containedComponents retestId="f72b16f4-473b-4fc5-b7b2-db77c7200f1f">
 						<identifyingAttributes>
 							<attributes>
@@ -7246,26 +7166,6 @@
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="f5ac8576-0194-4e94-9b73-cd410a830329">
-					<identifyingAttributes>
-						<attributes>
-							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>0</x>
-								<y>0</y>
-								<height>0</height>
-								<width>0</width>
-							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/HEAD[1]/SCRIPT[1]</attribute>
-							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="text" xsi:type="textAttribute">function changePage() {
-            var newLocation = '/common/page/3';
-            window.location = newLocation;
-        }</attribute>
-							<attribute key="type" xsi:type="stringAttribute">SCRIPT</attribute>
-						</attributes>
-					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
 				<containedComponents retestId="b2e194dd-6bd8-45b0-b9b4-aa0f6db7ab90">
 					<identifyingAttributes>
 						<attributes>

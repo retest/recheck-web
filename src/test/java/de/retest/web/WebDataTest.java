@@ -57,6 +57,42 @@ class WebDataTest {
 				.hasMessage( "Don't know how to convert null of null to int!" );
 	}
 
+	@Test
+	void isShown_should_be_false_when_rectangle_is_invisible() {
+		final Map<String, Object> wrappedData = getWrappedDataWithRectangle( false );
+		assertThat( new WebData( wrappedData ).isShown() ).isFalse();
+	}
+
+	@Test
+	void isShown_should_be_true_when_rectangle_is_visible() {
+		final Map<String, Object> wrappedData = getWrappedDataWithRectangle( true );
+		assertThat( new WebData( wrappedData ).isShown() ).isTrue();
+	}
+
+	@Test
+	void isShown_should_be_false_when_shown_but_rectangle_is_invisible() throws Exception {
+		final Map<String, Object> wrappedData = getWrappedDataWithRectangle( false );
+		wrappedData.put( "shown", true );
+		assertThat( new WebData( wrappedData ).isShown() ).isFalse();
+	}
+
+	@Test
+	void isShown_should_be_true_when_shown_and_rectangle_is_visible() throws Exception {
+		final Map<String, Object> wrappedData = getWrappedDataWithRectangle( true );
+		wrappedData.put( "shown", true );
+		assertThat( new WebData( wrappedData ).isShown() ).isTrue();
+	}
+
+	private Map<String, Object> getWrappedDataWithRectangle( final boolean isVisible ) {
+		final int size = isVisible ? 1 : 0;
+		final Map<String, Object> wrappedData = new HashMap<>();
+		wrappedData.put( AttributesConfig.X, size );
+		wrappedData.put( AttributesConfig.Y, size );
+		wrappedData.put( AttributesConfig.WIDTH, size );
+		wrappedData.put( AttributesConfig.HEIGHT, size );
+		return wrappedData;
+	}
+
 	@ParameterizedTest
 	@MethodSource( "data" )
 	void int_conversion_should_handle_various_types( final WebData cut, final String key, final int expected )

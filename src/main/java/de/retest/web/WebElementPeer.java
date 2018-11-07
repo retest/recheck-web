@@ -55,7 +55,7 @@ public class WebElementPeer {
 
 		attributes.add( new PathAttribute( Path.fromString( path ) ) );
 		attributes.add( new SuffixAttribute( extractSuffix() ) );
-		attributes.add( new StringAttribute( "type", webData.getAsString( "tagName" ) ) );
+		attributes.add( new StringAttribute( "type", webData.getTag() ) );
 
 		final String text = webData.getAsString( "text" );
 		if ( StringUtils.isNotBlank( text ) ) {
@@ -88,8 +88,7 @@ public class WebElementPeer {
 		final MutableAttributes state = new MutableAttributes();
 		for ( final String attribute : AttributesProvider.getInstance().getAttributes() ) {
 			final String attributeValue = webData.getAsString( attribute );
-			if ( attributeValue != null
-					&& !defaults.isDefault( webData.getAsString( "tagName" ), attribute, attributeValue ) ) {
+			if ( attributeValue != null && !defaults.isDefault( webData.getTag(), attribute, attributeValue ) ) {
 				state.put( attribute, attributeValue );
 			}
 		}
