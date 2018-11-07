@@ -11,31 +11,53 @@ class WebDataFilterTest {
 
 	@Test
 	void should_ignore_invisible_elements() {
-		final WebData input = createInput( "a" );
+		final WebData input = createInvisibleWebDataForTag( "a" );
 		assertThat( WebDataFilter.shouldIgnore( input ) ).isTrue();
 	}
 
 	@Test
+	void should_not_ignore_visible_elements() throws Exception {
+		final WebData input = createVisibleWebDataForTag( "a" );
+		assertThat( WebDataFilter.shouldIgnore( input ) ).isFalse();
+	}
+
+	@Test
 	void should_not_ignore_head_element() {
-		final WebData input = createInput( "head" );
+		final WebData input = createInvisibleWebDataForTag( "head" );
 		assertThat( WebDataFilter.shouldIgnore( input ) ).isFalse();
 	}
 
 	@Test
 	void should_not_ignore_title_element() {
-		final WebData input = createInput( "title" );
+		final WebData input = createInvisibleWebDataForTag( "title" );
 		assertThat( WebDataFilter.shouldIgnore( input ) ).isFalse();
 	}
 
-	private WebData createInput( final String tagName ) {
+	private WebData createInvisibleWebDataForTag( final String tagName ) {
+		final Map<String, Object> wrappedData = createWrappedData( tagName );
+		wrappedData.put( "x", 0 );
+		wrappedData.put( "y", 0 );
+		wrappedData.put( "width", 0 );
+		wrappedData.put( "height", 0 );
+		final WebData webData = new WebData( wrappedData );
+		return webData;
+	}
+
+	private WebData createVisibleWebDataForTag( final String tagName ) {
+		final Map<String, Object> wrappedData = createWrappedData( tagName );
+		wrappedData.put( "x", 1 );
+		wrappedData.put( "y", 1 );
+		wrappedData.put( "width", 1 );
+		wrappedData.put( "height", 1 );
+		wrappedData.put( "shown", true );
+		final WebData webData = new WebData( wrappedData );
+		return webData;
+	}
+
+	private Map<String, Object> createWrappedData( final String tagName ) {
 		final Map<String, Object> wrappedData = new HashMap<>();
-		wrappedData.put( "x", "0" );
-		wrappedData.put( "y", "0" );
-		wrappedData.put( "width", "0" );
-		wrappedData.put( "height", "0" );
 		wrappedData.put( "tagName", tagName );
-		final WebData input = new WebData( wrappedData );
-		return input;
+		return wrappedData;
 	}
 
 }
