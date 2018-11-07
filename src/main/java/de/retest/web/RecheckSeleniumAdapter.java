@@ -94,7 +94,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 			logger.debug( "Found element with path '{}'.", path );
 			final String parentPath = getParentPath( path );
 			final WebData webData = new WebData( entry.getValue() );
-			if ( shouldIgnore( webData ) ) {
+			if ( WebDataFilter.shouldIgnore( webData ) ) {
 				continue;
 			}
 			WebElementPeer peer = converted.get( path );
@@ -119,14 +119,6 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		}
 
 		return root.toElement();
-	}
-
-	private boolean shouldIgnore( final WebData webData ) {
-		return !webData.isShown() //
-				&& !webData.getTag().equalsIgnoreCase( "title" ) //
-				&& !webData.getTag().equalsIgnoreCase( "meta" ) //
-				&& !webData.getTag().equalsIgnoreCase( "head" ) //
-				&& !webData.getTag().equalsIgnoreCase( "option" );
 	}
 
 	private List<Map.Entry<String, Map<String, Object>>> sort( final Map<String, Map<String, Object>> data ) {
