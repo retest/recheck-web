@@ -1,9 +1,8 @@
 package de.retest.web;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
-import java.util.HashMap;
-import java.util.Map;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
 
@@ -34,30 +33,21 @@ class WebDataFilterTest {
 	}
 
 	private WebData createInvisibleWebDataForTag( final String tagName ) {
-		final Map<String, Object> wrappedData = createWrappedData( tagName );
-		wrappedData.put( "x", 0 );
-		wrappedData.put( "y", 0 );
-		wrappedData.put( "width", 0 );
-		wrappedData.put( "height", 0 );
-		final WebData webData = new WebData( wrappedData );
+		final WebData webData = createWebDataMock( tagName );
+		when( webData.isShown() ).thenReturn( false );
 		return webData;
 	}
 
 	private WebData createVisibleWebDataForTag( final String tagName ) {
-		final Map<String, Object> wrappedData = createWrappedData( tagName );
-		wrappedData.put( "x", 1 );
-		wrappedData.put( "y", 1 );
-		wrappedData.put( "width", 1 );
-		wrappedData.put( "height", 1 );
-		wrappedData.put( "shown", true );
-		final WebData webData = new WebData( wrappedData );
+		final WebData webData = createWebDataMock( tagName );
+		when( webData.isShown() ).thenReturn( true );
 		return webData;
 	}
 
-	private Map<String, Object> createWrappedData( final String tagName ) {
-		final Map<String, Object> wrappedData = new HashMap<>();
-		wrappedData.put( "tagName", tagName );
-		return wrappedData;
+	private WebData createWebDataMock( final String tagName ) {
+		final WebData webData = mock( WebData.class );
+		when( webData.getTag() ).thenReturn( tagName );
+		return webData;
 	}
 
 }
