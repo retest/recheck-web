@@ -4,7 +4,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+import java.util.stream.Stream;
+
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 
 class WebDataFilterTest {
 
@@ -20,15 +24,10 @@ class WebDataFilterTest {
 		assertThat( WebDataFilter.shouldIgnore( webData ) ).isFalse();
 	}
 
-	@Test
-	void should_not_ignore_head_element() {
-		final WebData webData = createInvisibleWebDataForTag( "head" );
-		assertThat( WebDataFilter.shouldIgnore( webData ) ).isFalse();
-	}
-
-	@Test
-	void should_not_ignore_title_element() {
-		final WebData webData = createInvisibleWebDataForTag( "title" );
+	@ParameterizedTest
+	@MethodSource( "specialTags" )
+	void testName( final String specialTag ) throws Exception {
+		final WebData webData = createVisibleWebDataForTag( specialTag );
 		assertThat( WebDataFilter.shouldIgnore( webData ) ).isFalse();
 	}
 
@@ -48,6 +47,10 @@ class WebDataFilterTest {
 		final WebData webData = mock( WebData.class );
 		when( webData.getTag() ).thenReturn( tagName );
 		return webData;
+	}
+
+	static Stream<String> specialTags() {
+		return WebDataFilter.specialTags.stream();
 	}
 
 }
