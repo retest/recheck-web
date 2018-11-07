@@ -60,10 +60,10 @@ class WebDataTest {
 	@Test
 	void isShown_should_return_false_if_no_rectangle() {
 		final Map<String, Object> input = new HashMap<>();
-		input.put( AttributesConfig.X, "0" );
-		input.put( AttributesConfig.Y, "0" );
-		input.put( AttributesConfig.WIDTH, "0" );
-		input.put( AttributesConfig.HEIGHT, "0" );
+		input.put( AttributesConfig.X, 0 );
+		input.put( AttributesConfig.Y, 0 );
+		input.put( AttributesConfig.WIDTH, 0 );
+		input.put( AttributesConfig.HEIGHT, 0 );
 
 		assertThat( new WebData( input ).isShown() ).isFalse();
 	}
@@ -71,10 +71,10 @@ class WebDataTest {
 	@Test
 	void isShown_should_return_true_if_proper_outline() {
 		final Map<String, Object> input = new HashMap<>();
-		input.put( AttributesConfig.X, "0" );
-		input.put( AttributesConfig.Y, "0" );
-		input.put( AttributesConfig.WIDTH, "10" );
-		input.put( AttributesConfig.HEIGHT, "10" );
+		input.put( AttributesConfig.X, 0 );
+		input.put( AttributesConfig.Y, 0 );
+		input.put( AttributesConfig.WIDTH, 10 );
+		input.put( AttributesConfig.HEIGHT, 10 );
 
 		assertThat( new WebData( input ).isShown() ).isTrue();
 	}
