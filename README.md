@@ -31,15 +31,21 @@ Even better: Using the [retest GUI](https://retest.de/en/) (or the soon to come 
 
 ## Prerequisites
 
-Currently available as a Java API with support for JUnit 4 and 5 as well as TestNG.
+Operates on top of [Selenium](https://www.seleniumhq.org/projects/webdriver/). Selenium has become an official [W3C standard](https://www.w3.org/TR/webdriver1/), supported by all major browsers. Learn more about Selenium and [how to install it](https://www.seleniumhq.org/download/).
+
+Currently available as a Java API with support for [JUnit 4](https://junit.org/junit4/) and [JUnit 5](https://junit.org/junit5/) as well as [TestNG](https://testng.org/). 
 
 ## Setup
 
-Download recheck-web here on [GitHub](https://https://github.com/retest/recheck-web/releases) or add it as dependency through [Maven Central](https://search.maven.org/search?q=g:de.retest%20a:recheck-web):
+Download recheck-web here on [GitHub](https://https://github.com/retest/recheck-web/releases) or add it as dependency through [Maven Central](https://search.maven.org/search?q=g:de.retest%20a:recheck-web): [![Latest recheck-web on Maven Central](https://maven-badges.herokuapp.com/maven-central/de.retest/recheck-web/badge.svg?style=flat)](https://mvnrepository.com/artifact/de.retest/recheck-web)
 
-* group ID: `de.retest`
-* artifact ID: `recheck-web`
-* version: [![Latest recheck-web on Maven Central](https://maven-badges.herokuapp.com/maven-central/de.retest/recheck-web/badge.svg?style=flat)](https://mvnrepository.com/artifact/de.retest/recheck-web)
+```xml
+<dependency>
+  <groupId>de.retest</groupId>
+  <artifactId>recheck-web</artifactId>
+  <version><!-- latest version, see above link --></version>
+</dependency>
+```
 
 ## Usage
 
