@@ -10,26 +10,26 @@ class WebDataFilterTest {
 
 	@Test
 	void should_ignore_invisible_elements() {
-		final WebData input = createInvisibleWebDataForTag( "a" );
-		assertThat( WebDataFilter.shouldIgnore( input ) ).isTrue();
+		final WebData webData = createInvisibleWebDataForTag( "a" );
+		assertThat( WebDataFilter.shouldIgnore( webData ) ).isTrue();
 	}
 
 	@Test
 	void should_not_ignore_visible_elements() throws Exception {
-		final WebData input = createVisibleWebDataForTag( "a" );
-		assertThat( WebDataFilter.shouldIgnore( input ) ).isFalse();
+		final WebData webData = createVisibleWebDataForTag( "a" );
+		assertThat( WebDataFilter.shouldIgnore( webData ) ).isFalse();
 	}
 
 	@Test
 	void should_not_ignore_head_element() {
-		final WebData input = createInvisibleWebDataForTag( "head" );
-		assertThat( WebDataFilter.shouldIgnore( input ) ).isFalse();
+		final WebData webData = createInvisibleWebDataForTag( "head" );
+		assertThat( WebDataFilter.shouldIgnore( webData ) ).isFalse();
 	}
 
 	@Test
 	void should_not_ignore_title_element() {
-		final WebData input = createInvisibleWebDataForTag( "title" );
-		assertThat( WebDataFilter.shouldIgnore( input ) ).isFalse();
+		final WebData webData = createInvisibleWebDataForTag( "title" );
+		assertThat( WebDataFilter.shouldIgnore( webData ) ).isFalse();
 	}
 
 	private WebData createInvisibleWebDataForTag( final String tagName ) {
