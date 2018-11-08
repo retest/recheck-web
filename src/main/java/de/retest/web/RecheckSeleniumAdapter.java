@@ -6,14 +6,10 @@ import java.io.InputStream;
 import java.io.UncheckedIOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Set;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.JavascriptExecutor;
@@ -86,46 +82,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	public RootElement convertToPeers( final Map<String, Map<String, Object>> data, final String title,
 			final BufferedImage screenshot ) {
-		idProvider.reset();
-		final Map<String, WebElementPeer> converted = new HashMap<>();
-		RootElementPeer root = null;
-		for ( final Map.Entry<String, Map<String, Object>> entry : sort( data ) ) {
-			final String path = entry.getKey();
-			logger.debug( "Found element with path '{}'.", path );
-			final String parentPath = getParentPath( path );
-			final WebData webData = new WebData( entry.getValue() );
-			if ( WebDataFilter.shouldIgnore( webData ) ) {
-				continue;
-			}
-			WebElementPeer peer = converted.get( path );
-
-			assert peer == null : "List is sorted, we should not have path twice.";
-
-			if ( parentPath == null ) {
-				root = new RootElementPeer( defaultValuesProvider, webData, path, title, screenshot );
-				peer = root;
-			} else {
-				peer = new WebElementPeer( defaultValuesProvider, webData, path );
-				final WebElementPeer parent = converted.get( parentPath );
-				assert parent != null : "We sorted the map, parent should already be there.";
-				parent.addChild( peer );
-			}
-
-			converted.put( path, peer );
-		}
-
-		if ( root == null ) {
-			throw new NullPointerException( "RootElementPeer is null." );
-		}
-
-		return root.toElement();
-	}
-
-	private List<Map.Entry<String, Map<String, Object>>> sort( final Map<String, Map<String, Object>> data ) {
-		// Sorting ensures that parents are already created.
-		return data.entrySet().stream() //
-				.sorted( Comparator.comparing( Entry::getKey ) ) //
-				.collect( Collectors.toList() );
+		return new PeerConverter( defaultValuesProvider, idProvider, data, title, screenshot ).convertToPeers();
 	}
 
 	private BufferedImage createScreenshot( final WebDriver driver ) {
@@ -133,14 +90,6 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 				new ViewportPastingDecorator( new CustomShootingStrategy() ).withScrollTimeout( 100 );
 		final AShot aShot = new AShot().shootingStrategy( shootingStrategy );
 		return aShot.takeScreenshot( driver ).getImage();
-	}
-
-	static String getParentPath( final String path ) {
-		final String parentPath = path.substring( 0, path.lastIndexOf( '/' ) );
-		if ( parentPath.length() == 1 ) {
-			return null;
-		}
-		return parentPath;
 	}
 
 	@Override
