@@ -16,7 +16,7 @@ import de.retest.ui.descriptors.RootElement;
 import de.retest.ui.diff.RootElementDifference;
 import de.retest.ui.diff.RootElementDifferenceFinder;
 
-class RecheckSeleniumAdapterTest {
+class PeerConverterTest {
 
 	@BeforeEach
 	void setUp() {
@@ -25,12 +25,12 @@ class RecheckSeleniumAdapterTest {
 
 	@Test
 	void getParentPath_should_return_null_for_toplevel() {
-		assertThat( RecheckSeleniumAdapter.getParentPath( "//HTML[1]" ) ).isNull();
+		assertThat( PeerConverter.getParentPath( "//HTML[1]" ) ).isNull();
 	}
 
 	@Test
 	void getParentPath_should_return_parent_path() {
-		assertThat( RecheckSeleniumAdapter.getParentPath( "//HTML[1]/BODY[1]" ) ).isEqualTo( "//HTML[1]" );
+		assertThat( PeerConverter.getParentPath( "//HTML[1]/BODY[1]" ) ).isEqualTo( "//HTML[1]" );
 	}
 
 	@Test

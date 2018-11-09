@@ -10,7 +10,7 @@ public class WebDataFilter {
 	/**
 	 * Tags that will not be ignored even if they are not shown.
 	 */
-	static final Set<String> specialTags = new HashSet<>( Arrays.asList( "head", "meta", "option", "title" ) );
+	static final Set<String> specialTags = new HashSet<>( Arrays.asList( "meta", "option", "title" ) );
 
 	private WebDataFilter() {}
 
