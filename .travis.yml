@@ -60,7 +60,6 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
-    branch: master
 
 after_deploy:
   - mvn deploy -DskipTests
