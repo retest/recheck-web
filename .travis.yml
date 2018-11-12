@@ -2,6 +2,9 @@ language: java
 dist: trusty
 sudo: false
 
+env:
+  - MVN="mvn --settings $TRAVIS_BUILD_DIR/.travis.settings.xml"
+
 addons:
   chrome: stable
   firefox: latest
@@ -24,8 +27,6 @@ cache:
 install: true
 
 before_script:
-  # copy Maven settings
-  - cp .travis.settings.xml "${HOME}/.m2/settings.xml"
   # set up ChromeDriver
   - ln --symbolic /usr/lib/chromium-browser/chromedriver "${HOME}/bin/chromedriver"
   - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
@@ -41,7 +42,7 @@ before_script:
   - export NSS_USE_SHARED_DB=ENABLED
 
 script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar
+  - $MVN clean org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar
 
 before_deploy:
   # decrypt ReTest secret key
@@ -49,17 +50,14 @@ before_deploy:
       -in retest-gmbh-gpg.asc.enc -out retest-gmbh-gpg.asc -d
   # import decrypted ReTest secret key
   - gpg --fast-import retest-gmbh-gpg.asc
-  # package JARs for release providers
-  - mvn package -DskipTests
+  # package, sign and deploy artifacts
+  - $MVN deploy -DskipTests -P sign
 
 deploy:
   provider: releases
   api_key: "${GH_TOKEN}"
   file_glob: true
-  file: "./target/recheck-web-*.jar"
+  file: "./target/recheck-web-*.jar.*"
   skip_cleanup: true
   on:
     tags: true
-
-after_deploy:
-  - mvn deploy -DskipTests
