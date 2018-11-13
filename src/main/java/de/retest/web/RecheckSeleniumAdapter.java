@@ -66,7 +66,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), result.size() );
 
-		return Collections.singleton( convertToPeers( result, driver.getTitle(), createScreenshot( driver ) ) );
+		return Collections
+				.singleton( convertToPeers( result, driver.getTitle(), ScreenshotProvider.shootFullPage( driver ) ) );
 	}
 
 	public String getQueryJS() {
