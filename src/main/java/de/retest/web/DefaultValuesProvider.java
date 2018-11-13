@@ -3,6 +3,7 @@ package de.retest.web;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
+import java.io.UncheckedIOException;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -21,15 +22,6 @@ import de.retest.ui.descriptors.IdentifyingAttributes;
 
 public class DefaultValuesProvider implements DefaultValueFinder {
 
-	public static final class ReadDefaultValuesException extends RuntimeException {
-
-		private static final long serialVersionUID = 1L;
-
-		public ReadDefaultValuesException( final Exception e ) {
-			super( "Could not load default CSS values from " + DEFAULTS_FILE_PATH, e );
-		}
-	}
-
 	public static final String DEFAULTS_FILE_PATH = "/defaults.yaml";
 
 	private static final Set<String> commonDefaults = new HashSet<>( Arrays.asList( //
@@ -45,8 +37,8 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 	public DefaultValuesProvider() {
 		try ( final InputStream url = getClass().getResourceAsStream( DEFAULTS_FILE_PATH ) ) {
 			defaultValues = readAttributesConfigFromFile( url );
-		} catch ( final Exception e ) {
-			throw new ReadDefaultValuesException( e );
+		} catch ( final IOException e ) {
+			throw new UncheckedIOException( "Cannot read defaults file '" + DEFAULTS_FILE_PATH + "'.", e );
 		}
 	}
 
