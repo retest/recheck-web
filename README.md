@@ -8,7 +8,7 @@
 
 [recheck](https://github.com/retest/recheck) for web apps. Replace manual asserts and check everything at once.
 
-<p align="center"><a href="https://github.com/retest/recheck/"><img src="https://user-images.githubusercontent.com/1871610/44585296-23b3ce80-a7ac-11e8-9687-d8939209b05a.gif" /></a></p>
+<p align="center"><a href="https://youtu.be/ZK-r3GaM2Dw"><img src="https://user-images.githubusercontent.com/1871610/44585296-23b3ce80-a7ac-11e8-9687-d8939209b05a.gif" /></a></p>
 
 
 ## Features
