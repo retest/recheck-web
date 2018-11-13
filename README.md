@@ -102,7 +102,7 @@ index resulted in: [HTML: [expected=null, actual=HTML]]
 	at de.retest.recheck.RecheckImpl.capTest(SourceFile:170)
 ```
 
-Running such a test will also create a folder structure containing a `retest.xml` file and a screenshot per check (depending on your chosen names and configuration). These are now the Golden Master, the baseline which future executions of this test are compared against. If you use version control, you should commit those files. Note that the `retest.xml` contains a full description of the _rendered_ website, including all relevant information such as text, source, etc. and all non-default CSS attributes such as font and margin.
+Running such a test will also create a folder structure containing a `retest.xml` file and a screenshot per check (depending on your chosen names and configuration). These are now the Golden Master, the baseline which future executions of this test are compared against. If you use version control, you should commit those files. Note that the `retest.xml` contains a full description of the _rendered_ website, including all relevant information such as text, source, etc. and _all_ non-default CSS attributes such as font and margin. Although these files may become large, they are smaller than the original and by ignoring specific (or all) attributes, you can configure how large they are. Anyways, storing a few kilobyte extra is much cheaper than the manpower needed to manually specify checks.
 
 Executing the same test again should not result in any differences. But after changing the website and executing the test, you should see the test reporting your changes.
 
