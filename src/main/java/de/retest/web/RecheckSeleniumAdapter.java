@@ -22,9 +22,6 @@ import de.retest.ui.DefaultValueFinder;
 import de.retest.ui.descriptors.IdentifyingAttributes;
 import de.retest.ui.descriptors.RetestIdProvider;
 import de.retest.ui.descriptors.RootElement;
-import ru.yandex.qatools.ashot.AShot;
-import ru.yandex.qatools.ashot.shooting.ShootingStrategy;
-import ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator;
 
 public class RecheckSeleniumAdapter implements RecheckAdapter {
 
@@ -69,7 +66,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), result.size() );
 
-		return Collections.singleton( convertToPeers( result, driver.getTitle(), createScreenshot( driver ) ) );
+		return Collections
+				.singleton( convertToPeers( result, driver.getTitle(), ScreenshotProvider.shootFullPage( driver ) ) );
 	}
 
 	public String getQueryJS() {
@@ -83,13 +81,6 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	public RootElement convertToPeers( final Map<String, Map<String, Object>> data, final String title,
 			final BufferedImage screenshot ) {
 		return new PeerConverter( defaultValuesProvider, idProvider, data, title, screenshot ).convertToPeers();
-	}
-
-	private BufferedImage createScreenshot( final WebDriver driver ) {
-		final ShootingStrategy shootingStrategy =
-				new ViewportPastingDecorator( new CustomShootingStrategy() ).withScrollTimeout( 100 );
-		final AShot aShot = new AShot().shootingStrategy( shootingStrategy );
-		return aShot.takeScreenshot( driver ).getImage();
 	}
 
 	@Override
