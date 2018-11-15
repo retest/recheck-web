@@ -67,6 +67,11 @@ public class WebElementPeer {
 			attributes.add( OutlineAttribute.create( outline ) );
 		}
 
+		final Rectangle absoluteOutline = webData.getAbsoluteOutline();
+		if ( absoluteOutline != null ) {
+			attributes.add( OutlineAttribute.createAbsolute( absoluteOutline ) );
+		}
+
 		final List<String> userDefinedAttributes =
 				new ArrayList<>( AttributesProvider.getInstance().getIdentifyingAttributes() );
 		for ( final String attribute : userDefinedAttributes ) {

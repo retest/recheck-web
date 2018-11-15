@@ -46,8 +46,28 @@ public class WebData {
 		return result.trim();
 	}
 
+	public Rectangle getAbsoluteOutline() {
+		if ( wrappedData.get( AttributesConfig.ABSOLUTE_X ) == null
+				|| wrappedData.get( AttributesConfig.ABSOLUTE_Y ) == null
+				|| wrappedData.get( AttributesConfig.ABSOLUTE_WIDTH ) == null
+				|| wrappedData.get( AttributesConfig.ABSOLUTE_HEIGHT ) == null ) {
+			return null;
+		}
+		try {
+			final int x = getAsInt( AttributesConfig.ABSOLUTE_X );
+			final int y = getAsInt( AttributesConfig.ABSOLUTE_Y );
+			final int width = getAsInt( AttributesConfig.ABSOLUTE_WIDTH );
+			final int height = getAsInt( AttributesConfig.ABSOLUTE_HEIGHT );
+			return new Rectangle( x, y, width, height );
+		} catch ( final Exception e ) {
+			logger.error( "Exception retrieving outline: ", e );
+		}
+		return null;
+	}
+
 	public Rectangle getOutline() {
-		if ( wrappedData.get( AttributesConfig.X ) == null || wrappedData.get( AttributesConfig.Y ) == null //
+		if ( wrappedData.get( AttributesConfig.X ) == null //
+				|| wrappedData.get( AttributesConfig.Y ) == null //
 				|| wrappedData.get( AttributesConfig.WIDTH ) == null
 				|| wrappedData.get( AttributesConfig.HEIGHT ) == null ) {
 			return null;
