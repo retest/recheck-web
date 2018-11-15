@@ -57,6 +57,10 @@ function transform(node) {
 		}
 	}
 	// They need special treatment
+	result["absolute-x"] = getX(node);
+	result["absolute-y"] = getY(node);
+	result["absolute-width"] = node.getBoundingClientRect().width;
+	result["absolute-height"] = node.getBoundingClientRect().height;
 	if (typeof node.parentNode.getBoundingClientRect === "function") {
 		result["x"] = getX(node) - getX(node.parentNode);
 		result["y"] = getY(node) - getY(node.parentNode);

@@ -7,6 +7,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class AttributesConfig {
 
+	public static final String ABSOLUTE_X = "absolute-x";
+	public static final String ABSOLUTE_Y = "absolute-y";
+	public static final String ABSOLUTE_WIDTH = "absolute-width";
+	public static final String ABSOLUTE_HEIGHT = "absolute-height";
+
 	public static final String X = "x";
 	public static final String Y = "y";
 	public static final String WIDTH = "width";
