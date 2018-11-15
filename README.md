@@ -106,14 +106,28 @@ Running such a test will also create a folder structure containing a `retest.xml
 
 Executing the same test again should not result in any differences. But after changing the website and executing the test, you should see the test reporting your changes.
 
-E.g. if you change a single CSS rule, you will find all elements that are affected by this change. Like so:
+E.g. if you change a single CSS rule, you will find all elements that are affected by [this change](https://github.com/retest/recheck-web/commit/a3e9edcbac5ef92152a2dc94e06a9f4918e0906f). Like so:
 
 ```
 java.lang.AssertionError: Found 8 differences in 1 checks of which 2 are unique: [color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)", border-color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"]
 
 Details: 
 test showcase has 8 differences (2 unique): 
-index resulted in: [EM [Have you had enough]: {color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}, BR: {border-color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)", color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}, EM [Use an artificially intelligent]: {color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}, EM [to fully automatically test your application.]: {color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}, EM [No need to create assertions]: {color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}, EM [retest compares the whole picture instead of a single piece of the puzzle.]: {color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}, EM [The future of testing is in AI.]: {color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}, EM [The future of testing is now]: {color: expected="rgb(65, 65, 65)", actual="rgb(0, 0, 0)"}]
+index resulted in: 
+	EM [Have you had enough]:
+		border-color, color: expected="rgb(65, 65, 65)", actual="default"
+	EM [Use an artificially intelligent]:
+		border-color, color: expected="rgb(65, 65, 65)", actual="default"
+	EM [to fully automatically test your application.]:
+		border-color, color: expected="rgb(65, 65, 65)", actual="default"
+	EM [No need to create assertions]:
+		border-color, color: expected="rgb(65, 65, 65)", actual="default"
+	EM [retest compares the whole picture instead of a single piece of the puzzle.]:
+		border-color, color: expected="rgb(65, 65, 65)", actual="default"
+	EM [The future of testing is in AI.]:
+		border-color, color: expected="rgb(65, 65, 65)", actual="default"
+	EM [The future of testing is now]:
+		border-color, color: expected="rgb(65, 65, 65)", actual="default"
 ```
 
 Additionally, a file named `replay.result` will be created upon test failure, typically located in your `target/test-classes` folder. This file can now be used to apply those changes to your baseline, using either the [recheck-cli](https://github.com/retest/recheck-cli) or the [retest-GUI](http://retest.org).

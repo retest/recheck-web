@@ -4,15 +4,10 @@ import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import de.retest.ui.descriptors.RetestIdProvider;
 import de.retest.ui.descriptors.RootElement;
 
 class PeerConverter {
-
-	private static final Logger logger = LoggerFactory.getLogger( PeerConverter.class );
 
 	private final DefaultValuesProvider defaultValuesProvider;
 	private final RetestIdProvider idProvider;
@@ -37,7 +32,6 @@ class PeerConverter {
 		idProvider.reset();
 		for ( final Map.Entry<String, Map<String, Object>> entry : data.entrySet() ) {
 			final String path = entry.getKey();
-			logger.debug( "Found element with path '{}'.", path );
 			final WebData webData = new WebData( entry.getValue() );
 			if ( WebDataFilter.shouldIgnore( webData ) ) {
 				continue;
