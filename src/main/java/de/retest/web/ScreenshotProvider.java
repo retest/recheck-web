@@ -40,6 +40,7 @@ public class ScreenshotProvider {
 		}
 	}
 
+	// TODO Remove with retest-model version 5.1.0 and use ImageUtils instead.
 	private static BufferedImage resize( final BufferedImage image, final int width, final int height ) {
 		final Image tmp = image.getScaledInstance( width, height, Image.SCALE_SMOOTH );
 		final BufferedImage resized = new BufferedImage( width, height, BufferedImage.TYPE_INT_ARGB );
