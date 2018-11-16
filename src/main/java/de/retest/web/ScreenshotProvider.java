@@ -31,13 +31,19 @@ public class ScreenshotProvider {
 			image = Shutterbug
 					.shootPage( driver, ScrollStrategy.WHOLE_PAGE_CHROME, SCROLL_TIMEOUT, USE_DEVICE_PIXEL_RATIO )
 					.getImage();
-			return resize( image, WINDOW_WIDTH, image.getData().getHeight() / 2 );
 		} else {
 			image = Shutterbug
 					.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT, USE_DEVICE_PIXEL_RATIO )
 					.getImage();
-			return resize( image, WINDOW_WIDTH, image.getData().getHeight() );
 		}
+		if ( image.getWidth() != WINDOW_WIDTH ) {
+			int height = image.getHeight();
+			if ( isRetinaDisplay() && driver instanceof ChromeDriver ) {
+				height /= RETINA_SCALE_FACTOR;
+			}
+			return resize( image, WINDOW_WIDTH, height );
+		}
+		return image;
 	}
 
 	// TODO Remove with retest-model version 5.1.0 and use ImageUtils instead.
