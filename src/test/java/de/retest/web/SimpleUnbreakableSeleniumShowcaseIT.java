@@ -49,6 +49,7 @@ public class SimpleUnbreakableSeleniumShowcaseIT {
 		re.startTest( "simple-showcase" );
 
 		// Do your Selenium stuff.
+		// final Path showcasePath = Paths.get( "src/test/resources/pages/showcase/retest.html" );
 		final Path showcasePath = Paths.get( "src/test/resources/pages/showcase/retest-changed.html" );
 		driver.get( showcasePath.toUri().toURL().toString() );
 
@@ -75,7 +76,7 @@ public class SimpleUnbreakableSeleniumShowcaseIT {
 		// TODO Implement searching for complex css expressions
 		// driver.findElement( By.cssSelector( "ul div.slider-text" ) );
 
-		// Usually, we conclude the test case, but since we expect differences, this will fail.
+		// TODO Ignore the differences in order to be able to re.cap the test...
 		// re.capTest();
 	}
 
@@ -84,7 +85,7 @@ public class SimpleUnbreakableSeleniumShowcaseIT {
 		driver.quit();
 
 		// Produce the result file.
-		//		re.cap();
+		// re.cap();
 	}
 
 }
