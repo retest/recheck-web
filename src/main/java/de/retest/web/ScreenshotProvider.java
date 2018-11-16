@@ -34,6 +34,16 @@ public class ScreenshotProvider {
 					.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT, USE_DEVICE_PIXEL_RATIO )
 					.getImage();
 		}
+	// TODO Remove with retest-model version 5.1.0 and use ImageUtils instead.
+	private static BufferedImage resize( final BufferedImage image, final int width, final int height ) {
+		final Image tmp = image.getScaledInstance( width, height, Image.SCALE_SMOOTH );
+		final BufferedImage resized = new BufferedImage( width, height, BufferedImage.TYPE_INT_ARGB );
+		final Graphics2D graphics2D = resized.createGraphics();
+		graphics2D.drawImage( tmp, 0, 0, null );
+		graphics2D.dispose();
+		return resized;
+	}
+
 	public static boolean isRetinaDisplay() {
 		if ( SystemUtils.IS_OS_MAC ) {
 			final GraphicsEnvironment environment = GraphicsEnvironment.getLocalGraphicsEnvironment();
