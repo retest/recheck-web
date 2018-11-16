@@ -25,15 +25,22 @@ public class ScreenshotProvider {
 	}
 
 	public static BufferedImage shootFullPage( final WebDriver driver ) {
+		final BufferedImage image;
 		if ( driver instanceof ChromeDriver ) {
-			return Shutterbug
+			image = Shutterbug
 					.shootPage( driver, ScrollStrategy.WHOLE_PAGE_CHROME, SCROLL_TIMEOUT, USE_DEVICE_PIXEL_RATIO )
 					.getImage();
+			if ( isRetinaDisplay() ) {
+				return resize( image, image.getWidth() / RETINA_SCALE_FACTOR, image.getHeight() / RETINA_SCALE_FACTOR );
+			}
 		} else {
-			return Shutterbug
+			image = Shutterbug
 					.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT, USE_DEVICE_PIXEL_RATIO )
 					.getImage();
 		}
+		return image;
+	}
+
 	// TODO Remove with retest-model version 5.1.0 and use ImageUtils instead.
 	private static BufferedImage resize( final BufferedImage image, final int width, final int height ) {
 		final Image tmp = image.getScaledInstance( width, height, Image.SCALE_SMOOTH );
