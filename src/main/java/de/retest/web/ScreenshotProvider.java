@@ -19,7 +19,6 @@ public class ScreenshotProvider {
 
 	private static final int SCROLL_TIMEOUT = 100;
 	private static final boolean USE_DEVICE_PIXEL_RATIO = true;
-	private static final int RETINA_SCALE_FACTOR = 2;
 
 	private static final Logger logger = LoggerFactory.getLogger( ScreenshotProvider.class );
 
@@ -33,9 +32,8 @@ public class ScreenshotProvider {
 			image = Shutterbug
 					.shootPage( driver, ScrollStrategy.WHOLE_PAGE_CHROME, SCROLL_TIMEOUT, USE_DEVICE_PIXEL_RATIO )
 					.getImage();
-			if ( isRetinaDisplay() ) {
-				return resize( image, image.getWidth() / RETINA_SCALE_FACTOR, image.getHeight() / RETINA_SCALE_FACTOR );
-			}
+			final int scale = extractScale();
+			return resize( image, image.getWidth() / scale, image.getHeight() / scale );
 		} else {
 			image = Shutterbug
 					.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT, USE_DEVICE_PIXEL_RATIO )
