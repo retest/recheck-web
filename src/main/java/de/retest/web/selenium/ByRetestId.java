@@ -44,4 +44,23 @@ public class ByRetestId extends By implements Serializable {
 		}
 		return result;
 	}
+
+	@Override
+	public int hashCode() {
+		return retestId.hashCode();
+	}
+
+	@Override
+	public boolean equals( final Object other ) {
+		if ( other == null ) {
+			return false;
+		}
+		if ( this == other ) {
+			return true;
+		}
+		if ( getClass() != other.getClass() ) {
+			return false;
+		}
+		return retestId.equals( ((ByRetestId) other).retestId );
+	}
 }
