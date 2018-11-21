@@ -40,7 +40,7 @@ public class ByRetestId extends By implements Serializable {
 				lastActualState, element -> retestId.equals( element.getRetestId() ) );
 		final Element result = oldNewMapping.getValue();
 		if ( result == null ) {
-			throw new RuntimeException( "No element with retest ID '" + retestId + "' found!" );
+			throw new NoElementWithReTestIdFoundException( retestId );
 		}
 		return result;
 	}
