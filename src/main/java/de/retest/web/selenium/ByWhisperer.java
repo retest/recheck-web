@@ -17,7 +17,7 @@ public class ByWhisperer {
 			field.setAccessible( true );
 			return (String) field.get( by );
 		} catch ( final ReflectiveOperationException e ) {
-			throw new RuntimeException( "ById does not have an 'id' field?", e );
+			throw new IllegalStateException( "ById does not have an 'id' field?", e );
 		}
 	}
 
@@ -27,7 +27,7 @@ public class ByWhisperer {
 			field.setAccessible( true );
 			return (String) field.get( by );
 		} catch ( final ReflectiveOperationException e ) {
-			throw new RuntimeException( "ByClassName does not have a 'className' field?", e );
+			throw new IllegalStateException( "ByClassName does not have a 'className' field?", e );
 		}
 	}
 
@@ -37,7 +37,7 @@ public class ByWhisperer {
 			field.setAccessible( true );
 			return (String) field.get( by );
 		} catch ( final ReflectiveOperationException e ) {
-			throw new RuntimeException( "ByName does not have a 'name' field?", e );
+			throw new IllegalStateException( "ByName does not have a 'name' field?", e );
 		}
 	}
 
@@ -47,7 +47,7 @@ public class ByWhisperer {
 			field.setAccessible( true );
 			return (String) field.get( by );
 		} catch ( final ReflectiveOperationException e ) {
-			throw new RuntimeException( "ByLinkText does not have a 'linkText' field?", e );
+			throw new IllegalStateException( "ByLinkText does not have a 'linkText' field?", e );
 		}
 	}
 }
