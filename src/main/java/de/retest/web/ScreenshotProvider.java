@@ -54,17 +54,19 @@ public class ScreenshotProvider {
 
 	// TODO Remove with retest-model version 5.1.0 and use ImageUtils instead.
 	public static int extractScale() {
-		final GraphicsEnvironment environment = GraphicsEnvironment.getLocalGraphicsEnvironment();
-		final GraphicsDevice device = environment.getDefaultScreenDevice();
 		final int defaultScale = 1;
-		try {
-			final Field scale = device.getClass().getDeclaredField( "scale" );
-			if ( scale != null ) {
-				scale.setAccessible( true );
-				return (Integer) scale.get( device );
+		if ( !GraphicsEnvironment.isHeadless() ) {
+			final GraphicsEnvironment environment = GraphicsEnvironment.getLocalGraphicsEnvironment();
+			final GraphicsDevice device = environment.getDefaultScreenDevice();
+			try {
+				final Field scale = device.getClass().getDeclaredField( "scale" );
+				if ( scale != null ) {
+					scale.setAccessible( true );
+					return (Integer) scale.get( device );
+				}
+			} catch ( final Exception e ) {
+				logger.error( "Unable to get the scale from the graphic environment", e );
 			}
-		} catch ( final Exception e ) {
-			logger.error( "Unable to get the scale from the graphic environment", e );
 		}
 		return defaultScale;
 	}
