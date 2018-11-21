@@ -9,6 +9,8 @@ import org.openqa.selenium.By.ByName;
 
 public class ByWhisperer {
 
+	private ByWhisperer() {}
+
 	public static String retrieveId( final ById by ) {
 		try {
 			final Field field = ById.class.getDeclaredField( "id" );
