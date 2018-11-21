@@ -22,6 +22,8 @@ import de.retest.util.Mapping;
 
 public class TestHealer {
 
+	private static final String LOG_SEPARATOR = "*************** recheck warning ***************";
+
 	private static final Logger logger = LoggerFactory.getLogger( TestHealer.class );
 
 	private final RecheckDriver wrapped;
@@ -72,7 +74,7 @@ public class TestHealer {
 			return null;
 		}
 
-		logger.warn( "*************** recheck warning ***************" );
+		logger.warn( LOG_SEPARATOR );
 		logger.warn( "The HTML id attribute used for element identification changed from '{}' to '{}'.", id,
 				actualElement.getIdentifyingAttributes().get( "id" ) );
 		logger.warn( "retest identified the element based on the persisted old state." );
@@ -105,7 +107,7 @@ public class TestHealer {
 			return null;
 		}
 
-		logger.warn( "*************** recheck warning ***************" );
+		logger.warn( LOG_SEPARATOR );
 		logger.warn( "The HTML class attribute used for element identification changed from '{}' to '{}'.", className,
 				actualElement.getIdentifyingAttributes().get( "class" ) );
 		logger.warn( "retest identified the element based on the persisted old state." );
@@ -132,7 +134,7 @@ public class TestHealer {
 			return null;
 		}
 
-		logger.warn( "*************** recheck warning ***************" );
+		logger.warn( LOG_SEPARATOR );
 		logger.warn( "The HTML name attribute used for element identification changed from '{}' to '{}'.", name,
 				actualElement.getAttributes().get( "name" ) );
 		logger.warn( "retest identified the element based on the persisted old state." );
@@ -156,7 +158,7 @@ public class TestHealer {
 			return null;
 		}
 
-		logger.warn( "*************** recheck warning ***************" );
+		logger.warn( LOG_SEPARATOR );
 		logger.warn( "The link text used for element identification changed from '{}' to '{}'.", linkText,
 				actualElement.getIdentifyingAttributes().get( "text" ) );
 		logger.warn( "retest identified the element based on the persisted old state." );
