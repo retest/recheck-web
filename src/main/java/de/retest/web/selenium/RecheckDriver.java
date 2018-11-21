@@ -88,12 +88,11 @@ public class RecheckDriver implements WebDriver, JavascriptExecutor, FindsById, 
 		try {
 			return wrapped.findElement( by );
 		} catch ( final NoSuchElementException e ) {
-			try {
-				return TestHealer.findElement( by, this );
-			} catch ( final Exception recheckE ) {
-				logger.error( "Error trying to locate element in old state, throwing original exception.", recheckE );
+			final WebElement matchedOld = TestHealer.findElement( by, this );
+			if ( matchedOld == null ) {
 				throw e;
 			}
+			return matchedOld;
 		}
 	}
 

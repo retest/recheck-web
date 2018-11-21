@@ -68,8 +68,8 @@ public class TestHealer {
 						|| id.equals( element.getIdentifyingAttributes().get( "id" ) ) );
 		final Element actualElement = oldNewMapping.getValue();
 		if ( actualElement == null ) {
-			throw new RuntimeException(
-					"It appears that even the old state didn't have an element with id '" + id + "'." );
+			logger.warn( "It appears that even the old state didn't have an element with id '{}'.", id );
+			return null;
 		}
 
 		logger.warn( "*************** recheck warning ***************" );
@@ -101,8 +101,8 @@ public class TestHealer {
 								&& ((String) element.getIdentifyingAttributes().get( "class" )).contains( className ) );
 		final Element actualElement = oldNewMapping.getValue();
 		if ( actualElement == null ) {
-			throw new RuntimeException(
-					"It appears that even the old state didn't have an element with CSS class '" + className + "'." );
+			logger.warn( "It appears that even the old state didn't have an element with CSS class '{}'.", className );
+			return null;
 		}
 
 		logger.warn( "*************** recheck warning ***************" );
@@ -128,8 +128,8 @@ public class TestHealer {
 						|| name.equals( element.getIdentifyingAttributes().get( "name" ) ) );
 		final Element actualElement = oldNewMapping.getValue();
 		if ( actualElement == null ) {
-			throw new RuntimeException(
-					"It appears that even the old state didn't have an element with name '" + name + "'." );
+			logger.warn( "It appears that even the old state didn't have an element with name '{}'.", name );
+			return null;
 		}
 
 		logger.warn( "*************** recheck warning ***************" );
@@ -152,8 +152,8 @@ public class TestHealer {
 										&& "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() )) );
 		final Element actualElement = oldNewMapping.getValue();
 		if ( actualElement == null ) {
-			throw new RuntimeException(
-					"It appears that even the old state didn't have an element with link text '" + linkText + "'." );
+			logger.warn( "It appears that even the old state didn't have an element with link text '{}'.", linkText );
+			return null;
 		}
 
 		logger.warn( "*************** recheck warning ***************" );
