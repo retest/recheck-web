@@ -12,8 +12,7 @@ public class RecheckWebImpl extends RecheckImpl {
 	private RecheckDriver driver;
 
 	@Override
-	public void check( final Object driver, final RecheckAdapter seleniumAdapter, final String currentStep )
-			throws IllegalArgumentException {
+	public void check( final Object driver, final RecheckAdapter seleniumAdapter, final String currentStep ) {
 		this.driver = (RecheckDriver) driver;
 		super.check( driver, seleniumAdapter, currentStep );
 	}
