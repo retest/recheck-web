@@ -22,8 +22,6 @@ import de.retest.util.Mapping;
 
 public class TestHealer {
 
-	private static final String LOG_SEPARATOR = "*************** recheck warning ***************";
-
 	private static final Logger logger = LoggerFactory.getLogger( TestHealer.class );
 
 	private final RecheckDriver wrapped;
@@ -74,21 +72,8 @@ public class TestHealer {
 			return null;
 		}
 
-		logger.warn( LOG_SEPARATOR );
-		logger.warn( "The HTML id attribute used for element identification changed from '{}' to '{}'.", id,
-				actualElement.getIdentifyingAttributes().get( "id" ) );
-		logger.warn( "retest identified the element based on the persisted old state." );
-		// TODO Get filename from state
-		// TODO Guess test name from state name
-		logger.warn( "If you apply these changes to the state {}, your test {} will break.", "", "" );
-		// TODO Eventually, we want something like Test.java:123 instead of "your test"
-		final String newId = actualElement.getIdentifyingAttributes().get( "id" );
-		if ( newId != null ) {
-			logger.warn( "Use `By.id(\"{}\")` or `By.retestId(\"{}\")` to update your test.", newId,
-					oldNewMapping.getKey().getRetestId() );
-		} else {
-			logger.warn( "Use `By.retestId(\"{}\")` to update your test.", oldNewMapping.getKey().getRetestId() );
-		}
+		writeWarnLogForChangedIdentifier( "HTML id attribute", id, actualElement.getIdentifyingAttributes().get( "id" ),
+				"id", oldNewMapping );
 
 		return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 	}
@@ -104,26 +89,16 @@ public class TestHealer {
 			return null;
 		}
 
-		logger.warn( LOG_SEPARATOR );
-		logger.warn( "The HTML class attribute used for element identification changed from '{}' to '{}'.", className,
-				actualElement.getIdentifyingAttributes().get( "class" ) );
-		logger.warn( "retest identified the element based on the persisted old state." );
-		logger.warn( "If you apply these changes to the state {}, your test {} will break.", "", "" );
-		final String newClass = actualElement.getIdentifyingAttributes().get( "class" );
-		if ( newClass != null ) {
-			logger.warn( "Use `By.className(\"{}\")` or `By.retestId(\"{}\")` to update your test.", newClass,
-					oldNewMapping.getKey().getRetestId() );
-		} else {
-			logger.warn( "Use `By.retestId(\"{}\")` to update your test.", oldNewMapping.getKey().getRetestId() );
-		}
+		writeWarnLogForChangedIdentifier( "HTML class attribute", className,
+				actualElement.getIdentifyingAttributes().get( "class" ), "className", oldNewMapping );
 
 		return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 	}
 
 	private WebElement findElementByName( final ByName by ) {
 		final String name = retrieveName( by );
-		final Mapping<Element, Element> oldNewMapping = de.retest.web.selenium.By
-				.findElementByAttribute( lastExpectedState, lastActualState, "name", name );
+		final Mapping<Element, Element> oldNewMapping =
+				de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, "name", name );
 
 		final Element actualElement = oldNewMapping.getValue();
 		if ( actualElement == null ) {
@@ -131,14 +106,8 @@ public class TestHealer {
 			return null;
 		}
 
-		logger.warn( LOG_SEPARATOR );
-		logger.warn( "The HTML name attribute used for element identification changed from '{}' to '{}'.", name,
-				actualElement.getAttributes().get( "name" ) );
-		logger.warn( "retest identified the element based on the persisted old state." );
-		logger.warn( "If you apply these changes to the state {}, your test {} will break.", "", "" );
-		logger.warn( "Use `By.name(\"{}\")` or `By.retestId(\"{}\")` to update your test.",
-				actualElement.getAttributes().get( "name" ), oldNewMapping.getKey().getRetestId() );
-
+		writeWarnLogForChangedIdentifier( "HTML name attribute", name, actualElement.getAttributes().get( "name" ),
+				"name", oldNewMapping );
 		return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 	}
 
@@ -152,20 +121,15 @@ public class TestHealer {
 									&& "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() );
 				} );
 		final Element actualElement = oldNewMapping.getValue();
+
 		if ( actualElement == null ) {
 			logger.warn( "It appears that even the old state didn't have an element with link text '{}'.", linkText );
 			return null;
+		} else {
+			writeWarnLogForChangedIdentifier( "link text", linkText,
+					actualElement.getIdentifyingAttributes().get( "text" ), "linkText", oldNewMapping );
+			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
-
-		logger.warn( LOG_SEPARATOR );
-		logger.warn( "The link text used for element identification changed from '{}' to '{}'.", linkText,
-				actualElement.getIdentifyingAttributes().get( "text" ) );
-		logger.warn( "retest identified the element based on the persisted old state." );
-		logger.warn( "If you apply these changes to the state {}, your test {} will break.", "", "" );
-		logger.warn( "Use `By.linkText(\"{}\")` or `By.retestId(\"{}\")` to update your test.",
-				actualElement.getIdentifyingAttributes().get( "text" ), oldNewMapping.getKey().getRetestId() );
-
-		return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 	}
 
 	private WebElement findElementByCssSelector( final ByCssSelector by ) {
@@ -176,6 +140,26 @@ public class TestHealer {
 	private WebElement findElementByXPath( final ByXPath byXPath ) {
 		// TODO Implement This happens at the browser (which understands xpath)
 		throw new UnsupportedOperationException( "Not yet implemented" );
+	}
+
+	private void writeWarnLogForChangedIdentifier( final String elementIdentifier, final Object oldValue,
+			final Object newValue, final String byMethodName, final Mapping<Element, Element> oldNewMapping ) {
+		final String retestId = oldNewMapping.getKey().getRetestId();
+
+		logger.warn( "*************** recheck warning ***************" );
+		logger.warn( "The {} used for element identification changed from '{}' to '{}'.", elementIdentifier, oldValue,
+				newValue );
+		logger.warn( "retest identified the element based on the persisted old state." );
+		// TODO Get filename from state
+		// TODO Guess test name from state name
+		logger.warn( "If you apply these changes to the state {}, your test {} will break.", "", "" );
+		// TODO Eventually, we want something like Test.java:123 instead of "your test"
+		if ( newValue != null ) {
+			logger.warn( "Use `By.{}(\"{}\")` or `By.retestId(\"{}\")` to update your test.", byMethodName, newValue,
+					retestId );
+		} else {
+			logger.warn( "Use `By.retestId(\"{}\")` to update your test.", retestId );
+		}
 	}
 
 }
