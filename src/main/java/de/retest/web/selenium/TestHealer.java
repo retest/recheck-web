@@ -65,9 +65,9 @@ public class TestHealer {
 
 	private WebElement findElementById( final ById by ) {
 		final String id = retrieveId( by );
-		final Mapping<Element, Element> oldNewMapping = de.retest.web.selenium.By.findElement( lastExpectedState,
-				lastActualState, element -> id.equals( element.getAttributes().get( "id" ) )
-						|| id.equals( element.getIdentifyingAttributes().get( "id" ) ) );
+		final Mapping<Element, Element> oldNewMapping =
+				de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, "id", id );
+
 		final Element actualElement = oldNewMapping.getValue();
 		if ( actualElement == null ) {
 			logger.warn( "It appears that even the old state didn't have an element with id '{}'.", id );
@@ -95,12 +95,9 @@ public class TestHealer {
 
 	private WebElement findElementByClassName( final ByClassName by ) {
 		final String className = retrieveCSSClassName( by );
-		final Mapping<Element, Element> oldNewMapping = de.retest.web.selenium.By.findElement( lastExpectedState,
-				lastActualState,
-				element -> element.getAttributes().get( "class" ) != null
-						&& ((String) element.getAttributes().get( "class" )).contains( className )
-						|| element.getIdentifyingAttributes().get( "class" ) != null
-								&& ((String) element.getIdentifyingAttributes().get( "class" )).contains( className ) );
+		final Mapping<Element, Element> oldNewMapping = de.retest.web.selenium.By.findElementByAttribute(
+				lastExpectedState, lastActualState, "class", value -> ((String) value).contains( className ) );
+
 		final Element actualElement = oldNewMapping.getValue();
 		if ( actualElement == null ) {
 			logger.warn( "It appears that even the old state didn't have an element with CSS class '{}'.", className );
@@ -125,9 +122,9 @@ public class TestHealer {
 
 	private WebElement findElementByName( final ByName by ) {
 		final String name = retrieveName( by );
-		final Mapping<Element, Element> oldNewMapping = de.retest.web.selenium.By.findElement( lastExpectedState,
-				lastActualState, element -> name.equals( element.getAttributes().get( "name" ) )
-						|| name.equals( element.getIdentifyingAttributes().get( "name" ) ) );
+		final Mapping<Element, Element> oldNewMapping = de.retest.web.selenium.By
+				.findElementByAttribute( lastExpectedState, lastActualState, "name", name );
+
 		final Element actualElement = oldNewMapping.getValue();
 		if ( actualElement == null ) {
 			logger.warn( "It appears that even the old state didn't have an element with name '{}'.", name );
@@ -147,11 +144,13 @@ public class TestHealer {
 
 	private WebElement findElementByLinkText( final ByLinkText by ) {
 		final String linkText = retrieveLinkText( by );
+		final String attributeName = "text";
 		final Mapping<Element, Element> oldNewMapping =
-				de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState,
-						element -> (linkText.equals( element.getAttributes().get( "text" ) )
-								|| linkText.equals( element.getIdentifyingAttributes().get( "text" ) )
-										&& "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() )) );
+				de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState, element -> {
+					return linkText.equals( element.getAttributes().get( attributeName ) )
+							|| linkText.equals( element.getIdentifyingAttributes().get( attributeName ) )
+									&& "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() );
+				} );
 		final Element actualElement = oldNewMapping.getValue();
 		if ( actualElement == null ) {
 			logger.warn( "It appears that even the old state didn't have an element with link text '{}'.", linkText );

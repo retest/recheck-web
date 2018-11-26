@@ -42,4 +42,24 @@ public abstract class By extends org.openqa.selenium.By {
 		}
 		return null;
 	}
+
+	public static Mapping<Element, Element> findElementByAttribute( final RootElement lastExpectedState,
+			final RootElement lastActualState, final String attributeName, final Predicate<Object> condition ) {
+		return findElement( lastExpectedState, lastActualState, element -> {
+			if ( element.getIdentifyingAttributes().get( attributeName ) != null ) {
+				return condition.test( element.getIdentifyingAttributes().getAttribute( attributeName ).getValue() );
+			} else if ( element.getAttributes().get( attributeName ) != null ) {
+				return condition.test( element.getAttributes().get( attributeName ) );
+			} else {
+				return false;
+			}
+		} );
+	}
+
+	public static Mapping<Element, Element> findElementByAttribute( final RootElement lastExpectedState,
+			final RootElement lastActualState, final String attributeName, final Object attributeValue ) {
+		return findElementByAttribute( lastExpectedState, lastActualState, attributeName,
+				attribute -> attributeValue.equals( attribute ) );
+	}
+
 }
