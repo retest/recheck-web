@@ -58,8 +58,7 @@ public abstract class By extends org.openqa.selenium.By {
 
 	public static Mapping<Element, Element> findElementByAttribute( final RootElement lastExpectedState,
 			final RootElement lastActualState, final String attributeName, final Object attributeValue ) {
-		return findElementByAttribute( lastExpectedState, lastActualState, attributeName,
-				attribute -> attributeValue.equals( attribute ) );
+		return findElementByAttribute( lastExpectedState, lastActualState, attributeName, attributeValue::equals );
 	}
 
 }
