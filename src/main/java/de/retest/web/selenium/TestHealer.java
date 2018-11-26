@@ -108,12 +108,10 @@ public class TestHealer {
 	private WebElement findElementByLinkText( final ByLinkText by ) {
 		final String linkText = retrieveLinkText( by );
 		final String attributeName = "text";
-		final Element actualElement =
-				de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState, element -> {
-					return linkText.equals( element.getAttributes().get( attributeName ) )
-							|| linkText.equals( element.getIdentifyingAttributes().get( attributeName ) )
-									&& "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() );
-				} );
+		final Element actualElement = de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState,
+				element -> linkText.equals( element.getAttributes().get( attributeName ) )
+						|| linkText.equals( element.getIdentifyingAttributes().get( attributeName ) )
+								&& "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() ) );
 
 		if ( actualElement == null ) {
 			logger.warn( "It appears that even the old state didn't have an element with link text '{}'.", linkText );
