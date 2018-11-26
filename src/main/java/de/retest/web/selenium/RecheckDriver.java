@@ -12,7 +12,6 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.HasInputDevices;
 import org.openqa.selenium.interactions.Interactive;
@@ -27,8 +26,6 @@ import org.openqa.selenium.internal.FindsByName;
 import org.openqa.selenium.internal.FindsByTagName;
 import org.openqa.selenium.internal.FindsByXPath;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import de.retest.ui.descriptors.Element;
 import de.retest.ui.descriptors.RootElement;
@@ -37,8 +34,6 @@ import de.retest.web.RecheckWebImpl;
 public class RecheckDriver implements WebDriver, JavascriptExecutor, FindsById, FindsByClassName, FindsByLinkText,
 		FindsByName, FindsByCssSelector, FindsByTagName, FindsByXPath, HasInputDevices, HasCapabilities, Interactive,
 		TakesScreenshot {
-
-	private static final Logger logger = LoggerFactory.getLogger( RecheckDriver.class );
 
 	private final RemoteWebDriver wrapped;
 	private RootElement lastExpectedState;
@@ -244,7 +239,7 @@ public class RecheckDriver implements WebDriver, JavascriptExecutor, FindsById, 
 	}
 
 	@Override
-	public <X> X getScreenshotAs( final OutputType<X> target ) throws WebDriverException {
+	public <X> X getScreenshotAs( final OutputType<X> target ) {
 		return wrapped.getScreenshotAs( target );
 	}
 
