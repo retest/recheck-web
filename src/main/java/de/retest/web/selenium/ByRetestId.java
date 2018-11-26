@@ -12,7 +12,6 @@ import org.slf4j.LoggerFactory;
 
 import de.retest.ui.descriptors.Element;
 import de.retest.ui.descriptors.RootElement;
-import de.retest.util.Mapping;
 
 public class ByRetestId extends By implements Serializable {
 
@@ -36,9 +35,8 @@ public class ByRetestId extends By implements Serializable {
 	}
 
 	public Element findElement( final RootElement lastExpectedState, final RootElement lastActualState ) {
-		final Mapping<Element, Element> oldNewMapping = de.retest.web.selenium.By.findElement( lastExpectedState,
-				lastActualState, element -> retestId.equals( element.getRetestId() ) );
-		final Element result = oldNewMapping.getValue();
+		final Element result = de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState,
+				element -> retestId.equals( element.getRetestId() ) );
 		if ( result == null ) {
 			throw new NoElementWithReTestIdFoundException( retestId );
 		}

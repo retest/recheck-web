@@ -18,7 +18,6 @@ import org.slf4j.LoggerFactory;
 
 import de.retest.ui.descriptors.Element;
 import de.retest.ui.descriptors.RootElement;
-import de.retest.util.Mapping;
 
 public class TestHealer {
 
@@ -63,71 +62,65 @@ public class TestHealer {
 
 	private WebElement findElementById( final ById by ) {
 		final String id = retrieveId( by );
-		final Mapping<Element, Element> oldNewMapping =
+		final Element actualElement =
 				de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, "id", id );
 
-		final Element actualElement = oldNewMapping.getValue();
 		if ( actualElement == null ) {
 			logger.warn( "It appears that even the old state didn't have an element with id '{}'.", id );
 			return null;
+		} else {
+			writeWarnLogForChangedIdentifier( "HTML id attribute", id,
+					actualElement.getIdentifyingAttributes().get( "id" ), "id", actualElement.getRetestId() );
+			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
-
-		writeWarnLogForChangedIdentifier( "HTML id attribute", id, actualElement.getIdentifyingAttributes().get( "id" ),
-				"id", oldNewMapping );
-
-		return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 	}
 
 	private WebElement findElementByClassName( final ByClassName by ) {
 		final String className = retrieveCSSClassName( by );
-		final Mapping<Element, Element> oldNewMapping = de.retest.web.selenium.By.findElementByAttribute(
-				lastExpectedState, lastActualState, "class", value -> ((String) value).contains( className ) );
+		final Element actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState,
+				lastActualState, "class", value -> ((String) value).contains( className ) );
 
-		final Element actualElement = oldNewMapping.getValue();
 		if ( actualElement == null ) {
 			logger.warn( "It appears that even the old state didn't have an element with CSS class '{}'.", className );
 			return null;
+		} else {
+			writeWarnLogForChangedIdentifier( "HTML class attribute", className,
+					actualElement.getIdentifyingAttributes().get( "class" ), "className", actualElement.getRetestId() );
+			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
-
-		writeWarnLogForChangedIdentifier( "HTML class attribute", className,
-				actualElement.getIdentifyingAttributes().get( "class" ), "className", oldNewMapping );
-
-		return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 	}
 
 	private WebElement findElementByName( final ByName by ) {
 		final String name = retrieveName( by );
-		final Mapping<Element, Element> oldNewMapping =
+		final Element actualElement =
 				de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, "name", name );
 
-		final Element actualElement = oldNewMapping.getValue();
 		if ( actualElement == null ) {
 			logger.warn( "It appears that even the old state didn't have an element with name '{}'.", name );
 			return null;
+		} else {
+			writeWarnLogForChangedIdentifier( "HTML name attribute", name, actualElement.getAttributes().get( "name" ),
+					"name", actualElement.getRetestId() );
+			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
-
-		writeWarnLogForChangedIdentifier( "HTML name attribute", name, actualElement.getAttributes().get( "name" ),
-				"name", oldNewMapping );
-		return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 	}
 
 	private WebElement findElementByLinkText( final ByLinkText by ) {
 		final String linkText = retrieveLinkText( by );
 		final String attributeName = "text";
-		final Mapping<Element, Element> oldNewMapping =
+		final Element actualElement =
 				de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState, element -> {
 					return linkText.equals( element.getAttributes().get( attributeName ) )
 							|| linkText.equals( element.getIdentifyingAttributes().get( attributeName ) )
 									&& "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() );
 				} );
-		final Element actualElement = oldNewMapping.getValue();
 
 		if ( actualElement == null ) {
 			logger.warn( "It appears that even the old state didn't have an element with link text '{}'.", linkText );
 			return null;
 		} else {
 			writeWarnLogForChangedIdentifier( "link text", linkText,
-					actualElement.getIdentifyingAttributes().get( "text" ), "linkText", oldNewMapping );
+					actualElement.getIdentifyingAttributes().get( "text" ), "linkText", actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -143,9 +136,7 @@ public class TestHealer {
 	}
 
 	private void writeWarnLogForChangedIdentifier( final String elementIdentifier, final Object oldValue,
-			final Object newValue, final String byMethodName, final Mapping<Element, Element> oldNewMapping ) {
-		final String retestId = oldNewMapping.getKey().getRetestId();
-
+			final Object newValue, final String byMethodName, final String retestId ) {
 		logger.warn( "*************** recheck warning ***************" );
 		logger.warn( "The {} used for element identification changed from '{}' to '{}'.", elementIdentifier, oldValue,
 				newValue );

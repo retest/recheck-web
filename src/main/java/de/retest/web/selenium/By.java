@@ -6,7 +6,6 @@ import java.util.function.Predicate;
 import de.retest.ui.descriptors.Element;
 import de.retest.ui.descriptors.RootElement;
 import de.retest.ui.diff.Alignment;
-import de.retest.util.Mapping;
 
 public abstract class By extends org.openqa.selenium.By {
 
@@ -14,8 +13,8 @@ public abstract class By extends org.openqa.selenium.By {
 		return new ByRetestId( retestId );
 	}
 
-	public static Mapping<Element, Element> findElement( final RootElement lastExpectedState,
-			final RootElement lastActualState, final Predicate<Element> predicate ) {
+	public static Element findElement( final RootElement lastExpectedState, final RootElement lastActualState,
+			final Predicate<Element> predicate ) {
 		if ( lastExpectedState == null ) {
 			throw new IllegalArgumentException( "Cannot find element in null state." );
 		}
@@ -27,7 +26,7 @@ public abstract class By extends org.openqa.selenium.By {
 		// final Alignment alignment = Alignment.createAlignment( lastExpectedState, lastActualState );
 		final Alignment alignment = Alignment.a( lastExpectedState, lastActualState );
 		// return new Mapping<>( result, alignment.get( result ) );
-		return new Mapping<>( result, alignment.a( result ) );
+		return alignment.a( result );
 	}
 
 	private static Element findElement( final List<Element> children, final Predicate<Element> predicate ) {
@@ -43,7 +42,7 @@ public abstract class By extends org.openqa.selenium.By {
 		return null;
 	}
 
-	public static Mapping<Element, Element> findElementByAttribute( final RootElement lastExpectedState,
+	public static Element findElementByAttribute( final RootElement lastExpectedState,
 			final RootElement lastActualState, final String attributeName, final Predicate<Object> condition ) {
 		return findElement( lastExpectedState, lastActualState, element -> {
 			if ( element.getIdentifyingAttributes().get( attributeName ) != null ) {
@@ -56,7 +55,7 @@ public abstract class By extends org.openqa.selenium.By {
 		} );
 	}
 
-	public static Mapping<Element, Element> findElementByAttribute( final RootElement lastExpectedState,
+	public static Element findElementByAttribute( final RootElement lastExpectedState,
 			final RootElement lastActualState, final String attributeName, final Object attributeValue ) {
 		return findElementByAttribute( lastExpectedState, lastActualState, attributeName, attributeValue::equals );
 	}
