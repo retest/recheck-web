@@ -86,7 +86,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	@Override
 	public DefaultValueFinder getDefaultValueFinder() {
 		// TODO DefaultValueFinder is just a stub.
-		return ( identifyingAttributes, s, serializable ) -> false;
+		return ( identifyingAttributes, attributesKey, attributeValue ) -> false;
 	}
 
 }
