@@ -84,12 +84,6 @@
 			<groupId>de.retest</groupId>
 			<artifactId>retest</artifactId>
 			<version>3.1.0</version>
-			<exclusions>
-				<exclusion>
-					<groupId>com.google.guava</groupId>
-					<artifactId>guava</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 
 		<!-- TODO Why isn't resolved transitively via retest? -->
