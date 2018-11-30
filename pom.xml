@@ -77,7 +77,7 @@
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>retest</artifactId>
-			<version>3.0.1</version>
+			<version>3.1.0</version>
 			<exclusions>
 				<exclusion>
 					<groupId>com.google.guava</groupId>
@@ -90,14 +90,14 @@
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>recheck</artifactId>
-			<version>0.4.3</version>
+			<version>0.5.0</version>
 		</dependency>
 
 		<!-- TODO Why isn't resolved transitively via retest? -->
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>retest-model</artifactId>
-			<version>4.0.4</version>
+			<version>5.1.1</version>
 		</dependency>
 
 		<dependency>
