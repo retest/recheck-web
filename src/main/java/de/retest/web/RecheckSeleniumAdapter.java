@@ -20,8 +20,8 @@ import org.slf4j.LoggerFactory;
 import de.retest.recheck.RecheckAdapter;
 import de.retest.ui.DefaultValueFinder;
 import de.retest.ui.descriptors.IdentifyingAttributes;
-import de.retest.ui.descriptors.RetestIdProvider;
 import de.retest.ui.descriptors.RootElement;
+import de.retest.ui.descriptors.idproviders.RetestIdProvider;
 
 public class RecheckSeleniumAdapter implements RecheckAdapter {
 
@@ -86,7 +86,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	@Override
 	public DefaultValueFinder getDefaultValueFinder() {
 		// TODO DefaultValueFinder is just a stub.
-		return ( identifyingAttributes, attributesKey ) -> null;
+		return ( identifyingAttributes, s, serializable ) -> false;
 	}
 
 }

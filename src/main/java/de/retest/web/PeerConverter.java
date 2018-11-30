@@ -4,8 +4,8 @@ import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;
 
-import de.retest.ui.descriptors.RetestIdProvider;
 import de.retest.ui.descriptors.RootElement;
+import de.retest.ui.descriptors.idproviders.RetestIdProvider;
 
 class PeerConverter {
 
