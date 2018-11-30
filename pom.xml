@@ -77,7 +77,7 @@
 		<dependency><!-- Remove again when retest-model 5.2.0 -->
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>org.eclipse.persistence.moxy</artifactId>
-			<version>2.5.2</version><!-- Version 2.6.X isn't Java 1.6 compatible -->
+			<version>2.5.2</version><!-- moving to 2.6.0 breaks the XmlValue annotation -->
 		</dependency>
 	
 		<dependency>
