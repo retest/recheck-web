@@ -24,13 +24,14 @@ public class RecheckWebImpl extends RecheckImpl {
 	}
 
 	@Override
-	protected SutState loadExpected( final File file ) {
+	public SutState loadExpected( final File file ) {
 		final SutState result = super.loadExpected( file );
 		if ( driver == null ) {
 			throw new IllegalStateException( "Check should have been called before loadExpected!" );
 		}
 		if ( result != null ) {
-			driver.setLastExpectedState( result.getRootElements().get( 0 ) );
+			// TODO use unobfuscated getRootElements in retest > 3.1.0
+			driver.setLastExpectedState( result.a().get( 0 ) );
 		}
 		return result;
 	}
