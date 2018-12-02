@@ -6,7 +6,7 @@
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/retest/recheck-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![code with hearth by retest](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-retest-C1D82F.svg)](https://retest.de/en/)
 
-[recheck](https://github.com/retest/recheck) for web apps. Replace manual asserts and check everything at once.
+[recheck](https://github.com/retest/recheck) is a Golden Master-based test framework on top of Selenium, that comes with powerful features. Check everything at once and create unbreakable tests™.
 
 <p align="center"><a href="https://youtu.be/ZK-r3GaM2Dw"><img src="https://user-images.githubusercontent.com/1871610/44585296-23b3ce80-a7ac-11e8-9687-d8939209b05a.gif" /></a></p>
 
@@ -16,9 +16,10 @@
 * Easy creation and maintenance of checks for web.
 * Semantic comparison of contents.
 * Easily ignore volatile elements, attributes or sections.
-* One-click maintenance to update tests with intended changes.
+* One-click maintenance to update Golden Masters with intended changes.
 * No unexpected changes go unnoticed.
 * Operates on top of Selenium.
+* Makes your tests unbreakable.
 * The Git for your GUI.
 
 
@@ -28,12 +29,22 @@ Instead of manually defining individual aspects that you want to check, check ev
 
 Even better: Using the [retest GUI](https://retest.de/en/) (or the soon to come open-source CLI), you can easily accept those changes with a single click (patent pending). This also saves a lot of time during maintenance. Moreover, any regular changing aspects or elements (e.g. date fields) can easily be ignored.
 
+And, using the Golden Master, recheck can identify elements even after the identifying attribute was changed. So assume you are using, e.g. an HTML `id` property to identify an element within your Selenium test. Now, assume that this `id` property changes within the HTML. Then, your test would break, resulting in an `NoSuchElementException`. But using `RecheckDriver` as a drop-in replacement/wrapper of your normal driver magically finds the element and logs a warning such as
+
+```
+*************** recheck warning ***************
+The HTML id attribute used for element identification changed from 'intro-slider' to 'introSlider'.
+retest identified the element based on the persisted old state.
+If you apply these changes to the state , your test  will break.
+Use `By.id("introSlider")` or `By.retestId("9c40281d-5655-4ffa-9c6d-d079e01bb5a3")` to update your test.
+```
+
 
 ## Prerequisites
 
 Operates on top of [Selenium](https://www.seleniumhq.org/projects/webdriver/). Selenium has become an official [W3C standard](https://www.w3.org/TR/webdriver1/), supported by all major browsers. Learn more about Selenium and [how to install it](https://www.seleniumhq.org/download/).
 
-Currently available as a Java API with support for [JUnit 4](https://junit.org/junit4/) and [JUnit 5](https://junit.org/junit5/) as well as [TestNG](https://testng.org/). 
+recheck is available as a Java API with support for [JUnit 4](https://junit.org/junit4/) and [JUnit 5](https://junit.org/junit5/) as well as [TestNG](https://testng.org/). 
 
 ## Setup
 
@@ -47,7 +58,7 @@ Download recheck-web here on [GitHub](https://https://github.com/retest/recheck-
 </dependency>
 ```
 
-## Usage
+## Usage of plain recheck
 
 Then replace the assertions in your Selenium test. An example test could look like so ([simplified](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/SimpleShowcaseIT.java)):
 
@@ -132,6 +143,18 @@ index resulted in:
 
 Additionally, a file named `replay.result` will be created upon test failure, typically located in your `target/test-classes` folder. This file can now be used to apply those changes to your baseline, using either the [recheck-cli](https://github.com/retest/recheck-cli) or the [retest-GUI](http://retest.org).
 
+
+## Usage of RecheckDriver / "Unbreakable Selenium"™
+
+In order to use "unbreakable Selenium"™, you just need to wrap your usual driver with a `RecheckDriver` (drop-in replacement), and use `RecheckWebImpl` instead of `RecheckImpl`. The code would the look like [so](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/SimpleUnbreakableSeleniumShowcaseIT.java)):
+
+```
+    // Use the RecheckDriver as a wrapper for your usual driver
+    driver = new RecheckDriver( new ChromeDriver( opts ) );
+
+    // Use the unbreakable recheck implementation.
+    re = new RecheckWebImpl();
+```
 
 ## License
 

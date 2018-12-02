@@ -6,19 +6,19 @@ import java.nio.file.Paths;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import de.retest.recheck.Recheck;
-import de.retest.recheck.RecheckImpl;
+import de.retest.web.selenium.By;
+import de.retest.web.selenium.RecheckDriver;
 
 /*
  * Simple recheck-web showcase for a Chrome-based integration test. See other *IT classes for more examples.
  */
-public class SimpleShowcaseIT {
+public class SimpleRetestIdShowcaseIT {
 
-	private WebDriver driver;
+	private RecheckDriver driver;
 	private Recheck re;
 
 	@Before
@@ -34,10 +34,10 @@ public class SimpleShowcaseIT {
 				"--no-sandbox",
 				// Fix window size for stable results.
 				"--window-size=1200,800" );
-		driver = new ChromeDriver( opts );
+		driver = new RecheckDriver( new ChromeDriver( opts ) );
 
 		// Use the default implementation.
-		re = new RecheckImpl();
+		re = new RecheckWebImpl();
 	}
 
 	@Test
@@ -46,16 +46,16 @@ public class SimpleShowcaseIT {
 		re.startTest( "simple-showcase" );
 
 		// Do your Selenium stuff.
-		final Path showcasePath = Paths.get( "src/test/resources/pages/showcase/retest.html" );
+		final Path showcasePath = Paths.get( "src/test/resources/pages/showcase/retest-changed.html" );
 		driver.get( showcasePath.toUri().toURL().toString() );
-
-		Thread.sleep( 1000 );
 
 		// Single call instead of multiple assertions (doesn't fail on differences).
 		re.check( driver, "index" );
 
-		// Conclude the test case (fails on differences).
-		re.capTest();
+		driver.findElement( By.retestId( "contact" ) ).click();
+
+		// Usually, we conclude the test case, but since we expect differences, this will fail.
+		// re.capTest();
 	}
 
 	@After
@@ -63,7 +63,7 @@ public class SimpleShowcaseIT {
 		driver.quit();
 
 		// Produce the result file.
-		re.cap();
+		//		re.cap();
 	}
 
 }
