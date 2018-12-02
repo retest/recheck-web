@@ -74,30 +74,30 @@
 	</distributionManagement>
 
 	<dependencies>
+		<dependency><!-- Remove again when retest-model 5.2.0 -->
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>org.eclipse.persistence.moxy</artifactId>
+			<version>2.5.2</version><!-- moving to 2.6.0 breaks the XmlValue annotation -->
+		</dependency>
+	
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>retest</artifactId>
-			<version>3.0.1</version>
-			<exclusions>
-				<exclusion>
-					<groupId>com.google.guava</groupId>
-					<artifactId>guava</artifactId>
-				</exclusion>
-			</exclusions>
+			<version>3.1.0</version>
 		</dependency>
 
 		<!-- TODO Why isn't resolved transitively via retest? -->
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>recheck</artifactId>
-			<version>0.4.3</version>
+			<version>0.5.0</version>
 		</dependency>
 
 		<!-- TODO Why isn't resolved transitively via retest? -->
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>retest-model</artifactId>
-			<version>4.0.4</version>
+			<version>5.1.1</version>
 		</dependency>
 
 		<dependency>
@@ -110,12 +110,6 @@
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.14.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>26.0-jre</version>
 		</dependency>
 
 		<dependency>
@@ -208,14 +202,6 @@
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
 			<version>2.22.0</version>
-			<scope>test</scope>
-		</dependency>
-
-		<!-- only required because of retest dependency conflict -->
-		<dependency>
-			<groupId>com.googlecode.jmockit</groupId>
-			<artifactId>jmockit</artifactId>
-			<version>1.7</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

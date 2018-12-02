@@ -79,8 +79,9 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 	}
 
 	@Override
-	public Serializable getDefaultValue( final IdentifyingAttributes comp, final String attributesKey ) {
-		return getDefaultValue( comp.getType(), attributesKey );
+	public boolean isDefaultValue( final IdentifyingAttributes identifyingAttributes, final String s,
+			final Serializable serializable ) {
+		return isDefault( identifyingAttributes.getType(), s, (String) serializable );
 	}
 
 	public boolean isDefault( final String tag, final String attribute, final String attributeValue ) {

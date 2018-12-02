@@ -64,7 +64,7 @@ public class WebElementPeer {
 
 		final Rectangle outline = webData.getOutline();
 		if ( outline != null ) {
-			attributes.add( new OutlineAttribute( outline ) );
+			attributes.add( OutlineAttribute.create( outline ) );
 		}
 
 		final List<String> userDefinedAttributes =
