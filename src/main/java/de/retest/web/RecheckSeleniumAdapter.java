@@ -9,7 +9,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.UUID;
 
 import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,24 +18,13 @@ import org.slf4j.LoggerFactory;
 
 import de.retest.recheck.RecheckAdapter;
 import de.retest.ui.DefaultValueFinder;
-import de.retest.ui.descriptors.IdentifyingAttributes;
+import de.retest.ui.descriptors.RetestIdProviderUtil;
 import de.retest.ui.descriptors.RootElement;
 import de.retest.ui.descriptors.idproviders.RetestIdProvider;
 
 public class RecheckSeleniumAdapter implements RecheckAdapter {
 
-	// TODO Remove again after retest 3.1.0 release...
-	public static final RetestIdProvider idProvider = new RetestIdProvider() {
-		@Override
-		public String getRetestId( final IdentifyingAttributes identifyingAttributes ) {
-			return UUID.randomUUID().toString();
-		}
-
-		@Override
-		public void reset() {
-			// not needed because UUID is globally unique
-		}
-	};
+	public static final RetestIdProvider idProvider = RetestIdProviderUtil.getConfiguredRetestIdProvider();
 
 	private static final String GET_ALL_ELEMENTS_BY_PATH_JS_PATH = "/javascript/getAllElementsByPath.js";
 
@@ -86,7 +74,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	@Override
 	public DefaultValueFinder getDefaultValueFinder() {
 		// TODO DefaultValueFinder is just a stub.
-		return ( identifyingAttributes, s, serializable ) -> false;
+		return ( identifyingAttributes, attributesKey, attributeValue ) -> false;
 	}
 
 }

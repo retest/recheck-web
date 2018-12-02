@@ -79,9 +79,9 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 	}
 
 	@Override
-	public boolean isDefaultValue( final IdentifyingAttributes identifyingAttributes, final String s,
-			final Serializable serializable ) {
-		return isDefault( identifyingAttributes.getType(), s, (String) serializable );
+	public boolean isDefaultValue( final IdentifyingAttributes identifyingAttributes, final String attributeKey,
+			final Serializable attributeValue ) {
+		return isDefault( identifyingAttributes.getType(), attributeKey, attributeValue.toString() );
 	}
 
 	public boolean isDefault( final String tag, final String attribute, final String attributeValue ) {
@@ -97,5 +97,4 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 		}
 		return false;
 	}
-
 }
