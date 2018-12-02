@@ -22,11 +22,8 @@ public abstract class By extends org.openqa.selenium.By {
 		if ( result == null ) {
 			return null;
 		}
-		// TODO Use unobfuscated methods with retest 3.1.0
-		// final Alignment alignment = Alignment.createAlignment( lastExpectedState, lastActualState );
-		final Alignment alignment = Alignment.a( lastExpectedState, lastActualState );
-		// return new Mapping<>( result, alignment.get( result ) );
-		return alignment.a( result );
+		final Alignment alignment = Alignment.createAlignment( lastExpectedState, lastActualState );
+		return alignment.get( result );
 	}
 
 	private static Element findElement( final List<Element> children, final Predicate<Element> predicate ) {
