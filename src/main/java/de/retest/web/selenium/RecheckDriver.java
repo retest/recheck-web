@@ -59,7 +59,7 @@ public class RecheckDriver implements WebDriver, JavascriptExecutor, FindsById, 
 		return lastActualState;
 	}
 
-	public WebElement findElement( final ByRetestId by ) {
+	public WebElement findElement( final ByBestMatchToRetestId by ) {
 		if ( lastExpectedState == null ) {
 			throw new IllegalStateException( "You must use the " + RecheckWebImpl.class.getSimpleName()
 					+ " and first check the state before being able to use the retest ID locator." );
@@ -69,13 +69,13 @@ public class RecheckDriver implements WebDriver, JavascriptExecutor, FindsById, 
 	}
 
 	public WebElement findElementByRetestId( final String retestId ) {
-		return findElement( new ByRetestId( retestId ) );
+		return findElement( new ByBestMatchToRetestId( retestId ) );
 	}
 
 	@Override
 	public WebElement findElement( final By by ) {
-		if ( by instanceof ByRetestId ) {
-			return findElement( (ByRetestId) by );
+		if ( by instanceof ByBestMatchToRetestId ) {
+			return findElement( (ByBestMatchToRetestId) by );
 		}
 		try {
 			return wrapped.findElement( by );

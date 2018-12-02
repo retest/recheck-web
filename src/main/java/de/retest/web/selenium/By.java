@@ -9,8 +9,8 @@ import de.retest.ui.diff.Alignment;
 
 public abstract class By extends org.openqa.selenium.By {
 
-	public static ByRetestId retestId( final String retestId ) {
-		return new ByRetestId( retestId );
+	public static ByBestMatchToRetestId retestId( final String retestId ) {
+		return new ByBestMatchToRetestId( retestId );
 	}
 
 	public static Element findElement( final RootElement lastExpectedState, final RootElement lastActualState,

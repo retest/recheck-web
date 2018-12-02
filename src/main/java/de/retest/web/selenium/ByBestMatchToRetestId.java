@@ -13,15 +13,25 @@ import org.slf4j.LoggerFactory;
 import de.retest.ui.descriptors.Element;
 import de.retest.ui.descriptors.RootElement;
 
-public class ByRetestId extends By implements Serializable {
+/**
+ * ByBestMatchToRetestId will search for elements by their old retestId (the retestId they had in the Golden Master
+ * state).
+ *
+ * Note that elements are assigned a retestId when they are created (i.e. also when the _new_ state is created). This
+ * retestId might differ from the retestId the element had in the persisted (Golden Master) state. But since retestId is
+ * immutable, the element (and all its child elements) thus have their respective _new_ (potentially different)
+ * retestId. Thus, the result of a call to `findByRetestId` might return an element with a different retestId than was
+ * delivered.
+ */
+public class ByBestMatchToRetestId extends By implements Serializable {
 
 	private static final long serialVersionUID = -3787115401615364934L;
 
-	private static final Logger logger = LoggerFactory.getLogger( ByRetestId.class );
+	private static final Logger logger = LoggerFactory.getLogger( ByBestMatchToRetestId.class );
 
 	private final String retestId;
 
-	public ByRetestId( final String retestId ) {
+	public ByBestMatchToRetestId( final String retestId ) {
 		this.retestId = retestId;
 		if ( StringUtils.isBlank( retestId ) ) {
 			throw new IllegalArgumentException( "retestId must not be empty." );
@@ -34,6 +44,9 @@ public class ByRetestId extends By implements Serializable {
 		throw new UnsupportedOperationException( "This class can only be used in conjunction with a RecheckDriver." );
 	}
 
+	/**
+	 * Might return an element with a different retestId, that is non-the-less the best match to the given retestId.
+	 */
 	public Element findElement( final RootElement lastExpectedState, final RootElement lastActualState ) {
 		final Element result = de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState,
 				element -> retestId.equals( element.getRetestId() ) );
@@ -59,6 +72,6 @@ public class ByRetestId extends By implements Serializable {
 		if ( getClass() != other.getClass() ) {
 			return false;
 		}
-		return retestId.equals( ((ByRetestId) other).retestId );
+		return retestId.equals( ((ByBestMatchToRetestId) other).retestId );
 	}
 }
