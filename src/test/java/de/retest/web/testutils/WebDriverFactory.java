@@ -18,6 +18,8 @@ public class WebDriverFactory {
 	}
 
 	public static WebDriver driver( final Driver driver ) {
+		// TODO Remove once the absolute outline is ignored by default
+		SystemPropertyUtils.ignoreAbsoluteOutline();
 		switch ( driver ) {
 			case CHROME: {
 				return new ChromeDriver( new ChromeOptions().addArguments( commonArguments() ) );
