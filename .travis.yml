@@ -3,7 +3,7 @@ dist: trusty
 sudo: false
 
 env:
-  - MVN="mvn --settings $TRAVIS_BUILD_DIR/.travis.settings.xml"
+  - MVN="mvn --settings ${TRAVIS_BUILD_DIR}/.travis.settings.xml"
 
 addons:
   chrome: stable
@@ -34,7 +34,7 @@ before_script:
   - wget https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz
   - mkdir geckodriver
   - tar -xzf geckodriver*.tar.gz -C geckodriver
-  - export PATH=$PATH:$PWD/geckodriver
+  - export PATH="${PATH}:${PWD}/geckodriver"
   - geckodriver --version
   - export MOZ_HEADLESS=1
   # connect Firefox to the D-BUS daemon
@@ -42,34 +42,29 @@ before_script:
   - export NSS_USE_SHARED_DB=ENABLED
 
 script:
-  - $MVN clean org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar
+  - ${MVN} clean org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar
 
 before_deploy:
   # decrypt ReTest secret key
-  - openssl aes-256-cbc -K $encrypted_5faff216b858_key -iv $encrypted_5faff216b858_iv
+  - openssl aes-256-cbc -K "${encrypted_5faff216b858_key}" -iv "${encrypted_5faff216b858_iv}"
       -in retest-gmbh-gpg.asc.enc -out retest-gmbh-gpg.asc -d
   # import decrypted ReTest secret key
-  - gpg --fast-import retest-gmbh-gpg.asc
-  # package, sign and deploy artifacts
-  - $MVN deploy -DskipTests -P sign
+  - gpg --fast-import --import-options merge-only retest-gmbh-gpg.asc
+  # package and sign artifacts
+  - ${MVN} verify -DskipTests -P sign
 
 deploy:
+  # deploy artifacts to GitHub
   - provider: releases
     api_key: "${GH_TOKEN}"
     file_glob: true
-    file: "./target/recheck-web-*.jar.*"
+    file: "./target/recheck-web-*.jar*"
     skip_cleanup: true
     on:
       tags: true
-  
-  - provider: s3
-    access_key_id: "${DO_ACCESS_KEY_ID}"
-    secret_access_key: "${DO_SECRET_ACCESS_KEY}"
-    bucket: "golden-master"
-    endpoint: https://ams3.digitaloceanspaces.com
-    region: "ams3"
-    skip_cleanup: true
-    local_dir: ./target/test-classes/retest/recheck/
-    upload-dir: $TRAVIS_BRANCH
+
+  # deploy artifacts to Maven Central
+  - provider: script
+    script: ${MVN} deploy -DskipTests
     on:
-      all_branches: true
+      tags: true
