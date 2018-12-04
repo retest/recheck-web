@@ -9,7 +9,6 @@ import de.retest.ui.descriptors.idproviders.RetestIdProvider;
 
 class PeerConverter {
 
-	private final DefaultValuesProvider defaultValuesProvider;
 	private final RetestIdProvider idProvider;
 
 	private final Map<String, Map<String, Object>> data;
@@ -19,9 +18,8 @@ class PeerConverter {
 	private final Map<String, WebElementPeer> converted = new HashMap<>();
 	private RootElementPeer root = null;
 
-	public PeerConverter( final DefaultValuesProvider defaultValuesProvider, final RetestIdProvider idProvider,
-			final Map<String, Map<String, Object>> data, final String title, final BufferedImage screenshot ) {
-		this.defaultValuesProvider = defaultValuesProvider;
+	public PeerConverter( final RetestIdProvider idProvider, final Map<String, Map<String, Object>> data,
+			final String title, final BufferedImage screenshot ) {
 		this.idProvider = idProvider;
 		this.data = data;
 		this.title = title;
@@ -56,10 +54,10 @@ class PeerConverter {
 
 		if ( parentPath == null ) {
 			assert root == null : "We can only have one root element!";
-			root = new RootElementPeer( defaultValuesProvider, webData, path, title, screenshot );
+			root = new RootElementPeer( webData, path, title, screenshot );
 			peer = root;
 		} else {
-			peer = new WebElementPeer( defaultValuesProvider, webData, path );
+			peer = new WebElementPeer( webData, path );
 			WebElementPeer parent = converted.get( parentPath );
 			if ( parent == null ) {
 				parent = convertToPeer( parentPath, new WebData( data.get( parentPath ) ) );

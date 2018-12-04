@@ -16,9 +16,9 @@ public class RootElementPeer extends WebElementPeer {
 	private final String title;
 	private final BufferedImage screenshot;
 
-	public RootElementPeer( final DefaultValuesProvider defaultValuesProvider, final WebData webData, final String path,
-			final String title, final BufferedImage screenshot ) {
-		super( defaultValuesProvider, webData, path );
+	public RootElementPeer( final WebData webData, final String path, final String title,
+			final BufferedImage screenshot ) {
+		super( webData, path );
 		this.screenshot = screenshot;
 		this.title = title;
 	}
