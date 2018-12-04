@@ -30,8 +30,7 @@ public class RecheckWebImpl extends RecheckImpl {
 			throw new IllegalStateException( "Check should have been called before loadExpected!" );
 		}
 		if ( result != null ) {
-			// TODO use unobfuscated getRootElements in retest > 3.1.0
-			driver.setLastExpectedState( result.a().get( 0 ) );
+			driver.setLastExpectedState( result.getRootElements().get( 0 ) );
 		}
 		return result;
 	}
