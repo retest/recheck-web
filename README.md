@@ -104,13 +104,17 @@ public class MyRecheckWebTest {
 Running such a test for the first time will result in a failure with an output like so:
 
 ```
-java.lang.AssertionError: Found 1 differences in 1 checks of which 1 are unique: [[expected=null, actual=HTML]]
+java.lang.AssertionError: Found 1 differences in 1 checks of which 1 are unique: [No recheck file found.]
 
 Details: 
-test showcase has 1 differences: 
-index resulted in: [HTML: [expected=null, actual=HTML]]
+test simple-showcase has 1 differences (1 unique): 
+No recheck file found. First time test was run? Created recheck file now, don't forget to commit...
 
-	at de.retest.recheck.RecheckImpl.capTest(SourceFile:170)
+	at de.retest.recheck.RecheckImpl.capTest(SourceFile:135)
+	at de.retest.web.SimpleRecheckShowcaseIT.index(SimpleRecheckShowcaseIT.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+...
+
 ```
 
 Running such a test will also create a folder structure containing a `retest.xml` file and a screenshot per check (depending on your chosen names and configuration). These are now the Golden Master, the baseline which future executions of this test are compared against. If you use version control, you should commit those files. Note that the `retest.xml` contains a full description of the _rendered_ website, including all relevant information such as text, source, etc. and _all_ non-default CSS attributes such as font and margin. Although these files may become large, they are smaller than the original and by ignoring specific (or all) attributes, you can configure how large they are. Anyways, storing a few kilobyte extra is much cheaper than the manpower needed to manually specify checks.
