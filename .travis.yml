@@ -50,14 +50,21 @@ before_deploy:
       -in retest-gmbh-gpg.asc.enc -out retest-gmbh-gpg.asc -d
   # import decrypted ReTest secret key
   - gpg --fast-import retest-gmbh-gpg.asc
-  # package, sign and deploy artifacts
-  - ${MVN} deploy -DskipTests -P sign
+  # package and sign artifacts
+  - ${MVN} verify -DskipTests -P sign
 
 deploy:
+  # deploy artifacts to GitHub
   - provider: releases
     api_key: "${GH_TOKEN}"
     file_glob: true
     file: "./target/recheck-web-*.jar*"
     skip_cleanup: true
+    on:
+      tags: true
+
+  # deploy artifacts to Maven Central
+  - provider: script
+    script: ${MVN} deploy -DskipTests
     on:
       tags: true
