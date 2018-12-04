@@ -33,10 +33,9 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	private static final Logger logger = LoggerFactory.getLogger( RecheckSeleniumAdapter.class );
 
-	private final DefaultValuesProvider defaultValuesProvider;
+	private final DefaultValuesProvider defaultValuesProvider = new DefaultValuesProvider();
 
 	public RecheckSeleniumAdapter() {
-		defaultValuesProvider = new DefaultValuesProvider();
 		logger.debug( "New RecheckSeleniumAdapter created: {}.", System.identityHashCode( this ) );
 	}
 
@@ -75,13 +74,12 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	public RootElement convertToPeers( final Map<String, Map<String, Object>> data, final String title,
 			final BufferedImage screenshot ) {
-		return new PeerConverter( defaultValuesProvider, idProvider, data, title, screenshot ).convertToPeers();
+		return new PeerConverter( idProvider, data, title, screenshot ).convertToPeers();
 	}
 
 	@Override
 	public DefaultValueFinder getDefaultValueFinder() {
-		// TODO DefaultValueFinder is just a stub.
-		return ( identifyingAttributes, attributesKey, attributeValue ) -> false;
+		return defaultValuesProvider;
 	}
 
 }

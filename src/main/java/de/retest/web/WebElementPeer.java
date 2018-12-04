@@ -23,14 +23,11 @@ import de.retest.ui.descriptors.TextAttribute;
 
 public class WebElementPeer {
 
-	private final DefaultValuesProvider defaults;
-
 	protected final List<WebElementPeer> children = new ArrayList<>();
 	protected final WebData webData;
 	protected final String path;
 
-	public WebElementPeer( final DefaultValuesProvider defaults, final WebData webData, final String path ) {
-		this.defaults = defaults;
+	public WebElementPeer( final WebData webData, final String path ) {
 		this.webData = webData;
 		this.path = path;
 	}
@@ -93,7 +90,7 @@ public class WebElementPeer {
 		final MutableAttributes state = new MutableAttributes();
 		for ( final String attribute : AttributesProvider.getInstance().getAttributes() ) {
 			final String attributeValue = webData.getAsString( attribute );
-			if ( attributeValue != null && !defaults.isDefault( webData.getTag(), attribute, attributeValue ) ) {
+			if ( attributeValue != null ) {
 				state.put( attribute, attributeValue );
 			}
 		}

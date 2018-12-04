@@ -67,7 +67,25 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 		return defaultValues;
 	}
 
-	public String getDefaultValue( final String tag, final String attribute ) {
+	@Override
+	public boolean isDefaultValue( final IdentifyingAttributes identifyingAttributes, final String attributeKey,
+			final Serializable attributeValue ) {
+		final String attributeValueString = attributeValue != null ? attributeValue.toString() : null;
+		final String defaultValueString = getDefaultValue( identifyingAttributes, attributeKey );
+		if ( defaultValueString != null ) {
+			return defaultValueString.equalsIgnoreCase( attributeValueString );
+		}
+		if ( attributeValueString == null || attributeValueString.trim().isEmpty() ) {
+			return true;
+		}
+		if ( commonDefaults.contains( attributeValueString ) ) {
+			return true;
+		}
+		return false;
+	}
+
+	String getDefaultValue( final IdentifyingAttributes identifyingAttributes, final String attribute ) {
+		final String tag = identifyingAttributes.getType();
 		final Map<String, String> defaults = defaultValues.get( tag.toLowerCase() );
 		if ( defaults != null ) {
 			final String defaultValue = defaults.get( attribute.toLowerCase() );
@@ -78,23 +96,4 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 		return defaultValues.get( "all" ).get( attribute.toLowerCase() );
 	}
 
-	@Override
-	public boolean isDefaultValue( final IdentifyingAttributes identifyingAttributes, final String attributeKey,
-			final Serializable attributeValue ) {
-		return isDefault( identifyingAttributes.getType(), attributeKey, attributeValue.toString() );
-	}
-
-	public boolean isDefault( final String tag, final String attribute, final String attributeValue ) {
-		final String defaultValue = getDefaultValue( tag, attribute );
-		if ( defaultValue != null ) {
-			return defaultValue.equalsIgnoreCase( attributeValue );
-		}
-		if ( attributeValue == null || attributeValue.trim().isEmpty() ) {
-			return true;
-		}
-		if ( commonDefaults.contains( attributeValue ) ) {
-			return true;
-		}
-		return false;
-	}
 }
