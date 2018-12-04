@@ -33,7 +33,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	private static final Logger logger = LoggerFactory.getLogger( RecheckSeleniumAdapter.class );
 
-	private final DefaultValuesProvider defaultValuesProvider = new DefaultValuesProvider();
+	private final DefaultValueFinder defaultWebValueFinder = new DefaultWebValueFinder();
 
 	public RecheckSeleniumAdapter() {
 		logger.debug( "New RecheckSeleniumAdapter created: {}.", System.identityHashCode( this ) );
@@ -79,7 +79,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public DefaultValueFinder getDefaultValueFinder() {
-		return defaultValuesProvider;
+		return defaultWebValueFinder;
 	}
 
 }

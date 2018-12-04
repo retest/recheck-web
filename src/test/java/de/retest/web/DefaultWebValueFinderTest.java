@@ -9,11 +9,11 @@ import org.junit.jupiter.api.Test;
 import de.retest.ui.Path;
 import de.retest.ui.descriptors.IdentifyingAttributes;
 
-class DefaultValuesProviderTest {
+class DefaultWebValueFinderTest {
 
 	@Test
 	void default_values_loaded_from_yaml() {
-		final DefaultValuesProvider cut = new DefaultValuesProvider();
+		final DefaultWebValueFinder cut = new DefaultWebValueFinder();
 		final IdentifyingAttributes ident0 = mock( IdentifyingAttributes.class );
 		when( ident0.getType() ).thenReturn( "blockquote" );
 		assertThat( cut.isDefaultValue( ident0, "display", "block" ) ).isTrue();
@@ -25,7 +25,7 @@ class DefaultValuesProviderTest {
 
 	@Test
 	void have_fallbacks_and_general_defaults() {
-		final DefaultValuesProvider cut = new DefaultValuesProvider();
+		final DefaultWebValueFinder cut = new DefaultWebValueFinder();
 		final IdentifyingAttributes ident = mock( IdentifyingAttributes.class );
 		when( ident.getType() ).thenReturn( "foo" );
 		assertThat( cut.isDefaultValue( ident, "box-shadow", "none" ) ).isTrue();
@@ -41,7 +41,7 @@ class DefaultValuesProviderTest {
 
 	@Test
 	void getDefaultValue_should_be_case_insensitive() {
-		final DefaultValuesProvider cut = new DefaultValuesProvider();
+		final DefaultWebValueFinder cut = new DefaultWebValueFinder();
 		final IdentifyingAttributes identUpperCase =
 				IdentifyingAttributes.create( Path.fromString( "/HTML/BODY/DIV" ), "P" );
 		assertThat( cut.isDefaultValue( identUpperCase, "DISPLAY", "block" ) ).isTrue();
@@ -52,7 +52,7 @@ class DefaultValuesProviderTest {
 
 	@Test
 	void getDefaultValue_should_prefer_specific_over_general_values() {
-		final DefaultValuesProvider cut = new DefaultValuesProvider();
+		final DefaultWebValueFinder cut = new DefaultWebValueFinder();
 		final IdentifyingAttributes ident0 = mock( IdentifyingAttributes.class );
 		when( ident0.getType() ).thenReturn( "body" );
 		assertThat( cut.getDefaultValue( ident0, "margin-top" ) ).isEqualTo( "8px" );
@@ -64,7 +64,7 @@ class DefaultValuesProviderTest {
 	@Test
 	void if_we_have_a_default_value_then_null_should_not_be_accepted() {
 		// Unless we have learned otherwise, default beats null or empty.
-		final DefaultValuesProvider cut = new DefaultValuesProvider();
+		final DefaultWebValueFinder cut = new DefaultWebValueFinder();
 		final IdentifyingAttributes ident = mock( IdentifyingAttributes.class );
 		when( ident.getType() ).thenReturn( "a" );
 		assertThat( cut.isDefaultValue( ident, "text-decoration", "" ) ).isFalse();

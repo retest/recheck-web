@@ -20,7 +20,7 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import de.retest.ui.DefaultValueFinder;
 import de.retest.ui.descriptors.IdentifyingAttributes;
 
-public class DefaultValuesProvider implements DefaultValueFinder {
+public class DefaultWebValueFinder implements DefaultValueFinder {
 
 	public static final String DEFAULTS_FILE_PATH = "/defaults.yaml";
 
@@ -34,7 +34,7 @@ public class DefaultValuesProvider implements DefaultValueFinder {
 
 	private final Map<String, Map<String, String>> defaultValues;
 
-	public DefaultValuesProvider() {
+	public DefaultWebValueFinder() {
 		try ( final InputStream url = getClass().getResourceAsStream( DEFAULTS_FILE_PATH ) ) {
 			defaultValues = readAttributesConfigFromFile( url );
 		} catch ( final IOException e ) {
