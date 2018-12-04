@@ -61,15 +61,3 @@ deploy:
     skip_cleanup: true
     on:
       tags: true
-  
-  - provider: s3
-    access_key_id: "${DO_ACCESS_KEY_ID}"
-    secret_access_key: "${DO_SECRET_ACCESS_KEY}"
-    bucket: "golden-master"
-    endpoint: https://ams3.digitaloceanspaces.com
-    region: "ams3"
-    skip_cleanup: true
-    local_dir: ./target/test-classes/retest/recheck/
-    upload-dir: $TRAVIS_BRANCH
-    on:
-      all_branches: true
