@@ -46,7 +46,7 @@ script:
 
 before_deploy:
   # decrypt ReTest secret key
-  - openssl aes-256-cbc -K "${encrypted_5faff216b858_key}" -iv "${encrypted_5faff216b858_iv}"
+  - openssl aes-256-cbc -K ${encrypted_5faff216b858_key} -iv ${encrypted_5faff216b858_iv}
       -in retest-gmbh-gpg.asc.enc -out retest-gmbh-gpg.asc -d
   # import decrypted ReTest secret key
   - gpg --fast-import --import-options merge-only retest-gmbh-gpg.asc
