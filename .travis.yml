@@ -51,11 +51,11 @@ before_deploy:
   # import decrypted ReTest secret key
   - gpg --fast-import retest-gmbh-gpg.asc
   # package and sign artifacts
-  - ${MVN} verify -DskipTests -P sign
+  - ${MVN} verify -DskipTests -Psign
 
 deploy:
   # deploy artifacts to Maven Central
   - provider: script
-    script: ${MVN} deploy -DskipTests
+    script: ${MVN} deploy -DskipTests -Psign
     on:
       tags: true
