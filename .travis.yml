@@ -54,15 +54,6 @@ before_deploy:
   - ${MVN} verify -DskipTests -P sign
 
 deploy:
-  # deploy artifacts to GitHub
-  - provider: releases
-    api_key: "${GH_TOKEN}"
-    file_glob: true
-    file: "./target/recheck-web-*.jar*"
-    skip_cleanup: true
-    on:
-      tags: true
-
   # deploy artifacts to Maven Central
   - provider: script
     script: ${MVN} deploy -DskipTests
