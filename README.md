@@ -6,7 +6,7 @@
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/retest/recheck-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![code with hearth by retest](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-retest-C1D82F.svg)](https://retest.de/en/)
 
-[recheck](https://github.com/retest/recheck) is a Golden Master-based test framework on top of Selenium, that comes with powerful features. Check everything at once and create unbreakable tests™.
+[recheck](https://github.com/retest/recheck) is a Golden Master-based test framework on top of Selenium that comes with powerful features. Check everything at once and create unbreakable tests™.
 
 <p align="center"><a href="https://youtu.be/ZK-r3GaM2Dw"><img src="https://user-images.githubusercontent.com/1871610/44585296-23b3ce80-a7ac-11e8-9687-d8939209b05a.gif" /></a></p>
 
@@ -152,7 +152,7 @@ Additionally, a file named `replay.result` will be created upon test failure, ty
 
 ## Usage of RecheckDriver / "Unbreakable Selenium"™
 
-In order to use "unbreakable Selenium"™, you just need to wrap your usual driver with a `RecheckDriver` (drop-in replacement), and use `RecheckWebImpl` instead of `RecheckImpl`. The code would the look like [so](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/SimpleUnbreakableSeleniumShowcaseIT.java)):
+In order to use "Unbreakable Selenium"™, you just need to wrap your usual driver within a `RecheckDriver` (drop-in replacement) and use `RecheckWebImpl` instead of `RecheckImpl`. The code would the look like [so](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/SimpleUnbreakableSeleniumShowcaseIT.java)):
 
 ```
     // Use the RecheckDriver as a wrapper for your usual driver
