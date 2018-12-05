@@ -154,12 +154,12 @@ Additionally, a file named `replay.result` will be created upon test failure, ty
 
 In order to use "Unbreakable Selenium"™, you just need to wrap your usual driver within a `RecheckDriver` (drop-in replacement) and use `RecheckWebImpl` instead of `RecheckImpl`. The code would the look like [so](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/SimpleUnbreakableSeleniumShowcaseIT.java)):
 
-```
-    // Use the RecheckDriver as a wrapper for your usual driver
-    driver = new RecheckDriver( new ChromeDriver( opts ) );
+```java
+ // Use the RecheckDriver as a wrapper for your usual driver.
+ driver = new RecheckDriver( new ChromeDriver() );
 
-    // Use the unbreakable recheck implementation.
-    re = new RecheckWebImpl();
+ // Use the unbreakable recheck implementation.
+ re = new RecheckWebImpl();
 ```
 
 
