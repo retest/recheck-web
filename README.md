@@ -49,7 +49,7 @@ recheck is available as a Java API with support for [JUnit 4](https://junit.org/
 
 ## Setup
 
-Download recheck-web here on [GitHub](https://https://github.com/retest/recheck-web/releases) or add it as dependency through [Maven Central](https://search.maven.org/search?q=g:de.retest%20a:recheck-web): [![Latest recheck-web on Maven Central](https://maven-badges.herokuapp.com/maven-central/de.retest/recheck-web/badge.svg?style=flat)](https://mvnrepository.com/artifact/de.retest/recheck-web)
+Add `recheck-web` as dependency through [Maven Central](https://search.maven.org/search?q=g:de.retest%20a:recheck-web): [![Latest recheck-web on Maven Central](https://maven-badges.herokuapp.com/maven-central/de.retest/recheck-web/badge.svg?style=flat)](https://mvnrepository.com/artifact/de.retest/recheck-web)
 
 ```xml
 <dependency>
