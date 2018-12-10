@@ -7,6 +7,7 @@ import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.lang.reflect.Field;
 
+import org.apache.commons.lang3.SystemUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.slf4j.Logger;
@@ -55,7 +56,7 @@ public class ScreenshotProvider {
 	// TODO Remove with retest-model version 5.1.0 and use ImageUtils instead.
 	public static int extractScale() {
 		final int defaultScale = 1;
-		if ( !GraphicsEnvironment.isHeadless() ) {
+		if ( !GraphicsEnvironment.isHeadless() && SystemUtils.IS_OS_MAC ) {
 			final GraphicsEnvironment environment = GraphicsEnvironment.getLocalGraphicsEnvironment();
 			final GraphicsDevice device = environment.getDefaultScreenDevice();
 			try {
