@@ -62,7 +62,7 @@ Add `recheck-web` as dependency through [Maven Central](https://search.maven.org
 
 ## Usage of plain recheck
 
-Then replace the assertions in your Selenium test. An example test could look like so ([simplified](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/SimpleShowcaseIT.java)):
+Then replace the assertions in your Selenium test. An example test could look like so ([simplified](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/SimpleRecheckShowcaseIT.java)):
 
 ```java
 public class MyRecheckWebTest {
