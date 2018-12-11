@@ -1,4 +1,4 @@
-package de.retest.web;
+package de.retest.web.it;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
 
-class ShowcaseIT {
+class SimplePageIT {
 
 	WebDriver driver;
 	Recheck re;
@@ -24,12 +24,12 @@ class ShowcaseIT {
 
 	@ParameterizedTest
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
-	void showcase_html_should_be_checked( final WebDriver driver ) throws Exception {
+	void simple_html_page_should_be_checked( final WebDriver driver ) throws Exception {
 		this.driver = driver;
-		re.startTest( "showcase-" + driver.getClass().getSimpleName() );
+		re.startTest( "simple-page-" + driver.getClass().getSimpleName() );
 
-		final Path showcasePath = Paths.get( "src/test/resources/pages/showcase/retest.html" );
-		driver.get( showcasePath.toUri().toURL().toString() );
+		final Path simplePagePath = Paths.get( "src/test/resources/pages/simple-page.html" );
+		driver.get( simplePagePath.toUri().toURL().toString() );
 
 		Thread.sleep( 1000 );
 

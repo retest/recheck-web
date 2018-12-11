@@ -1,4 +1,4 @@
-package de.retest.web;
+package de.retest.web.it;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

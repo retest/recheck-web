@@ -1,4 +1,4 @@
-package de.retest.web;
+package de.retest.web.it;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import de.retest.recheck.Recheck;
+import de.retest.web.RecheckWebImpl;
 import de.retest.web.selenium.By;
 import de.retest.web.selenium.RecheckDriver;
 
