@@ -1,8 +1,5 @@
 package de.retest.web.it;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -11,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
+import de.retest.web.testutils.PageFactory;
+import de.retest.web.testutils.PageFactory.Page;
 
 class PageFrameIT {
 
@@ -28,8 +27,7 @@ class PageFrameIT {
 		this.driver = driver;
 		re.startTest( "page-frame-" + driver.getClass().getSimpleName() );
 
-		final Path simplePagePath = Paths.get( "src/test/resources/pages/page-frame.html" );
-		driver.get( simplePagePath.toUri().toURL().toString() );
+		driver.get( PageFactory.page( Page.PAGE_FRAME ) );
 
 		Thread.sleep( 1000 );
 
