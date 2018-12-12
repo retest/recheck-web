@@ -62,7 +62,7 @@ Add `recheck-web` as dependency through [Maven Central](https://search.maven.org
 
 ## Usage of plain recheck
 
-Then replace the assertions in your Selenium test. An example test could look like so ([simplified](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/SimpleRecheckShowcaseIT.java)):
+Then replace the assertions in your Selenium test. An example test could look like so ([simplified](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/it/SimpleRecheckShowcaseIT.java)):
 
 ```java
 public class MyRecheckWebTest {
@@ -113,7 +113,7 @@ test simple-showcase has 1 differences (1 unique):
 No recheck file found. First time test was run? Created recheck file now, don't forget to commit...
 
 	at de.retest.recheck.RecheckImpl.capTest(SourceFile:135)
-	at de.retest.web.SimpleRecheckShowcaseIT.index(SimpleRecheckShowcaseIT.java:61)
+	at de.retest.web.it.SimpleRecheckShowcaseIT.index(SimpleRecheckShowcaseIT.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 ...
 
@@ -152,7 +152,7 @@ Additionally, a file named `replay.result` will be created upon test failure, ty
 
 ## Usage of RecheckDriver / "Unbreakable Selenium"
 
-In order to use "Unbreakable Selenium", you just need to wrap your usual driver within a `RecheckDriver` (drop-in replacement) and use `RecheckWebImpl` instead of `RecheckImpl`. The code would the look like [so](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/SimpleUnbreakableSeleniumShowcaseIT.java)):
+In order to use "Unbreakable Selenium", you just need to wrap your usual driver within a `RecheckDriver` (drop-in replacement) and use `RecheckWebImpl` instead of `RecheckImpl`. The code would the look like [so](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/it/SimpleUnbreakableSeleniumShowcaseIT.java)):
 
 ```java
  // Use the RecheckDriver as a wrapper for your usual driver.
