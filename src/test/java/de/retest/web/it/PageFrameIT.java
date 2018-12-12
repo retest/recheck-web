@@ -1,7 +1,4 @@
-package de.retest.web;
-
-import java.nio.file.Path;
-import java.nio.file.Paths;
+package de.retest.web.it;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,8 +8,10 @@ import org.openqa.selenium.WebDriver;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
+import de.retest.web.testutils.PageFactory;
+import de.retest.web.testutils.PageFactory.Page;
 
-class SimplePageIT {
+class PageFrameIT {
 
 	WebDriver driver;
 	Recheck re;
@@ -24,12 +23,11 @@ class SimplePageIT {
 
 	@ParameterizedTest
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
-	void simple_html_page_should_be_checked( final WebDriver driver ) throws Exception {
+	void page_frame_html_should_be_checked( final WebDriver driver ) throws Exception {
 		this.driver = driver;
-		re.startTest( "simple-page-" + driver.getClass().getSimpleName() );
+		re.startTest( "page-frame-" + driver.getClass().getSimpleName() );
 
-		final Path simplePagePath = Paths.get( "src/test/resources/pages/simple-page.html" );
-		driver.get( simplePagePath.toUri().toURL().toString() );
+		driver.get( PageFactory.page( Page.PAGE_FRAME ) );
 
 		Thread.sleep( 1000 );
 
