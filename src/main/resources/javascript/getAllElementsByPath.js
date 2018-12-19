@@ -2,7 +2,7 @@ args = arguments[0];
 
 function Counter() {
 	this.map = {};
-	this.increase = function(element) {
+	this.increase = function (element) {
 		if (element.tagName in this.map) {
 			this.map[element.tagName] = this.map[element.tagName] + 1;
 		} else {
@@ -32,9 +32,9 @@ function getY(node) {
 
 function transform(node) {
 	var result = {
-		"tagName" : node.tagName,
-		"text" : getText(node),
-		"shown" : isShown(node)
+		"tagName": node.tagName,
+		"text": getText(node),
+		"shown": isShown(node)
 	};
 	var attrs = node.attributes;
 	for (var i = 0; i < attrs.length; i++) {
@@ -45,9 +45,8 @@ function transform(node) {
 	var style = window.getComputedStyle(node);
 	var parentStyle = [];
 	try {
-	    parentStyle = window.getComputedStyle(node.parentNode);
-	}
-	catch(err) {}
+		parentStyle = window.getComputedStyle(node.parentNode);
+	} catch (err) {}
 	for (var i = 0; i < args.length; i++) {
 		var attributeName = args[i];
 		if (!result[attributeName]) {
@@ -97,6 +96,6 @@ function mapElement(element, parentPath, allElements) {
 var htmlNode = document.getElementsByTagName("html")[0];
 var html = transform(htmlNode);
 var result = mapElement(htmlNode, "//HTML[1]", {
-	"//HTML[1]" : html
+	"//HTML[1]": html
 });
 return result;
