@@ -1,4 +1,4 @@
-args = arguments[0];
+cssAttributes = arguments[0];
 
 function Counter() {
 	this.map = {};
@@ -47,8 +47,8 @@ function transform(node) {
 	try {
 		parentStyle = window.getComputedStyle(node.parentNode);
 	} catch (err) {}
-	for (var i = 0; i < args.length; i++) {
-		var attributeName = args[i];
+	for (var i = 0; i < cssAttributes.length; i++) {
+		var attributeName = cssAttributes[i];
 		if (!result[attributeName]) {
 			if (parentStyle[attributeName] != style[attributeName]) {
 				result[attributeName] = style[attributeName];
