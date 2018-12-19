@@ -95,7 +95,7 @@ function mapElement(element, parentPath, allElements) {
 
 var htmlNode = document.getElementsByTagName("html")[0];
 var html = transform(htmlNode);
-var result = mapElement(htmlNode, "//HTML[1]", {
+var allElements = mapElement(htmlNode, "//HTML[1]", {
 	"//HTML[1]": html
 });
-return result;
+return allElements;
