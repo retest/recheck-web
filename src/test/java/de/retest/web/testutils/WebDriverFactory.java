@@ -40,8 +40,6 @@ public class WebDriverFactory {
 		return Arrays.asList(
 				// Enable headless mode for faster execution.
 				"--headless",
-				// Use container-based Travis CI environment (see https://docs.travis-ci.com/user/chrome#Sandboxing).
-				"--no-sandbox",
 				// Fix window size for stable results.
 				"--window-size=1200,800" );
 	}
