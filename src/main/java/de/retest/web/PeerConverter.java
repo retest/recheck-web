@@ -41,7 +41,7 @@ class PeerConverter {
 			throw new NullPointerException( "RootElementPeer is null." );
 		}
 
-		return root.toElement();
+		return root.toElement( null );
 	}
 
 	private WebElementPeer convertToPeer( final String path, final WebData webData ) {
