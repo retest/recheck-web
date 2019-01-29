@@ -28,9 +28,11 @@ public class RootElementPeer extends WebElementPeer {
 	public RootElement toElement( final Element parent ) {
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
 		final MutableAttributes state = retrieveStateAttributes();
-		return new RootElement( idProvider.getRetestId( identifyingAttributes ), identifyingAttributes,
-				state.immutable(), ImageUtils.image2Screenshot( SCREENSHOT_PREFIX, screenshot ), convertChildren(),
+		final RootElement rootElement = new RootElement( idProvider.getRetestId( identifyingAttributes ),
+				identifyingAttributes, state.immutable(), ImageUtils.image2Screenshot( SCREENSHOT_PREFIX, screenshot ),
 				title, 1, title );
+		rootElement.addChildren( convertChildren( rootElement ) );
+		return rootElement;
 	}
 
 }
