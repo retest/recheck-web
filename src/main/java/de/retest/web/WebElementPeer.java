@@ -36,15 +36,16 @@ public class WebElementPeer {
 		children.add( child );
 	}
 
-	public Element toElement() {
+	public Element toElement( final Element parent ) {
 		if ( webData == null ) {
 			return null;
 		}
-		final List<Element> convertedChildren = convertChildren();
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
 		final MutableAttributes state = retrieveStateAttributes();
-		return new Element( idProvider.getRetestId( identifyingAttributes ), identifyingAttributes, state.immutable(),
-				convertedChildren, null );
+		final Element element = Element.create( idProvider.getRetestId( identifyingAttributes ), parent,
+				identifyingAttributes, state.immutable() );
+		element.addChildren( convertChildren( element ) );
+		return element;
 	}
 
 	protected IdentifyingAttributes retrieveIdentifyingAttributes() {
@@ -97,9 +98,9 @@ public class WebElementPeer {
 		return state;
 	}
 
-	protected List<Element> convertChildren() {
+	protected List<Element> convertChildren( final Element parent ) {
 		return children.stream() //
-				.map( WebElementPeer::toElement ) //
+				.map( webElementPeer -> webElementPeer.toElement( parent ) ) //
 				.filter( Objects::nonNull ) //
 				.collect( Collectors.toList() );
 	}

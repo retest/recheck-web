@@ -4,8 +4,6 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 import static org.mockito.Mockito.mock;
 
-import java.util.Arrays;
-
 import org.junit.jupiter.api.Test;
 
 import de.retest.ui.descriptors.Attributes;
@@ -34,11 +32,12 @@ class ByBestMatchToRetestIdTest {
 	void find_elements_should_return_an_equal_element_when_found() {
 		final IdentifyingAttributes identifyingAtt = mock( IdentifyingAttributes.class );
 		final Attributes attributes = mock( Attributes.class );
-		final Element element = new Element( "foo", identifyingAtt, attributes );
-		final RootElement lastExpected =
-				new RootElement( "bar", identifyingAtt, attributes, null, Arrays.asList( element ), null, 0, null );
-		final RootElement lastActual =
-				new RootElement( "baz", identifyingAtt, attributes, null, Arrays.asList( element ), null, 0, null );
+
+		final RootElement lastExpected = new RootElement( "bar", identifyingAtt, attributes, null, null, 0, null );
+		final RootElement lastActual = new RootElement( "baz", identifyingAtt, attributes, null, null, 0, null );
+		final Element element = Element.create( "foo", mock( Element.class ), identifyingAtt, attributes );
+		lastExpected.addChildren( element );
+		lastActual.addChildren( element );
 		final ByBestMatchToRetestId cut = new ByBestMatchToRetestId( "foo" );
 		assertThat( cut.findElement( lastExpected, lastActual ) ).isEqualTo( element );
 	}

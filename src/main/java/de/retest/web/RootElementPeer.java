@@ -4,6 +4,7 @@ import static de.retest.web.RecheckSeleniumAdapter.idProvider;
 
 import java.awt.image.BufferedImage;
 
+import de.retest.ui.descriptors.Element;
 import de.retest.ui.descriptors.IdentifyingAttributes;
 import de.retest.ui.descriptors.MutableAttributes;
 import de.retest.ui.descriptors.RootElement;
@@ -24,12 +25,14 @@ public class RootElementPeer extends WebElementPeer {
 	}
 
 	@Override
-	public RootElement toElement() {
+	public RootElement toElement( final Element parent ) {
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
 		final MutableAttributes state = retrieveStateAttributes();
-		return new RootElement( idProvider.getRetestId( identifyingAttributes ), identifyingAttributes,
-				state.immutable(), ImageUtils.image2Screenshot( SCREENSHOT_PREFIX, screenshot ), convertChildren(),
+		final RootElement rootElement = new RootElement( idProvider.getRetestId( identifyingAttributes ),
+				identifyingAttributes, state.immutable(), ImageUtils.image2Screenshot( SCREENSHOT_PREFIX, screenshot ),
 				title, 1, title );
+		rootElement.addChildren( convertChildren( rootElement ) );
+		return rootElement;
 	}
 
 }
