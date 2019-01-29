@@ -74,12 +74,6 @@
 	</distributionManagement>
 
 	<dependencies>
-		<dependency><!-- Remove again when retest-model 5.2.0 -->
-			<groupId>org.eclipse.persistence</groupId>
-			<artifactId>org.eclipse.persistence.moxy</artifactId>
-			<version>2.5.2</version><!-- moving to 2.6.0 breaks the XmlValue annotation -->
-		</dependency>
-
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>recheck</artifactId>
