@@ -40,11 +40,12 @@ public class WebElementPeer {
 		if ( webData == null ) {
 			return null;
 		}
-		final List<Element> convertedChildren = convertChildren();
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
 		final MutableAttributes state = retrieveStateAttributes();
-		return new Element( idProvider.getRetestId( identifyingAttributes ), identifyingAttributes, state.immutable(),
-				convertedChildren, null );
+		final Element element = Element.create( idProvider.getRetestId( identifyingAttributes ), parent,
+				identifyingAttributes, state.immutable() );
+		element.addChildren( convertChildren( element ) );
+		return element;
 	}
 
 	protected IdentifyingAttributes retrieveIdentifyingAttributes() {
