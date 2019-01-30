@@ -2,6 +2,7 @@ package de.retest.web;
 
 import java.awt.Rectangle;
 import java.util.Map;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,8 +30,8 @@ public class WebData {
 		return normalize( String.valueOf( result ) );
 	}
 
-	public Map<String, Object> getWrappedData() {
-		return wrappedData;
+	public Set<String> getKeys() {
+		return wrappedData.keySet();
 	}
 
 	protected static String normalize( final String value ) {
