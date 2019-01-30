@@ -20,17 +20,14 @@ public class WebData {
 	 * @param key
 	 *            the data key
 	 * @return the string value
-	 * @throws ConversionException
-	 *             if the value for the given key is not a String
 	 */
 	public String getAsString( final String key ) {
 		final Object result = wrappedData.get( key );
 		if ( result == null ) {
 			return null;
 		}
-		if ( result instanceof String ) {
-			return normalize( (String) result );
-		}
+		return normalize( String.valueOf( result ) );
+	}
 
 	public Map<String, Object> getWrappedData() {
 		return wrappedData;
