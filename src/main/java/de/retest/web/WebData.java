@@ -31,8 +31,9 @@ public class WebData {
 		if ( result instanceof String ) {
 			return normalize( (String) result );
 		}
-		throw new ConversionException(
-				"Attribute value for " + key + " was of type " + result.getClass() + ", not of type String." );
+
+	public Map<String, Object> getWrappedData() {
+		return wrappedData;
 	}
 
 	protected static String normalize( final String value ) {
