@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="3.2.0-SNAPSHOT" dataType="de.retest.ui.descriptors.SutState" dataTypeVersion="2">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="${pom.parent.version}" dataType="de.retest.ui.descriptors.SutState" dataTypeVersion="3">
 	<data xsi:type="sutState">
-		<descriptors retestId="fb089ada-1c67-4222-b8b8-0587246d5f0f" screenId="1" screen="Hello WebDriver" title="Hello WebDriver">
+		<descriptors retestId="html" screenId="1" screen="Hello WebDriver" title="Hello WebDriver">
 			<identifyingAttributes>
 				<attributes>
+					<attribute key="absolute-outline" xsi:type="outlineAttribute">
+						<x>0</x>
+						<y>0</y>
+						<height>1124</height>
+						<width>1356</width>
+					</attribute>
 					<attribute key="outline" xsi:type="outlineAttribute">
 						<x>0</x>
 						<y>0</y>
@@ -18,8 +24,116 @@
 			<attributes>
 				<attributes>
 					<entry>
+						<key>align-content</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
+						<key>align-items</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
+						<key>align-self</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>all</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+					<entry>
+						<key>animation-delay</key>
+						<value xsi:type="xsd:string">0s</value>
+					</entry>
+					<entry>
+						<key>animation-direction</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
+						<key>animation-duration</key>
+						<value xsi:type="xsd:string">0s</value>
+					</entry>
+					<entry>
+						<key>animation-fill-mode</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>animation-iteration-count</key>
+						<value xsi:type="xsd:string">1</value>
+					</entry>
+					<entry>
+						<key>animation-name</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>animation-play-state</key>
+						<value xsi:type="xsd:string">running</value>
+					</entry>
+					<entry>
+						<key>animation-timing-function</key>
+						<value xsi:type="xsd:string">ease</value>
+					</entry>
+					<entry>
+						<key>backface-visibility</key>
+						<value xsi:type="xsd:string">visible</value>
+					</entry>
+					<entry>
+						<key>background-attachment</key>
+						<value xsi:type="xsd:string">scroll</value>
+					</entry>
+					<entry>
+						<key>background-blend-mode</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
+						<key>background-clip</key>
+						<value xsi:type="xsd:string">border-box</value>
+					</entry>
+					<entry>
+						<key>background-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 0)</value>
+					</entry>
+					<entry>
+						<key>background-image</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>background-origin</key>
+						<value xsi:type="xsd:string">padding-box</value>
+					</entry>
+					<entry>
+						<key>background-position</key>
+						<value xsi:type="xsd:string">0% 0%</value>
+					</entry>
+					<entry>
+						<key>background-repeat</key>
+						<value xsi:type="xsd:string">repeat</value>
+					</entry>
+					<entry>
 						<key>background-size</key>
-						<value xsi:type="xsd:string">auto auto</value>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>border-bottom-color</key>
+						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-left-radius</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>border-bottom-right-radius</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>border-bottom-style</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>border-bottom-width</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>border-collapse</key>
+						<value xsi:type="xsd:string">separate</value>
 					</entry>
 					<entry>
 						<key>border-image-outset</key>
@@ -27,29 +141,563 @@
 					</entry>
 					<entry>
 						<key>border-image-repeat</key>
-						<value xsi:type="xsd:string">stretch stretch</value>
+						<value xsi:type="xsd:string">stretch</value>
+					</entry>
+					<entry>
+						<key>border-image-slice</key>
+						<value xsi:type="xsd:string">100%</value>
+					</entry>
+					<entry>
+						<key>border-image-source</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>border-image-width</key>
+						<value xsi:type="xsd:string">1</value>
+					</entry>
+					<entry>
+						<key>border-left-color</key>
+						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+					</entry>
+					<entry>
+						<key>border-left-style</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>border-left-width</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>border-radius</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+					<entry>
+						<key>border-right-color</key>
+						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+					</entry>
+					<entry>
+						<key>border-right-style</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>border-right-width</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>border-spacing</key>
+						<value xsi:type="xsd:string">0px 0px</value>
+					</entry>
+					<entry>
+						<key>border-top-color</key>
+						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+					</entry>
+					<entry>
+						<key>border-top-left-radius</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>border-top-right-radius</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>border-top-style</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>border-top-width</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>bottom</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>box-decoration-break</key>
+						<value xsi:type="xsd:string">slice</value>
+					</entry>
+					<entry>
+						<key>box-shadow</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>box-sizing</key>
+						<value xsi:type="xsd:string">content-box</value>
+					</entry>
+					<entry>
+						<key>break-after</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>break-before</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>break-inside</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>caption-side</key>
+						<value xsi:type="xsd:string">top</value>
+					</entry>
+					<entry>
+						<key>caret-color</key>
+						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+					</entry>
+					<entry>
+						<key>clear</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>clip</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>color</key>
+						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+					</entry>
+					<entry>
+						<key>column-count</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>column-fill</key>
+						<value xsi:type="xsd:string">balance</value>
+					</entry>
+					<entry>
+						<key>column-gap</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
+						<key>column-rule-color</key>
+						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+					</entry>
+					<entry>
+						<key>column-rule-style</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>column-rule-width</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>column-width</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>content</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>counter-increment</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>counter-reset</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>direction</key>
+						<value xsi:type="xsd:string">ltr</value>
+					</entry>
+					<entry>
+						<key>display</key>
+						<value xsi:type="xsd:string">block</value>
+					</entry>
+					<entry>
+						<key>empty-cells</key>
+						<value xsi:type="xsd:string">show</value>
+					</entry>
+					<entry>
+						<key>filter</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>flex-basis</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>flex-direction</key>
+						<value xsi:type="xsd:string">row</value>
+					</entry>
+					<entry>
+						<key>flex-grow</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>flex-shrink</key>
+						<value xsi:type="xsd:string">1</value>
+					</entry>
+					<entry>
+						<key>flex-wrap</key>
+						<value xsi:type="xsd:string">nowrap</value>
+					</entry>
+					<entry>
+						<key>float</key>
+						<value xsi:type="xsd:string">none</value>
 					</entry>
 					<entry>
 						<key>font-family</key>
 						<value xsi:type="xsd:string">serif</value>
 					</entry>
 					<entry>
+						<key>font-kerning</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>font-size</key>
+						<value xsi:type="xsd:string">16px</value>
+					</entry>
+					<entry>
+						<key>font-size-adjust</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>font-stretch</key>
+						<value xsi:type="xsd:string">100%</value>
+					</entry>
+					<entry>
+						<key>font-style</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
+						<key>font-variant</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
+						<key>font-weight</key>
+						<value xsi:type="xsd:string">400</value>
+					</entry>
+					<entry>
+						<key>grid-auto-columns</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>grid-auto-flow</key>
+						<value xsi:type="xsd:string">row</value>
+					</entry>
+					<entry>
+						<key>grid-auto-rows</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>grid-column-end</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>grid-column-gap</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
+						<key>grid-column-start</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>grid-row-end</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>grid-row-gap</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
+						<key>grid-row-start</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>grid-template-areas</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>grid-template-columns</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>grid-template-rows</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>hyphens</key>
+						<value xsi:type="xsd:string">manual</value>
+					</entry>
+					<entry>
+						<key>isolation</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>justify-content</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
+						<key>left</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>letter-spacing</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
 						<key>line-height</key>
 						<value xsi:type="xsd:string">19px</value>
+					</entry>
+					<entry>
+						<key>list-style-image</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>list-style-position</key>
+						<value xsi:type="xsd:string">outside</value>
+					</entry>
+					<entry>
+						<key>list-style-type</key>
+						<value xsi:type="xsd:string">disc</value>
+					</entry>
+					<entry>
+						<key>margin-bottom</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>margin-left</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>margin-right</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>margin-top</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>max-height</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>max-width</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>min-height</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>min-width</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>mix-blend-mode</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
+						<key>object-fit</key>
+						<value xsi:type="xsd:string">fill</value>
+					</entry>
+					<entry>
+						<key>object-position</key>
+						<value xsi:type="xsd:string">50% 50%</value>
+					</entry>
+					<entry>
+						<key>opacity</key>
+						<value xsi:type="xsd:string">1</value>
+					</entry>
+					<entry>
+						<key>order</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>outline-color</key>
+						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+					</entry>
+					<entry>
+						<key>outline-offset</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>outline-style</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>outline-width</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>overflow-x</key>
+						<value xsi:type="xsd:string">visible</value>
+					</entry>
+					<entry>
+						<key>overflow-y</key>
+						<value xsi:type="xsd:string">visible</value>
+					</entry>
+					<entry>
+						<key>padding-bottom</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>padding-left</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>padding-right</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>padding-top</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>page-break-after</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>page-break-before</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>page-break-inside</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>perspective</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>pointer-events</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>position</key>
+						<value xsi:type="xsd:string">static</value>
 					</entry>
 					<entry>
 						<key>quotes</key>
 						<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
 					</entry>
 					<entry>
+						<key>resize</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>right</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>scroll-behavior</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>table-layout</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>text-align</key>
+						<value xsi:type="xsd:string">start</value>
+					</entry>
+					<entry>
+						<key>text-align-last</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>text-decoration-color</key>
+						<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+					</entry>
+					<entry>
+						<key>text-decoration-line</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>text-decoration-style</key>
+						<value xsi:type="xsd:string">solid</value>
+					</entry>
+					<entry>
+						<key>text-indent</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>text-justify</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>text-overflow</key>
+						<value xsi:type="xsd:string">clip</value>
+					</entry>
+					<entry>
+						<key>text-shadow</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>text-transform</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>top</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
+					<entry>
+						<key>transform</key>
+						<value xsi:type="xsd:string">none</value>
+					</entry>
+					<entry>
+						<key>transform-style</key>
+						<value xsi:type="xsd:string">flat</value>
+					</entry>
+					<entry>
+						<key>transition-delay</key>
+						<value xsi:type="xsd:string">0s</value>
+					</entry>
+					<entry>
+						<key>transition-duration</key>
+						<value xsi:type="xsd:string">0s</value>
+					</entry>
+					<entry>
+						<key>transition-property</key>
+						<value xsi:type="xsd:string">all</value>
+					</entry>
+					<entry>
+						<key>transition-timing-function</key>
+						<value xsi:type="xsd:string">ease</value>
+					</entry>
+					<entry>
 						<key>unicode-bidi</key>
 						<value xsi:type="xsd:string">isolate</value>
 					</entry>
+					<entry>
+						<key>vertical-align</key>
+						<value xsi:type="xsd:string">baseline</value>
+					</entry>
+					<entry>
+						<key>visibility</key>
+						<value xsi:type="xsd:string">visible</value>
+					</entry>
+					<entry>
+						<key>white-space</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
+						<key>word-break</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
+						<key>word-spacing</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>word-wrap</key>
+						<value xsi:type="xsd:string">normal</value>
+					</entry>
+					<entry>
+						<key>z-index</key>
+						<value xsi:type="xsd:string">auto</value>
+					</entry>
 				</attributes>
 			</attributes>
-			<containedComponents retestId="3f7858e7-4d0e-4808-8b09-64efb8066fd6">
+			<containedElements retestId="body">
 				<identifyingAttributes>
 					<attributes>
+						<attribute key="absolute-outline" xsi:type="outlineAttribute">
+							<x>8</x>
+							<y>8</y>
+							<height>1108</height>
+							<width>1340</width>
+						</attribute>
 						<attribute key="name" xsi:type="stringAttribute">body</attribute>
 						<attribute key="outline" xsi:type="outlineAttribute">
 							<x>8</x>
@@ -62,13 +710,38 @@
 						<attribute key="type" xsi:type="stringAttribute">BODY</attribute>
 					</attributes>
 				</identifyingAttributes>
-				<attributes/>
-				<containedComponents retestId="467c88da-9c87-4428-bec7-09e53bd53b2b">
+				<attributes>
+					<attributes>
+						<entry>
+							<key>margin-bottom</key>
+							<value xsi:type="xsd:string">8px</value>
+						</entry>
+						<entry>
+							<key>margin-left</key>
+							<value xsi:type="xsd:string">8px</value>
+						</entry>
+						<entry>
+							<key>margin-right</key>
+							<value xsi:type="xsd:string">8px</value>
+						</entry>
+						<entry>
+							<key>margin-top</key>
+							<value xsi:type="xsd:string">8px</value>
+						</entry>
+					</attributes>
+				</attributes>
+				<containedElements retestId="a_link_to_an_icon">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>42</x>
+								<y>1078</y>
+								<height>19</height>
+								<width>130</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">validAnchorTag</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>29</x>
+								<x>34</x>
 								<y>1070</y>
 								<height>-1089</height>
 								<width>-1210</width>
@@ -79,11 +752,126 @@
 							<attribute key="type" xsi:type="stringAttribute">A</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
-				<containedComponents retestId="11388196-19b3-4061-8c5d-cbe250e979ea">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>border-bottom-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+							</entry>
+							<entry>
+								<key>border-left-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+							</entry>
+							<entry>
+								<key>border-right-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+							</entry>
+							<entry>
+								<key>border-top-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+							</entry>
+							<entry>
+								<key>color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+							</entry>
+							<entry>
+								<key>display</key>
+								<value xsi:type="xsd:string">inline</value>
+							</entry>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+							</entry>
+							<entry>
+								<key>text-decoration-color</key>
+								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+							</entry>
+							<entry>
+								<key>text-decoration-line</key>
+								<value xsi:type="xsd:string">underline</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">normal</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="div">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>1006</y>
+								<height>19</height>
+								<width>1340</width>
+							</attribute>
+							<attribute key="id" xsi:type="stringAttribute">containsSomeDiv</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>998</y>
+								<height>-1089</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[10]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
+							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="div-077a6">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>138</y>
+								<height>73</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">multiline</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -96,10 +884,35 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-					<containedComponents retestId="63fcac1c-2c18-4383-a825-4f7613dad48c">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="br">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>216</x>
+									<y>188</y>
+									<height>0</height>
+									<width>0</width>
+								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>208</x>
 									<y>50</y>
@@ -111,11 +924,28 @@
 								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-					<containedComponents retestId="42112cfb-f607-42ca-8c2f-ff6f0ca247ea">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">normal</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="and_block_level">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>192</y>
+									<height>19</height>
+									<width>1340</width>
+								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>54</y>
@@ -129,10 +959,16 @@
 							</attributes>
 						</identifyingAttributes>
 						<attributes/>
-					</containedComponents>
-					<containedComponents retestId="7d2d8c96-e98d-4626-8636-d0e4f2862941">
+					</containedElements>
+					<containedElements retestId="a_div_containing">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>138</y>
+									<height>19</height>
+									<width>1340</width>
+								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>0</y>
@@ -145,12 +981,29 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-				</containedComponents>
-				<containedComponents retestId="0028fc9c-82d5-42f1-b066-11c1e9ffd7f7">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>margin-bottom</key>
+									<value xsi:type="xsd:string">16px</value>
+								</entry>
+								<entry>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">16px</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="div-83035">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>440</y>
+								<height>130</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">div-with-pre</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -163,10 +1016,35 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-					<containedComponents retestId="679cad63-91d1-436b-84c9-00627aae01c5">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="this_section">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>475</y>
+									<height>60</height>
+									<width>1340</width>
+								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">preformatted</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
@@ -185,6 +1063,10 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>font-family</key>
+									<value xsi:type="xsd:string">monospace</value>
+								</entry>
+								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">12px</value>
 								</entry>
@@ -200,12 +1082,22 @@
 									<key>margin-top</key>
 									<value xsi:type="xsd:string">12px</value>
 								</entry>
+								<entry>
+									<key>white-space</key>
+									<value xsi:type="xsd:string">pre</value>
+								</entry>
 							</attributes>
 						</attributes>
-					</containedComponents>
-					<containedComponents retestId="34ede3fd-3a49-4dba-a537-c99826389939">
+					</containedElements>
+					<containedElements retestId="before_pre">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>440</y>
+									<height>19</height>
+									<width>1340</width>
+								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>0</y>
@@ -218,11 +1110,28 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-					<containedComponents retestId="02c594c0-cb1d-4203-ae6a-911cb893df61">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>margin-bottom</key>
+									<value xsi:type="xsd:string">16px</value>
+								</entry>
+								<entry>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">16px</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="after_pre">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>551</y>
+									<height>19</height>
+									<width>1340</width>
+								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>111</y>
@@ -235,12 +1144,29 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-				</containedComponents>
-				<containedComponents retestId="c5d81643-35f0-4e2c-88f2-e64808f6888b">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>margin-bottom</key>
+									<value xsi:type="xsd:string">16px</value>
+								</entry>
+								<entry>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">16px</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="div-97bf4">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>586</y>
+								<height>54</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">twoblocks</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -253,10 +1179,35 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-					<containedComponents retestId="8f7308cb-47ca-422b-a9d9-5d434f6a7312">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="some_text">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>586</y>
+									<height>19</height>
+									<width>1340</width>
+								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>0</y>
@@ -269,11 +1220,28 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-					<containedComponents retestId="e5c9c101-65ae-4130-b872-aab842f04182">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>margin-bottom</key>
+									<value xsi:type="xsd:string">16px</value>
+								</entry>
+								<entry>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">16px</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="some_more_text">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>621</y>
+									<height>19</height>
+									<width>1340</width>
+								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>35</y>
@@ -286,12 +1254,29 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-				</containedComponents>
-				<containedComponents retestId="400441bf-4edb-403d-9f41-f7c0c1bb018a">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>margin-bottom</key>
+									<value xsi:type="xsd:string">16px</value>
+								</entry>
+								<entry>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">16px</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="cheese">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>656</y>
+								<height>159</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">nestedblocks</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -305,10 +1290,35 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-					<containedComponents retestId="5d624cc9-c797-4aea-acab-56b950bfc1ab">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="div-0d812">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>691</y>
+									<height>89</height>
+									<width>1340</width>
+								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>35</y>
@@ -321,9 +1331,15 @@
 							</attributes>
 						</identifyingAttributes>
 						<attributes/>
-						<containedComponents retestId="f1763458-51f6-4f66-8a88-fbedc048808f">
+						<containedElements retestId="div-f82d6">
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="absolute-outline" xsi:type="outlineAttribute">
+										<x>8</x>
+										<y>726</y>
+										<height>54</height>
+										<width>1340</width>
+									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>0</x>
 										<y>35</y>
@@ -336,9 +1352,15 @@
 								</attributes>
 							</identifyingAttributes>
 							<attributes/>
-							<containedComponents retestId="f41ca072-191c-4ef1-893b-0233abd024bf">
+							<containedElements retestId="some_more_text-2908b">
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="absolute-outline" xsi:type="outlineAttribute">
+											<x>8</x>
+											<y>726</y>
+											<height>19</height>
+											<width>1340</width>
+										</attribute>
 										<attribute key="outline" xsi:type="outlineAttribute">
 											<x>0</x>
 											<y>0</y>
@@ -351,11 +1373,28 @@
 										<attribute key="type" xsi:type="stringAttribute">P</attribute>
 									</attributes>
 								</identifyingAttributes>
-								<attributes/>
-							</containedComponents>
-							<containedComponents retestId="c2fba702-9ed3-4653-95eb-0a57f9cb1196">
+								<attributes>
+									<attributes>
+										<entry>
+											<key>margin-bottom</key>
+											<value xsi:type="xsd:string">16px</value>
+										</entry>
+										<entry>
+											<key>margin-top</key>
+											<value xsi:type="xsd:string">16px</value>
+										</entry>
+									</attributes>
+								</attributes>
+							</containedElements>
+							<containedElements retestId="and_also">
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="absolute-outline" xsi:type="outlineAttribute">
+											<x>8</x>
+											<y>761</y>
+											<height>19</height>
+											<width>1340</width>
+										</attribute>
 										<attribute key="outline" xsi:type="outlineAttribute">
 											<x>0</x>
 											<y>35</y>
@@ -368,12 +1407,29 @@
 										<attribute key="type" xsi:type="stringAttribute">P</attribute>
 									</attributes>
 								</identifyingAttributes>
-								<attributes/>
-							</containedComponents>
-						</containedComponents>
-						<containedComponents retestId="12f03818-ee48-472f-8122-233c82bcb8b4">
+								<attributes>
+									<attributes>
+										<entry>
+											<key>margin-bottom</key>
+											<value xsi:type="xsd:string">16px</value>
+										</entry>
+										<entry>
+											<key>margin-top</key>
+											<value xsi:type="xsd:string">16px</value>
+										</entry>
+									</attributes>
+								</attributes>
+							</containedElements>
+						</containedElements>
+						<containedElements retestId="some_text-8e646">
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="absolute-outline" xsi:type="outlineAttribute">
+										<x>8</x>
+										<y>691</y>
+										<height>19</height>
+										<width>1340</width>
+									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>0</x>
 										<y>0</y>
@@ -386,13 +1442,30 @@
 									<attribute key="type" xsi:type="stringAttribute">P</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes/>
-						</containedComponents>
-					</containedComponents>
-				</containedComponents>
-				<containedComponents retestId="d58df63f-bb35-41b1-9ddc-9e3ad643fd4c">
+							<attributes>
+								<attributes>
+									<entry>
+										<key>margin-bottom</key>
+										<value xsi:type="xsd:string">16px</value>
+									</entry>
+									<entry>
+										<key>margin-top</key>
+										<value xsi:type="xsd:string">16px</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="div-0d1be">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>815</y>
+								<height>19</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">collapsingtext</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -405,27 +1478,35 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-					<containedComponents retestId="0ddde2ec-fb86-47f6-8b35-37ee907e6c25">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="span">
 						<identifyingAttributes>
 							<attributes>
-								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>0</x>
-									<y>998</y>
-									<height>-1089</height>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>815</y>
+									<height>0</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[10]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="text" xsi:type="textAttribute"/>
-								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-					<containedComponents retestId="d3406e04-2c22-493e-bc00-3ea89719f822">
-						<identifyingAttributes>
-							<attributes>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>0</y>
@@ -437,11 +1518,28 @@
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-					<containedComponents retestId="a803a006-c63c-427e-be32-734428a1a63e">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">normal</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="span-2a64a">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>834</y>
+									<height>0</height>
+									<width>0</width>
+								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>19</y>
@@ -453,12 +1551,29 @@
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-				</containedComponents>
-				<containedComponents retestId="1f16f343-da75-4c95-a3e9-fa3bfa23ce68">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">normal</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="div-6bcdc">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>834</y>
+								<height>19</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">withDocumentWrite</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -471,11 +1586,36 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
-				<containedComponents retestId="c0dec1d6-750d-4ece-b3d4-7e4380b3aaa4">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="div-dec51">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>929</y>
+								<height>20</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">links</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -488,10 +1628,35 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-					<containedComponents retestId="31c048f3-65d9-47d4-ac55-c77fe7caf5a9">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="link_with_leadi">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>930</y>
+									<height>19</height>
+									<width>185</width>
+								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>1</y>
@@ -504,11 +1669,68 @@
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-					<containedComponents retestId="8a925a37-8e6f-4d45-8a34-0823897a9a50">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>border-bottom-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-left-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-right-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-top-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>text-decoration-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>text-decoration-line</key>
+									<value xsi:type="xsd:string">underline</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">normal</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="link_with_trail">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>198</x>
+									<y>930</y>
+									<height>19</height>
+									<width>190</width>
+								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">linkWithTrailingSpace</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>190</x>
@@ -522,11 +1744,68 @@
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-					<containedComponents retestId="04ab712f-2ca5-4fdb-a5a1-1771ea814bd1">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>border-bottom-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-left-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-right-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-top-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>text-decoration-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>text-decoration-line</key>
+									<value xsi:type="xsd:string">underline</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">normal</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="a">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>388</x>
+									<y>930</y>
+									<height>19</height>
+									<width>225</width>
+								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>380</x>
 									<y>1</y>
@@ -538,10 +1817,67 @@
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-						<containedComponents retestId="4e2a5198-2175-4025-b881-627c6f5937dd">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>border-bottom-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-left-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-right-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-top-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>text-decoration-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>text-decoration-line</key>
+									<value xsi:type="xsd:string">underline</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">normal</value>
+								</entry>
+							</attributes>
+						</attributes>
+						<containedElements retestId="link_with_forma">
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="absolute-outline" xsi:type="outlineAttribute">
+										<x>388</x>
+										<y>929</y>
+										<height>20</height>
+										<width>225</width>
+									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>0</x>
 										<y>-1</y>
@@ -557,16 +1893,30 @@
 							<attributes>
 								<attributes>
 									<entry>
+										<key>font-weight</key>
+										<value xsi:type="xsd:string">700</value>
+									</entry>
+									<entry>
 										<key>line-height</key>
 										<value xsi:type="xsd:string">20px</value>
 									</entry>
+									<entry>
+										<key>text-decoration-line</key>
+										<value xsi:type="xsd:string">none</value>
+									</entry>
 								</attributes>
 							</attributes>
-						</containedComponents>
-					</containedComponents>
-					<containedComponents retestId="fdf2bd72-bba4-49a3-a97a-a943536610ec">
+						</containedElements>
+					</containedElements>
+					<containedElements retestId="link_with_double">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>618</x>
+									<y>930</y>
+									<height>19</height>
+									<width>203</width>
+								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">quote</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>610</x>
@@ -580,11 +1930,68 @@
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-					<containedComponents retestId="73645f96-1d25-4f48-9bc6-a4b62cc8b238">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>border-bottom-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-left-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-right-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-top-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>text-decoration-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>text-decoration-line</key>
+									<value xsi:type="xsd:string">underline</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">normal</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="link_with_single">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>826</x>
+									<y>930</y>
+									<height>19</height>
+									<width>193</width>
+								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">squote</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>818</x>
@@ -598,11 +2005,68 @@
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-					<containedComponents retestId="86d25f73-f10a-4ac7-b394-2303e397cbcd">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>border-bottom-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-left-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-right-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-top-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>text-decoration-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>text-decoration-line</key>
+									<value xsi:type="xsd:string">underline</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">normal</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="link_with_backs">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>1024</x>
+									<y>930</y>
+									<height>19</height>
+									<width>177</width>
+								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">backslash</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>1016</x>
@@ -616,12 +2080,69 @@
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-				</containedComponents>
-				<containedComponents retestId="49cdb8c4-3708-443e-97a9-55818934a38b">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>border-bottom-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-left-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-right-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-top-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>text-decoration-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>text-decoration-line</key>
+									<value xsi:type="xsd:string">underline</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">normal</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="div-81220">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>949</y>
+								<height>38</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>941</y>
@@ -636,14 +2157,36 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>text-indent</key>
 								<value xsi:type="xsd:string">80%</value>
 							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents retestId="debca647-cc1d-449d-9e2f-2f345ce18b57">
+					<containedElements retestId="this_link_should">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>949</y>
+									<height>38</height>
+									<width>1246</width>
+								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">multilinelink</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
@@ -657,10 +2200,67 @@
 								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-						<containedComponents retestId="723d61fd-4776-406b-8ebc-9e57bf706737">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>border-bottom-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-left-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-right-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>border-top-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>text-decoration-color</key>
+									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
+								</entry>
+								<entry>
+									<key>text-decoration-line</key>
+									<value xsi:type="xsd:string">underline</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">normal</value>
+								</entry>
+							</attributes>
+						</attributes>
+						<containedElements retestId="br-475c6">
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="absolute-outline" xsi:type="outlineAttribute">
+										<x>1254</x>
+										<y>964</y>
+										<height>0</height>
+										<width>0</width>
+									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>1246</x>
 										<y>15</y>
@@ -672,13 +2272,26 @@
 									<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes/>
-						</containedComponents>
-					</containedComponents>
-				</containedComponents>
-				<containedComponents retestId="85c66285-c4f4-4a73-9367-1eed53123946">
+							<attributes>
+								<attributes>
+									<entry>
+										<key>text-decoration-line</key>
+										<value xsi:type="xsd:string">none</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="top_level">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>987</y>
+								<height>19</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="name" xsi:type="stringAttribute">someDiv</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -692,11 +2305,36 @@
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
-				<containedComponents retestId="6c5b6f7c-35af-4e11-a353-c9296ba4cfb5">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="form">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>869</y>
+								<height>44</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>861</y>
@@ -708,10 +2346,35 @@
 							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-					<containedComponents retestId="200b0dcc-0062-46ae-a39b-0104c50a0191">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="p">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>869</y>
+									<height>44</height>
+									<width>1340</width>
+								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>0</y>
@@ -723,10 +2386,23 @@
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-						<containedComponents retestId="5dda6457-1b7e-49c9-a8ea-71bfa536308f">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">16px</value>
+								</entry>
+							</attributes>
+						</attributes>
+						<containedElements retestId="input">
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="absolute-outline" xsi:type="outlineAttribute">
+										<x>12</x>
+										<y>872</y>
+										<height>18</height>
+										<width>18</width>
+									</attribute>
 									<attribute key="id" xsi:type="stringAttribute">checkbox1</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>4</x>
@@ -742,6 +2418,14 @@
 							<attributes>
 								<attributes>
 									<entry>
+										<key>box-sizing</key>
+										<value xsi:type="xsd:string">border-box</value>
+									</entry>
+									<entry>
+										<key>display</key>
+										<value xsi:type="xsd:string">inline-block</value>
+									</entry>
+									<entry>
 										<key>font-family</key>
 										<value xsi:type="xsd:string">sans-serif</value>
 									</entry>
@@ -754,6 +2438,10 @@
 										<value xsi:type="xsd:string">17px</value>
 									</entry>
 									<entry>
+										<key>margin-bottom</key>
+										<value xsi:type="xsd:string">3px</value>
+									</entry>
+									<entry>
 										<key>margin-left</key>
 										<value xsi:type="xsd:string">4px</value>
 									</entry>
@@ -761,12 +2449,26 @@
 										<key>margin-right</key>
 										<value xsi:type="xsd:string">3px</value>
 									</entry>
+									<entry>
+										<key>margin-top</key>
+										<value xsi:type="xsd:string">3px</value>
+									</entry>
+									<entry>
+										<key>unicode-bidi</key>
+										<value xsi:type="xsd:string">normal</value>
+									</entry>
 								</attributes>
 							</attributes>
-						</containedComponents>
-						<containedComponents retestId="93d749c4-2495-4a66-ab2d-c03b83a05ee7">
+						</containedElements>
+						<containedElements retestId="foo">
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="absolute-outline" xsi:type="outlineAttribute">
+										<x>8</x>
+										<y>875</y>
+										<height>38</height>
+										<width>56</width>
+									</attribute>
 									<attribute key="id" xsi:type="stringAttribute">label1</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>0</x>
@@ -780,10 +2482,35 @@
 									<attribute key="type" xsi:type="stringAttribute">LABEL</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes/>
-							<containedComponents retestId="2e5c6a19-acd0-4199-9b7f-95b223bca27e">
+							<attributes>
+								<attributes>
+									<entry>
+										<key>display</key>
+										<value xsi:type="xsd:string">inline</value>
+									</entry>
+									<entry>
+										<key>margin-bottom</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
+										<key>margin-top</key>
+										<value xsi:type="xsd:string">0px</value>
+									</entry>
+									<entry>
+										<key>unicode-bidi</key>
+										<value xsi:type="xsd:string">normal</value>
+									</entry>
+								</attributes>
+							</attributes>
+							<containedElements retestId="br-d1529">
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="absolute-outline" xsi:type="outlineAttribute">
+											<x>64</x>
+											<y>890</y>
+											<height>0</height>
+											<width>0</width>
+										</attribute>
 										<attribute key="outline" xsi:type="outlineAttribute">
 											<x>56</x>
 											<y>15</y>
@@ -796,13 +2523,19 @@
 									</attributes>
 								</identifyingAttributes>
 								<attributes/>
-							</containedComponents>
-						</containedComponents>
-					</containedComponents>
-				</containedComponents>
-				<containedComponents retestId="4006a432-ceb9-4d6a-b777-b65d398bda5f">
+							</containedElements>
+						</containedElements>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="heading">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>8</y>
+								<height>39</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>0</y>
@@ -818,6 +2551,14 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>font-size</key>
+								<value xsi:type="xsd:string">32px</value>
+							</entry>
+							<entry>
+								<key>font-weight</key>
+								<value xsi:type="xsd:string">700</value>
+							</entry>
+							<entry>
 								<key>line-height</key>
 								<value xsi:type="xsd:string">39px</value>
 							</entry>
@@ -826,15 +2567,29 @@
 								<value xsi:type="xsd:string">21.4333px</value>
 							</entry>
 							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
 								<key>margin-top</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="c9b78cd6-3bf8-426e-b631-9dfc49ce1619">
+				</containedElements>
+				<containedElements retestId="img">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>1093</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">invalidImgTag</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -847,14 +2602,47 @@
 							<attribute key="type" xsi:type="stringAttribute">IMG</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
-				<containedComponents retestId="ca14b8b5-3d19-41c7-bfe0-3f6e465e25d6">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>display</key>
+								<value xsi:type="xsd:string">inline</value>
+							</entry>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">normal</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="img-5f10a">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>13</x>
+								<y>1069</y>
+								<height>24</height>
+								<width>24</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">validImgTag</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>0</x>
+								<x>5</x>
 								<y>1061</y>
 								<height>-1084</height>
 								<width>-1316</width>
@@ -864,11 +2652,44 @@
 							<attribute key="type" xsi:type="stringAttribute">IMG</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
-				<containedComponents retestId="b4a1c546-9d4a-4c52-b2e5-3727926346ab">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>display</key>
+								<value xsi:type="xsd:string">inline</value>
+							</entry>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">normal</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="a_single_line">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>68</y>
+								<height>19</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">oneline</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -882,11 +2703,36 @@
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
-				<containedComponents retestId="e6f58e83-650e-4d6a-a1f6-e258aa0fdc3e">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="a_hidden_line">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>103</y>
+								<height>19</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">hiddenline</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -903,15 +2749,37 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+							<entry>
 								<key>visibility</key>
 								<value xsi:type="xsd:string">hidden</value>
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="b46292cd-7a05-49dd-8559-dec7ca71c972">
+				</containedElements>
+				<containedElements retestId="this_line_has">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>246</y>
+								<height>19</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">lotsofspaces</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -927,11 +2795,36 @@
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
-				<containedComponents retestId="d86be9e3-f281-4428-9781-6802c486f9b1">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="this_line_has-b5c0a">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>281</y>
+								<height>19</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">nbsp</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -945,11 +2838,36 @@
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
-				<containedComponents retestId="f266a43e-c09b-4814-ba04-141326ea927b">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="this_line_has-3d0f9">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>316</y>
+								<height>19</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">nbspandspaces</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -963,11 +2881,36 @@
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
-				<containedComponents retestId="39293bfe-ae72-400d-b6ee-991930756437">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="these_lines_">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>351</y>
+								<height>38</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">multilinenbsp</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -981,10 +2924,35 @@
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-					<containedComponents retestId="6e51d68b-0f09-4881-ac51-50d26cbddf3a">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="br-906a0">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>107</x>
+									<y>366</y>
+									<height>0</height>
+									<width>0</width>
+								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>99</x>
 									<y>15</y>
@@ -996,12 +2964,37 @@
 								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-					</containedComponents>
-				</containedComponents>
-				<containedComponents retestId="a1c9100d-e9b5-4068-87ac-07d2e86e8d12">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>margin-bottom</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">normal</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="this">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>405</y>
+								<height>19</height>
+								<width>1340</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">inline</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -1015,10 +3008,35 @@
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-					<containedComponents retestId="0c56dcea-02fd-4719-ae51-c7a1312834c2">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="line_has">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>47</x>
+									<y>405</y>
+									<height>19</height>
+									<width>102</width>
+								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">inlinespan</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>39</x>
@@ -1032,10 +3050,35 @@
 								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-						<containedComponents retestId="86c0a9df-45f5-48fe-beac-87591a7c875e">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>margin-bottom</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>margin-top</key>
+									<value xsi:type="xsd:string">0px</value>
+								</entry>
+								<entry>
+									<key>unicode-bidi</key>
+									<value xsi:type="xsd:string">normal</value>
+								</entry>
+							</attributes>
+						</attributes>
+						<containedElements retestId="text">
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="absolute-outline" xsi:type="outlineAttribute">
+										<x>114</x>
+										<y>405</y>
+										<height>19</height>
+										<width>30</width>
+									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>67</x>
 										<y>0</y>
@@ -1048,13 +3091,26 @@
 									<attribute key="type" xsi:type="stringAttribute">EM</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes/>
-						</containedComponents>
-					</containedComponents>
-				</containedComponents>
-				<containedComponents retestId="e2899018-e107-47b8-81ba-966a6818001d">
+							<attributes>
+								<attributes>
+									<entry>
+										<key>font-style</key>
+										<value xsi:type="xsd:string">italic</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="an_inline_element">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>211</y>
+								<height>19</height>
+								<width>139</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">span</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -1068,14 +3124,47 @@
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
-				<containedComponents retestId="badcbc86-1b76-4d8d-bcfa-23d1e2dbfa99">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>display</key>
+								<value xsi:type="xsd:string">inline</value>
+							</entry>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">normal</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="ab_c1_dtrue">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>177</x>
+								<y>1078</y>
+								<height>19</height>
+								<width>175</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">simpleJsonText</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>164</x>
+								<x>169</x>
 								<y>1070</y>
 								<height>-1089</height>
 								<width>-1165</width>
@@ -1086,14 +3175,47 @@
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
-				<containedComponents retestId="64b6fa04-5b0d-4556-b5d6-e60b3c814cc2">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>display</key>
+								<value xsi:type="xsd:string">inline</value>
+							</entry>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">normal</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="ab">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>357</x>
+								<y>1078</y>
+								<height>19</height>
+								<width>112</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">complexJsonText</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>344</x>
+								<x>349</x>
 								<y>1070</y>
 								<height>-1089</height>
 								<width>-1228</width>
@@ -1104,17 +3226,50 @@
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
-				<containedComponents retestId="f944797b-9968-4092-b84d-976ba3ff9734">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>display</key>
+								<value xsi:type="xsd:string">inline</value>
+							</entry>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">normal</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="test_">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>1078</y>
+								<height>38</height>
+								<width>1339</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">trimmedSpace</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>1070</y>
 								<height>-1070</height>
-								<width>-6</width>
+								<width>-1</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/SPAN[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
@@ -1122,11 +3277,44 @@
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
-					<attributes/>
-				</containedComponents>
-				<containedComponents retestId="cfe09f05-feb4-4559-bb08-6b0d9f491fd3">
+					<attributes>
+						<attributes>
+							<entry>
+								<key>display</key>
+								<value xsi:type="xsd:string">inline</value>
+							</entry>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>unicode-bidi</key>
+								<value xsi:type="xsd:string">normal</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="table">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>1025</y>
+								<height>44</height>
+								<width>107</width>
+							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">wrappingtext</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -1142,14 +3330,60 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>border-bottom-color</key>
+								<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+							</entry>
+							<entry>
+								<key>border-left-color</key>
+								<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+							</entry>
+							<entry>
+								<key>border-right-color</key>
+								<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+							</entry>
+							<entry>
+								<key>border-spacing</key>
+								<value xsi:type="xsd:string">2px 2px</value>
+							</entry>
+							<entry>
+								<key>border-top-color</key>
+								<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+							</entry>
+							<entry>
 								<key>box-sizing</key>
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
+							<entry>
+								<key>display</key>
+								<value xsi:type="xsd:string">table</value>
+							</entry>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-left</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-right</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">0px</value>
+							</entry>
 						</attributes>
 					</attributes>
-					<containedComponents retestId="b8f52889-8d16-44c2-bb2e-c4a67ceb8af0">
+					<containedElements retestId="tbody">
 						<identifyingAttributes>
 							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>10</x>
+									<y>1027</y>
+									<height>40</height>
+									<width>103</width>
+								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>2</x>
 									<y>2</y>
@@ -1161,10 +3395,31 @@
 								<attribute key="type" xsi:type="stringAttribute">TBODY</attribute>
 							</attributes>
 						</identifyingAttributes>
-						<attributes/>
-						<containedComponents retestId="cd705076-f02e-471d-9a49-461c5a3475ea">
+						<attributes>
+							<attributes>
+								<entry>
+									<key>box-sizing</key>
+									<value xsi:type="xsd:string">content-box</value>
+								</entry>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">table-row-group</value>
+								</entry>
+								<entry>
+									<key>vertical-align</key>
+									<value xsi:type="xsd:string">middle</value>
+								</entry>
+							</attributes>
+						</attributes>
+						<containedElements retestId="tr">
 							<identifyingAttributes>
 								<attributes>
+									<attribute key="absolute-outline" xsi:type="outlineAttribute">
+										<x>10</x>
+										<y>1027</y>
+										<height>40</height>
+										<width>103</width>
+									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>0</x>
 										<y>0</y>
@@ -1176,10 +3431,23 @@
 									<attribute key="type" xsi:type="stringAttribute">TR</attribute>
 								</attributes>
 							</identifyingAttributes>
-							<attributes/>
-							<containedComponents retestId="2a680b69-00bc-4f46-9fe6-325297a07c1c">
+							<attributes>
+								<attributes>
+									<entry>
+										<key>display</key>
+										<value xsi:type="xsd:string">table-row</value>
+									</entry>
+								</attributes>
+							</attributes>
+							<containedElements retestId="td">
 								<identifyingAttributes>
 									<attributes>
+										<attribute key="absolute-outline" xsi:type="outlineAttribute">
+											<x>10</x>
+											<y>1027</y>
+											<height>40</height>
+											<width>103</width>
+										</attribute>
 										<attribute key="outline" xsi:type="outlineAttribute">
 											<x>0</x>
 											<y>0</y>
@@ -1193,6 +3461,10 @@
 								</identifyingAttributes>
 								<attributes>
 									<attributes>
+										<entry>
+											<key>display</key>
+											<value xsi:type="xsd:string">table-cell</value>
+										</entry>
 										<entry>
 											<key>padding-bottom</key>
 											<value xsi:type="xsd:string">1px</value>
@@ -1211,9 +3483,15 @@
 										</entry>
 									</attributes>
 								</attributes>
-								<containedComponents retestId="a78b4548-f696-40f3-8ea1-8653e8830987">
+								<containedElements retestId="beforespace">
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="absolute-outline" xsi:type="outlineAttribute">
+												<x>11</x>
+												<y>1028</y>
+												<height>19</height>
+												<width>101</width>
+											</attribute>
 											<attribute key="outline" xsi:type="outlineAttribute">
 												<x>1</x>
 												<y>1</y>
@@ -1226,11 +3504,64 @@
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 										</attributes>
 									</identifyingAttributes>
-									<attributes/>
-								</containedComponents>
-								<containedComponents retestId="e749b8d0-be6d-4ad8-847a-d9e19afaaa44">
+									<attributes>
+										<attributes>
+											<entry>
+												<key>border-bottom-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>border-left-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>border-right-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>border-top-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>display</key>
+												<value xsi:type="xsd:string">inline</value>
+											</entry>
+											<entry>
+												<key>padding-bottom</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>padding-left</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>padding-right</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>padding-top</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>unicode-bidi</key>
+												<value xsi:type="xsd:string">normal</value>
+											</entry>
+											<entry>
+												<key>vertical-align</key>
+												<value xsi:type="xsd:string">baseline</value>
+											</entry>
+										</attributes>
+									</attributes>
+								</containedElements>
+								<containedElements retestId="span-80212">
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="absolute-outline" xsi:type="outlineAttribute">
+												<x>112</x>
+												<y>1028</y>
+												<height>19</height>
+												<width>0</width>
+											</attribute>
 											<attribute key="outline" xsi:type="outlineAttribute">
 												<x>102</x>
 												<y>1</y>
@@ -1242,11 +3573,64 @@
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 										</attributes>
 									</identifyingAttributes>
-									<attributes/>
-								</containedComponents>
-								<containedComponents retestId="64dbcd4f-023c-446d-a16a-2591bbebfbfe">
+									<attributes>
+										<attributes>
+											<entry>
+												<key>border-bottom-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>border-left-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>border-right-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>border-top-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>display</key>
+												<value xsi:type="xsd:string">inline</value>
+											</entry>
+											<entry>
+												<key>padding-bottom</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>padding-left</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>padding-right</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>padding-top</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>unicode-bidi</key>
+												<value xsi:type="xsd:string">normal</value>
+											</entry>
+											<entry>
+												<key>vertical-align</key>
+												<value xsi:type="xsd:string">baseline</value>
+											</entry>
+										</attributes>
+									</attributes>
+								</containedElements>
+								<containedElements retestId="afterspace">
 									<identifyingAttributes>
 										<attributes>
+											<attribute key="absolute-outline" xsi:type="outlineAttribute">
+												<x>11</x>
+												<y>1047</y>
+												<height>19</height>
+												<width>88</width>
+											</attribute>
 											<attribute key="outline" xsi:type="outlineAttribute">
 												<x>1</x>
 												<y>20</y>
@@ -1259,16 +3643,69 @@
 											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 										</attributes>
 									</identifyingAttributes>
-									<attributes/>
-								</containedComponents>
-							</containedComponents>
-						</containedComponents>
-					</containedComponents>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="127bb57e-a6f6-419c-8e4c-6456f81ae21c">
+									<attributes>
+										<attributes>
+											<entry>
+												<key>border-bottom-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>border-left-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>border-right-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>border-top-color</key>
+												<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
+											</entry>
+											<entry>
+												<key>display</key>
+												<value xsi:type="xsd:string">inline</value>
+											</entry>
+											<entry>
+												<key>padding-bottom</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>padding-left</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>padding-right</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>padding-top</key>
+												<value xsi:type="xsd:string">0px</value>
+											</entry>
+											<entry>
+												<key>unicode-bidi</key>
+												<value xsi:type="xsd:string">normal</value>
+											</entry>
+											<entry>
+												<key>vertical-align</key>
+												<value xsi:type="xsd:string">baseline</value>
+											</entry>
+										</attributes>
+									</attributes>
+								</containedElements>
+							</containedElements>
+						</containedElements>
+					</containedElements>
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="head">
 				<identifyingAttributes>
 					<attributes>
+						<attribute key="absolute-outline" xsi:type="outlineAttribute">
+							<x>0</x>
+							<y>0</y>
+							<height>0</height>
+							<width>0</width>
+						</attribute>
 						<attribute key="outline" xsi:type="outlineAttribute">
 							<x>0</x>
 							<y>0</y>
@@ -1280,10 +3717,27 @@
 						<attribute key="type" xsi:type="stringAttribute">HEAD</attribute>
 					</attributes>
 				</identifyingAttributes>
-				<attributes/>
-				<containedComponents retestId="36b6914b-5870-4f1d-9d94-7312886100fb">
+				<attributes>
+					<attributes>
+						<entry>
+							<key>display</key>
+							<value xsi:type="xsd:string">none</value>
+						</entry>
+						<entry>
+							<key>unicode-bidi</key>
+							<value xsi:type="xsd:string">normal</value>
+						</entry>
+					</attributes>
+				</attributes>
+				<containedElements retestId="hello_webdriver">
 					<identifyingAttributes>
 						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>0</y>
@@ -1297,10 +3751,10 @@
 						</attributes>
 					</identifyingAttributes>
 					<attributes/>
-				</containedComponents>
-			</containedComponents>
+				</containedElements>
+			</containedElements>
 			<screenshot>
-				<persistenceId>window_24bddf69e4b2f5d434056df7aa3f0aa13208f245240756642f30eadbae5bc9b6</persistenceId>
+				<persistenceId>window_124ab22a06e03776c0f47e45a1a9fc74f717d94b2a1d3d9cc030f6f7140c758f</persistenceId>
 				<type>PNG</type>
 			</screenshot>
 		</descriptors>
