@@ -1,9 +1,6 @@
 language: java
 dist: trusty
 
-env:
-  - MVN="mvn --settings ${TRAVIS_BUILD_DIR}/.travis.settings.xml"
-
 addons:
   chrome: stable
   firefox: latest
@@ -25,23 +22,9 @@ cache:
 
 install: true
 
-before_script:
-  # set up ChromeDriver
-  - ln --symbolic /usr/lib/chromium-browser/chromedriver "${HOME}/bin/chromedriver"
-  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
-  # set up GeckoDriver
-  - wget https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz
-  - mkdir geckodriver
-  - tar -xzf geckodriver*.tar.gz -C geckodriver
-  - export PATH="${PATH}:${PWD}/geckodriver"
-  - geckodriver --version
-  - export MOZ_HEADLESS=1
-  # connect Firefox to the D-BUS daemon
-  - export $(dbus-launch)
-  - export NSS_USE_SHARED_DB=ENABLED
+before_script: ci/before.sh
 
-script:
-  - ${MVN} clean org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar
+script: ci/script.sh
 
 before_deploy:
   # decrypt ReTest secret key
