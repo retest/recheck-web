@@ -35,6 +35,8 @@ before_deploy:
   # package and sign artifacts
   - ${MVN} verify -DskipTests -Psign
 
+after_script: ci/upload.sh
+
 deploy:
   # deploy artifacts to Maven Central
   - provider: script
