@@ -2,6 +2,7 @@ package de.retest.web;
 
 import java.awt.Rectangle;
 import java.util.Map;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,19 +21,17 @@ public class WebData {
 	 * @param key
 	 *            the data key
 	 * @return the string value
-	 * @throws ConversionException
-	 *             if the value for the given key is not a String
 	 */
 	public String getAsString( final String key ) {
 		final Object result = wrappedData.get( key );
 		if ( result == null ) {
 			return null;
 		}
-		if ( result instanceof String ) {
-			return normalize( (String) result );
-		}
-		throw new ConversionException(
-				"Attribute value for " + key + " was of type " + result.getClass() + ", not of type String." );
+		return normalize( String.valueOf( result ) );
+	}
+
+	public Set<String> getKeys() {
+		return wrappedData.keySet();
 	}
 
 	protected static String normalize( final String value ) {
