@@ -17,6 +17,10 @@ public class AttributesConfig {
 	public static final String WIDTH = "width";
 	public static final String HEIGHT = "height";
 
+	public static final String TAG_NAME = "tagName";
+
+	public static final String TEXT = "text";
+
 	private final List<String> attributes;
 	private final List<String> identifyingAttributes;
 
