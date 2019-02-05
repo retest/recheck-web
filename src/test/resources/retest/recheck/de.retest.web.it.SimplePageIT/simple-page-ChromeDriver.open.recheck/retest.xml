@@ -24,22 +24,6 @@
 			<attributes>
 				<attributes>
 					<entry>
-						<key>absolute-height</key>
-						<value xsi:type="xsd:string">1056.4375</value>
-					</entry>
-					<entry>
-						<key>absolute-width</key>
-						<value xsi:type="xsd:string">1185</value>
-					</entry>
-					<entry>
-						<key>absolute-x</key>
-						<value xsi:type="xsd:string">0</value>
-					</entry>
-					<entry>
-						<key>absolute-y</key>
-						<value xsi:type="xsd:string">0</value>
-					</entry>
-					<entry>
 						<key>align-content</key>
 						<value xsi:type="xsd:string">normal</value>
 					</entry>
@@ -428,10 +412,6 @@
 						<value xsi:type="xsd:string">none</value>
 					</entry>
 					<entry>
-						<key>height</key>
-						<value xsi:type="xsd:string">1056.4375</value>
-					</entry>
-					<entry>
 						<key>hyphens</key>
 						<value xsi:type="xsd:string">manual</value>
 					</entry>
@@ -612,14 +592,6 @@
 						<value xsi:type="xsd:string">auto</value>
 					</entry>
 					<entry>
-						<key>tagName</key>
-						<value xsi:type="xsd:string">HTML</value>
-					</entry>
-					<entry>
-						<key>text</key>
-						<value xsi:type="xsd:string"></value>
-					</entry>
-					<entry>
 						<key>text-align</key>
 						<value xsi:type="xsd:string">start</value>
 					</entry>
@@ -704,10 +676,6 @@
 						<value xsi:type="xsd:string">normal</value>
 					</entry>
 					<entry>
-						<key>width</key>
-						<value xsi:type="xsd:string">1185</value>
-					</entry>
-					<entry>
 						<key>word-break</key>
 						<value xsi:type="xsd:string">normal</value>
 					</entry>
@@ -718,14 +686,6 @@
 					<entry>
 						<key>word-wrap</key>
 						<value xsi:type="xsd:string">normal</value>
-					</entry>
-					<entry>
-						<key>x</key>
-						<value xsi:type="xsd:string">0</value>
-					</entry>
-					<entry>
-						<key>y</key>
-						<value xsi:type="xsd:string">0</value>
 					</entry>
 					<entry>
 						<key>z-index</key>
@@ -757,26 +717,6 @@
 				<attributes>
 					<attributes>
 						<entry>
-							<key>absolute-height</key>
-							<value xsi:type="xsd:string">1040.4375</value>
-						</entry>
-						<entry>
-							<key>absolute-width</key>
-							<value xsi:type="xsd:string">1169</value>
-						</entry>
-						<entry>
-							<key>absolute-x</key>
-							<value xsi:type="xsd:string">8</value>
-						</entry>
-						<entry>
-							<key>absolute-y</key>
-							<value xsi:type="xsd:string">8</value>
-						</entry>
-						<entry>
-							<key>height</key>
-							<value xsi:type="xsd:string">-16</value>
-						</entry>
-						<entry>
 							<key>margin-bottom</key>
 							<value xsi:type="xsd:string">8px</value>
 						</entry>
@@ -804,26 +744,6 @@
 							<key>style</key>
 							<value xsi:type="xsd:string"></value>
 						</entry>
-						<entry>
-							<key>tagName</key>
-							<value xsi:type="xsd:string">BODY</value>
-						</entry>
-						<entry>
-							<key>text</key>
-							<value xsi:type="xsd:string"></value>
-						</entry>
-						<entry>
-							<key>width</key>
-							<value xsi:type="xsd:string">-16</value>
-						</entry>
-						<entry>
-							<key>x</key>
-							<value xsi:type="xsd:string">8</value>
-						</entry>
-						<entry>
-							<key>y</key>
-							<value xsi:type="xsd:string">8</value>
-						</entry>
 					</attributes>
 				</attributes>
 				<containedElements retestId="a_link_to_an_icon">
@@ -850,22 +770,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">17</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">103.078125</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">16</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">1030.4375</value>
-							</entry>
 							<entry>
 								<key>border-bottom-color</key>
 								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
@@ -897,10 +801,6 @@
 							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1023.4375</value>
 							</entry>
 							<entry>
 								<key>href</key>
@@ -935,32 +835,12 @@
 								<value xsi:type="xsd:string">true</value>
 							</entry>
 							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">A</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">a link to an icon</value>
-							</entry>
-							<entry>
 								<key>text-decoration-color</key>
 								<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 							</entry>
 							<entry>
 								<key>text-decoration-line</key>
 								<value xsi:type="xsd:string">underline</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">-1065.921875</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">1022.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -989,26 +869,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">18</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">970.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1022.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">containsSomeDiv</value>
 							</entry>
@@ -1032,30 +892,10 @@
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">DIV</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string"></value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">962.4375</value>
-							</entry>
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="div-3d526">
+				<containedElements retestId="div-ac0db">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1079,26 +919,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">70</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">134.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-970.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">multiline</value>
 							</entry>
@@ -1121,26 +941,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">DIV</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string"></value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">126.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -1167,52 +967,12 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">174.609375</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">182.4375</value>
-								</entry>
-								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline</value>
 								</entry>
 								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-70</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
-								</entry>
-								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">BR</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string"></value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">-1169</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">166.609375</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">48</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -1241,48 +1001,8 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">18</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">1169</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">8</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">186.4375</value>
-								</entry>
-								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-52</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
-								</entry>
-								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">DIV</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string">and block level elements</value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">52</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -1311,26 +1031,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">18</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">1169</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">8</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">134.4375</value>
-								</entry>
-								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-52</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
@@ -1342,31 +1042,11 @@
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
-								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">P</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string">A div containing</value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-2e9ad">
+				<containedElements retestId="div-c83e6">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1390,26 +1070,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">128</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">426.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-912.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">div-with-pre</value>
 							</entry>
@@ -1432,26 +1092,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">DIV</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string"></value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">418.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -1482,32 +1122,12 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">60</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">1169</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">8</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">460.4375</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">monospace</value>
 								</entry>
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-68</value>
 								</entry>
 								<entry>
 									<key>id</key>
@@ -1526,30 +1146,8 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">PRE</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string">This section has a preformatted
-    text block    
-  split in four lines</value>
-								</entry>
-								<entry>
 									<key>white-space</key>
 									<value xsi:type="xsd:string">pre</value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">34</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -1578,26 +1176,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">18</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">1169</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">8</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">426.4375</value>
-								</entry>
-								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-110</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
@@ -1608,26 +1186,6 @@
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
-								</entry>
-								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">P</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string">before pre</value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">0</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -1656,26 +1214,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">18</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">1169</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">8</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">536.4375</value>
-								</entry>
-								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-110</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
@@ -1687,31 +1225,11 @@
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
-								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">P</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string">after pre</value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">110</value>
-								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-d7950">
+				<containedElements retestId="div-d4501">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1735,26 +1253,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">52</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">570.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-988.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">twoblocks</value>
 							</entry>
@@ -1777,26 +1275,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">DIV</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string"></value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">562.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -1824,26 +1302,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">18</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">1169</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">8</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">570.4375</value>
-								</entry>
-								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-34</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
@@ -1854,26 +1312,6 @@
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
-								</entry>
-								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">P</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string">Some text</value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">0</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -1902,26 +1340,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">18</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">1169</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">8</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">604.4375</value>
-								</entry>
-								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-34</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
@@ -1932,26 +1350,6 @@
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
-								</entry>
-								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">P</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string">Some more text</value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">34</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -1982,26 +1380,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">154</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">638.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-886.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">nestedblocks</value>
 							</entry>
@@ -2025,29 +1403,9 @@
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">DIV</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">Cheese</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">630.4375</value>
-							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="div-2e39f">
+					<containedElements retestId="div-25384">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2070,52 +1428,12 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">86</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">1169</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">8</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">672.4375</value>
-								</entry>
-								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-68</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
-								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">DIV</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string"></value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">34</value>
-								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="div-ddd1f">
+						<containedElements retestId="div-2207c">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2138,52 +1456,12 @@
 							<attributes>
 								<attributes>
 									<entry>
-										<key>absolute-height</key>
-										<value xsi:type="xsd:string">52</value>
-									</entry>
-									<entry>
-										<key>absolute-width</key>
-										<value xsi:type="xsd:string">1169</value>
-									</entry>
-									<entry>
-										<key>absolute-x</key>
-										<value xsi:type="xsd:string">8</value>
-									</entry>
-									<entry>
-										<key>absolute-y</key>
-										<value xsi:type="xsd:string">706.4375</value>
-									</entry>
-									<entry>
-										<key>height</key>
-										<value xsi:type="xsd:string">-34</value>
-									</entry>
-									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
 									</entry>
-									<entry>
-										<key>tagName</key>
-										<value xsi:type="xsd:string">DIV</value>
-									</entry>
-									<entry>
-										<key>text</key>
-										<value xsi:type="xsd:string"></value>
-									</entry>
-									<entry>
-										<key>width</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>x</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>y</key>
-										<value xsi:type="xsd:string">34</value>
-									</entry>
 								</attributes>
 							</attributes>
-							<containedElements retestId="some_more_text-f58e2">
+							<containedElements retestId="some_more_text-f7754">
 								<identifyingAttributes>
 									<attributes>
 										<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2207,26 +1485,6 @@
 								<attributes>
 									<attributes>
 										<entry>
-											<key>absolute-height</key>
-											<value xsi:type="xsd:string">18</value>
-										</entry>
-										<entry>
-											<key>absolute-width</key>
-											<value xsi:type="xsd:string">1169</value>
-										</entry>
-										<entry>
-											<key>absolute-x</key>
-											<value xsi:type="xsd:string">8</value>
-										</entry>
-										<entry>
-											<key>absolute-y</key>
-											<value xsi:type="xsd:string">706.4375</value>
-										</entry>
-										<entry>
-											<key>height</key>
-											<value xsi:type="xsd:string">-34</value>
-										</entry>
-										<entry>
 											<key>margin-bottom</key>
 											<value xsi:type="xsd:string">16px</value>
 										</entry>
@@ -2237,26 +1495,6 @@
 										<entry>
 											<key>shown</key>
 											<value xsi:type="xsd:string">true</value>
-										</entry>
-										<entry>
-											<key>tagName</key>
-											<value xsi:type="xsd:string">P</value>
-										</entry>
-										<entry>
-											<key>text</key>
-											<value xsi:type="xsd:string">Some more text</value>
-										</entry>
-										<entry>
-											<key>width</key>
-											<value xsi:type="xsd:string">0</value>
-										</entry>
-										<entry>
-											<key>x</key>
-											<value xsi:type="xsd:string">0</value>
-										</entry>
-										<entry>
-											<key>y</key>
-											<value xsi:type="xsd:string">0</value>
 										</entry>
 									</attributes>
 								</attributes>
@@ -2285,26 +1523,6 @@
 								<attributes>
 									<attributes>
 										<entry>
-											<key>absolute-height</key>
-											<value xsi:type="xsd:string">18</value>
-										</entry>
-										<entry>
-											<key>absolute-width</key>
-											<value xsi:type="xsd:string">1169</value>
-										</entry>
-										<entry>
-											<key>absolute-x</key>
-											<value xsi:type="xsd:string">8</value>
-										</entry>
-										<entry>
-											<key>absolute-y</key>
-											<value xsi:type="xsd:string">740.4375</value>
-										</entry>
-										<entry>
-											<key>height</key>
-											<value xsi:type="xsd:string">-34</value>
-										</entry>
-										<entry>
 											<key>margin-bottom</key>
 											<value xsi:type="xsd:string">16px</value>
 										</entry>
@@ -2316,31 +1534,11 @@
 											<key>shown</key>
 											<value xsi:type="xsd:string">true</value>
 										</entry>
-										<entry>
-											<key>tagName</key>
-											<value xsi:type="xsd:string">P</value>
-										</entry>
-										<entry>
-											<key>text</key>
-											<value xsi:type="xsd:string">and also</value>
-										</entry>
-										<entry>
-											<key>width</key>
-											<value xsi:type="xsd:string">0</value>
-										</entry>
-										<entry>
-											<key>x</key>
-											<value xsi:type="xsd:string">0</value>
-										</entry>
-										<entry>
-											<key>y</key>
-											<value xsi:type="xsd:string">34</value>
-										</entry>
 									</attributes>
 								</attributes>
 							</containedElements>
 						</containedElements>
-						<containedElements retestId="some_text-7c1cd">
+						<containedElements retestId="some_text-fc072">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2364,26 +1562,6 @@
 							<attributes>
 								<attributes>
 									<entry>
-										<key>absolute-height</key>
-										<value xsi:type="xsd:string">18</value>
-									</entry>
-									<entry>
-										<key>absolute-width</key>
-										<value xsi:type="xsd:string">1169</value>
-									</entry>
-									<entry>
-										<key>absolute-x</key>
-										<value xsi:type="xsd:string">8</value>
-									</entry>
-									<entry>
-										<key>absolute-y</key>
-										<value xsi:type="xsd:string">672.4375</value>
-									</entry>
-									<entry>
-										<key>height</key>
-										<value xsi:type="xsd:string">-68</value>
-									</entry>
-									<entry>
 										<key>margin-bottom</key>
 										<value xsi:type="xsd:string">16px</value>
 									</entry>
@@ -2395,32 +1573,12 @@
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
 									</entry>
-									<entry>
-										<key>tagName</key>
-										<value xsi:type="xsd:string">P</value>
-									</entry>
-									<entry>
-										<key>text</key>
-										<value xsi:type="xsd:string">Some text</value>
-									</entry>
-									<entry>
-										<key>width</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>x</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>y</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
 								</attributes>
 							</attributes>
 						</containedElements>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-766c3">
+				<containedElements retestId="div-90840">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2444,26 +1602,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">18</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">792.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1022.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">collapsingtext</value>
 							</entry>
@@ -2486,26 +1624,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">DIV</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string"></value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">784.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -2532,57 +1650,17 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">8</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">792.4375</value>
-								</entry>
-								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-18</value>
 								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
-								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">SPAN</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string"></value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">-1169</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="span-0b5ff">
+					<containedElements retestId="span-53e5b">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2605,58 +1683,18 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">8</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">810.4375</value>
-								</entry>
-								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-18</value>
 								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
-								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">SPAN</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string"></value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">-1169</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">18</value>
-								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-30d1f">
+				<containedElements retestId="div-56739">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2679,26 +1717,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">18</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">810.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1022.4375</value>
-							</entry>
 							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">withDocumentWrite</value>
@@ -2723,30 +1741,10 @@
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">DIV</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string"></value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">802.4375</value>
-							</entry>
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="div-c36d8">
+				<containedElements retestId="div-1ec00">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2770,26 +1768,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">18</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">898.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1022.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">links</value>
 							</entry>
@@ -2812,26 +1790,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">DIV</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string"></value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">890.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -2858,22 +1816,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">17</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">147.953125</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">8</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">898.4375</value>
-								</entry>
 								<entry>
 									<key>border-bottom-color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
@@ -2907,10 +1849,6 @@
 									<value xsi:type="xsd:string">inline</value>
 								</entry>
 								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-1</value>
-								</entry>
-								<entry>
 									<key>href</key>
 									<value xsi:type="xsd:string"></value>
 								</entry>
@@ -2923,32 +1861,12 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">A</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string">link with leading space</value>
-								</entry>
-								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
 									<key>text-decoration-line</key>
 									<value xsi:type="xsd:string">underline</value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">-1021.046875</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">0</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -2978,22 +1896,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">17</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">151.078125</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">159.953125</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">898.4375</value>
-								</entry>
-								<entry>
 									<key>border-bottom-color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
@@ -3026,10 +1928,6 @@
 									<value xsi:type="xsd:string">inline</value>
 								</entry>
 								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-1</value>
-								</entry>
-								<entry>
 									<key>href</key>
 									<value xsi:type="xsd:string"></value>
 								</entry>
@@ -3046,32 +1944,12 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">A</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string">link with trailing space</value>
-								</entry>
-								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
 									<key>text-decoration-line</key>
 									<value xsi:type="xsd:string">underline</value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">-1017.921875</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">151.953125</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">0</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -3099,22 +1977,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">17</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">170.21875</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">311.03125</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">898.4375</value>
-								</entry>
-								<entry>
 									<key>border-bottom-color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
@@ -3147,10 +2009,6 @@
 									<value xsi:type="xsd:string">inline</value>
 								</entry>
 								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-1</value>
-								</entry>
-								<entry>
 									<key>href</key>
 									<value xsi:type="xsd:string"></value>
 								</entry>
@@ -3163,32 +2021,12 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">A</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string"></value>
-								</entry>
-								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
 									<key>text-decoration-line</key>
 									<value xsi:type="xsd:string">underline</value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">-998.78125</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">303.03125</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">0</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -3218,22 +2056,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">17</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">165.609375</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">485.25</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">898.4375</value>
-								</entry>
-								<entry>
 									<key>border-bottom-color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
@@ -3266,10 +2088,6 @@
 									<value xsi:type="xsd:string">inline</value>
 								</entry>
 								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-1</value>
-								</entry>
-								<entry>
 									<key>href</key>
 									<value xsi:type="xsd:string"></value>
 								</entry>
@@ -3286,32 +2104,12 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">A</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string">link with &quot; (double quote)</value>
-								</entry>
-								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
 									<key>text-decoration-line</key>
 									<value xsi:type="xsd:string">underline</value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">-1003.390625</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">477.25</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">0</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -3341,22 +2139,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">17</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">156.640625</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">654.859375</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">898.4375</value>
-								</entry>
-								<entry>
 									<key>border-bottom-color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
@@ -3389,10 +2171,6 @@
 									<value xsi:type="xsd:string">inline</value>
 								</entry>
 								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-1</value>
-								</entry>
-								<entry>
 									<key>href</key>
 									<value xsi:type="xsd:string"></value>
 								</entry>
@@ -3409,32 +2187,12 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">A</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string">link with ' (single quote)</value>
-								</entry>
-								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
 								<entry>
 									<key>text-decoration-line</key>
 									<value xsi:type="xsd:string">underline</value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">-1012.359375</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">646.859375</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">0</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -3464,22 +2222,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">17</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">142.640625</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">815.5</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">898.4375</value>
-								</entry>
-								<entry>
 									<key>border-bottom-color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
@@ -3512,10 +2254,6 @@
 									<value xsi:type="xsd:string">inline</value>
 								</entry>
 								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-1</value>
-								</entry>
-								<entry>
 									<key>href</key>
 									<value xsi:type="xsd:string"></value>
 								</entry>
@@ -3532,14 +2270,6 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">A</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string">link with \ (backslash)</value>
-								</entry>
-								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
@@ -3547,23 +2277,11 @@
 									<key>text-decoration-line</key>
 									<value xsi:type="xsd:string">underline</value>
 								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">-1026.359375</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">807.5</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-9b57b">
+				<containedElements retestId="div-fd72f">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -3585,26 +2303,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">36</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">916.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1004.4375</value>
-							</entry>
 							<entry>
 								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">0px</value>
@@ -3630,28 +2328,8 @@
 								<value xsi:type="xsd:string">text-indent:80%</value>
 							</entry>
 							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">DIV</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string"></value>
-							</entry>
-							<entry>
 								<key>text-indent</key>
 								<value xsi:type="xsd:string">80%</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">908.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -3680,22 +2358,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">35</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">1073.390625</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">8</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">916.4375</value>
-								</entry>
-								<entry>
 									<key>border-bottom-color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
@@ -3728,10 +2390,6 @@
 									<value xsi:type="xsd:string">inline</value>
 								</entry>
 								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-1</value>
-								</entry>
-								<entry>
 									<key>href</key>
 									<value xsi:type="xsd:string">resultPage.html</value>
 								</entry>
@@ -3748,14 +2406,6 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">A</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string">this link should break</value>
-								</entry>
-								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(0, 0, 238)</value>
 								</entry>
@@ -3763,21 +2413,9 @@
 									<key>text-decoration-line</key>
 									<value xsi:type="xsd:string">underline</value>
 								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">-95.609375</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="br-56c2e">
+						<containedElements retestId="br-3e2c2">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -3800,52 +2438,12 @@
 							<attributes>
 								<attributes>
 									<entry>
-										<key>absolute-height</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>absolute-width</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>absolute-x</key>
-										<value xsi:type="xsd:string">1081.390625</value>
-									</entry>
-									<entry>
-										<key>absolute-y</key>
-										<value xsi:type="xsd:string">930.4375</value>
-									</entry>
-									<entry>
-										<key>height</key>
-										<value xsi:type="xsd:string">-35</value>
-									</entry>
-									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
 									</entry>
 									<entry>
-										<key>tagName</key>
-										<value xsi:type="xsd:string">BR</value>
-									</entry>
-									<entry>
-										<key>text</key>
-										<value xsi:type="xsd:string"></value>
-									</entry>
-									<entry>
 										<key>text-decoration-line</key>
 										<value xsi:type="xsd:string">none</value>
-									</entry>
-									<entry>
-										<key>width</key>
-										<value xsi:type="xsd:string">-1073.390625</value>
-									</entry>
-									<entry>
-										<key>x</key>
-										<value xsi:type="xsd:string">1073.390625</value>
-									</entry>
-									<entry>
-										<key>y</key>
-										<value xsi:type="xsd:string">14</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -3877,26 +2475,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">18</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">952.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1022.4375</value>
-							</entry>
-							<entry>
 								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
@@ -3919,26 +2497,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">DIV</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">Top level</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">944.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -3966,28 +2524,8 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">38</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">844.4375</value>
-							</entry>
-							<entry>
 								<key>action</key>
 								<value xsi:type="xsd:string">resultPage.html</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1002.4375</value>
 							</entry>
 							<entry>
 								<key>margin-bottom</key>
@@ -4008,26 +2546,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">FORM</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string"></value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">836.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -4054,52 +2572,12 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">38</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">1169</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">8</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">844.4375</value>
-								</entry>
-								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
 									<key>margin-top</key>
 									<value xsi:type="xsd:string">16px</value>
 								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
-								</entry>
-								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">P</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string"></value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">0</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -4127,22 +2605,6 @@
 							<attributes>
 								<attributes>
 									<entry>
-										<key>absolute-height</key>
-										<value xsi:type="xsd:string">13</value>
-									</entry>
-									<entry>
-										<key>absolute-width</key>
-										<value xsi:type="xsd:string">13</value>
-									</entry>
-									<entry>
-										<key>absolute-x</key>
-										<value xsi:type="xsd:string">12</value>
-									</entry>
-									<entry>
-										<key>absolute-y</key>
-										<value xsi:type="xsd:string">847.4375</value>
-									</entry>
-									<entry>
 										<key>box-sizing</key>
 										<value xsi:type="xsd:string">border-box</value>
 									</entry>
@@ -4157,10 +2619,6 @@
 									<entry>
 										<key>font-size</key>
 										<value xsi:type="xsd:string">13.3333px</value>
-									</entry>
-									<entry>
-										<key>height</key>
-										<value xsi:type="xsd:string">-25</value>
 									</entry>
 									<entry>
 										<key>id</key>
@@ -4195,28 +2653,8 @@
 										<value xsi:type="xsd:string">true</value>
 									</entry>
 									<entry>
-										<key>tagName</key>
-										<value xsi:type="xsd:string">INPUT</value>
-									</entry>
-									<entry>
-										<key>text</key>
-										<value xsi:type="xsd:string"></value>
-									</entry>
-									<entry>
 										<key>type</key>
 										<value xsi:type="xsd:string">checkbox</value>
-									</entry>
-									<entry>
-										<key>width</key>
-										<value xsi:type="xsd:string">-1156</value>
-									</entry>
-									<entry>
-										<key>x</key>
-										<value xsi:type="xsd:string">4</value>
-									</entry>
-									<entry>
-										<key>y</key>
-										<value xsi:type="xsd:string">3</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -4246,32 +2684,12 @@
 							<attributes>
 								<attributes>
 									<entry>
-										<key>absolute-height</key>
-										<value xsi:type="xsd:string">35</value>
-									</entry>
-									<entry>
-										<key>absolute-width</key>
-										<value xsi:type="xsd:string">45.328125</value>
-									</entry>
-									<entry>
-										<key>absolute-x</key>
-										<value xsi:type="xsd:string">8</value>
-									</entry>
-									<entry>
-										<key>absolute-y</key>
-										<value xsi:type="xsd:string">846.4375</value>
-									</entry>
-									<entry>
 										<key>display</key>
 										<value xsi:type="xsd:string">inline</value>
 									</entry>
 									<entry>
 										<key>for</key>
 										<value xsi:type="xsd:string">checkbox1</value>
-									</entry>
-									<entry>
-										<key>height</key>
-										<value xsi:type="xsd:string">-3</value>
 									</entry>
 									<entry>
 										<key>id</key>
@@ -4289,29 +2707,9 @@
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
 									</entry>
-									<entry>
-										<key>tagName</key>
-										<value xsi:type="xsd:string">LABEL</value>
-									</entry>
-									<entry>
-										<key>text</key>
-										<value xsi:type="xsd:string">foo</value>
-									</entry>
-									<entry>
-										<key>width</key>
-										<value xsi:type="xsd:string">-1123.671875</value>
-									</entry>
-									<entry>
-										<key>x</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>y</key>
-										<value xsi:type="xsd:string">2</value>
-									</entry>
 								</attributes>
 							</attributes>
-							<containedElements retestId="br-b647d">
+							<containedElements retestId="br-da3bf">
 								<identifyingAttributes>
 									<attributes>
 										<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4334,48 +2732,8 @@
 								<attributes>
 									<attributes>
 										<entry>
-											<key>absolute-height</key>
-											<value xsi:type="xsd:string">0</value>
-										</entry>
-										<entry>
-											<key>absolute-width</key>
-											<value xsi:type="xsd:string">0</value>
-										</entry>
-										<entry>
-											<key>absolute-x</key>
-											<value xsi:type="xsd:string">53.328125</value>
-										</entry>
-										<entry>
-											<key>absolute-y</key>
-											<value xsi:type="xsd:string">860.4375</value>
-										</entry>
-										<entry>
-											<key>height</key>
-											<value xsi:type="xsd:string">-35</value>
-										</entry>
-										<entry>
 											<key>shown</key>
 											<value xsi:type="xsd:string">true</value>
-										</entry>
-										<entry>
-											<key>tagName</key>
-											<value xsi:type="xsd:string">BR</value>
-										</entry>
-										<entry>
-											<key>text</key>
-											<value xsi:type="xsd:string"></value>
-										</entry>
-										<entry>
-											<key>width</key>
-											<value xsi:type="xsd:string">-45.328125</value>
-										</entry>
-										<entry>
-											<key>x</key>
-											<value xsi:type="xsd:string">45.328125</value>
-										</entry>
-										<entry>
-											<key>y</key>
-											<value xsi:type="xsd:string">14</value>
 										</entry>
 									</attributes>
 								</attributes>
@@ -4407,32 +2765,12 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">37</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
 								<key>font-size</key>
 								<value xsi:type="xsd:string">32px</value>
 							</entry>
 							<entry>
 								<key>font-weight</key>
 								<value xsi:type="xsd:string">700</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1003.4375</value>
 							</entry>
 							<entry>
 								<key>margin-bottom</key>
@@ -4453,26 +2791,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">H1</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">Heading</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">0</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -4501,28 +2819,8 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">1044.4375</value>
-							</entry>
-							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1040.4375</value>
 							</entry>
 							<entry>
 								<key>id</key>
@@ -4548,30 +2846,10 @@
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">IMG</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string"></value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">-1169</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">1036.4375</value>
-							</entry>
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="img-05da4">
+				<containedElements retestId="img-adcf5">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4595,28 +2873,8 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">12</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">1044.4375</value>
-							</entry>
-							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1040.4375</value>
 							</entry>
 							<entry>
 								<key>id</key>
@@ -4646,26 +2904,6 @@
 								<key>src</key>
 								<value xsi:type="xsd:string">icon.gif</value>
 							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">IMG</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string"></value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">-1169</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">4</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">1036.4375</value>
-							</entry>
 						</attributes>
 					</attributes>
 				</containedElements>
@@ -4694,26 +2932,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">18</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">66.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1022.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">oneline</value>
 							</entry>
@@ -4736,26 +2954,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">P</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">A single line of text</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">58.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -4785,26 +2983,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">18</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">100.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1022.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">hiddenline</value>
 							</entry>
@@ -4833,28 +3011,8 @@
 								<value xsi:type="xsd:string">visibility: hidden</value>
 							</entry>
 							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">P</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">A hidden line of text</value>
-							</entry>
-							<entry>
 								<key>visibility</key>
 								<value xsi:type="xsd:string">hidden</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">92.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -4886,26 +3044,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">18</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">238.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1022.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">lotsofspaces</value>
 							</entry>
@@ -4929,32 +3067,10 @@
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">P</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">This line has lots
-
-    of spaces.</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">230.4375</value>
-							</entry>
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="this_line_has-05bd7">
+				<containedElements retestId="this_line_has-87ae1">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4979,26 +3095,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">18</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">272.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1022.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">nbsp</value>
 							</entry>
@@ -5022,30 +3118,10 @@
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">P</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">This line has a non-breaking space</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">264.4375</value>
-							</entry>
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="this_line_has-3b06f">
+				<containedElements retestId="this_line_has-4def0">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -5070,26 +3146,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">18</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">306.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1022.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">nbspandspaces</value>
 							</entry>
@@ -5112,26 +3168,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">P</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">This line has a   non-breaking space and spaces</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">298.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -5161,26 +3197,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">36</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">340.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1004.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">multilinenbsp</value>
 							</entry>
@@ -5204,29 +3220,9 @@
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">P</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">These lines  </value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">332.4375</value>
-							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="br-64eba">
+					<containedElements retestId="br-16880">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -5249,28 +3245,8 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">88.421875</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">354.4375</value>
-								</entry>
-								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-36</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -5283,26 +3259,6 @@
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
-								</entry>
-								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">BR</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string"></value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">-1169</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">80.421875</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">14</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -5333,26 +3289,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">18</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">1169</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">392.4375</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1022.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">inline</value>
 							</entry>
@@ -5375,26 +3311,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">P</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">This</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">384.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -5423,28 +3339,8 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">17</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">80.40625</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">40.4375</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">392.4375</value>
-								</entry>
-								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">-1</value>
 								</entry>
 								<entry>
 									<key>id</key>
@@ -5461,26 +3357,6 @@
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
-								</entry>
-								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">SPAN</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string">line has</value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">-1088.59375</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">32.4375</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">0</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -5508,52 +3384,12 @@
 							<attributes>
 								<attributes>
 									<entry>
-										<key>absolute-height</key>
-										<value xsi:type="xsd:string">17</value>
-									</entry>
-									<entry>
-										<key>absolute-width</key>
-										<value xsi:type="xsd:string">23.09375</value>
-									</entry>
-									<entry>
-										<key>absolute-x</key>
-										<value xsi:type="xsd:string">93.75</value>
-									</entry>
-									<entry>
-										<key>absolute-y</key>
-										<value xsi:type="xsd:string">392.4375</value>
-									</entry>
-									<entry>
 										<key>font-style</key>
 										<value xsi:type="xsd:string">italic</value>
 									</entry>
 									<entry>
-										<key>height</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
-									</entry>
-									<entry>
-										<key>tagName</key>
-										<value xsi:type="xsd:string">EM</value>
-									</entry>
-									<entry>
-										<key>text</key>
-										<value xsi:type="xsd:string">text</value>
-									</entry>
-									<entry>
-										<key>width</key>
-										<value xsi:type="xsd:string">-57.3125</value>
-									</entry>
-									<entry>
-										<key>x</key>
-										<value xsi:type="xsd:string">53.3125</value>
-									</entry>
-									<entry>
-										<key>y</key>
-										<value xsi:type="xsd:string">0</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -5585,28 +3421,8 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">17</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">114.625</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">204.4375</value>
-							</entry>
-							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1023.4375</value>
 							</entry>
 							<entry>
 								<key>id</key>
@@ -5631,26 +3447,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">SPAN</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">An inline element</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">-1054.375</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">196.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -5680,28 +3476,8 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">17</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">134.5625</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">123.078125</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">1030.4375</value>
-							</entry>
-							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1023.4375</value>
 							</entry>
 							<entry>
 								<key>id</key>
@@ -5726,26 +3502,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">SPAN</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">{a=&quot;b&quot;, c=1, d=true}</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">-1034.4375</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">115.078125</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">1022.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -5775,28 +3531,8 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">17</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">91.515625</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">261.640625</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">1030.4375</value>
-							</entry>
-							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1023.4375</value>
 							</entry>
 							<entry>
 								<key>id</key>
@@ -5821,26 +3557,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">SPAN</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">{a=&quot;\\b\\\&quot;'\'&quot;}</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">-1077.484375</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">253.640625</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">1022.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -5870,28 +3586,8 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">17</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">221.71875</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">357.15625</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">1030.4375</value>
-							</entry>
-							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-1023.4375</value>
 							</entry>
 							<entry>
 								<key>id</key>
@@ -5916,26 +3612,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">SPAN</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">           ​‌‍  ⁠　test             ​‌‍  ⁠　</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">-947.28125</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">349.15625</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">1022.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -5964,22 +3640,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">42</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">86</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">8</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">988.4375</value>
-							</entry>
-							<entry>
 								<key>border-bottom-color</key>
 								<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 							</entry>
@@ -6004,10 +3664,6 @@
 								<value xsi:type="xsd:string">table</value>
 							</entry>
 							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">-998.4375</value>
-							</entry>
-							<entry>
 								<key>id</key>
 								<value xsi:type="xsd:string">wrappingtext</value>
 							</entry>
@@ -6030,26 +3686,6 @@
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">TABLE</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string"></value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">-1083</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">980.4375</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -6076,56 +3712,16 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>absolute-height</key>
-									<value xsi:type="xsd:string">42</value>
-								</entry>
-								<entry>
-									<key>absolute-width</key>
-									<value xsi:type="xsd:string">86</value>
-								</entry>
-								<entry>
-									<key>absolute-x</key>
-									<value xsi:type="xsd:string">8</value>
-								</entry>
-								<entry>
-									<key>absolute-y</key>
-									<value xsi:type="xsd:string">988.4375</value>
-								</entry>
-								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">table-row-group</value>
-								</entry>
-								<entry>
-									<key>height</key>
-									<value xsi:type="xsd:string">0</value>
 								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tagName</key>
-									<value xsi:type="xsd:string">TBODY</value>
-								</entry>
-								<entry>
-									<key>text</key>
-									<value xsi:type="xsd:string"></value>
-								</entry>
-								<entry>
 									<key>vertical-align</key>
 									<value xsi:type="xsd:string">middle</value>
-								</entry>
-								<entry>
-									<key>width</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>x</key>
-									<value xsi:type="xsd:string">0</value>
-								</entry>
-								<entry>
-									<key>y</key>
-									<value xsi:type="xsd:string">0</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -6152,52 +3748,12 @@
 							<attributes>
 								<attributes>
 									<entry>
-										<key>absolute-height</key>
-										<value xsi:type="xsd:string">38</value>
-									</entry>
-									<entry>
-										<key>absolute-width</key>
-										<value xsi:type="xsd:string">86</value>
-									</entry>
-									<entry>
-										<key>absolute-x</key>
-										<value xsi:type="xsd:string">8</value>
-									</entry>
-									<entry>
-										<key>absolute-y</key>
-										<value xsi:type="xsd:string">990.4375</value>
-									</entry>
-									<entry>
 										<key>display</key>
 										<value xsi:type="xsd:string">table-row</value>
 									</entry>
 									<entry>
-										<key>height</key>
-										<value xsi:type="xsd:string">-4</value>
-									</entry>
-									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
-									</entry>
-									<entry>
-										<key>tagName</key>
-										<value xsi:type="xsd:string">TR</value>
-									</entry>
-									<entry>
-										<key>text</key>
-										<value xsi:type="xsd:string"></value>
-									</entry>
-									<entry>
-										<key>width</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>x</key>
-										<value xsi:type="xsd:string">0</value>
-									</entry>
-									<entry>
-										<key>y</key>
-										<value xsi:type="xsd:string">2</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -6224,22 +3780,6 @@
 								<attributes>
 									<attributes>
 										<entry>
-											<key>absolute-height</key>
-											<value xsi:type="xsd:string">38</value>
-										</entry>
-										<entry>
-											<key>absolute-width</key>
-											<value xsi:type="xsd:string">82</value>
-										</entry>
-										<entry>
-											<key>absolute-x</key>
-											<value xsi:type="xsd:string">10</value>
-										</entry>
-										<entry>
-											<key>absolute-y</key>
-											<value xsi:type="xsd:string">990.4375</value>
-										</entry>
-										<entry>
 											<key>border-bottom-color</key>
 											<value xsi:type="xsd:string">rgb(0, 0, 0)</value>
 										</entry>
@@ -6258,10 +3798,6 @@
 										<entry>
 											<key>display</key>
 											<value xsi:type="xsd:string">table-cell</value>
-										</entry>
-										<entry>
-											<key>height</key>
-											<value xsi:type="xsd:string">0</value>
 										</entry>
 										<entry>
 											<key>padding-bottom</key>
@@ -6286,26 +3822,6 @@
 										<entry>
 											<key>style</key>
 											<value xsi:type="xsd:string">width: 10px;</value>
-										</entry>
-										<entry>
-											<key>tagName</key>
-											<value xsi:type="xsd:string">TD</value>
-										</entry>
-										<entry>
-											<key>text</key>
-											<value xsi:type="xsd:string"></value>
-										</entry>
-										<entry>
-											<key>width</key>
-											<value xsi:type="xsd:string">-4</value>
-										</entry>
-										<entry>
-											<key>x</key>
-											<value xsi:type="xsd:string">2</value>
-										</entry>
-										<entry>
-											<key>y</key>
-											<value xsi:type="xsd:string">0</value>
 										</entry>
 									</attributes>
 								</attributes>
@@ -6333,28 +3849,8 @@
 									<attributes>
 										<attributes>
 											<entry>
-												<key>absolute-height</key>
-												<value xsi:type="xsd:string">17</value>
-											</entry>
-											<entry>
-												<key>absolute-width</key>
-												<value xsi:type="xsd:string">79.0625</value>
-											</entry>
-											<entry>
-												<key>absolute-x</key>
-												<value xsi:type="xsd:string">11</value>
-											</entry>
-											<entry>
-												<key>absolute-y</key>
-												<value xsi:type="xsd:string">991.4375</value>
-											</entry>
-											<entry>
 												<key>display</key>
 												<value xsi:type="xsd:string">inline</value>
-											</entry>
-											<entry>
-												<key>height</key>
-												<value xsi:type="xsd:string">-21</value>
 											</entry>
 											<entry>
 												<key>padding-bottom</key>
@@ -6377,33 +3873,13 @@
 												<value xsi:type="xsd:string">true</value>
 											</entry>
 											<entry>
-												<key>tagName</key>
-												<value xsi:type="xsd:string">SPAN</value>
-											</entry>
-											<entry>
-												<key>text</key>
-												<value xsi:type="xsd:string">beforeSpace</value>
-											</entry>
-											<entry>
 												<key>vertical-align</key>
 												<value xsi:type="xsd:string">baseline</value>
-											</entry>
-											<entry>
-												<key>width</key>
-												<value xsi:type="xsd:string">-2.9375</value>
-											</entry>
-											<entry>
-												<key>x</key>
-												<value xsi:type="xsd:string">1</value>
-											</entry>
-											<entry>
-												<key>y</key>
-												<value xsi:type="xsd:string">1</value>
 											</entry>
 										</attributes>
 									</attributes>
 								</containedElements>
-								<containedElements retestId="span-a1468">
+								<containedElements retestId="span-77743">
 									<identifyingAttributes>
 										<attributes>
 											<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6426,28 +3902,8 @@
 									<attributes>
 										<attributes>
 											<entry>
-												<key>absolute-height</key>
-												<value xsi:type="xsd:string">17</value>
-											</entry>
-											<entry>
-												<key>absolute-width</key>
-												<value xsi:type="xsd:string">0</value>
-											</entry>
-											<entry>
-												<key>absolute-x</key>
-												<value xsi:type="xsd:string">90.0625</value>
-											</entry>
-											<entry>
-												<key>absolute-y</key>
-												<value xsi:type="xsd:string">991.4375</value>
-											</entry>
-											<entry>
 												<key>display</key>
 												<value xsi:type="xsd:string">inline</value>
-											</entry>
-											<entry>
-												<key>height</key>
-												<value xsi:type="xsd:string">-21</value>
 											</entry>
 											<entry>
 												<key>padding-bottom</key>
@@ -6470,28 +3926,8 @@
 												<value xsi:type="xsd:string">true</value>
 											</entry>
 											<entry>
-												<key>tagName</key>
-												<value xsi:type="xsd:string">SPAN</value>
-											</entry>
-											<entry>
-												<key>text</key>
-												<value xsi:type="xsd:string"></value>
-											</entry>
-											<entry>
 												<key>vertical-align</key>
 												<value xsi:type="xsd:string">baseline</value>
-											</entry>
-											<entry>
-												<key>width</key>
-												<value xsi:type="xsd:string">-82</value>
-											</entry>
-											<entry>
-												<key>x</key>
-												<value xsi:type="xsd:string">80.0625</value>
-											</entry>
-											<entry>
-												<key>y</key>
-												<value xsi:type="xsd:string">1</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -6520,28 +3956,8 @@
 									<attributes>
 										<attributes>
 											<entry>
-												<key>absolute-height</key>
-												<value xsi:type="xsd:string">17</value>
-											</entry>
-											<entry>
-												<key>absolute-width</key>
-												<value xsi:type="xsd:string">67.5</value>
-											</entry>
-											<entry>
-												<key>absolute-x</key>
-												<value xsi:type="xsd:string">11</value>
-											</entry>
-											<entry>
-												<key>absolute-y</key>
-												<value xsi:type="xsd:string">1009.4375</value>
-											</entry>
-											<entry>
 												<key>display</key>
 												<value xsi:type="xsd:string">inline</value>
-											</entry>
-											<entry>
-												<key>height</key>
-												<value xsi:type="xsd:string">-21</value>
 											</entry>
 											<entry>
 												<key>padding-bottom</key>
@@ -6564,28 +3980,8 @@
 												<value xsi:type="xsd:string">true</value>
 											</entry>
 											<entry>
-												<key>tagName</key>
-												<value xsi:type="xsd:string">SPAN</value>
-											</entry>
-											<entry>
-												<key>text</key>
-												<value xsi:type="xsd:string">afterSpace</value>
-											</entry>
-											<entry>
 												<key>vertical-align</key>
 												<value xsi:type="xsd:string">baseline</value>
-											</entry>
-											<entry>
-												<key>width</key>
-												<value xsi:type="xsd:string">-14.5</value>
-											</entry>
-											<entry>
-												<key>x</key>
-												<value xsi:type="xsd:string">1</value>
-											</entry>
-											<entry>
-												<key>y</key>
-												<value xsi:type="xsd:string">19</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -6618,52 +4014,12 @@
 				<attributes>
 					<attributes>
 						<entry>
-							<key>absolute-height</key>
-							<value xsi:type="xsd:string">0</value>
-						</entry>
-						<entry>
-							<key>absolute-width</key>
-							<value xsi:type="xsd:string">0</value>
-						</entry>
-						<entry>
-							<key>absolute-x</key>
-							<value xsi:type="xsd:string">0</value>
-						</entry>
-						<entry>
-							<key>absolute-y</key>
-							<value xsi:type="xsd:string">0</value>
-						</entry>
-						<entry>
 							<key>display</key>
 							<value xsi:type="xsd:string">none</value>
 						</entry>
 						<entry>
-							<key>height</key>
-							<value xsi:type="xsd:string">-1056.4375</value>
-						</entry>
-						<entry>
 							<key>shown</key>
 							<value xsi:type="xsd:string">false</value>
-						</entry>
-						<entry>
-							<key>tagName</key>
-							<value xsi:type="xsd:string">HEAD</value>
-						</entry>
-						<entry>
-							<key>text</key>
-							<value xsi:type="xsd:string"></value>
-						</entry>
-						<entry>
-							<key>width</key>
-							<value xsi:type="xsd:string">-1185</value>
-						</entry>
-						<entry>
-							<key>x</key>
-							<value xsi:type="xsd:string">0</value>
-						</entry>
-						<entry>
-							<key>y</key>
-							<value xsi:type="xsd:string">0</value>
 						</entry>
 					</attributes>
 				</attributes>
@@ -6691,48 +4047,8 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>absolute-height</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>absolute-width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>absolute-x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>absolute-y</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>height</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
-								<key>tagName</key>
-								<value xsi:type="xsd:string">TITLE</value>
-							</entry>
-							<entry>
-								<key>text</key>
-								<value xsi:type="xsd:string">Hello WebDriver</value>
-							</entry>
-							<entry>
-								<key>width</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>x</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>y</key>
-								<value xsi:type="xsd:string">0</value>
 							</entry>
 						</attributes>
 					</attributes>
