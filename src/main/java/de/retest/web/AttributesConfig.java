@@ -1,5 +1,6 @@
 package de.retest.web;
 
+import java.util.Arrays;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -37,6 +38,11 @@ public class AttributesConfig {
 
 	public List<String> getIdentifyingAttributes() {
 		return identifyingAttributes;
+	}
+
+	public static List<String> getAllIdentifyingKeys() {
+		return Arrays.asList( ABSOLUTE_HEIGHT, ABSOLUTE_WIDTH, ABSOLUTE_Y, ABSOLUTE_X, X, Y, WIDTH, HEIGHT, TAG_NAME,
+				TEXT );
 	}
 
 }
