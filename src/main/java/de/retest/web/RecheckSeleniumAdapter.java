@@ -48,19 +48,19 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	public Set<RootElement> convert( final Object toVerify ) {
 		final WebDriver driver = (WebDriver) toVerify;
 
-		final List<String> attributes = AttributesProvider.getInstance().getJoinedAttributes();
-		logger.info( "Retrieving {} attributes for each element.", attributes.size() );
+		logger.info( "Retrieving attributes for each element." );
+		final List<String> cssAttributes = AttributesProvider.getInstance().getCssAttributes();
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		@SuppressWarnings( "unchecked" )
 		final Map<String, Map<String, Object>> result =
-				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), attributes );
+				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes );
 
 		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), result.size() );
-
 		final RootElement lastChecked = convertToPeers( result, driver.getTitle(), shootFullPage( driver ) );
 		if ( driver instanceof RecheckDriver ) {
 			((RecheckDriver) driver).setLastActualState( lastChecked );
 		}
+
 		return Collections.singleton( lastChecked );
 	}
 
