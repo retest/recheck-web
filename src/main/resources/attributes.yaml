@@ -142,7 +142,7 @@ attributes:
   - page-break-before
   - page-break-inside
   - perspective
-#  - perspective-origin
+  #  - perspective-origin
   - pointer-events
   - position
   - quotes
@@ -163,7 +163,7 @@ attributes:
   - text-transform
   - top
   - transform
-#  - transform-origin
+  #  - transform-origin
   - transform-style
   - transition-delay
   - transition-duration
@@ -178,8 +178,9 @@ attributes:
   - word-spacing
   - word-wrap
   - z-index
-  
+
 identifyingAttributes:
   - class
   - id
   - name
+  - text

@@ -56,11 +56,6 @@ public class WebElementPeer {
 		attributes.add( new SuffixAttribute( extractSuffix() ) );
 		attributes.add( new StringAttribute( "type", webData.getTag() ) );
 
-		final String text = webData.getAsString( "text" );
-		if ( StringUtils.isNotBlank( text ) ) {
-			attributes.add( new TextAttribute( "text", text ) );
-		}
-
 		final Rectangle outline = webData.getOutline();
 		if ( outline != null ) {
 			attributes.add( OutlineAttribute.create( outline ) );
@@ -71,12 +66,15 @@ public class WebElementPeer {
 			attributes.add( OutlineAttribute.createAbsolute( absoluteOutline ) );
 		}
 
-		final List<String> userDefinedAttributes =
-				new ArrayList<>( AttributesProvider.getInstance().getIdentifyingAttributes() );
-		for ( final String attribute : userDefinedAttributes ) {
-			final String attributeValue = webData.getAsString( attribute );
-			if ( attributeValue != null ) {
-				attributes.add( new StringAttribute( attribute, attributeValue ) );
+		final List<String> identifyingAttributes = AttributesProvider.getInstance().getIdentifyingAttributes();
+		for ( final String key : identifyingAttributes ) {
+			final String value = webData.getAsString( key );
+			if ( StringUtils.isNotBlank( value ) ) {
+				if ( key.equals( AttributesConfig.TEXT ) ) {
+					attributes.add( new TextAttribute( AttributesConfig.TEXT, value ) );
+				} else {
+					attributes.add( new StringAttribute( key, value ) );
+				}
 			}
 		}
 
