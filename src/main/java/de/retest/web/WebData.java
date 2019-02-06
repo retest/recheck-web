@@ -127,6 +127,6 @@ public class WebData {
 	}
 
 	public String getTag() {
-		return getAsString( "tagName" );
+		return getAsString( AttributesConfig.TAG_NAME );
 	}
 }
