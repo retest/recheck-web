@@ -1,6 +1,9 @@
 package de.retest.web;
 
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,6 +24,9 @@ public class AttributesConfig {
 
 	public static final String TEXT = "text";
 
+	private static final Set<String> identifyingAttributeKeys = new HashSet<>( Arrays.asList( ABSOLUTE_HEIGHT,
+			ABSOLUTE_WIDTH, ABSOLUTE_Y, ABSOLUTE_X, X, Y, WIDTH, HEIGHT, TAG_NAME, TEXT ) );
+
 	private final List<String> attributes;
 	private final List<String> identifyingAttributes;
 
@@ -37,6 +43,10 @@ public class AttributesConfig {
 
 	public List<String> getIdentifyingAttributes() {
 		return identifyingAttributes;
+	}
+
+	static boolean isIdentifyingAttribute( final String key ) {
+		return identifyingAttributeKeys.contains( key );
 	}
 
 }
