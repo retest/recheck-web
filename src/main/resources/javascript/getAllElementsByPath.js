@@ -31,7 +31,7 @@ function getY(node) {
 }
 
 function transform(node) {
-	var result = {
+	var extractedAttributes = {
 		"tagName": node.tagName,
 		"text": getText(node),
 		"shown": isShown(node)
@@ -42,7 +42,7 @@ function transform(node) {
 	for (var i = 0; i < attrs.length; i++) {
 		var attributeName = attrs[i].name;
 		var attributValue = attrs[i].value;
-		result[attributeName] = attributValue;
+		extractedAttributes[attributeName] = attributValue;
 	}
 
 	// extract *given* CSS style attributes
@@ -53,30 +53,31 @@ function transform(node) {
 	} catch (err) {}
 	for (var i = 0; i < cssAttributes.length; i++) {
 		var attributeName = cssAttributes[i];
-		if (!result[attributeName]) {
+		if (!extractedAttributes[attributeName]) {
 			if (parentStyle[attributeName] != style[attributeName]) {
-				result[attributeName] = style[attributeName];
+				extractedAttributes[attributeName] = style[attributeName];
 			}
 		}
 	}
 
 	// these attributes need special treatment
-	result["absolute-x"] = getX(node);
-	result["absolute-y"] = getY(node);
-	result["absolute-width"] = node.getBoundingClientRect().width;
-	result["absolute-height"] = node.getBoundingClientRect().height;
+	extractedAttributes["absolute-x"] = getX(node);
+	extractedAttributes["absolute-y"] = getY(node);
+	extractedAttributes["absolute-width"] = node.getBoundingClientRect().width;
+	extractedAttributes["absolute-height"] = node.getBoundingClientRect().height;
 	if (typeof node.parentNode.getBoundingClientRect === "function") {
-		result["x"] = getX(node) - getX(node.parentNode);
-		result["y"] = getY(node) - getY(node.parentNode);
-		result["width"] = node.getBoundingClientRect().width - node.parentNode.getBoundingClientRect().width;
-		result["height"] = node.getBoundingClientRect().height - node.parentNode.getBoundingClientRect().height;
+		extractedAttributes["x"] = getX(node) - getX(node.parentNode);
+		extractedAttributes["y"] = getY(node) - getY(node.parentNode);
+		extractedAttributes["width"] = node.getBoundingClientRect().width - node.parentNode.getBoundingClientRect().width;
+		extractedAttributes["height"] = node.getBoundingClientRect().height - node.parentNode.getBoundingClientRect().height;
 	} else {
-		result["x"] = getX(node);
-		result["y"] = getY(node);
-		result["width"] = node.getBoundingClientRect().width;
-		result["height"] = node.getBoundingClientRect().height;
+		extractedAttributes["x"] = getX(node);
+		extractedAttributes["y"] = getY(node);
+		extractedAttributes["width"] = node.getBoundingClientRect().width;
+		extractedAttributes["height"] = node.getBoundingClientRect().height;
 	}
-	return result;
+
+	return extractedAttributes;
 }
 
 function isShown(e) {
