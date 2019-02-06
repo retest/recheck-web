@@ -1,6 +1,5 @@
 package de.retest.web;
 
-import static de.retest.web.AttributesConfig.isIdentifyingAttribute;
 import static de.retest.web.RecheckSeleniumAdapter.idProvider;
 
 import java.awt.Rectangle;
@@ -90,7 +89,7 @@ public class WebElementPeer {
 		final MutableAttributes state = new MutableAttributes();
 		for ( final String key : webData.getKeys() ) {
 			final String attributeValue = webData.getAsString( key );
-			if ( attributeValue != null && !isIdentifyingAttribute( key ) ) {
+			if ( attributeValue != null && !AttributesUtil.isIdentifyingAttribute( key ) ) {
 				state.put( key, attributeValue );
 			}
 		}
