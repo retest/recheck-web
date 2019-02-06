@@ -1,4 +1,5 @@
-attributes:
+# CSS style attributes we add to an element's state.
+cssAttributes:
   - align-content
   - align-items
   - align-self
@@ -179,7 +180,8 @@ attributes:
   - word-wrap
   - z-index
 
-identifyingAttributes:
+# HTML element attributes we use for element identification.
+htmlAttributes:
   - class
   - id
   - name

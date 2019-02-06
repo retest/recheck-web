@@ -66,7 +66,7 @@ public class WebElementPeer {
 			attributes.add( OutlineAttribute.createAbsolute( absoluteOutline ) );
 		}
 
-		final List<String> identifyingAttributes = AttributesProvider.getInstance().getIdentifyingAttributes();
+		final List<String> identifyingAttributes = AttributesProvider.getInstance().getHtmlAttributes();
 		for ( final String key : identifyingAttributes ) {
 			final String value = webData.getAsString( key );
 			if ( StringUtils.isNotBlank( value ) ) {

@@ -27,22 +27,22 @@ public class AttributesConfig {
 	private static final Set<String> identifyingAttributeKeys = new HashSet<>( Arrays.asList( ABSOLUTE_HEIGHT,
 			ABSOLUTE_WIDTH, ABSOLUTE_Y, ABSOLUTE_X, X, Y, WIDTH, HEIGHT, TAG_NAME, TEXT ) );
 
-	private final List<String> attributes;
-	private final List<String> identifyingAttributes;
+	private final List<String> cssAttributes;
+	private final List<String> htmlAttributes;
 
 	@JsonCreator
-	public AttributesConfig( @JsonProperty( "attributes" ) final List<String> attributes,
-			@JsonProperty( "identifyingAttributes" ) final List<String> identifyingAttributes ) {
-		this.attributes = attributes;
-		this.identifyingAttributes = identifyingAttributes;
+	public AttributesConfig( @JsonProperty( "cssAttributes" ) final List<String> cssAttributes,
+			@JsonProperty( "htmlAttributes" ) final List<String> htmlAttributes ) {
+		this.cssAttributes = cssAttributes;
+		this.htmlAttributes = htmlAttributes;
 	}
 
-	public List<String> getAttributes() {
-		return attributes;
+	public List<String> getCssAttributes() {
+		return cssAttributes;
 	}
 
-	public List<String> getIdentifyingAttributes() {
-		return identifyingAttributes;
+	public List<String> getHtmlAttributes() {
+		return htmlAttributes;
 	}
 
 	static boolean isIdentifyingAttribute( final String key ) {
