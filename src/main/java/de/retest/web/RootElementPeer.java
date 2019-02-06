@@ -1,7 +1,5 @@
 package de.retest.web;
 
-import static de.retest.web.RecheckSeleniumAdapter.idProvider;
-
 import java.awt.image.BufferedImage;
 
 import de.retest.ui.descriptors.Element;
@@ -9,6 +7,7 @@ import de.retest.ui.descriptors.IdentifyingAttributes;
 import de.retest.ui.descriptors.MutableAttributes;
 import de.retest.ui.descriptors.RootElement;
 import de.retest.ui.image.ImageUtils;
+import de.retest.ui.image.Screenshot;
 
 public class RootElementPeer extends WebElementPeer {
 
@@ -27,10 +26,11 @@ public class RootElementPeer extends WebElementPeer {
 	@Override
 	public RootElement toElement( final Element parent ) {
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
-		final MutableAttributes state = retrieveStateAttributes();
-		final RootElement rootElement = new RootElement( idProvider.getRetestId( identifyingAttributes ),
-				identifyingAttributes, state.immutable(), ImageUtils.image2Screenshot( SCREENSHOT_PREFIX, screenshot ),
-				title, 1, title );
+		final MutableAttributes stateAttributes = retrieveStateAttributes();
+		final String retestId = RecheckSeleniumAdapter.idProvider.getRetestId( identifyingAttributes );
+		final Screenshot ss = ImageUtils.image2Screenshot( SCREENSHOT_PREFIX, screenshot );
+		final RootElement rootElement =
+				new RootElement( retestId, identifyingAttributes, stateAttributes.immutable(), ss, title, 1, title );
 		rootElement.addChildren( convertChildren( rootElement ) );
 		return rootElement;
 	}
