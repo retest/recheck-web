@@ -36,12 +36,16 @@ function transform(node) {
 		"text": getText(node),
 		"shown": isShown(node)
 	};
+
+	// extract *all* HTML element attributes
 	var attrs = node.attributes;
 	for (var i = 0; i < attrs.length; i++) {
 		var attributeName = attrs[i].name;
 		var attributValue = attrs[i].value;
 		result[attributeName] = attributValue;
 	}
+
+	// extract *given* CSS style attributes
 	var style = window.getComputedStyle(node);
 	var parentStyle = [];
 	try {
@@ -55,7 +59,8 @@ function transform(node) {
 			}
 		}
 	}
-	// They need special treatment
+
+	// these attributes need special treatment
 	result["absolute-x"] = getX(node);
 	result["absolute-y"] = getY(node);
 	result["absolute-width"] = node.getBoundingClientRect().width;
