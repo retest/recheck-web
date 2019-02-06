@@ -1,7 +1,5 @@
 package de.retest.web;
 
-import static de.retest.web.RecheckSeleniumAdapter.idProvider;
-
 import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.List;
@@ -41,46 +39,47 @@ public class WebElementPeer {
 			return null;
 		}
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
-		final MutableAttributes state = retrieveStateAttributes();
-		final Element element = Element.create( idProvider.getRetestId( identifyingAttributes ), parent,
-				identifyingAttributes, state.immutable() );
+		final MutableAttributes stateAttributes = retrieveStateAttributes();
+		final String retestId = RecheckSeleniumAdapter.idProvider.getRetestId( identifyingAttributes );
+		final Element element = Element.create( retestId, parent, identifyingAttributes, stateAttributes.immutable() );
 		element.addChildren( convertChildren( element ) );
 		return element;
 	}
 
 	protected IdentifyingAttributes retrieveIdentifyingAttributes() {
-		final List<Attribute> attributes = new ArrayList<>();
+		// TODO Inconsistent since we don't get all identifying attributes via attributes.yaml.
+		final List<Attribute> identifyingAttributes = new ArrayList<>();
 
-		attributes.add( new PathAttribute( Path.fromString( path ) ) );
-		attributes.add( new SuffixAttribute( extractSuffix() ) );
-		attributes.add( new StringAttribute( "type", webData.getTag() ) );
+		identifyingAttributes.add( new PathAttribute( Path.fromString( path ) ) );
+		identifyingAttributes.add( new SuffixAttribute( extractSuffix() ) );
+		identifyingAttributes.add( new StringAttribute( "type", webData.getTag() ) );
 
 		final Rectangle outline = webData.getOutline();
 		if ( outline != null ) {
-			attributes.add( OutlineAttribute.create( outline ) );
+			identifyingAttributes.add( OutlineAttribute.create( outline ) );
 		}
 
 		final Rectangle absoluteOutline = webData.getAbsoluteOutline();
 		if ( absoluteOutline != null ) {
-			attributes.add( OutlineAttribute.createAbsolute( absoluteOutline ) );
+			identifyingAttributes.add( OutlineAttribute.createAbsolute( absoluteOutline ) );
 		}
 
-		final List<String> identifyingAttributes = AttributesProvider.getInstance().getHtmlAttributes();
-		for ( final String key : identifyingAttributes ) {
+		final List<String> htmlAttributes = AttributesProvider.getInstance().getHtmlAttributes();
+		for ( final String key : htmlAttributes ) {
 			final String value = webData.getAsString( key );
 			if ( StringUtils.isNotBlank( value ) ) {
 				if ( key.equals( AttributesConfig.TEXT ) ) {
-					attributes.add( new TextAttribute( AttributesConfig.TEXT, value ) );
+					identifyingAttributes.add( new TextAttribute( AttributesConfig.TEXT, value ) );
 				} else {
-					attributes.add( new StringAttribute( key, value ) );
+					identifyingAttributes.add( new StringAttribute( key, value ) );
 				}
 			}
 		}
 
-		return new IdentifyingAttributes( attributes );
+		return new IdentifyingAttributes( identifyingAttributes );
 	}
 
-	public Integer extractSuffix() {
+	private Integer extractSuffix() {
 		final String suffix = path.substring( path.lastIndexOf( '[' ) + 1, path.lastIndexOf( ']' ) );
 		return Integer.valueOf( suffix );
 	}
@@ -111,4 +110,5 @@ public class WebElementPeer {
 	public List<WebElementPeer> getChildren() {
 		return children;
 	}
+
 }
