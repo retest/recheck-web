@@ -89,7 +89,7 @@ public class WebElementPeer {
 		final MutableAttributes state = new MutableAttributes();
 		for ( final String key : webData.getKeys() ) {
 			final String attributeValue = webData.getAsString( key );
-			if ( attributeValue != null && !AttributesUtil.isIdentifyingAttribute( key ) ) {
+			if ( AttributesUtil.isStateAttribute( key ) ) {
 				state.put( key, attributeValue );
 			}
 		}

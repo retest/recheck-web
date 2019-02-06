@@ -26,4 +26,8 @@ public class AttributesUtil {
 		return identifyingAttributes.contains( key );
 	}
 
+	public static boolean isStateAttribute( final String key ) {
+		return key != null && !isIdentifyingAttribute( key );
+	}
+
 }
