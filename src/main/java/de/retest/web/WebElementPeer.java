@@ -86,12 +86,10 @@ public class WebElementPeer {
 
 	protected MutableAttributes retrieveStateAttributes() {
 		final MutableAttributes state = new MutableAttributes();
-		for ( final String key : webData.getKeys() ) {
-			final String attributeValue = webData.getAsString( key );
-			if ( AttributesUtil.isStateAttribute( key ) ) {
-				state.put( key, attributeValue );
-			}
-		}
+		webData.getKeys().stream() //
+				.filter( Objects::nonNull ) //
+				.filter( AttributesUtil::isStateAttribute ) //
+				.forEach( key -> state.put( key, webData.getAsString( key ) ) );
 		return state;
 	}
 

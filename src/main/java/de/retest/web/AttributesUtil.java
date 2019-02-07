@@ -27,7 +27,7 @@ public class AttributesUtil {
 	}
 
 	public static boolean isStateAttribute( final String key ) {
-		return key != null && !isIdentifyingAttribute( key );
+		return !isIdentifyingAttribute( key );
 	}
 
 }
