@@ -67,18 +67,18 @@ public class AttributesProvider {
 		return mapper.readValue( in, AttributesConfig.class );
 	}
 
-	public List<String> getAttributes() {
-		return attributesConfig.getAttributes();
+	public List<String> getCssAttributes() {
+		return attributesConfig.getCssAttributes();
 	}
 
-	public List<String> getIdentifyingAttributes() {
-		return attributesConfig.getIdentifyingAttributes();
+	public List<String> getHtmlAttributes() {
+		return attributesConfig.getHtmlAttributes();
 	}
 
 	public List<String> getJoinedAttributes() {
 		final List<String> result = new ArrayList<>();
-		result.addAll( getIdentifyingAttributes() );
-		result.addAll( getAttributes() );
+		result.addAll( getHtmlAttributes() );
+		result.addAll( getCssAttributes() );
 		return result;
 	}
 

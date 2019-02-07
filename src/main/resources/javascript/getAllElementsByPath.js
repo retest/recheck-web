@@ -1,8 +1,8 @@
-args = arguments[0];
+cssAttributes = arguments[0];
 
 function Counter() {
 	this.map = {};
-	this.increase = function(element) {
+	this.increase = function (element) {
 		if (element.tagName in this.map) {
 			this.map[element.tagName] = this.map[element.tagName] + 1;
 		} else {
@@ -31,48 +31,53 @@ function getY(node) {
 }
 
 function transform(node) {
-	var result = {
-		"tagName" : node.tagName,
-		"text" : getText(node),
-		"shown" : isShown(node)
+	var extractedAttributes = {
+		"tagName": node.tagName,
+		"text": getText(node),
+		"shown": isShown(node)
 	};
+
+	// extract *all* HTML element attributes
 	var attrs = node.attributes;
 	for (var i = 0; i < attrs.length; i++) {
 		var attributeName = attrs[i].name;
 		var attributValue = attrs[i].value;
-		result[attributeName] = attributValue;
+		extractedAttributes[attributeName] = attributValue;
 	}
+
+	// extract *given* CSS style attributes
 	var style = window.getComputedStyle(node);
 	var parentStyle = [];
 	try {
-	    parentStyle = window.getComputedStyle(node.parentNode);
-	}
-	catch(err) {}
-	for (var i = 0; i < args.length; i++) {
-		var attributeName = args[i];
-		if (!result[attributeName]) {
+		parentStyle = window.getComputedStyle(node.parentNode);
+	} catch (err) {}
+	for (var i = 0; i < cssAttributes.length; i++) {
+		var attributeName = cssAttributes[i];
+		if (!extractedAttributes[attributeName]) {
 			if (parentStyle[attributeName] != style[attributeName]) {
-				result[attributeName] = style[attributeName];
+				extractedAttributes[attributeName] = style[attributeName];
 			}
 		}
 	}
-	// They need special treatment
-	result["absolute-x"] = getX(node);
-	result["absolute-y"] = getY(node);
-	result["absolute-width"] = node.getBoundingClientRect().width;
-	result["absolute-height"] = node.getBoundingClientRect().height;
+
+	// these attributes need special treatment
+	extractedAttributes["absolute-x"] = getX(node);
+	extractedAttributes["absolute-y"] = getY(node);
+	extractedAttributes["absolute-width"] = node.getBoundingClientRect().width;
+	extractedAttributes["absolute-height"] = node.getBoundingClientRect().height;
 	if (typeof node.parentNode.getBoundingClientRect === "function") {
-		result["x"] = getX(node) - getX(node.parentNode);
-		result["y"] = getY(node) - getY(node.parentNode);
-		result["width"] = node.getBoundingClientRect().width - node.parentNode.getBoundingClientRect().width;
-		result["height"] = node.getBoundingClientRect().height - node.parentNode.getBoundingClientRect().height;
+		extractedAttributes["x"] = getX(node) - getX(node.parentNode);
+		extractedAttributes["y"] = getY(node) - getY(node.parentNode);
+		extractedAttributes["width"] = node.getBoundingClientRect().width - node.parentNode.getBoundingClientRect().width;
+		extractedAttributes["height"] = node.getBoundingClientRect().height - node.parentNode.getBoundingClientRect().height;
 	} else {
-		result["x"] = getX(node);
-		result["y"] = getY(node);
-		result["width"] = node.getBoundingClientRect().width;
-		result["height"] = node.getBoundingClientRect().height;
+		extractedAttributes["x"] = getX(node);
+		extractedAttributes["y"] = getY(node);
+		extractedAttributes["width"] = node.getBoundingClientRect().width;
+		extractedAttributes["height"] = node.getBoundingClientRect().height;
 	}
-	return result;
+
+	return extractedAttributes;
 }
 
 function isShown(e) {
@@ -96,7 +101,7 @@ function mapElement(element, parentPath, allElements) {
 
 var htmlNode = document.getElementsByTagName("html")[0];
 var html = transform(htmlNode);
-var result = mapElement(htmlNode, "//HTML[1]", {
-	"//HTML[1]" : html
+var allElements = mapElement(htmlNode, "//HTML[1]", {
+	"//HTML[1]": html
 });
-return result;
+return allElements;

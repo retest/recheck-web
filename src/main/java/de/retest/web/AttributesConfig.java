@@ -17,22 +17,25 @@ public class AttributesConfig {
 	public static final String WIDTH = "width";
 	public static final String HEIGHT = "height";
 
-	private final List<String> attributes;
-	private final List<String> identifyingAttributes;
+	public static final String TAG_NAME = "tagName";
+	public static final String TEXT = "text";
+
+	private final List<String> cssAttributes;
+	private final List<String> htmlAttributes;
 
 	@JsonCreator
-	public AttributesConfig( @JsonProperty( "attributes" ) final List<String> attributes,
-			@JsonProperty( "identifyingAttributes" ) final List<String> identifyingAttributes ) {
-		this.attributes = attributes;
-		this.identifyingAttributes = identifyingAttributes;
+	public AttributesConfig( @JsonProperty( "cssAttributes" ) final List<String> cssAttributes,
+			@JsonProperty( "htmlAttributes" ) final List<String> htmlAttributes ) {
+		this.cssAttributes = cssAttributes;
+		this.htmlAttributes = htmlAttributes;
 	}
 
-	public List<String> getAttributes() {
-		return attributes;
+	public List<String> getCssAttributes() {
+		return cssAttributes;
 	}
 
-	public List<String> getIdentifyingAttributes() {
-		return identifyingAttributes;
+	public List<String> getHtmlAttributes() {
+		return htmlAttributes;
 	}
 
 }
