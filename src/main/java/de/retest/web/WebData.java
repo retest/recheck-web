@@ -24,10 +24,11 @@ public class WebData {
 	 */
 	public String getAsString( final String key ) {
 		final Object result = wrappedData.get( key );
-		if ( result == null ) {
-			return null;
+		if ( result != null ) {
+			return key.equals( AttributesConfig.TEXT ) ? String.valueOf( result )
+					: normalize( String.valueOf( result ) );
 		}
-		return normalize( String.valueOf( result ) );
+		return null;
 	}
 
 	public Set<String> getKeys() {
