@@ -6,8 +6,10 @@ import de.retest.ui.descriptors.TextAttribute;
 
 public class TextAttributeUtil {
 
+	public static final String PRE_ELEMENT = "pre";
+
 	public static TextAttribute createTextAttribute( final String path, final String text ) {
-		return path.toLowerCase().contains( "pre" ) ? new TextAttribute( TEXT, text )
+		return path.toLowerCase().contains( PRE_ELEMENT ) ? new TextAttribute( TEXT, text )
 				: new TextAttribute( TEXT, cleanString( text ) );
 	}
 
