@@ -17,8 +17,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 
-import de.retest.ui.DefaultValueFinder;
-import de.retest.ui.descriptors.IdentifyingAttributes;
+import de.retest.recheck.ui.DefaultValueFinder;
+import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
 
 public class DefaultWebValueFinder implements DefaultValueFinder {
 

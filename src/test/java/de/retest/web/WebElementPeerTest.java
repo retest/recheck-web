@@ -8,7 +8,7 @@ import static org.mockito.Mockito.when;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import de.retest.ui.descriptors.Element;
+import de.retest.recheck.ui.descriptors.Element;
 
 class WebElementPeerTest {
 

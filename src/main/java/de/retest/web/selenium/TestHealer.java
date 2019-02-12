@@ -16,8 +16,8 @@ import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.retest.ui.descriptors.Element;
-import de.retest.ui.descriptors.RootElement;
+import de.retest.recheck.ui.descriptors.Element;
+import de.retest.recheck.ui.descriptors.RootElement;
 
 public class TestHealer {
 

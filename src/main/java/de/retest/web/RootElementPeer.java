@@ -2,12 +2,12 @@ package de.retest.web;
 
 import java.awt.image.BufferedImage;
 
-import de.retest.ui.descriptors.Element;
-import de.retest.ui.descriptors.IdentifyingAttributes;
-import de.retest.ui.descriptors.MutableAttributes;
-import de.retest.ui.descriptors.RootElement;
-import de.retest.ui.image.ImageUtils;
-import de.retest.ui.image.Screenshot;
+import de.retest.recheck.ui.descriptors.Element;
+import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
+import de.retest.recheck.ui.descriptors.MutableAttributes;
+import de.retest.recheck.ui.descriptors.RootElement;
+import de.retest.recheck.ui.image.ImageUtils;
+import de.retest.recheck.ui.image.Screenshot;
 
 public class RootElementPeer extends WebElementPeer {
 

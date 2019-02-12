@@ -27,8 +27,8 @@ import org.openqa.selenium.internal.FindsByTagName;
 import org.openqa.selenium.internal.FindsByXPath;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import de.retest.ui.descriptors.Element;
-import de.retest.ui.descriptors.RootElement;
+import de.retest.recheck.ui.descriptors.Element;
+import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.web.RecheckWebImpl;
 
 public class RecheckDriver implements WebDriver, JavascriptExecutor, FindsById, FindsByClassName, FindsByLinkText,

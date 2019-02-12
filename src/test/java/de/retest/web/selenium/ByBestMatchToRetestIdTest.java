@@ -6,10 +6,10 @@ import static org.mockito.Mockito.mock;
 
 import org.junit.jupiter.api.Test;
 
-import de.retest.ui.descriptors.Attributes;
-import de.retest.ui.descriptors.Element;
-import de.retest.ui.descriptors.IdentifyingAttributes;
-import de.retest.ui.descriptors.RootElement;
+import de.retest.recheck.ui.descriptors.Attributes;
+import de.retest.recheck.ui.descriptors.Element;
+import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
+import de.retest.recheck.ui.descriptors.RootElement;
 
 class ByBestMatchToRetestIdTest {
 
