@@ -4,7 +4,7 @@ import java.io.File;
 
 import de.retest.recheck.RecheckAdapter;
 import de.retest.recheck.RecheckImpl;
-import de.retest.ui.descriptors.SutState;
+import de.retest.recheck.ui.descriptors.SutState;
 import de.retest.web.selenium.RecheckDriver;
 
 public class RecheckWebImpl extends RecheckImpl {

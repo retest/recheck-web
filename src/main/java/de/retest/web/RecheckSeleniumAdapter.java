@@ -19,10 +19,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import de.retest.recheck.RecheckAdapter;
-import de.retest.ui.DefaultValueFinder;
-import de.retest.ui.descriptors.RetestIdProviderUtil;
-import de.retest.ui.descriptors.RootElement;
-import de.retest.ui.descriptors.idproviders.RetestIdProvider;
+import de.retest.recheck.ui.DefaultValueFinder;
+import de.retest.recheck.ui.descriptors.RetestIdProviderUtil;
+import de.retest.recheck.ui.descriptors.RootElement;
+import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
 import de.retest.web.selenium.RecheckDriver;
 
 public class RecheckSeleniumAdapter implements RecheckAdapter {

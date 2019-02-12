@@ -10,11 +10,11 @@ import java.util.Map;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import de.retest.elementcollection.ElementCollection;
-import de.retest.elementcollection.RecheckIgnore;
-import de.retest.ui.descriptors.RootElement;
-import de.retest.ui.diff.RootElementDifference;
-import de.retest.ui.diff.RootElementDifferenceFinder;
+import de.retest.recheck.elementcollection.ElementCollection;
+import de.retest.recheck.elementcollection.RecheckIgnore;
+import de.retest.recheck.ui.descriptors.RootElement;
+import de.retest.recheck.ui.diff.RootElementDifference;
+import de.retest.recheck.ui.diff.RootElementDifferenceFinder;
 
 class PeerConverterTest {
 

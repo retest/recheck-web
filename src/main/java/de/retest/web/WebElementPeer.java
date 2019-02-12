@@ -8,16 +8,16 @@ import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
 
-import de.retest.ui.Path;
-import de.retest.ui.descriptors.Attribute;
-import de.retest.ui.descriptors.Element;
-import de.retest.ui.descriptors.IdentifyingAttributes;
-import de.retest.ui.descriptors.MutableAttributes;
-import de.retest.ui.descriptors.OutlineAttribute;
-import de.retest.ui.descriptors.PathAttribute;
-import de.retest.ui.descriptors.StringAttribute;
-import de.retest.ui.descriptors.SuffixAttribute;
-import de.retest.ui.descriptors.TextAttribute;
+import de.retest.recheck.ui.Path;
+import de.retest.recheck.ui.descriptors.Attribute;
+import de.retest.recheck.ui.descriptors.Element;
+import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
+import de.retest.recheck.ui.descriptors.MutableAttributes;
+import de.retest.recheck.ui.descriptors.OutlineAttribute;
+import de.retest.recheck.ui.descriptors.PathAttribute;
+import de.retest.recheck.ui.descriptors.StringAttribute;
+import de.retest.recheck.ui.descriptors.SuffixAttribute;
+import de.retest.recheck.ui.descriptors.TextAttribute;
 
 public class WebElementPeer {
 

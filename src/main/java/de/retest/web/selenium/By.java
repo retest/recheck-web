@@ -3,9 +3,9 @@ package de.retest.web.selenium;
 import java.util.List;
 import java.util.function.Predicate;
 
-import de.retest.ui.descriptors.Element;
-import de.retest.ui.descriptors.RootElement;
-import de.retest.ui.diff.Alignment;
+import de.retest.recheck.ui.descriptors.Element;
+import de.retest.recheck.ui.descriptors.RootElement;
+import de.retest.recheck.ui.diff.Alignment;
 
 public abstract class By extends org.openqa.selenium.By {
 

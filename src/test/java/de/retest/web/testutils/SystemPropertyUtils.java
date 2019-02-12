@@ -1,12 +1,13 @@
 package de.retest.web.testutils;
 
-import static de.retest.Properties.VALUES_SEPARATOR;
-import static de.retest.elementcollection.RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY;
-import static de.retest.ui.descriptors.OutlineAttribute.ABSOLUTE_OUTLINE;
+import static de.retest.recheck.Properties.VALUES_SEPARATOR;
+import static de.retest.recheck.elementcollection.RecheckIgnore.IGNORED_ATTRIBUTES_PROPERTY;
+import static de.retest.recheck.ui.descriptors.OutlineAttribute.ABSOLUTE_OUTLINE;
 
 public class SystemPropertyUtils {
 
-	private SystemPropertyUtils() {}
+	private SystemPropertyUtils() {
+	}
 
 	public static void ignoreAbsoluteOutline() {
 		String ignored = System.getProperty( IGNORED_ATTRIBUTES_PROPERTY, "" );
