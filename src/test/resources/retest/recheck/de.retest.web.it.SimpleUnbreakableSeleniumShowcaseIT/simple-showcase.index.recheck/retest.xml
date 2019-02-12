@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="3.0.1" dataType="de.retest.ui.descriptors.SutState" dataTypeVersion="2">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="3.0.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="2">
 	<data xsi:type="sutState">
 		<descriptors retestId="0f784cc8-531b-4867-8dc6-1e878ae98675" screenId="1" screen="retest - Java Swing GUI Testing" title="retest - Java Swing GUI Testing">
 			<identifyingAttributes>
