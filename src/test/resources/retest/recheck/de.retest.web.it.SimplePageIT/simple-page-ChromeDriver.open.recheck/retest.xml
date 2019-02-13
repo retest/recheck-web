@@ -895,7 +895,7 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="div-379bd">
+				<containedElements retestId="div-4f886">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1046,7 +1046,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-5a604">
+				<containedElements retestId="div-a2e8d">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1113,9 +1113,10 @@
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[2]/PRE[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="text" xsi:type="textAttribute">This section has a preformatted
+								<attribute key="text" xsi:type="textAttribute">   This section has a preformatted
     text block    
-  split in four lines</attribute>
+  split in four lines
+         </attribute>
 								<attribute key="type" xsi:type="stringAttribute">PRE</attribute>
 							</attributes>
 						</identifyingAttributes>
@@ -1229,7 +1230,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-291e6">
+				<containedElements retestId="div-287cd">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1405,7 +1406,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="div-ae8e1">
+					<containedElements retestId="div-387c2">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1433,7 +1434,7 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="div-bc7fb">
+						<containedElements retestId="div-2a98e">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1461,7 +1462,7 @@
 									</entry>
 								</attributes>
 							</attributes>
-							<containedElements retestId="some_more_text-d00c2">
+							<containedElements retestId="some_more_text-1fd96">
 								<identifyingAttributes>
 									<attributes>
 										<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1538,7 +1539,7 @@
 								</attributes>
 							</containedElements>
 						</containedElements>
-						<containedElements retestId="some_text-df1e8">
+						<containedElements retestId="some_text-a915a">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1578,7 +1579,7 @@
 						</containedElements>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-2c890">
+				<containedElements retestId="div-88dff">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1660,7 +1661,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="span-b6f06">
+					<containedElements retestId="span-0e00e">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1694,7 +1695,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-a4fa7">
+				<containedElements retestId="div-490b9">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1744,7 +1745,7 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="div-be01f">
+				<containedElements retestId="div-df0fe">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2281,7 +2282,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-9a33a">
+				<containedElements retestId="div-b906e">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2415,7 +2416,7 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="br-d9f99">
+						<containedElements retestId="br-eb3e4">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2709,7 +2710,7 @@
 									</entry>
 								</attributes>
 							</attributes>
-							<containedElements retestId="br-1246d">
+							<containedElements retestId="br-e81b6">
 								<identifyingAttributes>
 									<attributes>
 										<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2849,7 +2850,7 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="img-9860c">
+				<containedElements retestId="img-20f83">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -3035,9 +3036,7 @@
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-							<attribute key="text" xsi:type="textAttribute">This line has lots
-
-    of spaces.</attribute>
+							<attribute key="text" xsi:type="textAttribute">This line has lots of spaces.</attribute>
 							<attribute key="type" xsi:type="stringAttribute">P</attribute>
 						</attributes>
 					</identifyingAttributes>
@@ -3070,7 +3069,7 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="this_line_has-6f363">
+				<containedElements retestId="this_line_has-1d6d9">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -3121,7 +3120,7 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="this_line_has-4e0e4">
+				<containedElements retestId="this_line_has-ea23c">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -3222,7 +3221,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="br-e473d">
+					<containedElements retestId="br-3c9f9">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -3579,7 +3578,7 @@
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/SPAN[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
-							<attribute key="text" xsi:type="textAttribute">           ​‌‍  ⁠　test             ​‌‍  ⁠　</attribute>
+							<attribute key="text" xsi:type="textAttribute">           ​‌‍  ⁠　test            ​‌‍  ⁠　</attribute>
 							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
 						</attributes>
 					</identifyingAttributes>
@@ -3879,7 +3878,7 @@
 										</attributes>
 									</attributes>
 								</containedElements>
-								<containedElements retestId="span-9f4ce">
+								<containedElements retestId="span-78de7">
 									<identifyingAttributes>
 										<attributes>
 											<attribute key="absolute-outline" xsi:type="outlineAttribute">
