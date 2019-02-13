@@ -6,6 +6,8 @@ import de.retest.recheck.ui.descriptors.TextAttribute;
 
 public class TextAttributeUtil {
 
+	private TextAttributeUtil() {}
+
 	public static final String PRE_ELEMENT = "pre";
 
 	public static TextAttribute createTextAttribute( final String path, final String text ) {
