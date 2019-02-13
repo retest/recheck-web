@@ -17,7 +17,7 @@ import de.retest.recheck.ui.descriptors.OutlineAttribute;
 import de.retest.recheck.ui.descriptors.PathAttribute;
 import de.retest.recheck.ui.descriptors.StringAttribute;
 import de.retest.recheck.ui.descriptors.SuffixAttribute;
-import de.retest.recheck.ui.descriptors.TextAttribute;
+import de.retest.web.util.TextAttributeUtil;
 
 public class WebElementPeer {
 
@@ -69,7 +69,7 @@ public class WebElementPeer {
 			final String value = webData.getAsString( key );
 			if ( StringUtils.isNotBlank( value ) ) {
 				if ( key.equals( AttributesConfig.TEXT ) ) {
-					identifyingAttributes.add( new TextAttribute( AttributesConfig.TEXT, value ) );
+					identifyingAttributes.add( TextAttributeUtil.createTextAttribute( path, value ) );
 				} else {
 					identifyingAttributes.add( new StringAttribute( key, value ) );
 				}
