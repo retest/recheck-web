@@ -83,6 +83,26 @@ class WebDataTest {
 		assertThat( new WebData( wrappedData ).isShown() ).isTrue();
 	}
 
+	@Test
+	void getAsString_should_return_normalized_string() {
+		final Map<String, Object> wrappedData = getWrappedDataWithRectangle( true );
+		final String key = "key";
+		final String text = "some text";
+		wrappedData.put( key, "\"  " + text + "  \"" );
+		final String result = new WebData( wrappedData ).getAsString( key );
+		assertThat( result ).isEqualTo( text );
+	}
+
+	@Test
+	void getAsString_should_return_not_normalized_string() {
+		final Map<String, Object> wrappedData = getWrappedDataWithRectangle( true );
+		final String key = "text";
+		final String text = "\"  some text  \"";
+		wrappedData.put( key, text );
+		final String result = new WebData( wrappedData ).getAsString( key );
+		assertThat( result ).isEqualTo( text );
+	}
+
 	private Map<String, Object> getWrappedDataWithRectangle( final boolean isVisible ) {
 		final int size = isVisible ? 1 : 0;
 		final Map<String, Object> wrappedData = new HashMap<>();
