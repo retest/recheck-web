@@ -12,14 +12,14 @@ public class TextAttributeUtil {
 
 	public static TextAttribute createTextAttribute( final String path, final String text ) {
 		return isPreContained( path ) ? new TextAttribute( TEXT, text )
-				: new TextAttribute( TEXT, cleanString( text ) );
+				: new TextAttribute( TEXT, removeFormatting( text ) );
 	}
 
 	private static boolean isPreContained( final String path ) {
 		return path.toLowerCase().contains( PRE_ELEMENT );
 	}
 
-	private static String cleanString( final String text ) {
+	private static String removeFormatting( final String text ) {
 		return text.replaceAll( "\\s+", " " ).trim();
 	}
 
