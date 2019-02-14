@@ -11,8 +11,12 @@ public class TextAttributeUtil {
 	public static final String PRE_ELEMENT = "/pre[";
 
 	public static TextAttribute createTextAttribute( final String path, final String text ) {
-		return path.toLowerCase().contains( PRE_ELEMENT ) ? new TextAttribute( TEXT, text )
+		return isPreContained( path ) ? new TextAttribute( TEXT, text )
 				: new TextAttribute( TEXT, cleanString( text ) );
+	}
+
+	private static boolean isPreContained( final String path ) {
+		return path.toLowerCase().contains( PRE_ELEMENT );
 	}
 
 	private static String cleanString( final String text ) {
