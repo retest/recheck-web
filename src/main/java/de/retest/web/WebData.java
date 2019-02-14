@@ -27,7 +27,8 @@ public class WebData {
 		if ( result == null ) {
 			return null;
 		}
-		return normalize( String.valueOf( result ) );
+		final String value = String.valueOf( result );
+		return key.equals( AttributesConfig.TEXT ) ? value : normalize( value );
 	}
 
 	public Set<String> getKeys() {
