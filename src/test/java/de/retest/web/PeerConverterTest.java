@@ -7,21 +7,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import de.retest.recheck.elementcollection.ElementCollection;
-import de.retest.recheck.elementcollection.RecheckIgnore;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.diff.RootElementDifference;
 import de.retest.recheck.ui.diff.RootElementDifferenceFinder;
 
 class PeerConverterTest {
-
-	@BeforeEach
-	void setUp() {
-		RecheckIgnore.getTestInstance( new ElementCollection() );
-	}
 
 	@Test
 	void getParentPath_should_return_null_for_toplevel() {
