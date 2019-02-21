@@ -11,8 +11,6 @@ import de.retest.recheck.ui.image.Screenshot;
 
 public class RootElementPeer extends WebElementPeer {
 
-	private static final String SCREENSHOT_PREFIX = "window";
-
 	private final String title;
 	private final BufferedImage screenshot;
 
@@ -28,7 +26,7 @@ public class RootElementPeer extends WebElementPeer {
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
 		final MutableAttributes stateAttributes = retrieveStateAttributes();
 		final String retestId = RecheckSeleniumAdapter.idProvider.getRetestId( identifyingAttributes );
-		final Screenshot ss = ImageUtils.image2Screenshot( SCREENSHOT_PREFIX, screenshot );
+		final Screenshot ss = ImageUtils.image2Screenshot( retestId, screenshot );
 		final RootElement rootElement =
 				new RootElement( retestId, identifyingAttributes, stateAttributes.immutable(), ss, title, 1, title );
 		rootElement.addChildren( convertChildren( rootElement ) );
