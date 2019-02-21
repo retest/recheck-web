@@ -12,7 +12,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
-import de.retest.web.testutils.SystemPropertyUtils;
 
 /*
  * Simple recheck-web showcase for a Chrome-based integration test. See other *IT classes for more examples.
@@ -26,8 +25,6 @@ public class SimpleRecheckShowcaseIT {
 	public void setup() {
 		// If ChromeDriver (http://chromedriver.chromium.org/downloads/) is not in your PATH, uncomment this and point to your installation.
 		//		System.setProperty( "webdriver.chrome.driver", "path/to/chromedriver" );
-		// TODO Remove once the absolute outline is ignored by default
-		SystemPropertyUtils.ignoreAbsoluteOutline();
 
 		final ChromeOptions opts = new ChromeOptions();
 		opts.addArguments(
