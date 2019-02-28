@@ -4,12 +4,21 @@ import java.io.File;
 
 import de.retest.recheck.RecheckAdapter;
 import de.retest.recheck.RecheckImpl;
+import de.retest.recheck.RecheckOptions;
 import de.retest.recheck.ui.descriptors.SutState;
 import de.retest.web.selenium.RecheckDriver;
 
 public class RecheckWebImpl extends RecheckImpl {
 
 	private RecheckDriver driver;
+
+	public RecheckWebImpl() {
+		super();
+	}
+
+	public RecheckWebImpl( final RecheckOptions opts ) {
+		super( opts );
+	}
 
 	@Override
 	public void check( final Object driver, final RecheckAdapter seleniumAdapter, final String currentStep ) {
