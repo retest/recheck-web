@@ -16,6 +16,8 @@ public class ScreenshotProvider {
 	private static final int SCROLL_TIMEOUT = 100;
 	private static final boolean USE_DEVICE_PIXEL_RATIO = true;
 
+	public final static int SCALE = extractScale();
+
 	private ScreenshotProvider() {
 		// private constructor for util class
 	}
@@ -26,8 +28,7 @@ public class ScreenshotProvider {
 			image = Shutterbug
 					.shootPage( driver, ScrollStrategy.WHOLE_PAGE_CHROME, SCROLL_TIMEOUT, USE_DEVICE_PIXEL_RATIO )
 					.getImage();
-			final int scale = extractScale();
-			return resizeImage( image, image.getWidth() / scale, image.getHeight() / scale );
+			return resizeImage( image, image.getWidth() / SCALE, image.getHeight() / SCALE );
 		} else {
 			image = Shutterbug
 					.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT, USE_DEVICE_PIXEL_RATIO )
