@@ -61,7 +61,7 @@ public class SimpleUnbreakableSeleniumShowcaseIT {
 		driver.findElement( By.id( "intro-slider" ) );
 
 		// You could use never-changing retest-id instead
-		driver.findElement( By.retestId( "574b60e9-f82e-4810-b646-0e60a6ab35fd" ) );
+		driver.findElement( By.retestId( "intro-slider" ) );
 
 		// Will issue a warning, as the XPath has changed
 		driver.findElement( By.className( "slides" ) );
