@@ -33,7 +33,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	private static final Logger logger = LoggerFactory.getLogger( RecheckSeleniumAdapter.class );
 
-	private final DefaultValueFinder defaultWebValueFinder = new DefaultWebValueFinder();
+	private final DefaultValueFinder defaultValueFinder = new DefaultWebValueFinder();
 
 	public RecheckSeleniumAdapter() {
 		logger.debug( "New RecheckSeleniumAdapter created: {}.", System.identityHashCode( this ) );
@@ -74,12 +74,12 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	public RootElement convertToPeers( final Map<String, Map<String, Object>> data, final String title,
 			final BufferedImage screenshot ) {
-		return new PeerConverter( idProvider, data, title, screenshot ).convertToPeers();
+		return new PeerConverter( idProvider, data, title, screenshot, defaultValueFinder ).convertToPeers();
 	}
 
 	@Override
 	public DefaultValueFinder getDefaultValueFinder() {
-		return defaultWebValueFinder;
+		return defaultValueFinder;
 	}
 
 }

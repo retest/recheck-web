@@ -4,6 +4,7 @@ import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;
 
+import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
 
@@ -18,12 +19,15 @@ class PeerConverter {
 	private final Map<String, WebElementPeer> converted = new HashMap<>();
 	private RootElementPeer root = null;
 
+	private final DefaultValueFinder defaultValueFinder;
+
 	public PeerConverter( final RetestIdProvider idProvider, final Map<String, Map<String, Object>> data,
-			final String title, final BufferedImage screenshot ) {
+			final String title, final BufferedImage screenshot, final DefaultValueFinder defaultValueFinder ) {
 		this.idProvider = idProvider;
 		this.data = data;
 		this.title = title;
 		this.screenshot = screenshot;
+		this.defaultValueFinder = defaultValueFinder;
 	}
 
 	public RootElement convertToPeers() {
@@ -54,10 +58,10 @@ class PeerConverter {
 
 		if ( parentPath == null ) {
 			assert root == null : "We can only have one root element!";
-			root = new RootElementPeer( webData, path, title, screenshot );
+			root = new RootElementPeer( webData, path, title, screenshot, defaultValueFinder );
 			peer = root;
 		} else {
-			peer = new WebElementPeer( webData, path );
+			peer = new WebElementPeer( webData, path, defaultValueFinder );
 			WebElementPeer parent = converted.get( parentPath );
 			if ( parent == null ) {
 				parent = convertToPeer( parentPath, new WebData( data.get( parentPath ) ) );

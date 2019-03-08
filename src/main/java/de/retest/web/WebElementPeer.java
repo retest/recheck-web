@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
 
+import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.Path;
 import de.retest.recheck.ui.descriptors.Attribute;
 import de.retest.recheck.ui.descriptors.Element;
@@ -25,9 +26,12 @@ public class WebElementPeer {
 	protected final WebData webData;
 	protected final String path;
 
-	public WebElementPeer( final WebData webData, final String path ) {
+	private final DefaultValueFinder defaultValueFinder;
+
+	public WebElementPeer( final WebData webData, final String path, final DefaultValueFinder defaultValueFinder ) {
 		this.webData = webData;
 		this.path = path;
+		this.defaultValueFinder = defaultValueFinder;
 	}
 
 	public void addChild( final WebElementPeer child ) {
@@ -39,7 +43,7 @@ public class WebElementPeer {
 			return null;
 		}
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
-		final MutableAttributes stateAttributes = retrieveStateAttributes();
+		final MutableAttributes stateAttributes = retrieveStateAttributes( identifyingAttributes );
 		final String retestId = RecheckSeleniumAdapter.idProvider.getRetestId( identifyingAttributes );
 		final Element element = Element.create( retestId, parent, identifyingAttributes, stateAttributes.immutable() );
 		element.addChildren( convertChildren( element ) );
@@ -84,11 +88,13 @@ public class WebElementPeer {
 		return Integer.valueOf( suffix );
 	}
 
-	protected MutableAttributes retrieveStateAttributes() {
+	protected MutableAttributes retrieveStateAttributes( final IdentifyingAttributes identifyingAttributes ) {
 		final MutableAttributes state = new MutableAttributes();
 		webData.getKeys().stream() //
 				.filter( Objects::nonNull ) //
 				.filter( AttributesUtil::isStateAttribute ) //
+				.filter( key -> !defaultValueFinder.isDefaultValue( identifyingAttributes, key,
+						webData.getAsString( key ) ) ) //
 				.forEach( key -> state.put( key, webData.getAsString( key ) ) );
 		return state;
 	}
