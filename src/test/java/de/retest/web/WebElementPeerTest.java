@@ -16,7 +16,7 @@ class WebElementPeerTest {
 
 	@BeforeEach
 	void setUp() {
-		cut = new WebElementPeer( null, null );
+		cut = new WebElementPeer( null, null, null );
 	}
 
 	@Test
