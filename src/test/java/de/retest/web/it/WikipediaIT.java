@@ -4,6 +4,7 @@ import java.nio.file.Paths;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
 
+@Disabled( "We only use this to create an example.result file for review." )
 class WikipediaIT {
 
 	WebDriver driver;
