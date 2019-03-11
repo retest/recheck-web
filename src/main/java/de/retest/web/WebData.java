@@ -1,5 +1,7 @@
 package de.retest.web;
 
+import static de.retest.web.ScreenshotProvider.SCALE;
+
 import java.awt.Rectangle;
 import java.util.Map;
 import java.util.Set;
@@ -73,10 +75,10 @@ public class WebData {
 			return null;
 		}
 		try {
-			final int x = getAsInt( AttributesConfig.X );
-			final int y = getAsInt( AttributesConfig.Y );
-			final int width = getAsInt( AttributesConfig.WIDTH );
-			final int height = getAsInt( AttributesConfig.HEIGHT );
+			final int x = getAsInt( AttributesConfig.X ) / SCALE;
+			final int y = getAsInt( AttributesConfig.Y ) / SCALE;
+			final int width = getAsInt( AttributesConfig.WIDTH ) / SCALE;
+			final int height = getAsInt( AttributesConfig.HEIGHT ) / SCALE;
 			return new Rectangle( x, y, width, height );
 		} catch ( final Exception e ) {
 			logger.error( "Exception retrieving outline: ", e );
