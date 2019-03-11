@@ -16,7 +16,7 @@ public class ScreenshotProvider {
 	private static final int SCROLL_TIMEOUT = 100;
 	private static final boolean USE_DEVICE_PIXEL_RATIO = true;
 
-	public final static int SCALE = extractScale();
+	public static final int SCALE = extractScale();
 
 	private ScreenshotProvider() {
 		// private constructor for util class
