@@ -1,0 +1,6 @@
+# ignore non-visible attributes
+attribute=class
+attribute=ping
+attribute=data-.*
+attribute=jsdata
+attribute=jsaction
