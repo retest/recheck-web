@@ -12,7 +12,7 @@ import de.retest.recheck.ignore.JSShouldIgnoreImpl;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.diff.AttributeDifference;
 
-public class RecheckIgnoreJsIT {
+class RecheckIgnoreJsIT {
 
 	final JSShouldIgnoreImpl cut = new JSShouldIgnoreImpl( Paths.get( ".retest/recheck.ignore.js" ) );
 
