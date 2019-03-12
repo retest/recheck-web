@@ -54,4 +54,13 @@ public class RecheckIgnoreJsIT {
 		assertThat( cut.shouldIgnoreAttributeDifference( element, //
 				new AttributeDifference( "some-css", "10px", "200px" ) ) ).isFalse();
 	}
+
+	@Test
+	void null_should_not_cause_exc() {
+		final Element element = Mockito.mock( Element.class );
+		assertThat( cut.shouldIgnoreAttributeDifference( element, //
+				new AttributeDifference( "some-css", null, "12px" ) ) ).isFalse();
+		assertThat( cut.shouldIgnoreAttributeDifference( element, //
+				new AttributeDifference( "some-css", "10px", null ) ) ).isFalse();
+	}
 }

@@ -18,6 +18,12 @@ function shouldIgnoreAttributeDifference(element, diff) {
 			   (Math.abs(diff.expected.width - diff.actual.width) <= allowedPxDiff) && 
 			   (Math.abs(diff.expected.height - diff.actual.height) <= allowedPxDiff);
 	}
+	if (diff.expected === null) {
+		diff.expected = "";
+	}
+	if (diff.actual === null) {
+		diff.actual = "";
+	}
 	if (contains(['absolute-x', 'absolute-y', 'absolute-width', 'absolute-height', 'x', 'y', 'width', 'height'], diff.key)) {
 		return (Math.abs(diff.expected.replace("px", "") - diff.actual.replace("px", "")) <= allowedPxDiff);
 	}
