@@ -1,4 +1,4 @@
-var allowedPxDiff = 5;
+var ALLOWED_PIXEL_DIFF = 5;
 var baseUrl = /http[s]?:\/\/[\w.:\d\-]*/;
 var fontFamilies = [ [ "system-ui", "Arial" ], [ "-apple-system", "sans-serif" ] ];
 
@@ -13,10 +13,10 @@ function contains(array, key) {
 
 function shouldIgnoreAttributeDifference(element, diff) {
 	if (diff.key == 'outline') {
-		return (Math.abs(diff.expected.x - diff.actual.x) <= allowedPxDiff)
-				&& (Math.abs(diff.expected.y - diff.actual.y) <= allowedPxDiff)
-				&& (Math.abs(diff.expected.width - diff.actual.width) <= allowedPxDiff)
-				&& (Math.abs(diff.expected.height - diff.actual.height) <= allowedPxDiff);
+		return (Math.abs(diff.expected.x - diff.actual.x) <= ALLOWED_PIXEL_DIFF)
+				&& (Math.abs(diff.expected.y - diff.actual.y) <= ALLOWED_PIXEL_DIFF)
+				&& (Math.abs(diff.expected.width - diff.actual.width) <= ALLOWED_PIXEL_DIFF)
+				&& (Math.abs(diff.expected.height - diff.actual.height) <= ALLOWED_PIXEL_DIFF);
 	}
 	if (diff.expected === null) {
 		diff.expected = "";
@@ -27,11 +27,11 @@ function shouldIgnoreAttributeDifference(element, diff) {
 	if (contains([ 'absolute-x', 'absolute-y', 'absolute-width',
 			'absolute-height', 'x', 'y', 'width', 'height' ], diff.key)) {
 		return (Math.abs(diff.expected.replace("px", "")
-				- diff.actual.replace("px", "")) <= allowedPxDiff);
+				- diff.actual.replace("px", "")) <= ALLOWED_PIXEL_DIFF);
 	}
 	if (diff.expected.indexOf("px") !== -1) {
 		return (Math.abs(diff.expected.replace("px", "")
-				- diff.actual.replace("px", "")) <= allowedPxDiff);
+				- diff.actual.replace("px", "")) <= ALLOWED_PIXEL_DIFF);
 	}
 	if (diff.key == "font-family") {
 		for (var i = 0; i < fontFamilies.length; i++) {
