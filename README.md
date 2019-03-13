@@ -27,7 +27,7 @@
 
 Instead of manually defining individual aspects that you want to check, check everything at once. So instead of writing many `assert` statements—and still not have complete checks—write a single `re.check()`. This saves a lot of effort when creating tests. And it makes sure to not [miss unexpected changes](https://hackernoon.com/assertions-considered-harmful-d3770d818054).
 
-Even better: Using the [retest GUI](https://retest.de/en/) (or the soon to come open-source CLI), you can easily accept those changes with a single click (patent pending). This also saves a lot of time during maintenance. Moreover, any regular changing aspects or elements (e.g. date fields) can easily be ignored.
+Even better: Using [review](https://retest.de/review/) or the open-source [recheck.cli](https://github.com/retest/recheck.cli/), you can easily accept those changes with a single click (patent pending). This also saves a lot of time during maintenance. Moreover, any regular changing aspects or elements (e.g. date fields) can easily be ignored.
 
 And, using the Golden Master, recheck can identify elements even after the identifying attribute was changed. So assume you are using, e.g. an HTML `id` property to identify an element within your Selenium test. Now, assume that this `id` property changes within the HTML. Then, your test would break, resulting in an `NoSuchElementException`. But using `RecheckDriver` as a drop-in replacement/wrapper of your normal driver magically finds the element and logs a warning such as
 
@@ -119,7 +119,7 @@ No recheck file found. First time test was run? Created recheck file now, don't 
 
 ```
 
-Running such a test will also create a folder structure containing a `retest.xml` file and a screenshot per check (depending on your chosen names and configuration). These are now the Golden Master, the baseline which future executions of this test are compared against. If you use version control, you should commit those files. Note that the `retest.xml` contains a full description of the _rendered_ website, including all relevant information such as text, source, etc. and _all_ non-default CSS attributes such as font and margin. Although these files may become large, they are smaller than the original and by ignoring specific (or all) attributes, you can configure how large they are. Anyways, storing a few kilobyte extra is much cheaper than the manpower needed to manually specify checks.
+Running such a test will also create a folder structure containing a `retest.xml` file and a screenshot per check (depending on your chosen names and configuration). This contains the Golden Master against which future executions of this test are compared. If you use version control, you should commit those files. Note that the `retest.xml` contains a full description of the _rendered_ website, including all relevant information such as text, source, etc. and _all_ non-default CSS attributes such as font and margin. Although these files may become large, they are smaller than the original and by ignoring specific (or all) attributes, you can configure how large they are. Anyways, storing a few kilobyte extra is much cheaper than the manpower needed to manually specify checks.
 
 Executing the same test again should not result in any differences. But after changing the website and executing the test, you should see the test reporting your changes.
 
@@ -147,7 +147,7 @@ index resulted in:
 		border-color, color: expected="rgb(65, 65, 65)", actual="default"
 ```
 
-Additionally, a file named `replay.result` will be created upon test failure, typically located in your `target/test-classes` folder. This file can now be used to apply those changes to your baseline, using either the [recheck-cli](https://github.com/retest/recheck-cli) or the [retest-GUI](http://retest.org).
+Additionally, a file named `${TEST_CLASS_NAME}.report` will be created upon test failure, typically located in your `target/test-classes` folder. This file can now be used to apply those changes to your Golden Master, using either the [review](https://retest.de/review/) or the [recheck.cli](https://github.com/retest/recheck.cli/).
 
 
 ## Usage of RecheckDriver / "Unbreakable Selenium"
