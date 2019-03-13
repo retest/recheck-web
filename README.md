@@ -147,7 +147,7 @@ index resulted in:
 		border-color, color: expected="rgb(65, 65, 65)", actual="default"
 ```
 
-Additionally, a file named `replay.result` will be created upon test failure, typically located in your `target/test-classes` folder. This file can now be used to apply those changes to your baseline, using either the [recheck-cli](https://github.com/retest/recheck-cli) or the [retest-GUI](http://retest.org).
+Additionally, a file named `${TEST_CLASS_NAME}.report` will be created upon test failure, typically located in your `target/test-classes` folder. This file can now be used to apply those changes to your baseline, using either the [recheck-cli](https://github.com/retest/recheck-cli) or the [retest-GUI](http://retest.org).
 
 
 ## Usage of RecheckDriver / "Unbreakable Selenium"

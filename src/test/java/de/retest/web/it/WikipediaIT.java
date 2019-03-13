@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
 
-@Disabled( "We only use this to create an example.result file for review." )
+@Disabled( "We only use this to create an example.report file for review." )
 class WikipediaIT {
 
 	WebDriver driver;
