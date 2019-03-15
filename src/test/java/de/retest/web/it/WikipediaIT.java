@@ -26,9 +26,10 @@ class WikipediaIT {
 
 	@Test
 	void myWikipediaTest() throws Exception {
-		re.startTest();
+		// Use commit 292c0a18d3 to restore the original page.
 		final String url = Paths.get( "src/test/resources/pages/wikipedia/wikipedia-characterization-test.html" )
 				.toUri().toURL().toString();
+		re.startTest();
 		driver.get( url );
 		re.check( driver, "characterization-testing-page" );
 		re.capTest();
