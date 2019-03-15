@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="${pom.parent.version}" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="3">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.0.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="3">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="Hello WebDriver" title="Hello WebDriver">
 			<identifyingAttributes>
@@ -138,14 +138,14 @@
 								<height>19</height>
 								<width>1340</width>
 							</attribute>
-							<attribute key="id" xsi:type="stringAttribute">containsSomeDiv</attribute>
+							<attribute key="id" xsi:type="stringAttribute"/>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
-								<y>998</y>
-								<height>-1089</height>
+								<y>0</y>
+								<height>0</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[10]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[5]/DIV[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
@@ -2265,6 +2265,75 @@
 								</containedElements>
 							</containedElements>
 						</containedElements>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="div">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>1006</y>
+								<height>19</height>
+								<width>1340</width>
+							</attribute>
+							<attribute key="id" xsi:type="stringAttribute">containsSomeDiv</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>998</y>
+								<height>-1089</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[10]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
+							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>id</key>
+								<value xsi:type="xsd:string">containsSomeDiv</value>
+							</entry>
+							<entry>
+								<key>shown</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="nested">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>1006</y>
+									<height>19</height>
+									<width>1340</width>
+								</attribute>
+								<attribute key="name" xsi:type="stringAttribute">someDiv</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>0</y>
+									<height>0</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[10]/DIV[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">Nested</attribute>
+								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>name</key>
+									<value xsi:type="xsd:string">someDiv</value>
+								</entry>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
 					</containedElements>
 				</containedElements>
 			</containedElements>
