@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Test of Recheck-web</title>
+</head>
+<body>
+
+<div>
+    <p>
+        Das ist ein Text!
+    </p>
+</div>
+
+<button id="change-for-div" onclick="change()">Change</button>
+
+<script>
+    function change() {
+        var p = document.getElementsByTagName("p")[0]
+        p.innerHTML = "This is a text!"
+    }
+</script>
+
+</body>
+</html>
