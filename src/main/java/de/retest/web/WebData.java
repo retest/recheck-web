@@ -122,8 +122,7 @@ public class WebData {
 			return false;
 		}
 		final Rectangle outline = getOutline();
-		if ( outline == null
-				|| outline.getWidth() == 0 && outline.getHeight() == 0 && outline.getX() == 0 && outline.getY() == 0 ) {
+		if ( outline == null ) {
 			return false;
 		}
 		return true;
