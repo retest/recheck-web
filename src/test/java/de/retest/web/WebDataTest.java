@@ -58,22 +58,9 @@ class WebDataTest {
 	}
 
 	@Test
-	void isShown_should_be_false_when_rectangle_is_invisible() {
-		final Map<String, Object> wrappedData = getWrappedDataWithRectangle( false );
-		assertThat( new WebData( wrappedData ).isShown() ).isFalse();
-	}
-
-	@Test
 	void isShown_should_be_true_when_rectangle_is_visible() {
 		final Map<String, Object> wrappedData = getWrappedDataWithRectangle( true );
 		assertThat( new WebData( wrappedData ).isShown() ).isTrue();
-	}
-
-	@Test
-	void isShown_should_be_false_when_shown_but_rectangle_is_invisible() throws Exception {
-		final Map<String, Object> wrappedData = getWrappedDataWithRectangle( false );
-		wrappedData.put( "shown", true );
-		assertThat( new WebData( wrappedData ).isShown() ).isFalse();
 	}
 
 	@Test
@@ -81,6 +68,22 @@ class WebDataTest {
 		final Map<String, Object> wrappedData = getWrappedDataWithRectangle( true );
 		wrappedData.put( "shown", true );
 		assertThat( new WebData( wrappedData ).isShown() ).isTrue();
+	}
+
+	@Test
+	void isShown_should_be_true_if_shown_and_the_outline_is_not_visible() {
+		final Map<String, Object> wrappedData = getWrappedDataWithRectangle( false );
+		wrappedData.put( "shown", true );
+
+		assertThat( new WebData( wrappedData ).isShown() ).isTrue();
+	}
+
+	@Test
+	void isShown_should_be_false_if_not_shown_and_the_outline_is_not_visible() {
+		final Map<String, Object> wrappedData = getWrappedDataWithRectangle( false );
+		wrappedData.put( "shown", false );
+
+		assertThat( new WebData( wrappedData ).isShown() ).isFalse();
 	}
 
 	@Test
