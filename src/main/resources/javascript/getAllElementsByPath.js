@@ -13,8 +13,7 @@ function Counter() {
 }
 
 function getText(node) {
-	// 3 is text node
-	if (node.childNodes[0] && node.childNodes[0].nodeType == 3) {
+	if (node.childNodes[0] && node.childNodes[0].nodeType == node.TEXT_NODE) {
 		return node.childNodes[0].nodeValue;
 	}
 	return "";
