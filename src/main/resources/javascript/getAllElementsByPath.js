@@ -13,8 +13,9 @@ function Counter() {
 }
 
 function getText(node) {
-	if (node.childNodes[0] && node.childNodes[0].nodeType == node.TEXT_NODE) {
-		return node.childNodes[0].nodeValue;
+	var firstNode = node.childNodes[0];
+	if (firstNode && firstNode.nodeType == node.TEXT_NODE) {
+		return firstNode.nodeValue;
 	}
 	if (node.nodeType == node.TEXT_NODE) {
 		return node.nodeValue;
