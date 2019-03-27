@@ -99,6 +99,14 @@ function isShown(e) {
 	return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
 }
 
+function isNonEmtpyTextNode(node) {
+	return node.nodeType == node.TEXT_NODE && node.nodeValue.trim().length > 0;
+}
+
+function containsOtherElements(element) {
+	return element.children.length > 0;
+}
+
 function mapElement(element, parentPath, allElements) {
 	if (!element || !element.children) {
 		return allElements;
@@ -106,10 +114,8 @@ function mapElement(element, parentPath, allElements) {
 	var counter = new Counter();
 	for (var i = 0; i < element.childNodes.length; i++) {
 		var child = element.childNodes[i];
-		// either is element
-		// or is non-empty text node AND contains other elements
 		if (child.nodeType == child.ELEMENT_NODE || 
-				(child.nodeType == child.TEXT_NODE && child.nodeValue.trim().length > 0 && element.children.length > 0)) {
+				(isNonEmtpyTextNode(child) && containsOtherElements(element))) {
 			if (child.nodeType == child.TEXT_NODE) {
 				child.tagName = "textnode";
 			}
