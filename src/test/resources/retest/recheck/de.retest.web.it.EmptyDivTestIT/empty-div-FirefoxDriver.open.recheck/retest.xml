@@ -7,13 +7,13 @@
 					<attribute key="absolute-outline" xsi:type="outlineAttribute">
 						<x>0</x>
 						<y>0</y>
-						<height>88</height>
+						<height>107</height>
 						<width>1366</width>
 					</attribute>
 					<attribute key="outline" xsi:type="outlineAttribute">
 						<x>0</x>
 						<y>0</y>
-						<height>88</height>
+						<height>107</height>
 						<width>1366</width>
 					</attribute>
 					<attribute key="path" xsi:type="pathAttribute">HTML[1]</attribute>
@@ -67,7 +67,7 @@
 						<attribute key="absolute-outline" xsi:type="outlineAttribute">
 							<x>8</x>
 							<y>16</y>
-							<height>64</height>
+							<height>83</height>
 							<width>1350</width>
 						</attribute>
 						<attribute key="outline" xsi:type="outlineAttribute">
@@ -94,15 +94,15 @@
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
 								<x>8</x>
-								<y>51</y>
+								<y>70</y>
 								<height>29</height>
 								<width>85</width>
 							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">change-for-div</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
-								<y>35</y>
-								<height>-35</height>
+								<y>54</y>
+								<height>-54</height>
 								<width>-1265</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/BUTTON[1]</attribute>
@@ -218,13 +218,13 @@
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>16</y>
-								<height>19</height>
+								<height>54</height>
 								<width>1350</width>
 							</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>0</y>
-								<height>-45</height>
+								<height>-29</height>
 								<width>0</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]</attribute>
@@ -240,6 +240,36 @@
 							</entry>
 						</attributes>
 					</attributes>
+					<containedElements retestId="das">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>46</x>
+									<y>51</y>
+									<height>19</height>
+									<width>28</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>38</x>
+									<y>35</y>
+									<height>-35</height>
+									<width>-1322</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]/EM[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">das</attribute>
+								<attribute key="type" xsi:type="stringAttribute">EM</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
 					<containedElements retestId="das_ist_ein_text">
 						<identifyingAttributes>
 							<attributes>
@@ -252,13 +282,73 @@
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>0</y>
-									<height>0</height>
+									<height>-35</height>
 									<width>0</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]/P[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">Das ist ein Text!</attribute>
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="und">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>16</y>
+									<height>54</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>0</y>
+									<height>-29</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]/textnode[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">Und</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="auch">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>16</y>
+									<height>54</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>0</y>
+									<height>-29</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]/textnode[2]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+								<attribute key="text" xsi:type="textAttribute">auch.</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -284,7 +374,7 @@
 						<attribute key="outline" xsi:type="outlineAttribute">
 							<x>0</x>
 							<y>0</y>
-							<height>-88</height>
+							<height>-107</height>
 							<width>-1366</width>
 						</attribute>
 						<attribute key="path" xsi:type="pathAttribute">HTML[1]/HEAD[1]</attribute>

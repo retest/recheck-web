@@ -110,14 +110,14 @@
 								<height>18</height>
 								<width>1169</width>
 							</attribute>
-							<attribute key="id" xsi:type="stringAttribute"/>
+							<attribute key="id" xsi:type="stringAttribute">containsSomeDiv</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
-								<y>0</y>
-								<height>0</height>
+								<y>962</y>
+								<height>-1022</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[5]/DIV[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[10]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
 							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
 						</attributes>
@@ -134,8 +134,43 @@
 							</entry>
 						</attributes>
 					</attributes>
+					<containedElements retestId="nested">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>970</y>
+									<height>18</height>
+									<width>1169</width>
+								</attribute>
+								<attribute key="name" xsi:type="stringAttribute">someDiv</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>0</y>
+									<height>0</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[10]/DIV[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">Nested</attribute>
+								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>name</key>
+									<value xsi:type="xsd:string">someDiv</value>
+								</entry>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-d7b91">
+				<containedElements retestId="div-49989">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -257,8 +292,38 @@
 							</attributes>
 						</attributes>
 					</containedElements>
+					<containedElements retestId="more_than_one">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>134</y>
+									<height>70</height>
+									<width>1169</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>126</y>
+									<height>-970</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]/textnode[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">More than one line of text</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-d13b3">
+				<containedElements retestId="div-d79f3">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -390,7 +455,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-969ec">
+				<containedElements retestId="div-b1c79">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -518,7 +583,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="div-9d16e">
+					<containedElements retestId="div-5c443">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -546,7 +611,7 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="div-56e96">
+						<containedElements retestId="div-79983">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -574,7 +639,7 @@
 									</entry>
 								</attributes>
 							</attributes>
-							<containedElements retestId="some_more_text-c4c6a">
+							<containedElements retestId="some_more_text-39483">
 								<identifyingAttributes>
 									<attributes>
 										<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -635,7 +700,7 @@
 								</attributes>
 							</containedElements>
 						</containedElements>
-						<containedElements retestId="some_text-ee0f3">
+						<containedElements retestId="some_text-48cd8">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -666,8 +731,68 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
+					<containedElements retestId="cheese-c556a">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>638</y>
+									<height>154</height>
+									<width>1169</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>630</y>
+									<height>-886</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]/textnode[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">Cheese</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="brie">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>638</y>
+									<height>154</height>
+									<width>1169</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>630</y>
+									<height>-886</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]/textnode[2]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+								<attribute key="text" xsi:type="textAttribute">Brie</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-c09d8">
+				<containedElements retestId="div-99afb">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -700,6 +825,36 @@
 							</entry>
 						</attributes>
 					</attributes>
+					<containedElements retestId="hello_world">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>792</y>
+									<height>18</height>
+									<width>1169</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>0</y>
+									<height>0</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[5]/DIV[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">Hello, world</attribute>
+								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
 					<containedElements retestId="span">
 						<identifyingAttributes>
 							<attributes>
@@ -729,7 +884,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="span-754d7">
+					<containedElements retestId="span-6ce29">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -759,7 +914,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-a474d">
+				<containedElements retestId="div-3c007">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -792,8 +947,38 @@
 							</entry>
 						</attributes>
 					</attributes>
+					<containedElements retestId="with_documentwr">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>810</y>
+									<height>18</height>
+									<width>1169</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>802</y>
+									<height>-1022</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[6]/textnode[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">with document.write and with document.write again</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-01822">
+				<containedElements retestId="div-c6717">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -901,14 +1086,14 @@
 									<width>170</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>0</x>
+									<x>303</x>
 									<y>0</y>
-									<height>0</height>
-									<width>0</width>
+									<height>-1</height>
+									<width>-999</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[3]/B[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-								<attribute key="type" xsi:type="stringAttribute">B</attribute>
+								<attribute key="type" xsi:type="stringAttribute">A</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -919,6 +1104,36 @@
 								</entry>
 							</attributes>
 						</attributes>
+						<containedElements retestId="link_with_forma">
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="absolute-outline" xsi:type="outlineAttribute">
+										<x>311</x>
+										<y>898</y>
+										<height>17</height>
+										<width>170</width>
+									</attribute>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>0</x>
+										<y>0</y>
+										<height>0</height>
+										<width>0</width>
+									</attribute>
+									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[3]/B[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">link with formatting tags</attribute>
+									<attribute key="type" xsi:type="stringAttribute">B</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>shown</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
 					</containedElements>
 					<containedElements retestId="link_with_double">
 						<identifyingAttributes>
@@ -1025,67 +1240,8 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="a">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>311</x>
-									<y>898</y>
-									<height>17</height>
-									<width>170</width>
-								</attribute>
-								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>303</x>
-									<y>0</y>
-									<height>-1</height>
-									<width>-999</width>
-								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[3]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-								<attribute key="type" xsi:type="stringAttribute">A</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>shown</key>
-									<value xsi:type="xsd:string">true</value>
-								</entry>
-							</attributes>
-						</attributes>
-						<containedElements retestId="link_with_forma">
-							<identifyingAttributes>
-								<attributes>
-									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>311</x>
-										<y>898</y>
-										<height>17</height>
-										<width>170</width>
-									</attribute>
-									<attribute key="outline" xsi:type="outlineAttribute">
-										<x>0</x>
-										<y>0</y>
-										<height>0</height>
-										<width>0</width>
-									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[3]/B[1]</attribute>
-									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-									<attribute key="text" xsi:type="textAttribute">link with formatting tags</attribute>
-									<attribute key="type" xsi:type="stringAttribute">B</attribute>
-								</attributes>
-							</identifyingAttributes>
-							<attributes>
-								<attributes>
-									<entry>
-										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
-									</entry>
-								</attributes>
-							</attributes>
-						</containedElements>
-					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-d8e0f">
+				<containedElements retestId="div-bd474">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1159,7 +1315,7 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="br-c96da">
+						<containedElements retestId="br-b613e">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1177,6 +1333,66 @@
 									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[8]/A[1]/BR[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>shown</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+						<containedElements retestId="this_link_should-30d53">
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="absolute-outline" xsi:type="outlineAttribute">
+										<x>8</x>
+										<y>916</y>
+										<height>35</height>
+										<width>1073</width>
+									</attribute>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>0</x>
+										<y>0</y>
+										<height>-1</height>
+										<width>-96</width>
+									</attribute>
+									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[8]/A[1]/textnode[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">this link should break</attribute>
+									<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>shown</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+						<containedElements retestId="on_multiple_lines">
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="absolute-outline" xsi:type="outlineAttribute">
+										<x>8</x>
+										<y>916</y>
+										<height>35</height>
+										<width>1073</width>
+									</attribute>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>0</x>
+										<y>0</y>
+										<height>-1</height>
+										<width>-96</width>
+									</attribute>
+									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[8]/A[1]/textnode[2]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+									<attribute key="text" xsi:type="textAttribute">on multiple lines</attribute>
+									<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -1385,7 +1601,7 @@
 									</entry>
 								</attributes>
 							</attributes>
-							<containedElements retestId="br-446cf">
+							<containedElements retestId="br-4dd9f">
 								<identifyingAttributes>
 									<attributes>
 										<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1403,6 +1619,66 @@
 										<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/P[1]/LABEL[1]/BR[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 										<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+									</attributes>
+								</identifyingAttributes>
+								<attributes>
+									<attributes>
+										<entry>
+											<key>shown</key>
+											<value xsi:type="xsd:string">true</value>
+										</entry>
+									</attributes>
+								</attributes>
+							</containedElements>
+							<containedElements retestId="foo-bc58f">
+								<identifyingAttributes>
+									<attributes>
+										<attribute key="absolute-outline" xsi:type="outlineAttribute">
+											<x>8</x>
+											<y>846</y>
+											<height>35</height>
+											<width>45</width>
+										</attribute>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>0</x>
+											<y>2</y>
+											<height>-3</height>
+											<width>-1124</width>
+										</attribute>
+										<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/P[1]/LABEL[1]/textnode[1]</attribute>
+										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+										<attribute key="text" xsi:type="textAttribute">foo</attribute>
+										<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+									</attributes>
+								</identifyingAttributes>
+								<attributes>
+									<attributes>
+										<entry>
+											<key>shown</key>
+											<value xsi:type="xsd:string">true</value>
+										</entry>
+									</attributes>
+								</attributes>
+							</containedElements>
+							<containedElements retestId="bar">
+								<identifyingAttributes>
+									<attributes>
+										<attribute key="absolute-outline" xsi:type="outlineAttribute">
+											<x>8</x>
+											<y>846</y>
+											<height>35</height>
+											<width>45</width>
+										</attribute>
+										<attribute key="outline" xsi:type="outlineAttribute">
+											<x>0</x>
+											<y>2</y>
+											<height>-3</height>
+											<width>-1124</width>
+										</attribute>
+										<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/P[1]/LABEL[1]/textnode[2]</attribute>
+										<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+										<attribute key="text" xsi:type="textAttribute">bar</attribute>
+										<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
 									</attributes>
 								</identifyingAttributes>
 								<attributes>
@@ -1481,7 +1757,7 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="img-2c137">
+				<containedElements retestId="img-9982a">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1632,7 +1908,7 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="this_line_has-5c427">
+				<containedElements retestId="this_line_has-244cb">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1667,7 +1943,7 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="this_line_has-7ea1a">
+				<containedElements retestId="this_line_has-5ca53">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1736,7 +2012,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="br-e50d8">
+					<containedElements retestId="br-96ac8">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1754,6 +2030,66 @@
 								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[6]/BR[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="these_lines_-4872d">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>340</y>
+									<height>36</height>
+									<width>1169</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>332</y>
+									<height>-1004</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[6]/textnode[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">These lines  </attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="_have_leading">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>340</y>
+									<height>36</height>
+									<width>1169</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>332</y>
+									<height>-1004</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[6]/textnode[2]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+								<attribute key="text" xsi:type="textAttribute">  have leading and trailing NBSPs  </attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1864,6 +2200,126 @@
 								</attributes>
 							</attributes>
 						</containedElements>
+						<containedElements retestId="line_has-e9a0c">
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="absolute-outline" xsi:type="outlineAttribute">
+										<x>40</x>
+										<y>392</y>
+										<height>17</height>
+										<width>80</width>
+									</attribute>
+									<attribute key="outline" xsi:type="outlineAttribute">
+										<x>32</x>
+										<y>0</y>
+										<height>-1</height>
+										<width>-1089</width>
+									</attribute>
+									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[7]/SPAN[1]/textnode[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">line has</attribute>
+									<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>shown</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+					</containedElements>
+					<containedElements retestId="this-07436">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>392</y>
+									<height>18</height>
+									<width>1169</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>384</y>
+									<height>-1022</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[7]/textnode[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">This</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="within_elements">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>392</y>
+									<height>18</height>
+									<width>1169</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>384</y>
+									<height>-1022</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[7]/textnode[2]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+								<attribute key="text" xsi:type="textAttribute">within elements that are meant to be displayed</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="inline">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>392</y>
+									<height>18</height>
+									<width>1169</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>384</y>
+									<height>-1022</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[7]/textnode[3]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
+								<attribute key="text" xsi:type="textAttribute">inline</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
 					</containedElements>
 				</containedElements>
 				<containedElements retestId="an_inline_element">
@@ -2173,7 +2629,7 @@
 										</attributes>
 									</attributes>
 								</containedElements>
-								<containedElements retestId="span-34a30">
+								<containedElements retestId="span-a85ea">
 									<identifyingAttributes>
 										<attributes>
 											<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2234,75 +2690,6 @@
 								</containedElements>
 							</containedElements>
 						</containedElements>
-					</containedElements>
-				</containedElements>
-				<containedElements retestId="div">
-					<identifyingAttributes>
-						<attributes>
-							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>8</x>
-								<y>970</y>
-								<height>18</height>
-								<width>1169</width>
-							</attribute>
-							<attribute key="id" xsi:type="stringAttribute">containsSomeDiv</attribute>
-							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>0</x>
-								<y>962</y>
-								<height>-1022</height>
-								<width>0</width>
-							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[10]</attribute>
-							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
-							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
-						</attributes>
-					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">containsSomeDiv</value>
-							</entry>
-							<entry>
-								<key>shown</key>
-								<value xsi:type="xsd:string">true</value>
-							</entry>
-						</attributes>
-					</attributes>
-					<containedElements retestId="nested">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>8</x>
-									<y>970</y>
-									<height>18</height>
-									<width>1169</width>
-								</attribute>
-								<attribute key="name" xsi:type="stringAttribute">someDiv</attribute>
-								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>0</x>
-									<y>0</y>
-									<height>0</height>
-									<width>0</width>
-								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[10]/DIV[1]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="text" xsi:type="textAttribute">Nested</attribute>
-								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">someDiv</value>
-								</entry>
-								<entry>
-									<key>shown</key>
-									<value xsi:type="xsd:string">true</value>
-								</entry>
-							</attributes>
-						</attributes>
 					</containedElements>
 				</containedElements>
 			</containedElements>
