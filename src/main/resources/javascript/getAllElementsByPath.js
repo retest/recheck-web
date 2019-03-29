@@ -54,7 +54,7 @@ function addCoordinates(extractedAttributes, node) {
 
 function transform(node) {
 	var extractedAttributes = {
-		"tagName": node.tagName,
+		"tagName": node.tagName.toLowerCase(),
 		"text": getText(node),
 		"shown": isShown(node)
 	};
@@ -120,7 +120,7 @@ function mapElement(element, parentPath, allElements) {
 				child.tagName = "textnode";
 			}
 			var cnt = counter.increase(child);
-			var path = parentPath + "/" + child.tagName + "[" + cnt + "]";
+			var path = parentPath + "/" + child.tagName.toLowerCase() + "[" + cnt + "]";
 			allElements[path] = transform(child);
 			mapElement(child, path, allElements);
 		}
@@ -130,7 +130,7 @@ function mapElement(element, parentPath, allElements) {
 
 var htmlNode = document.getElementsByTagName("html")[0];
 var html = transform(htmlNode);
-var allElements = mapElement(htmlNode, "//HTML[1]", {
-	"//HTML[1]": html
+var allElements = mapElement(htmlNode, "//html[1]", {
+	"//html[1]": html
 });
 return allElements;
