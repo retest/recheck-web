@@ -5,10 +5,15 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.Element;
+import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
 
 class WebElementPeerTest {
 
@@ -39,4 +44,12 @@ class WebElementPeerTest {
 		assertThat( cut.convertChildren( null ) ).isEmpty();
 	}
 
+	@Test
+	void retrieveStateAttributes_should_not_contain_IdentifyingAttributes() {
+		final Map<String, Object> wrappedData = new HashMap<>();
+		wrappedData.put( "id", "someId" );
+		final WebElementPeer cut =
+				new WebElementPeer( new WebData( wrappedData ), "path", mock( DefaultValueFinder.class ) );
+		assertThat( cut.retrieveStateAttributes( mock( IdentifyingAttributes.class ) ).get( "id" ) ).isNull();
+	}
 }
