@@ -189,6 +189,66 @@
 							</attributes>
 						</attributes>
 					</containedElements>
+					<containedElements retestId="width_26_height">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>524</x>
+									<y>381</y>
+									<height>38</height>
+									<width>152</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>516</x>
+									<y>373</y>
+									<height>-746</height>
+									<width>-1032</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]/textnode[2]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+								<attribute key="text" xsi:type="textAttribute">width = 26, height = 20</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="x_587_y_390-c8b73">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>524</x>
+									<y>381</y>
+									<height>38</height>
+									<width>152</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>516</x>
+									<y>373</y>
+									<height>-746</height>
+									<width>-1032</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]/textnode[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">x = 587, y = 390</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
 				</containedElements>
 			</containedElements>
 			<screenshot>
