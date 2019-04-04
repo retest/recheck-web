@@ -304,11 +304,6 @@ a, a:visited {
    text-decoration: none;
    outline: 0;
    color: #C1D82F;
-
-   -webkit-transition: color .3s ease-in-out;
-   -moz-transition: color .3s ease-in-out;
-   -o-transition: color .3s ease-in-out;
-   transition: color .3s ease-in-out;
 }
 a:hover, a:focus { color: #313131; }
 p a, p a:visited { line-height: inherit; }
@@ -442,12 +437,6 @@ dd { margin: 0 0 0 20px; }
 	color: #6E757C;
 	background-color: #E6E8EB;
 
-	-webkit-transition: all 200ms ease-in-out;
-	-moz-transition: all 200ms ease-in-out;
-	-o-transition: all 200ms ease-in-out;
-	-ms-transition: all 200ms ease-in-out;
-	transition: all 200ms ease-in-out;
-
    -moz-border-radius: 3px;
    -webkit-border-radius: 3px;
    -khtml-border-radius: 3px;
@@ -497,12 +486,6 @@ input[type="button"] {
    border: none;
    cursor: pointer;
    height: auto;
-
-   -webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
 
    -moz-border-radius: 3px;
    -webkit-border-radius: 3px;
