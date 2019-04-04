@@ -22,7 +22,7 @@ public class ScreenshotProvider {
 		// private constructor for util class
 	}
 
-	public static BufferedImage shootFullPage( final WebDriver driver ) {
+	public static BufferedImage shoot( final WebDriver driver ) {
 		if ( driver instanceof ChromeDriver ) {
 			final BufferedImage image = Shutterbug //
 					.shootPage( driver, ScrollStrategy.WHOLE_PAGE_CHROME, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //

@@ -1,6 +1,6 @@
 package de.retest.web;
 
-import static de.retest.web.ScreenshotProvider.shootFullPage;
+import static de.retest.web.ScreenshotProvider.shoot;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -56,7 +56,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes );
 
 		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), result.size() );
-		final RootElement lastChecked = convertToPeers( result, driver.getTitle(), shootFullPage( driver ) );
+		final RootElement lastChecked = convertToPeers( result, driver.getTitle(), shoot( driver ) );
 		if ( driver instanceof RecheckDriver ) {
 			((RecheckDriver) driver).setLastActualState( lastChecked );
 		}
