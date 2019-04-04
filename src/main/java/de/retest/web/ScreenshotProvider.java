@@ -13,7 +13,7 @@ import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
 
 public class ScreenshotProvider {
 
-	private static final int SCROLL_TIMEOUT = 100;
+	private static final int SCROLL_TIMEOUT_MS = 100;
 	private static final boolean USE_DEVICE_PIXEL_RATIO = true;
 
 	public static final int SCALE = extractScale();
@@ -26,12 +26,12 @@ public class ScreenshotProvider {
 		final BufferedImage image;
 		if ( driver instanceof ChromeDriver ) {
 			image = Shutterbug
-					.shootPage( driver, ScrollStrategy.WHOLE_PAGE_CHROME, SCROLL_TIMEOUT, USE_DEVICE_PIXEL_RATIO )
+					.shootPage( driver, ScrollStrategy.WHOLE_PAGE_CHROME, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO )
 					.getImage();
 			return resizeImage( image, image.getWidth() / SCALE, image.getHeight() / SCALE );
 		} else {
 			image = Shutterbug
-					.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT, USE_DEVICE_PIXEL_RATIO )
+					.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO )
 					.getImage();
 		}
 		return image;
