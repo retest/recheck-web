@@ -23,17 +23,14 @@ public class ScreenshotProvider {
 	}
 
 	public static BufferedImage shootFullPage( final WebDriver driver ) {
-		final BufferedImage image;
 		if ( driver instanceof ChromeDriver ) {
-			image = Shutterbug
-					.shootPage( driver, ScrollStrategy.WHOLE_PAGE_CHROME, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO )
+			final BufferedImage image = Shutterbug //
+					.shootPage( driver, ScrollStrategy.WHOLE_PAGE_CHROME, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
 					.getImage();
 			return resizeImage( image, image.getWidth() / SCALE, image.getHeight() / SCALE );
-		} else {
-			image = Shutterbug
-					.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO )
-					.getImage();
 		}
-		return image;
+		return Shutterbug //
+				.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
+				.getImage();
 	}
 }
