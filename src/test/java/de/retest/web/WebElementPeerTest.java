@@ -48,7 +48,19 @@ class WebElementPeerTest {
 	@Test
 	void retrieveStateAttributes_should_not_contain_IdentifyingAttributes() {
 		final Map<String, Object> wrappedData = new HashMap<>();
-		wrappedData.put( "id", "someId" );
+		wrappedData.put( AttributesConfig.ABSOLUTE_X, "someValue" );
+		wrappedData.put( AttributesConfig.ABSOLUTE_Y, "someValue" );
+		wrappedData.put( AttributesConfig.ABSOLUTE_WIDTH, "someValue" );
+		wrappedData.put( AttributesConfig.ABSOLUTE_HEIGHT, "someValue" );
+		wrappedData.put( AttributesConfig.X, "someValue" );
+		wrappedData.put( AttributesConfig.Y, "someValue" );
+		wrappedData.put( AttributesConfig.WIDTH, "someValue" );
+		wrappedData.put( AttributesConfig.HEIGHT, "someValue" );
+		wrappedData.put( AttributesConfig.TAG_NAME, "someValue" );
+		wrappedData.put( AttributesConfig.CLASS, "someValue" );
+		wrappedData.put( AttributesConfig.ID, "someValue" );
+		wrappedData.put( AttributesConfig.NAME, "someValue" );
+		wrappedData.put( AttributesConfig.TEXT, "someValue" );
 		final WebElementPeer cut =
 				new WebElementPeer( new WebData( wrappedData ), "path", mock( DefaultValueFinder.class ) );
 		assertThat( cut.retrieveStateAttributes( mock( IdentifyingAttributes.class ) ).get( "id" ) ).isNull();
