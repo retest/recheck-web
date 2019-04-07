@@ -6,7 +6,6 @@ import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -73,13 +72,6 @@ public class AttributesProvider {
 
 	public List<String> getHtmlAttributes() {
 		return attributesConfig.getHtmlAttributes();
-	}
-
-	public List<String> getJoinedAttributes() {
-		final List<String> result = new ArrayList<>();
-		result.addAll( getHtmlAttributes() );
-		result.addAll( getCssAttributes() );
-		return result;
 	}
 
 }
