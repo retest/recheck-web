@@ -27,6 +27,7 @@ class WebElementPeerTest {
 	@Test
 	void converted_children_should_only_contain_non_null_elements() throws Exception {
 		final Element el0 = mock( Element.class );
+
 		final WebElementPeer child0 = mock( WebElementPeer.class );
 		when( child0.toElement( any() ) ).thenReturn( el0 );
 
@@ -36,7 +37,7 @@ class WebElementPeerTest {
 		cut.addChild( child0 );
 		cut.addChild( child1 );
 
-		assertThat( cut.convertChildren( any() ) ).containsExactly( el0 );
+		assertThat( cut.convertChildren( null ) ).containsExactly( el0 );
 	}
 
 	@Test
