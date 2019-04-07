@@ -4,7 +4,10 @@ import static de.retest.web.AttributesConfig.ABSOLUTE_HEIGHT;
 import static de.retest.web.AttributesConfig.ABSOLUTE_WIDTH;
 import static de.retest.web.AttributesConfig.ABSOLUTE_X;
 import static de.retest.web.AttributesConfig.ABSOLUTE_Y;
+import static de.retest.web.AttributesConfig.CLASS;
 import static de.retest.web.AttributesConfig.HEIGHT;
+import static de.retest.web.AttributesConfig.ID;
+import static de.retest.web.AttributesConfig.NAME;
 import static de.retest.web.AttributesConfig.TAG_NAME;
 import static de.retest.web.AttributesConfig.TEXT;
 import static de.retest.web.AttributesConfig.WIDTH;
@@ -18,7 +21,7 @@ import java.util.Set;
 public class AttributesUtil {
 
 	private static final Set<String> identifyingAttributes = new HashSet<>( Arrays.asList( ABSOLUTE_X, ABSOLUTE_Y,
-			ABSOLUTE_WIDTH, ABSOLUTE_HEIGHT, X, Y, WIDTH, HEIGHT, TAG_NAME, TEXT ) );
+			ABSOLUTE_WIDTH, ABSOLUTE_HEIGHT, X, Y, WIDTH, HEIGHT, TAG_NAME, CLASS, ID, NAME, TEXT ) );
 
 	private AttributesUtil() {}
 
