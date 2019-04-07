@@ -93,7 +93,6 @@ public class WebElementPeer {
 		webData.getKeys().stream() //
 				.filter( Objects::nonNull ) //
 				.filter( AttributesUtil::isStateAttribute ) //
-				.filter( key -> !AttributesProvider.getInstance().getHtmlAttributes().contains( key ) ) //
 				.filter( key -> !defaultValueFinder.isDefaultValue( identifyingAttributes, key,
 						webData.getAsString( key ) ) ) //
 				.forEach( key -> state.put( key, webData.getAsString( key ) ) );
