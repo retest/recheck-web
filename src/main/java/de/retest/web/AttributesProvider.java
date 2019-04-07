@@ -66,10 +66,16 @@ public class AttributesProvider {
 		return mapper.readValue( in, AttributesConfig.class );
 	}
 
+	/**
+	 * @see AttributesConfig#getCssAttributes()
+	 */
 	public List<String> getCssAttributes() {
 		return attributesConfig.getCssAttributes();
 	}
 
+	/**
+	 * @see AttributesConfig#getHtmlAttributes()
+	 */
 	public List<String> getHtmlAttributes() {
 		return attributesConfig.getHtmlAttributes();
 	}

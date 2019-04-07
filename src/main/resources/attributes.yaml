@@ -1,4 +1,4 @@
-# CSS style attributes we add to an element's state.
+# List of CSS style attributes that are added to an element's state.
 cssAttributes:
   - align-content
   - align-items
@@ -180,7 +180,7 @@ cssAttributes:
   - word-wrap
   - z-index
 
-# HTML element attributes we use for element identification.
+# List of HTML attributes that are used for element identification (a.k.a. identifying attributes).
 htmlAttributes:
   - class
   - id

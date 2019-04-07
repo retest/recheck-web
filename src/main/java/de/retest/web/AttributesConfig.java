@@ -30,10 +30,16 @@ public class AttributesConfig {
 		this.htmlAttributes = htmlAttributes;
 	}
 
+	/**
+	 * @return List of CSS style attributes that are added to an element's state.
+	 */
 	public List<String> getCssAttributes() {
 		return cssAttributes;
 	}
 
+	/**
+	 * @return List of HTML attributes that are used for element identification (a.k.a. identifying attributes).
+	 */
 	public List<String> getHtmlAttributes() {
 		return htmlAttributes;
 	}
