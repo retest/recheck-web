@@ -18,6 +18,11 @@ public class AttributesConfig {
 	public static final String HEIGHT = "height";
 
 	public static final String TAG_NAME = "tagName";
+
+	// from attributes.yaml
+	public static final String CLASS = "class";
+	public static final String ID = "id";
+	public static final String NAME = "name";
 	public static final String TEXT = "text";
 
 	private final List<String> cssAttributes;
