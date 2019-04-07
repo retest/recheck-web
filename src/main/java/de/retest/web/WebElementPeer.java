@@ -72,7 +72,7 @@ public class WebElementPeer {
 		for ( final String key : htmlAttributes ) {
 			final String value = webData.getAsString( key );
 			if ( StringUtils.isNotBlank( value ) ) {
-				if ( key.equals( AttributesConfig.TEXT ) ) {
+				if ( key.equals( AttributesUtil.TEXT ) ) {
 					identifyingAttributes.add( TextAttributeUtil.createTextAttribute( path, value ) );
 				} else {
 					identifyingAttributes.add( new StringAttribute( key, value ) );
