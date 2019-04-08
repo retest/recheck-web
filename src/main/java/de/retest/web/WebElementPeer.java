@@ -54,29 +54,30 @@ public class WebElementPeer {
 		// TODO Inconsistent since we don't get all identifying attributes via attributes.yaml.
 		final List<Attribute> identifyingAttributes = new ArrayList<>();
 
-		identifyingAttributes.add( new PathAttribute( Path.fromString( path ) ) );
-		identifyingAttributes.add( new SuffixAttribute( extractSuffix() ) );
-		identifyingAttributes.add( new StringAttribute( "type", webData.getTag() ) );
+		final Rectangle absoluteOutline = webData.getAbsoluteOutline();
+		if ( absoluteOutline != null ) {
+			identifyingAttributes.add( OutlineAttribute.createAbsolute( absoluteOutline ) );
+		}
 
 		final Rectangle outline = webData.getOutline();
 		if ( outline != null ) {
 			identifyingAttributes.add( OutlineAttribute.create( outline ) );
 		}
 
-		final Rectangle absoluteOutline = webData.getAbsoluteOutline();
-		if ( absoluteOutline != null ) {
-			identifyingAttributes.add( OutlineAttribute.createAbsolute( absoluteOutline ) );
+		final String text = webData.getText();
+		if ( StringUtils.isNotBlank( text ) ) {
+			identifyingAttributes.add( TextAttributeUtil.createTextAttribute( path, text ) );
 		}
+
+		identifyingAttributes.add( new StringAttribute( IdentifyingAttributes.TYPE_ATTRIBUTE_KEY, webData.getTag() ) );
+		identifyingAttributes.add( new PathAttribute( Path.fromString( path ) ) );
+		identifyingAttributes.add( new SuffixAttribute( extractSuffix() ) );
 
 		final List<String> htmlAttributes = AttributesProvider.getInstance().getHtmlAttributes();
 		for ( final String key : htmlAttributes ) {
 			final String value = webData.getAsString( key );
 			if ( StringUtils.isNotBlank( value ) ) {
-				if ( key.equals( AttributesUtil.TEXT ) ) {
-					identifyingAttributes.add( TextAttributeUtil.createTextAttribute( path, value ) );
-				} else {
-					identifyingAttributes.add( new StringAttribute( key, value ) );
-				}
+				identifyingAttributes.add( new StringAttribute( key, value ) );
 			}
 		}
 
