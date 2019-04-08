@@ -131,4 +131,9 @@ public class WebData {
 	public String getTag() {
 		return getAsString( AttributesConfig.TAG_NAME );
 	}
+
+	public String getText() {
+		return getAsString( AttributesUtil.TEXT );
+	}
+
 }
