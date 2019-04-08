@@ -56,11 +56,11 @@ class WebElementPeerTest {
 		wrappedData.put( AttributesUtil.Y, "someValue" );
 		wrappedData.put( AttributesUtil.WIDTH, "someValue" );
 		wrappedData.put( AttributesUtil.HEIGHT, "someValue" );
+		wrappedData.put( AttributesUtil.TEXT, "someValue" );
 		wrappedData.put( AttributesUtil.TAG_NAME, "someValue" );
 		wrappedData.put( AttributesUtil.CLASS, "someValue" );
 		wrappedData.put( AttributesUtil.ID, "someValue" );
 		wrappedData.put( AttributesUtil.NAME, "someValue" );
-		wrappedData.put( AttributesUtil.TEXT, "someValue" );
 		final WebElementPeer cut =
 				new WebElementPeer( new WebData( wrappedData ), "path", mock( DefaultValueFinder.class ) );
 		assertThat( cut.retrieveStateAttributes( mock( IdentifyingAttributes.class ) ).get( "id" ) ).isNull();
