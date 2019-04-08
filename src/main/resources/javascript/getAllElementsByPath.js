@@ -68,8 +68,8 @@ function transform(node) {
 	var attrs = node.attributes;
 	for (var i = 0; i < attrs.length; i++) {
 		var attributeName = attrs[i].name;
-		var attributValue = attrs[i].value;
-		extractedAttributes[attributeName] = attributValue;
+		var attributeValue = attrs[i].value;
+		extractedAttributes[attributeName] = attributeValue;
 	}
 
 	// extract *given* CSS style attributes
@@ -99,7 +99,7 @@ function isShown(e) {
 	return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
 }
 
-function isNonEmtpyTextNode(node) {
+function isNonEmptyTextNode(node) {
 	return node.nodeType == node.TEXT_NODE && node.nodeValue.trim().length > 0;
 }
 
@@ -115,7 +115,7 @@ function mapElement(element, parentPath, allElements) {
 	for (var i = 0; i < element.childNodes.length; i++) {
 		var child = element.childNodes[i];
 		if (child.nodeType == child.ELEMENT_NODE || 
-				(isNonEmtpyTextNode(child) && containsOtherElements(element))) {
+				(isNonEmptyTextNode(child) && containsOtherElements(element))) {
 			if (child.nodeType == child.TEXT_NODE) {
 				child.tagName = "textnode";
 			}

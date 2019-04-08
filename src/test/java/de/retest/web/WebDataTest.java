@@ -31,10 +31,10 @@ class WebDataTest {
 	@Test
 	void filled_web_data_should_result_in_outline_with_corresponding_values() throws Exception {
 		final Map<String, Object> input = new HashMap<>();
-		input.put( AttributesConfig.X, "1" );
-		input.put( AttributesConfig.Y, "2" );
-		input.put( AttributesConfig.WIDTH, "3" );
-		input.put( AttributesConfig.HEIGHT, "4" );
+		input.put( AttributesUtil.X, "1" );
+		input.put( AttributesUtil.Y, "2" );
+		input.put( AttributesUtil.WIDTH, "3" );
+		input.put( AttributesUtil.HEIGHT, "4" );
 
 		final Rectangle outline = new WebData( input ).getOutline();
 		assertThat( outline.getX() ).isEqualTo( 1.0 );
@@ -109,10 +109,10 @@ class WebDataTest {
 	private Map<String, Object> getWrappedDataWithRectangle( final boolean isVisible ) {
 		final int size = isVisible ? 1 : 0;
 		final Map<String, Object> wrappedData = new HashMap<>();
-		wrappedData.put( AttributesConfig.X, size );
-		wrappedData.put( AttributesConfig.Y, size );
-		wrappedData.put( AttributesConfig.WIDTH, size );
-		wrappedData.put( AttributesConfig.HEIGHT, size );
+		wrappedData.put( AttributesUtil.X, size );
+		wrappedData.put( AttributesUtil.Y, size );
+		wrappedData.put( AttributesUtil.WIDTH, size );
+		wrappedData.put( AttributesUtil.HEIGHT, size );
 		return wrappedData;
 	}
 

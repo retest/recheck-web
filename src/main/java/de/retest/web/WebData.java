@@ -30,7 +30,7 @@ public class WebData {
 			return null;
 		}
 		final String value = String.valueOf( result );
-		return key.equals( AttributesConfig.TEXT ) ? value : normalize( value );
+		return key.equals( AttributesUtil.TEXT ) ? value : normalize( value );
 	}
 
 	public Set<String> getKeys() {
@@ -49,17 +49,17 @@ public class WebData {
 	}
 
 	public Rectangle getAbsoluteOutline() {
-		if ( wrappedData.get( AttributesConfig.ABSOLUTE_X ) == null
-				|| wrappedData.get( AttributesConfig.ABSOLUTE_Y ) == null
-				|| wrappedData.get( AttributesConfig.ABSOLUTE_WIDTH ) == null
-				|| wrappedData.get( AttributesConfig.ABSOLUTE_HEIGHT ) == null ) {
+		if ( wrappedData.get( AttributesUtil.ABSOLUTE_X ) == null
+				|| wrappedData.get( AttributesUtil.ABSOLUTE_Y ) == null
+				|| wrappedData.get( AttributesUtil.ABSOLUTE_WIDTH ) == null
+				|| wrappedData.get( AttributesUtil.ABSOLUTE_HEIGHT ) == null ) {
 			return null;
 		}
 		try {
-			final int x = getAsInt( AttributesConfig.ABSOLUTE_X );
-			final int y = getAsInt( AttributesConfig.ABSOLUTE_Y );
-			final int width = getAsInt( AttributesConfig.ABSOLUTE_WIDTH );
-			final int height = getAsInt( AttributesConfig.ABSOLUTE_HEIGHT );
+			final int x = getAsInt( AttributesUtil.ABSOLUTE_X );
+			final int y = getAsInt( AttributesUtil.ABSOLUTE_Y );
+			final int width = getAsInt( AttributesUtil.ABSOLUTE_WIDTH );
+			final int height = getAsInt( AttributesUtil.ABSOLUTE_HEIGHT );
 			return new Rectangle( x, y, width, height );
 		} catch ( final Exception e ) {
 			logger.error( "Exception retrieving outline: ", e );
@@ -68,17 +68,17 @@ public class WebData {
 	}
 
 	public Rectangle getOutline() {
-		if ( wrappedData.get( AttributesConfig.X ) == null //
-				|| wrappedData.get( AttributesConfig.Y ) == null //
-				|| wrappedData.get( AttributesConfig.WIDTH ) == null
-				|| wrappedData.get( AttributesConfig.HEIGHT ) == null ) {
+		if ( wrappedData.get( AttributesUtil.X ) == null //
+				|| wrappedData.get( AttributesUtil.Y ) == null //
+				|| wrappedData.get( AttributesUtil.WIDTH ) == null
+				|| wrappedData.get( AttributesUtil.HEIGHT ) == null ) {
 			return null;
 		}
 		try {
-			final int x = getAsInt( AttributesConfig.X ) / SCALE;
-			final int y = getAsInt( AttributesConfig.Y ) / SCALE;
-			final int width = getAsInt( AttributesConfig.WIDTH ) / SCALE;
-			final int height = getAsInt( AttributesConfig.HEIGHT ) / SCALE;
+			final int x = getAsInt( AttributesUtil.X ) / SCALE;
+			final int y = getAsInt( AttributesUtil.Y ) / SCALE;
+			final int width = getAsInt( AttributesUtil.WIDTH ) / SCALE;
+			final int height = getAsInt( AttributesUtil.HEIGHT ) / SCALE;
 			return new Rectangle( x, y, width, height );
 		} catch ( final Exception e ) {
 			logger.error( "Exception retrieving outline: ", e );
@@ -129,6 +129,11 @@ public class WebData {
 	}
 
 	public String getTag() {
-		return getAsString( AttributesConfig.TAG_NAME );
+		return getAsString( AttributesUtil.TAG_NAME );
 	}
+
+	public String getText() {
+		return getAsString( AttributesUtil.TEXT );
+	}
+
 }

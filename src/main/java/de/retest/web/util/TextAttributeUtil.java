@@ -1,6 +1,6 @@
 package de.retest.web.util;
 
-import static de.retest.web.AttributesConfig.TEXT;
+import static de.retest.web.AttributesUtil.TEXT;
 
 import de.retest.recheck.ui.descriptors.TextAttribute;
 
