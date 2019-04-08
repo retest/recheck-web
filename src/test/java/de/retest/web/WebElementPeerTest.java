@@ -12,6 +12,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import de.retest.recheck.ui.DefaultValueFinder;
+import de.retest.recheck.ui.descriptors.Attributes;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
 
@@ -46,7 +47,19 @@ class WebElementPeerTest {
 	}
 
 	@Test
-	void retrieveStateAttributes_should_not_contain_IdentifyingAttributes() {
+	void retrieveStateAttributes_should_not_contain_null() {
+		final Map<String, Object> wrappedData = new HashMap<>();
+		wrappedData.put( null, null );
+		final WebElementPeer cut =
+				new WebElementPeer( new WebData( wrappedData ), "path", mock( DefaultValueFinder.class ) );
+
+		final Attributes attributes = cut.retrieveStateAttributes( mock( IdentifyingAttributes.class ) ).immutable();
+
+		assertThat( attributes.size() ).isEqualTo( 0 );
+	}
+
+	@Test
+	void retrieveStateAttributes_should_not_contain_identifying_attributes() {
 		final Map<String, Object> wrappedData = new HashMap<>();
 		wrappedData.put( AttributesUtil.ABSOLUTE_X, "someValue" );
 		wrappedData.put( AttributesUtil.ABSOLUTE_Y, "someValue" );
@@ -63,6 +76,47 @@ class WebElementPeerTest {
 		wrappedData.put( AttributesUtil.NAME, "someValue" );
 		final WebElementPeer cut =
 				new WebElementPeer( new WebData( wrappedData ), "path", mock( DefaultValueFinder.class ) );
-		assertThat( cut.retrieveStateAttributes( mock( IdentifyingAttributes.class ) ).get( "id" ) ).isNull();
+
+		final Attributes attributes = cut.retrieveStateAttributes( mock( IdentifyingAttributes.class ) ).immutable();
+
+		assertThat( attributes.size() ).isEqualTo( 0 );
 	}
+
+	@Test
+	void retrieveStateAttributes_should_not_contain_defaults() {
+		final String attributeKey = "someKey";
+		final String attributeValue = "someDefaultValue";
+
+		final Map<String, Object> wrappedData = new HashMap<>();
+		wrappedData.put( attributeKey, attributeValue );
+
+		final IdentifyingAttributes identifyingAttributes = mock( IdentifyingAttributes.class );
+
+		final DefaultValueFinder defaultValueFinder = mock( DefaultValueFinder.class );
+		when( defaultValueFinder.isDefaultValue( identifyingAttributes, attributeKey, attributeValue ) )
+				.thenReturn( true );
+
+		final WebElementPeer cut = new WebElementPeer( new WebData( wrappedData ), "path", defaultValueFinder );
+
+		final Attributes attributes = cut.retrieveStateAttributes( identifyingAttributes ).immutable();
+
+		assertThat( attributes.size() ).isEqualTo( 0 );
+	}
+
+	@Test
+	void retrieveStateAttributes_should_contain_non_null_non_identifying_non_default_attributes() {
+		final String attributeKey = "someKey";
+		final String attributeValue = "someDefaultValue";
+
+		final Map<String, Object> wrappedData = new HashMap<>();
+		wrappedData.put( attributeKey, attributeValue );
+
+		final WebElementPeer cut =
+				new WebElementPeer( new WebData( wrappedData ), "path", mock( DefaultValueFinder.class ) );
+
+		final Attributes attributes = cut.retrieveStateAttributes( mock( IdentifyingAttributes.class ) ).immutable();
+
+		assertThat( attributes.get( attributeKey ) ).isEqualTo( attributeValue );
+	}
+
 }
