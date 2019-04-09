@@ -2,6 +2,7 @@ package de.retest.web;
 
 import java.awt.Rectangle;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -51,7 +52,6 @@ public class WebElementPeer {
 	}
 
 	protected IdentifyingAttributes retrieveIdentifyingAttributes() {
-		// TODO Inconsistent since we don't get all identifying attributes via attributes.yaml.
 		final List<Attribute> identifyingAttributes = new ArrayList<>();
 
 		final Rectangle absoluteOutline = webData.getAbsoluteOutline();
@@ -69,17 +69,18 @@ public class WebElementPeer {
 			identifyingAttributes.add( TextAttributeUtil.createTextAttribute( path, text ) );
 		}
 
-		identifyingAttributes.add( new StringAttribute( IdentifyingAttributes.TYPE_ATTRIBUTE_KEY, webData.getTag() ) );
-		identifyingAttributes.add( new PathAttribute( Path.fromString( path ) ) );
-		identifyingAttributes.add( new SuffixAttribute( extractSuffix() ) );
-
-		final List<String> htmlAttributes = AttributesProvider.getInstance().getHtmlAttributes();
+		final List<String> htmlAttributes =
+				Arrays.asList( AttributesUtil.CLASS, AttributesUtil.ID, AttributesUtil.NAME );
 		for ( final String key : htmlAttributes ) {
 			final String value = webData.getAsString( key );
 			if ( StringUtils.isNotBlank( value ) ) {
 				identifyingAttributes.add( new StringAttribute( key, value ) );
 			}
 		}
+
+		identifyingAttributes.add( new StringAttribute( IdentifyingAttributes.TYPE_ATTRIBUTE_KEY, webData.getTag() ) );
+		identifyingAttributes.add( new PathAttribute( Path.fromString( path ) ) );
+		identifyingAttributes.add( new SuffixAttribute( extractSuffix() ) );
 
 		return new IdentifyingAttributes( identifyingAttributes );
 	}

@@ -18,17 +18,16 @@ public class AttributesUtil {
 
 	public static final String TEXT = "text";
 
-	// Mapped to our "type" attribute in WebElementPeer to avoid conflicts with HTML "type" attribute.
-	public static final String TAG_NAME = "tagName";
-
-	// HTML attributes from attributes.yaml.
 	public static final String CLASS = "class";
 	public static final String ID = "id";
 	public static final String NAME = "name";
 
+	// Mapped to our "type" attribute in WebElementPeer to avoid conflicts with HTML "type" attribute.
+	public static final String TAG_NAME = "tagName";
+
 	// Keys used in getAllElementsByPath.js.
 	private static final Set<String> identifyingAttributes = new HashSet<>( Arrays.asList( ABSOLUTE_X, ABSOLUTE_Y,
-			ABSOLUTE_WIDTH, ABSOLUTE_HEIGHT, X, Y, WIDTH, HEIGHT, TEXT, TAG_NAME, CLASS, ID, NAME ) );
+			ABSOLUTE_WIDTH, ABSOLUTE_HEIGHT, X, Y, WIDTH, HEIGHT, TEXT, CLASS, ID, NAME, TAG_NAME ) );
 
 	private AttributesUtil() {}
 
