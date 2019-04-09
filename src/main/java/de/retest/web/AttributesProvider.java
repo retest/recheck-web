@@ -80,4 +80,11 @@ public class AttributesProvider {
 		return attributesConfig.getHtmlAttributes();
 	}
 
+	/**
+	 * @see AttributesConfig#allHtmlAttributes()
+	 */
+	public boolean allHtmlAttributes() {
+		return attributesConfig.allHtmlAttributes();
+	}
+
 }
