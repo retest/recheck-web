@@ -1,4 +1,4 @@
-# List of CSS style attributes that are added to an element's state.
+# List of CSS attributes that are added to an element's state. Can be a list of selected attributes or empty ("all" not supported).
 cssAttributes:
   - align-content
   - align-items
@@ -180,8 +180,5 @@ cssAttributes:
   - word-wrap
   - z-index
 
-# List of HTML attributes that are used for element identification (a.k.a. identifying attributes).
-htmlAttributes:
-  - class
-  - id
-  - name
+# List of HTML attributes that are added to an element's state. Can be a list of selected attributes, empty, or "all".
+htmlAttributes: all
