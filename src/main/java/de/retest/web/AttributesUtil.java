@@ -36,20 +36,24 @@ public class AttributesUtil {
 	}
 
 	public static boolean isStateAttribute( final String key ) {
+		return isStateAttribute( key, AttributesProvider.getInstance() );
+	}
+
+	static boolean isStateAttribute( final String key, final AttributesProvider provider ) {
 		final boolean isNotIdentifyingAttribute = !isIdentifyingAttribute( key );
-		final boolean isHtmlAttribute = isHtmlAttribute( key );
-		final boolean isCssAttribute = isCssAttribute( key );
+		final boolean isHtmlAttribute = isHtmlAttribute( key, provider );
+		final boolean isCssAttribute = isCssAttribute( key, provider );
 		return isNotIdentifyingAttribute && (isHtmlAttribute || isCssAttribute);
 	}
 
-	private static boolean isHtmlAttribute( final String key ) {
-		return AttributesProvider.getInstance().allHtmlAttributes() //
+	private static boolean isHtmlAttribute( final String key, final AttributesProvider provider ) {
+		return provider.allHtmlAttributes() //
 				? true //
-				: AttributesProvider.getInstance().getHtmlAttributes().contains( key );
+				: provider.getHtmlAttributes().contains( key );
 	}
 
-	private static boolean isCssAttribute( final String key ) {
-		return AttributesProvider.getInstance().getCssAttributes().contains( key );
+	private static boolean isCssAttribute( final String key, final AttributesProvider provider ) {
+		return provider.getCssAttributes().contains( key );
 	}
 
 }
