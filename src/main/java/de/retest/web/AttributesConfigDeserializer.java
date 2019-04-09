@@ -2,7 +2,10 @@ package de.retest.web;
 
 import java.io.IOException;
 import java.util.Collections;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Spliterator;
+import java.util.Spliterators;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -23,32 +26,33 @@ class AttributesConfigDeserializer extends JsonDeserializer<AttributesConfig> {
 		final JsonNode node = parser.getCodec().readTree( parser );
 		final JsonNode cssAttributesNode = node.get( CSS_ATTRIBUTES_KEY );
 		final JsonNode htmlAttributesNode = node.get( HTML_ATTRIBUTES_KEY );
-		return new AttributesConfig( toCssAttributesList( cssAttributesNode ),
-				toHtmlAttributesList( htmlAttributesNode ) );
+		return new AttributesConfig( toCssAttributesSet( cssAttributesNode ),
+				toHtmlAttributesSet( htmlAttributesNode ) );
 	}
 
-	private List<String> toCssAttributesList( final JsonNode cssAttributesNode ) {
+	private Set<String> toCssAttributesSet( final JsonNode cssAttributesNode ) {
 		if ( cssAttributesNode.isTextual() ) {
 			throw new IllegalArgumentException(
-					"CSS attributes can only be a list of selected attributes or empty ('all' not supported)." );
+					"CSS attributes can only be a set of selected attributes or empty ('all' not supported)." );
 		}
-		return toList( cssAttributesNode );
+		return toSet( cssAttributesNode );
 	}
 
-	private List<String> toHtmlAttributesList( final JsonNode htmlAttributesNode ) {
+	private Set<String> toHtmlAttributesSet( final JsonNode htmlAttributesNode ) {
 		if ( htmlAttributesNode.isTextual() ) {
 			return null;
 		}
-		return toList( htmlAttributesNode );
+		return toSet( htmlAttributesNode );
 	}
 
-	private List<String> toList( final JsonNode node ) {
+	private Set<String> toSet( final JsonNode node ) {
 		if ( node.isNull() ) {
-			return Collections.emptyList();
+			return Collections.emptySet();
 		}
-		return StreamSupport.stream( node.spliterator(), false ) //
-				.map( JsonNode::asText ) //
-				.collect( Collectors.toList() );
+		final Spliterator<String> spliterator =
+				Spliterators.spliteratorUnknownSize( node.fieldNames(), Spliterator.NONNULL );
+		return StreamSupport.stream( spliterator, false ) //
+				.collect( Collectors.toCollection( HashSet::new ) );
 	}
 
 }

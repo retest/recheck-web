@@ -1,37 +1,37 @@
 package de.retest.web;
 
-import java.util.List;
+import java.util.Set;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 @JsonDeserialize( using = AttributesConfigDeserializer.class )
 public class AttributesConfig {
 
-	private final List<String> cssAttributes;
-	private final List<String> htmlAttributes;
+	private final Set<String> cssAttributes;
+	private final Set<String> htmlAttributes;
 
-	public AttributesConfig( final List<String> cssAttributes, final List<String> htmlAttributes ) {
+	public AttributesConfig( final Set<String> cssAttributes, final Set<String> htmlAttributes ) {
 		this.cssAttributes = cssAttributes;
 		this.htmlAttributes = htmlAttributes;
 	}
 
 	/**
-	 * List of CSS attributes that are added to an element's state. Can be a list of selected attributes or empty ("all"
+	 * Set of CSS attributes that are added to an element's state. Can be a set of selected attributes or empty ("all"
 	 * not supported).
 	 *
-	 * @return Possibly empty list of selected CSS attributes.
+	 * @return Possibly empty set of selected CSS attributes.
 	 */
-	public List<String> getCssAttributes() {
+	public Set<String> getCssAttributes() {
 		return cssAttributes;
 	}
 
 	/**
-	 * List of HTML attributes that are added to an element's state. Can be a list of selected attributes, empty, or
+	 * Set of HTML attributes that are added to an element's state. Can be a set of selected attributes, empty, or
 	 * "all".
 	 *
-	 * @return Possibly empty list of selected HTML attributes or {@code null} in the case of "all".
+	 * @return Possibly empty set of selected HTML attributes or {@code null} in the case of "all".
 	 */
-	public List<String> getHtmlAttributes() {
+	public Set<String> getHtmlAttributes() {
 		return htmlAttributes;
 	}
 

@@ -21,8 +21,8 @@ class AttributesConfigDeserializerTest {
 	@Test
 	void should_handle_attributes_selected() throws Exception {
 		final AttributesConfig attributesConfig = deserialize( new File( baseDir, "selected.yaml" ) );
-		assertThat( attributesConfig.getCssAttributes() ).containsExactly( "foo", "bar", "baz" );
-		assertThat( attributesConfig.getHtmlAttributes() ).containsExactly( "tic", "tac", "toe" );
+		assertThat( attributesConfig.getCssAttributes() ).contains( "foo", "bar", "baz" );
+		assertThat( attributesConfig.getHtmlAttributes() ).contains( "tic", "tac", "toe" );
 	}
 
 	@Test
@@ -43,7 +43,7 @@ class AttributesConfigDeserializerTest {
 		assertThatThrownBy( () -> deserialize( new File( baseDir, "all-css.yaml" ) ) ) //
 				.isExactlyInstanceOf( IllegalArgumentException.class ) //
 				.hasMessage(
-						"CSS attributes can only be a list of selected attributes or empty ('all' not supported)." );
+						"CSS attributes can only be a set of selected attributes or empty ('all' not supported)." );
 	}
 
 	private AttributesConfig deserialize( final File yaml ) throws Exception {

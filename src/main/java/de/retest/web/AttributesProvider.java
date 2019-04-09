@@ -6,7 +6,7 @@ import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.List;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -69,14 +69,14 @@ public class AttributesProvider {
 	/**
 	 * @see AttributesConfig#getCssAttributes()
 	 */
-	public List<String> getCssAttributes() {
+	public Set<String> getCssAttributes() {
 		return attributesConfig.getCssAttributes();
 	}
 
 	/**
 	 * @see AttributesConfig#getHtmlAttributes()
 	 */
-	public List<String> getHtmlAttributes() {
+	public Set<String> getHtmlAttributes() {
 		return attributesConfig.getHtmlAttributes();
 	}
 
