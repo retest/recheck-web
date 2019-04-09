@@ -18,17 +18,31 @@ public class AttributesConfig {
 	}
 
 	/**
-	 * @return List of CSS style attributes that are added to an element's state.
+	 * List of CSS attributes that are added to an element's state. Can be a list of selected attributes or empty ("all"
+	 * not supported).
+	 *
+	 * @return Possibly empty list of selected CSS attributes.
 	 */
 	public List<String> getCssAttributes() {
 		return cssAttributes;
 	}
 
 	/**
-	 * @return List of HTML attributes that are used for element identification (a.k.a. identifying attributes).
+	 * List of HTML attributes that are added to an element's state. Can be a list of selected attributes, empty, or
+	 * "all". In the case of "all", you have to use {@link AttributesConfig#allHtmlAttributes()}.
+	 *
+	 * @return Possibly empty list of selected HTML attributes.
 	 */
 	public List<String> getHtmlAttributes() {
 		return htmlAttributes;
+	}
+
+	/**
+	 * @return {@code true} if all HTML attributes should be used, otherwise false.
+	 */
+	public boolean allHtmlAttributes() {
+		// TODO Implement.
+		return true;
 	}
 
 }
