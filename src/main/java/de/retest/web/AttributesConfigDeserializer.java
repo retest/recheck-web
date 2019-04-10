@@ -17,6 +17,7 @@ class AttributesConfigDeserializer extends JsonDeserializer<AttributesConfig> {
 
 	private static final String CSS_ATTRIBUTES_KEY = "cssAttributes";
 	private static final String HTML_ATTRIBUTES_KEY = "htmlAttributes";
+	private static final String ALL_VALUE = "all";
 
 	@Override
 	public AttributesConfig deserialize( final JsonParser parser, final DeserializationContext context )
@@ -29,7 +30,7 @@ class AttributesConfigDeserializer extends JsonDeserializer<AttributesConfig> {
 	}
 
 	private Set<String> toCssAttributesSet( final JsonNode cssAttributesNode ) {
-		if ( cssAttributesNode.isTextual() ) {
+		if ( isAll( cssAttributesNode, CSS_ATTRIBUTES_KEY ) ) {
 			throw new IllegalArgumentException(
 					"CSS attributes can only be a set of selected attributes or empty ('all' not supported)." );
 		}
@@ -37,10 +38,21 @@ class AttributesConfigDeserializer extends JsonDeserializer<AttributesConfig> {
 	}
 
 	private Set<String> toHtmlAttributesSet( final JsonNode htmlAttributesNode ) {
-		if ( htmlAttributesNode.isTextual() ) {
+		if ( isAll( htmlAttributesNode, HTML_ATTRIBUTES_KEY ) ) {
 			return null;
 		}
 		return toSet( htmlAttributesNode );
+	}
+
+	private boolean isAll( final JsonNode node, final String key ) {
+		if ( !node.isTextual() ) {
+			return false;
+		}
+		final String value = node.asText();
+		if ( value.equals( ALL_VALUE ) ) {
+			return true;
+		}
+		throw new IllegalArgumentException( "'" + value + "' is an invalid value for '" + key + "'." );
 	}
 
 	private Set<String> toSet( final JsonNode node ) {

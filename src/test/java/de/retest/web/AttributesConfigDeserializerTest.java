@@ -46,6 +46,20 @@ class AttributesConfigDeserializerTest {
 						"CSS attributes can only be a set of selected attributes or empty ('all' not supported)." );
 	}
 
+	@Test
+	void should_handle_css_attributes_invalid() throws Exception {
+		assertThatThrownBy( () -> deserialize( new File( baseDir, "invalid-css.yaml" ) ) ) //
+				.isExactlyInstanceOf( IllegalArgumentException.class ) //
+				.hasMessage( "'invalid' is an invalid value for 'cssAttributes'." );
+	}
+
+	@Test
+	void should_handle_html_attributes_invalid() throws Exception {
+		assertThatThrownBy( () -> deserialize( new File( baseDir, "invalid-html.yaml" ) ) ) //
+				.isExactlyInstanceOf( IllegalArgumentException.class ) //
+				.hasMessage( "'invalid' is an invalid value for 'htmlAttributes'." );
+	}
+
 	private AttributesConfig deserialize( final File yaml ) throws Exception {
 		final JsonParser parser = mapper.getFactory().createParser( yaml );
 		final DeserializationContext context = mapper.getDeserializationContext();
