@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.Spliterator;
-import java.util.Spliterators;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -49,9 +47,8 @@ class AttributesConfigDeserializer extends JsonDeserializer<AttributesConfig> {
 		if ( node.isNull() ) {
 			return Collections.emptySet();
 		}
-		final Spliterator<String> spliterator =
-				Spliterators.spliteratorUnknownSize( node.fieldNames(), Spliterator.NONNULL );
-		return StreamSupport.stream( spliterator, false ) //
+		return StreamSupport.stream( node.spliterator(), false ) //
+				.map( JsonNode::asText ) //
 				.collect( Collectors.toCollection( HashSet::new ) );
 	}
 
