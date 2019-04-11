@@ -431,18 +431,6 @@
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 												</entry>
-												<entry>
-													<key>transition-duration</key>
-													<value xsi:type="xsd:string">0.3s</value>
-												</entry>
-												<entry>
-													<key>transition-property</key>
-													<value xsi:type="xsd:string">color</value>
-												</entry>
-												<entry>
-													<key>transition-timing-function</key>
-													<value xsi:type="xsd:string">ease-in-out</value>
-												</entry>
 											</attributes>
 										</attributes>
 									</containedElements>
@@ -643,31 +631,31 @@
 										<attributes>
 											<entry>
 												<key>border-bottom-color</key>
-												<value xsi:type="xsd:string">rgb(170, 189, 47)</value>
+												<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 											</entry>
 											<entry>
 												<key>border-left-color</key>
-												<value xsi:type="xsd:string">rgb(170, 189, 47)</value>
+												<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 											</entry>
 											<entry>
 												<key>border-right-color</key>
-												<value xsi:type="xsd:string">rgb(170, 189, 47)</value>
+												<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 											</entry>
 											<entry>
 												<key>border-top-color</key>
-												<value xsi:type="xsd:string">rgb(170, 189, 47)</value>
+												<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 											</entry>
 											<entry>
 												<key>caret-color</key>
-												<value xsi:type="xsd:string">rgb(170, 189, 47)</value>
+												<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 											</entry>
 											<entry>
 												<key>color</key>
-												<value xsi:type="xsd:string">rgb(170, 189, 47)</value>
+												<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 											</entry>
 											<entry>
 												<key>column-rule-color</key>
-												<value xsi:type="xsd:string">rgb(170, 189, 47)</value>
+												<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 											</entry>
 											<entry>
 												<key>href</key>
@@ -675,7 +663,7 @@
 											</entry>
 											<entry>
 												<key>outline-color</key>
-												<value xsi:type="xsd:string">rgb(170, 189, 47)</value>
+												<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 											</entry>
 											<entry>
 												<key>shown</key>
@@ -683,19 +671,7 @@
 											</entry>
 											<entry>
 												<key>text-decoration-color</key>
-												<value xsi:type="xsd:string">rgb(170, 189, 47)</value>
-											</entry>
-											<entry>
-												<key>transition-duration</key>
-												<value xsi:type="xsd:string">0.3s</value>
-											</entry>
-											<entry>
-												<key>transition-property</key>
-												<value xsi:type="xsd:string">color</value>
-											</entry>
-											<entry>
-												<key>transition-timing-function</key>
-												<value xsi:type="xsd:string">ease-in-out</value>
+												<value xsi:type="xsd:string">rgb(49, 49, 49)</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -10850,7 +10826,7 @@
 											</entry>
 											<entry>
 												<key>background-color</key>
-												<value xsi:type="xsd:string">rgb(111, 122, 61)</value>
+												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 											</entry>
 											<entry>
 												<key>border-bottom-color</key>
@@ -10914,7 +10890,7 @@
 											</entry>
 											<entry>
 												<key>outline-color</key>
-												<value xsi:type="xsd:string">rgb(236, 178, 66)</value>
+												<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
 											</entry>
 											<entry>
 												<key>padding-bottom</key>
@@ -10939,14 +10915,6 @@
 											<entry>
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-											</entry>
-											<entry>
-												<key>transition-duration</key>
-												<value xsi:type="xsd:string">0.2s</value>
-											</entry>
-											<entry>
-												<key>transition-timing-function</key>
-												<value xsi:type="xsd:string">ease-in-out</value>
 											</entry>
 										</attributes>
 									</attributes>

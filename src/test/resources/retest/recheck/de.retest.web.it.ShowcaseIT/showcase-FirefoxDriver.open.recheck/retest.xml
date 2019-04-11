@@ -479,18 +479,6 @@
 													<key>text-decoration-color</key>
 													<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
 												</entry>
-												<entry>
-													<key>transition-duration</key>
-													<value xsi:type="xsd:string">0.3s</value>
-												</entry>
-												<entry>
-													<key>transition-property</key>
-													<value xsi:type="xsd:string">color</value>
-												</entry>
-												<entry>
-													<key>transition-timing-function</key>
-													<value xsi:type="xsd:string">ease-in-out</value>
-												</entry>
 											</attributes>
 										</attributes>
 									</containedElements>
@@ -748,18 +736,6 @@
 											<entry>
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(193, 216, 47)</value>
-											</entry>
-											<entry>
-												<key>transition-duration</key>
-												<value xsi:type="xsd:string">0.3s</value>
-											</entry>
-											<entry>
-												<key>transition-property</key>
-												<value xsi:type="xsd:string">color</value>
-											</entry>
-											<entry>
-												<key>transition-timing-function</key>
-												<value xsi:type="xsd:string">ease-in-out</value>
 											</entry>
 										</attributes>
 									</attributes>
@@ -11193,14 +11169,6 @@
 											<entry>
 												<key>text-decoration-color</key>
 												<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-											</entry>
-											<entry>
-												<key>transition-duration</key>
-												<value xsi:type="xsd:string">0.2s</value>
-											</entry>
-											<entry>
-												<key>transition-timing-function</key>
-												<value xsi:type="xsd:string">ease-in-out</value>
 											</entry>
 										</attributes>
 									</attributes>
