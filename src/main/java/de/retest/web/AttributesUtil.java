@@ -18,17 +18,16 @@ public class AttributesUtil {
 
 	public static final String TEXT = "text";
 
-	// Mapped to our "type" attribute in WebElementPeer to avoid conflicts with HTML "type" attribute.
-	public static final String TAG_NAME = "tagName";
-
-	// HTML attributes from attributes.yaml.
 	public static final String CLASS = "class";
 	public static final String ID = "id";
 	public static final String NAME = "name";
 
+	// Mapped to our "type" attribute in WebElementPeer to avoid conflicts with HTML "type" attribute.
+	public static final String TAG_NAME = "tagName";
+
 	// Keys used in getAllElementsByPath.js.
 	private static final Set<String> identifyingAttributes = new HashSet<>( Arrays.asList( ABSOLUTE_X, ABSOLUTE_Y,
-			ABSOLUTE_WIDTH, ABSOLUTE_HEIGHT, X, Y, WIDTH, HEIGHT, TEXT, TAG_NAME, CLASS, ID, NAME ) );
+			ABSOLUTE_WIDTH, ABSOLUTE_HEIGHT, X, Y, WIDTH, HEIGHT, TEXT, CLASS, ID, NAME, TAG_NAME ) );
 
 	private AttributesUtil() {}
 
@@ -37,7 +36,24 @@ public class AttributesUtil {
 	}
 
 	public static boolean isStateAttribute( final String key ) {
-		return !isIdentifyingAttribute( key );
+		return isStateAttribute( key, AttributesProvider.getInstance() );
+	}
+
+	static boolean isStateAttribute( final String key, final AttributesProvider provider ) {
+		final boolean isNotIdentifyingAttribute = !isIdentifyingAttribute( key );
+		final boolean isHtmlAttribute = isHtmlAttribute( key, provider );
+		final boolean isCssAttribute = isCssAttribute( key, provider );
+		return isNotIdentifyingAttribute && (isHtmlAttribute || isCssAttribute);
+	}
+
+	private static boolean isHtmlAttribute( final String key, final AttributesProvider provider ) {
+		return provider.allHtmlAttributes() //
+				? true //
+				: provider.getHtmlAttributes().contains( key );
+	}
+
+	private static boolean isCssAttribute( final String key, final AttributesProvider provider ) {
+		return provider.getCssAttributes().contains( key );
 	}
 
 }

@@ -8,7 +8,6 @@ import java.io.InputStream;
 import java.io.UncheckedIOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -49,7 +48,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		final WebDriver driver = (WebDriver) toVerify;
 
 		logger.info( "Retrieving attributes for each element." );
-		final List<String> cssAttributes = AttributesProvider.getInstance().getCssAttributes();
+		final Set<String> cssAttributes = AttributesProvider.getInstance().getCssAttributes();
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		@SuppressWarnings( "unchecked" )
 		final Map<String, Map<String, Object>> result =
