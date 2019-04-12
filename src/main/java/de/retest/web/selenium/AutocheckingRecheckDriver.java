@@ -18,7 +18,7 @@ public class AutocheckingRecheckDriver extends RecheckDriver {
 	}
 
 	public void startTest() {
-		counter = 1;
+		counter = 0;
 		if ( re == null ) {
 			re = new RecheckWebImpl();
 		}
@@ -34,19 +34,25 @@ public class AutocheckingRecheckDriver extends RecheckDriver {
 
 	public void capTest() {
 		check( "final" );
-		counter = 1;
+		counter = 0;
 		re.capTest();
 	}
 
 	public void cap() {
-		counter = 1;
+		counter = 0;
 		re.cap();
+	}
+
+	@Override
+	public void get( final String url ) {
+		super.get( url );
+		check( "initial" );
 	}
 
 	@Override
 	public void close() {
 		// Is this sensible? What about tests using separate sessions?
-		counter = 1;
+		counter = 0;
 		re.cap();
 		super.close();
 	}
@@ -54,7 +60,7 @@ public class AutocheckingRecheckDriver extends RecheckDriver {
 	@Override
 	public void quit() {
 		// Is this sensible? What about tests using separate sessions?
-		counter = 1;
+		counter = 0;
 		re.cap();
 		super.quit();
 	}
@@ -79,7 +85,7 @@ public class AutocheckingRecheckDriver extends RecheckDriver {
 		re.check( this, makeUnique( currentStep ) );
 	}
 
-	private int counter = 1;
+	private int counter = 0;
 
 	String makeUnique( final String id ) {
 		return String.format( "%02d_%s", counter++, id );

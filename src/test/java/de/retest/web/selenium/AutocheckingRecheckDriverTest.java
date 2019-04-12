@@ -11,9 +11,9 @@ class AutocheckingRecheckDriverTest {
 	@Test
 	void test_makeUnique() {
 		final AutocheckingRecheckDriver cut = new AutocheckingRecheckDriver( Mockito.mock( RemoteWebDriver.class ) );
-		assertThat( cut.makeUnique( "someString" ) ).isEqualTo( "01_someString" );
-		assertThat( cut.makeUnique( "someOtherString" ) ).isEqualTo( "02_someOtherString" );
-		assertThat( cut.makeUnique( "someString" ) ).isEqualTo( "03_someString" );
+		assertThat( cut.makeUnique( "someString" ) ).isEqualTo( "00_someString" );
+		assertThat( cut.makeUnique( "someOtherString" ) ).isEqualTo( "01_someOtherString" );
+		assertThat( cut.makeUnique( "someString" ) ).isEqualTo( "02_someString" );
 	}
 
 }
