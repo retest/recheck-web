@@ -33,11 +33,11 @@ public class WebElementWrapper implements WebElement {
 		String result = delegate.toString();
 		if ( result.contains( "->" ) ) {
 			// remove driver info
-			result = result.substring( result.indexOf( "->" ) + 2 ).trim();
+			result = result.substring( result.lastIndexOf( "->" ) + 2 ).trim();
 			// remove trailing ]
 			result = result.substring( 0, result.length() - 1 );
 			// remove identification criterion (e.g. id, class, ...)
-			result = result.substring( result.indexOf( ":" ) + 1 ).trim();
+			result = result.substring( result.lastIndexOf( ":" ) + 1 ).trim();
 			return action + "_" + result;
 		}
 		return result;
