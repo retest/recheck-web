@@ -22,7 +22,7 @@ import de.retest.recheck.ui.descriptors.RootElement;
 public class TestHealer {
 
 	private static final Logger logger = LoggerFactory.getLogger( TestHealer.class );
-	private static final String ELEMENT_NOT_FOUND_MESSAGE = "It appears that even the old state didn't have an element";
+	private static final String ELEMENT_NOT_FOUND_MESSAGE = "It appears that even the Golden Master has no element";
 
 	private final RecheckDriver wrapped;
 	private final RootElement lastExpectedState;
@@ -139,10 +139,10 @@ public class TestHealer {
 		logger.warn( "*************** recheck warning ***************" );
 		logger.warn( "The {} used for element identification changed from '{}' to '{}'.", elementIdentifier, oldValue,
 				newValue );
-		logger.warn( "retest identified the element based on the persisted old state." );
+		logger.warn( "retest identified the element based on the persisted Golden Master." );
 		// TODO Get filename from state
 		// TODO Guess test name from state name
-		logger.warn( "If you apply these changes to the state {}, your test {} will break.", "", "" );
+		logger.warn( "If you apply these changes to the Golden Master {}, your test {} will break.", "", "" );
 		// TODO Eventually, we want something like Test.java:123 instead of "your test"
 		if ( newValue != null ) {
 			logger.warn( "Use `By.{}(\"{}\")` or `By.retestId(\"{}\")` to update your test.", byMethodName, newValue,
