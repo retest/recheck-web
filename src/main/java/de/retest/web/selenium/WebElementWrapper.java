@@ -18,7 +18,7 @@ public class WebElementWrapper implements WebElement {
 
 	public WebElementWrapper( final WebElement delegate, final AutocheckingRecheckDriver driver ) {
 		if ( delegate instanceof WebElementWrapper ) {
-			throw new RuntimeException( "Wrapping doubly!" );
+			throw new IllegalStateException( "Wrapping doubly!" );
 		}
 		this.delegate = delegate;
 		this.driver = driver;
@@ -37,7 +37,7 @@ public class WebElementWrapper implements WebElement {
 			// remove trailing ]
 			result = result.substring( 0, result.length() - 1 );
 			// remove identification criterion (e.g. id, class, ...)
-			result = result.substring( result.lastIndexOf( ":" ) + 1 ).trim();
+			result = result.substring( result.lastIndexOf( ':' ) + 1 ).trim();
 			return action + "_" + result;
 		}
 		return result;
