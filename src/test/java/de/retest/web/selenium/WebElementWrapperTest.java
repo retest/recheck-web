@@ -45,6 +45,18 @@ class WebElementWrapperTest {
 	}
 
 	@Test
+	void toStep_should_contain_text_for_sendKeys() {
+		final WebElement delegate = mock( WebElement.class );
+		when( delegate.toString() ).thenReturn(
+				"[[ChromeDriver: chrome on MAC (5822a9b14739d081f70f6b6f42e789cc)] -> link text: Contact]" );
+		final AutocheckingRecheckDriver driver = mock( AutocheckingRecheckDriver.class );
+		final WebElementWrapper wrapper = new WebElementWrapper( delegate, driver );
+
+		wrapper.sendKeys( "this very long text was sent" );
+		verify( driver, times( 1 ) ).check( "enter_[this ve...]_into_Contact" );
+	}
+
+	@Test
 	void changing_methods_should_check_and_delegate_calls() {
 		final WebElement delegate = mock( WebElement.class );
 		final AutocheckingRecheckDriver driver = mock( AutocheckingRecheckDriver.class );
