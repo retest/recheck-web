@@ -18,7 +18,7 @@ public class WebElementWrapper implements WebElement {
 
 	public WebElementWrapper( final WebElement delegate, final AutocheckingRecheckDriver driver ) {
 		if ( delegate instanceof WebElementWrapper ) {
-			throw new IllegalStateException( "Wrapping doubly!" );
+			throw new IllegalArgumentException( "Cannot wrap WebElementWrapper inside WebElementWrapper." );
 		}
 		this.delegate = delegate;
 		this.driver = driver;
