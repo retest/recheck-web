@@ -1,6 +1,7 @@
 package de.retest.web.selenium;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -93,14 +94,14 @@ public class WebElementWrapper implements WebElement {
 
 	@Override
 	public List<WebElement> findElements( final By by ) {
-		// TODO Do we need to wrap this also, or does this already channel through driver?
-		return delegate.findElements( by );
+		return delegate.findElements( by ).stream() //
+				.map( element -> new WebElementWrapper( element, driver ) ) //
+				.collect( Collectors.toList() );
 	}
 
 	@Override
 	public WebElement findElement( final By by ) {
-		// TODO Do we need to wrap this also, or does this already channel through driver?
-		return delegate.findElement( by );
+		return new WebElementWrapper( delegate.findElement( by ), driver );
 	}
 
 	@Override

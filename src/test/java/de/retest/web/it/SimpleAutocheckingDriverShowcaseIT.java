@@ -44,7 +44,7 @@ public class SimpleAutocheckingDriverShowcaseIT {
 
 		driver.findElement( By.id( "signupEmail" ) ).sendKeys( "me@retest.de" );
 
-		driver.findElement( By.className( "sign-up-submit" ) ).click();
+		driver.findElement( By.tagName( "html" ) ).findElement( By.className( "sign-up-submit" ) ).click();
 
 		driver.findElement( By.name( "logo" ) ).click();
 
