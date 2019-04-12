@@ -33,6 +33,9 @@ function shouldIgnoreAttributeDifference(element, diff) {
 		return (Math.abs(diff.expected.replace("px", "")
 				- diff.actual.replace("px", "")) <= ALLOWED_PIXEL_DIFF);
 	}
+	if (diff.key == "opacity") {
+		return (Math.abs(diff.expected - diff.actual) <= 10);
+	}
 	if (diff.key == "font-family") {
 		for (var i = 0; i < fontFamilies.length; i++) {
 			if (contains(fontFamilies[i], diff.expected)) {

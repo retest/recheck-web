@@ -26,6 +26,16 @@ class RecheckIgnoreJsIT {
 	}
 
 	@Test
+	void should_ignore_opacity_5_diff() throws Exception {
+		final Element element = Mockito.mock( Element.class );
+		// opacity: expected="0", actual="0.00566082"
+		assertThat( cut.shouldIgnoreAttributeDifference( element,
+				new AttributeDifference( "opacity", "0", "0.00566082" ) ) ).isTrue();
+		assertThat( cut.shouldIgnoreAttributeDifference( element, new AttributeDifference( "opacity", "100", "80" ) ) )
+				.isFalse();
+	}
+
+	@Test
 	void should_ignore_different_base_URLs() {
 		final Element element = Mockito.mock( Element.class );
 		assertThat( cut.shouldIgnoreAttributeDifference( element, new AttributeDifference( "background-image",
