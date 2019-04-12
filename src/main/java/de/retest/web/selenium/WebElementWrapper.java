@@ -57,8 +57,20 @@ public class WebElementWrapper implements WebElement {
 
 	@Override
 	public void sendKeys( final CharSequence... keysToSend ) {
-		driver.check( toStep( "enter", delegate ) );
+		driver.check( toStep( "enter_[" + normalizeAndShorten( keysToSend ) + "]_into", delegate ) );
 		delegate.sendKeys( keysToSend );
+	}
+
+	private String normalizeAndShorten( final CharSequence[] keysToSend ) {
+		if ( keysToSend == null || keysToSend.length == 0 || keysToSend[0] == null || keysToSend[0].length() == 0 ) {
+			// How to properly represent empty string?
+			return "";
+		}
+		final String stringToSend = keysToSend[0].toString();
+		if ( stringToSend.length() <= 10 ) {
+			return stringToSend;
+		}
+		return stringToSend.substring( 0, 7 ) + "...";
 	}
 
 	@Override
