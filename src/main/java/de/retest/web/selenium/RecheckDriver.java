@@ -39,6 +39,11 @@ public class RecheckDriver implements WebDriver, JavascriptExecutor, FindsById, 
 	private RootElement lastExpectedState;
 	private RootElement lastActualState;
 
+	/**
+	 * @param wrapped
+	 *            We use RemoteWebDriver instead of WebDriver, because we need some of the other interfaces
+	 *            RemoteWebDriver implements as well... and there is no single common super type.
+	 */
 	public RecheckDriver( final RemoteWebDriver wrapped ) {
 		this.wrapped = wrapped;
 	}
