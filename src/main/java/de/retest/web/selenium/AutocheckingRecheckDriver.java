@@ -10,6 +10,11 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import de.retest.recheck.RecheckOptions;
 import de.retest.web.RecheckWebImpl;
 
+/**
+ * This class is a wrapper of any given Selenium driver, i.e. can be used e.g. both with ChromeDriver, GeckoDriver, or
+ * any other. It automagically creates a check _after_ any executed action (usually starting with "get"). It utilizes
+ * the given {@link AutocheckingCheckNamingStrategy} to create names for the checks.
+ */
 public class AutocheckingRecheckDriver extends RecheckDriver {
 
 	private RecheckWebImpl re;
