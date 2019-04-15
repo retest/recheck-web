@@ -39,14 +39,14 @@ public class SimpleAutocheckingDriverShowcaseIT {
 	public void index() throws Exception {
 		driver.startTest();
 
-		final Path showcasePath = Paths.get( "src/test/resources/pages/showcase/retest.html" );
+		final Path showcasePath = Paths.get( "src/test/resources/pages/page-frame.html" );
 		driver.get( showcasePath.toUri().toURL().toString() );
 
-		driver.findElement( By.id( "signupEmail" ) ).sendKeys( "me@retest.de" );
+		driver.findElement( By.id( "email" ) ).sendKeys( "me@retest.de" );
 
-		driver.findElement( By.tagName( "html" ) ).findElement( By.className( "sign-up-submit" ) ).click();
+		driver.findElement( By.tagName( "html" ) ).findElement( By.className( "inputLabel" ) ).sendKeys( "typed" );
 
-		driver.findElement( By.name( "logo" ) ).click();
+		driver.findElement( By.name( "checky" ) ).click();
 
 		driver.findElement( By.linkText( "Contact" ) ).click();
 
