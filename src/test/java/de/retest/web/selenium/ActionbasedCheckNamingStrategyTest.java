@@ -64,4 +64,9 @@ class ActionbasedCheckNamingStrategyTest {
 						.isEqualTo( "enter_[this ve...]_into_Contact" );
 	}
 
+	@Test
+	void shortenUrl_should_shorten_different_URLs() {
+		assertThat( cut.shortenUrl( "http://retest.de" ) ).isEqualTo( "retest.de" );
+		assertThat( cut.shortenUrl( "https://retest.de" ) ).isEqualTo( "retest.de" );
+	}
 }

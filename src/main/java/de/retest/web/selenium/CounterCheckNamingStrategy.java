@@ -7,12 +7,13 @@ public class CounterCheckNamingStrategy implements AutocheckingCheckNamingStrate
 	private int stepCounter = 0;
 
 	@Override
+	public String getUniqueCheckName( final String action, final WebElement target, final Object... params ) {
+		return String.format( "%02d", stepCounter++ );
+	}
+
+	@Override
 	public void nextTest() {
 		stepCounter = 0;
 	}
 
-	@Override
-	public String getUniqueCheckName( final String action, final WebElement target, final Object... params ) {
-		return String.format( "%02d", stepCounter++ );
-	}
 }

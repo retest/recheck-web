@@ -31,26 +31,26 @@ public class WebElementWrapper implements WebElement {
 
 	@Override
 	public void click() {
-		driver.check( "click", delegate );
 		delegate.click();
+		driver.check( "click", delegate );
 	}
 
 	@Override
 	public void submit() {
-		driver.check( "submit", delegate );
 		delegate.submit();
+		driver.check( "submit", delegate );
 	}
 
 	@Override
 	public void sendKeys( final CharSequence... keysToSend ) {
-		driver.check( "enter", delegate, (Object[]) keysToSend );
 		delegate.sendKeys( keysToSend );
+		driver.check( "enter", delegate, (Object[]) keysToSend );
 	}
 
 	@Override
 	public void clear() {
-		driver.check( "clear", delegate );
 		delegate.clear();
+		driver.check( "clear", delegate );
 	}
 
 	@Override

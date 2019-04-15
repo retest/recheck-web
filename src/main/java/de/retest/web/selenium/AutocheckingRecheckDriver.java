@@ -47,8 +47,6 @@ public class AutocheckingRecheckDriver extends RecheckDriver {
 	}
 
 	public void capTest() {
-		check( "final", null );
-		namingStrategy.nextTest();
 		re.capTest();
 	}
 
@@ -60,7 +58,7 @@ public class AutocheckingRecheckDriver extends RecheckDriver {
 	@Override
 	public void get( final String url ) {
 		super.get( url );
-		check( "initial", null );
+		check( "get", null );
 	}
 
 	@Override

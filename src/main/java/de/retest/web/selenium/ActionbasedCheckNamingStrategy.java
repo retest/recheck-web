@@ -14,13 +14,20 @@ public class ActionbasedCheckNamingStrategy implements AutocheckingCheckNamingSt
 		String result = action;
 		// "enter_[" + normalizeAndShorten( keysToSend ) + "]_into"
 		if ( "enter".equals( action ) ) {
-			result = "enter_[" + normalizeAndShorten( (CharSequence[]) params ) + "]_into";
+			// TODO Call FileUtils.normalize
+			result = "enter_[" + shortenTextInput( (CharSequence[]) params ) + "]_into";
 		}
-		result = result + "_" + toString( targetElement );
+		if ( "get".equals( action ) ) {
+			// TODO Call FileUtils.normalize
+			result = "get_[" + shortenUrl( params[0] ) + "]";
+		}
+		if ( targetElement != null ) {
+			result = result + "_" + toString( targetElement );
+		}
 		return makeUnique( result );
 	}
 
-	private String makeUnique( final String result ) {
+	protected String makeUnique( final String result ) {
 		checks.add( result );
 		if ( checks.count( result ) == 1 ) {
 			return result;
@@ -28,7 +35,7 @@ public class ActionbasedCheckNamingStrategy implements AutocheckingCheckNamingSt
 		return result + "_" + checks.count( result );
 	}
 
-	private String toString( final WebElement targetElement ) {
+	protected String toString( final WebElement targetElement ) {
 		String result = targetElement.toString();
 		if ( result.contains( "->" ) ) {
 			// remove driver info
@@ -41,7 +48,7 @@ public class ActionbasedCheckNamingStrategy implements AutocheckingCheckNamingSt
 		return result;
 	}
 
-	private String normalizeAndShorten( final CharSequence[] keysToSend ) {
+	protected String shortenTextInput( final CharSequence[] keysToSend ) {
 		if ( keysToSend == null || keysToSend.length == 0 || keysToSend[0] == null || keysToSend[0].length() == 0 ) {
 			// How to properly represent empty string?
 			return "";
@@ -51,6 +58,13 @@ public class ActionbasedCheckNamingStrategy implements AutocheckingCheckNamingSt
 			return stringToSend;
 		}
 		return stringToSend.substring( 0, 7 ) + "...";
+	}
+
+	protected String shortenUrl( final Object url ) {
+		if ( url == null ) {
+			return "";
+		}
+		return url.toString().replace( "http://", "" ).replace( "https://", "" );
 	}
 
 	@Override
