@@ -79,7 +79,8 @@ public class AutocheckingRecheckDriver extends RecheckDriver {
 
 	@Override
 	public List<WebElement> findElements( final By by ) {
-		return super.findElements( by ).stream().map( element -> new WebElementWrapper( element, this ) )
+		return super.findElements( by ).stream() //
+				.map( element -> new WebElementWrapper( element, this ) ) //
 				.collect( Collectors.toList() );
 	}
 
