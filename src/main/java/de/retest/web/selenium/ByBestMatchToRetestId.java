@@ -74,4 +74,8 @@ public class ByBestMatchToRetestId extends By implements Serializable {
 		}
 		return retestId.equals( ((ByBestMatchToRetestId) other).retestId );
 	}
+
+	public String getRetestId() {
+		return retestId;
+	}
 }

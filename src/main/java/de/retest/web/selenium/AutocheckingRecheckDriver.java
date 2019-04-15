@@ -84,7 +84,17 @@ public class AutocheckingRecheckDriver extends RecheckDriver {
 
 	@Override
 	public WebElement findElement( final ByBestMatchToRetestId by ) {
-		return new WebElementWrapper( super.findElement( by ), this );
+		final WebElement wrapped = super.findElement( by );
+		String result = wrapped.toString();
+		// replace " -> xpath: HTML[1]/BODY[1]/A[1]"
+		result = result.substring( 0, result.lastIndexOf( " -> xpath: " ) );
+		final String representation = result + " -> retestId: " + by.getRetestId() + "]";
+		return new WebElementWrapper( wrapped, this ) {
+			@Override
+			public String toString() {
+				return representation;
+			}
+		};
 	}
 
 	@Override

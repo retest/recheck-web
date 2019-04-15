@@ -50,6 +50,8 @@ public class SimpleAutocheckingDriverShowcaseIT {
 
 		driver.findElement( By.linkText( "Contact" ) ).click();
 
+		driver.findElement( By.retestId( "contact" ) ).click();
+
 		driver.capTest();
 	}
 
