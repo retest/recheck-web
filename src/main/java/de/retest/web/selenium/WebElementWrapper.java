@@ -29,53 +29,27 @@ public class WebElementWrapper implements WebElement {
 		return delegate.getScreenshotAs( target );
 	}
 
-	protected static String toStep( final String action, final WebElement delegate ) {
-		String result = delegate.toString();
-		if ( result.contains( "->" ) ) {
-			// remove driver info
-			result = result.substring( result.lastIndexOf( "->" ) + 2 ).trim();
-			// remove trailing ]
-			result = result.substring( 0, result.length() - 1 );
-			// remove identification criterion (e.g. id, class, ...)
-			result = result.substring( result.lastIndexOf( ':' ) + 1 ).trim();
-			return action + "_" + result;
-		}
-		return result;
-	}
-
 	@Override
 	public void click() {
-		driver.check( toStep( "click", delegate ) );
+		driver.check( "click", delegate );
 		delegate.click();
 	}
 
 	@Override
 	public void submit() {
-		driver.check( toStep( "submit", delegate ) );
+		driver.check( "submit", delegate );
 		delegate.submit();
 	}
 
 	@Override
 	public void sendKeys( final CharSequence... keysToSend ) {
-		driver.check( toStep( "enter_[" + normalizeAndShorten( keysToSend ) + "]_into", delegate ) );
+		driver.check( "enter", delegate, (Object[]) keysToSend );
 		delegate.sendKeys( keysToSend );
-	}
-
-	private String normalizeAndShorten( final CharSequence[] keysToSend ) {
-		if ( keysToSend == null || keysToSend.length == 0 || keysToSend[0] == null || keysToSend[0].length() == 0 ) {
-			// How to properly represent empty string?
-			return "";
-		}
-		final String stringToSend = keysToSend[0].toString();
-		if ( stringToSend.length() <= 10 ) {
-			return stringToSend;
-		}
-		return stringToSend.substring( 0, 7 ) + "...";
 	}
 
 	@Override
 	public void clear() {
-		driver.check( toStep( "clear", delegate ) );
+		driver.check( "clear", delegate );
 		delegate.clear();
 	}
 

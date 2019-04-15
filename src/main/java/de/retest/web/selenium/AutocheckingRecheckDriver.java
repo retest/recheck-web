@@ -12,13 +12,15 @@ import de.retest.web.RecheckWebImpl;
 public class AutocheckingRecheckDriver extends RecheckDriver {
 
 	private RecheckWebImpl re;
+	private final AutocheckingCheckNamingStrategy namingStrategy;
 
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped ) {
 		super( wrapped );
+		namingStrategy = new CounterCheckNamingStrategy();
 	}
 
 	public void startTest() {
-		stepCounter = 0;
+		namingStrategy.nextTest();
 		if ( re == null ) {
 			re = new RecheckWebImpl();
 		}
@@ -33,26 +35,26 @@ public class AutocheckingRecheckDriver extends RecheckDriver {
 	}
 
 	public void capTest() {
-		check( "final" );
-		stepCounter = 0;
+		check( "final", null );
+		namingStrategy.nextTest();
 		re.capTest();
 	}
 
 	public void cap() {
-		stepCounter = 0;
+		namingStrategy.nextTest();
 		re.cap();
 	}
 
 	@Override
 	public void get( final String url ) {
 		super.get( url );
-		check( "initial" );
+		check( "initial", null );
 	}
 
 	@Override
 	public void close() {
 		// Is this sensible? What about tests using separate sessions?
-		stepCounter = 0;
+		namingStrategy.nextTest();
 		re.cap();
 		super.close();
 	}
@@ -60,7 +62,7 @@ public class AutocheckingRecheckDriver extends RecheckDriver {
 	@Override
 	public void quit() {
 		// Is this sensible? What about tests using separate sessions?
-		stepCounter = 0;
+		namingStrategy.nextTest();
 		re.cap();
 		super.quit();
 	}
@@ -81,13 +83,7 @@ public class AutocheckingRecheckDriver extends RecheckDriver {
 				.collect( Collectors.toList() );
 	}
 
-	public void check( final String currentStep ) {
-		re.check( this, makeUnique( currentStep ) );
-	}
-
-	private int stepCounter = 0;
-
-	String makeUnique( final String id ) {
-		return String.format( "%02d_%s", stepCounter++, id );
+	public void check( final String action, final WebElement target, final Object... params ) {
+		re.check( this, namingStrategy.getUniqueCheckName( action, target, params ) );
 	}
 }
