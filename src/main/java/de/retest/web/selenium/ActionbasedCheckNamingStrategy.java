@@ -1,5 +1,7 @@
 package de.retest.web.selenium;
 
+import java.util.Arrays;
+
 import org.openqa.selenium.WebElement;
 
 import com.google.common.collect.HashMultiset;
@@ -60,7 +62,7 @@ public class ActionbasedCheckNamingStrategy implements AutocheckingCheckNamingSt
 			// How to properly represent empty string?
 			return "";
 		}
-		final String stringToSend = keysToSend[0].toString();
+		final String stringToSend = Arrays.asList( keysToSend ).toString();
 		if ( stringToSend.length() <= 10 ) {
 			return stringToSend;
 		}
