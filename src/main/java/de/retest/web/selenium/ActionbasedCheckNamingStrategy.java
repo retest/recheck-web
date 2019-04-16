@@ -16,6 +16,8 @@ import com.google.common.collect.Multiset;
  */
 public class ActionbasedCheckNamingStrategy implements AutocheckingCheckNamingStrategy {
 
+	private static final int MAX_TEXT_INPUT_LENGTH = 10;
+
 	private final Multiset<String> checks = HashMultiset.create();
 
 	@Override
@@ -63,10 +65,11 @@ public class ActionbasedCheckNamingStrategy implements AutocheckingCheckNamingSt
 			return "";
 		}
 		final String stringToSend = Arrays.toString( keysToSend );
-		if ( stringToSend.length() <= 10 ) {
+		if ( stringToSend.length() <= MAX_TEXT_INPUT_LENGTH ) {
 			return stringToSend;
 		}
-		return stringToSend.substring( 0, 6 ) + "...]";
+		final String suffix = "...]";
+		return stringToSend.substring( 0, MAX_TEXT_INPUT_LENGTH - suffix.length() ) + suffix;
 	}
 
 	protected String shortenUrl( final Object url ) {
