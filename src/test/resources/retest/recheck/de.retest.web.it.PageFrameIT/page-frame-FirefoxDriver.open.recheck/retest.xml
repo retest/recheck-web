@@ -759,7 +759,7 @@
 						<attributes>
 							<entry>
 								<key>action</key>
-								<value xsi:type="xsd:string">resultPage.html</value>
+								<value xsi:type="xsd:string">#</value>
 							</entry>
 							<entry>
 								<key>method</key>
@@ -9035,6 +9035,40 @@
 							<entry>
 								<key>type</key>
 								<value xsi:type="xsd:string">text</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="contact">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>211</x>
+								<y>875</y>
+								<height>19</height>
+								<width>63</width>
+							</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>203</x>
+								<y>867</y>
+								<height>-873</height>
+								<width>-1277</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/A[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">Contact</attribute>
+							<attribute key="type" xsi:type="stringAttribute">A</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>href</key>
+								<value xsi:type="xsd:string">#</value>
+							</entry>
+							<entry>
+								<key>shown</key>
+								<value xsi:type="xsd:string">true</value>
 							</entry>
 						</attributes>
 					</attributes>
