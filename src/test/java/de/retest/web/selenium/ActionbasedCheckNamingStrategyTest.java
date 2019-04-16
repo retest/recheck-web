@@ -61,7 +61,7 @@ class ActionbasedCheckNamingStrategyTest {
 
 		assertThat( cut.getUniqueCheckName( "enter", mock,
 				(Object[]) new CharSequence[] { "this very long text was sent" } ) )
-						.isEqualTo( "enter_[this ve...]_into_Contact" );
+						.isEqualTo( "enter_[this ...]_into_Contact" );
 	}
 
 	@Test

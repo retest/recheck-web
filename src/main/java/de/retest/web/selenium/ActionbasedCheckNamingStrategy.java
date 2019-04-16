@@ -24,7 +24,7 @@ public class ActionbasedCheckNamingStrategy implements AutocheckingCheckNamingSt
 		// "enter_[" + normalizeAndShorten( keysToSend ) + "]_into"
 		if ( "enter".equals( action ) ) {
 			// TODO Call FileUtils.normalize
-			result = "enter_[" + shortenTextInput( (CharSequence[]) params ) + "]_into";
+			result = "enter_" + shortenTextInput( (CharSequence[]) params ) + "_into";
 		}
 		if ( "get".equals( action ) ) {
 			// TODO Call FileUtils.normalize
@@ -58,15 +58,15 @@ public class ActionbasedCheckNamingStrategy implements AutocheckingCheckNamingSt
 	}
 
 	protected String shortenTextInput( final CharSequence[] keysToSend ) {
-		if ( keysToSend == null || keysToSend.length == 0 || keysToSend[0] == null || keysToSend[0].length() == 0 ) {
+		if ( keysToSend == null || keysToSend.length == 0 ) {
 			// How to properly represent empty string?
 			return "";
 		}
-		final String stringToSend = Arrays.asList( keysToSend ).toString();
+		final String stringToSend = Arrays.toString( keysToSend );
 		if ( stringToSend.length() <= 10 ) {
 			return stringToSend;
 		}
-		return stringToSend.substring( 0, 7 ) + "...";
+		return stringToSend.substring( 0, 6 ) + "...]";
 	}
 
 	protected String shortenUrl( final Object url ) {
