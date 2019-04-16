@@ -9,7 +9,7 @@ import com.google.common.collect.Multiset;
  * This class aims to create semantic names for checks based on the previously executed action that led to that state.
  * This looks like "enter_[my text]_into_user" or "click_contact". If a name occurs multiple times, the second and
  * following occasions are labeled with "_2", "_3" etc. The drawback of this naming strategy is, that if e.g. the target
- * changes, the state will not be recognized anymore. So it is recommended to use this naming strategy _only_ in
+ * changes, the state will not be recognized anymore. So it is recommended to use this naming strategy <em>only</em> in
  * combination with the <code>retestId</code>.
  */
 public class ActionbasedCheckNamingStrategy implements AutocheckingCheckNamingStrategy {

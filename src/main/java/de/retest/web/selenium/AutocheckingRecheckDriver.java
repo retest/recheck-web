@@ -32,7 +32,7 @@ public class AutocheckingRecheckDriver extends RecheckDriver {
 			final AutocheckingCheckNamingStrategy namingStrategy ) {
 		super( wrapped );
 		this.options = options;
-		// TODO Incorporate AutocheckingCheckNamingStrategy into RecheckWebBuilder
+		// TODO Incorporate AutocheckingCheckNamingStrategy into RecheckWebOptions
 		this.namingStrategy = namingStrategy; // options.getNamingStrategy();
 	}
 
