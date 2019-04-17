@@ -107,11 +107,11 @@ public class MyRecheckWebTest {
 Running such a test for the first time will result in a failure with an output like so:
 
 ```
-java.lang.AssertionError: Found 1 differences in 1 checks of which 1 are unique: [No recheck file found.]
+java.lang.AssertionError: Found 1 differences in 1 checks of which 1 are unique: [No Golden Master found.]
 
 Details: 
 test simple-showcase has 1 differences (1 unique): 
-No recheck file found. First time test was run? Created recheck file now, don't forget to commit...
+No Golden Master found. First time test was run? Created Golden Master now, don't forget to commit...
 
 	at de.retest.recheck.RecheckImpl.capTest(SourceFile:135)
 	at de.retest.web.it.SimpleRecheckShowcaseIT.index(SimpleRecheckShowcaseIT.java:61)

@@ -22,6 +22,7 @@ import de.retest.recheck.ui.descriptors.RootElement;
 public class TestHealer {
 
 	private static final Logger logger = LoggerFactory.getLogger( TestHealer.class );
+	private static final String ELEMENT_NOT_FOUND_MESSAGE = "It appears that even the Golden Master has no element";
 
 	private final RecheckDriver wrapped;
 	private final RootElement lastExpectedState;
@@ -66,7 +67,7 @@ public class TestHealer {
 				de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, "id", id );
 
 		if ( actualElement == null ) {
-			logger.warn( "It appears that even the old state didn't have an element with id '{}'.", id );
+			logger.warn( "{} with id '{}'.", ELEMENT_NOT_FOUND_MESSAGE, id );
 			return null;
 		} else {
 			writeWarnLogForChangedIdentifier( "HTML id attribute", id,
@@ -81,7 +82,7 @@ public class TestHealer {
 				lastActualState, "class", value -> ((String) value).contains( className ) );
 
 		if ( actualElement == null ) {
-			logger.warn( "It appears that even the old state didn't have an element with CSS class '{}'.", className );
+			logger.warn( "{} with CSS class '{}'.", ELEMENT_NOT_FOUND_MESSAGE, className );
 			return null;
 		} else {
 			writeWarnLogForChangedIdentifier( "HTML class attribute", className,
@@ -96,7 +97,7 @@ public class TestHealer {
 				de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, "name", name );
 
 		if ( actualElement == null ) {
-			logger.warn( "It appears that even the old state didn't have an element with name '{}'.", name );
+			logger.warn( "{} with name '{}'.", ELEMENT_NOT_FOUND_MESSAGE, name );
 			return null;
 		} else {
 			writeWarnLogForChangedIdentifier( "HTML name attribute", name, actualElement.getAttributes().get( "name" ),
@@ -114,7 +115,7 @@ public class TestHealer {
 								&& "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() ) );
 
 		if ( actualElement == null ) {
-			logger.warn( "It appears that even the old state didn't have an element with link text '{}'.", linkText );
+			logger.warn( "{} with link text '{}'.", ELEMENT_NOT_FOUND_MESSAGE, linkText );
 			return null;
 		} else {
 			writeWarnLogForChangedIdentifier( "link text", linkText,
@@ -138,10 +139,10 @@ public class TestHealer {
 		logger.warn( "*************** recheck warning ***************" );
 		logger.warn( "The {} used for element identification changed from '{}' to '{}'.", elementIdentifier, oldValue,
 				newValue );
-		logger.warn( "retest identified the element based on the persisted old state." );
+		logger.warn( "retest identified the element based on the persisted Golden Master." );
 		// TODO Get filename from state
 		// TODO Guess test name from state name
-		logger.warn( "If you apply these changes to the state {}, your test {} will break.", "", "" );
+		logger.warn( "If you apply these changes to the Golden Master {}, your test {} will break.", "", "" );
 		// TODO Eventually, we want something like Test.java:123 instead of "your test"
 		if ( newValue != null ) {
 			logger.warn( "Use `By.{}(\"{}\")` or `By.retestId(\"{}\")` to update your test.", byMethodName, newValue,
