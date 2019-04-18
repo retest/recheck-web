@@ -15,7 +15,7 @@ import de.retest.web.RecheckWebImpl;
  * any other. It automagically creates a check _after_ any executed action (usually starting with "get"). It utilizes
  * the given {@link AutocheckingCheckNamingStrategy} to create names for the checks.
  */
-public class AutocheckingRecheckDriver extends RecheckDriver {
+public class AutocheckingRecheckDriver extends UnbreakableDriver {
 
 	private RecheckWebImpl re;
 	private final RecheckOptions options;

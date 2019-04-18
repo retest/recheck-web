@@ -31,7 +31,7 @@ import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.web.RecheckWebImpl;
 
-public class RecheckDriver implements WebDriver, JavascriptExecutor, FindsById, FindsByClassName, FindsByLinkText,
+public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsById, FindsByClassName, FindsByLinkText,
 		FindsByName, FindsByCssSelector, FindsByTagName, FindsByXPath, HasInputDevices, HasCapabilities, Interactive,
 		TakesScreenshot {
 
@@ -44,7 +44,7 @@ public class RecheckDriver implements WebDriver, JavascriptExecutor, FindsById, 
 	 *            We use RemoteWebDriver instead of WebDriver, because we need some of the other interfaces
 	 *            RemoteWebDriver implements as well... and there is no single common super type.
 	 */
-	public RecheckDriver( final RemoteWebDriver wrapped ) {
+	public UnbreakableDriver( final RemoteWebDriver wrapped ) {
 		this.wrapped = wrapped;
 	}
 

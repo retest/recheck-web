@@ -6,11 +6,11 @@ import de.retest.recheck.RecheckAdapter;
 import de.retest.recheck.RecheckImpl;
 import de.retest.recheck.RecheckOptions;
 import de.retest.recheck.ui.descriptors.SutState;
-import de.retest.web.selenium.RecheckDriver;
+import de.retest.web.selenium.UnbreakableDriver;
 
 public class RecheckWebImpl extends RecheckImpl {
 
-	private RecheckDriver driver;
+	private UnbreakableDriver driver;
 
 	public RecheckWebImpl() {
 		super();
@@ -22,13 +22,13 @@ public class RecheckWebImpl extends RecheckImpl {
 
 	@Override
 	public void check( final Object driver, final RecheckAdapter seleniumAdapter, final String currentStep ) {
-		this.driver = (RecheckDriver) driver;
+		this.driver = (UnbreakableDriver) driver;
 		super.check( driver, seleniumAdapter, currentStep );
 	}
 
 	@Override
 	public void check( final Object driver, final String currentStep ) {
-		this.driver = (RecheckDriver) driver;
+		this.driver = (UnbreakableDriver) driver;
 		super.check( driver, currentStep );
 	}
 

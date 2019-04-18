@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import de.retest.recheck.Recheck;
 import de.retest.web.RecheckWebImpl;
 import de.retest.web.selenium.By;
-import de.retest.web.selenium.RecheckDriver;
+import de.retest.web.selenium.UnbreakableDriver;
 
 /*
  * Simple recheck-web showcase for a Chrome-based integration test. See other *IT classes for more examples.
@@ -38,7 +38,7 @@ public class SimpleUnbreakableSeleniumShowcaseIT {
 				"--window-size=1200,800" );
 
 		// Use the RecheckDriver as a wrapper for your usual driver
-		driver = new RecheckDriver( new ChromeDriver( opts ) );
+		driver = new UnbreakableDriver( new ChromeDriver( opts ) );
 
 		// Use the unbreakable recheck implementation.
 		re = new RecheckWebImpl();
