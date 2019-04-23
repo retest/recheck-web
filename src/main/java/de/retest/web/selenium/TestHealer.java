@@ -125,6 +125,23 @@ public class TestHealer {
 	}
 
 	private WebElement findElementByCssSelector( final ByCssSelector by ) {
+		final String selector = retrieveUsableCssSelector( by );
+
+		final Element actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState,
+				lastActualState, "class", value -> ((String) value).contains( selector ) );
+
+		if ( actualElement == null ) {
+			logger.warn( "{} with CSS selector '{}'.", ELEMENT_NOT_FOUND_MESSAGE, selector );
+			return null;
+		} else {
+			writeWarnLogForChangedIdentifier( "HTML class attribute", selector,
+					actualElement.getIdentifyingAttributes().get( "class" ), "cssSelector",
+					actualElement.getRetestId() );
+			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
+		}
+	}
+
+	private String retrieveUsableCssSelector( final ByCssSelector by ) {
 		final String rawSelector = ByWhisperer.retrieveCssSelector( by );
 		if ( rawSelector.startsWith( "#" ) ) {
 			throw new IllegalArgumentException(
@@ -139,19 +156,7 @@ public class TestHealer {
 		if ( selector.matches( ".*[<>:+\\s\"\\[\\*].*" ) ) {
 			throw new IllegalArgumentException( "For now, only simple class selector is implemented." );
 		}
-
-		final Element actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState,
-				lastActualState, "class", value -> ((String) value).contains( selector ) );
-
-		if ( actualElement == null ) {
-			logger.warn( "{} with CSS selector '{}'.", ELEMENT_NOT_FOUND_MESSAGE, selector );
-			return null;
-		} else {
-			writeWarnLogForChangedIdentifier( "HTML class attribute", selector,
-					actualElement.getIdentifyingAttributes().get( "class" ), "cssSelector",
-					actualElement.getRetestId() );
-			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
-		}
+		return selector;
 	}
 
 	private WebElement findElementByXPath( final ByXPath byXPath ) {
