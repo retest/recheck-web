@@ -49,6 +49,10 @@ class TestHealerTest {
 	@Test
 	public void not_yet_implemented_ByCssSelector_should_throw_exception() {
 		final RecheckDriver wrapped = mock( RecheckDriver.class );
+		final RootElement state = mock( RootElement.class );
+		when( wrapped.getLastExpectedState() ).thenReturn( state );
+		when( wrapped.getLastActualState() ).thenReturn( state );
+
 		try {
 			findElement( By.cssSelector( ".open > .dropdown-toggle.btn-primary" ), wrapped );
 			fail( "Excpected exception" );
@@ -105,13 +109,17 @@ class TestHealerTest {
 	@Test
 	public void not_yet_implemented_ByXPathExpression_should_throw_exception() {
 		final RecheckDriver wrapped = mock( RecheckDriver.class );
+		final RootElement state = mock( RootElement.class );
+		when( wrapped.getLastExpectedState() ).thenReturn( state );
+		when( wrapped.getLastActualState() ).thenReturn( state );
+
 		try {
 			findElement( By.xpath( "//div[@id='mw-content-text']/div[2]" ), wrapped );
 			fail( "Excpected exception" );
 		} catch ( final IllegalArgumentException e ) {}
 
 		try {
-			findElement( By.xpath( "xpath=//button[contains(.,'Search')]" ), wrapped );
+			findElement( By.xpath( "//button[contains(.,'Search')]" ), wrapped );
 			fail( "Excpected exception" );
 		} catch ( final IllegalArgumentException e ) {}
 	}

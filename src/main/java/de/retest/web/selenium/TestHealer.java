@@ -162,6 +162,10 @@ public class TestHealer {
 
 	private WebElement findElementByXPath( final ByXPath byXPath ) {
 		final String xpathExpression = ByWhisperer.retrieveXPath( byXPath );
+		if ( xpathExpression.matches( ".*[<>:+\\s\"|'@\\*].*" ) ) {
+			throw new IllegalArgumentException( "For now, only simple class selector is implemented." );
+		}
+
 		final Element actualElement = findMatchingElement( xpathExpression );
 
 		if ( actualElement == null ) {
