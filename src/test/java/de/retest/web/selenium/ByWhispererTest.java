@@ -12,6 +12,7 @@ import org.openqa.selenium.By.ByCssSelector;
 import org.openqa.selenium.By.ById;
 import org.openqa.selenium.By.ByLinkText;
 import org.openqa.selenium.By.ByName;
+import org.openqa.selenium.By.ByXPath;
 
 class ByWhispererTest {
 
@@ -44,5 +45,11 @@ class ByWhispererTest {
 		final String selector = "selector";
 		assertThat( ByWhisperer.retrieveCssSelector( (ByCssSelector) By.cssSelector( selector ) ) )
 				.isEqualTo( selector );
+	}
+
+	@Test
+	void retrieveXPath_should_return_xpath() {
+		final String xpath = "HTML[1]/DIV[1]";
+		assertThat( ByWhisperer.retrieveXPath( (ByXPath) By.xpath( xpath ) ) ).isEqualTo( xpath );
 	}
 }

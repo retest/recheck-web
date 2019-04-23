@@ -14,6 +14,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import de.retest.recheck.ui.descriptors.Attributes;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
 import de.retest.recheck.ui.descriptors.MutableAttributes;
@@ -80,4 +81,38 @@ class TestHealerTest {
 		} catch ( final IllegalArgumentException e ) {}
 	}
 
+	@Test
+	public void ByXPathExpression_machtes_elements_with_given_xpath() {
+		final RecheckDriver wrapped = mock( RecheckDriver.class );
+		final WebElement resultMarker = mock( WebElement.class );
+
+		final RootElement state = mock( RootElement.class );
+		when( wrapped.getLastExpectedState() ).thenReturn( state );
+		when( wrapped.getLastActualState() ).thenReturn( state );
+
+		final String xpath = "HTML[1]/DIV[3]/DIV[3]/DIV[3]/DIV[2]";
+		final IdentifyingAttributes identifying = IdentifyingAttributes.create( fromString( xpath ), "DIV" );
+		final Element element = create( "id", state, identifying, new Attributes() );
+		when( state.getContainedElements() ).thenReturn( Collections.singletonList( element ) );
+		when( wrapped.findElement( By.xpath( xpath ) ) ).thenReturn( resultMarker );
+
+		assertThat( findElement( By.xpath( "//div[3]/div[3]/div[3]/div[2]" ), wrapped ) ).isEqualTo( resultMarker );
+		assertThat( findElement( By.xpath( "/html[1]/div[3]/div[3]/div[3]/div[2]" ), wrapped ) )
+				.isEqualTo( resultMarker );
+		assertThat( findElement( By.xpath( "//div[1]" ), wrapped ) ).isEqualTo( null );
+	}
+
+	@Test
+	public void not_yet_implemented_ByXPathExpression_should_throw_exception() {
+		final RecheckDriver wrapped = mock( RecheckDriver.class );
+		try {
+			findElement( By.xpath( "//div[@id='mw-content-text']/div[2]" ), wrapped );
+			fail( "Excpected exception" );
+		} catch ( final IllegalArgumentException e ) {}
+
+		try {
+			findElement( By.xpath( "xpath=//button[contains(.,'Search')]" ), wrapped );
+			fail( "Excpected exception" );
+		} catch ( final IllegalArgumentException e ) {}
+	}
 }

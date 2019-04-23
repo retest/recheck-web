@@ -16,6 +16,7 @@ import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import de.retest.recheck.ui.Path;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
 
@@ -160,8 +161,28 @@ public class TestHealer {
 	}
 
 	private WebElement findElementByXPath( final ByXPath byXPath ) {
-		// TODO Implement This happens at the browser (which understands xpath)
-		throw new UnsupportedOperationException( "Not yet implemented" );
+		final String xpathExpression = ByWhisperer.retrieveXPath( byXPath );
+		final Element actualElement = findMatchingElement( xpathExpression );
+
+		if ( actualElement == null ) {
+			logger.warn( "{} with XPath '{}'.", ELEMENT_NOT_FOUND_MESSAGE, xpathExpression );
+			return null;
+		} else {
+			writeWarnLogForChangedIdentifier( "xpath", xpathExpression,
+					actualElement.getIdentifyingAttributes().get( "path" ), "xpath", actualElement.getRetestId() );
+			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
+		}
+	}
+
+	private Element findMatchingElement( final String xpathExpression ) {
+		if ( xpathExpression.startsWith( "//" ) ) {
+			return de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, "path",
+					value -> ((Path) value).toString().toLowerCase()
+							.contains( xpathExpression.substring( 1 ).toLowerCase() ) );
+		}
+		return de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, "path",
+				value -> ((Path) value).toString().toLowerCase()
+						.startsWith( xpathExpression.substring( 1 ).toLowerCase() ) );
 	}
 
 	private void writeWarnLogForChangedIdentifier( final String elementIdentifier, final Object oldValue,
