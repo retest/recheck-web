@@ -16,9 +16,9 @@
 						<height>1056</height>
 						<width>1185</width>
 					</attribute>
-					<attribute key="path" xsi:type="pathAttribute">HTML[1]</attribute>
+					<attribute key="path" xsi:type="pathAttribute">html[1]</attribute>
 					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-					<attribute key="type" xsi:type="stringAttribute">HTML</attribute>
+					<attribute key="type" xsi:type="stringAttribute">html</attribute>
 				</attributes>
 			</identifyingAttributes>
 			<attributes>
@@ -45,9 +45,9 @@
 							<height>-16</height>
 							<width>-16</width>
 						</attribute>
-						<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-						<attribute key="type" xsi:type="stringAttribute">BODY</attribute>
+						<attribute key="type" xsi:type="stringAttribute">body</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes>
@@ -78,10 +78,10 @@
 								<height>-1023</height>
 								<width>-1066</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/A[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/a[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute">a link to an icon</attribute>
-							<attribute key="type" xsi:type="stringAttribute">A</attribute>
+							<attribute key="type" xsi:type="stringAttribute">a</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -117,9 +117,9 @@
 								<height>-1022</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[10]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[10]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
-							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							<attribute key="type" xsi:type="stringAttribute">div</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -150,10 +150,10 @@
 									<height>0</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[10]/DIV[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[10]/div[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">Nested</attribute>
-								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+								<attribute key="type" xsi:type="stringAttribute">div</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -186,9 +186,9 @@
 								<height>-970</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							<attribute key="type" xsi:type="stringAttribute">div</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -218,9 +218,9 @@
 									<height>-70</height>
 									<width>-1169</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]/BR[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/br[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+								<attribute key="type" xsi:type="stringAttribute">br</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -247,10 +247,10 @@
 									<height>-52</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]/DIV[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/div[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">and block level elements</attribute>
-								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+								<attribute key="type" xsi:type="stringAttribute">div</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -277,10 +277,10 @@
 									<height>-52</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]/P[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/p[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">A div containing</attribute>
-								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+								<attribute key="type" xsi:type="stringAttribute">p</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -307,7 +307,7 @@
 									<height>-970</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]/textnode[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/textnode[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">More than one line of text</attribute>
 								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
@@ -339,9 +339,9 @@
 								<height>-912</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							<attribute key="type" xsi:type="stringAttribute">div</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -372,7 +372,7 @@
 									<height>-68</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[2]/PRE[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[2]/p[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">   This section has a preformatted
     text block    
@@ -409,10 +409,10 @@
 									<height>-110</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[2]/P[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">before pre</attribute>
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[2]/p[2]</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -439,10 +439,10 @@
 									<height>-110</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[2]/P[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 								<attribute key="text" xsi:type="textAttribute">after pre</attribute>
 								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[2]/pre[1]</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -471,9 +471,9 @@
 								<height>-988</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[3]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							<attribute key="type" xsi:type="stringAttribute">div</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -503,10 +503,10 @@
 									<height>-34</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[3]/P[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[3]/p[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">Some text</attribute>
-								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+								<attribute key="type" xsi:type="stringAttribute">p</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -533,10 +533,10 @@
 									<height>-34</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[3]/P[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[3]/p[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 								<attribute key="text" xsi:type="textAttribute">Some more text</attribute>
-								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+								<attribute key="type" xsi:type="stringAttribute">p</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -565,10 +565,10 @@
 								<height>-886</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 							<attribute key="text" xsi:type="textAttribute">Cheese</attribute>
-							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							<attribute key="type" xsi:type="stringAttribute">div</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -598,9 +598,9 @@
 									<height>-68</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]/DIV[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[4]/div[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+								<attribute key="type" xsi:type="stringAttribute">div</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -626,9 +626,9 @@
 										<height>-34</height>
 										<width>0</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[4]/div[1]/div[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-									<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+									<attribute key="type" xsi:type="stringAttribute">div</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -654,10 +654,10 @@
 											<height>-34</height>
 											<width>0</width>
 										</attribute>
-										<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]/P[1]</attribute>
+										<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[4]/div[1]/div[1]/p[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 										<attribute key="text" xsi:type="textAttribute">Some more text</attribute>
-										<attribute key="type" xsi:type="stringAttribute">P</attribute>
+										<attribute key="type" xsi:type="stringAttribute">p</attribute>
 									</attributes>
 								</identifyingAttributes>
 								<attributes>
@@ -684,10 +684,10 @@
 											<height>-34</height>
 											<width>0</width>
 										</attribute>
-										<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[1]/P[2]</attribute>
+										<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[4]/div[1]/div[1]/p[2]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 										<attribute key="text" xsi:type="textAttribute">and also</attribute>
-										<attribute key="type" xsi:type="stringAttribute">P</attribute>
+										<attribute key="type" xsi:type="stringAttribute">p</attribute>
 									</attributes>
 								</identifyingAttributes>
 								<attributes>
@@ -715,10 +715,10 @@
 										<height>-68</height>
 										<width>0</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]/DIV[1]/P[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[4]/div[1]/p[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">Some text</attribute>
-									<attribute key="type" xsi:type="stringAttribute">P</attribute>
+									<attribute key="type" xsi:type="stringAttribute">p</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -746,7 +746,7 @@
 									<height>-886</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]/textnode[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[4]/textnode[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">Cheese</attribute>
 								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
@@ -776,7 +776,7 @@
 									<height>-886</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[4]/textnode[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[4]/textnode[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 								<attribute key="text" xsi:type="textAttribute">Brie</attribute>
 								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
@@ -808,9 +808,9 @@
 								<height>-1022</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[5]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
-							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							<attribute key="type" xsi:type="stringAttribute">div</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -840,10 +840,10 @@
 									<height>0</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[5]/DIV[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[5]/div[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">Hello, world</attribute>
-								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+								<attribute key="type" xsi:type="stringAttribute">div</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -870,9 +870,9 @@
 									<height>-18</height>
 									<width>-1169</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[5]/SPAN[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[5]/span[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+								<attribute key="type" xsi:type="stringAttribute">span</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -899,9 +899,9 @@
 									<height>-18</height>
 									<width>-1169</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[5]/SPAN[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[5]/span[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+								<attribute key="type" xsi:type="stringAttribute">span</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -930,9 +930,9 @@
 								<height>-1022</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[6]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
-							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							<attribute key="type" xsi:type="stringAttribute">div</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -962,7 +962,7 @@
 									<height>-1022</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[6]/textnode[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[6]/textnode[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">with document.write and with document.write again</attribute>
 								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
@@ -994,9 +994,9 @@
 								<height>-1022</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
-							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							<attribute key="type" xsi:type="stringAttribute">div</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -1026,10 +1026,10 @@
 									<height>-1</height>
 									<width>-1021</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[7]/a[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">link with leading space</attribute>
-								<attribute key="type" xsi:type="stringAttribute">A</attribute>
+								<attribute key="type" xsi:type="stringAttribute">a</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1057,10 +1057,10 @@
 									<height>-1</height>
 									<width>-1018</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[7]/a[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 								<attribute key="text" xsi:type="textAttribute">link with trailing space</attribute>
-								<attribute key="type" xsi:type="stringAttribute">A</attribute>
+								<attribute key="type" xsi:type="stringAttribute">a</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1091,9 +1091,9 @@
 									<height>-1</height>
 									<width>-999</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[3]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[7]/a[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-								<attribute key="type" xsi:type="stringAttribute">A</attribute>
+								<attribute key="type" xsi:type="stringAttribute">a</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1119,10 +1119,10 @@
 										<height>0</height>
 										<width>0</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[3]/B[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[7]/a[3]/b[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">link with formatting tags</attribute>
-									<attribute key="type" xsi:type="stringAttribute">B</attribute>
+									<attribute key="type" xsi:type="stringAttribute">b</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -1151,10 +1151,10 @@
 									<height>-1</height>
 									<width>-1003</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[4]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[7]/a[4]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 								<attribute key="text" xsi:type="textAttribute">link with &quot; (double quote)</attribute>
-								<attribute key="type" xsi:type="stringAttribute">A</attribute>
+								<attribute key="type" xsi:type="stringAttribute">a</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1186,10 +1186,10 @@
 									<height>-1</height>
 									<width>-1012</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[5]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[7]/a[5]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 								<attribute key="text" xsi:type="textAttribute">link with ' (single quote)</attribute>
-								<attribute key="type" xsi:type="stringAttribute">A</attribute>
+								<attribute key="type" xsi:type="stringAttribute">a</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1221,10 +1221,10 @@
 									<height>-1</height>
 									<width>-1026</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[7]/A[6]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[7]/a[6]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 								<attribute key="text" xsi:type="textAttribute">link with \ (backslash)</attribute>
-								<attribute key="type" xsi:type="stringAttribute">A</attribute>
+								<attribute key="type" xsi:type="stringAttribute">a</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1256,9 +1256,9 @@
 								<height>-1004</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[8]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[8]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
-							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							<attribute key="type" xsi:type="stringAttribute">div</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -1293,10 +1293,10 @@
 									<height>-1</height>
 									<width>-96</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[8]/A[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[8]/a[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">this link should break</attribute>
-								<attribute key="type" xsi:type="stringAttribute">A</attribute>
+								<attribute key="type" xsi:type="stringAttribute">a</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1330,9 +1330,9 @@
 										<height>-35</height>
 										<width>-1073</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[8]/A[1]/BR[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[8]/a[1]/br[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-									<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+									<attribute key="type" xsi:type="stringAttribute">br</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -1359,7 +1359,7 @@
 										<height>-1</height>
 										<width>-96</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[8]/A[1]/textnode[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[8]/a[1]/textnode[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">this link should break</attribute>
 									<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
@@ -1389,7 +1389,7 @@
 										<height>-1</height>
 										<width>-96</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[8]/A[1]/textnode[2]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[8]/a[1]/textnode[2]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 									<attribute key="text" xsi:type="textAttribute">on multiple lines</attribute>
 									<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
@@ -1422,10 +1422,10 @@
 								<height>-1022</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[9]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[9]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
 							<attribute key="text" xsi:type="textAttribute">Top level</attribute>
-							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							<attribute key="type" xsi:type="stringAttribute">div</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -1456,9 +1456,9 @@
 								<height>-1002</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
+							<attribute key="type" xsi:type="stringAttribute">form</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -1488,9 +1488,9 @@
 									<height>0</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/P[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/p[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+								<attribute key="type" xsi:type="stringAttribute">p</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1517,9 +1517,9 @@
 										<height>-25</height>
 										<width>-1156</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/P[1]/INPUT[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/p[1]/input[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-									<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+									<attribute key="type" xsi:type="stringAttribute">input</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -1531,10 +1531,6 @@
 									<entry>
 										<key>font-size</key>
 										<value xsi:type="xsd:string">13.3333px</value>
-									</entry>
-									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">checkbox1</value>
 									</entry>
 									<entry>
 										<key>margin-left</key>
@@ -1579,10 +1575,10 @@
 										<height>-3</height>
 										<width>-1124</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/P[1]/LABEL[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/p[1]/label[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">foo</attribute>
-									<attribute key="type" xsi:type="stringAttribute">LABEL</attribute>
+									<attribute key="type" xsi:type="stringAttribute">label</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -1592,16 +1588,12 @@
 										<value xsi:type="xsd:string">checkbox1</value>
 									</entry>
 									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">label1</value>
-									</entry>
-									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
 									</entry>
 								</attributes>
 							</attributes>
-							<containedElements retestId="br-4dd9f">
+							<containedElements retestId="br-15970">
 								<identifyingAttributes>
 									<attributes>
 										<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1616,9 +1608,9 @@
 											<height>-35</height>
 											<width>-45</width>
 										</attribute>
-										<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/P[1]/LABEL[1]/BR[1]</attribute>
+										<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/p[1]/label[1]/br[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-										<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+										<attribute key="type" xsi:type="stringAttribute">br</attribute>
 									</attributes>
 								</identifyingAttributes>
 								<attributes>
@@ -1630,7 +1622,7 @@
 									</attributes>
 								</attributes>
 							</containedElements>
-							<containedElements retestId="foo-bc58f">
+							<containedElements retestId="foo-587f4">
 								<identifyingAttributes>
 									<attributes>
 										<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1645,7 +1637,7 @@
 											<height>-3</height>
 											<width>-1124</width>
 										</attribute>
-										<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/P[1]/LABEL[1]/textnode[1]</attribute>
+										<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/p[1]/label[1]/textnode[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 										<attribute key="text" xsi:type="textAttribute">foo</attribute>
 										<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
@@ -1675,7 +1667,7 @@
 											<height>-3</height>
 											<width>-1124</width>
 										</attribute>
-										<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/P[1]/LABEL[1]/textnode[2]</attribute>
+										<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/p[1]/label[1]/textnode[2]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 										<attribute key="text" xsi:type="textAttribute">bar</attribute>
 										<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
@@ -1708,10 +1700,10 @@
 								<height>-1003</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/H1[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/h1[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute">Heading</attribute>
-							<attribute key="type" xsi:type="stringAttribute">H1</attribute>
+							<attribute key="type" xsi:type="stringAttribute">h1</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -1739,17 +1731,13 @@
 								<height>-1040</height>
 								<width>-1169</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/IMG[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/img[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="type" xsi:type="stringAttribute">IMG</attribute>
+							<attribute key="type" xsi:type="stringAttribute">img</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">invalidImgTag</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -1757,7 +1745,7 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="img-9982a">
+				<containedElements retestId="img-16c9a">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1773,17 +1761,13 @@
 								<height>-1040</height>
 								<width>-1169</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/IMG[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/img[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-							<attribute key="type" xsi:type="stringAttribute">IMG</attribute>
+							<attribute key="type" xsi:type="stringAttribute">img</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">validImgTag</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -1811,18 +1795,14 @@
 								<height>-1022</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute">A single line of text</attribute>
-							<attribute key="type" xsi:type="stringAttribute">P</attribute>
+							<attribute key="type" xsi:type="stringAttribute">p</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">oneline</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -1846,18 +1826,14 @@
 								<height>-1022</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="text" xsi:type="textAttribute">A hidden line of text</attribute>
-							<attribute key="type" xsi:type="stringAttribute">P</attribute>
+							<attribute key="type" xsi:type="stringAttribute">p</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">hiddenline</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -1889,18 +1865,14 @@
 								<height>-1022</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[3]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="text" xsi:type="textAttribute">This line has lots of spaces.</attribute>
-							<attribute key="type" xsi:type="stringAttribute">P</attribute>
+							<attribute key="type" xsi:type="stringAttribute">p</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">lotsofspaces</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -1908,7 +1880,7 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="this_line_has-244cb">
+				<containedElements retestId="this_line_has-9446c">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1924,18 +1896,14 @@
 								<height>-1022</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[4]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 							<attribute key="text" xsi:type="textAttribute">This line has a non-breaking space</attribute>
-							<attribute key="type" xsi:type="stringAttribute">P</attribute>
+							<attribute key="type" xsi:type="stringAttribute">p</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">nbsp</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -1943,7 +1911,7 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="this_line_has-5ca53">
+				<containedElements retestId="this_line_has-c11fd">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1959,18 +1927,14 @@
 								<height>-1022</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[5]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 							<attribute key="text" xsi:type="textAttribute">This line has a   non-breaking space and spaces</attribute>
-							<attribute key="type" xsi:type="stringAttribute">P</attribute>
+							<attribute key="type" xsi:type="stringAttribute">p</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">nbspandspaces</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -1994,25 +1958,21 @@
 								<height>-1004</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[6]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 							<attribute key="text" xsi:type="textAttribute">These lines  </attribute>
-							<attribute key="type" xsi:type="stringAttribute">P</attribute>
+							<attribute key="type" xsi:type="stringAttribute">p</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">multilinenbsp</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="br-96ac8">
+					<containedElements retestId="br-e06c0">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2027,9 +1987,9 @@
 									<height>-36</height>
 									<width>-1169</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[6]/BR[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[6]/br[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+								<attribute key="type" xsi:type="stringAttribute">br</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -2041,7 +2001,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="these_lines_-4872d">
+					<containedElements retestId="these_lines_-4ca9c">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2056,7 +2016,7 @@
 									<height>-1004</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[6]/textnode[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[6]/textnode[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">These lines  </attribute>
 								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
@@ -2086,7 +2046,7 @@
 									<height>-1004</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[6]/textnode[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[6]/textnode[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 								<attribute key="text" xsi:type="textAttribute">  have leading and trailing NBSPs  </attribute>
 								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
@@ -2118,18 +2078,14 @@
 								<height>-1022</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[7]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
 							<attribute key="text" xsi:type="textAttribute">This</attribute>
-							<attribute key="type" xsi:type="stringAttribute">P</attribute>
+							<attribute key="type" xsi:type="stringAttribute">p</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">inline</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -2152,18 +2108,14 @@
 									<height>-1</height>
 									<width>-1089</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[7]/SPAN[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[7]/span[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">line has</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+								<attribute key="type" xsi:type="stringAttribute">span</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">inlinespan</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -2185,10 +2137,10 @@
 										<height>0</height>
 										<width>-57</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[7]/SPAN[1]/EM[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[7]/span[1]/em[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">text</attribute>
-									<attribute key="type" xsi:type="stringAttribute">EM</attribute>
+									<attribute key="type" xsi:type="stringAttribute">em</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -2200,7 +2152,7 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="line_has-e9a0c">
+						<containedElements retestId="line_has-56344">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2215,7 +2167,7 @@
 										<height>-1</height>
 										<width>-1089</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[7]/SPAN[1]/textnode[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[7]/span[1]/textnode[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">line has</attribute>
 									<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
@@ -2231,7 +2183,7 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="this-07436">
+					<containedElements retestId="this-75e9d">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2246,7 +2198,7 @@
 									<height>-1022</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[7]/textnode[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[7]/textnode[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">This</attribute>
 								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
@@ -2276,7 +2228,7 @@
 									<height>-1022</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[7]/textnode[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[7]/textnode[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 								<attribute key="text" xsi:type="textAttribute">within elements that are meant to be displayed</attribute>
 								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
@@ -2306,7 +2258,7 @@
 									<height>-1022</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/P[7]/textnode[3]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[7]/textnode[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 								<attribute key="text" xsi:type="textAttribute">inline</attribute>
 								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
@@ -2338,18 +2290,14 @@
 								<height>-1023</height>
 								<width>-1054</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/SPAN[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/span[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute">An inline element</attribute>
-							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+							<attribute key="type" xsi:type="stringAttribute">span</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">span</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -2373,18 +2321,14 @@
 								<height>-1023</height>
 								<width>-1034</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/SPAN[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/span[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="text" xsi:type="textAttribute">{a=&quot;b&quot;, c=1, d=true}</attribute>
-							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+							<attribute key="type" xsi:type="stringAttribute">span</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">simpleJsonText</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -2408,18 +2352,14 @@
 								<height>-1023</height>
 								<width>-1077</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/SPAN[3]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/span[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="text" xsi:type="textAttribute">{a=&quot;\\b\\\&quot;'\'&quot;}</attribute>
-							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+							<attribute key="type" xsi:type="stringAttribute">span</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">complexJsonText</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -2443,18 +2383,14 @@
 								<height>-1023</height>
 								<width>-947</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/SPAN[4]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/span[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 							<attribute key="text" xsi:type="textAttribute">           ​‌‍  ⁠　test            ​‌‍  ⁠　</attribute>
-							<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+							<attribute key="type" xsi:type="stringAttribute">span</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">trimmedSpace</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -2478,17 +2414,13 @@
 								<height>-998</height>
 								<width>-1083</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/TABLE[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/table[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="type" xsi:type="stringAttribute">TABLE</attribute>
+							<attribute key="type" xsi:type="stringAttribute">table</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">wrappingtext</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -2510,9 +2442,9 @@
 									<height>0</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/TABLE[1]/TBODY[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/table[1]/tbody[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">TBODY</attribute>
+								<attribute key="type" xsi:type="stringAttribute">tbody</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -2538,9 +2470,9 @@
 										<height>-4</height>
 										<width>0</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/table[1]/tbody[1]/tr[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-									<attribute key="type" xsi:type="stringAttribute">TR</attribute>
+									<attribute key="type" xsi:type="stringAttribute">tr</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -2566,9 +2498,9 @@
 											<height>0</height>
 											<width>-4</width>
 										</attribute>
-										<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]</attribute>
+										<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]</attribute>
 										<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-										<attribute key="type" xsi:type="stringAttribute">TD</attribute>
+										<attribute key="type" xsi:type="stringAttribute">td</attribute>
 									</attributes>
 								</identifyingAttributes>
 								<attributes>
@@ -2614,10 +2546,10 @@
 												<height>-21</height>
 												<width>-3</width>
 											</attribute>
-											<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[1]</attribute>
+											<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/span[1]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 											<attribute key="text" xsi:type="textAttribute">beforeSpace</attribute>
-											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+											<attribute key="type" xsi:type="stringAttribute">span</attribute>
 										</attributes>
 									</identifyingAttributes>
 									<attributes>
@@ -2629,7 +2561,7 @@
 										</attributes>
 									</attributes>
 								</containedElements>
-								<containedElements retestId="span-a85ea">
+								<containedElements retestId="span-0cb5e">
 									<identifyingAttributes>
 										<attributes>
 											<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2644,9 +2576,9 @@
 												<height>-21</height>
 												<width>-82</width>
 											</attribute>
-											<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[2]</attribute>
+											<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/span[2]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+											<attribute key="type" xsi:type="stringAttribute">span</attribute>
 										</attributes>
 									</identifyingAttributes>
 									<attributes>
@@ -2673,10 +2605,10 @@
 												<height>-21</height>
 												<width>-14</width>
 											</attribute>
-											<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[3]</attribute>
+											<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/span[3]</attribute>
 											<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 											<attribute key="text" xsi:type="textAttribute">afterSpace</attribute>
-											<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+											<attribute key="type" xsi:type="stringAttribute">span</attribute>
 										</attributes>
 									</identifyingAttributes>
 									<attributes>
@@ -2708,9 +2640,9 @@
 							<height>-1056</height>
 							<width>-1185</width>
 						</attribute>
-						<attribute key="path" xsi:type="pathAttribute">HTML[1]/HEAD[1]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">html[1]/head[1]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-						<attribute key="type" xsi:type="stringAttribute">HEAD</attribute>
+						<attribute key="type" xsi:type="stringAttribute">head</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes>
@@ -2736,10 +2668,10 @@
 								<height>0</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/HEAD[1]/TITLE[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/head[1]/title[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute">Hello WebDriver</attribute>
-							<attribute key="type" xsi:type="stringAttribute">TITLE</attribute>
+							<attribute key="type" xsi:type="stringAttribute">title</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>

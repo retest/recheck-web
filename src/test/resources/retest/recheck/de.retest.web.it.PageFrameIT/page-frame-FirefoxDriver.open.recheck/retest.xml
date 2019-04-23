@@ -16,9 +16,9 @@
 						<height>908</height>
 						<width>1356</width>
 					</attribute>
-					<attribute key="path" xsi:type="pathAttribute">HTML[1]</attribute>
+					<attribute key="path" xsi:type="pathAttribute">html[1]</attribute>
 					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-					<attribute key="type" xsi:type="stringAttribute">HTML</attribute>
+					<attribute key="type" xsi:type="stringAttribute">html</attribute>
 				</attributes>
 			</identifyingAttributes>
 			<attributes>
@@ -72,10 +72,10 @@
 							<height>-16</height>
 							<width>-16</width>
 						</attribute>
-						<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 						<attribute key="text" xsi:type="textAttribute">There should be a form here:</attribute>
-						<attribute key="type" xsi:type="stringAttribute">BODY</attribute>
+						<attribute key="type" xsi:type="stringAttribute">body</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes>
@@ -103,9 +103,9 @@
 								<height>-892</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/DIV[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+							<attribute key="type" xsi:type="stringAttribute">div</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -141,9 +141,9 @@
 								<height>-863</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
+							<attribute key="type" xsi:type="stringAttribute">form</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -182,9 +182,9 @@
 									<height>0</height>
 									<width>-1124</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/INPUT[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/input[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -328,9 +328,9 @@
 									<height>0</height>
 									<width>-1160</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/INPUT[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/input[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -474,9 +474,9 @@
 									<height>0</height>
 									<width>-1231</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[1]/INPUT[3]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/input[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -605,9 +605,9 @@
 								<height>-875</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
+							<attribute key="type" xsi:type="stringAttribute">form</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -646,9 +646,9 @@
 									<height>0</height>
 									<width>-1280</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[2]/INPUT[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[2]/input[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -749,10 +749,10 @@
 								<height>-550</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="text" xsi:type="textAttribute">Here's a checkbox:</attribute>
-							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
+							<attribute key="type" xsi:type="stringAttribute">form</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -794,9 +794,9 @@
 									<height>-342</height>
 									<width>-1340</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/BR[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/br[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+								<attribute key="type" xsi:type="stringAttribute">br</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -823,9 +823,9 @@
 									<height>-342</height>
 									<width>-1340</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/BR[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/br[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+								<attribute key="type" xsi:type="stringAttribute">br</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -852,9 +852,9 @@
 									<height>-342</height>
 									<width>-1340</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/BR[3]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/br[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+								<attribute key="type" xsi:type="stringAttribute">br</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -881,9 +881,9 @@
 									<height>-342</height>
 									<width>-1340</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/BR[4]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/br[4]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
-								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+								<attribute key="type" xsi:type="stringAttribute">br</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -910,9 +910,9 @@
 									<height>-342</height>
 									<width>-1340</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/BR[5]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/br[5]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
-								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+								<attribute key="type" xsi:type="stringAttribute">br</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -939,9 +939,9 @@
 									<height>-342</height>
 									<width>-1340</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/BR[6]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/br[6]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
-								<attribute key="type" xsi:type="stringAttribute">BR</attribute>
+								<attribute key="type" xsi:type="stringAttribute">br</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -968,9 +968,9 @@
 									<height>-313</height>
 									<width>-1270</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/INPUT[11]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/input[11]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">11</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1095,9 +1095,9 @@
 									<height>-324</height>
 									<width>-1322</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/INPUT[12]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/input[12]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">12</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1174,9 +1174,9 @@
 									<height>-324</height>
 									<width>-1322</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/INPUT[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/input[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1241,9 +1241,9 @@
 									<height>-324</height>
 									<width>-1322</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/INPUT[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/input[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1308,9 +1308,9 @@
 									<height>-324</height>
 									<width>-1322</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/INPUT[3]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/input[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1375,9 +1375,9 @@
 									<height>-324</height>
 									<width>-1322</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/INPUT[4]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/input[4]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1446,9 +1446,9 @@
 									<height>-324</height>
 									<width>-1322</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/INPUT[5]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/input[5]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1517,9 +1517,9 @@
 									<height>-324</height>
 									<width>-1322</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/INPUT[6]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/input[6]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1588,9 +1588,9 @@
 									<height>-324</height>
 									<width>-1322</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/INPUT[7]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/input[7]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1659,9 +1659,9 @@
 									<height>-324</height>
 									<width>-1322</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/INPUT[8]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/input[8]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1734,9 +1734,9 @@
 									<height>-324</height>
 									<width>-1322</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/INPUT[9]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/input[9]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1808,10 +1808,10 @@
 									<height>-323</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/P[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/p[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">I like cheese</attribute>
-								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+								<attribute key="type" xsi:type="stringAttribute">p</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1842,9 +1842,9 @@
 									<height>-311</height>
 									<width>-1249</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[10]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[10]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SELECT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">select</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -1959,9 +1959,9 @@
 										<height>-17</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[10]/OPTION[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[10]/option[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -2049,10 +2049,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[10]/OPTION[2]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[10]/option[2]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 									<attribute key="text" xsi:type="textAttribute">nothing</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -2101,9 +2101,9 @@
 									<height>-311</height>
 									<width>-1034</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SELECT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">select</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -2222,10 +2222,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[1]/OPTION[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[1]/option[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">One</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -2320,10 +2320,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[1]/OPTION[2]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[1]/option[2]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 									<attribute key="text" xsi:type="textAttribute">Two</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -2370,10 +2370,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[1]/OPTION[3]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[1]/option[3]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 									<attribute key="text" xsi:type="textAttribute">Four</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -2420,10 +2420,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[1]/OPTION[4]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[1]/option[4]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 									<attribute key="text" xsi:type="textAttribute">Still learning how to count, apparently</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -2473,9 +2473,9 @@
 									<height>-270</height>
 									<width>-1234</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SELECT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">select</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -2633,10 +2633,10 @@
 										<height>-55</height>
 										<width>-12</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[2]/OPTION[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[2]/option[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">Eggs</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -2727,10 +2727,10 @@
 										<height>-55</height>
 										<width>-12</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[2]/OPTION[2]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[2]/option[2]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 									<attribute key="text" xsi:type="textAttribute">Ham</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -2793,10 +2793,10 @@
 										<height>-55</height>
 										<width>-12</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[2]/OPTION[3]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[2]/option[3]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 									<attribute key="text" xsi:type="textAttribute">Sausages</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -2887,10 +2887,10 @@
 										<height>-55</height>
 										<width>-12</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[2]/OPTION[4]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[2]/option[4]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 									<attribute key="text" xsi:type="textAttribute">Onion gravy</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -2955,9 +2955,9 @@
 									<height>-311</height>
 									<width>-1277</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[3]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SELECT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">select</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -3099,10 +3099,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[3]/OPTION[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[3]/option[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">Foo</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -3189,10 +3189,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[3]/OPTION[2]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[3]/option[2]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 									<attribute key="text" xsi:type="textAttribute">Bar</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -3241,7 +3241,7 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="select-75ff2">
+					<containedElements retestId="select-8fbc6">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -3257,9 +3257,9 @@
 									<height>-270</height>
 									<width>-1262</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[4]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[4]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SELECT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">select</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -3349,10 +3349,6 @@
 									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">select_empty_multiple</value>
-								</entry>
-								<entry>
 									<key>outline-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
@@ -3410,10 +3406,10 @@
 										<height>-55</height>
 										<width>-12</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[4]/OPTION[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[4]/option[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">select_1</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -3433,10 +3429,6 @@
 									<entry>
 										<key>border-top-color</key>
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-									</entry>
-									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">multi_1</value>
 									</entry>
 									<entry>
 										<key>min-height</key>
@@ -3481,10 +3473,10 @@
 										<height>-55</height>
 										<width>-12</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[4]/OPTION[2]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[4]/option[2]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 									<attribute key="text" xsi:type="textAttribute">select_2</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -3504,10 +3496,6 @@
 									<entry>
 										<key>border-top-color</key>
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-									</entry>
-									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">multi_2</value>
 									</entry>
 									<entry>
 										<key>min-height</key>
@@ -3552,10 +3540,10 @@
 										<height>-55</height>
 										<width>-12</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[4]/OPTION[3]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[4]/option[3]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 									<attribute key="text" xsi:type="textAttribute">select_3</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -3575,10 +3563,6 @@
 									<entry>
 										<key>border-top-color</key>
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-									</entry>
-									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">multi_3</value>
 									</entry>
 									<entry>
 										<key>min-height</key>
@@ -3623,10 +3607,10 @@
 										<height>-55</height>
 										<width>-12</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[4]/OPTION[4]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[4]/option[4]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 									<attribute key="text" xsi:type="textAttribute">select_4</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -3646,10 +3630,6 @@
 									<entry>
 										<key>border-top-color</key>
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-									</entry>
-									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">multi_4</value>
 									</entry>
 									<entry>
 										<key>min-height</key>
@@ -3679,7 +3659,7 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="select-f1837">
+					<containedElements retestId="select-1805b">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -3695,9 +3675,9 @@
 									<height>-270</height>
 									<width>-1262</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[5]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[5]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SELECT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">select</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -3791,10 +3771,6 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">multi_true</value>
-								</entry>
-								<entry>
 									<key>outline-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
@@ -3836,7 +3812,7 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="select_1-b1bcb">
+						<containedElements retestId="select_1-afd1b">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -3852,10 +3828,10 @@
 										<height>-55</height>
 										<width>-12</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[5]/OPTION[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[5]/option[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">select_1</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -3875,10 +3851,6 @@
 									<entry>
 										<key>border-top-color</key>
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-									</entry>
-									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">multi_true_1</value>
 									</entry>
 									<entry>
 										<key>min-height</key>
@@ -3907,7 +3879,7 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="select_2-74013">
+						<containedElements retestId="select_2-3d687">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -3923,10 +3895,10 @@
 										<height>-55</height>
 										<width>-12</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[5]/OPTION[2]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[5]/option[2]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 									<attribute key="text" xsi:type="textAttribute">select_2</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -3946,10 +3918,6 @@
 									<entry>
 										<key>border-top-color</key>
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-									</entry>
-									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">multi_true_2</value>
 									</entry>
 									<entry>
 										<key>min-height</key>
@@ -3979,7 +3947,7 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="select-3bf22">
+					<containedElements retestId="select-6cffd">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -3995,9 +3963,9 @@
 									<height>-270</height>
 									<width>-1262</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[6]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[6]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SELECT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">select</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -4091,10 +4059,6 @@
 									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">multi_false</value>
-								</entry>
-								<entry>
 									<key>outline-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
@@ -4136,7 +4100,7 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="select_1-3f8a1">
+						<containedElements retestId="select_1-20067">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4152,10 +4116,10 @@
 										<height>-55</height>
 										<width>-12</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[6]/OPTION[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[6]/option[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">select_1</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -4175,10 +4139,6 @@
 									<entry>
 										<key>border-top-color</key>
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-									</entry>
-									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">multi_false_1</value>
 									</entry>
 									<entry>
 										<key>min-height</key>
@@ -4207,7 +4167,7 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="select_2-a6e30">
+						<containedElements retestId="select_2-068c4">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4223,10 +4183,10 @@
 										<height>-55</height>
 										<width>-12</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[6]/OPTION[2]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[6]/option[2]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 									<attribute key="text" xsi:type="textAttribute">select_2</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -4246,10 +4206,6 @@
 									<entry>
 										<key>border-top-color</key>
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-									</entry>
-									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">multi_false_2</value>
 									</entry>
 									<entry>
 										<key>min-height</key>
@@ -4279,7 +4235,7 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="select-7dff2">
+					<containedElements retestId="select-48b8b">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4295,9 +4251,9 @@
 									<height>-311</height>
 									<width>-1243</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[7]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[7]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SELECT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">select</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -4371,10 +4327,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">invisi_select</value>
-								</entry>
-								<entry>
 									<key>line-height</key>
 									<value xsi:type="xsd:string">17px</value>
 								</entry>
@@ -4423,10 +4375,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[7]/OPTION[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[7]/option[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">Apples</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -4513,10 +4465,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[7]/OPTION[2]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[7]/option[2]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 									<attribute key="text" xsi:type="textAttribute">Oranges</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -4549,7 +4501,7 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="select-29c96">
+					<containedElements retestId="select-bfdd4">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4565,9 +4517,9 @@
 									<height>-311</height>
 									<width>-1034</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[8]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[8]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SELECT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">select</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -4645,10 +4597,6 @@
 									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">select-default</value>
-								</entry>
-								<entry>
 									<key>overflow-x</key>
 									<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
 								</entry>
@@ -4670,7 +4618,7 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="one-e7d55">
+						<containedElements retestId="one-5fdf4">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4685,10 +4633,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[8]/OPTION[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[8]/option[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">One</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -4756,7 +4704,7 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="two-bf6d1">
+						<containedElements retestId="two-d5c4b">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4771,10 +4719,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[8]/OPTION[2]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[8]/option[2]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 									<attribute key="text" xsi:type="textAttribute">Two</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -4802,7 +4750,7 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="four-12695">
+						<containedElements retestId="four-bd6f6">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4817,10 +4765,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[8]/OPTION[3]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[8]/option[3]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 									<attribute key="text" xsi:type="textAttribute">Four</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -4848,7 +4796,7 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="still_learning-b72d6">
+						<containedElements retestId="still_learning-bf7c3">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4863,10 +4811,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[8]/OPTION[4]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[8]/option[4]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 									<attribute key="text" xsi:type="textAttribute">Still learning how to count, apparently</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -4895,7 +4843,7 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="select-e0a0c">
+					<containedElements retestId="select-87895">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4911,9 +4859,9 @@
 									<height>-311</height>
 									<width>-1034</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[9]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[9]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SELECT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">select</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -4991,10 +4939,6 @@
 									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">select_with_spaces</value>
-								</entry>
-								<entry>
 									<key>overflow-x</key>
 									<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
 								</entry>
@@ -5016,7 +4960,7 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="one-74ac2">
+						<containedElements retestId="one-ada11">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -5031,10 +4975,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[9]/OPTION[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[9]/option[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">One</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -5102,7 +5046,7 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="two-cf0ce">
+						<containedElements retestId="two-24489">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -5117,10 +5061,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[9]/OPTION[2]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[9]/option[2]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 									<attribute key="text" xsi:type="textAttribute">Two</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -5148,7 +5092,7 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="four-a844f">
+						<containedElements retestId="four-8dbad">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -5163,10 +5107,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[9]/OPTION[3]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[9]/option[3]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 									<attribute key="text" xsi:type="textAttribute">Four</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -5194,7 +5138,7 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="still_learning-bfece">
+						<containedElements retestId="still_learning-ed6f9">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -5209,10 +5153,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[3]/SELECT[9]/OPTION[4]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[9]/option[4]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 									<attribute key="text" xsi:type="textAttribute">Still learning how to count, apparently</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -5241,8 +5185,218 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
+					<containedElements retestId="heres_a_checkbox-e0598">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>105</y>
+									<height>342</height>
+									<width>1340</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>97</y>
+									<height>-550</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/textnode[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">Here's a checkbox:</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="cheese">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>105</y>
+									<height>342</height>
+									<width>1340</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>97</y>
+									<height>-550</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/textnode[2]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+								<attribute key="text" xsi:type="textAttribute">Cheese</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="peas">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>105</y>
+									<height>342</height>
+									<width>1340</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>97</y>
+									<height>-550</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/textnode[3]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
+								<attribute key="text" xsi:type="textAttribute">Peas</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="cheese_and_peas">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>105</y>
+									<height>342</height>
+									<width>1340</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>97</y>
+									<height>-550</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/textnode[4]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
+								<attribute key="text" xsi:type="textAttribute">Cheese and peas</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="not_a_sausage">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>105</y>
+									<height>342</height>
+									<width>1340</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>97</y>
+									<height>-550</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/textnode[5]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
+								<attribute key="text" xsi:type="textAttribute">Not a sausage</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="not_another_sau">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>105</y>
+									<height>342</height>
+									<width>1340</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>97</y>
+									<height>-550</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/textnode[6]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
+								<attribute key="text" xsi:type="textAttribute">Not another sausage</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="cumberland_saus">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>105</y>
+									<height>342</height>
+									<width>1340</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>97</y>
+									<height>-550</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/textnode[7]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
+								<attribute key="text" xsi:type="textAttribute">Cumberland sausage</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
 				</containedElements>
-				<containedElements retestId="form-79291">
+				<containedElements retestId="form-420c1">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -5258,9 +5412,9 @@
 								<height>-797</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[4]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
-							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
+							<attribute key="type" xsi:type="stringAttribute">form</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -5274,16 +5428,12 @@
 								<value xsi:type="xsd:string">get</value>
 							</entry>
 							<entry>
-								<key>name</key>
-								<value xsi:type="xsd:string">disable</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="input-93277">
+					<containedElements retestId="input-28d09">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -5299,9 +5449,9 @@
 									<height>-66</height>
 									<width>-1124</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[4]/INPUT[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[4]/input[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -5383,10 +5533,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">working</value>
-								</entry>
-								<entry>
 									<key>line-height</key>
 									<value xsi:type="xsd:string">17px</value>
 								</entry>
@@ -5429,7 +5575,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-8b71b">
+					<containedElements retestId="input-3f754">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -5445,9 +5591,9 @@
 									<height>-66</height>
 									<width>-1124</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[4]/INPUT[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[4]/input[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -5533,10 +5679,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">notWorking</value>
-								</entry>
-								<entry>
 									<key>line-height</key>
 									<value xsi:type="xsd:string">17px</value>
 								</entry>
@@ -5579,7 +5721,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-49efd">
+					<containedElements retestId="input-da63e">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -5595,9 +5737,9 @@
 									<height>-66</height>
 									<width>-1124</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[4]/INPUT[3]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[4]/input[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -5679,10 +5821,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">inputWithText</value>
-								</entry>
-								<entry>
 									<key>line-height</key>
 									<value xsi:type="xsd:string">17px</value>
 								</entry>
@@ -5745,9 +5883,9 @@
 									<height>-8</height>
 									<width>-1291</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[4]/TEXTAREA[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[4]/textarea[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">TEXTAREA</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textarea</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -5841,10 +5979,6 @@
 									<value xsi:type="xsd:string">12px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">notWorkingArea</value>
-								</entry>
-								<entry>
 									<key>line-height</key>
 									<value xsi:type="xsd:string">15px</value>
 								</entry>
@@ -5915,10 +6049,10 @@
 									<height>-8</height>
 									<width>-1291</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[4]/TEXTAREA[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[4]/textarea[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 								<attribute key="text" xsi:type="textAttribute">Example text</attribute>
-								<attribute key="type" xsi:type="stringAttribute">TEXTAREA</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textarea</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -6006,10 +6140,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">12px</value>
-								</entry>
-								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">withText</value>
 								</entry>
 								<entry>
 									<key>line-height</key>
@@ -6066,7 +6196,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="textarea-cc1bc">
+					<containedElements retestId="textarea-a706b">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6082,9 +6212,9 @@
 									<height>-8</height>
 									<width>-1291</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[4]/TEXTAREA[3]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[4]/textarea[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-								<attribute key="type" xsi:type="stringAttribute">TEXTAREA</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textarea</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -6172,10 +6302,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">12px</value>
-								</entry>
-								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">emptyTextArea</value>
 								</entry>
 								<entry>
 									<key>line-height</key>
@@ -6233,7 +6359,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="form-7a49c">
+				<containedElements retestId="form-31736">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6248,9 +6374,9 @@
 								<height>-861</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[5]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
-							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
+							<attribute key="type" xsi:type="stringAttribute">form</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -6269,7 +6395,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="input-9a816">
+					<containedElements retestId="input-b2de0">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6285,9 +6411,9 @@
 									<height>-2</height>
 									<width>-1124</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[5]/INPUT[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[5]/input[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -6369,10 +6495,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">no-type</value>
-								</entry>
-								<entry>
 									<key>line-height</key>
 									<value xsi:type="xsd:string">17px</value>
 								</entry>
@@ -6411,7 +6533,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-ca01d">
+					<containedElements retestId="input-820bb">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6427,9 +6549,9 @@
 									<height>-2</height>
 									<width>-1071</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[5]/INPUT[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[5]/input[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -6441,10 +6563,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">upload</value>
 								</entry>
 								<entry>
 									<key>line-height</key>
@@ -6481,7 +6599,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-3e100">
+					<containedElements retestId="input-becb9">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6496,9 +6614,9 @@
 									<height>-2</height>
 									<width>-1213</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[5]/INPUT[3]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[5]/input[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -6602,7 +6720,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="select-c7875">
+					<containedElements retestId="select-9dc63">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6619,9 +6737,9 @@
 									<height>0</height>
 									<width>-1274</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[5]/SELECT[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[5]/select[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SELECT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">select</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -6695,16 +6813,8 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">redirect</value>
-								</entry>
-								<entry>
 									<key>line-height</key>
 									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">redirect</value>
 								</entry>
 								<entry>
 									<key>onchange</key>
@@ -6732,7 +6842,7 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="one-bb3c8">
+						<containedElements retestId="one-f9d2d">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6747,10 +6857,10 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[5]/SELECT[1]/OPTION[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[5]/select[1]/option[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">One</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -6826,7 +6936,7 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="two-0c345">
+						<containedElements retestId="two-90eb0">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6842,18 +6952,14 @@
 										<height>-14</height>
 										<width>-3</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[5]/SELECT[1]/OPTION[2]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[5]/select[1]/option[2]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 									<attribute key="text" xsi:type="textAttribute">Two</attribute>
-									<attribute key="type" xsi:type="stringAttribute">OPTION</attribute>
+									<attribute key="type" xsi:type="stringAttribute">option</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">changeme</value>
-									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
@@ -6898,17 +7004,13 @@
 									<height>-31</height>
 									<width>-1340</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[5]/SPAN[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[5]/span[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">SPAN</attribute>
+								<attribute key="type" xsi:type="stringAttribute">span</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">fileResults</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -6917,7 +7019,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="form-2313e">
+				<containedElements retestId="form-afb61">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6932,9 +7034,9 @@
 								<height>-863</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[6]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
-							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
+							<attribute key="type" xsi:type="stringAttribute">form</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -6953,7 +7055,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="input-41ff5">
+					<containedElements retestId="input-10235">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6969,9 +7071,9 @@
 									<height>0</height>
 									<width>-1124</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[6]/INPUT[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[6]/input[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -7061,10 +7163,6 @@
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
 								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">id-name1</value>
-								</entry>
-								<entry>
 									<key>outline-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
@@ -7103,7 +7201,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-588db">
+					<containedElements retestId="input-4a98d">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -7119,9 +7217,9 @@
 									<height>0</height>
 									<width>-1124</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[6]/INPUT[2]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[6]/input[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -7203,10 +7301,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">id-name1</value>
-								</entry>
-								<entry>
 									<key>line-height</key>
 									<value xsi:type="xsd:string">17px</value>
 								</entry>
@@ -7253,7 +7347,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-fba03">
+					<containedElements retestId="input-a6fb6">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -7269,9 +7363,9 @@
 									<height>0</height>
 									<width>-1124</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[6]/INPUT[3]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[6]/input[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -7351,10 +7445,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">id-name2</value>
 								</entry>
 								<entry>
 									<key>line-height</key>
@@ -7403,7 +7493,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-76ab3">
+					<containedElements retestId="input-6534f">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -7419,9 +7509,9 @@
 									<height>0</height>
 									<width>-1124</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[6]/INPUT[4]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[6]/input[4]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -7509,10 +7599,6 @@
 								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">id-name2</value>
 								</entry>
 								<entry>
 									<key>outline-color</key>
@@ -7553,7 +7639,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-c7c40">
+					<containedElements retestId="input-762ce">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -7569,9 +7655,9 @@
 									<height>0</height>
 									<width>-1124</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[6]/INPUT[5]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[6]/input[5]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -7659,10 +7745,6 @@
 								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">readonly</value>
 								</entry>
 								<entry>
 									<key>outline-color</key>
@@ -7700,7 +7782,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="form-b1ac4">
+				<containedElements retestId="form-a030a">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -7716,9 +7798,9 @@
 								<height>-834</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[7]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
-							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
+							<attribute key="type" xsi:type="stringAttribute">form</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -7726,10 +7808,6 @@
 							<entry>
 								<key>action</key>
 								<value xsi:type="xsd:string">resultPage.html</value>
-							</entry>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">nested_form</value>
 							</entry>
 							<entry>
 								<key>method</key>
@@ -7741,7 +7819,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="div-f0225">
+					<containedElements retestId="div-0171a">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -7756,9 +7834,9 @@
 									<height>-29</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[7]/DIV[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[7]/div[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">DIV</attribute>
+								<attribute key="type" xsi:type="stringAttribute">div</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -7769,7 +7847,7 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="input-f05f6">
+						<containedElements retestId="input-a2579">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -7785,9 +7863,9 @@
 										<height>0</height>
 										<width>-1124</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[7]/DIV[1]/INPUT[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[7]/div[1]/input[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-									<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+									<attribute key="type" xsi:type="stringAttribute">input</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -7873,10 +7951,6 @@
 										<value xsi:type="xsd:string">17px</value>
 									</entry>
 									<entry>
-										<key>name</key>
-										<value xsi:type="xsd:string">x</value>
-									</entry>
-									<entry>
 										<key>outline-color</key>
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 									</entry>
@@ -7916,7 +7990,7 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="input-071cf">
+					<containedElements retestId="input-f35db">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -7931,9 +8005,9 @@
 									<height>-29</height>
 									<width>-1213</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[7]/INPUT[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[7]/input[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+								<attribute key="type" xsi:type="stringAttribute">input</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -8038,7 +8112,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="form-27a47">
+				<containedElements retestId="form-3140f">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -8053,9 +8127,9 @@
 								<height>-863</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[8]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[8]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
-							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
+							<attribute key="type" xsi:type="stringAttribute">form</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -8089,9 +8163,9 @@
 									<height>0</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[8]/P[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[8]/p[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+								<attribute key="type" xsi:type="stringAttribute">p</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -8102,7 +8176,7 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="input-ec0d7">
+						<containedElements retestId="input-76df8">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -8118,9 +8192,9 @@
 										<height>0</height>
 										<width>-1124</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[8]/P[1]/INPUT[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[8]/p[1]/input[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-									<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+									<attribute key="type" xsi:type="stringAttribute">input</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -8206,10 +8280,6 @@
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
 									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">disabledTextElement1</value>
-									</entry>
-									<entry>
 										<key>line-height</key>
 										<value xsi:type="xsd:string">17px</value>
 									</entry>
@@ -8256,7 +8326,7 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="input-046b4">
+						<containedElements retestId="input-b07cf">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -8272,9 +8342,9 @@
 										<height>0</height>
 										<width>-1124</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[8]/P[1]/INPUT[2]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[8]/p[1]/input[2]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-									<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+									<attribute key="type" xsi:type="stringAttribute">input</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -8356,10 +8426,6 @@
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
 									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">disabledTextElement2</value>
-									</entry>
-									<entry>
 										<key>line-height</key>
 										<value xsi:type="xsd:string">17px</value>
 									</entry>
@@ -8406,7 +8472,7 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="input-f8706">
+						<containedElements retestId="input-f7754">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -8422,9 +8488,9 @@
 										<height>0</height>
 										<width>-1260</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[8]/P[1]/INPUT[3]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[8]/p[1]/input[3]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-									<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+									<attribute key="type" xsi:type="stringAttribute">input</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -8510,10 +8576,6 @@
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
 									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">disabledSubmitElement</value>
-									</entry>
-									<entry>
 										<key>line-height</key>
 										<value xsi:type="xsd:string">17px</value>
 									</entry>
@@ -8566,7 +8628,7 @@
 						</containedElements>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="form-ef95a">
+				<containedElements retestId="form-6ab06">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -8581,9 +8643,9 @@
 								<height>-867</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[9]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[9]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
-							<attribute key="type" xsi:type="stringAttribute">FORM</attribute>
+							<attribute key="type" xsi:type="stringAttribute">form</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -8602,7 +8664,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="p-c52db">
+					<containedElements retestId="p-2aba4">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -8617,9 +8679,9 @@
 									<height>0</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[9]/P[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[9]/p[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">P</attribute>
+								<attribute key="type" xsi:type="stringAttribute">p</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -8630,7 +8692,7 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="input-90543">
+						<containedElements retestId="input-87e53">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -8646,9 +8708,9 @@
 										<height>-7</height>
 										<width>-1322</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[9]/P[1]/INPUT[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[9]/p[1]/input[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-									<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+									<attribute key="type" xsi:type="stringAttribute">input</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -8660,10 +8722,6 @@
 									<entry>
 										<key>font-size</key>
 										<value xsi:type="xsd:string">14px</value>
-									</entry>
-									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">checkbox-with-label</value>
 									</entry>
 									<entry>
 										<key>line-height</key>
@@ -8704,10 +8762,10 @@
 										<height>-6</height>
 										<width>-1295</width>
 									</attribute>
-									<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/FORM[9]/P[1]/LABEL[1]</attribute>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[9]/p[1]/label[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 									<attribute key="text" xsi:type="textAttribute">Label</attribute>
-									<attribute key="type" xsi:type="stringAttribute">LABEL</attribute>
+									<attribute key="type" xsi:type="stringAttribute">label</attribute>
 								</attributes>
 							</identifyingAttributes>
 							<attributes>
@@ -8715,10 +8773,6 @@
 									<entry>
 										<key>for</key>
 										<value xsi:type="xsd:string">checkbox-with-label</value>
-									</entry>
-									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">label-for-checkbox-with-label</value>
 									</entry>
 									<entry>
 										<key>shown</key>
@@ -8729,7 +8783,7 @@
 						</containedElements>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="input-28e7f">
+				<containedElements retestId="input-7d037">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -8745,9 +8799,9 @@
 								<height>-863</height>
 								<width>-1159</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/INPUT[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+							<attribute key="type" xsi:type="stringAttribute">input</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -8817,10 +8871,6 @@
 								<value xsi:type="xsd:string">14px</value>
 							</entry>
 							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">killIframe</value>
-							</entry>
-							<entry>
 								<key>line-height</key>
 								<value xsi:type="xsd:string">17px</value>
 							</entry>
@@ -8867,7 +8917,7 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="input-73a70">
+				<containedElements retestId="input-188da">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -8885,9 +8935,9 @@
 								<height>-863</height>
 								<width>-1142</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/INPUT[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-							<attribute key="type" xsi:type="stringAttribute">INPUT</attribute>
+							<attribute key="type" xsi:type="stringAttribute">input</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -8953,10 +9003,6 @@
 								<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 							</entry>
 							<entry>
-								<key>class</key>
-								<value xsi:type="xsd:string">inputLabel</value>
-							</entry>
-							<entry>
 								<key>color</key>
 								<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 							</entry>
@@ -8977,10 +9023,6 @@
 								<value xsi:type="xsd:string">14px</value>
 							</entry>
 							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">vsearchGadget</value>
-							</entry>
-							<entry>
 								<key>line-height</key>
 								<value xsi:type="xsd:string">17px</value>
 							</entry>
@@ -8991,10 +9033,6 @@
 							<entry>
 								<key>margin-top</key>
 								<value xsi:type="xsd:string">0px</value>
-							</entry>
-							<entry>
-								<key>name</key>
-								<value xsi:type="xsd:string">SearchableText</value>
 							</entry>
 							<entry>
 								<key>outline-color</key>
@@ -9039,33 +9077,29 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="contact">
+				<containedElements retestId="there_should-5e482">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>211</x>
-								<y>875</y>
-								<height>19</height>
-								<width>63</width>
+								<x>8</x>
+								<y>8</y>
+								<height>892</height>
+								<width>1340</width>
 							</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>203</x>
-								<y>867</y>
-								<height>-873</height>
-								<width>-1277</width>
+								<x>8</x>
+								<y>8</y>
+								<height>-16</height>
+								<width>-16</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/BODY[1]/A[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/textnode[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="text" xsi:type="textAttribute">Contact</attribute>
-							<attribute key="type" xsi:type="stringAttribute">A</attribute>
+							<attribute key="text" xsi:type="textAttribute">There should be a form here:</attribute>
+							<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>href</key>
-								<value xsi:type="xsd:string">#</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -9089,9 +9123,9 @@
 							<height>-908</height>
 							<width>-1356</width>
 						</attribute>
-						<attribute key="path" xsi:type="pathAttribute">HTML[1]/HEAD[1]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">html[1]/head[1]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-						<attribute key="type" xsi:type="stringAttribute">HEAD</attribute>
+						<attribute key="type" xsi:type="stringAttribute">head</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes>
@@ -9117,10 +9151,10 @@
 								<height>0</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">HTML[1]/HEAD[1]/TITLE[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/head[1]/title[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="text" xsi:type="textAttribute">We Leave From Here</attribute>
-							<attribute key="type" xsi:type="stringAttribute">TITLE</attribute>
+							<attribute key="type" xsi:type="stringAttribute">title</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
@@ -9134,7 +9168,7 @@
 				</containedElements>
 			</containedElements>
 			<screenshot>
-				<persistenceId>html_49b7f30cde6243d13b2839269a1b982d93fcb525bd36216c37c57093dc4b37e1</persistenceId>
+				<persistenceId>html_2c10d3bafdce93268eb55a165b60d6c188ff437a741509d5999d80599a1b3486</persistenceId>
 				<type>PNG</type>
 			</screenshot>
 		</descriptors>
