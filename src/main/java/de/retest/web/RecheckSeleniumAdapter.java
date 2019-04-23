@@ -22,7 +22,7 @@ import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.RetestIdProviderUtil;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
-import de.retest.web.selenium.RecheckDriver;
+import de.retest.web.selenium.UnbreakableDriver;
 
 public class RecheckSeleniumAdapter implements RecheckAdapter {
 
@@ -56,8 +56,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), result.size() );
 		final RootElement lastChecked = convertToPeers( result, driver.getTitle(), shoot( driver ) );
-		if ( driver instanceof RecheckDriver ) {
-			((RecheckDriver) driver).setLastActualState( lastChecked );
+		if ( driver instanceof UnbreakableDriver ) {
+			((UnbreakableDriver) driver).setLastActualState( lastChecked );
 		}
 
 		return Collections.singleton( lastChecked );

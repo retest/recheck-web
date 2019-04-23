@@ -12,14 +12,14 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import de.retest.recheck.Recheck;
 import de.retest.web.RecheckWebImpl;
 import de.retest.web.selenium.By;
-import de.retest.web.selenium.RecheckDriver;
+import de.retest.web.selenium.UnbreakableDriver;
 
 /*
  * Simple recheck-web showcase for a Chrome-based integration test. See other *IT classes for more examples.
  */
 public class SimpleRetestIdShowcaseIT {
 
-	private RecheckDriver driver;
+	private UnbreakableDriver driver;
 	private Recheck re;
 
 	@Before
@@ -35,7 +35,7 @@ public class SimpleRetestIdShowcaseIT {
 				"--no-sandbox",
 				// Fix window size for stable results.
 				"--window-size=1200,800" );
-		driver = new RecheckDriver( new ChromeDriver( opts ) );
+		driver = new UnbreakableDriver( new ChromeDriver( opts ) );
 
 		// Use the default implementation.
 		re = new RecheckWebImpl();

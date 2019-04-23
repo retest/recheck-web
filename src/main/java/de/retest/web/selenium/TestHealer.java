@@ -24,17 +24,17 @@ public class TestHealer {
 	private static final Logger logger = LoggerFactory.getLogger( TestHealer.class );
 	private static final String ELEMENT_NOT_FOUND_MESSAGE = "It appears that even the Golden Master has no element";
 
-	private final RecheckDriver wrapped;
+	private final UnbreakableDriver wrapped;
 	private final RootElement lastExpectedState;
 	private final RootElement lastActualState;
 
-	public TestHealer( final RecheckDriver wrapped ) {
+	public TestHealer( final UnbreakableDriver wrapped ) {
 		this.wrapped = wrapped;
 		lastExpectedState = wrapped.getLastExpectedState();
 		lastActualState = wrapped.getLastActualState();
 	}
 
-	public static WebElement findElement( final By by, final RecheckDriver wrapped ) {
+	public static WebElement findElement( final By by, final UnbreakableDriver wrapped ) {
 		return new TestHealer( wrapped ).findElement( by );
 	}
 
