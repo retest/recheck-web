@@ -36,7 +36,7 @@ public class AttributesUtil {
 	}
 
 	public static boolean isStateAttribute( final String key ) {
-		return isStateAttribute( key, AttributesProvider.getInstance() );
+		return isStateAttribute( key, YamlAttributesProvider.getInstance() );
 	}
 
 	static boolean isStateAttribute( final String key, final AttributesProvider provider ) {

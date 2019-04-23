@@ -11,13 +11,13 @@ import org.junit.jupiter.api.parallel.ResourceLock;
 
 import de.retest.web.testutils.SystemProperty;
 
-class AttributesProviderTest {
+class YamlAttributesProviderTest {
 
 	@Test
 	@ResourceLock( value = SYSTEM_PROPERTIES, mode = READ_WRITE )
-	@SystemProperty( key = AttributesProvider.ATTRIBUTES_FILE_PROPERTY, value = "foo" )
+	@SystemProperty( key = YamlAttributesProvider.ATTRIBUTES_FILE_PROPERTY, value = "foo" )
 	void invalid_attributes_file_should_yield_UncheckedIOException() throws Exception {
-		assertThatThrownBy( AttributesProvider::getTestInstance ) //
+		assertThatThrownBy( YamlAttributesProvider::getTestInstance ) //
 				.isExactlyInstanceOf( UncheckedIOException.class ) //
 				.hasMessage( "Cannot read attributes file 'foo'." );
 	}

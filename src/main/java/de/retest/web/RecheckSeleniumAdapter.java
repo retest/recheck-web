@@ -32,10 +32,21 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	private static final Logger logger = LoggerFactory.getLogger( RecheckSeleniumAdapter.class );
 
+	private final RetestIdProvider retestIdProvider;
+
+	private final AttributesProvider attributesProvider;
+
 	private final DefaultValueFinder defaultValueFinder = new DefaultWebValueFinder();
 
-	public RecheckSeleniumAdapter() {
+	public RecheckSeleniumAdapter( final RetestIdProvider retestIdProvider,
+			final AttributesProvider attributesProvider ) {
+		this.retestIdProvider = retestIdProvider;
+		this.attributesProvider = attributesProvider;
 		logger.debug( "New RecheckSeleniumAdapter created: {}.", System.identityHashCode( this ) );
+	}
+
+	public RecheckSeleniumAdapter() {
+		this( idProvider, YamlAttributesProvider.getInstance() );
 	}
 
 	@Override
@@ -48,10 +59,9 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		final WebDriver driver = (WebDriver) toVerify;
 
 		logger.info( "Retrieving attributes for each element." );
-		final Set<String> cssAttributes = AttributesProvider.getInstance().getCssAttributes();
+		final Set<String> cssAttributes = attributesProvider.getCssAttributes();
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		@SuppressWarnings( "unchecked" )
-		final Map<String, Map<String, Object>> result =
+		@SuppressWarnings( "unchecked" ) final Map<String, Map<String, Object>> result =
 				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes );
 
 		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), result.size() );
@@ -73,7 +83,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	public RootElement convertToPeers( final Map<String, Map<String, Object>> data, final String title,
 			final BufferedImage screenshot ) {
-		return new PeerConverter( idProvider, data, title, screenshot, defaultValueFinder ).convertToPeers();
+		return new PeerConverter( retestIdProvider, data, title, screenshot, defaultValueFinder ).convertToPeers();
 	}
 
 	@Override
