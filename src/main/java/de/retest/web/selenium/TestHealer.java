@@ -125,8 +125,33 @@ public class TestHealer {
 	}
 
 	private WebElement findElementByCssSelector( final ByCssSelector by ) {
-		// TODO Implement: This happens at the browser (which understands xpath)
-		throw new UnsupportedOperationException( "Not yet implemented" );
+		final String rawSelector = ByWhisperer.retrieveCssSelector( by );
+		if ( rawSelector.startsWith( "#" ) ) {
+			throw new IllegalArgumentException(
+					"To search for element by ID, use `By.id()` instead of `#id` as CSS selector." );
+		}
+		if ( !rawSelector.startsWith( "." ) ) {
+			throw new IllegalArgumentException(
+					"To search for element by tag, use `By.tag()` instead of `tag` as CSS selector." );
+		}
+		// remove leading .
+		final String selector = rawSelector.substring( 1 );
+		if ( selector.matches( ".*[<>:+\\s\"\\[\\*].*" ) ) {
+			throw new IllegalArgumentException( "For now, only simple class selector is implemented." );
+		}
+
+		final Element actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState,
+				lastActualState, "class", value -> ((String) value).contains( selector ) );
+
+		if ( actualElement == null ) {
+			logger.warn( "{} with CSS selector '{}'.", ELEMENT_NOT_FOUND_MESSAGE, selector );
+			return null;
+		} else {
+			writeWarnLogForChangedIdentifier( "HTML class attribute", selector,
+					actualElement.getIdentifyingAttributes().get( "class" ), "cssSelector",
+					actualElement.getRetestId() );
+			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
+		}
 	}
 
 	private WebElement findElementByXPath( final ByXPath byXPath ) {

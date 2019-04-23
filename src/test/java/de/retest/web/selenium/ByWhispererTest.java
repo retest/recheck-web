@@ -8,6 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By.ByClassName;
+import org.openqa.selenium.By.ByCssSelector;
 import org.openqa.selenium.By.ById;
 import org.openqa.selenium.By.ByLinkText;
 import org.openqa.selenium.By.ByName;
@@ -36,5 +37,12 @@ class ByWhispererTest {
 	void retrieveLinkText_should_return_LinkText() {
 		final String linkText = "someLinkText";
 		assertThat( retrieveLinkText( (ByLinkText) By.linkText( linkText ) ) ).isEqualTo( linkText );
+	}
+
+	@Test
+	void retrieveCssSelector_should_return_Selector() {
+		final String selector = "selector";
+		assertThat( ByWhisperer.retrieveCssSelector( (ByCssSelector) By.cssSelector( selector ) ) )
+				.isEqualTo( selector );
 	}
 }
