@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.io.UncheckedIOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -19,6 +20,7 @@ import org.slf4j.LoggerFactory;
 
 import de.retest.recheck.RecheckAdapter;
 import de.retest.recheck.ui.DefaultValueFinder;
+import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RetestIdProviderUtil;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
@@ -51,16 +53,49 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		final Set<String> cssAttributes = AttributesProvider.getInstance().getCssAttributes();
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		@SuppressWarnings( "unchecked" )
-		final Map<String, Map<String, Object>> result =
+		final Map<String, Map<String, Object>> rawAttributesMapping =
 				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes );
 
-		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), result.size() );
-		final RootElement lastChecked = convertToPeers( result, driver.getTitle(), shoot( driver ) );
+		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), rawAttributesMapping.size() );
+		final RootElement lastChecked = convertToPeers( rawAttributesMapping, driver.getTitle(), shoot( driver ) );
+
+		addChildrenFromFrames( driver, cssAttributes, lastChecked );
+
 		if ( driver instanceof UnbreakableDriver ) {
 			((UnbreakableDriver) driver).setLastActualState( lastChecked );
 		}
 
 		return Collections.singleton( lastChecked );
+	}
+
+	public void addChildrenFromFrames( final WebDriver driver, final Set<String> cssAttributes,
+			final RootElement lastChecked ) {
+		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		final List<Element> frames = de.retest.web.selenium.By.findElements( lastChecked.getContainedElements(),
+				element -> "iframe".equalsIgnoreCase( element.getIdentifyingAttributes().getType() )
+						|| "frame".equalsIgnoreCase( element.getIdentifyingAttributes().getType() ) );
+
+		logger.debug( "Found {} frames, getting HTML per frame.", frames.size() );
+		for ( final Element frame : frames ) {
+			final String frameId = frame.getIdentifyingAttributes().get( "id" );
+			if ( frameId == null ) {
+				// TODO Implement handling e.g. via name, XPaht, etc.
+				logger.error( "Cannot retrieve frame with id null from {}.", frame );
+				continue;
+			}
+			try {
+				logger.debug( "Switching to frame with ID {}.", frameId );
+				driver.switchTo().frame( frameId );
+				@SuppressWarnings( "unchecked" )
+				final Map<String, Map<String, Object>> frameAttributesMapping =
+						(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes );
+				final RootElement frameContent = convertToPeers( frameAttributesMapping, "", null );
+				frame.addChildren( frameContent.getContainedElements() );
+			} catch ( final Exception e ) {
+				logger.error( "Exception retrieving HTML content of frame {}.", frameId, e );
+			}
+			driver.switchTo().defaultContent();
+		}
 	}
 
 	public String getQueryJS() {
