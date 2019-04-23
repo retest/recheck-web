@@ -7,13 +7,21 @@ import static org.mockito.Mockito.when;
 import java.util.Arrays;
 import java.util.HashSet;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class AttributesUtilTest {
 
+	AttributesProvider attributesProvider;
+
+	@BeforeEach
+	void setUp() {
+		attributesProvider = YamlAttributesProvider.getInstance();
+	}
+
 	@Test
 	void identifying_attributes_should_not_be_state_attributes() throws Exception {
-		assertThat( AttributesUtil.isStateAttribute( AttributesUtil.TAG_NAME ) ).isFalse();
+		assertThat( AttributesUtil.isStateAttribute( AttributesUtil.TAG_NAME, attributesProvider ) ).isFalse();
 	}
 
 	@Test
@@ -23,7 +31,7 @@ class AttributesUtilTest {
 		 * RecheckSeleniumAdapter and getAllElementsByPath.js), so no unselected CSS attributes will be part of the
 		 * element's state.
 		 */
-		assertThat( AttributesUtil.isStateAttribute( "foo" ) ).isTrue();
+		assertThat( AttributesUtil.isStateAttribute( "foo", attributesProvider ) ).isTrue();
 	}
 
 	@Test

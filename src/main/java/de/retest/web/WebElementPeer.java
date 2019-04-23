@@ -1,6 +1,6 @@
 package de.retest.web;
 
-import java.awt.Rectangle;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -23,13 +23,16 @@ import de.retest.web.util.TextAttributeUtil;
 
 public class WebElementPeer {
 
+	protected final AttributesProvider attributesProvider;
 	protected final List<WebElementPeer> children = new ArrayList<>();
 	protected final WebData webData;
 	protected final String path;
 
 	private final DefaultValueFinder defaultValueFinder;
 
-	public WebElementPeer( final WebData webData, final String path, final DefaultValueFinder defaultValueFinder ) {
+	public WebElementPeer( final AttributesProvider attributesProvider, final WebData webData, final String path,
+			final DefaultValueFinder defaultValueFinder ) {
+		this.attributesProvider = attributesProvider;
 		this.webData = webData;
 		this.path = path;
 		this.defaultValueFinder = defaultValueFinder;
@@ -94,9 +97,9 @@ public class WebElementPeer {
 		final MutableAttributes state = new MutableAttributes();
 		webData.getKeys().stream() //
 				.filter( Objects::nonNull ) //
-				.filter( AttributesUtil::isStateAttribute ) //
-				.filter( key -> !defaultValueFinder.isDefaultValue( identifyingAttributes, key,
-						webData.getAsString( key ) ) ) //
+				.filter( key -> AttributesUtil.isStateAttribute( key, attributesProvider ) && !defaultValueFinder
+						.isDefaultValue( identifyingAttributes, key,
+								webData.getAsString( key ) ) ) //
 				.forEach( key -> state.put( key, webData.getAsString( key ) ) );
 		return state;
 	}

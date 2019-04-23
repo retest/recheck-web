@@ -12,6 +12,8 @@ class PeerConverter {
 
 	private final RetestIdProvider idProvider;
 
+	private final AttributesProvider attributesProvider;
+
 	private final Map<String, Map<String, Object>> data;
 	private final BufferedImage screenshot;
 	private final String title;
@@ -21,9 +23,11 @@ class PeerConverter {
 
 	private final DefaultValueFinder defaultValueFinder;
 
-	public PeerConverter( final RetestIdProvider idProvider, final Map<String, Map<String, Object>> data,
+	public PeerConverter( final RetestIdProvider idProvider, final AttributesProvider attributesProvider,
+			final Map<String, Map<String, Object>> data,
 			final String title, final BufferedImage screenshot, final DefaultValueFinder defaultValueFinder ) {
 		this.idProvider = idProvider;
+		this.attributesProvider = attributesProvider;
 		this.data = data;
 		this.title = title;
 		this.screenshot = screenshot;
@@ -58,10 +62,10 @@ class PeerConverter {
 
 		if ( parentPath == null ) {
 			assert root == null : "We can only have one root element!";
-			root = new RootElementPeer( webData, path, title, screenshot, defaultValueFinder );
+			root = new RootElementPeer( attributesProvider, webData, path, title, screenshot, defaultValueFinder );
 			peer = root;
 		} else {
-			peer = new WebElementPeer( webData, path, defaultValueFinder );
+			peer = new WebElementPeer( attributesProvider, webData, path, defaultValueFinder );
 			WebElementPeer parent = converted.get( parentPath );
 			if ( parent == null ) {
 				parent = convertToPeer( parentPath, new WebData( data.get( parentPath ) ) );

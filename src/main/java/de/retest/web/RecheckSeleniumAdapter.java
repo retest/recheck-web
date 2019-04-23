@@ -83,7 +83,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	public RootElement convertToPeers( final Map<String, Map<String, Object>> data, final String title,
 			final BufferedImage screenshot ) {
-		return new PeerConverter( retestIdProvider, data, title, screenshot, defaultValueFinder ).convertToPeers();
+		return new PeerConverter( retestIdProvider, attributesProvider, data, title, screenshot, defaultValueFinder )
+				.convertToPeers();
 	}
 
 	@Override
