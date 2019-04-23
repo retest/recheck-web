@@ -22,7 +22,7 @@ public class ByWhisperer {
 		}
 	}
 
-	public static String retrieveCSSClassName( final ByClassName by ) {
+	public static String retrieveCssClassName( final ByClassName by ) {
 		try {
 			final Field field = ByClassName.class.getDeclaredField( "className" );
 			field.setAccessible( true );

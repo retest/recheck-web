@@ -1,6 +1,6 @@
 package de.retest.web.selenium;
 
-import static de.retest.web.selenium.ByWhisperer.retrieveCSSClassName;
+import static de.retest.web.selenium.ByWhisperer.retrieveCssClassName;
 import static de.retest.web.selenium.ByWhisperer.retrieveId;
 import static de.retest.web.selenium.ByWhisperer.retrieveLinkText;
 import static de.retest.web.selenium.ByWhisperer.retrieveName;
@@ -77,7 +77,7 @@ public class TestHealer {
 	}
 
 	private WebElement findElementByClassName( final ByClassName by ) {
-		final String className = retrieveCSSClassName( by );
+		final String className = retrieveCssClassName( by );
 		final Element actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState,
 				lastActualState, "class", value -> ((String) value).contains( className ) );
 

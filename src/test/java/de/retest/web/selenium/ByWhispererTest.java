@@ -1,6 +1,6 @@
 package de.retest.web.selenium;
 
-import static de.retest.web.selenium.ByWhisperer.retrieveCSSClassName;
+import static de.retest.web.selenium.ByWhisperer.retrieveCssClassName;
 import static de.retest.web.selenium.ByWhisperer.retrieveId;
 import static de.retest.web.selenium.ByWhisperer.retrieveLinkText;
 import static de.retest.web.selenium.ByWhisperer.retrieveName;
@@ -24,7 +24,7 @@ class ByWhispererTest {
 	@Test
 	void retrieveCSSClassName_should_return_ClassName() {
 		final String cssClass = "someClass";
-		assertThat( retrieveCSSClassName( (ByClassName) By.className( cssClass ) ) ).isEqualTo( cssClass );
+		assertThat( retrieveCssClassName( (ByClassName) By.className( cssClass ) ) ).isEqualTo( cssClass );
 	}
 
 	@Test
