@@ -18,6 +18,7 @@ attribute=ping
 attribute=data-.*
 attribute=jsdata
 attribute=jsaction
+attribute=cd_frame_id_
 
 # So we can have a different id in SimpleAutocheckingDriverShowcaseIT:
 matcher: xpath=HTML[1]/BODY[1]/FORM[1]/INPUT[1], attribute: id
