@@ -23,7 +23,7 @@ public class YamlAttributesProvider implements AttributesProvider {
 
 	private static YamlAttributesProvider instance;
 
-	private final AttributesConfig attributesConfig;
+	private final YamlAttributesConfig attributesConfig;
 
 	private YamlAttributesProvider() {
 		attributesConfig = readAttributesConfig();
@@ -41,7 +41,7 @@ public class YamlAttributesProvider implements AttributesProvider {
 		return new YamlAttributesProvider();
 	}
 
-	private AttributesConfig readAttributesConfig() {
+	private YamlAttributesConfig readAttributesConfig() {
 		final String userAttributesFilePath = System.getProperty( ATTRIBUTES_FILE_PROPERTY );
 		if ( userAttributesFilePath != null ) {
 			final Path userAttributes = Paths.get( userAttributesFilePath );
@@ -62,9 +62,9 @@ public class YamlAttributesProvider implements AttributesProvider {
 		}
 	}
 
-	private AttributesConfig readAttributesConfigFromFile( final InputStream in ) throws IOException {
+	private YamlAttributesConfig readAttributesConfigFromFile( final InputStream in ) throws IOException {
 		final ObjectMapper mapper = new ObjectMapper( new YAMLFactory() );
-		return mapper.readValue( in, AttributesConfig.class );
+		return mapper.readValue( in, YamlAttributesConfig.class );
 	}
 
 	@Override
