@@ -22,6 +22,7 @@ public class YamlAttributesProvider implements AttributesProvider {
 	private static final Logger logger = LoggerFactory.getLogger( YamlAttributesProvider.class );
 
 	private static YamlAttributesProvider instance;
+
 	private final AttributesConfig attributesConfig;
 
 	private YamlAttributesProvider() {

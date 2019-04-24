@@ -1,6 +1,6 @@
 package de.retest.web;
 
-import java.awt.*;
+import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -98,8 +98,7 @@ public class WebElementPeer {
 		webData.getKeys().stream() //
 				.filter( Objects::nonNull ) //
 				.filter( key -> AttributesUtil.isStateAttribute( key, attributesProvider ) && !defaultValueFinder
-						.isDefaultValue( identifyingAttributes, key,
-								webData.getAsString( key ) ) ) //
+						.isDefaultValue( identifyingAttributes, key, webData.getAsString( key ) ) ) //
 				.forEach( key -> state.put( key, webData.getAsString( key ) ) );
 		return state;
 	}
