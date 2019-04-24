@@ -3,9 +3,11 @@ package de.retest.web.selenium;
 import java.lang.reflect.Field;
 
 import org.openqa.selenium.By.ByClassName;
+import org.openqa.selenium.By.ByCssSelector;
 import org.openqa.selenium.By.ById;
 import org.openqa.selenium.By.ByLinkText;
 import org.openqa.selenium.By.ByName;
+import org.openqa.selenium.By.ByXPath;
 
 public class ByWhisperer {
 
@@ -21,7 +23,7 @@ public class ByWhisperer {
 		}
 	}
 
-	public static String retrieveCSSClassName( final ByClassName by ) {
+	public static String retrieveCssClassName( final ByClassName by ) {
 		try {
 			final Field field = ByClassName.class.getDeclaredField( "className" );
 			field.setAccessible( true );
@@ -48,6 +50,26 @@ public class ByWhisperer {
 			return (String) field.get( by );
 		} catch ( final ReflectiveOperationException e ) {
 			throw new IllegalStateException( "ByLinkText does not have a 'linkText' field?", e );
+		}
+	}
+
+	public static String retrieveCssSelector( final ByCssSelector by ) {
+		try {
+			final Field field = ByCssSelector.class.getDeclaredField( "cssSelector" );
+			field.setAccessible( true );
+			return (String) field.get( by );
+		} catch ( final ReflectiveOperationException e ) {
+			throw new IllegalStateException( "ByCssSelector does not have a 'cssSelector' field?", e );
+		}
+	}
+
+	public static String retrieveXPath( final ByXPath byXPath ) {
+		try {
+			final Field field = ByXPath.class.getDeclaredField( "xpathExpression" );
+			field.setAccessible( true );
+			return (String) field.get( byXPath );
+		} catch ( final ReflectiveOperationException e ) {
+			throw new IllegalStateException( "ByXPath does not have a 'xpathExpression' field?", e );
 		}
 	}
 }
