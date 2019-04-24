@@ -15,9 +15,10 @@ public class RootElementPeer extends WebElementPeer {
 	private final String title;
 	private final BufferedImage screenshot;
 
-	public RootElementPeer( final WebData webData, final String path, final String title,
+	public RootElementPeer( final AttributesProvider attributesProvider, final WebData webData, final String path,
+			final String title,
 			final BufferedImage screenshot, final DefaultValueFinder defaultValueFinder ) {
-		super( webData, path, defaultValueFinder );
+		super( attributesProvider, webData, path, defaultValueFinder );
 		this.screenshot = screenshot;
 		this.title = title;
 	}

@@ -13,19 +13,19 @@ import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 
-class AttributesConfigDeserializer extends JsonDeserializer<AttributesConfig> {
+class YamlAttributesConfigDeserializer extends JsonDeserializer<YamlAttributesConfig> {
 
 	private static final String CSS_ATTRIBUTES_KEY = "cssAttributes";
 	private static final String HTML_ATTRIBUTES_KEY = "htmlAttributes";
 	private static final String ALL_VALUE = "all";
 
 	@Override
-	public AttributesConfig deserialize( final JsonParser parser, final DeserializationContext context )
+	public YamlAttributesConfig deserialize( final JsonParser parser, final DeserializationContext context )
 			throws IOException, JsonProcessingException {
 		final JsonNode node = parser.getCodec().readTree( parser );
 		final JsonNode cssAttributesNode = node.get( CSS_ATTRIBUTES_KEY );
 		final JsonNode htmlAttributesNode = node.get( HTML_ATTRIBUTES_KEY );
-		return new AttributesConfig( toCssAttributesSet( cssAttributesNode ),
+		return new YamlAttributesConfig( toCssAttributesSet( cssAttributesNode ),
 				toHtmlAttributesSet( htmlAttributesNode ) );
 	}
 

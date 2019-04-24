@@ -35,11 +35,7 @@ public class AttributesUtil {
 		return identifyingAttributes.contains( key );
 	}
 
-	public static boolean isStateAttribute( final String key ) {
-		return isStateAttribute( key, AttributesProvider.getInstance() );
-	}
-
-	static boolean isStateAttribute( final String key, final AttributesProvider provider ) {
+	public static boolean isStateAttribute( final String key, final AttributesProvider provider ) {
 		final boolean isNotIdentifyingAttribute = !isIdentifyingAttribute( key );
 		final boolean isHtmlAttribute = isHtmlAttribute( key, provider );
 		final boolean isCssAttribute = isCssAttribute( key, provider );

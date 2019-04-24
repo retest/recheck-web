@@ -12,29 +12,29 @@ import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 
-class AttributesConfigDeserializerTest {
+class YamlAttributesConfigDeserializerTest {
 
 	File baseDir = new File( "src/test/resources/de/retest/web/AttributesConfigDeserializerTest/" );
 	ObjectMapper mapper = new ObjectMapper( new YAMLFactory() );
-	AttributesConfigDeserializer cut = new AttributesConfigDeserializer();
+	YamlAttributesConfigDeserializer cut = new YamlAttributesConfigDeserializer();
 
 	@Test
 	void should_handle_attributes_selected() throws Exception {
-		final AttributesConfig attributesConfig = deserialize( new File( baseDir, "selected.yaml" ) );
+		final YamlAttributesConfig attributesConfig = deserialize( new File( baseDir, "selected.yaml" ) );
 		assertThat( attributesConfig.getCssAttributes() ).contains( "foo", "bar", "baz" );
 		assertThat( attributesConfig.getHtmlAttributes() ).contains( "tic", "tac", "toe" );
 	}
 
 	@Test
 	void should_handle_attributes_empty() throws Exception {
-		final AttributesConfig attributesConfig = deserialize( new File( baseDir, "empty.yaml" ) );
+		final YamlAttributesConfig attributesConfig = deserialize( new File( baseDir, "empty.yaml" ) );
 		assertThat( attributesConfig.getCssAttributes() ).isEmpty();
 		assertThat( attributesConfig.getHtmlAttributes() ).isEmpty();
 	}
 
 	@Test
 	void should_handle_html_attributes_all() throws Exception {
-		final AttributesConfig attributesConfig = deserialize( new File( baseDir, "all-html.yaml" ) );
+		final YamlAttributesConfig attributesConfig = deserialize( new File( baseDir, "all-html.yaml" ) );
 		assertThat( attributesConfig.getHtmlAttributes() ).isNull();
 	}
 
@@ -60,7 +60,7 @@ class AttributesConfigDeserializerTest {
 				.hasMessage( "'invalid' is an invalid value for 'htmlAttributes'." );
 	}
 
-	private AttributesConfig deserialize( final File yaml ) throws Exception {
+	private YamlAttributesConfig deserialize( final File yaml ) throws Exception {
 		final JsonParser parser = mapper.getFactory().createParser( yaml );
 		final DeserializationContext context = mapper.getDeserializationContext();
 		return cut.deserialize( parser, context );

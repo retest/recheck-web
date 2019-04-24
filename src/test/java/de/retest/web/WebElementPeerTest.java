@@ -18,11 +18,13 @@ import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
 
 class WebElementPeerTest {
 
+	AttributesProvider attributesProvider;
 	WebElementPeer cut;
 
 	@BeforeEach
 	void setUp() {
-		cut = new WebElementPeer( null, null, null );
+		attributesProvider = YamlAttributesProvider.getTestInstance();
+		cut = new WebElementPeer( attributesProvider, null, null, null );
 	}
 
 	@Test
@@ -50,8 +52,8 @@ class WebElementPeerTest {
 	void retrieveStateAttributes_should_not_contain_null() {
 		final Map<String, Object> wrappedData = new HashMap<>();
 		wrappedData.put( null, null );
-		final WebElementPeer cut =
-				new WebElementPeer( new WebData( wrappedData ), "path", mock( DefaultValueFinder.class ) );
+		final WebElementPeer cut = new WebElementPeer( attributesProvider, new WebData( wrappedData ), "path",
+				mock( DefaultValueFinder.class ) );
 
 		final Attributes attributes = cut.retrieveStateAttributes( mock( IdentifyingAttributes.class ) ).immutable();
 
@@ -74,8 +76,8 @@ class WebElementPeerTest {
 		wrappedData.put( AttributesUtil.ID, "someValue" );
 		wrappedData.put( AttributesUtil.NAME, "someValue" );
 		wrappedData.put( AttributesUtil.TAG_NAME, "someValue" );
-		final WebElementPeer cut =
-				new WebElementPeer( new WebData( wrappedData ), "path", mock( DefaultValueFinder.class ) );
+		final WebElementPeer cut = new WebElementPeer( attributesProvider, new WebData( wrappedData ), "path",
+				mock( DefaultValueFinder.class ) );
 
 		final Attributes attributes = cut.retrieveStateAttributes( mock( IdentifyingAttributes.class ) ).immutable();
 
@@ -96,7 +98,8 @@ class WebElementPeerTest {
 		when( defaultValueFinder.isDefaultValue( identifyingAttributes, attributeKey, attributeValue ) )
 				.thenReturn( true );
 
-		final WebElementPeer cut = new WebElementPeer( new WebData( wrappedData ), "path", defaultValueFinder );
+		final WebElementPeer cut =
+				new WebElementPeer( attributesProvider, new WebData( wrappedData ), "path", defaultValueFinder );
 
 		final Attributes attributes = cut.retrieveStateAttributes( identifyingAttributes ).immutable();
 
@@ -111,8 +114,8 @@ class WebElementPeerTest {
 		final Map<String, Object> wrappedData = new HashMap<>();
 		wrappedData.put( attributeKey, attributeValue );
 
-		final WebElementPeer cut =
-				new WebElementPeer( new WebData( wrappedData ), "path", mock( DefaultValueFinder.class ) );
+		final WebElementPeer cut = new WebElementPeer( attributesProvider, new WebData( wrappedData ), "path",
+				mock( DefaultValueFinder.class ) );
 
 		final Attributes attributes = cut.retrieveStateAttributes( mock( IdentifyingAttributes.class ) ).immutable();
 
