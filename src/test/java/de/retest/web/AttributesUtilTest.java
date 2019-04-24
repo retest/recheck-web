@@ -16,7 +16,7 @@ class AttributesUtilTest {
 
 	@BeforeEach
 	void setUp() {
-		attributesProvider = YamlAttributesProvider.getInstance();
+		attributesProvider = YamlAttributesProvider.getTestInstance();
 	}
 
 	@Test

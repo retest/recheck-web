@@ -23,7 +23,7 @@ class WebElementPeerTest {
 
 	@BeforeEach
 	void setUp() {
-		attributesProvider = YamlAttributesProvider.getInstance();
+		attributesProvider = YamlAttributesProvider.getTestInstance();
 		cut = new WebElementPeer( attributesProvider, null, null, null );
 	}
 
@@ -52,9 +52,8 @@ class WebElementPeerTest {
 	void retrieveStateAttributes_should_not_contain_null() {
 		final Map<String, Object> wrappedData = new HashMap<>();
 		wrappedData.put( null, null );
-		final WebElementPeer cut =
-				new WebElementPeer( attributesProvider, new WebData( wrappedData ), "path",
-						mock( DefaultValueFinder.class ) );
+		final WebElementPeer cut = new WebElementPeer( attributesProvider, new WebData( wrappedData ), "path",
+				mock( DefaultValueFinder.class ) );
 
 		final Attributes attributes = cut.retrieveStateAttributes( mock( IdentifyingAttributes.class ) ).immutable();
 
@@ -77,9 +76,8 @@ class WebElementPeerTest {
 		wrappedData.put( AttributesUtil.ID, "someValue" );
 		wrappedData.put( AttributesUtil.NAME, "someValue" );
 		wrappedData.put( AttributesUtil.TAG_NAME, "someValue" );
-		final WebElementPeer cut =
-				new WebElementPeer( attributesProvider, new WebData( wrappedData ), "path",
-						mock( DefaultValueFinder.class ) );
+		final WebElementPeer cut = new WebElementPeer( attributesProvider, new WebData( wrappedData ), "path",
+				mock( DefaultValueFinder.class ) );
 
 		final Attributes attributes = cut.retrieveStateAttributes( mock( IdentifyingAttributes.class ) ).immutable();
 
@@ -116,9 +114,8 @@ class WebElementPeerTest {
 		final Map<String, Object> wrappedData = new HashMap<>();
 		wrappedData.put( attributeKey, attributeValue );
 
-		final WebElementPeer cut =
-				new WebElementPeer( attributesProvider, new WebData( wrappedData ), "path",
-						mock( DefaultValueFinder.class ) );
+		final WebElementPeer cut = new WebElementPeer( attributesProvider, new WebData( wrappedData ), "path",
+				mock( DefaultValueFinder.class ) );
 
 		final Attributes attributes = cut.retrieveStateAttributes( mock( IdentifyingAttributes.class ) ).immutable();
 
