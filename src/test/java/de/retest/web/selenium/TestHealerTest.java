@@ -23,7 +23,7 @@ import de.retest.recheck.ui.descriptors.RootElement;
 class TestHealerTest {
 
 	@Test
-	public void ByCssSelector_machtes_elements_with_given_class() {
+	public void ByCssSelector_matches_elements_with_given_class() {
 		final RecheckDriver wrapped = mock( RecheckDriver.class );
 		final WebElement resultMarker = mock( WebElement.class );
 
@@ -86,7 +86,7 @@ class TestHealerTest {
 	}
 
 	@Test
-	public void ByXPathExpression_machtes_elements_with_given_xpath() {
+	public void ByXPathExpression_matches_elements_with_given_xpath() {
 		final RecheckDriver wrapped = mock( RecheckDriver.class );
 		final WebElement resultMarker = mock( WebElement.class );
 
