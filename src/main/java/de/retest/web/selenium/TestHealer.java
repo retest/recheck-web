@@ -22,6 +22,12 @@ import de.retest.recheck.ui.descriptors.RootElement;
 
 public class TestHealer {
 
+	private static final String PATH = "path";
+	private static final String TEXT = "text";
+	private static final String NAME = "name";
+	private static final String CLASS = "class";
+	private static final String ID = "id";
+
 	private static final Logger logger = LoggerFactory.getLogger( TestHealer.class );
 	private static final String ELEMENT_NOT_FOUND_MESSAGE = "It appears that even the Golden Master has no element";
 
@@ -65,14 +71,14 @@ public class TestHealer {
 	private WebElement findElementById( final ById by ) {
 		final String id = retrieveId( by );
 		final Element actualElement =
-				de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, "id", id );
+				de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, ID, id );
 
 		if ( actualElement == null ) {
 			logger.warn( "{} with id '{}'.", ELEMENT_NOT_FOUND_MESSAGE, id );
 			return null;
 		} else {
 			writeWarnLogForChangedIdentifier( "HTML id attribute", id,
-					actualElement.getIdentifyingAttributes().get( "id" ), "id", actualElement.getRetestId() );
+					actualElement.getIdentifyingAttributes().get( ID ), ID, actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -80,14 +86,14 @@ public class TestHealer {
 	private WebElement findElementByClassName( final ByClassName by ) {
 		final String className = retrieveCssClassName( by );
 		final Element actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState,
-				lastActualState, "class", value -> ((String) value).contains( className ) );
+				lastActualState, CLASS, value -> ((String) value).contains( className ) );
 
 		if ( actualElement == null ) {
 			logger.warn( "{} with CSS class '{}'.", ELEMENT_NOT_FOUND_MESSAGE, className );
 			return null;
 		} else {
 			writeWarnLogForChangedIdentifier( "HTML class attribute", className,
-					actualElement.getIdentifyingAttributes().get( "class" ), "className", actualElement.getRetestId() );
+					actualElement.getIdentifyingAttributes().get( CLASS ), "className", actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -95,21 +101,21 @@ public class TestHealer {
 	private WebElement findElementByName( final ByName by ) {
 		final String name = retrieveName( by );
 		final Element actualElement =
-				de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, "name", name );
+				de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, NAME, name );
 
 		if ( actualElement == null ) {
 			logger.warn( "{} with name '{}'.", ELEMENT_NOT_FOUND_MESSAGE, name );
 			return null;
 		} else {
-			writeWarnLogForChangedIdentifier( "HTML name attribute", name, actualElement.getAttributes().get( "name" ),
-					"name", actualElement.getRetestId() );
+			writeWarnLogForChangedIdentifier( "HTML name attribute", name, actualElement.getAttributes().get( NAME ),
+					NAME, actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
 
 	private WebElement findElementByLinkText( final ByLinkText by ) {
 		final String linkText = retrieveLinkText( by );
-		final String attributeName = "text";
+		final String attributeName = TEXT;
 		final Element actualElement = de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState,
 				element -> linkText.equals( element.getAttributes().get( attributeName ) )
 						|| linkText.equals( element.getIdentifyingAttributes().get( attributeName ) )
@@ -120,7 +126,7 @@ public class TestHealer {
 			return null;
 		} else {
 			writeWarnLogForChangedIdentifier( "link text", linkText,
-					actualElement.getIdentifyingAttributes().get( "text" ), "linkText", actualElement.getRetestId() );
+					actualElement.getIdentifyingAttributes().get( TEXT ), "linkText", actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -129,15 +135,14 @@ public class TestHealer {
 		final String selector = retrieveUsableCssSelector( by );
 
 		final Element actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState,
-				lastActualState, "class", value -> ((String) value).contains( selector ) );
+				lastActualState, CLASS, value -> ((String) value).contains( selector ) );
 
 		if ( actualElement == null ) {
 			logger.warn( "{} with CSS selector '{}'.", ELEMENT_NOT_FOUND_MESSAGE, selector );
 			return null;
 		} else {
 			writeWarnLogForChangedIdentifier( "HTML class attribute", selector,
-					actualElement.getIdentifyingAttributes().get( "class" ), "cssSelector",
-					actualElement.getRetestId() );
+					actualElement.getIdentifyingAttributes().get( CLASS ), "cssSelector", actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -173,18 +178,18 @@ public class TestHealer {
 			return null;
 		} else {
 			writeWarnLogForChangedIdentifier( "xpath", xpathExpression,
-					actualElement.getIdentifyingAttributes().get( "path" ), "xpath", actualElement.getRetestId() );
+					actualElement.getIdentifyingAttributes().get( PATH ), "xpath", actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
 
 	private Element findMatchingElement( final String xpathExpression ) {
 		if ( xpathExpression.startsWith( "//" ) ) {
-			return de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, "path",
+			return de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, PATH,
 					value -> ((Path) value).toString().toLowerCase()
 							.contains( xpathExpression.substring( 1 ).toLowerCase() ) );
 		}
-		return de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, "path",
+		return de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, PATH,
 				value -> ((Path) value).toString().toLowerCase()
 						.startsWith( xpathExpression.substring( 1 ).toLowerCase() ) );
 	}
