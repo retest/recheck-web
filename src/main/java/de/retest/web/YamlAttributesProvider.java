@@ -66,25 +66,16 @@ public class YamlAttributesProvider implements AttributesProvider {
 		return mapper.readValue( in, AttributesConfig.class );
 	}
 
-	/**
-	 * @see AttributesConfig#getCssAttributes()
-	 */
 	@Override
 	public Set<String> getCssAttributes() {
 		return attributesConfig.getCssAttributes();
 	}
 
-	/**
-	 * @see AttributesConfig#getHtmlAttributes()
-	 */
 	@Override
 	public Set<String> getHtmlAttributes() {
 		return attributesConfig.getHtmlAttributes();
 	}
 
-	/**
-	 * @see AttributesConfig#allHtmlAttributes()
-	 */
 	@Override
 	public boolean allHtmlAttributes() {
 		return attributesConfig.allHtmlAttributes();

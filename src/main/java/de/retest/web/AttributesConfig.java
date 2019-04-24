@@ -16,27 +16,21 @@ public class AttributesConfig {
 	}
 
 	/**
-	 * Set of CSS attributes that are added to an element's state. Can be a set of selected attributes or empty ("all"
-	 * not supported).
-	 *
-	 * @return Possibly empty set of selected CSS attributes.
+	 * @see AttributesConfig#getCssAttributes()
 	 */
 	public Set<String> getCssAttributes() {
 		return cssAttributes;
 	}
 
 	/**
-	 * Set of HTML attributes that are added to an element's state. Can be a set of selected attributes, empty, or
-	 * "all".
-	 *
-	 * @return Possibly empty set of selected HTML attributes or {@code null} in the case of "all".
+	 * @see AttributesConfig#getHtmlAttributes()
 	 */
 	public Set<String> getHtmlAttributes() {
 		return htmlAttributes;
 	}
 
 	/**
-	 * @return {@code true} if all HTML attributes should be used, otherwise false.
+	 * @see AttributesConfig#allHtmlAttributes()
 	 */
 	public boolean allHtmlAttributes() {
 		return htmlAttributes == null;
