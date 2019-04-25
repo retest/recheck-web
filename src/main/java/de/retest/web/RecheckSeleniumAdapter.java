@@ -23,9 +23,9 @@ import org.slf4j.LoggerFactory;
 import de.retest.recheck.RecheckAdapter;
 import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.Element;
-import de.retest.recheck.ui.descriptors.RetestIdProviderUtil;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
+import de.retest.recheck.util.RetestIdProviderUtil;
 import de.retest.web.mapping.PathsToWebDataMapping;
 import de.retest.web.selenium.UnbreakableDriver;
 
