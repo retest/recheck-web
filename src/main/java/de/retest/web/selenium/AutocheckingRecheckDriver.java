@@ -110,6 +110,9 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 	}
 
 	public void check( final String action, final WebElement target, final Object... params ) {
+		if ( re == null ) {
+			startTest();
+		}
 		re.check( this, namingStrategy.getUniqueCheckName( action, target, params ) );
 	}
 }
