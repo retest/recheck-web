@@ -40,7 +40,7 @@ public class SimpleAutocheckingDriverShowcaseIT {
 		final Path showcasePath = Paths.get( "src/test/resources/pages/page-frame.html" );
 		driver.get( showcasePath.toUri().toURL().toString() );
 
-		driver.findElement( By.id( "email" ) ).sendKeys( "me@retest.de" );
+		driver.findElement( By.id( "old-email-id" ) ).sendKeys( "me@retest.de" );
 
 		driver.findElement( By.tagName( "html" ) ).findElement( By.className( "inputLabel" ) ).sendKeys( "typed" );
 
