@@ -37,8 +37,6 @@ public class SimpleAutocheckingDriverShowcaseIT {
 
 	@Test
 	public void index() throws Exception {
-		driver.startTest();
-
 		final Path showcasePath = Paths.get( "src/test/resources/pages/page-frame.html" );
 		driver.get( showcasePath.toUri().toURL().toString() );
 
