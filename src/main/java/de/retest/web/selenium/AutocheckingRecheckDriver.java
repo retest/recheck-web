@@ -99,7 +99,12 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 
 	@Override
 	public WebElement findElement( final By by ) {
-		return new WebElementWrapper( super.findElement( by ), this );
+		final WebElement result = super.findElement( by );
+		if ( result instanceof WebElementWrapper ) {
+			// Element was not found, so we already have it wrapped
+			return result;
+		}
+		return new WebElementWrapper( result, this );
 	}
 
 	@Override
