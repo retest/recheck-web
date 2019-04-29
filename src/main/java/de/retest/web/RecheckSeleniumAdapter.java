@@ -8,8 +8,11 @@ import java.io.InputStream;
 import java.io.UncheckedIOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,6 +22,7 @@ import org.slf4j.LoggerFactory;
 
 import de.retest.recheck.RecheckAdapter;
 import de.retest.recheck.ui.DefaultValueFinder;
+import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RetestIdProviderUtil;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
@@ -29,6 +33,10 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	public static final RetestIdProvider idProvider = RetestIdProviderUtil.getConfiguredRetestIdProvider();
 
 	private static final String GET_ALL_ELEMENTS_BY_PATH_JS_PATH = "/javascript/getAllElementsByPath.js";
+	private final Predicate<Element> isFrame = element -> {
+		final String type = element.getIdentifyingAttributes().getType();
+		return Stream.of( "iframe", "frame" ).anyMatch( type::equalsIgnoreCase );
+	};
 
 	private static final Logger logger = LoggerFactory.getLogger( RecheckSeleniumAdapter.class );
 
@@ -61,11 +69,15 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		logger.info( "Retrieving attributes for each element." );
 		final Set<String> cssAttributes = attributesProvider.getCssAttributes();
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		@SuppressWarnings( "unchecked" ) final Map<String, Map<String, Object>> result =
+		@SuppressWarnings( "unchecked" )
+		final Map<String, Map<String, Object>> rawAttributesMapping =
 				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes );
 
-		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), result.size() );
-		final RootElement lastChecked = convertToPeers( result, driver.getTitle(), shoot( driver ) );
+		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), rawAttributesMapping.size() );
+		final RootElement lastChecked = convertToPeers( rawAttributesMapping, driver.getTitle(), shoot( driver ) );
+
+		addChildrenFromFrames( driver, cssAttributes, lastChecked );
+
 		if ( driver instanceof UnbreakableDriver ) {
 			((UnbreakableDriver) driver).setLastActualState( lastChecked );
 		}
@@ -73,7 +85,36 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		return Collections.singleton( lastChecked );
 	}
 
-	public String getQueryJS() {
+	private void addChildrenFromFrames( final WebDriver driver, final Set<String> cssAttributes,
+			final RootElement lastChecked ) {
+		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		final List<Element> frames =
+				de.retest.web.selenium.By.findElements( lastChecked.getContainedElements(), isFrame );
+
+		logger.debug( "Found {} frames, getting data per frame.", frames.size() );
+		for ( final Element frame : frames ) {
+			final String frameId = frame.getIdentifyingAttributes().get( "id" );
+			if ( frameId == null ) {
+				// TODO Implement handling e.g. via name, XPaht, etc.
+				logger.error( "Cannot retrieve frame with ID null from {}.", frame );
+				continue;
+			}
+			try {
+				logger.debug( "Switching to frame with ID {}.", frameId );
+				driver.switchTo().frame( frameId );
+				@SuppressWarnings( "unchecked" )
+				final Map<String, Map<String, Object>> rawAttributesMapping =
+						(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes );
+				final RootElement frameContent = convertToPeers( rawAttributesMapping, "frame-" + frameId, null );
+				frame.addChildren( frameContent.getContainedElements() );
+			} catch ( final Exception e ) {
+				logger.error( "Exception retrieving data content of frame with ID {}.", frameId, e );
+			}
+			driver.switchTo().defaultContent();
+		}
+	}
+
+	private String getQueryJS() {
 		try ( final InputStream url = getClass().getResourceAsStream( GET_ALL_ELEMENTS_BY_PATH_JS_PATH ) ) {
 			return String.join( "\n", IOUtils.readLines( url, StandardCharsets.UTF_8 ) );
 		} catch ( final IOException e ) {
@@ -81,7 +122,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		}
 	}
 
-	public RootElement convertToPeers( final Map<String, Map<String, Object>> data, final String title,
+	RootElement convertToPeers( final Map<String, Map<String, Object>> data, final String title,
 			final BufferedImage screenshot ) {
 		return new PeerConverter( retestIdProvider, attributesProvider, data, title, screenshot, defaultValueFinder )
 				.convertToPeers();

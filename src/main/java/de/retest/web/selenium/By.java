@@ -1,5 +1,6 @@
 package de.retest.web.selenium;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -37,6 +38,17 @@ public abstract class By extends org.openqa.selenium.By {
 			}
 		}
 		return null;
+	}
+
+	public static List<Element> findElements( final List<Element> children, final Predicate<Element> predicate ) {
+		final List<Element> result = new ArrayList<>();
+		for ( final Element element : children ) {
+			if ( predicate.test( element ) ) {
+				result.add( element );
+			}
+			result.addAll( findElements( element.getContainedElements(), predicate ) );
+		}
+		return result;
 	}
 
 	public static Element findElementByAttribute( final RootElement lastExpectedState,

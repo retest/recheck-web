@@ -1,23 +1,24 @@
 # Ignore file for recheck. Please do not delete, even if it is empty.
 
-# You can ignore specific attributes like so: 
+# You can ignore specific attributes like so:
 # matcher: retestid=div-b4f23, attribute: font.*
 
-# To ignore whole subtrees, use e.g. xpath:
+# To ignore whole subtrees, use e.g. XPath:
 # matcher: xpath=HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]
 
-# To ignore attributes globally, use 
+# To ignore attributes globally, use:
 # attribute=class
 
 # More details and examples can be found here:
 # https://retest.github.io/docs/recheck/how-ignore-works-in-recheck/
 
-# ignore non-visible attributes
+# Ignore non-visible attributes:
 attribute=class
 attribute=ping
 attribute=data-.*
 attribute=jsdata
 attribute=jsaction
+attribute=cd_frame_id_
 
-# So we can have a different id in SimpleAutocheckingDriverShowcaseIT:
+# So we can have a different ID in SimpleAutocheckingDriverShowcaseIT:
 matcher: xpath=HTML[1]/BODY[1]/FORM[1]/INPUT[1], attribute: id
