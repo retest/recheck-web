@@ -79,7 +79,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		return Collections.singleton( lastChecked );
 	}
 
-	public void addChildrenFromFrames( final WebDriver driver, final Set<String> cssAttributes,
+	private void addChildrenFromFrames( final WebDriver driver, final Set<String> cssAttributes,
 			final RootElement lastChecked ) {
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		final List<Element> frames = de.retest.web.selenium.By.findElements( lastChecked.getContainedElements(),
@@ -109,7 +109,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		}
 	}
 
-	public String getQueryJS() {
+	private String getQueryJS() {
 		try ( final InputStream url = getClass().getResourceAsStream( GET_ALL_ELEMENTS_BY_PATH_JS_PATH ) ) {
 			return String.join( "\n", IOUtils.readLines( url, StandardCharsets.UTF_8 ) );
 		} catch ( final IOException e ) {
@@ -117,7 +117,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		}
 	}
 
-	public RootElement convertToPeers( final Map<String, Map<String, Object>> data, final String title,
+	RootElement convertToPeers( final Map<String, Map<String, Object>> data, final String title,
 			final BufferedImage screenshot ) {
 		return new PeerConverter( retestIdProvider, attributesProvider, data, title, screenshot, defaultValueFinder )
 				.convertToPeers();
