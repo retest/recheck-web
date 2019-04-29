@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
 
-class EmptyDivTestIT {
+class SpecialContainerTestIT {
 	WebDriver driver;
 	Recheck re;
 
@@ -24,8 +24,8 @@ class EmptyDivTestIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void testCenter( final WebDriver driver ) throws Exception {
 		this.driver = driver;
-		driver.get( Paths.get( "src/test/resources/pages/empty-div.html" ).toUri().toURL().toString() );
-		re.startTest( "empty-div-" + driver.getClass().getSimpleName() );
+		driver.get( Paths.get( "src/test/resources/pages/special-container.html" ).toUri().toURL().toString() );
+		re.startTest( "special-container-" + driver.getClass().getSimpleName() );
 
 		re.check( driver, "open" );
 
