@@ -11,6 +11,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.JavascriptExecutor;
@@ -31,6 +33,10 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	public static final RetestIdProvider idProvider = RetestIdProviderUtil.getConfiguredRetestIdProvider();
 
 	private static final String GET_ALL_ELEMENTS_BY_PATH_JS_PATH = "/javascript/getAllElementsByPath.js";
+	private final Predicate<Element> isFrame = element -> {
+		final String type = element.getIdentifyingAttributes().getType();
+		return Stream.of( "iframe", "frame" ).anyMatch( type::equalsIgnoreCase );
+	};
 
 	private static final Logger logger = LoggerFactory.getLogger( RecheckSeleniumAdapter.class );
 
@@ -82,28 +88,27 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	private void addChildrenFromFrames( final WebDriver driver, final Set<String> cssAttributes,
 			final RootElement lastChecked ) {
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		final List<Element> frames = de.retest.web.selenium.By.findElements( lastChecked.getContainedElements(),
-				element -> "iframe".equalsIgnoreCase( element.getIdentifyingAttributes().getType() )
-						|| "frame".equalsIgnoreCase( element.getIdentifyingAttributes().getType() ) );
+		final List<Element> frames =
+				de.retest.web.selenium.By.findElements( lastChecked.getContainedElements(), isFrame );
 
-		logger.debug( "Found {} frames, getting HTML per frame.", frames.size() );
+		logger.debug( "Found {} frames, getting data per frame.", frames.size() );
 		for ( final Element frame : frames ) {
 			final String frameId = frame.getIdentifyingAttributes().get( "id" );
 			if ( frameId == null ) {
 				// TODO Implement handling e.g. via name, XPaht, etc.
-				logger.error( "Cannot retrieve frame with id null from {}.", frame );
+				logger.error( "Cannot retrieve frame with ID null from {}.", frame );
 				continue;
 			}
 			try {
 				logger.debug( "Switching to frame with ID {}.", frameId );
 				driver.switchTo().frame( frameId );
 				@SuppressWarnings( "unchecked" )
-				final Map<String, Map<String, Object>> frameAttributesMapping =
+				final Map<String, Map<String, Object>> rawAttributesMapping =
 						(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes );
-				final RootElement frameContent = convertToPeers( frameAttributesMapping, "", null );
+				final RootElement frameContent = convertToPeers( rawAttributesMapping, "frame-" + frameId, null );
 				frame.addChildren( frameContent.getContainedElements() );
 			} catch ( final Exception e ) {
-				logger.error( "Exception retrieving HTML content of frame {}.", frameId, e );
+				logger.error( "Exception retrieving data content of frame with ID {}.", frameId, e );
 			}
 			driver.switchTo().defaultContent();
 		}
