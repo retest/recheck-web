@@ -35,7 +35,7 @@ public class TestHealer {
 	private final RootElement lastExpectedState;
 	private final RootElement lastActualState;
 
-	public TestHealer( final UnbreakableDriver wrapped ) {
+	private TestHealer( final UnbreakableDriver wrapped ) {
 		this.wrapped = wrapped;
 		lastExpectedState = wrapped.getLastExpectedState();
 		lastActualState = wrapped.getLastActualState();
