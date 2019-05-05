@@ -110,8 +110,8 @@ public class TestHealer {
 			logger.warn( "{} with name '{}'.", ELEMENT_NOT_FOUND_MESSAGE, name );
 			return null;
 		} else {
-			writeWarnLogForChangedIdentifier( "HTML name attribute", name, actualElement.getAttributes().get( NAME ),
-					NAME, actualElement.getRetestId() );
+			writeWarnLogForChangedIdentifier( "HTML name attribute", name,
+					actualElement.getIdentifyingAttributes().get( NAME ), NAME, actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
