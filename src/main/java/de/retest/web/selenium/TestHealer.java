@@ -16,6 +16,7 @@ import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import de.retest.recheck.TestCaseFinder;
 import de.retest.recheck.ui.Path;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
@@ -203,15 +204,25 @@ public class TestHealer {
 		logger.warn( "The {} used for element identification changed from '{}' to '{}'.", elementIdentifier, oldValue,
 				newValue );
 		logger.warn( "retest identified the element based on the persisted Golden Master." );
-		// TODO Get filename from state
-		// TODO Guess test name from state name
-		logger.warn( "If you apply these changes to the Golden Master {}, your test {} will break.", "", "" );
-		// TODO Eventually, we want something like Test.java:123 instead of "your test"
+
+		String test = "";
+		String callLocation = "";
+		try {
+			final StackTraceElement callSite = TestCaseFinder.findTestCaseMethodInStack();
+			test = callSite.getClassName();
+			callLocation = callSite.getFileName() + ":" + callSite.getLineNumber();
+		} catch ( final Exception e ) {
+			logger.warn( "Exception retrieving call site of findBy call." );
+		}
+
+		// TODO Get filename of state
+		logger.warn( "If you apply these changes to the Golden Master {}, your test {} will break.", "", test );
+
 		if ( newValue != null ) {
-			logger.warn( "Use `By.{}(\"{}\")` or `By.retestId(\"{}\")` to update your test.", byMethodName, newValue,
-					retestId );
+			logger.warn( "Use `By.{}(\"{}\")` or `By.retestId(\"{}\")` to update your test {}.", byMethodName, newValue,
+					retestId, callLocation );
 		} else {
-			logger.warn( "Use `By.retestId(\"{}\")` to update your test.", retestId );
+			logger.warn( "Use `By.retestId(\"{}\")` to update your test {}.", retestId, callLocation );
 		}
 	}
 
