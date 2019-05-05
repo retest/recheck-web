@@ -38,6 +38,9 @@ public class TestHealer {
 	private TestHealer( final UnbreakableDriver wrapped ) {
 		this.wrapped = wrapped;
 		lastExpectedState = wrapped.getLastExpectedState();
+		if ( lastExpectedState == null ) {
+			throw new IllegalStateException( "No last expected state to find old element in!" );
+		}
 		lastActualState = wrapped.getLastActualState();
 	}
 
