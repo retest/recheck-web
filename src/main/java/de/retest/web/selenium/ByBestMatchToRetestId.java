@@ -18,10 +18,10 @@ import de.retest.recheck.ui.descriptors.RootElement;
  * state).
  *
  * Note that elements are assigned a retestId when they are created (i.e. also when the _new_ state is created). This
- * retestId might differ from the retestId the element had in the persisted (Golden Master) state. But since retestId is
- * immutable, the element (and all its child elements) thus have their respective _new_ (potentially different)
- * retestId. Thus, the result of a call to `findByRetestId` might return an element with a different retestId than was
- * delivered.
+ * retestId might differ from the retestId the element had in the persisted (Golden Master) state. Therefore, all its
+ * child elements have their respective _new_ (potentially different) retestId. Thus, the result of a call to
+ * `findByRetestId` might return an element with children that have a different retestId than they have in the Golden
+ * Master.
  */
 public class ByBestMatchToRetestId extends By implements Serializable {
 
@@ -45,7 +45,7 @@ public class ByBestMatchToRetestId extends By implements Serializable {
 	}
 
 	/**
-	 * Might return an element with a different retestId, that is non-the-less the best match to the given retestId.
+	 * Might return an element whose children have a different retestId than in the Golden Master.
 	 */
 	public Element findElement( final RootElement lastExpectedState, final RootElement lastActualState ) {
 		final Element result = de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState,

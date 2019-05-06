@@ -28,7 +28,7 @@ public abstract class By extends org.openqa.selenium.By {
 		if ( resultFromActual == null ) {
 			throw new NoElementWithHighEnoughMatchFoundException( resultFromExpected );
 		}
-		return resultFromActual;
+		return resultFromActual.applyRetestId( resultFromExpected.getRetestId() );
 	}
 
 	private static Element findElement( final List<Element> children, final Predicate<Element> predicate ) {
