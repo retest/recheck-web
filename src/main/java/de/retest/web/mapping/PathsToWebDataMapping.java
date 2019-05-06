@@ -7,8 +7,6 @@ import java.util.stream.Collectors;
 
 import org.openqa.selenium.JavascriptExecutor;
 
-import de.retest.web.WebData;
-
 /**
  * Raw paths to web data mapping that is received via {@link JavascriptExecutor#executeScript(String, Object...)}.
  * Internally, it is a map of paths to maps of attributes. Example:

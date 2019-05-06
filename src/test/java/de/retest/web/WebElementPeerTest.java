@@ -15,6 +15,7 @@ import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.Attributes;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
+import de.retest.web.mapping.WebData;
 
 class WebElementPeerTest {
 

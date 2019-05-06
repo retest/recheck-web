@@ -9,6 +9,8 @@ import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
 import de.retest.web.mapping.PathsToWebDataMapping;
+import de.retest.web.mapping.WebData;
+import de.retest.web.mapping.WebDataFilter;
 
 class PeerConverter {
 

@@ -1,4 +1,4 @@
-package de.retest.web;
+package de.retest.web.mapping;
 
 import java.util.Arrays;
 import java.util.HashSet;

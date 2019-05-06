@@ -19,6 +19,7 @@ import de.retest.recheck.ui.descriptors.OutlineAttribute;
 import de.retest.recheck.ui.descriptors.PathAttribute;
 import de.retest.recheck.ui.descriptors.StringAttribute;
 import de.retest.recheck.ui.descriptors.SuffixAttribute;
+import de.retest.web.mapping.WebData;
 import de.retest.web.util.TextAttributeUtil;
 
 public class WebElementPeer {

@@ -1,4 +1,4 @@
-package de.retest.web;
+package de.retest.web.mapping;
 
 import static de.retest.web.ScreenshotProvider.SCALE;
 
@@ -8,6 +8,9 @@ import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import de.retest.web.AttributesUtil;
+import de.retest.web.ConversionException;
 
 public class WebData {
 
