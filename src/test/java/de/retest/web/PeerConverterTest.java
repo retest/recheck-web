@@ -9,9 +9,12 @@ import java.util.Map;
 
 import org.junit.jupiter.api.Test;
 
+import de.retest.recheck.ui.DefaultValueFinder;
+import de.retest.recheck.ui.descriptors.RetestIdProviderUtil;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.diff.RootElementDifference;
 import de.retest.recheck.ui.diff.RootElementDifferenceFinder;
+import de.retest.web.mapping.PathsToWebDataMapping;
 
 class PeerConverterTest {
 
@@ -27,22 +30,27 @@ class PeerConverterTest {
 
 	@Test
 	void convertToPeers_should_result_in_valid_tree() throws Exception {
-		final Map<String, Map<String, Object>> input = new HashMap<>();
-		input.put( "//HTML[1]/BODY[1]", toHashMap( "BODY" ) );
-		input.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]", toHashMap( "DIV" ) );
-		input.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]", toHashMap( "DIV" ) );
-		input.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[1]", toHashMap( "LI" ) );
-		input.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]", toHashMap( "A" ) );
-		input.put( "//HTML[1]", toHashMap( "HTML" ) );
-		input.put( "//HTML[1]/BODY[1]/FOOTER[1]", toHashMap( "FOOTER" ) );
-		input.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[2]", toHashMap( "LI" ) );
-		input.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]", toHashMap( "A" ) );
-		input.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[3]", toHashMap( "LI" ) );
-		input.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]", toHashMap( "UL" ) );
-		input.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]", toHashMap( "A" ) );
-		final RecheckSeleniumAdapter cut = new RecheckSeleniumAdapter();
-		final RootElement root = cut.convertToPeers( input, "title", null );
-		final RootElementDifferenceFinder diffFinder = new RootElementDifferenceFinder( cut.getDefaultValueFinder() );
+		final Map<String, Map<String, Object>> data = new HashMap<>();
+		data.put( "//HTML[1]/BODY[1]", toHashMap( "BODY" ) );
+		data.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]", toHashMap( "DIV" ) );
+		data.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]", toHashMap( "DIV" ) );
+		data.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[1]", toHashMap( "LI" ) );
+		data.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]", toHashMap( "A" ) );
+		data.put( "//HTML[1]", toHashMap( "HTML" ) );
+		data.put( "//HTML[1]/BODY[1]/FOOTER[1]", toHashMap( "FOOTER" ) );
+		data.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[2]", toHashMap( "LI" ) );
+		data.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]", toHashMap( "A" ) );
+		data.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[3]", toHashMap( "LI" ) );
+		data.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]", toHashMap( "UL" ) );
+		data.put( "//HTML[1]/BODY[1]/FOOTER[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]", toHashMap( "A" ) );
+		final PathsToWebDataMapping mapping = new PathsToWebDataMapping( data );
+
+		final DefaultValueFinder defaultValueFinder = ( identifyingAttributes, attributeKey, attributeValue ) -> false;
+		final PeerConverter cut = new PeerConverter( RetestIdProviderUtil.getConfiguredRetestIdProvider(),
+				YamlAttributesProvider.getInstance(), mapping, "title", null, defaultValueFinder );
+		final RootElement root = cut.convertToPeers();
+
+		final RootElementDifferenceFinder diffFinder = new RootElementDifferenceFinder( defaultValueFinder );
 		final List<RootElementDifference> diffs =
 				diffFinder.findDifferences( singletonList( root ), singletonList( root ) );
 		assertThat( diffs ).isEmpty();

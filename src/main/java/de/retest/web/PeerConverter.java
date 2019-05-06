@@ -3,10 +3,12 @@ package de.retest.web;
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
+import de.retest.web.mapping.PathsToWebDataMapping;
 
 class PeerConverter {
 
@@ -14,7 +16,7 @@ class PeerConverter {
 
 	private final AttributesProvider attributesProvider;
 
-	private final Map<String, Map<String, Object>> data;
+	private final PathsToWebDataMapping mapping;
 	private final BufferedImage screenshot;
 	private final String title;
 
@@ -24,11 +26,11 @@ class PeerConverter {
 	private final DefaultValueFinder defaultValueFinder;
 
 	public PeerConverter( final RetestIdProvider idProvider, final AttributesProvider attributesProvider,
-			final Map<String, Map<String, Object>> data,
-			final String title, final BufferedImage screenshot, final DefaultValueFinder defaultValueFinder ) {
+			final PathsToWebDataMapping mapping, final String title, final BufferedImage screenshot,
+			final DefaultValueFinder defaultValueFinder ) {
 		this.idProvider = idProvider;
 		this.attributesProvider = attributesProvider;
-		this.data = data;
+		this.mapping = mapping;
 		this.title = title;
 		this.screenshot = screenshot;
 		this.defaultValueFinder = defaultValueFinder;
@@ -36,9 +38,9 @@ class PeerConverter {
 
 	public RootElement convertToPeers() {
 		idProvider.reset();
-		for ( final Map.Entry<String, Map<String, Object>> entry : data.entrySet() ) {
+		for ( final Entry<String, WebData> entry : mapping ) {
 			final String path = entry.getKey();
-			final WebData webData = new WebData( entry.getValue() );
+			final WebData webData = entry.getValue();
 			if ( WebDataFilter.shouldIgnore( webData ) ) {
 				continue;
 			}
@@ -68,7 +70,7 @@ class PeerConverter {
 			peer = new WebElementPeer( attributesProvider, webData, path, defaultValueFinder );
 			WebElementPeer parent = converted.get( parentPath );
 			if ( parent == null ) {
-				parent = convertToPeer( parentPath, new WebData( data.get( parentPath ) ) );
+				parent = convertToPeer( parentPath, mapping.getWebData( parentPath ) );
 			}
 			parent.addChild( peer );
 		}

@@ -26,6 +26,7 @@ import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RetestIdProviderUtil;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
+import de.retest.web.mapping.PathsToWebDataMapping;
 import de.retest.web.selenium.UnbreakableDriver;
 
 public class RecheckSeleniumAdapter implements RecheckAdapter {
@@ -70,11 +71,11 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		final Set<String> cssAttributes = attributesProvider.getCssAttributes();
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		@SuppressWarnings( "unchecked" )
-		final Map<String, Map<String, Object>> rawAttributesMapping =
-				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes );
+		final PathsToWebDataMapping mapping = new PathsToWebDataMapping(
+				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes ) );
 
-		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), rawAttributesMapping.size() );
-		final RootElement lastChecked = convertToPeers( rawAttributesMapping, driver.getTitle(), shoot( driver ) );
+		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), mapping.size() );
+		final RootElement lastChecked = convertToPeers( mapping, driver.getTitle(), shoot( driver ) );
 
 		addChildrenFromFrames( driver, cssAttributes, lastChecked );
 
@@ -103,9 +104,9 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 				logger.debug( "Switching to frame with ID {}.", frameId );
 				driver.switchTo().frame( frameId );
 				@SuppressWarnings( "unchecked" )
-				final Map<String, Map<String, Object>> rawAttributesMapping =
-						(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes );
-				final RootElement frameContent = convertToPeers( rawAttributesMapping, "frame-" + frameId, null );
+				final PathsToWebDataMapping mapping = new PathsToWebDataMapping(
+						(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes ) );
+				final RootElement frameContent = convertToPeers( mapping, "frame-" + frameId, null );
 				frame.addChildren( frameContent.getContainedElements() );
 			} catch ( final Exception e ) {
 				logger.error( "Exception retrieving data content of frame with ID {}.", frameId, e );
@@ -122,9 +123,9 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		}
 	}
 
-	RootElement convertToPeers( final Map<String, Map<String, Object>> data, final String title,
+	RootElement convertToPeers( final PathsToWebDataMapping mapping, final String title,
 			final BufferedImage screenshot ) {
-		return new PeerConverter( retestIdProvider, attributesProvider, data, title, screenshot, defaultValueFinder )
+		return new PeerConverter( retestIdProvider, attributesProvider, mapping, title, screenshot, defaultValueFinder )
 				.convertToPeers();
 	}
 
