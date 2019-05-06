@@ -1,4 +1,4 @@
-package de.retest.web;
+package de.retest.web.mapping;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -13,6 +13,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+
+import de.retest.web.AttributesUtil;
+import de.retest.web.ConversionException;
+import de.retest.web.mapping.WebData;
 
 class WebDataTest {
 

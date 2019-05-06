@@ -1,4 +1,4 @@
-package de.retest.web;
+package de.retest.web.mapping;
 
 import static de.retest.web.ScreenshotProvider.SCALE;
 
@@ -9,6 +9,20 @@ import java.util.Set;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import de.retest.web.AttributesUtil;
+import de.retest.web.ConversionException;
+
+/**
+ * Mapping of key-value pairs for attributes:
+ *
+ * <pre>
+ * {
+ *   attribute0 = value0,
+ *   attribute1 = value1,
+ *   ...
+ * }
+ * </pre>
+ */
 public class WebData {
 
 	private static final Logger logger = LoggerFactory.getLogger( WebData.class );
@@ -21,8 +35,8 @@ public class WebData {
 
 	/**
 	 * @param key
-	 *            the data key
-	 * @return the string value
+	 *            the attribute key
+	 * @return the attribute value as string
 	 */
 	public String getAsString( final String key ) {
 		final Object result = wrappedData.get( key );
@@ -88,10 +102,10 @@ public class WebData {
 
 	/**
 	 * @param key
-	 *            the data key
-	 * @return the int value
+	 *            the attribute key
+	 * @return the attribute value as integer
 	 * @throws ConversionException
-	 *             if the value for the given key cannot be converted to int
+	 *             if the value for the given key cannot be converted to an integer
 	 */
 	public int getAsInt( final String key ) {
 		final Object value = wrappedData.get( key );

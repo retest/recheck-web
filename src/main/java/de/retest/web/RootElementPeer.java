@@ -9,6 +9,7 @@ import de.retest.recheck.ui.descriptors.MutableAttributes;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.image.ImageUtils;
 import de.retest.recheck.ui.image.Screenshot;
+import de.retest.web.mapping.WebData;
 
 public class RootElementPeer extends WebElementPeer {
 

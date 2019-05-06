@@ -1,4 +1,4 @@
-package de.retest.web;
+package de.retest.web.mapping;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
@@ -9,6 +9,9 @@ import java.util.stream.Stream;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
+
+import de.retest.web.mapping.WebData;
+import de.retest.web.mapping.WebDataFilter;
 
 class WebDataFilterTest {
 
