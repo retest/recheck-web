@@ -105,6 +105,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 				driver.switchTo().frame( frameId );
 				@SuppressWarnings( "unchecked" )
 				final PathsToWebDataMapping mapping = new PathsToWebDataMapping(
+						frame.getIdentifyingAttributes().getPath(),
 						(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes ) );
 				final RootElement frameContent = convertToPeers( mapping, "frame-" + frameId, null );
 				frame.addChildren( frameContent.getContainedElements() );

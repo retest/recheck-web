@@ -28,6 +28,12 @@ public class PathsToWebDataMapping implements Iterable<Entry<String, WebData>> {
 				.collect( Collectors.toMap( Entry::getKey, entry -> new WebData( entry.getValue() ) ) );
 	}
 
+	public PathsToWebDataMapping( final String path, final Map<String, Map<String, Object>> mapping ) {
+		this.mapping = mapping.entrySet().stream() //
+				.collect(
+						Collectors.toMap( entry -> path + entry.getKey(), entry -> new WebData( entry.getValue() ) ) );
+	}
+
 	public int size() {
 		return mapping.size();
 	}
