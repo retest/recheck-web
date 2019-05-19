@@ -30,8 +30,8 @@ public class PathsToWebDataMapping implements Iterable<Entry<String, WebData>> {
 
 	public PathsToWebDataMapping( final String path, final Map<String, Map<String, Object>> mapping ) {
 		this.mapping = mapping.entrySet().stream() //
-				.collect(
-						Collectors.toMap( entry -> path + entry.getKey(), entry -> new WebData( entry.getValue() ) ) );
+				.collect( Collectors.toMap( entry -> path + entry.getKey().replace( "//", "/" ),
+						entry -> new WebData( entry.getValue() ) ) );
 	}
 
 	public int size() {
