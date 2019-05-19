@@ -26,6 +26,9 @@ public class RootElementPeer extends WebElementPeer {
 
 	@Override
 	public RootElement toElement( final Element parent ) {
+		if ( webData == null ) {
+			throw new IllegalStateException( "RootElement was not properly initialized!" );
+		}
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
 		final MutableAttributes stateAttributes = retrieveStateAttributes( identifyingAttributes );
 		final String retestId = RecheckSeleniumAdapter.idProvider.getRetestId( identifyingAttributes );
