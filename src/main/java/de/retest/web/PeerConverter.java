@@ -64,7 +64,7 @@ class PeerConverter {
 			return peer;
 		}
 
-		if ( parentPath == null ) {
+		if ( isRoot( parentPath ) ) {
 			assert root == null : "We can only have one root element!";
 			root = new RootElementPeer( attributesProvider, webData, path, title, screenshot, defaultValueFinder );
 			peer = root;
@@ -79,6 +79,10 @@ class PeerConverter {
 
 		converted.put( path, peer );
 		return peer;
+	}
+
+	protected boolean isRoot( final String parentPath ) {
+		return parentPath == null;
 	}
 
 	static String getParentPath( final String path ) {
