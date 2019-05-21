@@ -28,9 +28,15 @@ public class PathsToWebDataMapping implements Iterable<Entry<String, WebData>> {
 				.collect( Collectors.toMap( Entry::getKey, entry -> new WebData( entry.getValue() ) ) );
 	}
 
-	public PathsToWebDataMapping( final String path, final Map<String, Map<String, Object>> mapping ) {
+	/**
+	 * @param frameParentPath
+	 *            The parent path of the frame.
+	 * @param mapping
+	 *            The raw map of paths to maps of attributes.
+	 */
+	public PathsToWebDataMapping( final String frameParentPath, final Map<String, Map<String, Object>> mapping ) {
 		this.mapping = mapping.entrySet().stream() //
-				.collect( Collectors.toMap( entry -> path + entry.getKey().replace( "//", "/" ),
+				.collect( Collectors.toMap( entry -> frameParentPath + entry.getKey().replace( "//", "/" ),
 						entry -> new WebData( entry.getValue() ) ) );
 	}
 
