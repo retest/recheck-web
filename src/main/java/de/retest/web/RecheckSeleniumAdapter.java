@@ -75,7 +75,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes ) );
 
 		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), mapping.size() );
-		final RootElement lastChecked = convertToPeers( mapping, driver.getTitle(), shoot( driver ) );
+		final RootElement lastChecked = new PeerConverter( retestIdProvider, attributesProvider, mapping,
+				driver.getTitle(), shoot( driver ), defaultValueFinder ).convertToPeers();
 
 		addChildrenFromFrames( driver, cssAttributes, lastChecked );
 
@@ -103,10 +104,18 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 			try {
 				logger.debug( "Switching to frame with ID {}.", frameId );
 				driver.switchTo().frame( frameId );
+				final String framePath = frame.getIdentifyingAttributes().getPath();
 				@SuppressWarnings( "unchecked" )
-				final PathsToWebDataMapping mapping = new PathsToWebDataMapping(
+				final PathsToWebDataMapping mapping = new PathsToWebDataMapping( framePath,
 						(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes ) );
-				final RootElement frameContent = convertToPeers( mapping, "frame-" + frameId, null );
+				final RootElement frameContent = new PeerConverter( retestIdProvider, attributesProvider, mapping,
+						"frame-" + frameId, null, defaultValueFinder ) {
+					@Override
+					protected boolean isRoot( final String parentPath ) {
+						// handle trailing slashes...
+						return framePath.equals( parentPath.replaceAll( "/$", "" ) );
+					}
+				}.convertToPeers();
 				frame.addChildren( frameContent.getContainedElements() );
 			} catch ( final Exception e ) {
 				logger.error( "Exception retrieving data content of frame with ID {}.", frameId, e );
@@ -121,12 +130,6 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		} catch ( final IOException e ) {
 			throw new UncheckedIOException( "Exception reading '" + GET_ALL_ELEMENTS_BY_PATH_JS_PATH + "'.", e );
 		}
-	}
-
-	RootElement convertToPeers( final PathsToWebDataMapping mapping, final String title,
-			final BufferedImage screenshot ) {
-		return new PeerConverter( retestIdProvider, attributesProvider, mapping, title, screenshot, defaultValueFinder )
-				.convertToPeers();
 	}
 
 	@Override
