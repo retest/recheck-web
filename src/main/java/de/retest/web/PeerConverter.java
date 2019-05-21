@@ -86,7 +86,7 @@ class PeerConverter {
 	}
 
 	static String getParentPath( final String path ) {
-		if ( path.lastIndexOf( '/' ) == -1 ) {
+		if ( !path.contains( "/" ) ) {
 			return null;
 		}
 		final String parentPath = path.substring( 0, path.lastIndexOf( '/' ) );
