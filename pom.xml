@@ -241,6 +241,10 @@
 						</goals>
 					</execution>
 				</executions>
+				<!-- see https://bugs.openjdk.java.net/browse/JDK-8212233 -->
+				<configuration>
+					<source>8</source>
+				</configuration>
 			</plugin>
 
 			<plugin>
