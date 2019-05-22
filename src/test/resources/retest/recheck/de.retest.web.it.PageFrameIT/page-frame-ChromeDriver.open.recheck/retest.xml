@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="${pom.parent.version}" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="3">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.1.0-SNAPSHOT" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="We Leave From Here" title="We Leave From Here">
 			<identifyingAttributes>
@@ -83,14 +83,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>class</key>
-								<value xsi:type="xsd:string">gromit</value>
-							</entry>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">wallace</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -127,10 +119,6 @@
 							<entry>
 								<key>method</key>
 								<value xsi:type="xsd:string">get</value>
-							</entry>
-							<entry>
-								<key>name</key>
-								<value xsi:type="xsd:string">login</value>
 							</entry>
 							<entry>
 								<key>shown</key>
@@ -204,10 +192,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">13.3333px</value>
-								</entry>
-								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">email</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -298,10 +282,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">13.3333px</value>
-								</entry>
-								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">age</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -414,10 +394,6 @@
 									<value xsi:type="xsd:string">13.3333px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">submitButton</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -493,10 +469,6 @@
 								<value xsi:type="xsd:string">get</value>
 							</entry>
 							<entry>
-								<key>name</key>
-								<value xsi:type="xsd:string">image</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -536,10 +508,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">13.3333px</value>
-								</entry>
-								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">imageButton</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -592,10 +560,6 @@
 							<entry>
 								<key>method</key>
 								<value xsi:type="xsd:string">get</value>
-							</entry>
-							<entry>
-								<key>name</key>
-								<value xsi:type="xsd:string">optional</value>
 							</entry>
 							<entry>
 								<key>shown</key>
@@ -921,10 +885,6 @@
 									<value xsi:type="xsd:string">13.3333px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">lone_disabled_selected_radio</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -943,10 +903,6 @@
 								<entry>
 									<key>min-width</key>
 									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">not_a_snack</value>
 								</entry>
 								<entry>
 									<key>outline-color</key>
@@ -1004,10 +960,6 @@
 									<value xsi:type="xsd:string">13.3333px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">checky</value>
-								</entry>
-								<entry>
 									<key>margin-left</key>
 									<value xsi:type="xsd:string">4px</value>
 								</entry>
@@ -1022,10 +974,6 @@
 								<entry>
 									<key>min-width</key>
 									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">checky</value>
 								</entry>
 								<entry>
 									<key>shown</key>
@@ -1079,10 +1027,6 @@
 									<value xsi:type="xsd:string">13.3333px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">checkedchecky</value>
-								</entry>
-								<entry>
 									<key>margin-left</key>
 									<value xsi:type="xsd:string">4px</value>
 								</entry>
@@ -1097,10 +1041,6 @@
 								<entry>
 									<key>min-width</key>
 									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">checkedchecky</value>
 								</entry>
 								<entry>
 									<key>shown</key>
@@ -1178,10 +1118,6 @@
 									<value xsi:type="xsd:string">13.3333px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">disabledchecky</value>
-								</entry>
-								<entry>
 									<key>margin-left</key>
 									<value xsi:type="xsd:string">4px</value>
 								</entry>
@@ -1196,10 +1132,6 @@
 								<entry>
 									<key>min-width</key>
 									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">disabledchecky</value>
 								</entry>
 								<entry>
 									<key>outline-color</key>
@@ -1289,10 +1221,6 @@
 									<value xsi:type="xsd:string">13.3333px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">randomly_disabled_checky</value>
-								</entry>
-								<entry>
 									<key>margin-left</key>
 									<value xsi:type="xsd:string">4px</value>
 								</entry>
@@ -1307,10 +1235,6 @@
 								<entry>
 									<key>min-width</key>
 									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">randomlydisabledchecky</value>
 								</entry>
 								<entry>
 									<key>outline-color</key>
@@ -1364,10 +1288,6 @@
 									<value xsi:type="xsd:string">13.3333px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">cheese</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -1386,10 +1306,6 @@
 								<entry>
 									<key>min-width</key>
 									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">snack</value>
 								</entry>
 								<entry>
 									<key>shown</key>
@@ -1439,10 +1355,6 @@
 									<value xsi:type="xsd:string">13.3333px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">peas</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -1461,10 +1373,6 @@
 								<entry>
 									<key>min-width</key>
 									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">snack</value>
 								</entry>
 								<entry>
 									<key>shown</key>
@@ -1514,10 +1422,6 @@
 									<value xsi:type="xsd:string">13.3333px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">cheese_and_peas</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -1536,10 +1440,6 @@
 								<entry>
 									<key>min-width</key>
 									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">snack</value>
 								</entry>
 								<entry>
 									<key>shown</key>
@@ -1621,10 +1521,6 @@
 									<value xsi:type="xsd:string">13.3333px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">nothing</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -1643,10 +1539,6 @@
 								<entry>
 									<key>min-width</key>
 									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">snack</value>
 								</entry>
 								<entry>
 									<key>outline-color</key>
@@ -1736,10 +1628,6 @@
 									<value xsi:type="xsd:string">13.3333px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">randomly_disabled_nothing</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -1758,10 +1646,6 @@
 								<entry>
 									<key>min-width</key>
 									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">snack</value>
 								</entry>
 								<entry>
 									<key>outline-color</key>
@@ -1810,10 +1694,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">cheeseLiker</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -1949,10 +1829,6 @@
 							<attributes>
 								<attributes>
 									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">blankOption</value>
-									</entry>
-									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">16px</value>
 									</entry>
@@ -1999,10 +1875,6 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">optionEmptyValueSet</value>
-									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">16px</value>
@@ -2123,10 +1995,6 @@
 									<value xsi:type="xsd:string">13.3333px</value>
 								</entry>
 								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">selectomatic</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -2160,10 +2028,6 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>id</key>
-										<value xsi:type="xsd:string">non_multi_option</value>
-									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">16px</value>
@@ -2443,16 +2307,8 @@
 									<value xsi:type="xsd:string">13.3333px</value>
 								</entry>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">multi</value>
-								</entry>
-								<entry>
 									<key>multiple</key>
 									<value xsi:type="xsd:string">multiple</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">multi</value>
 								</entry>
 								<entry>
 									<key>overflow-x</key>
@@ -2893,10 +2749,6 @@
 									<value xsi:type="xsd:string">13.3333px</value>
 								</entry>
 								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">no-select</value>
-								</entry>
-								<entry>
 									<key>outline-color</key>
 									<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
 								</entry>
@@ -3141,10 +2993,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">13.3333px</value>
-								</entry>
-								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">select_empty_multiple</value>
 								</entry>
 								<entry>
 									<key>overflow-x</key>

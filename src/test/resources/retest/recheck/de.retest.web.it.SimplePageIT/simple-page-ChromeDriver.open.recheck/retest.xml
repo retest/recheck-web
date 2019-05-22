@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.0.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="3">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.1.0-SNAPSHOT" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="Hello WebDriver" title="Hello WebDriver">
 			<identifyingAttributes>
@@ -53,10 +53,6 @@
 				<attributes>
 					<attributes>
 						<entry>
-							<key>name</key>
-							<value xsi:type="xsd:string">body</value>
-						</entry>
-						<entry>
 							<key>shown</key>
 							<value xsi:type="xsd:string">true</value>
 						</entry>
@@ -91,10 +87,6 @@
 								<value xsi:type="xsd:string">icon.gif</value>
 							</entry>
 							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">validAnchorTag</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -124,10 +116,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">containsSomeDiv</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -159,10 +147,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>name</key>
-									<value xsi:type="xsd:string">someDiv</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -193,10 +177,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">multiline</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -347,10 +327,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">div-with-pre</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -372,21 +348,17 @@
 									<height>-68</height>
 									<width>0</width>
 								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[2]/p[1]</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[2]/pre[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">   This section has a preformatted
     text block    
   split in four lines
          </attribute>
-								<attribute key="type" xsi:type="stringAttribute">PRE</attribute>
+								<attribute key="type" xsi:type="stringAttribute">pre</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">preformatted</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -409,10 +381,10 @@
 									<height>-110</height>
 									<width>0</width>
 								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[2]/p[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 								<attribute key="text" xsi:type="textAttribute">before pre</attribute>
-								<attribute key="type" xsi:type="stringAttribute">P</attribute>
-								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[2]/p[2]</attribute>
+								<attribute key="type" xsi:type="stringAttribute">p</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -439,10 +411,10 @@
 									<height>-110</height>
 									<width>0</width>
 								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[2]/p[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 								<attribute key="text" xsi:type="textAttribute">after pre</attribute>
-								<attribute key="type" xsi:type="stringAttribute">P</attribute>
-								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[2]/pre[1]</attribute>
+								<attribute key="type" xsi:type="stringAttribute">p</attribute>
 							</attributes>
 						</identifyingAttributes>
 						<attributes>
@@ -478,10 +450,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">twoblocks</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -573,10 +541,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">nestedblocks</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -816,10 +780,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">collapsingtext</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -938,10 +898,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">withDocumentWrite</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -1002,10 +958,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">links</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -1065,10 +1017,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">linkWithTrailingSpace</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -1160,10 +1108,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">quote</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -1195,10 +1139,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">squote</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -1229,10 +1169,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">backslash</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -1304,10 +1240,6 @@
 								<entry>
 									<key>href</key>
 									<value xsi:type="xsd:string">resultPage.html</value>
-								</entry>
-								<entry>
-									<key>id</key>
-									<value xsi:type="xsd:string">multilinelink</value>
 								</entry>
 								<entry>
 									<key>shown</key>
@@ -1430,10 +1362,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>name</key>
-								<value xsi:type="xsd:string">someDiv</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="${pom.parent.version}" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="3">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.1.0-SNAPSHOT" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="" title="">
 			<identifyingAttributes>
@@ -125,14 +125,6 @@
 							<entry>
 								<key>bottom</key>
 								<value xsi:type="xsd:string">362px</value>
-							</entry>
-							<entry>
-								<key>class</key>
-								<value xsi:type="xsd:string">centered</value>
-							</entry>
-							<entry>
-								<key>id</key>
-								<value xsi:type="xsd:string">center</value>
 							</entry>
 							<entry>
 								<key>left</key>

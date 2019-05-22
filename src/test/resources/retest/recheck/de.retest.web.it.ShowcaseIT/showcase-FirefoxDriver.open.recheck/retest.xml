@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="${pom.parent.version}" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="3">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.1.0-SNAPSHOT" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="retest - Java Swing GUI Testing" title="retest - Java Swing GUI Testing">
 			<identifyingAttributes>
@@ -39,10 +39,6 @@
 					<entry>
 						<key>box-sizing</key>
 						<value xsi:type="xsd:string">border-box</value>
-					</entry>
-					<entry>
-						<key>class</key>
-						<value xsi:type="xsd:string">js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths</value>
 					</entry>
 					<entry>
 						<key>font-family</key>
@@ -214,10 +210,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>class</key>
-									<value xsi:type="xsd:string">row</value>
-								</entry>
-								<entry>
 									<key>margin-left</key>
 									<value xsi:type="xsd:string">168px</value>
 								</entry>
@@ -258,10 +250,6 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>class</key>
-										<value xsi:type="xsd:string">twelve columns</value>
-									</entry>
 									<entry>
 										<key>float</key>
 										<value xsi:type="xsd:string">left</value>
@@ -311,10 +299,6 @@
 								</identifyingAttributes>
 								<attributes>
 									<attributes>
-										<entry>
-											<key>class</key>
-											<value xsi:type="xsd:string">copyright</value>
-										</entry>
 										<entry>
 											<key>padding-left</key>
 											<value xsi:type="xsd:string">0px</value>
@@ -397,10 +381,6 @@
 											<entry>
 												<key>display</key>
 												<value xsi:type="xsd:string">inline-block</value>
-											</entry>
-											<entry>
-												<key>id</key>
-												<value xsi:type="xsd:string">impressumslink</value>
 											</entry>
 											<entry>
 												<key>line-height</key>
@@ -551,10 +531,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>class</key>
-									<value xsi:type="xsd:string">row</value>
-								</entry>
-								<entry>
 									<key>margin-left</key>
 									<value xsi:type="xsd:string">168px</value>
 								</entry>
@@ -595,10 +571,6 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>class</key>
-										<value xsi:type="xsd:string">twelve columns</value>
-									</entry>
 									<entry>
 										<key>float</key>
 										<value xsi:type="xsd:string">left</value>
@@ -654,16 +626,8 @@
 											<value xsi:type="xsd:string">50px</value>
 										</entry>
 										<entry>
-											<key>class</key>
-											<value xsi:type="xsd:string">logo</value>
-										</entry>
-										<entry>
 											<key>left</key>
 											<value xsi:type="xsd:string">20px</value>
-										</entry>
-										<entry>
-											<key>name</key>
-											<value xsi:type="xsd:string">logo</value>
 										</entry>
 										<entry>
 											<key>position</key>
@@ -858,10 +822,6 @@
 											<value xsi:type="xsd:string">14px</value>
 										</entry>
 										<entry>
-											<key>id</key>
-											<value xsi:type="xsd:string">nav-wrap</value>
-										</entry>
-										<entry>
 											<key>line-height</key>
 											<value xsi:type="xsd:string">17px</value>
 										</entry>
@@ -908,16 +868,8 @@
 									<attributes>
 										<attributes>
 											<entry>
-												<key>class</key>
-												<value xsi:type="xsd:string">nav</value>
-											</entry>
-											<entry>
 												<key>display</key>
 												<value xsi:type="xsd:string">inline</value>
-											</entry>
-											<entry>
-												<key>id</key>
-												<value xsi:type="xsd:string">nav</value>
 											</entry>
 											<entry>
 												<key>margin-top</key>
