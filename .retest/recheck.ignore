@@ -27,4 +27,4 @@ attribute=outline
 attribute=absolute-outline
 
 # So we can have a different ID in SimpleAutocheckingDriverShowcaseIT:
-matcher: xpath=HTML[1]/BODY[1]/FORM[1]/INPUT[1], attribute: id
+matcher: xpath=html[1]/body[1]/form[1]/input[1], attribute: id
