@@ -10,10 +10,10 @@ import java.util.Map;
 import org.junit.jupiter.api.Test;
 
 import de.retest.recheck.ui.DefaultValueFinder;
-import de.retest.recheck.ui.descriptors.RetestIdProviderUtil;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.diff.RootElementDifference;
 import de.retest.recheck.ui.diff.RootElementDifferenceFinder;
+import de.retest.recheck.util.RetestIdProviderUtil;
 import de.retest.web.mapping.PathsToWebDataMapping;
 
 class PeerConverterTest {

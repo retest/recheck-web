@@ -20,5 +20,11 @@ attribute=jsdata
 attribute=jsaction
 attribute=cd_frame_id_
 
+# Have the tests pass locally 
+attribute=outline
+
+# This should be default:
+attribute=absolute-outline
+
 # So we can have a different ID in SimpleAutocheckingDriverShowcaseIT:
-matcher: xpath=HTML[1]/BODY[1]/FORM[1]/INPUT[1], attribute: id
+matcher: xpath=html[1]/body[1]/form[1]/input[1], attribute: id
