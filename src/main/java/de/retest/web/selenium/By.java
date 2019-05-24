@@ -19,12 +19,16 @@ public abstract class By extends org.openqa.selenium.By {
 		if ( lastExpectedState == null ) {
 			throw new IllegalArgumentException( "Cannot find element in null state." );
 		}
-		final Element result = findElement( lastExpectedState.getContainedElements(), predicate );
-		if ( result == null ) {
+		final Element resultFromExpected = findElement( lastExpectedState.getContainedElements(), predicate );
+		if ( resultFromExpected == null ) {
 			return null;
 		}
 		final Alignment alignment = Alignment.createAlignment( lastExpectedState, lastActualState );
-		return alignment.get( result );
+		final Element resultFromActual = alignment.get( resultFromExpected );
+		if ( resultFromActual == null ) {
+			throw new NoElementWithHighEnoughMatchFoundException( resultFromExpected );
+		}
+		return resultFromActual;
 	}
 
 	private static Element findElement( final List<Element> children, final Predicate<Element> predicate ) {
