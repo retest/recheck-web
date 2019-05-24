@@ -1,6 +1,7 @@
 package de.retest.web.selenium;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -8,7 +9,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import de.retest.recheck.ui.descriptors.Element;
@@ -45,9 +45,9 @@ class ByTest {
 		when( lastActual.getContainedElements() ).thenReturn( Collections.singletonList( newElement ) );
 		when( lastActual.getIdentifyingAttributes() ).thenReturn( mock( IdentifyingAttributes.class ) );
 
-		Assertions.assertThrows( NoElementWithHighEnoughMatchFoundException.class, () -> {
-			By.findElement( lastExpected, lastActual, child -> child.getRetestId().equals( "retestId" ) );
-		} );
+		assertThatThrownBy(
+				() -> By.findElement( lastExpected, lastActual, child -> child.getRetestId().equals( "retestId" ) ) ) //
+						.isInstanceOf( NoElementWithHighEnoughMatchFoundException.class );
 	}
 
 }
