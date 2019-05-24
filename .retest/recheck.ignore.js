@@ -24,11 +24,6 @@ function shouldIgnoreAttributeDifference(element, diff) {
 	if (diff.actual === null) {
 		diff.actual = "";
 	}
-	if (contains([ 'absolute-x', 'absolute-y', 'absolute-width',
-			'absolute-height', 'x', 'y', 'width', 'height' ], diff.key)) {
-		return (Math.abs(diff.expected.replace("px", "")
-				- diff.actual.replace("px", "")) <= ALLOWED_PIXEL_DIFF);
-	}
 	if (diff.expected.indexOf("px") !== -1) {
 		return (Math.abs(diff.expected.replace("px", "")
 				- diff.actual.replace("px", "")) <= ALLOWED_PIXEL_DIFF);
