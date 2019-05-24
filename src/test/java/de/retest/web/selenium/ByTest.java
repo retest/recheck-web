@@ -10,6 +10,7 @@ import java.util.Collections;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
@@ -50,4 +51,26 @@ class ByTest {
 						.isInstanceOf( NoElementWithHighEnoughMatchFoundException.class );
 	}
 
+	@Test
+	void findElement_should_apply_retestId() {
+		final IdentifyingAttributes same = mock( IdentifyingAttributes.class );
+		when( same.match( Mockito.any() ) ).thenReturn( 1.0 );
+
+		final Element oldElement = mock( Element.class );
+		when( oldElement.getIdentifyingAttributes() ).thenReturn( same );
+		when( oldElement.getRetestId() ).thenReturn( "oldId" );
+		final RootElement lastExpected = mock( RootElement.class );
+		when( lastExpected.getContainedElements() ).thenReturn( Collections.singletonList( oldElement ) );
+		when( lastExpected.getIdentifyingAttributes() ).thenReturn( mock( IdentifyingAttributes.class ) );
+
+		final Element newElement = mock( Element.class );
+		when( newElement.getIdentifyingAttributes() ).thenReturn( same );
+		when( newElement.applyRetestId( "oldId" ) ).thenReturn( oldElement );
+		final RootElement lastActual = mock( RootElement.class );
+		when( lastActual.getContainedElements() ).thenReturn( Collections.singletonList( newElement ) );
+		when( lastActual.getIdentifyingAttributes() ).thenReturn( mock( IdentifyingAttributes.class ) );
+
+		assertThat( By.findElement( lastExpected, lastActual, child -> child.getIdentifyingAttributes().equals( same ) )
+				.getRetestId() ).isEqualTo( "oldId" );
+	}
 }
