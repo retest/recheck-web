@@ -12,7 +12,7 @@ function contains(array, key) {
 }
 
 function shouldIgnoreAttributeDifference(element, diff) {
-	if (diff.key == 'outline') {
+	if (diff.key == 'outline' || diff.key == 'absolute-outline') {
 		return (Math.abs(diff.expected.x - diff.actual.x) <= ALLOWED_PIXEL_DIFF)
 				&& (Math.abs(diff.expected.y - diff.actual.y) <= ALLOWED_PIXEL_DIFF)
 				&& (Math.abs(diff.expected.width - diff.actual.width) <= ALLOWED_PIXEL_DIFF)
