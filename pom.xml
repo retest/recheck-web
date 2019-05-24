@@ -53,6 +53,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<junit.jupiter.version>5.4.2</junit.jupiter.version>
 		<logback.version>1.2.3</logback.version>
+		<jackson.version>2.9.9</jackson.version>
 	</properties>
 
 	<scm>
@@ -101,13 +102,13 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-yaml</artifactId>
-			<version>2.9.9</version>
+			<version>${jackson.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.9.8</version>
+			<version>${jackson.version}</version>
 		</dependency>
 
 		<!-- test dependencies -->
