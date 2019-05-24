@@ -14,14 +14,14 @@ import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
 
 /**
- * ByBestMatchToRetestId will search for elements by their old retestId (the retestId they had in the Golden Master
- * state).
+ * {@code ByBestMatchToRetestId} will search for elements by their old retest ID (the retest ID they had in the Golden
+ * Master state).
  *
- * Note that elements are assigned a retestId when they are created (i.e. also when the _new_ state is created). This
- * retestId might differ from the retestId the element had in the persisted (Golden Master) state. Therefore, all its
- * child elements have their respective _new_ (potentially different) retestId. Thus, the result of a call to
- * `findByRetestId` might return an element with children that have a different retestId than they have in the Golden
- * Master.
+ * Note that elements are assigned a retest ID when they are created (i.e. also when the <em>new</em> state is created).
+ * This retest ID might differ from the retest ID the element had in the persisted (Golden Master) state. Therefore, all
+ * its child elements have their respective <em>new</em> (potentially different) retest ID. Thus, the result of a call
+ * to {@code ByBestMatchToRetestId} might return an element with children that have a different retest ID than they have
+ * in the Golden Master.
  */
 public class ByBestMatchToRetestId extends By implements Serializable {
 
@@ -45,7 +45,11 @@ public class ByBestMatchToRetestId extends By implements Serializable {
 	}
 
 	/**
-	 * Might return an element whose children have a different retestId than in the Golden Master.
+	 * @param lastExpectedState
+	 *            The last expected state (usually the Golden Master).
+	 * @param lastActualState
+	 *            The last actual state (usually the current state).
+	 * @return Maybe an element whose children have a different retest ID than in the Golden Master.
 	 */
 	public Element findElement( final RootElement lastExpectedState, final RootElement lastActualState ) {
 		final Element result = de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState,
