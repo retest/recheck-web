@@ -1,4 +1,4 @@
-# <a href="http://retest.dev"><img src="https://assets.retest.org/retest/ci/logos/recheck-screen.svg" width="300"/></a> for web [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Have%20a%20look%20at%20the%20test%20automation%20API%20recheck-web&url=http://retest.dev&via=retest_en&hashtags=opensource,software,testing,testautomation,developers)
+ #### <a href="http://retest.dev"><img src="https://assets.retest.org/retest/ci/logos/recheck-screen.svg" width="300"/></a> fully functional open source testing tool for web [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Have%20a%20look%20at%20the%20test%20automation%20API%20recheck-web&url=http://retest.dev&via=retest_en&hashtags=opensource,software,testing,testautomation,developers)
 
 [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/retest/recheck-web/blob/master/LICENSE)
 [![Build Status](https://travis-ci.com/retest/recheck-web.svg?branch=master)](https://travis-ci.com/retest/recheck-web)
