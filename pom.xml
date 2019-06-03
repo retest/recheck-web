@@ -87,6 +87,8 @@
 			<version>1.7.26</version>
 		</dependency>
 
+		<!-- workaround for: https://github.com/mockito/mockito/issues/1606. 
+		Mockito and Selenium are using different byte-buddy versions. -->
 		<dependency>
 			<groupId>net.bytebuddy</groupId>
 			<artifactId>byte-buddy</artifactId>
