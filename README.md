@@ -7,17 +7,17 @@
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/retest/recheck-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![code with hearth by retest](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-retest-C1D82F.svg)](https://retest.de/en/)
 
-[recheck](https://github.com/retest/recheck) is a Golden Master-based test framework on top of Selenium that comes with powerful features. Check everything at once and create unbreakable tests.
+[recheck](https://github.com/retest/recheck) is a Golden Master-based test framework on top of Selenium that allows for easy creation and maintenance of more complete and nearly unbreakable tests.
 
-<p align="center"><a href="https://youtu.be/ZK-r3GaM2Dw"><img src="https://user-images.githubusercontent.com/1871610/44585296-23b3ce80-a7ac-11e8-9687-d8939209b05a.gif" /></a></p>
+<p align="center"><a href="https://www.youtube.com/watch?v=dpzlFxXfMWk"><img src="https://user-images.githubusercontent.com/1871610/58832376-171fa900-864f-11e9-8edb-56ea95865482.gif" /></a></p>
 
 
 ## Features
 
 * Easy creation and maintenance of checks for web.
 * Semantic comparison of contents.
-* Easily ignore volatile elements, attributes or sections.
-* One-click maintenance to update Golden Masters with intended changes.
+* Easily ignore volatile elements, attributes or sections, using a git-like syntax.
+* Simple maintenance to update Golden Masters with intended changes, using our [CLI](https://github.com/retest/recheck.cli).
 * No unexpected changes go unnoticed.
 * Operates on top of Selenium.
 * Makes your tests unbreakable.
