@@ -9,7 +9,7 @@
 
 [recheck](https://github.com/retest/recheck) is a Golden Master-based test framework on top of Selenium that comes with powerful features. Check everything at once and create unbreakable tests.
 
-<p align="center"><a href="https://youtu.be/ZK-r3GaM2Dw"><img src="https://user-images.githubusercontent.com/1871610/44585296-23b3ce80-a7ac-11e8-9687-d8939209b05a.gif" /></a></p>
+<p align="center"><a href="https://www.youtube.com/watch?v=dpzlFxXfMWk"><img src="https://user-images.githubusercontent.com/1871610/58832376-171fa900-864f-11e9-8edb-56ea95865482.gif" /></a></p>
 
 
 ## Features
