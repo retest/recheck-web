@@ -15,7 +15,7 @@
 # Ignore non-visible attributes:
 attribute=class
 attribute=ping
-attribute=data-.*
+attribute-regex=data-.*
 attribute=jsdata
 attribute=jsaction
 attribute=cd_frame_id_
