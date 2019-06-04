@@ -31,12 +31,12 @@ public class ScreenshotProvider {
 	private static BufferedImage shootFullPage( final WebDriver driver ) {
 		if ( driver instanceof ChromeDriver ) {
 			final BufferedImage image = Shutterbug //
-					.shootPage( driver, ScrollStrategy.WHOLE_PAGE_CHROME, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
+					.shootPage( driver, ScrollStrategy.WHOLE_PAGE, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
 					.getImage();
 			return resizeImage( image, image.getWidth() / SCALE, image.getHeight() / SCALE );
 		}
 		return Shutterbug //
-				.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
+				.shootPage( driver, ScrollStrategy.WHOLE_PAGE, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
 				.getImage();
 	}
 
