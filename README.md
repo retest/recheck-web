@@ -17,7 +17,7 @@
 * Easy creation and maintenance of checks for web.
 * Semantic comparison of contents.
 * Easily ignore volatile elements, attributes or sections, using a git-like syntax.
-* Simple maintenance to update Golden Masters with intended changes, using our [CLI](https://github.com/retest/recheck.cli).
+* Simple maintenance to update Golden Masters with intended changes, using our [GUI](https://retest.de/review/) or [CLI](https://github.com/retest/recheck.cli).
 * No unexpected changes go unnoticed.
 * Operates on top of Selenium.
 * Makes your tests unbreakable.
