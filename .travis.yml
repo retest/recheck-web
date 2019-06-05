@@ -1,6 +1,9 @@
 language: java
 dist: trusty
 
+git:
+  depth: false
+
 addons:
   chrome: stable
   firefox: "64.0.2"

@@ -1,4 +1,4 @@
-# [![recheck logo](https://user-images.githubusercontent.com/1871610/56070435-1d4c8400-5d88-11e9-894a-35efd39f17ba.png)](http://retest.dev) for web [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Have%20a%20look%20at%20the%20test%20automation%20API%20recheck-web&url=http://retest.dev&via=retest_en&hashtags=opensource,software,testing,testautomation,developers)
+# <a href="https://retest.dev"><img src="https://assets.retest.org/retest/ci/logos/recheck-screen.svg" width="300"/></a>-web [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Have%20a%20look%20at%20the%20test%20automation%20API%20recheck-web&url=http://retest.dev&via=retest_en&hashtags=opensource,software,testing,testautomation,developers)
 
 [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/retest/recheck-web/blob/master/LICENSE)
 [![Build Status](https://travis-ci.com/retest/recheck-web.svg?branch=master)](https://travis-ci.com/retest/recheck-web)
@@ -7,17 +7,17 @@
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/retest/recheck-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![code with hearth by retest](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-retest-C1D82F.svg)](https://retest.de/en/)
 
-[recheck](https://github.com/retest/recheck) is a Golden Master-based test framework on top of Selenium that comes with powerful features. Check everything at once and create unbreakable tests.
+***recheck-web*** is a Golden Master-based test framework on top of Selenium that allows for easy creation and maintenance of more complete and nearly unbreakable tests.
 
-<p align="center"><a href="https://youtu.be/ZK-r3GaM2Dw"><img src="https://user-images.githubusercontent.com/1871610/44585296-23b3ce80-a7ac-11e8-9687-d8939209b05a.gif" /></a></p>
+<p align="center"><a href="https://www.youtube.com/watch?v=dpzlFxXfMWk"><img src="https://user-images.githubusercontent.com/1871610/58832376-171fa900-864f-11e9-8edb-56ea95865482.gif" /></a></p>
 
 
 ## Features
 
 * Easy creation and maintenance of checks for web.
 * Semantic comparison of contents.
-* Easily ignore volatile elements, attributes or sections.
-* One-click maintenance to update Golden Masters with intended changes.
+* Easily ignore volatile elements, attributes or sections, using a git-like syntax.
+* Simple maintenance to update Golden Masters with intended changes, using our [GUI](https://retest.de/review/) or [CLI](https://github.com/retest/recheck.cli).
 * No unexpected changes go unnoticed.
 * Operates on top of Selenium.
 * Makes your tests unbreakable.
@@ -28,9 +28,9 @@
 
 Instead of manually defining individual aspects that you want to check, check everything at once. So instead of writing many `assert` statements—and still not have complete checks—write a single `re.check()`. This saves a lot of effort when creating tests. And it makes sure to not [miss unexpected changes](https://hackernoon.com/assertions-considered-harmful-d3770d818054).
 
-Even better: Using [review](https://retest.de/review/) or the open-source [recheck.cli](https://github.com/retest/recheck.cli/), you can easily accept those changes with a single click (patent pending). This also saves a lot of time during maintenance. Moreover, any regular changing aspects or elements (e.g. date fields) can easily be ignored.
+Even better: Using [***review***](https://retest.de/review/) or the open-source [***recheck.cli***](https://github.com/retest/recheck.cli/), you can easily accept those changes with a single click (patent pending). This also saves a lot of time during maintenance. Moreover, any regular changing aspects or elements (e.g. date fields) can easily be ignored.
 
-And, using the Golden Master, recheck can identify elements even after the identifying attribute was changed. So assume you are using, e.g. an HTML `id` property to identify an element within your Selenium test. Now, assume that this `id` property changes within the HTML. Then, your test would break, resulting in an `NoSuchElementException`. But using `RecheckDriver` as a drop-in replacement/wrapper of your normal driver magically finds the element and logs a warning such as
+And, using the Golden Master, ***recheck-web*** can identify elements even after the identifying attribute was changed. So assume you are using, e.g. an HTML `id` property to identify an element within your Selenium test. Now, assume that this `id` property changes within the HTML. Then, your test would break, resulting in an `NoSuchElementException`. But using `RecheckDriver` as a drop-in replacement/wrapper of your normal driver magically finds the element and logs a warning such as
 
 ```
 *************** recheck warning ***************
@@ -45,7 +45,7 @@ Use `By.id("introSlider")` or `By.retestId("9c40281d-5655-4ffa-9c6d-d079e01bb5a3
 
 Operates on top of [Selenium](https://www.seleniumhq.org/projects/webdriver/). Selenium has become an official [W3C standard](https://www.w3.org/TR/webdriver1/), supported by all major browsers. Learn more about Selenium and [how to install it](https://www.seleniumhq.org/download/).
 
-recheck is available as a Java API with support for [JUnit 4](https://junit.org/junit4/) and [JUnit 5](https://junit.org/junit5/) as well as [TestNG](https://testng.org/). 
+***recheck-web*** leverages [***recheck***](https://github.com/retest/recheck/), which is available as a Java API with support for [JUnit 4](https://junit.org/junit4/) and [JUnit 5](https://junit.org/junit5/) as well as [TestNG](https://testng.org/). 
 
 
 ## Setup
@@ -148,7 +148,7 @@ index resulted in:
 		border-color, color: expected="rgb(65, 65, 65)", actual="default"
 ```
 
-Additionally, a file named `${TEST_CLASS_NAME}.report` will be created upon test failure, typically located in your `target/test-classes` folder. This file can now be used to apply those changes to your Golden Master, using either the [review](https://retest.de/review/) or the [recheck.cli](https://github.com/retest/recheck.cli/).
+Additionally, a file named `${TEST_CLASS_NAME}.report` will be created upon test failure, typically located in your `target/test-classes` folder. This file can now be used to apply those changes to your Golden Master, using either the [***review***](https://retest.de/review/) or the [***recheck.cli***](https://github.com/retest/recheck.cli/).
 
 
 ## Usage of RecheckDriver / "Unbreakable Selenium"
