@@ -19,9 +19,7 @@ public class ScreenshotProvider {
 
 	public static final int SCALE = extractScale();
 
-	private ScreenshotProvider() {
-		// private constructor for util class
-	}
+	private ScreenshotProvider() {}
 
 	public static BufferedImage shoot( final WebDriver driver ) {
 		final boolean viewportOnly = Boolean.getBoolean( VIEWPORT_ONLY_SCREENSHOT_PROPERTY );
