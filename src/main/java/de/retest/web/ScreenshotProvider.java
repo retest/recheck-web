@@ -19,9 +19,7 @@ public class ScreenshotProvider {
 
 	public static final int SCALE = extractScale();
 
-	private ScreenshotProvider() {
-		// private constructor for util class
-	}
+	private ScreenshotProvider() {}
 
 	public static BufferedImage shoot( final WebDriver driver ) {
 		final boolean viewportOnly = Boolean.getBoolean( VIEWPORT_ONLY_SCREENSHOT_PROPERTY );
@@ -29,15 +27,10 @@ public class ScreenshotProvider {
 	}
 
 	private static BufferedImage shootFullPage( final WebDriver driver ) {
-		if ( driver instanceof ChromeDriver ) {
-			final BufferedImage image = Shutterbug //
-					.shootPage( driver, ScrollStrategy.WHOLE_PAGE_CHROME, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
-					.getImage();
-			return resizeImage( image, image.getWidth() / SCALE, image.getHeight() / SCALE );
-		}
-		return Shutterbug //
-				.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
-				.getImage();
+		final BufferedImage image = Shutterbug
+				.shootPage( driver, ScrollStrategy.WHOLE_PAGE, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ).getImage();
+		return driver instanceof ChromeDriver
+				? resizeImage( image, image.getWidth() / SCALE, image.getHeight() / SCALE ) : image;
 	}
 
 	private static BufferedImage shootViewportOnly( final WebDriver driver ) {
