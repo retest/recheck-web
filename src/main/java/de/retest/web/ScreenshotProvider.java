@@ -29,15 +29,10 @@ public class ScreenshotProvider {
 	}
 
 	private static BufferedImage shootFullPage( final WebDriver driver ) {
-		if ( driver instanceof ChromeDriver ) {
-			final BufferedImage image = Shutterbug //
-					.shootPage( driver, ScrollStrategy.WHOLE_PAGE, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
-					.getImage();
-			return resizeImage( image, image.getWidth() / SCALE, image.getHeight() / SCALE );
-		}
-		return Shutterbug //
-				.shootPage( driver, ScrollStrategy.WHOLE_PAGE, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
-				.getImage();
+		final BufferedImage image = Shutterbug
+				.shootPage( driver, ScrollStrategy.WHOLE_PAGE, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ).getImage();
+		return driver instanceof ChromeDriver
+				? resizeImage( image, image.getWidth() / SCALE, image.getHeight() / SCALE ) : image;
 	}
 
 	private static BufferedImage shootViewportOnly( final WebDriver driver ) {
