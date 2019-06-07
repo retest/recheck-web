@@ -25,12 +25,13 @@ import de.retest.web.util.TextAttributeUtil;
 
 public class WebElementPeer {
 
-	protected final RetestIdProvider retestIdProvider;
-	protected final AttributesProvider attributesProvider;
 	protected final List<WebElementPeer> children = new ArrayList<>();
-	protected final WebData webData;
-	protected final String path;
 
+	protected final RetestIdProvider retestIdProvider;
+	protected final WebData webData;
+
+	private final AttributesProvider attributesProvider;
+	private final String path;
 	private final DefaultValueFinder defaultValueFinder;
 
 	public WebElementPeer( final RetestIdProvider retestIdProvider, final AttributesProvider attributesProvider,
