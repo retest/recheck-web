@@ -66,10 +66,11 @@ class PeerConverter {
 
 		if ( isRoot( parentPath ) ) {
 			assert root == null : "We can only have one root element!";
-			root = new RootElementPeer( attributesProvider, webData, path, title, screenshot, defaultValueFinder );
+			root = new RootElementPeer( idProvider, attributesProvider, webData, path, title, screenshot,
+					defaultValueFinder );
 			peer = root;
 		} else {
-			peer = new WebElementPeer( attributesProvider, webData, path, defaultValueFinder );
+			peer = new WebElementPeer( idProvider, attributesProvider, webData, path, defaultValueFinder );
 			WebElementPeer parent = converted.get( parentPath );
 			if ( parent == null ) {
 				parent = convertToPeer( parentPath, mapping.getWebData( parentPath ) );

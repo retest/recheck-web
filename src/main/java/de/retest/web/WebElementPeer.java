@@ -19,11 +19,13 @@ import de.retest.recheck.ui.descriptors.OutlineAttribute;
 import de.retest.recheck.ui.descriptors.PathAttribute;
 import de.retest.recheck.ui.descriptors.StringAttribute;
 import de.retest.recheck.ui.descriptors.SuffixAttribute;
+import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
 import de.retest.web.mapping.WebData;
 import de.retest.web.util.TextAttributeUtil;
 
 public class WebElementPeer {
 
+	protected final RetestIdProvider retestIdProvider;
 	protected final AttributesProvider attributesProvider;
 	protected final List<WebElementPeer> children = new ArrayList<>();
 	protected final WebData webData;
@@ -31,8 +33,9 @@ public class WebElementPeer {
 
 	private final DefaultValueFinder defaultValueFinder;
 
-	public WebElementPeer( final AttributesProvider attributesProvider, final WebData webData, final String path,
-			final DefaultValueFinder defaultValueFinder ) {
+	public WebElementPeer( final RetestIdProvider retestIdProvider, final AttributesProvider attributesProvider,
+			final WebData webData, final String path, final DefaultValueFinder defaultValueFinder ) {
+		this.retestIdProvider = retestIdProvider;
 		this.attributesProvider = attributesProvider;
 		this.webData = webData;
 		this.path = path;
@@ -49,7 +52,7 @@ public class WebElementPeer {
 		}
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
 		final MutableAttributes stateAttributes = retrieveStateAttributes( identifyingAttributes );
-		final String retestId = RecheckSeleniumAdapter.idProvider.getRetestId( identifyingAttributes );
+		final String retestId = retestIdProvider.getRetestId( identifyingAttributes );
 		final Element element = Element.create( retestId, parent, identifyingAttributes, stateAttributes.immutable() );
 		element.addChildren( convertChildren( element ) );
 		return element;

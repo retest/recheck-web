@@ -2,7 +2,6 @@ package de.retest.web;
 
 import static de.retest.web.ScreenshotProvider.shoot;
 
-import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
@@ -31,8 +30,6 @@ import de.retest.web.selenium.UnbreakableDriver;
 
 public class RecheckSeleniumAdapter implements RecheckAdapter {
 
-	public static final RetestIdProvider idProvider = RetestIdProviderUtil.getConfiguredRetestIdProvider();
-
 	private static final String GET_ALL_ELEMENTS_BY_PATH_JS_PATH = "/javascript/getAllElementsByPath.js";
 	private final Predicate<Element> isFrame = element -> {
 		final String type = element.getIdentifyingAttributes().getType();
@@ -55,7 +52,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	}
 
 	public RecheckSeleniumAdapter() {
-		this( idProvider, YamlAttributesProvider.getInstance() );
+		this( RetestIdProviderUtil.getConfiguredRetestIdProvider(), YamlAttributesProvider.getInstance() );
 	}
 
 	@Override
