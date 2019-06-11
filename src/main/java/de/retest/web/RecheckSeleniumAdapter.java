@@ -2,7 +2,6 @@ package de.retest.web;
 
 import static de.retest.web.ScreenshotProvider.shoot;
 
-import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
@@ -31,21 +30,18 @@ import de.retest.web.selenium.UnbreakableDriver;
 
 public class RecheckSeleniumAdapter implements RecheckAdapter {
 
-	public static final RetestIdProvider idProvider = RetestIdProviderUtil.getConfiguredRetestIdProvider();
-
 	private static final String GET_ALL_ELEMENTS_BY_PATH_JS_PATH = "/javascript/getAllElementsByPath.js";
+
+	private static final Logger logger = LoggerFactory.getLogger( RecheckSeleniumAdapter.class );
+
+	private final DefaultValueFinder defaultValueFinder = new DefaultWebValueFinder();
 	private final Predicate<Element> isFrame = element -> {
 		final String type = element.getIdentifyingAttributes().getType();
 		return Stream.of( "iframe", "frame" ).anyMatch( type::equalsIgnoreCase );
 	};
 
-	private static final Logger logger = LoggerFactory.getLogger( RecheckSeleniumAdapter.class );
-
 	private final RetestIdProvider retestIdProvider;
-
 	private final AttributesProvider attributesProvider;
-
-	private final DefaultValueFinder defaultValueFinder = new DefaultWebValueFinder();
 
 	public RecheckSeleniumAdapter( final RetestIdProvider retestIdProvider,
 			final AttributesProvider attributesProvider ) {
@@ -55,7 +51,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	}
 
 	public RecheckSeleniumAdapter() {
-		this( idProvider, YamlAttributesProvider.getInstance() );
+		this( RetestIdProviderUtil.getConfiguredRetestIdProvider(), YamlAttributesProvider.getInstance() );
 	}
 
 	@Override
