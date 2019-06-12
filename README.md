@@ -60,7 +60,7 @@ Add `recheck-web` as dependency through [Maven Central](https://search.maven.org
 </dependency>
 ```
 
-A tutorial about how to setup recheck-web can e.g. be found on [DZone](https://dzone.com/articles/golden-master-testing-with-recheck-web), together with a [follow-up article](https://dzone.com/articles/making-your-selenium-tests-almost-unbreakable) about how to make your Selenium tests almost "unbreakable".
+A tutorial about how to setup ***recheck-web*** can e.g. be found on [DZone](https://dzone.com/articles/golden-master-testing-with-recheck-web), together with a [follow-up article](https://dzone.com/articles/making-your-selenium-tests-almost-unbreakable) about how to make your Selenium tests almost "unbreakable".
 
 ## Usage of plain recheck
 
