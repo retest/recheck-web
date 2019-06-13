@@ -56,7 +56,8 @@ function transform(node) {
 	var extractedAttributes = {
 		"tagName": node.tagName.toLowerCase(),
 		"text": getText(node),
-		"shown": isShown(node)
+		"value": node.value,
+		"shown": isShown(node),
 	};
 	
 	if (node.nodeType == node.TEXT_NODE) {
