@@ -58,6 +58,7 @@ function transform(node) {
 		"text": getText(node),
 		"value": node.value,
 		"tab-index": node.tabIndex,
+		"disabled": node.disabled,
 		"shown": isShown(node)
 	};
 	

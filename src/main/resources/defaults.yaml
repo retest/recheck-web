@@ -280,6 +280,9 @@ ol:
 output:
   - display: inline
 
+option:
+  - disabled: false
+
 p:
   - border-image-width: 1
   - margin-bottom: 16px
@@ -313,6 +316,9 @@ s:
 
 samp:
   - font-family: monospace
+
+select:
+  - disabled: false
 
 script:
   - border-image-width: 1
@@ -373,6 +379,9 @@ td:
   
 textarea:
   - tab-index: 0
+
+textarea:
+  - disabled: false
 
 tfoot:
   - display: table-footer-group
