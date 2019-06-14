@@ -306,12 +306,6 @@ pre:
 q:
   - display: inline
 
-q::after:
-  - content: close-quote
-
-q::before:
-  - content: open-quote
-
 rt:
   - line-height: normal
 
