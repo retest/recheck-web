@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="${pom.parent.version}" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="3">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.1.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="We Leave From Here" title="We Leave From Here">
 			<identifyingAttributes>
@@ -258,6 +258,10 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">email</value>
+								</entry>
+								<entry>
+									<key>value</key>
+									<value xsi:type="xsd:string">me@retest.de</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -1096,6 +1100,10 @@
 									<key>type</key>
 									<value xsi:type="xsd:string">checkbox</value>
 								</entry>
+								<entry>
+									<key>value</key>
+									<value xsi:type="xsd:string">on</value>
+								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
@@ -1194,6 +1202,10 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">checkbox</value>
+								</entry>
+								<entry>
+									<key>value</key>
+									<value xsi:type="xsd:string">on</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -1297,6 +1309,10 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">checkbox</value>
+								</entry>
+								<entry>
+									<key>value</key>
+									<value xsi:type="xsd:string">on</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -2045,6 +2061,10 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
+									<key>value</key>
+									<value xsi:type="xsd:string">one</value>
+								</entry>
+								<entry>
 									<key>white-space</key>
 									<value xsi:type="xsd:string">pre</value>
 								</entry>
@@ -2367,6 +2387,10 @@
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>value</key>
+									<value xsi:type="xsd:string">eggs</value>
 								</entry>
 								<entry>
 									<key>vertical-align</key>
@@ -2805,6 +2829,10 @@
 								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(128, 128, 128)</value>
+								</entry>
+								<entry>
+									<key>value</key>
+									<value xsi:type="xsd:string">foo</value>
 								</entry>
 								<entry>
 									<key>white-space</key>
@@ -3855,6 +3883,10 @@
 									<value xsi:type="xsd:string">opacity:0;</value>
 								</entry>
 								<entry>
+									<key>value</key>
+									<value xsi:type="xsd:string">apples</value>
+								</entry>
+								<entry>
 									<key>white-space</key>
 									<value xsi:type="xsd:string">pre</value>
 								</entry>
@@ -4061,6 +4093,10 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
+									<key>value</key>
+									<value xsi:type="xsd:string">One</value>
+								</entry>
+								<entry>
 									<key>white-space</key>
 									<value xsi:type="xsd:string">pre</value>
 								</entry>
@@ -4109,6 +4145,10 @@
 										<key>shown</key>
 										<value xsi:type="xsd:string">false</value>
 									</entry>
+									<entry>
+										<key>value</key>
+										<value xsi:type="xsd:string">One</value>
+									</entry>
 								</attributes>
 							</attributes>
 						</containedElements>
@@ -4154,6 +4194,10 @@
 									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
+										<key>value</key>
+										<value xsi:type="xsd:string">Two</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -4201,6 +4245,10 @@
 										<key>shown</key>
 										<value xsi:type="xsd:string">false</value>
 									</entry>
+									<entry>
+										<key>value</key>
+										<value xsi:type="xsd:string">Four</value>
+									</entry>
 								</attributes>
 							</attributes>
 						</containedElements>
@@ -4246,6 +4294,10 @@
 									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
+										<key>value</key>
+										<value xsi:type="xsd:string">Still learning how to count, apparently</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -4351,6 +4403,10 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
+									<key>value</key>
+									<value xsi:type="xsd:string">One</value>
+								</entry>
+								<entry>
 									<key>white-space</key>
 									<value xsi:type="xsd:string">pre</value>
 								</entry>
@@ -4399,6 +4455,10 @@
 										<key>shown</key>
 										<value xsi:type="xsd:string">false</value>
 									</entry>
+									<entry>
+										<key>value</key>
+										<value xsi:type="xsd:string">One</value>
+									</entry>
 								</attributes>
 							</attributes>
 						</containedElements>
@@ -4444,6 +4504,10 @@
 									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
+										<key>value</key>
+										<value xsi:type="xsd:string">Two</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -4491,6 +4555,10 @@
 										<key>shown</key>
 										<value xsi:type="xsd:string">false</value>
 									</entry>
+									<entry>
+										<key>value</key>
+										<value xsi:type="xsd:string">Four</value>
+									</entry>
 								</attributes>
 							</attributes>
 						</containedElements>
@@ -4536,6 +4604,10 @@
 									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
+										<key>value</key>
+										<value xsi:type="xsd:string">Still learning how to count, apparently</value>
 									</entry>
 								</attributes>
 							</attributes>
@@ -5394,6 +5466,10 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
+									<key>value</key>
+									<value xsi:type="xsd:string">Example text</value>
+								</entry>
+								<entry>
 									<key>white-space</key>
 									<value xsi:type="xsd:string">pre-wrap</value>
 								</entry>
@@ -5947,6 +6023,10 @@
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>value</key>
+									<value xsi:type="xsd:string">one</value>
 								</entry>
 								<entry>
 									<key>white-space</key>
@@ -7482,6 +7562,10 @@
 									<entry>
 										<key>type</key>
 										<value xsi:type="xsd:string">checkbox</value>
+									</entry>
+									<entry>
+										<key>value</key>
+										<value xsi:type="xsd:string">on</value>
 									</entry>
 								</attributes>
 							</attributes>
