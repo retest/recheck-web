@@ -42,6 +42,7 @@ all:
   - perspective-origin: 50% 50%
   - position: static
   - tab-size: 8
+  - tab-index: -1
   - text-align: start
   - text-decoration-style: solid
   - text-overflow: clip
