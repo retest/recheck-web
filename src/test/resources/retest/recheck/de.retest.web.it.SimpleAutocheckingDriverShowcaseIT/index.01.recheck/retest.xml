@@ -220,6 +220,10 @@
 									<value xsi:type="xsd:string">2px</value>
 								</entry>
 								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">Arial</value>
 								</entry>
@@ -324,6 +328,10 @@
 								<entry>
 									<key>border-top-width</key>
 									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -434,6 +442,10 @@
 								<entry>
 									<key>border-top-width</key>
 									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -550,6 +562,10 @@
 								<entry>
 									<key>alt</key>
 									<value xsi:type="xsd:string">click me!</value>
+								</entry>
+								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -816,6 +832,10 @@
 									<value xsi:type="xsd:string">2px</value>
 								</entry>
 								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">Arial</value>
 								</entry>
@@ -1002,6 +1022,10 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">Arial</value>
 								</entry>
@@ -1067,6 +1091,10 @@
 								<entry>
 									<key>checked</key>
 									<value xsi:type="xsd:string">checked</value>
+								</entry>
+								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -1342,6 +1370,10 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">Arial</value>
 								</entry>
@@ -1409,6 +1441,10 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">Arial</value>
 								</entry>
@@ -1475,6 +1511,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
 								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">Arial</value>
@@ -4921,6 +4961,10 @@
 									<value xsi:type="xsd:string">2px</value>
 								</entry>
 								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">Arial</value>
 								</entry>
@@ -5139,6 +5183,10 @@
 								<entry>
 									<key>border-top-width</key>
 									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -5715,6 +5763,10 @@
 									<value xsi:type="xsd:string">2px</value>
 								</entry>
 								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">Arial</value>
 								</entry>
@@ -5767,6 +5819,10 @@
 								<entry>
 									<key>align-items</key>
 									<value xsi:type="xsd:string">baseline</value>
+								</entry>
+								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -5872,6 +5928,10 @@
 								<entry>
 									<key>border-top-width</key>
 									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -6267,6 +6327,10 @@
 									<value xsi:type="xsd:string">2px</value>
 								</entry>
 								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">Arial</value>
 								</entry>
@@ -6359,6 +6423,10 @@
 								<entry>
 									<key>border-top-width</key>
 									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -6455,6 +6523,10 @@
 									<value xsi:type="xsd:string">2px</value>
 								</entry>
 								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">Arial</value>
 								</entry>
@@ -6547,6 +6619,10 @@
 								<entry>
 									<key>border-top-width</key>
 									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -6643,6 +6719,10 @@
 									<value xsi:type="xsd:string">2px</value>
 								</entry>
 								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">Arial</value>
 								</entry>
@@ -6661,6 +6741,10 @@
 								<entry>
 									<key>padding-top</key>
 									<value xsi:type="xsd:string">1px</value>
+								</entry>
+								<entry>
+									<key>read-only</key>
+									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
 									<key>readonly</key>
@@ -6799,6 +6883,10 @@
 										<value xsi:type="xsd:string">2px</value>
 									</entry>
 									<entry>
+										<key>disabled</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>font-family</key>
 										<value xsi:type="xsd:string">Arial</value>
 									</entry>
@@ -6907,6 +6995,10 @@
 								<entry>
 									<key>border-top-width</key>
 									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>disabled</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -7532,6 +7624,10 @@
 							<attributes>
 								<attributes>
 									<entry>
+										<key>disabled</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>font-family</key>
 										<value xsi:type="xsd:string">Arial</value>
 									</entry>
@@ -7687,6 +7783,10 @@
 								<value xsi:type="xsd:string">2px</value>
 							</entry>
 							<entry>
+								<key>disabled</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>font-family</key>
 								<value xsi:type="xsd:string">Arial</value>
 							</entry>
@@ -7809,6 +7909,10 @@
 							<entry>
 								<key>border-top-width</key>
 								<value xsi:type="xsd:string">2px</value>
+							</entry>
+							<entry>
+								<key>disabled</key>
+								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>font-family</key>

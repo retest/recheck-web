@@ -1501,6 +1501,10 @@
 							<attributes>
 								<attributes>
 									<entry>
+										<key>disabled</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>font-family</key>
 										<value xsi:type="xsd:string">sans-serif</value>
 									</entry>

@@ -407,6 +407,10 @@
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>disabled</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">inline-block</value>
 							</entry>
