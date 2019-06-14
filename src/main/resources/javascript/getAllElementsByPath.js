@@ -59,6 +59,7 @@ function transform(node) {
 		"value": node.value,
 		"tab-index": node.tabIndex,
 		"disabled": node.disabled,
+		"read-only": node.readOnly,
 		"shown": isShown(node)
 	};
 	
