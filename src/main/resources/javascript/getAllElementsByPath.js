@@ -58,7 +58,7 @@ function transform(node) {
 		"text": getText(node),
 		"value": node.value,
 		"tab-index": node.tabIndex,
-		"disabled": node.disabled,
+		"disabled": node.disabled === "" ? "false" : node.disabled,
 		"read-only": node.readOnly,
 		"shown": isShown(node)
 	};

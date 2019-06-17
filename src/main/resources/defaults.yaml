@@ -230,6 +230,7 @@ iframe:
 input:
   - border-image-width: 1
   - box-sizing: border-box
+  - disabled: false
   - display: inline-block
   - margin-bottom: 3px
   - margin-top: 3px
