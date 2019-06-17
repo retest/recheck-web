@@ -57,7 +57,8 @@ function transform(node) {
 		"tagName": node.tagName.toLowerCase(),
 		"text": getText(node),
 		"value": node.value,
-		"shown": isShown(node),
+		"tab-index": node.tabIndex,
+		"shown": isShown(node)
 	};
 	
 	if (node.nodeType == node.TEXT_NODE) {

@@ -42,6 +42,7 @@ all:
   - perspective-origin: 50% 50%
   - position: static
   - tab-size: 8
+  - tab-index: -1
   - text-align: start
   - text-decoration-style: solid
   - text-overflow: clip
@@ -67,6 +68,7 @@ a:
   - text-decoration-color: rgb(0, 0, 238)
   - color: rgb(0, 0, 238)
   - display: inline
+  - tab-index: 0
   - text-decoration: underline
   - text-decoration-line: underline
 
@@ -96,6 +98,9 @@ body:
   - margin-left: 8px
   - margin-right: 8px
   - margin-top: 8px
+  
+button:
+  - tab-index: 0
 
 br:
   - border-image-width: 1
@@ -215,6 +220,9 @@ html:
 
 i:
   - font-style: italic
+  
+iframe:
+  - tab-index: 0
 
 input:
   - border-image-width: 1
@@ -222,6 +230,7 @@ input:
   - display: inline-block
   - margin-bottom: 3px
   - margin-top: 3px
+  - tab-index: 0  
 
 img:
   - border-image-width: 1
@@ -309,6 +318,9 @@ script:
   - border-image-width: 1
   - display: none
 
+select:
+  - tab-index: 0
+
 small:
   - font-size: smaller
 
@@ -358,6 +370,9 @@ td:
   - border-spacing: 2px 2px
   - display: table-cell
   - vertical-align: inherit
+  
+textarea:
+  - tab-index: 0
 
 tfoot:
   - display: table-footer-group
