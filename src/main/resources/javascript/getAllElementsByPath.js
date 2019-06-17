@@ -89,6 +89,7 @@ function transform(node) {
 	
 	// overwrite empty attributes (e.g. 'disabled')
 	extractedAttributes["disabled"] = getDisabled(node);
+	extractedAttributes["read-only"] = node.readOnly;
 
 	// extract *given* CSS style attributes
 	var style = window.getComputedStyle(node);

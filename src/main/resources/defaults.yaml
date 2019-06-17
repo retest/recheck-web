@@ -106,6 +106,9 @@ button:
 br:
   - border-image-width: 1
   - display: inline
+  
+button:
+  - read-only: false
 
 caption:
   - display: table-caption
@@ -232,6 +235,7 @@ input:
   - margin-bottom: 3px
   - margin-top: 3px
   - tab-index: 0  
+  - read-only: false
 
 img:
   - border-image-width: 1
@@ -374,6 +378,7 @@ td:
   
 textarea:
   - tab-index: 0
+  - read-only: false
 
 tfoot:
   - display: table-footer-group
