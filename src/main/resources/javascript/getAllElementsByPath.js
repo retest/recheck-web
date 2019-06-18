@@ -88,6 +88,7 @@ function transform(node) {
 	}
 	
 	// overwrite empty attributes (e.g. 'disabled')
+	extractedAttributes["checked"] = node.checked;
 	extractedAttributes["disabled"] = isDisabled(node);
 	extractedAttributes["read-only"] = node.readOnly;
 

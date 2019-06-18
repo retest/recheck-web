@@ -229,6 +229,7 @@ iframe:
 input:
   - border-image-width: 1
   - box-sizing: border-box
+  - checked: false
   - display: inline-block
   - margin-bottom: 3px
   - margin-top: 3px
