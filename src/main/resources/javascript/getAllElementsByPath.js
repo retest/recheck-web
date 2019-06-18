@@ -52,7 +52,7 @@ function addCoordinates(extractedAttributes, node) {
 	}
 }
 
-function getDisabled(node) {
+function isDisabled(node) {
 	if (!node.disabled) {
 		return false;
 	}
@@ -88,7 +88,7 @@ function transform(node) {
 	}
 	
 	// overwrite empty attributes (e.g. 'disabled')
-	extractedAttributes["disabled"] = getDisabled(node);
+	extractedAttributes["disabled"] = isDisabled(node);
 	extractedAttributes["read-only"] = node.readOnly;
 
 	// extract *given* CSS style attributes
