@@ -52,6 +52,19 @@ function addCoordinates(extractedAttributes, node) {
 	}
 }
 
+function isDisabled(node) {
+	if (!node.disabled) {
+		return false;
+	}
+	if (node.disabled === "") {
+		return false;
+	}
+	if (node.disabled === "disabled") {
+		return true;
+	}
+	return node.disabled;
+}
+
 function transform(node) {
 	var extractedAttributes = {
 		"tagName": node.tagName.toLowerCase(),
@@ -73,6 +86,10 @@ function transform(node) {
 		var attributeValue = attrs[i].value;
 		extractedAttributes[attributeName] = attributeValue;
 	}
+	
+	// overwrite empty attributes (e.g. 'disabled')
+	extractedAttributes["disabled"] = isDisabled(node);
+	extractedAttributes["read-only"] = node.readOnly;
 
 	// extract *given* CSS style attributes
 	var style = window.getComputedStyle(node);

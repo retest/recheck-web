@@ -19,6 +19,7 @@ all:
   - caption-side: top
   - column-fill: balance
   - direction: ltr
+  - disabled: false
   - display: block
   - empty-cells: show
   - flex-direction: row
@@ -98,13 +99,14 @@ body:
   - margin-left: 8px
   - margin-right: 8px
   - margin-top: 8px
-  
-button:
-  - tab-index: 0
 
 br:
   - border-image-width: 1
   - display: inline
+  
+button:
+  - tab-index: 0
+  - read-only: false
 
 caption:
   - display: table-caption
@@ -231,6 +233,7 @@ input:
   - margin-bottom: 3px
   - margin-top: 3px
   - tab-index: 0  
+  - read-only: false
 
 img:
   - border-image-width: 1
@@ -298,12 +301,6 @@ pre:
 
 q:
   - display: inline
-
-q::after:
-  - content: close-quote
-
-q::before:
-  - content: open-quote
 
 rt:
   - line-height: normal
@@ -373,6 +370,7 @@ td:
   
 textarea:
   - tab-index: 0
+  - read-only: false
 
 tfoot:
   - display: table-footer-group

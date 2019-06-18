@@ -912,7 +912,7 @@
 								</entry>
 								<entry>
 									<key>disabled</key>
-									<value xsi:type="xsd:string">disabled</value>
+									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -1157,7 +1157,7 @@
 								</entry>
 								<entry>
 									<key>disabled</key>
-									<value xsi:type="xsd:string">disabled</value>
+									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -1264,7 +1264,7 @@
 								</entry>
 								<entry>
 									<key>disabled</key>
-									<value xsi:type="xsd:string">somerandomstring</value>
+									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -1568,7 +1568,7 @@
 								</entry>
 								<entry>
 									<key>disabled</key>
-									<value xsi:type="xsd:string">disabled</value>
+									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -1675,7 +1675,7 @@
 								</entry>
 								<entry>
 									<key>disabled</key>
-									<value xsi:type="xsd:string">somedisablingstring</value>
+									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -2800,7 +2800,7 @@
 								</entry>
 								<entry>
 									<key>disabled</key>
-									<value xsi:type="xsd:string">disabled</value>
+									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
 									<key>display</key>
@@ -5268,7 +5268,7 @@
 								</entry>
 								<entry>
 									<key>disabled</key>
-									<value xsi:type="xsd:string">disabled</value>
+									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
 									<key>display</key>
@@ -6659,6 +6659,10 @@
 									<value xsi:type="xsd:string">1px</value>
 								</entry>
 								<entry>
+									<key>read-only</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
 									<key>readonly</key>
 									<value xsi:type="xsd:string">readonly</value>
 								</entry>
@@ -7105,7 +7109,7 @@
 									</entry>
 									<entry>
 										<key>disabled</key>
-										<value xsi:type="xsd:string">foo</value>
+										<value xsi:type="xsd:string">true</value>
 									</entry>
 									<entry>
 										<key>font-family</key>
@@ -7236,6 +7240,10 @@
 									<entry>
 										<key>column-rule-color</key>
 										<value xsi:type="xsd:string">rgb(84, 84, 84)</value>
+									</entry>
+									<entry>
+										<key>disabled</key>
+										<value xsi:type="xsd:string">true</value>
 									</entry>
 									<entry>
 										<key>font-family</key>
@@ -7373,7 +7381,7 @@
 									</entry>
 									<entry>
 										<key>disabled</key>
-										<value xsi:type="xsd:string">qwerty</value>
+										<value xsi:type="xsd:string">true</value>
 									</entry>
 									<entry>
 										<key>font-family</key>
