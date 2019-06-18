@@ -896,7 +896,7 @@
 								</entry>
 								<entry>
 									<key>checked</key>
-									<value xsi:type="xsd:string">checked</value>
+									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
 									<key>color</key>
@@ -1050,7 +1050,7 @@
 							<attributes>
 								<entry>
 									<key>checked</key>
-									<value xsi:type="xsd:string">checked</value>
+									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -1240,7 +1240,7 @@
 								</entry>
 								<entry>
 									<key>checked</key>
-									<value xsi:type="xsd:string">checked</value>
+									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
 									<key>color</key>
@@ -1459,6 +1459,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>checked</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
 								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">Arial</value>
