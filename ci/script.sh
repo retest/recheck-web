@@ -8,17 +8,16 @@ set -o pipefail
 export MOZ_HEADLESS=1
 export $(dbus-launch)
 export NSS_USE_SHARED_DB=ENABLED
-export MVN="mvn --settings ${TRAVIS_BUILD_DIR}/.travis.settings.xml"
 
 ###### Maven ######
 # Compile with JDK 8
-${MVN} clean package -DskipTests
+mvn ${MVN_ARGS} clean package -DskipTests
 
 # Test with JDK 11
 wget --quiet https://github.com/sormuras/bach/raw/master/install-jdk.sh && . ./install-jdk.sh -F 11
 
 if [ ${TRAVIS_SECURE_ENV_VARS} = "true" ]; then
-    ${MVN} clean org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar
+    mvn ${MVN_ARGS} clean org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar
 else
-    ${MVN} clean org.jacoco:jacoco-maven-plugin:prepare-agent verify
+    mvn ${MVN_ARGS} clean org.jacoco:jacoco-maven-plugin:prepare-agent verify
 fi
