@@ -208,7 +208,9 @@ public class TestHealer {
 		String test = "";
 		String callLocation = "";
 		try {
-			final StackTraceElement callSite = TestCaseFinder.findTestCaseMethodInStack();
+			final StackTraceElement callSite = TestCaseFinder.getInstance() //
+					.findTestCaseMethodInStack() //
+					.getStackTraceElement();
 			test = callSite.getClassName();
 			callLocation = callSite.getFileName() + ":" + callSite.getLineNumber();
 		} catch ( final Exception e ) {
