@@ -31,6 +31,11 @@ import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.web.RecheckWebImpl;
 
+/**
+ * A wrapper for a given {@code RemoteWebDriver}, which can be used with e.g. {@code ChromeDriver}, {@code GeckoDriver},
+ * or any other. It enables recheck-web's "Unbreakable Selenium" feature, where it must be used along with
+ * {@link RecheckWebImpl}.
+ */
 public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsById, FindsByClassName, FindsByLinkText,
 		FindsByName, FindsByCssSelector, FindsByTagName, FindsByXPath, HasInputDevices, HasCapabilities, Interactive,
 		TakesScreenshot {
