@@ -16,21 +16,21 @@ public class YamlAttributesConfig {
 	}
 
 	/**
-	 * @see YamlAttributesConfig#getCssAttributes()
+	 * @return See {@link AttributesProvider#getCssAttributes()}.
 	 */
 	public Set<String> getCssAttributes() {
 		return cssAttributes;
 	}
 
 	/**
-	 * @see YamlAttributesConfig#getHtmlAttributes()
+	 * @return See {@link AttributesProvider#getHtmlAttributes()}.
 	 */
 	public Set<String> getHtmlAttributes() {
 		return htmlAttributes;
 	}
 
 	/**
-	 * @see YamlAttributesConfig#allHtmlAttributes()
+	 * @return See {@link AttributesProvider#allHtmlAttributes()}.
 	 */
 	public boolean allHtmlAttributes() {
 		return htmlAttributes == null;
