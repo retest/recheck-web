@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -11,9 +12,10 @@ import de.retest.recheck.RecheckOptions;
 import de.retest.web.RecheckWebImpl;
 
 /**
- * This class is a wrapper of any given Selenium driver, i.e. can be used e.g. both with ChromeDriver, GeckoDriver, or
- * any other. It automagically creates a check _after_ any executed action (usually starting with "get"). It utilizes
- * the given {@link AutocheckingCheckNamingStrategy} to create names for the checks.
+ * Extends {@link UnbreakableDriver} and automagically creates a check <em>after</em> any executed action (usually
+ * starting with {@link WebDriver#get(String)}). Consequently, you can omit using a {@code Recheck} instance such as
+ * {@code RecheckImpl} or {@code RecheckWebImpl} instance. It utilizes the given {@link AutocheckingCheckNamingStrategy}
+ * to create names for the checks.
  */
 public class AutocheckingRecheckDriver extends UnbreakableDriver {
 

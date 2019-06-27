@@ -1,19 +1,13 @@
 package de.retest.web.selenium;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckOptions;
 
 /**
- * This is a wrapper for different {@link RemoteWebDriver} implementations, such as {@link ChromeDriver} or
- * {@link FirefoxDriver}.
- *
- * The {@code RecheckDriver} extends {@code AutocheckingDriver}, such that it is unnecessary to call
- * {@link Recheck#check(Object, String)} explicitly. It also extends {@link UnbreakableDriver}, such that it will not
- * break on otherwise breaking changes until these changes are also applied to the Golden Master.
+ * Extends both {@link AutocheckingRecheckDriver} and {@link UnbreakableDriver} to combine all recheck-web features. Use
+ * this class if you automatically want to incorporate new features without changing your recheck-web driver
+ * implementation explicitly.
  */
 public class RecheckDriver extends AutocheckingRecheckDriver {
 

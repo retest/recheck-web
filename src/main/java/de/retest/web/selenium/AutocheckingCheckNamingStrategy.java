@@ -17,6 +17,7 @@ public interface AutocheckingCheckNamingStrategy {
 	 *            The target of the action or <code>null</code>.
 	 * @param params
 	 *            Optional params of the action, like the URL for a "get" or the text for a "enter".
+	 * @return The unique identifier.
 	 */
 	String getUniqueCheckName( String action, WebElement target, Object... params );
 
