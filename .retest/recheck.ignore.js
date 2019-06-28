@@ -12,6 +12,9 @@ function contains(array, key) {
 }
 
 function matches(element, diff) {
+	if (diff == null) {
+		return false;
+	}
 	if (diff.key == 'outline' || diff.key == 'absolute-outline') {
 		return (Math.abs(diff.expected.x - diff.actual.x) <= ALLOWED_PIXEL_DIFF)
 				&& (Math.abs(diff.expected.y - diff.actual.y) <= ALLOWED_PIXEL_DIFF)
