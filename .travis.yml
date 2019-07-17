@@ -40,6 +40,8 @@ deploy:
       tags: true
   - provider: releases
     api_key: "${GH_TOKEN}"
+    file_glob: true
+    file: "target/recheck-web-*-jar-with-dependencies.jar"
     draft: true
     on:
       tags: true
