@@ -20,6 +20,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import de.retest.recheck.RecheckAdapter;
+import de.retest.recheck.report.ActionReplayResult;
 import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
@@ -40,6 +41,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		return Stream.of( "iframe", "frame" ).anyMatch( type::equalsIgnoreCase );
 	};
 
+	private WebDriver driver;
 	private final RetestIdProvider retestIdProvider;
 	private final AttributesProvider attributesProvider;
 
@@ -61,7 +63,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public Set<RootElement> convert( final Object toVerify ) {
-		final WebDriver driver = (WebDriver) toVerify;
+		driver = (WebDriver) toVerify;
 
 		logger.info( "Retrieving attributes for each element." );
 		final Set<String> cssAttributes = attributesProvider.getCssAttributes();
@@ -131,6 +133,11 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	@Override
 	public DefaultValueFinder getDefaultValueFinder() {
 		return defaultValueFinder;
+	}
+
+	@Override
+	public void notifyAboutDifferences( final ActionReplayResult lastActionReplayResult ) {
+		((UnbreakableDriver) driver).setLastActionReplayResult( lastActionReplayResult );
 	}
 
 }
