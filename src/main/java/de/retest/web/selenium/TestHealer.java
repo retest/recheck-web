@@ -226,6 +226,47 @@ public class TestHealer {
 		} else {
 			logger.warn( "Use `By.retestId(\"{}\")` to update your test {}.", retestId, callLocation );
 		}
+		addWarning( elementIdentifier, testClassName, retestId );
 	}
 
+	private void addWarning( final String elementIdentifier, final String testClassName, final String retestId ) {
+		final ElementIdentificationWarning warning =
+				new ElementIdentificationWarning( elementIdentifier, testClassName, retestId );
+		final StateDifference stateDifference = lastActionReplayResult.getStateDifference();
+		for ( final ElementDifference elementDifference : stateDifference.getElementDifferences() ) {
+			if ( elementDifference.getRetestId().equals( retestId ) ) {
+				final Collection<ElementDifference> childDifferences = elementDifference.getChildDifferences();
+				if ( elementDifference.hasIdentAttributesDifferences() ) {
+					final IdentifyingAttributesDifference identAttributesDifference =
+							(IdentifyingAttributesDifference) elementDifference.getIdentifyingAttributesDifference();
+					setElementIdentificationWarning( identAttributesDifference, elementIdentifier, warning );
+					searchInChildDifferences( childDifferences, elementIdentifier, retestId, warning );
+				}
+			}
+		}
+	}
+
+	private void searchInChildDifferences( final Collection<ElementDifference> childDifferences,
+			final String elementIdentifier, final String retestId, final ElementIdentificationWarning warning ) {
+		for ( final ElementDifference childElement : childDifferences ) {
+			if ( childElement.getRetestId().equals( retestId ) ) {
+				final IdentifyingAttributesDifference identAttributesDifference =
+						(IdentifyingAttributesDifference) childElement.getIdentifyingAttributesDifference();
+				final boolean empty = childElement.getChildDifferences().isEmpty();
+				if ( empty ) {
+					setElementIdentificationWarning( identAttributesDifference, elementIdentifier, warning );
+				}
+				searchInChildDifferences( childElement.getChildDifferences(), elementIdentifier, retestId, warning );
+			}
+		}
+	}
+
+	private void setElementIdentificationWarning( final IdentifyingAttributesDifference attributesDifference,
+			final String elementIdentifier, final ElementIdentificationWarning warning ) {
+		for ( final AttributeDifference attributeDifference : attributesDifference.getAttributeDifferences() ) {
+			if ( attributeDifference.getKey().equals( elementIdentifier ) ) {
+				attributeDifference.setElementIdentificationWarning( warning );
+			}
+		}
+	}
 }
