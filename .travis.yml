@@ -6,7 +6,7 @@ git:
 
 addons:
   chrome: stable
-  firefox: "64.0.2"
+  firefox: latest
   apt:
     packages:
       - chromium-chromedriver
