@@ -41,9 +41,10 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		return Stream.of( "iframe", "frame" ).anyMatch( type::equalsIgnoreCase );
 	};
 
-	private WebDriver driver;
 	private final RetestIdProvider retestIdProvider;
 	private final AttributesProvider attributesProvider;
+
+	private WebDriver driver;
 
 	public RecheckSeleniumAdapter( final RetestIdProvider retestIdProvider,
 			final AttributesProvider attributesProvider ) {
@@ -137,7 +138,13 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public void notifyAboutDifferences( final ActionReplayResult lastActionReplayResult ) {
-		((UnbreakableDriver) driver).setLastActionReplayResult( lastActionReplayResult );
+		if ( driver instanceof UnbreakableDriver ) {
+			logger.debug( "Notifying about differences for last action replay result: {}.", lastActionReplayResult );
+			((UnbreakableDriver) driver).setLastActionReplayResult( lastActionReplayResult );
+		}
+		logger.debug( "Not notifying about differences because WebDriver {} is not an instance of UnbreakableDriver.",
+				driver );
+
 	}
 
 }
