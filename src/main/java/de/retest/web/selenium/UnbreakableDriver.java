@@ -27,6 +27,7 @@ import org.openqa.selenium.internal.FindsByTagName;
 import org.openqa.selenium.internal.FindsByXPath;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import de.retest.recheck.report.ActionReplayResult;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.web.RecheckWebImpl;
@@ -43,6 +44,7 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 	private final RemoteWebDriver wrapped;
 	private RootElement lastExpectedState;
 	private RootElement lastActualState;
+	private ActionReplayResult lastActionReplayResult;
 
 	/**
 	 * @param wrapped
@@ -53,20 +55,56 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 		this.wrapped = wrapped;
 	}
 
-	public void setLastExpectedState( final RootElement lastExpectedState ) {
-		this.lastExpectedState = lastExpectedState;
-	}
-
+	/**
+	 * Gets the last expectedState.
+	 *
+	 * @return current lastExpectedState
+	 */
 	public RootElement getLastExpectedState() {
 		return lastExpectedState;
 	}
 
+	/**
+	 * @param lastExpectedState
+	 *            to set
+	 */
+	public void setLastExpectedState( final RootElement lastExpectedState ) {
+		this.lastExpectedState = lastExpectedState;
+	}
+
+	/**
+	 * Gets the last actualState.
+	 *
+	 * @return current lastActualState
+	 */
+	public RootElement getLastActualState() {
+		return lastActualState;
+	}
+
+	/**
+	 * @param lastActualState
+	 *            to set
+	 */
 	public void setLastActualState( final RootElement lastActualState ) {
 		this.lastActualState = lastActualState;
 	}
 
-	public RootElement getLastActualState() {
-		return lastActualState;
+	/**
+	 * Gets the last actionReplayResult. The actionReplayResult will be needed to set a warning message for a breakable
+	 * test.
+	 *
+	 * @return current lastActionReplayResult
+	 */
+	public ActionReplayResult getLastActionReplayResult() {
+		return lastActionReplayResult;
+	}
+
+	/**
+	 * @param lastActionReplayResult
+	 *            to set
+	 */
+	public void setLastActionReplayResult( final ActionReplayResult lastActionReplayResult ) {
+		this.lastActionReplayResult = lastActionReplayResult;
 	}
 
 	public WebElement findElement( final ByBestMatchToRetestId by ) {
