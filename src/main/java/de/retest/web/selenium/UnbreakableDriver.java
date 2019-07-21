@@ -30,12 +30,16 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.web.RecheckWebImpl;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * A wrapper for a given {@code RemoteWebDriver}, which can be used with e.g. {@code ChromeDriver}, {@code GeckoDriver},
  * or any other. It enables recheck-web's "Unbreakable Selenium" feature, where it must be used along with
  * {@link RecheckWebImpl}.
  */
+@Getter
+@Setter
 public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsById, FindsByClassName, FindsByLinkText,
 		FindsByName, FindsByCssSelector, FindsByTagName, FindsByXPath, HasInputDevices, HasCapabilities, Interactive,
 		TakesScreenshot {
@@ -51,22 +55,6 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 	 */
 	public UnbreakableDriver( final RemoteWebDriver wrapped ) {
 		this.wrapped = wrapped;
-	}
-
-	public void setLastExpectedState( final RootElement lastExpectedState ) {
-		this.lastExpectedState = lastExpectedState;
-	}
-
-	public RootElement getLastExpectedState() {
-		return lastExpectedState;
-	}
-
-	public void setLastActualState( final RootElement lastActualState ) {
-		this.lastActualState = lastActualState;
-	}
-
-	public RootElement getLastActualState() {
-		return lastActualState;
 	}
 
 	public WebElement findElement( final ByBestMatchToRetestId by ) {
