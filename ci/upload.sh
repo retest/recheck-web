@@ -18,3 +18,5 @@ unzip -j -q "rclone-${RCLONE_VERSION}-linux-amd64.zip" "rclone-${RCLONE_VERSION}
 echo "Uploading to S3 ..."
 rclone copy ${TRAVIS_BUILD_DIR}/${SOURCE_PATH} ${BUCKET}/${TRAVIS_REPO_SLUG}/${TRAVIS_BRANCH}/${TRAVIS_BUILD_NUMBER}/source
 rclone copy ${TRAVIS_BUILD_DIR}/${TARGET_PATH} ${BUCKET}/${TRAVIS_REPO_SLUG}/${TRAVIS_BRANCH}/${TRAVIS_BUILD_NUMBER}/target
+
+exit 0
