@@ -4,7 +4,6 @@ set -o nounset
 set -o errexit
 set -o pipefail
 
-BUCKET='DO:golden-master'
 URL="https://downloads.rclone.org/${RCLONE_VERSION}/rclone-${RCLONE_VERSION}-linux-amd64.zip"
 
 SOURCE_PATH='src/test/resources/retest/recheck/'
