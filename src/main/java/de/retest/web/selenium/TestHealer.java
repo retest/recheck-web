@@ -5,6 +5,8 @@ import static de.retest.web.selenium.ByWhisperer.retrieveId;
 import static de.retest.web.selenium.ByWhisperer.retrieveLinkText;
 import static de.retest.web.selenium.ByWhisperer.retrieveName;
 
+import java.util.Collection;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.By.ByClassName;
 import org.openqa.selenium.By.ByCssSelector;
@@ -17,9 +19,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import de.retest.recheck.TestCaseFinder;
+import de.retest.recheck.report.ActionReplayResult;
 import de.retest.recheck.ui.Path;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
+import de.retest.recheck.ui.diff.AttributeDifference;
+import de.retest.recheck.ui.diff.ElementDifference;
+import de.retest.recheck.ui.diff.ElementIdentificationWarning;
+import de.retest.recheck.ui.diff.IdentifyingAttributesDifference;
+import de.retest.recheck.ui.diff.StateDifference;
 
 public class TestHealer {
 
@@ -35,6 +43,7 @@ public class TestHealer {
 	private final UnbreakableDriver wrapped;
 	private final RootElement lastExpectedState;
 	private final RootElement lastActualState;
+	private final ActionReplayResult lastActionReplayResult;
 
 	private TestHealer( final UnbreakableDriver wrapped ) {
 		this.wrapped = wrapped;
@@ -43,6 +52,11 @@ public class TestHealer {
 			throw new IllegalStateException( "No last expected state to find old element in!" );
 		}
 		lastActualState = wrapped.getLastActualState();
+		lastActionReplayResult = wrapped.getLastActionReplayResult();
+	}
+
+	public ActionReplayResult getLastActionReplayResult() {
+		return lastActionReplayResult;
 	}
 
 	public static WebElement findElement( final By by, final UnbreakableDriver wrapped ) {
@@ -81,8 +95,8 @@ public class TestHealer {
 			logger.warn( "{} with id '{}'.", ELEMENT_NOT_FOUND_MESSAGE, id );
 			return null;
 		} else {
-			writeWarnLogForChangedIdentifier( "HTML id attribute", id,
-					actualElement.getIdentifyingAttributes().get( ID ), ID, actualElement.getRetestId() );
+			writeWarnLogForChangedIdentifier( "id", id, actualElement.getIdentifyingAttributes().get( ID ), ID,
+					actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -96,8 +110,8 @@ public class TestHealer {
 			logger.warn( "{} with CSS class '{}'.", ELEMENT_NOT_FOUND_MESSAGE, className );
 			return null;
 		} else {
-			writeWarnLogForChangedIdentifier( "HTML class attribute", className,
-					actualElement.getIdentifyingAttributes().get( CLASS ), "className", actualElement.getRetestId() );
+			writeWarnLogForChangedIdentifier( "class", className, actualElement.getIdentifyingAttributes().get( CLASS ),
+					"className", actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -111,8 +125,8 @@ public class TestHealer {
 			logger.warn( "{} with name '{}'.", ELEMENT_NOT_FOUND_MESSAGE, name );
 			return null;
 		} else {
-			writeWarnLogForChangedIdentifier( "HTML name attribute", name,
-					actualElement.getIdentifyingAttributes().get( NAME ), NAME, actualElement.getRetestId() );
+			writeWarnLogForChangedIdentifier( "name", name, actualElement.getIdentifyingAttributes().get( NAME ), NAME,
+					actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -145,8 +159,8 @@ public class TestHealer {
 			logger.warn( "{} with CSS selector '{}'.", ELEMENT_NOT_FOUND_MESSAGE, selector );
 			return null;
 		} else {
-			writeWarnLogForChangedIdentifier( "HTML class attribute", selector,
-					actualElement.getIdentifyingAttributes().get( CLASS ), "cssSelector", actualElement.getRetestId() );
+			writeWarnLogForChangedIdentifier( "class", selector, actualElement.getIdentifyingAttributes().get( CLASS ),
+					"cssSelector", actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -201,24 +215,25 @@ public class TestHealer {
 	private void writeWarnLogForChangedIdentifier( final String elementIdentifier, final Object oldValue,
 			final Object newValue, final String byMethodName, final String retestId ) {
 		logger.warn( "*************** recheck warning ***************" );
-		logger.warn( "The {} used for element identification changed from '{}' to '{}'.", elementIdentifier, oldValue,
-				newValue );
-		logger.warn( "retest identified the element based on the persisted Golden Master." );
+		logger.warn( "The HTML {} attribute used for element identification changed from '{}' to '{}'.",
+				elementIdentifier, oldValue, newValue );
+		logger.warn( "recheck identified the element based on the persisted Golden Master." );
 
-		String test = "";
+		String testClassName = "";
 		String callLocation = "";
 		try {
 			final StackTraceElement callSite = TestCaseFinder.getInstance() //
 					.findTestCaseMethodInStack() //
 					.getStackTraceElement();
-			test = callSite.getClassName();
+			testClassName = callSite.getClassName();
 			callLocation = callSite.getFileName() + ":" + callSite.getLineNumber();
 		} catch ( final Exception e ) {
 			logger.warn( "Exception retrieving call site of findBy call." );
 		}
 
 		// TODO Get filename of state
-		logger.warn( "If you apply these changes to the Golden Master {}, your test {} will break.", "", test );
+		logger.warn( "If you apply these changes to the Golden Master {}, your test {} will break.", "",
+				testClassName );
 
 		if ( newValue != null ) {
 			logger.warn( "Use `By.{}(\"{}\")` or `By.retestId(\"{}\")` to update your test {}.", byMethodName, newValue,
