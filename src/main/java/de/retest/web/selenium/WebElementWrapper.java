@@ -114,4 +114,8 @@ public class WebElementWrapper implements WebElement {
 	public String getCssValue( final String propertyName ) {
 		return delegate.getCssValue( propertyName );
 	}
+        
+        public WebElement getWrappedElement() {
+                return delegate;
+        }
 }
