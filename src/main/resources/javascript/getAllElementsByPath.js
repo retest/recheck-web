@@ -52,6 +52,7 @@ function addCoordinates(extractedAttributes, node) {
 	}
 }
 
+// Disabled should only be added for matching nodes
 function isDisabled(node) {
 	if (!node.disabled) {
 		return false;
