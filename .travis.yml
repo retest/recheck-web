@@ -42,6 +42,7 @@ deploy:
     api_key: "${GH_TOKEN}"
     file_glob: true
     file: "target/recheck-web-*-jar-with-dependencies.jar"
+    skip_cleanup: true
     draft: true
     on:
       tags: true
