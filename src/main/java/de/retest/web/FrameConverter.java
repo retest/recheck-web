@@ -36,17 +36,16 @@ public class FrameConverter {
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		final List<Element> frames =
 				de.retest.web.selenium.By.findElements( lastChecked.getContainedElements(), isFrame );
-
-		log.debug( "Found {} frames, getting data per frame.", frames.size() );
+		log.debug( "Found {} frame(s), getting data per frame.", frames.size() );
 		for ( final Element frame : frames ) {
 			final String frameId = frame.getIdentifyingAttributes().get( "id" );
 			if ( frameId == null ) {
-				// TODO Implement handling e.g. via name, XPaht, etc.
-				log.error( "Cannot retrieve frame with ID null from {}.", frame );
+				// TODO Implement handling e.g. via name, XPath, etc.
+				log.error( "Cannot retrieve frame without ID from {}.", frame );
 				continue;
 			}
 			try {
-				log.debug( "Switching to frame with ID {}.", frameId );
+				log.debug( "Switching to frame with ID '{}'.", frameId );
 				driver.switchTo().frame( frameId );
 				final String framePath = frame.getIdentifyingAttributes().getPath();
 				@SuppressWarnings( "unchecked" )
@@ -62,7 +61,7 @@ public class FrameConverter {
 				}.convertToPeers();
 				frame.addChildren( frameContent.getContainedElements() );
 			} catch ( final Exception e ) {
-				log.error( "Exception retrieving data content of frame with ID {}.", frameId, e );
+				log.error( "Exception retrieving data content of frame with ID '{}'.", frameId, e );
 			}
 			driver.switchTo().defaultContent();
 		}
