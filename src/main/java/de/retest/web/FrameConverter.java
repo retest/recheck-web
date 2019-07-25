@@ -21,11 +21,6 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class FrameConverter {
 
-	private final Predicate<Element> isFrame = element -> {
-		final String type = element.getIdentifyingAttributes().getType();
-		return Stream.of( "iframe", "frame" ).anyMatch( type::equalsIgnoreCase );
-	};
-
 	private final String queryJs;
 	private final RetestIdProvider retestIdProvider;
 	private final AttributesProvider attributesProvider;
@@ -35,7 +30,7 @@ public class FrameConverter {
 			final RootElement lastChecked ) {
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		final List<Element> frames =
-				de.retest.web.selenium.By.findElements( lastChecked.getContainedElements(), isFrame );
+				de.retest.web.selenium.By.findElements( lastChecked.getContainedElements(), isFrame() );
 		log.debug( "Found {} frame(s), getting data per frame.", frames.size() );
 		for ( final Element frame : frames ) {
 			final String frameId = frame.getIdentifyingAttributes().get( "id" );
@@ -65,6 +60,13 @@ public class FrameConverter {
 			}
 			driver.switchTo().defaultContent();
 		}
+	}
+
+	private static Predicate<Element> isFrame() {
+		return element -> {
+			final String type = element.getIdentifyingAttributes().getType();
+			return Stream.of( "iframe", "frame" ).anyMatch( type::equalsIgnoreCase );
+		};
 	}
 
 }
