@@ -54,18 +54,24 @@ public class FrameConverter {
 			@SuppressWarnings( "unchecked" )
 			final PathsToWebDataMapping mapping = new PathsToWebDataMapping( framePath,
 					(Map<String, Map<String, Object>>) jsExecutor.executeScript( queryJs, cssAttributes ) );
-			final RootElement frameContent = new PeerConverter( retestIdProvider, attributesProvider, mapping,
-					"frame-" + frameNameOrID, null, defaultValueFinder ) {
-				@Override
-				protected boolean isRoot( final String parentPath ) {
-					// handle trailing slashes...
-					return framePath.equals( parentPath.replaceAll( "/$", "" ) );
-				}
-			}.convertToPeers();
+			final RootElement frameContent = convert( mapping, frameNameOrID, framePath );
 			frame.addChildren( frameContent.getContainedElements() );
 		} catch ( final Exception e ) {
 			log.error( "Exception retrieving data content of frame with name/ID '{}'.", frameNameOrID, e );
 		}
+	}
+
+	private RootElement convert( final PathsToWebDataMapping mapping, final String frameNameOrID,
+			final String framePath ) {
+		final PeerConverter peerConverter = new PeerConverter( retestIdProvider, attributesProvider, mapping,
+				"frame-" + frameNameOrID, null, defaultValueFinder ) {
+			@Override
+			protected boolean isRoot( final String parentPath ) {
+				// Handle trailing slashes.
+				return framePath.equals( parentPath.replaceAll( "/$", "" ) );
+			}
+		};
+		return peerConverter.convertToPeers();
 	}
 
 	private static Predicate<Element> isFrame() {
