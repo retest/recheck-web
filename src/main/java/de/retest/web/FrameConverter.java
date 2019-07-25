@@ -38,7 +38,6 @@ public class FrameConverter {
 	}
 
 	private void addChildrenFromFrame( final WebDriver driver, final Set<String> cssAttributes, final Element frame ) {
-		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		final String frameName = frame.getIdentifyingAttributes().get( AttributesUtil.NAME );
 		final String frameId = frame.getIdentifyingAttributes().get( AttributesUtil.ID );
 		final String frameNameOrID = frameName != null ? frameName : frameId;
@@ -51,6 +50,7 @@ public class FrameConverter {
 			log.debug( "Switching to frame with name/ID '{}'.", frameNameOrID );
 			driver.switchTo().frame( frameNameOrID );
 			final String framePath = frame.getIdentifyingAttributes().getPath();
+			final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 			@SuppressWarnings( "unchecked" )
 			final PathsToWebDataMapping mapping = new PathsToWebDataMapping( framePath,
 					(Map<String, Map<String, Object>>) jsExecutor.executeScript( queryJs, cssAttributes ) );
