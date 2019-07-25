@@ -39,21 +39,23 @@ public class FrameConverter {
 
 	private void addChildrenFromFrame( final WebDriver driver, final Set<String> cssAttributes, final Element frame ) {
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		final String frameName = frame.getIdentifyingAttributes().get( "name" );
 		final String frameId = frame.getIdentifyingAttributes().get( "id" );
-		if ( frameId == null ) {
-			// TODO Implement handling e.g. via name, XPath, etc.
-			log.error( "Cannot retrieve frame without ID from {}.", frame );
+		final String frameNameOrID = frameName != null ? frameName : frameId;
+		if ( frameNameOrID == null ) {
+			// TODO Implement handling e.g. XPath.
+			log.error( "Cannot retrieve frame without name and ID from {}.", frame );
 			return;
 		}
 		try {
-			log.debug( "Switching to frame with ID '{}'.", frameId );
-			driver.switchTo().frame( frameId );
+			log.debug( "Switching to frame with name/ID '{}'.", frameNameOrID );
+			driver.switchTo().frame( frameNameOrID );
 			final String framePath = frame.getIdentifyingAttributes().getPath();
 			@SuppressWarnings( "unchecked" )
 			final PathsToWebDataMapping mapping = new PathsToWebDataMapping( framePath,
 					(Map<String, Map<String, Object>>) jsExecutor.executeScript( queryJs, cssAttributes ) );
 			final RootElement frameContent = new PeerConverter( retestIdProvider, attributesProvider, mapping,
-					"frame-" + frameId, null, defaultValueFinder ) {
+					"frame-" + frameNameOrID, null, defaultValueFinder ) {
 				@Override
 				protected boolean isRoot( final String parentPath ) {
 					// handle trailing slashes...
@@ -62,7 +64,7 @@ public class FrameConverter {
 			}.convertToPeers();
 			frame.addChildren( frameContent.getContainedElements() );
 		} catch ( final Exception e ) {
-			log.error( "Exception retrieving data content of frame with ID '{}'.", frameId, e );
+			log.error( "Exception retrieving data content of frame with name/ID '{}'.", frameNameOrID, e );
 		}
 	}
 
