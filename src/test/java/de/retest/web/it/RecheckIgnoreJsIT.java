@@ -2,7 +2,6 @@ package de.retest.web.it;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import java.awt.Rectangle;
 import java.nio.file.Paths;
 
 import org.junit.jupiter.api.Test;
@@ -15,15 +14,6 @@ import de.retest.recheck.ui.diff.AttributeDifference;
 class RecheckIgnoreJsIT {
 
 	final JSFilterImpl cut = new JSFilterImpl( Paths.get( ".retest/recheck.ignore.js" ) );
-
-	@Test
-	void should_ignore_outline_5_diff() throws Exception {
-		final Element element = Mockito.mock( Element.class );
-		assertThat( cut.matches( element, new AttributeDifference( "outline", new Rectangle( 580, 610, 200, -20 ),
-				new Rectangle( 578, 605, 203, -16 ) ) ) ).isTrue();
-		assertThat( cut.matches( element, new AttributeDifference( "outline", new Rectangle( 580, 610, 200, 20 ),
-				new Rectangle( 500, 605, 200, 20 ) ) ) ).isFalse();
-	}
 
 	@Test
 	void should_ignore_opacity_5_diff() throws Exception {
@@ -51,15 +41,6 @@ class RecheckIgnoreJsIT {
 		assertThat( cut.matches( element, new AttributeDifference( "font-family", "Arial", "system-ui" ) ) ).isTrue();
 		assertThat( cut.matches( element, new AttributeDifference( "font-family", "Arial", "Courier New" ) ) )
 				.isFalse();
-	}
-
-	@Test
-	void should_ignore_any_5px_diff() {
-		final Element element = Mockito.mock( Element.class );
-		assertThat( cut.matches( element, //
-				new AttributeDifference( "some-css", "10px", "12px" ) ) ).isTrue();
-		assertThat( cut.matches( element, //
-				new AttributeDifference( "some-css", "10px", "200px" ) ) ).isFalse();
 	}
 
 	@Test
