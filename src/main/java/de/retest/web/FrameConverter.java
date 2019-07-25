@@ -39,8 +39,8 @@ public class FrameConverter {
 
 	private void addChildrenFromFrame( final WebDriver driver, final Set<String> cssAttributes, final Element frame ) {
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		final String frameName = frame.getIdentifyingAttributes().get( "name" );
-		final String frameId = frame.getIdentifyingAttributes().get( "id" );
+		final String frameName = frame.getIdentifyingAttributes().get( AttributesUtil.NAME );
+		final String frameId = frame.getIdentifyingAttributes().get( AttributesUtil.ID );
 		final String frameNameOrID = frameName != null ? frameName : frameId;
 		if ( frameNameOrID == null ) {
 			// TODO Implement handling e.g. XPath.
