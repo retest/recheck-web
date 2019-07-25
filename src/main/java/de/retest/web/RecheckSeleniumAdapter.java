@@ -2,6 +2,7 @@ package de.retest.web;
 
 import static de.retest.web.ScreenshotProvider.shoot;
 
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
@@ -67,12 +68,10 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		final Set<String> cssAttributes = attributesProvider.getCssAttributes();
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		@SuppressWarnings( "unchecked" )
-		final PathsToWebDataMapping mapping = new PathsToWebDataMapping(
-				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes ) );
-
-		logger.info( "Checking website {} with {} elements.", driver.getCurrentUrl(), mapping.size() );
-		final RootElement lastChecked = new PeerConverter( retestIdProvider, attributesProvider, mapping,
-				driver.getTitle(), shoot( driver ), defaultValueFinder ).convertToPeers();
+		final Map<String, Map<String, Object>> tagMapping =
+				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes );
+		final RootElement lastChecked =
+				convert( tagMapping, driver.getCurrentUrl(), driver.getTitle(), shoot( driver ) );
 
 		addChildrenFromFrames( driver, cssAttributes, lastChecked );
 
@@ -81,6 +80,15 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		}
 
 		return Collections.singleton( lastChecked );
+	}
+
+	public RootElement convert( final Map<String, Map<String, Object>> tagMapping, final String url, final String title,
+			final BufferedImage screenshot ) {
+		final PathsToWebDataMapping mapping = new PathsToWebDataMapping( tagMapping );
+
+		logger.info( "Checking website {} with {} elements.", url, mapping.size() );
+		return new PeerConverter( retestIdProvider, attributesProvider, mapping, title, screenshot, defaultValueFinder )
+				.convertToPeers();
 	}
 
 	private void addChildrenFromFrames( final WebDriver driver, final Set<String> cssAttributes,
