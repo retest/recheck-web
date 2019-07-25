@@ -6,10 +6,13 @@ import java.util.Set;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import de.retest.recheck.ui.DefaultValueFinder;
+import de.retest.recheck.ui.descriptors.Attribute;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
@@ -38,33 +41,43 @@ public class FrameConverter {
 	}
 
 	private void addChildrenFromFrame( final WebDriver driver, final Set<String> cssAttributes, final Element frame ) {
-		final String frameName = frame.getIdentifyingAttributes().get( AttributesUtil.NAME );
-		final String frameId = frame.getIdentifyingAttributes().get( AttributesUtil.ID );
-		final String frameNameOrID = frameName != null ? frameName : frameId;
-		if ( frameNameOrID == null ) {
-			// TODO Implement handling e.g. XPath.
-			log.error( "Cannot retrieve frame without name and ID from {}.", frame );
-			return;
-		}
 		try {
-			log.debug( "Switching to frame with name/ID '{}'.", frameNameOrID );
-			driver.switchTo().frame( frameNameOrID );
 			final String framePath = frame.getIdentifyingAttributes().getPath();
+			final String frameXPath = "/" + framePath;
+			final WebElement frameWebElement = driver.findElement( By.xpath( frameXPath ) );
+
+			log.debug( "Switching to frame '{}'.", frame );
+			driver.switchTo().frame( frameWebElement );
+
+			log.debug( "Retrieving data content of frame '{}'.", frame );
 			final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 			@SuppressWarnings( "unchecked" )
 			final PathsToWebDataMapping mapping = new PathsToWebDataMapping( framePath,
 					(Map<String, Map<String, Object>>) jsExecutor.executeScript( queryJs, cssAttributes ) );
-			final RootElement frameContent = convert( mapping, frameNameOrID, framePath );
+			final RootElement frameContent = convert( mapping, getFrameTitle( frame ), framePath );
 			frame.addChildren( frameContent.getContainedElements() );
 		} catch ( final Exception e ) {
-			log.error( "Exception retrieving data content of frame with name/ID '{}'.", frameNameOrID, e );
+			log.error( "Exception retrieving data content of frame '{}'.", frame, e );
 		}
 	}
 
-	private RootElement convert( final PathsToWebDataMapping mapping, final String frameNameOrID,
+	private String getFrameTitle( final Element frame ) {
+		final String prefix = "frame-";
+		final Attribute id = frame.getIdentifyingAttributes().getAttribute( AttributesUtil.ID );
+		if ( id != null ) {
+			return prefix + id.getValue();
+		}
+		final Attribute name = frame.getIdentifyingAttributes().getAttribute( AttributesUtil.NAME );
+		if ( name != null ) {
+			return prefix + name.getValue();
+		}
+		return prefix + frame.getRetestId();
+	}
+
+	private RootElement convert( final PathsToWebDataMapping mapping, final String frameTitle,
 			final String framePath ) {
 		final PeerConverter peerConverter = new PeerConverter( retestIdProvider, attributesProvider, mapping,
-				"frame-" + frameNameOrID, null, defaultValueFinder ) {
+				frameTitle, null, defaultValueFinder ) {
 			@Override
 			protected boolean isRoot( final String parentPath ) {
 				// Handle trailing slashes.
