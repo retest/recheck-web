@@ -13,6 +13,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WrapsDriver;
 import org.openqa.selenium.interactions.HasInputDevices;
 import org.openqa.selenium.interactions.Interactive;
 import org.openqa.selenium.interactions.Keyboard;
@@ -42,7 +43,7 @@ import lombok.Setter;
 @Setter
 public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsById, FindsByClassName, FindsByLinkText,
 		FindsByName, FindsByCssSelector, FindsByTagName, FindsByXPath, HasInputDevices, HasCapabilities, Interactive,
-		TakesScreenshot {
+		TakesScreenshot, WrapsDriver {
 
 	private final RemoteWebDriver wrapped;
 	private RootElement lastExpectedState;
@@ -264,5 +265,13 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 	@Override
 	public void resetInputState() {
 		wrapped.resetInputState();
+	}
+
+	@Override
+	public WebDriver getWrappedDriver() {
+		if ( wrapped instanceof WrapsDriver ) {
+			return ((WrapsDriver) wrapped).getWrappedDriver();
+		}
+		return wrapped;
 	}
 }
