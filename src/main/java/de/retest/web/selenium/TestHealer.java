@@ -11,6 +11,7 @@ import org.openqa.selenium.By.ByCssSelector;
 import org.openqa.selenium.By.ById;
 import org.openqa.selenium.By.ByLinkText;
 import org.openqa.selenium.By.ByName;
+import org.openqa.selenium.By.ByTagName;
 import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
@@ -28,6 +29,7 @@ public class TestHealer {
 	private static final String NAME = "name";
 	private static final String CLASS = "class";
 	private static final String ID = "id";
+	private static final String TYPE = "type";
 
 	private static final Logger logger = LoggerFactory.getLogger( TestHealer.class );
 	private static final String ELEMENT_NOT_FOUND_MESSAGE = "It appears that even the Golden Master has no element";
@@ -64,16 +66,26 @@ public class TestHealer {
 		}
 		if ( by instanceof ByCssSelector ) {
 			final String rawSelector = ByWhisperer.retrieveCssSelector( (ByCssSelector) by );
-			if ( rawSelector.startsWith( "#" ) && !rawSelector.contains( " " ) ) {
+			if ( rawSelector.startsWith( "#" ) && !isComplexCssSelector( rawSelector ) ) {
 				return findElement( By.id( rawSelector.substring( 1 ) ) );
+			}
+			if ( !rawSelector.startsWith( "." ) && !isComplexCssSelector( rawSelector ) ) {
+				return findElement( By.tagName( rawSelector ) );
 			}
 			return findElementByCssSelector( (ByCssSelector) by );
 		}
 		if ( by instanceof ByXPath ) {
 			return findElementByXPath( (ByXPath) by );
 		}
+		if ( by instanceof ByTagName ) {
+			return findElementByTagName( (ByTagName) by );
+		}
 		throw new UnsupportedOperationException(
 				"Healing tests with " + by.getClass().getSimpleName() + " not yet implemented" );
+	}
+
+	private boolean isComplexCssSelector( final String rawSelector ) {
+		return rawSelector.contains( " " ) || rawSelector.contains( "[" );
 	}
 
 	private WebElement findElementById( final ById by ) {
@@ -163,7 +175,7 @@ public class TestHealer {
 		}
 		if ( !rawSelector.startsWith( "." ) ) {
 			throw new IllegalArgumentException(
-					"To search for element by tag, use `By.tag()` instead of `tag` as CSS selector." );
+					"To search for element by tag, use `By.tagName()` instead of `tag` as CSS selector." );
 		}
 		// remove leading .
 		final String selector = rawSelector.substring( 1 );
@@ -187,6 +199,21 @@ public class TestHealer {
 		} else {
 			writeWarnLogForChangedIdentifier( "xpath", xpathExpression,
 					actualElement.getIdentifyingAttributes().get( PATH ), "xpath", actualElement.getRetestId() );
+			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
+		}
+	}
+
+	private WebElement findElementByTagName( final ByTagName by ) {
+		final String tag = ByWhisperer.retrieveTag( by );
+		final Element actualElement =
+				de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, TYPE, tag );
+
+		if ( actualElement == null ) {
+			logger.warn( "{} with tag '{}'.", ELEMENT_NOT_FOUND_MESSAGE, tag );
+			return null;
+		} else {
+			writeWarnLogForChangedIdentifier( "HTML tag attribute", tag,
+					actualElement.getIdentifyingAttributes().get( TYPE ), TYPE, actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}

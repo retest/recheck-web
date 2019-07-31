@@ -7,6 +7,7 @@ import org.openqa.selenium.By.ByCssSelector;
 import org.openqa.selenium.By.ById;
 import org.openqa.selenium.By.ByLinkText;
 import org.openqa.selenium.By.ByName;
+import org.openqa.selenium.By.ByTagName;
 import org.openqa.selenium.By.ByXPath;
 
 public class ByWhisperer {
@@ -70,6 +71,16 @@ public class ByWhisperer {
 			return (String) field.get( byXPath );
 		} catch ( final ReflectiveOperationException e ) {
 			throw new IllegalStateException( "ByXPath does not have a 'xpathExpression' field?", e );
+		}
+	}
+
+	public static String retrieveTag( final ByTagName byTagName ) {
+		try {
+			final Field field = ByTagName.class.getDeclaredField( "tagName" );
+			field.setAccessible( true );
+			return (String) field.get( byTagName );
+		} catch ( final ReflectiveOperationException e ) {
+			throw new IllegalStateException( "ByTagName does not have a 'tagName' field?", e );
 		}
 	}
 }

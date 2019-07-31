@@ -40,8 +40,27 @@ class TestHealerTest {
 		when( state.getContainedElements() ).thenReturn( Collections.singletonList( element ) );
 		when( wrapped.findElement( By.xpath( xpath ) ) ).thenReturn( resultMarker );
 
-		// assertThat( By.cssSelector( ".pure-button" ).matches( element ) ).isTrue();
+		// assertThat( By.cssSelector( "#special-button" ).matches( element ) ).isTrue();
 		assertThat( findElement( By.cssSelector( "#special-button" ), wrapped ) ).isEqualTo( resultMarker );
+	}
+
+	@Test
+	public void ByCssSelector_using_tag_should_redirect() {
+		final RecheckDriver wrapped = mock( RecheckDriver.class );
+		final WebElement resultMarker = mock( WebElement.class );
+
+		final RootElement state = mock( RootElement.class );
+		when( wrapped.getLastExpectedState() ).thenReturn( state );
+		when( wrapped.getLastActualState() ).thenReturn( state );
+
+		final String xpath = "html[1]/div[1]";
+		final IdentifyingAttributes identifying = IdentifyingAttributes.create( fromString( xpath ), "div" );
+		final Element element = create( "id", state, identifying, new MutableAttributes().immutable() );
+		when( state.getContainedElements() ).thenReturn( Collections.singletonList( element ) );
+		when( wrapped.findElement( By.xpath( xpath ) ) ).thenReturn( resultMarker );
+
+		// assertThat( By.cssSelector( "div" ).matches( element ) ).isTrue();
+		assertThat( findElement( By.cssSelector( "div" ), wrapped ) ).isEqualTo( resultMarker );
 	}
 
 	@Test
