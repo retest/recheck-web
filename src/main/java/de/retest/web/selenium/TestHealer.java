@@ -63,6 +63,10 @@ public class TestHealer {
 			return findElementByLinkText( (ByLinkText) by );
 		}
 		if ( by instanceof ByCssSelector ) {
+			final String rawSelector = ByWhisperer.retrieveCssSelector( (ByCssSelector) by );
+			if ( rawSelector.startsWith( "#" ) && !rawSelector.contains( " " ) ) {
+				return findElement( By.id( rawSelector.substring( 1 ) ) );
+			}
 			return findElementByCssSelector( (ByCssSelector) by );
 		}
 		if ( by instanceof ByXPath ) {
