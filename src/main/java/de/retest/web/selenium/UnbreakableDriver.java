@@ -45,7 +45,7 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 		FindsByName, FindsByCssSelector, FindsByTagName, FindsByXPath, HasInputDevices, HasCapabilities, Interactive,
 		TakesScreenshot, WrapsDriver {
 
-	private final RemoteWebDriver wrapped;
+	private final RemoteWebDriver wrappedDriver;
 	private RootElement lastExpectedState;
 	private RootElement lastActualState;
 
@@ -54,8 +54,8 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 	 *            We use RemoteWebDriver instead of WebDriver, because we need some of the other interfaces
 	 *            RemoteWebDriver implements as well... and there is no single common super type.
 	 */
-	public UnbreakableDriver( final RemoteWebDriver wrapped ) {
-		this.wrapped = wrapped;
+	public UnbreakableDriver( final RemoteWebDriver wrappedDriver ) {
+		this.wrappedDriver = wrappedDriver;
 	}
 
 	public WebElement findElement( final ByBestMatchToRetestId by ) {
@@ -64,7 +64,7 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 					+ " and first check the state before being able to use the retest ID locator." );
 		}
 		final Element searchedFor = by.findElement( lastExpectedState, lastActualState );
-		return wrapped.findElement( By.xpath( searchedFor.getIdentifyingAttributes().getPath() ) );
+		return wrappedDriver.findElement( By.xpath( searchedFor.getIdentifyingAttributes().getPath() ) );
 	}
 
 	public WebElement findElementByRetestId( final String retestId ) {
@@ -77,7 +77,7 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 			return findElement( (ByBestMatchToRetestId) by );
 		}
 		try {
-			return wrapped.findElement( by );
+			return wrappedDriver.findElement( by );
 		} catch ( final NoSuchElementException e ) {
 			final WebElement matchedOld = TestHealer.findElement( by, this );
 			if ( matchedOld == null ) {
@@ -89,189 +89,189 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 
 	@Override
 	public List<WebElement> findElements( final By by ) {
-		return wrapped.findElements( by );
+		return wrappedDriver.findElements( by );
 	}
 
 	@Override
 	public WebElement findElementById( final String using ) {
-		return wrapped.findElementById( using );
+		return wrappedDriver.findElementById( using );
 	}
 
 	@Override
 	public List<WebElement> findElementsById( final String using ) {
-		return wrapped.findElementsById( using );
+		return wrappedDriver.findElementsById( using );
 	}
 
 	@Override
 	public WebElement findElementByClassName( final String using ) {
-		return wrapped.findElementByClassName( using );
+		return wrappedDriver.findElementByClassName( using );
 	}
 
 	@Override
 	public List<WebElement> findElementsByClassName( final String using ) {
-		return wrapped.findElementsByClassName( using );
+		return wrappedDriver.findElementsByClassName( using );
 	}
 
 	@Override
 	public WebElement findElementByLinkText( final String using ) {
-		return wrapped.findElementByLinkText( using );
+		return wrappedDriver.findElementByLinkText( using );
 	}
 
 	@Override
 	public List<WebElement> findElementsByLinkText( final String using ) {
-		return wrapped.findElementsByLinkText( using );
+		return wrappedDriver.findElementsByLinkText( using );
 	}
 
 	@Override
 	public WebElement findElementByPartialLinkText( final String using ) {
-		return wrapped.findElementByPartialLinkText( using );
+		return wrappedDriver.findElementByPartialLinkText( using );
 	}
 
 	@Override
 	public List<WebElement> findElementsByPartialLinkText( final String using ) {
-		return wrapped.findElementsByPartialLinkText( using );
+		return wrappedDriver.findElementsByPartialLinkText( using );
 	}
 
 	@Override
 	public WebElement findElementByName( final String using ) {
-		return wrapped.findElementByName( using );
+		return wrappedDriver.findElementByName( using );
 	}
 
 	@Override
 	public List<WebElement> findElementsByName( final String using ) {
-		return wrapped.findElementsByName( using );
+		return wrappedDriver.findElementsByName( using );
 	}
 
 	@Override
 	public WebElement findElementByCssSelector( final String using ) {
-		return wrapped.findElementByCssSelector( using );
+		return wrappedDriver.findElementByCssSelector( using );
 	}
 
 	@Override
 	public List<WebElement> findElementsByCssSelector( final String using ) {
-		return wrapped.findElementsByCssSelector( using );
+		return wrappedDriver.findElementsByCssSelector( using );
 	}
 
 	@Override
 	public WebElement findElementByTagName( final String using ) {
-		return wrapped.findElementByTagName( using );
+		return wrappedDriver.findElementByTagName( using );
 	}
 
 	@Override
 	public List<WebElement> findElementsByTagName( final String using ) {
-		return wrapped.findElementsByTagName( using );
+		return wrappedDriver.findElementsByTagName( using );
 	}
 
 	@Override
 	public WebElement findElementByXPath( final String using ) {
-		return wrapped.findElementByXPath( using );
+		return wrappedDriver.findElementByXPath( using );
 	}
 
 	@Override
 	public List<WebElement> findElementsByXPath( final String using ) {
-		return wrapped.findElementsByXPath( using );
+		return wrappedDriver.findElementsByXPath( using );
 	}
 
 	@Override
 	public void close() {
-		wrapped.close();
+		wrappedDriver.close();
 	}
 
 	@Override
 	public void get( final String url ) {
-		wrapped.get( url );
+		wrappedDriver.get( url );
 	}
 
 	@Override
 	public String getCurrentUrl() {
-		return wrapped.getCurrentUrl();
+		return wrappedDriver.getCurrentUrl();
 	}
 
 	@Override
 	public String getPageSource() {
-		return wrapped.getPageSource();
+		return wrappedDriver.getPageSource();
 	}
 
 	@Override
 	public String getTitle() {
-		return wrapped.getTitle();
+		return wrappedDriver.getTitle();
 	}
 
 	@Override
 	public String getWindowHandle() {
-		return wrapped.getWindowHandle();
+		return wrappedDriver.getWindowHandle();
 	}
 
 	@Override
 	public Set<String> getWindowHandles() {
-		return wrapped.getWindowHandles();
+		return wrappedDriver.getWindowHandles();
 	}
 
 	@Override
 	public Options manage() {
-		return wrapped.manage();
+		return wrappedDriver.manage();
 	}
 
 	@Override
 	public Navigation navigate() {
-		return wrapped.navigate();
+		return wrappedDriver.navigate();
 	}
 
 	@Override
 	public void quit() {
-		wrapped.quit();
+		wrappedDriver.quit();
 	}
 
 	@Override
 	public TargetLocator switchTo() {
-		return wrapped.switchTo();
+		return wrappedDriver.switchTo();
 	}
 
 	@Override
 	public Object executeScript( final String script, final Object... args ) {
-		return wrapped.executeScript( script, args );
+		return wrappedDriver.executeScript( script, args );
 	}
 
 	@Override
 	public Object executeAsyncScript( final String script, final Object... args ) {
-		return wrapped.executeAsyncScript( script, args );
+		return wrappedDriver.executeAsyncScript( script, args );
 	}
 
 	@Override
 	public <X> X getScreenshotAs( final OutputType<X> target ) {
-		return wrapped.getScreenshotAs( target );
+		return wrappedDriver.getScreenshotAs( target );
 	}
 
 	@Override
 	public Keyboard getKeyboard() {
-		return wrapped.getKeyboard();
+		return wrappedDriver.getKeyboard();
 	}
 
 	@Override
 	public Mouse getMouse() {
-		return wrapped.getMouse();
+		return wrappedDriver.getMouse();
 	}
 
 	@Override
 	public Capabilities getCapabilities() {
-		return wrapped.getCapabilities();
+		return wrappedDriver.getCapabilities();
 	}
 
 	@Override
 	public void perform( final Collection<Sequence> actions ) {
-		wrapped.perform( actions );
+		wrappedDriver.perform( actions );
 	}
 
 	@Override
 	public void resetInputState() {
-		wrapped.resetInputState();
+		wrappedDriver.resetInputState();
 	}
 
 	@Override
 	public WebDriver getWrappedDriver() {
-		if ( wrapped instanceof WrapsDriver ) {
-			return ((WrapsDriver) wrapped).getWrappedDriver();
+		if ( wrappedDriver instanceof WrapsDriver ) {
+			return ((WrapsDriver) wrappedDriver).getWrappedDriver();
 		}
-		return wrapped;
+		return wrappedDriver;
 	}
 }

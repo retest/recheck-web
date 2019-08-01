@@ -49,7 +49,7 @@ public class ScreenshotProvider {
 	 * @return The wrapped driver if present, otherwise the given driver.
 	 */
 	private static WebDriver unwrap( final WebDriver driver ) {
-		return driver instanceof UnbreakableDriver ? ((UnbreakableDriver) driver).getWrapped() : driver;
+		return driver instanceof UnbreakableDriver ? ((UnbreakableDriver) driver).getWrappedDriver() : driver;
 	}
 
 }
