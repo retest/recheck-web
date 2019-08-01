@@ -50,7 +50,7 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 	private RootElement lastActualState;
 
 	/**
-	 * @param wrapped
+	 * @param wrappedDriver
 	 *            We use RemoteWebDriver instead of WebDriver, because we need some of the other interfaces
 	 *            RemoteWebDriver implements as well... and there is no single common super type.
 	 */
