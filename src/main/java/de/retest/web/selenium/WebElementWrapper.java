@@ -10,112 +10,114 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WrapsElement;
 
-public class WebElementWrapper implements WebElement {
+public class WebElementWrapper implements WebElement, WrapsElement {
 
-	private final WebElement delegate;
+	private final WebElement wrappedElement;
 	private final AutocheckingRecheckDriver driver;
 
-	public WebElementWrapper( final WebElement delegate, final AutocheckingRecheckDriver driver ) {
-		if ( delegate instanceof WebElementWrapper ) {
+	public WebElementWrapper( final WebElement wrappedElement, final AutocheckingRecheckDriver driver ) {
+		if ( wrappedElement instanceof WebElementWrapper ) {
 			throw new IllegalArgumentException( "Cannot wrap WebElementWrapper inside WebElementWrapper." );
 		}
-		this.delegate = delegate;
+		this.wrappedElement = wrappedElement;
 		this.driver = driver;
 	}
 
 	@Override
 	public <X> X getScreenshotAs( final OutputType<X> target ) throws WebDriverException {
-		return delegate.getScreenshotAs( target );
+		return wrappedElement.getScreenshotAs( target );
 	}
 
 	@Override
 	public void click() {
-		delegate.click();
-		driver.check( "click", delegate );
+		wrappedElement.click();
+		driver.check( "click", wrappedElement );
 	}
 
 	@Override
 	public void submit() {
-		delegate.submit();
-		driver.check( "submit", delegate );
+		wrappedElement.submit();
+		driver.check( "submit", wrappedElement );
 	}
 
 	@Override
 	public void sendKeys( final CharSequence... keysToSend ) {
-		delegate.sendKeys( keysToSend );
-		driver.check( "enter", delegate, (Object[]) keysToSend );
+		wrappedElement.sendKeys( keysToSend );
+		driver.check( "enter", wrappedElement, (Object[]) keysToSend );
 	}
 
 	@Override
 	public void clear() {
-		delegate.clear();
-		driver.check( "clear", delegate );
+		wrappedElement.clear();
+		driver.check( "clear", wrappedElement );
 	}
 
 	@Override
 	public String getTagName() {
-		return delegate.getTagName();
+		return wrappedElement.getTagName();
 	}
 
 	@Override
 	public String getAttribute( final String name ) {
-		return delegate.getAttribute( name );
+		return wrappedElement.getAttribute( name );
 	}
 
 	@Override
 	public boolean isSelected() {
-		return delegate.isSelected();
+		return wrappedElement.isSelected();
 	}
 
 	@Override
 	public boolean isEnabled() {
-		return delegate.isEnabled();
+		return wrappedElement.isEnabled();
 	}
 
 	@Override
 	public String getText() {
-		return delegate.getText();
+		return wrappedElement.getText();
 	}
 
 	@Override
 	public List<WebElement> findElements( final By by ) {
-		return delegate.findElements( by ).stream() //
+		return wrappedElement.findElements( by ).stream() //
 				.map( element -> new WebElementWrapper( element, driver ) ) //
 				.collect( Collectors.toList() );
 	}
 
 	@Override
 	public WebElement findElement( final By by ) {
-		return new WebElementWrapper( delegate.findElement( by ), driver );
+		return new WebElementWrapper( wrappedElement.findElement( by ), driver );
 	}
 
 	@Override
 	public boolean isDisplayed() {
-		return delegate.isDisplayed();
+		return wrappedElement.isDisplayed();
 	}
 
 	@Override
 	public Point getLocation() {
-		return delegate.getLocation();
+		return wrappedElement.getLocation();
 	}
 
 	@Override
 	public Dimension getSize() {
-		return delegate.getSize();
+		return wrappedElement.getSize();
 	}
 
 	@Override
 	public Rectangle getRect() {
-		return delegate.getRect();
+		return wrappedElement.getRect();
 	}
 
 	@Override
 	public String getCssValue( final String propertyName ) {
-		return delegate.getCssValue( propertyName );
+		return wrappedElement.getCssValue( propertyName );
 	}
 
+	@Override
 	public WebElement getWrappedElement() {
-		return delegate;
+		return wrappedElement;
 	}
 }
