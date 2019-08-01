@@ -6,12 +6,11 @@ import static de.retest.recheck.ui.image.ImageUtils.resizeImage;
 import java.awt.image.BufferedImage;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WrapsDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
-
-import de.retest.web.selenium.UnbreakableDriver;
 
 public class ScreenshotProvider {
 
@@ -49,7 +48,7 @@ public class ScreenshotProvider {
 	 * @return The wrapped driver if present, otherwise the given driver.
 	 */
 	private static WebDriver unwrap( final WebDriver driver ) {
-		return driver instanceof UnbreakableDriver ? ((UnbreakableDriver) driver).getWrapped() : driver;
+		return driver instanceof WrapsDriver ? ((WrapsDriver) driver).getWrappedDriver() : driver;
 	}
 
 }
