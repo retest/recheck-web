@@ -20,6 +20,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import de.retest.recheck.RecheckAdapter;
+import de.retest.recheck.report.ActionReplayResult;
 import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
@@ -39,6 +40,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	private final RetestIdProvider retestIdProvider;
 	private final AttributesProvider attributesProvider;
+
+	private WebDriver driver;
 
 	public RecheckSeleniumAdapter( final RetestIdProvider retestIdProvider,
 			final AttributesProvider attributesProvider ) {
@@ -141,6 +144,16 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	@Override
 	public DefaultValueFinder getDefaultValueFinder() {
 		return defaultValueFinder;
+	}
+
+	@Override
+	public void notifyAboutDifferences( final ActionReplayResult lastActionReplayResult ) {
+		if ( driver instanceof UnbreakableDriver ) {
+			logger.debug( "Notifying about differences for last action replay result: {}.", lastActionReplayResult );
+			((UnbreakableDriver) driver).setLastActionReplayResult( lastActionReplayResult );
+		}
+		logger.debug( "Not notifying about differences because WebDriver {} is not an instance of UnbreakableDriver.",
+				driver );
 	}
 
 }
