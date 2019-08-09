@@ -154,7 +154,7 @@ Additionally, a file named `${TEST_CLASS_NAME}.report` will be created upon test
 
 ## Usage of RecheckDriver / "Unbreakable Selenium"
 
-In order to use "Unbreakable Selenium", you just need to wrap your usual driver within a `RecheckDriver` (drop-in replacement) and use `RecheckWebImpl` instead of `RecheckImpl`. The code would the look like [so](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/it/SimpleUnbreakableSeleniumShowcaseIT.java)):
+In order to use "Unbreakable Selenium", you just need to wrap your usual driver within a `RecheckDriver` (drop-in replacement) and use `RecheckWebImpl` instead of `RecheckImpl`. The code would look like [so](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/it/SimpleUnbreakableSeleniumShowcaseIT.java)):
 
 ```java
  // Use the RecheckDriver as a wrapper for your usual driver.
@@ -170,7 +170,7 @@ In order to use "Unbreakable Selenium", you just need to wrap your usual driver 
 
 To upload your test reports to [***rehub***](https://retest.de/rehub/), you need to take the following steps:
 
-1. Setup your ***retest*** account [visit](https://sso.prod.cloud.retest.org/auth/realms/customer/protocol/openid-connect/auth?response_type=code&client_id=garkbit&redirect_uri=http%3A%2F%2Fgarkbit.prod.cloud.retest.org%2Fsso%2Flogin&state=512ba44f-b51e-460b-80af-fc0964f1909e&login=true&scope=openid) to register or login. You will receive a 14-day trial.
+1. Setup your ***retest*** [account](https://sso.prod.cloud.retest.org/auth/realms/customer/protocol/openid-connect/auth?response_type=code&client_id=garkbit&redirect_uri=http%3A%2F%2Fgarkbit.prod.cloud.retest.org%2Fsso%2Flogin&state=512ba44f-b51e-460b-80af-fc0964f1909e&login=true&scope=openid). You will receive a 14-day trial.
 
 2. To enable the upload you have to modify your `setUp()` method in your tests. There are two possibilities:
 
