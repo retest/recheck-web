@@ -164,50 +164,48 @@ In order to use "Unbreakable Selenium", you just need to wrap your usual driver 
  re = new RecheckWebImpl();
 ```
 
-## Usage of rehub
+## Upload Test Reports to rehub
 
-***rehub*** is a browser-based business intelligence platform that includes a repository service for simplified test automation.
+Test reports can be easily uploaded to [***rehub***](https://retest.de/rehub/).
 
-To upload your test reports to [***rehub***](https://retest.de/rehub/), you need to take the following steps:
+To upload reports you will need an [***retest account***](https://sso.prod.cloud.retest.org/auth/realms/customer/account) to gain access to rehub. After the initial registration you will receive a 14-day trial.
 
-1. Setup your ***retest*** [account](https://sso.prod.cloud.retest.org/auth/realms/customer/protocol/openid-connect/auth?response_type=code&client_id=garkbit&redirect_uri=http%3A%2F%2Fgarkbit.prod.cloud.retest.org%2Fsso%2Flogin&state=512ba44f-b51e-460b-80af-fc0964f1909e&login=true&scope=openid). You will receive a 14-day trial.
+The first step is to modify the `setUp()` method in our existing test case to enable the upload to rehub. There are two ways to achieve this:
 
-2. To enable the upload you have to modify your `setUp()` method in your tests. There are two possibilities:
-
- - by setting up the `REHUB_REPORT_UPLOAD_ENABLED` system property
-    
-```java
-driver = new ChromeDriver();
-re = new RecheckImpl();
-System.setProperty( Properties.REHUB_REPORT_UPLOAD_ENABLED, "true" );
-```
-
- - or by modify the `RecheckImpl` constructor
+- Set the `REHUB_REPORT_UPLOAD_ENABLED` system property
 
 ```java
-driver = new ChromeDriver();
-re = new RecheckImpl( RecheckOptions.builder().reportUploadEnabled( true ).build() );
+@Before
+void setUp() {
+    driver = new ChromeDriver();
+    re = new RecheckImpl();
+    System.setProperty( de.retest.recheck.Properties.REHUB_REPORT_UPLOAD_ENABLED, "true" );
+}
 ```
 
-If you execute the test locally and the configuration was successful, your browser will pop up and you will be prompted to login, then you can find your test reports on the ***rehub garkbit***.
+- Modify the `RecheckImpl` constructor
 
-### Setup for Travis-CI
+```java
+@Before
+void setUp() {
+    driver = new ChromeDriver();
+    re = new RecheckImpl( RecheckOptions.builder().reportUploadEnabled( true ).build() );
+}
+```
 
-Follow the instructions on the [retest documentation page](https://docs.retest.de/recheck-web/tutorial/travis-execute-ci/) on how to setup and execute your tests on a CI/CD Server.
+If we execute the test locally and the configuration was successful, your browser will pop up and you will be prompted to login. Afterwards you can find your test reports on [***rehub***](https://garkbit.prod.cloud.retest.org/dashboard).
 
-When performing a local test in which the above mentioned configuration is selected, a `RECHECK_API_KEY` is generated, it can be read from the log.
+### Setup Travis CI
 
-Start by configuring Travis CI with `RECHECK_API_KEY`. It can be set via your [Travis CI environment variables in settings for a repository](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings). In your Travis repository go to Settings > Environment Variables.
+A detailed tutorial for the CI/CD settings can be found on [documentation](https://docs.retest.de/recheck-web/tutorial/upload-test-reports-to-rehub/).
 
->Keep your RECHECK_API_KEY token secret  <br/> 
->Anyone with access to your token can add test reports to your ***rehub garkbit***. <br/>
->For Travis-CI, make sure the `Display value in build log` toggle is off.
+### Access your reports
 
-If you have done all the configurations and execute the test on your CI/CD environment, you should receive the message `Sucessfully uploaded report to rehub` in the Travis-CI Job log.
+All your reports can be accessed online. Open [***rehub***](https://garkbit.prod.cloud.retest.org/dashboard), enter your account details and view/download your reports.
 
-### Download a report from rehub
-Open your browser and visit [***rehub garkbit***](https://garkbit.prod.cloud.retest.org/dashboard), select a report and download it, now you can maintain the report with [***review***](https://retest.de/review/) or the open-source tool [***recheck.cli***](https://github.com/retest/recheck.cli/).
-You can also directly download and open a test report from the ***review*** application.
+Reports can be opened with either [***review***](https://retest.de/review/) or the open-source [***CLI***](https://github.com/retest/recheck.cli/).
+
+With review it is also possible to load reports directly from ***rehub***.
 
 ## License
 
