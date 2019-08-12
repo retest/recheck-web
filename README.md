@@ -197,7 +197,7 @@ If we execute the test locally and the configuration was successful, your browse
 
 ### Setup Travis CI
 
-A detailed tutorial for the CI/CD settings can be found on [documentation](https://docs.retest.de/recheck-web/tutorial/upload-test-reports-to-rehub/).
+A detailed tutorial can be found in the [documentation](https://docs.retest.de/recheck-web/tutorial/upload-test-reports-to-rehub/).
 
 ### Access your reports
 
