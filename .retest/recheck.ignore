@@ -19,6 +19,7 @@ attribute-regex=data-.*
 attribute=jsdata
 attribute=jsaction
 attribute=cd_frame_id_
+matcher: type=meta, attribute-regex: .*
 
 # Have the tests pass locally:
 attribute=outline
