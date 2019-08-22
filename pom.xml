@@ -93,7 +93,7 @@
 			<artifactId>byte-buddy</artifactId>
 			<version>1.10.1</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -119,6 +119,7 @@
 		</dependency>
 
 		<!-- test dependencies -->
+
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-engine</artifactId>
