@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.3.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.4.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="Welcome to the Test of Recheck-web" title="Welcome to the Test of Recheck-web">
 			<identifyingAttributes>
@@ -245,7 +245,7 @@
 								<height>200</height>
 								<width>300</width>
 							</attribute>
-							<attribute key="id" xsi:type="stringAttribute">myiframe</attribute>
+							<attribute key="id" xsi:type="stringAttribute"/>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>90</x>
 								<y>54</y>
