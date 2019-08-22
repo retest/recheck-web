@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.1.0-SNAPSHOT" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.4.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="retest - Java Swing GUI Testing" title="retest - Java Swing GUI Testing">
 			<identifyingAttributes>
@@ -5960,6 +5960,35 @@
 													</entry>
 												</attributes>
 											</attributes>
+											<containedElements retestId="body">
+												<identifyingAttributes>
+													<attributes>
+														<attribute key="absolute-outline" xsi:type="outlineAttribute">
+															<x>8</x>
+															<y>8</y>
+															<height>272</height>
+															<width>498</width>
+														</attribute>
+														<attribute key="outline" xsi:type="outlineAttribute">
+															<x>8</x>
+															<y>8</y>
+															<height>-16</height>
+															<width>-16</width>
+														</attribute>
+														<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/body[1]</attribute>
+														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+														<attribute key="type" xsi:type="stringAttribute">body</attribute>
+													</attributes>
+												</identifyingAttributes>
+												<attributes>
+													<attributes>
+														<entry>
+															<key>shown</key>
+															<value xsi:type="xsd:string">true</value>
+														</entry>
+													</attributes>
+												</attributes>
+											</containedElements>
 										</containedElements>
 									</containedElements>
 									<containedElements retestId="div-8bec1">
