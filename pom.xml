@@ -86,13 +86,14 @@
 			<version>1.7.28</version>
 		</dependency>
 
+		<!-- transitively loaded via Selenium -->
 		<!-- see https://github.com/mockito/mockito/issues/1606 -->
 		<dependency>
 			<groupId>net.bytebuddy</groupId>
 			<artifactId>byte-buddy</artifactId>
 			<version>1.10.1</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -118,6 +119,7 @@
 		</dependency>
 
 		<!-- test dependencies -->
+
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-engine</artifactId>
@@ -197,6 +199,7 @@
 				<artifactId>maven-failsafe-plugin</artifactId>
 				<version>2.22.2</version>
 				<configuration>
+					<!-- combine Surefire and Failsafe reports for SonarCloud -->
 					<!-- see https://stackoverflow.com/a/15567782 -->
 					<reportsDirectory>${project.build.directory}/surefire-reports/</reportsDirectory>
 				</configuration>
@@ -261,8 +264,9 @@
 						</goals>
 					</execution>
 				</executions>
-				<!-- see https://bugs.openjdk.java.net/browse/JDK-8212233 -->
 				<configuration>
+					<!-- downgrade to fix Maven build with Java 11 -->
+					<!-- see https://bugs.openjdk.java.net/browse/JDK-8212233 -->
 					<source>8</source>
 				</configuration>
 			</plugin>
