@@ -1,5 +1,6 @@
 package de.retest.web.adapter;
 
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -37,7 +38,7 @@ public class WebElementListRecheckAdapter implements RecheckAdapter {
 				.filter( delegate::canCheck ) // Just to be safe, although we already should have looked on all elements
 				.map( delegate::convert ) //
 				.flatMap( Set::stream ) //
-				.collect( Collectors.toSet() );
+				.collect( Collectors.toCollection( LinkedHashSet::new ) );
 	}
 
 	@Override
