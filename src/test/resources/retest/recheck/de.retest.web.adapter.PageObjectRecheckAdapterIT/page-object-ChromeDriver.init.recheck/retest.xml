@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.3.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+	<data xsi:type="sutState">
+		<descriptors retestId="input" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="id" xsi:type="stringAttribute">username</attribute>
+					<attribute key="name" xsi:type="stringAttribute">email</attribute>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>8</x>
+						<y>8</y>
+						<height>21</height>
+						<width>173</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">input[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="type" xsi:type="stringAttribute">input</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>background-color</key>
+						<value xsi:type="xsd:string">rgba(255, 255, 255, 1)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 1)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-bottom-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>border-left-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 1)</value>
+					</entry>
+					<entry>
+						<key>border-left-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-left-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>border-right-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 1)</value>
+					</entry>
+					<entry>
+						<key>border-right-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-right-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>border-top-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 1)</value>
+					</entry>
+					<entry>
+						<key>border-top-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-top-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>box-decoration-break</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+					<entry>
+						<key>box-sizing</key>
+						<value xsi:type="xsd:string">content-box</value>
+					</entry>
+					<entry>
+						<key>color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 1)</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">Arial</value>
+					</entry>
+					<entry>
+						<key>font-size</key>
+						<value xsi:type="xsd:string">13.3333px</value>
+					</entry>
+					<entry>
+						<key>margin-bottom</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>margin-top</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>outline-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 1)</value>
+					</entry>
+					<entry>
+						<key>padding-bottom</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>padding-top</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>type</key>
+						<value xsi:type="xsd:string">email</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>input_554db40fee49acd58dac64c6b4dc567fa893c76ceb322d2e5159f46bdbd2793b</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+		<descriptors retestId="input" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="id" xsi:type="stringAttribute">password</attribute>
+					<attribute key="name" xsi:type="stringAttribute">password</attribute>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>185</x>
+						<y>8</y>
+						<height>21</height>
+						<width>173</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">input[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="type" xsi:type="stringAttribute">input</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>background-color</key>
+						<value xsi:type="xsd:string">rgba(255, 255, 255, 1)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 1)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-bottom-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>border-left-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 1)</value>
+					</entry>
+					<entry>
+						<key>border-left-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-left-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>border-right-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 1)</value>
+					</entry>
+					<entry>
+						<key>border-right-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-right-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>border-top-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 1)</value>
+					</entry>
+					<entry>
+						<key>border-top-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-top-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>box-decoration-break</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+					<entry>
+						<key>box-sizing</key>
+						<value xsi:type="xsd:string">content-box</value>
+					</entry>
+					<entry>
+						<key>color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 1)</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">Arial</value>
+					</entry>
+					<entry>
+						<key>font-size</key>
+						<value xsi:type="xsd:string">13.3333px</value>
+					</entry>
+					<entry>
+						<key>margin-bottom</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>margin-top</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>outline-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 1)</value>
+					</entry>
+					<entry>
+						<key>padding-bottom</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>padding-top</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>type</key>
+						<value xsi:type="xsd:string">password</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>input_554db40fee49acd58dac64c6b4dc567fa893c76ceb322d2e5159f46bdbd2793b</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+		<descriptors retestId="login" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="id" xsi:type="stringAttribute">btn-login</attribute>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>362</x>
+						<y>8</y>
+						<height>21</height>
+						<width>49</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">button[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="text" xsi:type="textAttribute">Login</attribute>
+					<attribute key="type" xsi:type="stringAttribute">button</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>align-items</key>
+						<value xsi:type="xsd:string">flex-start</value>
+					</entry>
+					<entry>
+						<key>background-color</key>
+						<value xsi:type="xsd:string">rgba(221, 221, 221, 1)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-color</key>
+						<value xsi:type="xsd:string">rgba(221, 221, 221, 1)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-style</key>
+						<value xsi:type="xsd:string">outset</value>
+					</entry>
+					<entry>
+						<key>border-bottom-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>border-image-width</key>
+						<value xsi:type="xsd:string">1</value>
+					</entry>
+					<entry>
+						<key>border-left-color</key>
+						<value xsi:type="xsd:string">rgba(221, 221, 221, 1)</value>
+					</entry>
+					<entry>
+						<key>border-left-style</key>
+						<value xsi:type="xsd:string">outset</value>
+					</entry>
+					<entry>
+						<key>border-left-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>border-right-color</key>
+						<value xsi:type="xsd:string">rgba(221, 221, 221, 1)</value>
+					</entry>
+					<entry>
+						<key>border-right-style</key>
+						<value xsi:type="xsd:string">outset</value>
+					</entry>
+					<entry>
+						<key>border-right-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>border-top-color</key>
+						<value xsi:type="xsd:string">rgba(221, 221, 221, 1)</value>
+					</entry>
+					<entry>
+						<key>border-top-style</key>
+						<value xsi:type="xsd:string">outset</value>
+					</entry>
+					<entry>
+						<key>border-top-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>box-decoration-break</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+					<entry>
+						<key>box-sizing</key>
+						<value xsi:type="xsd:string">border-box</value>
+					</entry>
+					<entry>
+						<key>color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 1)</value>
+					</entry>
+					<entry>
+						<key>display</key>
+						<value xsi:type="xsd:string">inline-block</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">Arial</value>
+					</entry>
+					<entry>
+						<key>font-size</key>
+						<value xsi:type="xsd:string">13.3333px</value>
+					</entry>
+					<entry>
+						<key>outline-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 0, 1)</value>
+					</entry>
+					<entry>
+						<key>padding-bottom</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>padding-left</key>
+						<value xsi:type="xsd:string">6px</value>
+					</entry>
+					<entry>
+						<key>padding-right</key>
+						<value xsi:type="xsd:string">6px</value>
+					</entry>
+					<entry>
+						<key>padding-top</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>text-align</key>
+						<value xsi:type="xsd:string">center</value>
+					</entry>
+					<entry>
+						<key>type</key>
+						<value xsi:type="xsd:string">submit</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>login_b880e5bf738b4f02afe94dd2659b973dc8939214437146c9d339d6da67cce805</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+		<descriptors retestId="1" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>8</x>
+						<y>29</y>
+						<height>17</height>
+						<width>8</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">a[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="text" xsi:type="textAttribute">1</attribute>
+					<attribute key="type" xsi:type="stringAttribute">a</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>border-bottom-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-left-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-right-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-top-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>box-decoration-break</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+					<entry>
+						<key>color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">&quot;Times New Roman&quot;</value>
+					</entry>
+					<entry>
+						<key>href</key>
+						<value xsi:type="xsd:string">#</value>
+					</entry>
+					<entry>
+						<key>outline-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>1_889db7cc9b6d2a0650274f347bc6a54fb26831ce72e8635d117a9f9e50c5f274</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+		<descriptors retestId="2" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>20</x>
+						<y>29</y>
+						<height>17</height>
+						<width>8</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">a[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="text" xsi:type="textAttribute">2</attribute>
+					<attribute key="type" xsi:type="stringAttribute">a</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>border-bottom-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-left-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-right-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-top-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>box-decoration-break</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+					<entry>
+						<key>color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">&quot;Times New Roman&quot;</value>
+					</entry>
+					<entry>
+						<key>href</key>
+						<value xsi:type="xsd:string">#</value>
+					</entry>
+					<entry>
+						<key>outline-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>2_02c725f0be83f59aa86e17aa403770548fea70bfe5a54b44d4473d13de9e3c2f</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+		<descriptors retestId="3" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>32</x>
+						<y>29</y>
+						<height>17</height>
+						<width>8</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">a[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="text" xsi:type="textAttribute">3</attribute>
+					<attribute key="type" xsi:type="stringAttribute">a</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>border-bottom-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-left-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-right-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-top-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>box-decoration-break</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+					<entry>
+						<key>color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">&quot;Times New Roman&quot;</value>
+					</entry>
+					<entry>
+						<key>href</key>
+						<value xsi:type="xsd:string">#</value>
+					</entry>
+					<entry>
+						<key>outline-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>3_5d8f399f1ed4ded9dfdddc083f2f2db3e1491cf004a7153659f7f881fe63484d</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+		<descriptors retestId="4" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>44</x>
+						<y>29</y>
+						<height>17</height>
+						<width>8</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">a[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="text" xsi:type="textAttribute">4</attribute>
+					<attribute key="type" xsi:type="stringAttribute">a</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>border-bottom-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-left-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-right-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-top-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>box-decoration-break</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+					<entry>
+						<key>color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">&quot;Times New Roman&quot;</value>
+					</entry>
+					<entry>
+						<key>href</key>
+						<value xsi:type="xsd:string">#</value>
+					</entry>
+					<entry>
+						<key>outline-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>4_fedebcc1efc16c3fce4de8cbbe768771bb35d8a4543830606c578706dd2ba971</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+		<descriptors retestId="5" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>56</x>
+						<y>29</y>
+						<height>17</height>
+						<width>8</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">a[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="text" xsi:type="textAttribute">5</attribute>
+					<attribute key="type" xsi:type="stringAttribute">a</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>border-bottom-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-left-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-right-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>border-top-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>box-decoration-break</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+					<entry>
+						<key>color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">&quot;Times New Roman&quot;</value>
+					</entry>
+					<entry>
+						<key>href</key>
+						<value xsi:type="xsd:string">#</value>
+					</entry>
+					<entry>
+						<key>outline-color</key>
+						<value xsi:type="xsd:string">rgba(0, 0, 238, 1)</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>5_5d404a2323b7e852ffae912a0e2c41e68a369ca3e494509ac2b1d57a094319eb</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+	</data>
+</reTestXmlDataContainer>

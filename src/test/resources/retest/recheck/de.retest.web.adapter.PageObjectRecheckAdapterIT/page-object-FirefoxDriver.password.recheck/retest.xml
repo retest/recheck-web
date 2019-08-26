@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.3.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+	<data xsi:type="sutState">
+		<descriptors retestId="input" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="id" xsi:type="stringAttribute">username</attribute>
+					<attribute key="name" xsi:type="stringAttribute">email</attribute>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>8</x>
+						<y>8</y>
+						<height>22</height>
+						<width>147</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">input[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="type" xsi:type="stringAttribute">input</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>background-color</key>
+						<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-bottom-width</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>border-image-outset</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>border-left-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-left-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-left-width</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>border-right-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-right-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-right-width</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>border-top-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-top-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-top-width</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>box-sizing</key>
+						<value xsi:type="xsd:string">content-box</value>
+					</entry>
+					<entry>
+						<key>display</key>
+						<value xsi:type="xsd:string">inline</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">MS Shell Dlg \32 </value>
+					</entry>
+					<entry>
+						<key>font-size</key>
+						<value xsi:type="xsd:string">13.3333px</value>
+					</entry>
+					<entry>
+						<key>line-height</key>
+						<value xsi:type="xsd:string">16px</value>
+					</entry>
+					<entry>
+						<key>margin-bottom</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>margin-top</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>padding-bottom</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>padding-left</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>padding-right</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>padding-top</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>quotes</key>
+						<value xsi:type="xsd:string">&quot;“&quot; &quot;”&quot; &quot;‘&quot; &quot;’&quot;</value>
+					</entry>
+					<entry>
+						<key>tab-size</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+					<entry>
+						<key>type</key>
+						<value xsi:type="xsd:string">email</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>input_321f39f8060090cd956a2dd2f97276162492be79b79b8bcd6ad714a5b20ee56c</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+		<descriptors retestId="input" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="id" xsi:type="stringAttribute">password</attribute>
+					<attribute key="name" xsi:type="stringAttribute">password</attribute>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>159</x>
+						<y>8</y>
+						<height>22</height>
+						<width>147</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">input[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="type" xsi:type="stringAttribute">input</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>background-color</key>
+						<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-bottom-width</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>border-image-outset</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>border-left-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-left-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-left-width</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>border-right-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-right-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-right-width</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>border-top-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-top-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-top-width</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>box-sizing</key>
+						<value xsi:type="xsd:string">content-box</value>
+					</entry>
+					<entry>
+						<key>display</key>
+						<value xsi:type="xsd:string">inline</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">MS Shell Dlg \32 </value>
+					</entry>
+					<entry>
+						<key>font-size</key>
+						<value xsi:type="xsd:string">13.3333px</value>
+					</entry>
+					<entry>
+						<key>line-height</key>
+						<value xsi:type="xsd:string">16px</value>
+					</entry>
+					<entry>
+						<key>margin-bottom</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>margin-top</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>padding-bottom</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>padding-left</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>padding-right</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>padding-top</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>quotes</key>
+						<value xsi:type="xsd:string">&quot;“&quot; &quot;”&quot; &quot;‘&quot; &quot;’&quot;</value>
+					</entry>
+					<entry>
+						<key>tab-size</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+					<entry>
+						<key>type</key>
+						<value xsi:type="xsd:string">password</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>input_e3dc76a2dcf20f9a6b815b010d0fb9d2db8ce691d01bdb369c708b3f0fd02684</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+		<descriptors retestId="login" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="id" xsi:type="stringAttribute">btn-login</attribute>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>310</x>
+						<y>8</y>
+						<height>22</height>
+						<width>52</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">button[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="text" xsi:type="textAttribute">Login</attribute>
+					<attribute key="type" xsi:type="stringAttribute">button</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>background-color</key>
+						<value xsi:type="xsd:string">rgb(240, 240, 240)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-style</key>
+						<value xsi:type="xsd:string">outset</value>
+					</entry>
+					<entry>
+						<key>border-bottom-width</key>
+						<value xsi:type="xsd:string">3px</value>
+					</entry>
+					<entry>
+						<key>border-image-outset</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>border-image-width</key>
+						<value xsi:type="xsd:string">1</value>
+					</entry>
+					<entry>
+						<key>border-left-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-left-style</key>
+						<value xsi:type="xsd:string">outset</value>
+					</entry>
+					<entry>
+						<key>border-left-width</key>
+						<value xsi:type="xsd:string">3px</value>
+					</entry>
+					<entry>
+						<key>border-right-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-right-style</key>
+						<value xsi:type="xsd:string">outset</value>
+					</entry>
+					<entry>
+						<key>border-right-width</key>
+						<value xsi:type="xsd:string">3px</value>
+					</entry>
+					<entry>
+						<key>border-top-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-top-style</key>
+						<value xsi:type="xsd:string">outset</value>
+					</entry>
+					<entry>
+						<key>border-top-width</key>
+						<value xsi:type="xsd:string">3px</value>
+					</entry>
+					<entry>
+						<key>box-sizing</key>
+						<value xsi:type="xsd:string">border-box</value>
+					</entry>
+					<entry>
+						<key>display</key>
+						<value xsi:type="xsd:string">inline-block</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">MS Shell Dlg \32 </value>
+					</entry>
+					<entry>
+						<key>font-size</key>
+						<value xsi:type="xsd:string">13.3333px</value>
+					</entry>
+					<entry>
+						<key>line-height</key>
+						<value xsi:type="xsd:string">16px</value>
+					</entry>
+					<entry>
+						<key>padding-left</key>
+						<value xsi:type="xsd:string">8px</value>
+					</entry>
+					<entry>
+						<key>padding-right</key>
+						<value xsi:type="xsd:string">8px</value>
+					</entry>
+					<entry>
+						<key>quotes</key>
+						<value xsi:type="xsd:string">&quot;“&quot; &quot;”&quot; &quot;‘&quot; &quot;’&quot;</value>
+					</entry>
+					<entry>
+						<key>tab-size</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+					<entry>
+						<key>text-align</key>
+						<value xsi:type="xsd:string">center</value>
+					</entry>
+					<entry>
+						<key>type</key>
+						<value xsi:type="xsd:string">submit</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>login_55944a79951853fc6204516bf8edfe97d0d0667572b91f7eb100effe72f0d254</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+		<descriptors retestId="1" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>8</x>
+						<y>30</y>
+						<height>17</height>
+						<width>8</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">a[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="text" xsi:type="textAttribute">1</attribute>
+					<attribute key="type" xsi:type="stringAttribute">a</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>border-image-outset</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">serif</value>
+					</entry>
+					<entry>
+						<key>href</key>
+						<value xsi:type="xsd:string">#</value>
+					</entry>
+					<entry>
+						<key>line-height</key>
+						<value xsi:type="xsd:string">18px</value>
+					</entry>
+					<entry>
+						<key>quotes</key>
+						<value xsi:type="xsd:string">&quot;“&quot; &quot;”&quot; &quot;‘&quot; &quot;’&quot;</value>
+					</entry>
+					<entry>
+						<key>tab-size</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>1_47a77cb4e729a16e8d3585a4d52781869693c0e5c1af708b9c7d7b21c81dfce7</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+		<descriptors retestId="2" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>20</x>
+						<y>30</y>
+						<height>17</height>
+						<width>8</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">a[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="text" xsi:type="textAttribute">2</attribute>
+					<attribute key="type" xsi:type="stringAttribute">a</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>border-image-outset</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">serif</value>
+					</entry>
+					<entry>
+						<key>href</key>
+						<value xsi:type="xsd:string">#</value>
+					</entry>
+					<entry>
+						<key>line-height</key>
+						<value xsi:type="xsd:string">18px</value>
+					</entry>
+					<entry>
+						<key>quotes</key>
+						<value xsi:type="xsd:string">&quot;“&quot; &quot;”&quot; &quot;‘&quot; &quot;’&quot;</value>
+					</entry>
+					<entry>
+						<key>tab-size</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>2_0941dd9492f523f28a4f3cc65af0f3c1f23a80901e4a341826c44a0251af5981</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+		<descriptors retestId="3" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>32</x>
+						<y>30</y>
+						<height>17</height>
+						<width>8</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">a[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="text" xsi:type="textAttribute">3</attribute>
+					<attribute key="type" xsi:type="stringAttribute">a</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>border-image-outset</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">serif</value>
+					</entry>
+					<entry>
+						<key>href</key>
+						<value xsi:type="xsd:string">#</value>
+					</entry>
+					<entry>
+						<key>line-height</key>
+						<value xsi:type="xsd:string">18px</value>
+					</entry>
+					<entry>
+						<key>quotes</key>
+						<value xsi:type="xsd:string">&quot;“&quot; &quot;”&quot; &quot;‘&quot; &quot;’&quot;</value>
+					</entry>
+					<entry>
+						<key>tab-size</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>3_ad21bab0f11843c8dcec920ad077a99d79970dd5a35712220b858e89e4cc7b55</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+		<descriptors retestId="4" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>44</x>
+						<y>30</y>
+						<height>17</height>
+						<width>8</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">a[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="text" xsi:type="textAttribute">4</attribute>
+					<attribute key="type" xsi:type="stringAttribute">a</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>border-image-outset</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">serif</value>
+					</entry>
+					<entry>
+						<key>href</key>
+						<value xsi:type="xsd:string">#</value>
+					</entry>
+					<entry>
+						<key>line-height</key>
+						<value xsi:type="xsd:string">18px</value>
+					</entry>
+					<entry>
+						<key>quotes</key>
+						<value xsi:type="xsd:string">&quot;“&quot; &quot;”&quot; &quot;‘&quot; &quot;’&quot;</value>
+					</entry>
+					<entry>
+						<key>tab-size</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>4_848091abb399ad77c2b13fc0048885596542f1c248db183554b40c30c88e109e</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+		<descriptors retestId="5" screenId="0" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>56</x>
+						<y>30</y>
+						<height>17</height>
+						<width>8</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">a[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="text" xsi:type="textAttribute">5</attribute>
+					<attribute key="type" xsi:type="stringAttribute">a</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>border-image-outset</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">serif</value>
+					</entry>
+					<entry>
+						<key>href</key>
+						<value xsi:type="xsd:string">#</value>
+					</entry>
+					<entry>
+						<key>line-height</key>
+						<value xsi:type="xsd:string">18px</value>
+					</entry>
+					<entry>
+						<key>quotes</key>
+						<value xsi:type="xsd:string">&quot;“&quot; &quot;”&quot; &quot;‘&quot; &quot;’&quot;</value>
+					</entry>
+					<entry>
+						<key>tab-size</key>
+						<value xsi:type="xsd:string"></value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>5_7b47477c9623306edc3cda618b561c2e7a6e3d7b1b1a9d6874c3ad3d3f3a4f73</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+	</data>
+</reTestXmlDataContainer>
