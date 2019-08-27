@@ -2,8 +2,6 @@ package de.retest.web.selenium;
 
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import de.retest.recheck.RecheckOptions;
-
 /**
  * Extends both {@link AutocheckingRecheckDriver} and {@link UnbreakableDriver} to combine all recheck-web features. Use
  * this class if you automatically want to incorporate new features without changing your recheck-web driver
@@ -15,9 +13,8 @@ public class RecheckDriver extends AutocheckingRecheckDriver {
 		super( wrapped );
 	}
 
-	public RecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options,
-			final AutocheckingCheckNamingStrategy namingStrategy ) {
-		super( wrapped, options, namingStrategy );
+	public RecheckDriver( final RemoteWebDriver wrapped, final RecheckWebOptions options ) {
+		super( wrapped, options );
 	}
 
 }
