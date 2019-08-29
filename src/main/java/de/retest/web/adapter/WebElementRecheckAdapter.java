@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WrapsDriver;
 import org.openqa.selenium.WrapsElement;
+import org.openqa.selenium.remote.RemoteWebElement;
 
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 
@@ -23,9 +24,9 @@ import de.retest.recheck.util.RetestIdProviderUtil;
 import de.retest.web.AttributesProvider;
 import de.retest.web.DefaultWebValueFinder;
 import de.retest.web.YamlAttributesProvider;
+import de.retest.web.mapping.JavaScriptWebDataProvider.JavaScriptWebDataProviderFactory;
 import de.retest.web.mapping.WebDataProvider;
 import de.retest.web.mapping.WebElementConverter;
-import de.retest.web.mapping.WebElementWebDataProvider;
 import de.retest.web.mapping.path.XPathGenerator;
 
 public class WebElementRecheckAdapter implements RecheckAdapter {
@@ -35,6 +36,8 @@ public class WebElementRecheckAdapter implements RecheckAdapter {
 	private final DefaultValueFinder defaults = new DefaultWebValueFinder();
 
 	private final WebElementConverter converter = new WebElementConverter( id, attributes, defaults );
+
+	private final JavaScriptWebDataProviderFactory factory = new JavaScriptWebDataProviderFactory( attributes );
 
 	@Override
 	public boolean canCheck( final Object toVerify ) {
@@ -75,7 +78,8 @@ public class WebElementRecheckAdapter implements RecheckAdapter {
 
 	private Element convertWebElement( final Element parent, final XPathGenerator path, final WebElement element ) {
 		final XPathGenerator childXPath = path.next( element.getTagName() );
-		final WebDataProvider provider = new WebElementWebDataProvider( element, childXPath.getPath(), attributes );
+		final WebDataProvider provider = factory.execute( (RemoteWebElement) element, childXPath.getPath() ) //
+				.orElseThrow( () -> new IllegalArgumentException( "Cannot convert element " + element + "." ) );
 		final Element child = converter.convert( parent, provider );
 		element.findElements( By.xpath( "*" ) ).stream() //
 				.map( c -> convertWebElement( child, childXPath, c ) ) //
