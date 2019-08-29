@@ -12,6 +12,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import de.retest.recheck.RecheckImpl;
+import de.retest.web.util.PageObjects;
 
 class PageObjectRecheckAdapterIT {
 
@@ -38,7 +39,7 @@ class PageObjectRecheckAdapterIT {
 		driver.get( getClass().getResource( "PageObjectRecheckAdapterIT.html" ).toExternalForm() );
 		final LoginPage loginPage = PageFactory.initElements( driver, LoginPage.class );
 
-		re.check( loginPage, "init" );
+		re.check( PageObjects.convertToList( loginPage ), "init" );
 		re.check( loginPage.user( "john@doe.com" ), "email" );
 		re.check( loginPage.password( "john-doe" ), "password" );
 		re.check( loginPage.login(), "login" );
