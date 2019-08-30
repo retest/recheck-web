@@ -38,6 +38,11 @@ public class ActionbasedCheckNamingStrategy implements AutocheckingCheckNamingSt
 		return makeUnique( result );
 	}
 
+	@Override
+	public String getUniqueCheckName( final String action ) {
+		return makeUnique( action );
+	}
+
 	protected String makeUnique( final String result ) {
 		checks.add( result );
 		if ( checks.count( result ) == 1 ) {

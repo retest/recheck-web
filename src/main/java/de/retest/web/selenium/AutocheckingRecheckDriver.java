@@ -119,10 +119,22 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 				.collect( Collectors.toList() );
 	}
 
-	public void check( final String action, final WebElement target, final Object... params ) {
+	void check( final String action, final WebElement target, final Object... params ) {
 		if ( re == null ) {
 			startTest();
 		}
 		re.check( this, namingStrategy.getUniqueCheckName( action, target, params ) );
+	}
+
+	void check( final String action ) {
+		if ( re == null ) {
+			startTest();
+		}
+		re.check( this, namingStrategy.getUniqueCheckName( action ) );
+	}
+
+	@Override
+	public Navigation navigate() {
+		return new AutocheckingNavigationWrapper( super.navigate(), this );
 	}
 }

@@ -22,6 +22,15 @@ public interface AutocheckingCheckNamingStrategy {
 	String getUniqueCheckName( String action, WebElement target, Object... params );
 
 	/**
+	 * Return a string that is a unique identifier in the current test.
+	 *
+	 * @param action
+	 *            The action to use when creating a semantic name (e.g. "navigate-back").
+	 * @return The unique identifier.
+	 */
+	String getUniqueCheckName( String action );
+
+	/**
 	 * Reset this naming strategy, such that strings can be reused in different tests.
 	 */
 	void nextTest();

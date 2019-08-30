@@ -13,6 +13,11 @@ public class CounterCheckNamingStrategy implements AutocheckingCheckNamingStrate
 
 	@Override
 	public String getUniqueCheckName( final String action, final WebElement target, final Object... params ) {
+		return getUniqueCheckName( action );
+	}
+
+	@Override
+	public String getUniqueCheckName( final String action ) {
 		return String.format( "%02d", stepCounter++ );
 	}
 
@@ -20,5 +25,4 @@ public class CounterCheckNamingStrategy implements AutocheckingCheckNamingStrate
 	public void nextTest() {
 		stepCounter = 0;
 	}
-
 }
