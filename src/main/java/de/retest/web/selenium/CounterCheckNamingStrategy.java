@@ -17,8 +17,12 @@ public class CounterCheckNamingStrategy implements AutocheckingCheckNamingStrate
 	}
 
 	@Override
+	public String getUniqueCheckName( final String action ) {
+		return String.format( "%02d", stepCounter++ );
+	}
+
+	@Override
 	public void nextTest() {
 		stepCounter = 0;
 	}
-
 }

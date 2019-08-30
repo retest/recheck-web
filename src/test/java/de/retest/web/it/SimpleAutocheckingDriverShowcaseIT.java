@@ -38,7 +38,7 @@ public class SimpleAutocheckingDriverShowcaseIT {
 	@Test
 	public void index() throws Exception {
 		final Path showcasePath = Paths.get( "src/test/resources/pages/page-frame.html" );
-		driver.get( showcasePath.toUri().toURL().toString() );
+		driver.navigate().to( showcasePath.toUri().toURL().toString() );
 
 		driver.findElement( By.id( "old-email-id" ) ).sendKeys( "me@retest.de" );
 
