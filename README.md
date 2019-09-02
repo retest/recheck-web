@@ -164,7 +164,7 @@ In order to use "Unbreakable Selenium", you just need to wrap your usual driver 
  re = new RecheckWebImpl();
 ```
 
-Note that this works only in conjunction with at least one previous call to `re.check`, as behind the scenes, if the element cannot be found on the current page, then recheck-web searches for it in the _last_ Golden Master (where e.g. the ID still is), makes a 1-on-1 assignment to the current elements and returns the element with the highest match, if it's higher than a configurable confidence level. 
+Note that this works only in conjunction with at least one previous call to `Recheck#check(...)`, as behind the scenes, if the element cannot be found on the current page, then recheck-web searches for it in the _last_ Golden Master (where e.g. the ID still is), makes a 1-on-1 assignment to the current elements and returns the element with the highest match, if it's higher than a configurable confidence level. Also check out the other [ways of using recheck-web](https://docs.retest.de/recheck-web/ways-of-using-recheck-web/).
 
 ## Upload Test Reports to rehub
 
