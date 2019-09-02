@@ -7,20 +7,20 @@
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/retest/recheck-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![code with hearth by retest](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-retest-C1D82F.svg)](https://retest.de/en/)
 
-***recheck-web*** is a Golden Master-based test framework on top of Selenium that allows for easy creation and maintenance of more complete and nearly unbreakable tests.
+***recheck-web*** is a Golden Master-based test framework on top of Selenium that allows for easy creation and maintenance of more complete and nearly unbreakable tests. If you want to give it a quick try, checkout the [Chrome extension](https://chrome.google.com/webstore/detail/recheck-web-demo/ifbcdobnjihilgldbjeomakdaejhplii) that is based on recheck-web.
 
 <p align="center"><a href="https://www.youtube.com/watch?v=dpzlFxXfMWk"><img src="https://user-images.githubusercontent.com/1871610/58832376-171fa900-864f-11e9-8edb-56ea95865482.gif" /></a></p>
 
 
 ## Features
 
-* Easy creation and maintenance of checks for web.
-* Semantic comparison of contents.
-* Easily ignore volatile elements, attributes or sections, using a git-like syntax.
-* Simple maintenance to update Golden Masters with intended changes, using our [GUI](https://retest.de/review/) or [CLI](https://github.com/retest/recheck.cli).
+* Easy creation and maintenance of checks for web sites.
+* Semantic comparison of contents, tags and CSS attributes *after rendering*.
+* Easily ignore volatile elements, attributes or sections, using a [git-like syntax](https://docs.retest.de/recheck/how-ignore-works/).
+* Automated maintenance to update Golden Masters with intended changes, using our [GUI](https://retest.de/review/) or [CLI](https://github.com/retest/recheck.cli).
 * No unexpected changes go unnoticed.
-* Operates on top of Selenium.
-* Makes your tests unbreakable.
+* Operates on top of Selenium and is compatible with many test frameworks.
+* Makes your tests almost [unbreakable](https://retest.de/feature-unbreakable-selenium/).
 * The Git for your GUI.
 
 
@@ -154,21 +154,23 @@ Additionally, a file named `${TEST_CLASS_NAME}.report` will be created upon test
 
 ## Usage of RecheckDriver / "Unbreakable Selenium"
 
-In order to use "Unbreakable Selenium", you just need to wrap your usual driver within a `RecheckDriver` (drop-in replacement) and use `RecheckWebImpl` instead of `RecheckImpl`. The code would look like [so](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/it/SimpleUnbreakableSeleniumShowcaseIT.java)):
+In order to use "Unbreakable Selenium", you just need to wrap your usual driver in an `UnbreakableDriver` (drop-in replacement) and use `RecheckWebImpl` instead of `RecheckImpl`. The code would look like [so](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/it/SimpleUnbreakableSeleniumShowcaseIT.java)):
 
 ```java
  // Use the RecheckDriver as a wrapper for your usual driver.
- driver = new RecheckDriver( new ChromeDriver() );
+ driver = new UnbreakableDriver( new ChromeDriver() );
 
  // Use the unbreakable recheck implementation.
  re = new RecheckWebImpl();
 ```
 
+Note that this works only in conjunction with at least one previous call to `re.check`, as behind the scenes, if the element cannot be found on the current page, then recheck-web searches for it in the _last_ Golden Master (where e.g. the ID still is), makes a 1-on-1 assignment to the current elements and returns the element with the highest match, if it's higher than a configurable confidence level. 
+
 ## Upload Test Reports to rehub
 
 Test reports can be easily uploaded to [***rehub***](https://retest.de/rehub/).
 
-To upload reports you will need a [retest account](https://sso.prod.cloud.retest.org/auth/realms/customer/account) to gain access to ***rehub***. After the initial registration, you will receive a 14-day trial.
+To upload reports you will need a [retest account](https://sso.prod.cloud.retest.org/auth/realms/customer/account).
 
 The first step is to modify the `setUp()` method in our existing test case to enable the upload to ***rehub***. There are two ways to achieve this:
 
