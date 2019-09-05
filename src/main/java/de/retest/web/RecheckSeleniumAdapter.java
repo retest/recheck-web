@@ -10,8 +10,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Set;
-import java.util.function.Predicate;
-import java.util.stream.Stream;
 
 import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.JavascriptExecutor;
@@ -21,7 +19,6 @@ import org.slf4j.LoggerFactory;
 
 import de.retest.recheck.RecheckAdapter;
 import de.retest.recheck.ui.DefaultValueFinder;
-import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
 import de.retest.recheck.util.RetestIdProviderUtil;
@@ -35,10 +32,6 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	private static final Logger logger = LoggerFactory.getLogger( RecheckSeleniumAdapter.class );
 
 	private final DefaultValueFinder defaultValueFinder = new DefaultWebValueFinder();
-	private final Predicate<Element> isFrame = element -> {
-		final String type = element.getIdentifyingAttributes().getType();
-		return Stream.of( "iframe", "frame" ).anyMatch( type::equalsIgnoreCase );
-	};
 
 	private final RetestIdProvider retestIdProvider;
 	private final AttributesProvider attributesProvider;
