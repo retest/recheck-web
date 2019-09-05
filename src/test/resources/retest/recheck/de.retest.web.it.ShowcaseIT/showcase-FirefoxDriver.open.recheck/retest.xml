@@ -2751,8 +2751,8 @@
 														<attribute key="absolute-outline" xsi:type="outlineAttribute">
 															<x>0</x>
 															<y>0</y>
-															<height>452</height>
-															<width>514</width>
+															<height>368</height>
+															<width>504</width>
 														</attribute>
 														<attribute key="class" xsi:type="stringAttribute">neterror</attribute>
 														<attribute key="outline" xsi:type="outlineAttribute">
@@ -2810,7 +2810,7 @@
 														</entry>
 														<entry>
 															<key>line-height</key>
-															<value xsi:type="xsd:string">19px</value>
+															<value xsi:type="xsd:string">18px</value>
 														</entry>
 														<entry>
 															<key>min-height</key>
@@ -2848,8 +2848,8 @@
 															<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																<x>75</x>
 																<y>38</y>
-																<height>376</height>
-																<width>364</width>
+																<height>292</height>
+																<width>354</width>
 															</attribute>
 															<attribute key="class" xsi:type="stringAttribute">container</attribute>
 															<attribute key="id" xsi:type="stringAttribute">errorPageContainer</attribute>
@@ -2882,8 +2882,8 @@
 																<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																	<x>75</x>
 																	<y>38</y>
-																	<height>304</height>
-																	<width>364</width>
+																	<height>220</height>
+																	<width>354</width>
 																</attribute>
 																<attribute key="id" xsi:type="stringAttribute">text-container</attribute>
 																<attribute key="outline" xsi:type="outlineAttribute">
@@ -2910,15 +2910,15 @@
 																<attributes>
 																	<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																		<x>75</x>
-																		<y>134</y>
-																		<height>209</height>
-																		<width>364</width>
+																		<y>94</y>
+																		<height>164</height>
+																		<width>354</width>
 																	</attribute>
 																	<attribute key="id" xsi:type="stringAttribute">errorLongContent</attribute>
 																	<attribute key="outline" xsi:type="outlineAttribute">
 																		<x>0</x>
-																		<y>96</y>
-																		<height>-96</height>
+																		<y>56</y>
+																		<height>-56</height>
 																		<width>0</width>
 																	</attribute>
 																	<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/body[1]/div[1]/div[1]/div[2]</attribute>
@@ -2939,15 +2939,15 @@
 																	<attributes>
 																		<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																			<x>75</x>
-																			<y>240</y>
+																			<y>178</y>
 																			<height>0</height>
-																			<width>364</width>
+																			<width>354</width>
 																		</attribute>
 																		<attribute key="id" xsi:type="stringAttribute">errorWhatToDo</attribute>
 																		<attribute key="outline" xsi:type="outlineAttribute">
 																			<x>0</x>
-																			<y>106</y>
-																			<height>-208</height>
+																			<y>84</y>
+																			<height>-163</height>
 																			<width>0</width>
 																		</attribute>
 																		<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[4]</attribute>
@@ -2968,9 +2968,9 @@
 																		<attributes>
 																			<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																				<x>75</x>
-																				<y>240</y>
+																				<y>178</y>
 																				<height>0</height>
-																				<width>364</width>
+																				<width>354</width>
 																			</attribute>
 																			<attribute key="id" xsi:type="stringAttribute">errorWhatToDoText</attribute>
 																			<attribute key="outline" xsi:type="outlineAttribute">
@@ -3007,15 +3007,15 @@
 																	<attributes>
 																		<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																			<x>75</x>
-																			<y>240</y>
-																			<height>103</height>
-																			<width>364</width>
+																			<y>178</y>
+																			<height>80</height>
+																			<width>354</width>
 																		</attribute>
 																		<attribute key="id" xsi:type="stringAttribute">errorLongDesc</attribute>
 																		<attribute key="outline" xsi:type="outlineAttribute">
 																			<x>0</x>
-																			<y>106</y>
-																			<height>-106</height>
+																			<y>84</y>
+																			<height>-84</height>
 																			<width>0</width>
 																		</attribute>
 																		<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[6]</attribute>
@@ -3036,9 +3036,9 @@
 																		<attributes>
 																			<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																				<x>105</x>
-																				<y>240</y>
-																				<height>103</height>
-																				<width>334</width>
+																				<y>178</y>
+																				<height>80</height>
+																				<width>324</width>
 																			</attribute>
 																			<attribute key="outline" xsi:type="outlineAttribute">
 																				<x>30</x>
@@ -3084,14 +3084,14 @@
 																			<attributes>
 																				<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																					<x>105</x>
-																					<y>304</y>
-																					<height>38</height>
-																					<width>334</width>
+																					<y>222</y>
+																					<height>36</height>
+																					<width>324</width>
 																				</attribute>
 																				<attribute key="outline" xsi:type="outlineAttribute">
 																					<x>0</x>
-																					<y>65</y>
-																					<height>-64</height>
+																					<y>44</y>
+																					<height>-43</height>
 																					<width>0</width>
 																				</attribute>
 																				<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[6]/ul[1]/li[2]</attribute>
@@ -3122,14 +3122,14 @@
 																			<attributes>
 																				<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																					<x>105</x>
-																					<y>240</y>
-																					<height>57</height>
-																					<width>334</width>
+																					<y>178</y>
+																					<height>36</height>
+																					<width>324</width>
 																				</attribute>
 																				<attribute key="outline" xsi:type="outlineAttribute">
 																					<x>0</x>
 																					<y>0</y>
-																					<height>-45</height>
+																					<height>-43</height>
 																					<width>0</width>
 																				</attribute>
 																				<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[6]/ul[1]/li[1]</attribute>
@@ -3162,15 +3162,15 @@
 																	<attributes>
 																		<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																			<x>75</x>
-																			<y>240</y>
+																			<y>178</y>
 																			<height>0</height>
-																			<width>364</width>
+																			<width>354</width>
 																		</attribute>
 																		<attribute key="id" xsi:type="stringAttribute">errorWhatToDoTitle</attribute>
 																		<attribute key="outline" xsi:type="outlineAttribute">
 																			<x>0</x>
-																			<y>106</y>
-																			<height>-208</height>
+																			<y>84</y>
+																			<height>-163</height>
 																			<width>0</width>
 																		</attribute>
 																		<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[3]</attribute>
@@ -3195,9 +3195,9 @@
 																		<attributes>
 																			<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																				<x>75</x>
-																				<y>240</y>
+																				<y>178</y>
 																				<height>0</height>
-																				<width>364</width>
+																				<width>354</width>
 																			</attribute>
 																			<attribute key="id" xsi:type="stringAttribute">errorWhatToDoTitleText</attribute>
 																			<attribute key="outline" xsi:type="outlineAttribute">
@@ -3234,15 +3234,15 @@
 																	<attributes>
 																		<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																			<x>75</x>
-																			<y>240</y>
+																			<y>178</y>
 																			<height>0</height>
-																			<width>364</width>
+																			<width>354</width>
 																		</attribute>
 																		<attribute key="id" xsi:type="stringAttribute">errorWhatToDo2</attribute>
 																		<attribute key="outline" xsi:type="outlineAttribute">
 																			<x>0</x>
-																			<y>106</y>
-																			<height>-208</height>
+																			<y>84</y>
+																			<height>-163</height>
 																			<width>0</width>
 																		</attribute>
 																		<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[5]</attribute>
@@ -3263,9 +3263,9 @@
 																		<attributes>
 																			<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																				<x>75</x>
-																				<y>240</y>
+																				<y>178</y>
 																				<height>0</height>
-																				<width>364</width>
+																				<width>354</width>
 																			</attribute>
 																			<attribute key="id" xsi:type="stringAttribute">errorWhatToDoText2</attribute>
 																			<attribute key="outline" xsi:type="outlineAttribute">
@@ -3302,15 +3302,15 @@
 																	<attributes>
 																		<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																			<x>75</x>
-																			<y>134</y>
-																			<height>76</height>
-																			<width>364</width>
+																			<y>94</y>
+																			<height>54</height>
+																			<width>354</width>
 																		</attribute>
 																		<attribute key="id" xsi:type="stringAttribute">errorShortDesc</attribute>
 																		<attribute key="outline" xsi:type="outlineAttribute">
 																			<x>0</x>
 																			<y>0</y>
-																			<height>-132</height>
+																			<height>-109</height>
 																			<width>0</width>
 																		</attribute>
 																		<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]</attribute>
@@ -3331,9 +3331,9 @@
 																		<attributes>
 																			<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																				<x>75</x>
-																				<y>134</y>
-																				<height>76</height>
-																				<width>364</width>
+																				<y>94</y>
+																				<height>54</height>
+																				<width>354</width>
 																			</attribute>
 																			<attribute key="id" xsi:type="stringAttribute">errorShortDescText</attribute>
 																			<attribute key="outline" xsi:type="outlineAttribute">
@@ -3371,15 +3371,15 @@
 																	<attributes>
 																		<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																			<x>75</x>
-																			<y>225</y>
+																			<y>163</y>
 																			<height>0</height>
-																			<width>364</width>
+																			<width>354</width>
 																		</attribute>
 																		<attribute key="id" xsi:type="stringAttribute">errorShortDesc2</attribute>
 																		<attribute key="outline" xsi:type="outlineAttribute">
 																			<x>0</x>
-																			<y>91</y>
-																			<height>-208</height>
+																			<y>69</y>
+																			<height>-163</height>
 																			<width>0</width>
 																		</attribute>
 																		<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]</attribute>
@@ -3400,9 +3400,9 @@
 																		<attributes>
 																			<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																				<x>75</x>
-																				<y>225</y>
+																				<y>163</y>
 																				<height>0</height>
-																				<width>364</width>
+																				<width>354</width>
 																			</attribute>
 																			<attribute key="id" xsi:type="stringAttribute">errorShortDescText2</attribute>
 																			<attribute key="outline" xsi:type="outlineAttribute">
@@ -3441,14 +3441,14 @@
 																	<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																		<x>75</x>
 																		<y>38</y>
-																		<height>79</height>
-																		<width>364</width>
+																		<height>40</height>
+																		<width>354</width>
 																	</attribute>
 																	<attribute key="class" xsi:type="stringAttribute">title</attribute>
 																	<attribute key="outline" xsi:type="outlineAttribute">
 																		<x>0</x>
 																		<y>0</y>
-																		<height>-225</height>
+																		<height>-180</height>
 																		<width>0</width>
 																	</attribute>
 																	<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/body[1]/div[1]/div[1]/div[1]</attribute>
@@ -3468,7 +3468,7 @@
 																	</entry>
 																	<entry>
 																		<key>background-size</key>
-																		<value xsi:type="xsd:string">52.8px auto</value>
+																		<value xsi:type="xsd:string">52.8px</value>
 																	</entry>
 																	<entry>
 																		<key>font-size</key>
@@ -3476,7 +3476,7 @@
 																	</entry>
 																	<entry>
 																		<key>line-height</key>
-																		<value xsi:type="xsd:string">39px</value>
+																		<value xsi:type="xsd:string">40px</value>
 																	</entry>
 																	<entry>
 																		<key>shown</key>
@@ -3490,8 +3490,8 @@
 																		<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																			<x>75</x>
 																			<y>38</y>
-																			<height>79</height>
-																			<width>364</width>
+																			<height>40</height>
+																			<width>354</width>
 																		</attribute>
 																		<attribute key="class" xsi:type="stringAttribute">title-text</attribute>
 																		<attribute key="outline" xsi:type="outlineAttribute">
@@ -3534,16 +3534,16 @@
 															<attributes>
 																<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																	<x>75</x>
-																	<y>360</y>
+																	<y>276</y>
 																	<height>54</height>
-																	<width>364</width>
+																	<width>354</width>
 																</attribute>
 																<attribute key="class" xsi:type="stringAttribute">button-container</attribute>
 																<attribute key="id" xsi:type="stringAttribute">netErrorButtonContainer</attribute>
 																<attribute key="outline" xsi:type="outlineAttribute">
 																	<x>0</x>
-																	<y>322</y>
-																	<height>-322</height>
+																	<y>238</y>
+																	<height>-238</height>
 																	<width>0</width>
 																</attribute>
 																<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/body[1]/div[1]/div[2]</attribute>
@@ -3579,17 +3579,17 @@
 															<identifyingAttributes>
 																<attributes>
 																	<attribute key="absolute-outline" xsi:type="outlineAttribute">
-																		<x>244</x>
-																		<y>378</y>
+																		<x>308</x>
+																		<y>294</y>
 																		<height>32</height>
-																		<width>191</width>
+																		<width>117</width>
 																	</attribute>
 																	<attribute key="class" xsi:type="stringAttribute">primary try-again</attribute>
 																	<attribute key="outline" xsi:type="outlineAttribute">
-																		<x>169</x>
+																		<x>233</x>
 																		<y>18</y>
 																		<height>-22</height>
-																		<width>-173</width>
+																		<width>-237</width>
 																	</attribute>
 																	<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/body[1]/div[1]/div[2]/button[1]</attribute>
 																	<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -3735,15 +3735,15 @@
 															<attributes>
 																<attribute key="absolute-outline" xsi:type="outlineAttribute">
 																	<x>75</x>
-																	<y>414</y>
+																	<y>330</y>
 																	<height>0</height>
-																	<width>364</width>
+																	<width>354</width>
 																</attribute>
 																<attribute key="id" xsi:type="stringAttribute">advancedPanelContainer</attribute>
 																<attribute key="outline" xsi:type="outlineAttribute">
 																	<x>0</x>
-																	<y>376</y>
-																	<height>-376</height>
+																	<y>292</y>
+																	<height>-292</height>
 																	<width>0</width>
 																</attribute>
 																<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/body[1]/div[1]/div[3]</attribute>
@@ -3774,8 +3774,8 @@
 														<attribute key="outline" xsi:type="outlineAttribute">
 															<x>0</x>
 															<y>0</y>
-															<height>-452</height>
-															<width>-514</width>
+															<height>-368</height>
+															<width>-504</width>
 														</attribute>
 														<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/head[1]</attribute>
 														<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>

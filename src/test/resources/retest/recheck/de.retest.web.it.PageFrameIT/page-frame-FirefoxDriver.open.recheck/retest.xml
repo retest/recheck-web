@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.3.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.4.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="We Leave From Here" title="We Leave From Here">
 			<identifyingAttributes>
@@ -243,6 +243,10 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">radio</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -1226,6 +1230,10 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">radio</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -2292,6 +2300,10 @@
 									<value xsi:type="xsd:string">radio</value>
 								</entry>
 								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
+								</entry>
+								<entry>
 									<key>value</key>
 									<value xsi:type="xsd:string">cheese and peas</value>
 								</entry>
@@ -2371,10 +2383,6 @@
 								<entry>
 									<key>border-top-width</key>
 									<value xsi:type="xsd:string">6px</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -3335,6 +3343,10 @@
 									<value xsi:type="xsd:string">checkbox</value>
 								</entry>
 								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
+								</entry>
+								<entry>
 									<key>value</key>
 									<value xsi:type="xsd:string">on</value>
 								</entry>
@@ -3877,6 +3889,10 @@
 									<value xsi:type="xsd:string">checkbox</value>
 								</entry>
 								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
+								</entry>
+								<entry>
 									<key>value</key>
 									<value xsi:type="xsd:string">furrfu</value>
 								</entry>
@@ -3975,6 +3991,10 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">radio</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -4133,6 +4153,10 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">checkbox</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -4534,6 +4558,10 @@
 									<value xsi:type="xsd:string">checkbox</value>
 								</entry>
 								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
+								</entry>
+								<entry>
 									<key>value</key>
 									<value xsi:type="xsd:string">on</value>
 								</entry>
@@ -4624,6 +4652,10 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">radio</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -4749,6 +4781,10 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">radio</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -4911,10 +4947,6 @@
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 									</entry>
 									<entry>
-										<key>display</key>
-										<value xsi:type="xsd:string">inline</value>
-									</entry>
-									<entry>
 										<key>font-family</key>
 										<value xsi:type="xsd:string">sans-serif</value>
 									</entry>
@@ -4956,6 +4988,10 @@
 									</entry>
 									<entry>
 										<key>type</key>
+										<value xsi:type="xsd:string">text</value>
+									</entry>
+									<entry>
+										<key>user-select</key>
 										<value xsi:type="xsd:string">text</value>
 									</entry>
 									<entry>
@@ -5039,10 +5075,6 @@
 								<entry>
 									<key>border-top-width</key>
 									<value xsi:type="xsd:string">6px</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -5213,10 +5245,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -5262,6 +5290,10 @@
 								</entry>
 								<entry>
 									<key>type</key>
+									<value xsi:type="xsd:string">text</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
 									<value xsi:type="xsd:string">text</value>
 								</entry>
 							</attributes>
@@ -5359,10 +5391,6 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -5408,6 +5436,10 @@
 								</entry>
 								<entry>
 									<key>type</key>
+									<value xsi:type="xsd:string">text</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
 									<value xsi:type="xsd:string">text</value>
 								</entry>
 							</attributes>
@@ -5501,10 +5533,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -5550,6 +5578,10 @@
 								</entry>
 								<entry>
 									<key>type</key>
+									<value xsi:type="xsd:string">text</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
 									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
@@ -5709,6 +5741,10 @@
 								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>vertical-align</key>
@@ -5872,6 +5908,10 @@
 								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -6040,6 +6080,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
+								</entry>
+								<entry>
 									<key>vertical-align</key>
 									<value xsi:type="xsd:string">text-bottom</value>
 								</entry>
@@ -6151,6 +6195,10 @@
 									<value xsi:type="xsd:string">file</value>
 								</entry>
 								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
+								</entry>
+								<entry>
 									<key>white-space</key>
 									<value xsi:type="xsd:string">nowrap</value>
 								</entry>
@@ -6245,10 +6293,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -6291,6 +6335,10 @@
 								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -6676,10 +6724,6 @@
 									<value xsi:type="xsd:string">6px</value>
 								</entry>
 								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -6879,10 +6923,6 @@
 										<value xsi:type="xsd:string">true</value>
 									</entry>
 									<entry>
-										<key>display</key>
-										<value xsi:type="xsd:string">inline</value>
-									</entry>
-									<entry>
 										<key>font-family</key>
 										<value xsi:type="xsd:string">sans-serif</value>
 									</entry>
@@ -6932,6 +6972,10 @@
 									</entry>
 									<entry>
 										<key>type</key>
+										<value xsi:type="xsd:string">text</value>
+									</entry>
+									<entry>
+										<key>user-select</key>
 										<value xsi:type="xsd:string">text</value>
 									</entry>
 								</attributes>
@@ -7029,10 +7073,6 @@
 										<value xsi:type="xsd:string">true</value>
 									</entry>
 									<entry>
-										<key>display</key>
-										<value xsi:type="xsd:string">inline</value>
-									</entry>
-									<entry>
 										<key>font-family</key>
 										<value xsi:type="xsd:string">sans-serif</value>
 									</entry>
@@ -7082,6 +7122,10 @@
 									</entry>
 									<entry>
 										<key>type</key>
+										<value xsi:type="xsd:string">text</value>
+									</entry>
+									<entry>
+										<key>user-select</key>
 										<value xsi:type="xsd:string">text</value>
 									</entry>
 								</attributes>
@@ -7177,10 +7221,6 @@
 									<entry>
 										<key>disabled</key>
 										<value xsi:type="xsd:string">true</value>
-									</entry>
-									<entry>
-										<key>display</key>
-										<value xsi:type="xsd:string">inline</value>
 									</entry>
 									<entry>
 										<key>font-family</key>
@@ -7367,10 +7407,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -7416,6 +7452,10 @@
 								</entry>
 								<entry>
 									<key>type</key>
+									<value xsi:type="xsd:string">text</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
 									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
@@ -7513,10 +7553,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -7562,6 +7598,10 @@
 								</entry>
 								<entry>
 									<key>type</key>
+									<value xsi:type="xsd:string">text</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
 									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
@@ -7659,10 +7699,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -7708,6 +7744,10 @@
 								</entry>
 								<entry>
 									<key>type</key>
+									<value xsi:type="xsd:string">text</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
 									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
@@ -7805,10 +7845,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -7854,6 +7890,10 @@
 								</entry>
 								<entry>
 									<key>type</key>
+									<value xsi:type="xsd:string">text</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
 									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
@@ -7951,10 +7991,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -8005,6 +8041,10 @@
 								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -8161,6 +8201,10 @@
 										<value xsi:type="xsd:string">checkbox</value>
 									</entry>
 									<entry>
+										<key>user-select</key>
+										<value xsi:type="xsd:string">text</value>
+									</entry>
+									<entry>
 										<key>value</key>
 										<value xsi:type="xsd:string">on</value>
 									</entry>
@@ -8280,10 +8324,6 @@
 								<entry>
 									<key>border-top-width</key>
 									<value xsi:type="xsd:string">6px</value>
-								</entry>
-								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -8420,10 +8460,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -8470,6 +8506,10 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">email</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -8566,10 +8606,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -8616,6 +8652,10 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">number</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -8746,10 +8786,6 @@
 								<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 							</entry>
 							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
 								<key>font-family</key>
 								<value xsi:type="xsd:string">sans-serif</value>
 							</entry>
@@ -8807,6 +8843,10 @@
 							</entry>
 							<entry>
 								<key>type</key>
+								<value xsi:type="xsd:string">text</value>
+							</entry>
+							<entry>
+								<key>user-select</key>
 								<value xsi:type="xsd:string">text</value>
 							</entry>
 						</attributes>
@@ -8886,10 +8926,6 @@
 							<entry>
 								<key>border-top-width</key>
 								<value xsi:type="xsd:string">6px</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">inline</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -9039,10 +9075,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>display</key>
-									<value xsi:type="xsd:string">inline</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -9077,6 +9109,10 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">image</value>
+								</entry>
+								<entry>
+									<key>user-select</key>
+									<value xsi:type="xsd:string">text</value>
 								</entry>
 							</attributes>
 						</attributes>

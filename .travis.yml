@@ -29,8 +29,6 @@ before_script: ci/before.sh
 
 script: ci/script.sh
 
-after_script: ci/upload.sh
-
 before_deploy: ci/before_deploy.sh
 
 deploy:
