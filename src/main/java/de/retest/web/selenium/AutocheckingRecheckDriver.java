@@ -31,7 +31,7 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options ) {
 		super( wrapped );
 		this.options = options;
-		namingStrategy = new CounterCheckNamingStrategy();
+		namingStrategy = RecheckWebOptions.builder().build().getNamingStrategy();
 	}
 
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckWebOptions options ) {
