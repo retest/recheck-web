@@ -27,6 +27,9 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 		this( wrapped, RecheckWebOptions.builder().build() );
 	}
 
+	/**
+	 * Use {@link #AutocheckingRecheckDriver(RemoteWebDriver, RecheckWebOptions)} instead.
+	 */
 	@Deprecated
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options ) {
 		super( wrapped );
