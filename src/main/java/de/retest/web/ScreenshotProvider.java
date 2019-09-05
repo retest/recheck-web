@@ -7,6 +7,8 @@ import java.awt.image.BufferedImage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
@@ -19,11 +21,18 @@ public class ScreenshotProvider {
 
 	public static final int SCALE = extractScale();
 
+	private static final Logger logger = LoggerFactory.getLogger( ScreenshotProvider.class );
+
 	private ScreenshotProvider() {}
 
 	public static BufferedImage shoot( final WebDriver driver ) {
-		final boolean viewportOnly = Boolean.getBoolean( VIEWPORT_ONLY_SCREENSHOT_PROPERTY );
-		return viewportOnly ? shootViewportOnly( driver ) : shootFullPage( driver );
+		try {
+			final boolean viewportOnly = Boolean.getBoolean( VIEWPORT_ONLY_SCREENSHOT_PROPERTY );
+			return viewportOnly ? shootViewportOnly( driver ) : shootFullPage( driver );
+		} catch ( final Exception e ) {
+			logger.error( "Exception creating screenshot for check.", e );
+			return null;
+		}
 	}
 
 	private static BufferedImage shootFullPage( final WebDriver driver ) {
