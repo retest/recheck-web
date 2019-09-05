@@ -27,6 +27,13 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 		this( wrapped, RecheckWebOptions.builder().build() );
 	}
 
+	@Deprecated
+	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options ) {
+		super( wrapped );
+		this.options = options;
+		namingStrategy = new CounterCheckNamingStrategy();
+	}
+
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckWebOptions options ) {
 		super( wrapped );
 		this.options = options;
