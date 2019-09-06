@@ -55,7 +55,6 @@ public class SimpleAutocheckingDriverShowcaseIT {
 
 	@After
 	public void tearDown() {
-		driver.cap();
 		driver.quit();
 	}
 
