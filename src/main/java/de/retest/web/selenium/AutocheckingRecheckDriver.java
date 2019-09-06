@@ -24,18 +24,23 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 	private final AutocheckingCheckNamingStrategy namingStrategy;
 
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped ) {
-		super( wrapped );
-		namingStrategy = new CounterCheckNamingStrategy();
-		options = RecheckOptions.builder().build();
+		this( wrapped, RecheckWebOptions.builder().build() );
 	}
 
-	// TODO Use RecheckWebOptions
-	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options,
-			final AutocheckingCheckNamingStrategy namingStrategy ) {
+	/**
+	 * Use {@link #AutocheckingRecheckDriver(RemoteWebDriver, RecheckWebOptions)} instead.
+	 */
+	@Deprecated
+	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options ) {
 		super( wrapped );
 		this.options = options;
-		// TODO Incorporate AutocheckingCheckNamingStrategy into RecheckWebOptions
-		this.namingStrategy = namingStrategy; // options.getNamingStrategy();
+		namingStrategy = RecheckWebOptions.builder().build().getNamingStrategy();
+	}
+
+	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckWebOptions options ) {
+		super( wrapped );
+		this.options = options;
+		namingStrategy = options.getNamingStrategy();
 	}
 
 	public void startTest() {
