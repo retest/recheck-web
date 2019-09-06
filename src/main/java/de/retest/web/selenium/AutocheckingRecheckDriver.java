@@ -77,8 +77,7 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 	@Override
 	public void close() {
 		// Is this sensible? What about tests using separate sessions?
-		namingStrategy.nextTest();
-		re.cap();
+		cap();
 		super.close();
 	}
 
@@ -86,8 +85,7 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 	public void quit() {
 		try {
 			// Is this sensible? What about tests using separate sessions?
-			namingStrategy.nextTest();
-			re.cap();
+			cap();
 		} finally {
 			super.quit();
 		}
