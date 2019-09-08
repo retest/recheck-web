@@ -1,6 +1,8 @@
-package de.retest.web.selenium;
+package de.retest.web;
 
 import de.retest.recheck.RecheckOptions;
+import de.retest.web.selenium.AutocheckingCheckNamingStrategy;
+import de.retest.web.selenium.CounterCheckNamingStrategy;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.experimental.SuperBuilder;

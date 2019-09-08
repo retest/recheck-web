@@ -3,6 +3,7 @@ package de.retest.web.selenium;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import de.retest.recheck.RecheckOptions;
+import de.retest.web.RecheckWebOptions;
 
 /**
  * Extends both {@link AutocheckingRecheckDriver} and {@link UnbreakableDriver} to combine all recheck-web features. Use
