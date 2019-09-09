@@ -10,6 +10,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import de.retest.recheck.RecheckOptions;
 import de.retest.web.RecheckWebImpl;
+import de.retest.web.RecheckWebOptions;
 
 /**
  * Extends {@link UnbreakableDriver} and automagically creates a check <em>after</em> any executed action (usually
