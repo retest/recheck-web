@@ -22,18 +22,27 @@ class PeerConverter {
 	private final String title;
 	private final BufferedImage screenshot;
 	private final DefaultValueFinder defaultValueFinder;
+	private final String rootParentPath;
 
 	private RootElementPeer root = null;
 
 	public PeerConverter( final RetestIdProvider retestIdProvider, final AttributesProvider attributesProvider,
 			final PathsToWebDataMapping mapping, final String title, final BufferedImage screenshot,
-			final DefaultValueFinder defaultValueFinder ) {
+			final DefaultValueFinder defaultValueFinder, final String rootPath ) {
 		this.retestIdProvider = retestIdProvider;
 		this.attributesProvider = attributesProvider;
 		this.mapping = mapping;
 		this.title = title;
 		this.screenshot = screenshot;
 		this.defaultValueFinder = defaultValueFinder;
+		rootParentPath = getRootParentPath( rootPath );
+	}
+
+	protected String getRootParentPath( final String rootPath ) {
+		if ( rootPath == null ) {
+			return null;
+		}
+		return rootPath.substring( 0, rootPath.lastIndexOf( "/" ) );
 	}
 
 	public RootElement convertToPeers() {
@@ -81,7 +90,7 @@ class PeerConverter {
 	}
 
 	protected boolean isRoot( final String parentPath ) {
-		return parentPath == null;
+		return parentPath == null || parentPath.equals( rootParentPath );
 	}
 
 	static String getParentPath( final String path ) {

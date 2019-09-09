@@ -14,6 +14,7 @@ import java.util.Set;
 import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -49,19 +50,36 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public boolean canCheck( final Object toVerify ) {
-		return toVerify instanceof WebDriver;
+		return toVerify instanceof WebDriver || toVerify instanceof RemoteWebElement;
 	}
 
 	@Override
 	public Set<RootElement> convert( final Object toVerify ) {
-		final WebDriver driver = (WebDriver) toVerify;
+		if ( toVerify instanceof WebDriver ) {
+			return convert( (WebDriver) toVerify );
+		}
+		if ( toVerify instanceof RemoteWebElement ) {
+			return convert( (RemoteWebElement) toVerify );
+		}
+		throw new IllegalArgumentException( "Cannot convert objects of " + toVerify.getClass() );
+	}
 
+	public Set<RootElement> convert( final RemoteWebElement webElement ) {
+		logger.info( "Retrieving attributes for element '{}'.", webElement );
+		return convert( webElement.getWrappedDriver(), webElement );
+	}
+
+	public Set<RootElement> convert( final WebDriver driver ) {
 		logger.info( "Retrieving attributes for each element." );
+		return convert( driver, null );
+	}
+
+	private Set<RootElement> convert( final WebDriver driver, final RemoteWebElement node ) {
 		final Set<String> cssAttributes = attributesProvider.getCssAttributes();
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		@SuppressWarnings( "unchecked" )
 		final Map<String, Map<String, Object>> tagMapping =
-				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes );
+				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes, node );
 		final RootElement lastChecked =
 				convert( tagMapping, driver.getCurrentUrl(), driver.getTitle(), shoot( driver ) );
 
@@ -81,8 +99,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		final PathsToWebDataMapping mapping = new PathsToWebDataMapping( tagMapping );
 
 		logger.info( "Checking website {} with {} elements.", url, mapping.size() );
-		return new PeerConverter( retestIdProvider, attributesProvider, mapping, title, screenshot, defaultValueFinder )
-				.convertToPeers();
+		return new PeerConverter( retestIdProvider, attributesProvider, mapping, title, screenshot, defaultValueFinder,
+				mapping.getRootPath() ).convertToPeers();
 	}
 
 	private String getQueryJS() {

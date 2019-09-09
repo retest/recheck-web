@@ -128,6 +128,27 @@ function containsOtherElements(element) {
 	return element.children.length > 0;
 }
 
+function getElementXPath(node) {
+    var paths = [];
+    for ( ; node && node.nodeType == Node.ELEMENT_NODE; node = node.parentNode)  {
+        var index = 0;
+        for (var sibling = node.previousSibling; sibling; sibling = sibling.previousSibling) {
+            if (sibling.nodeType == Node.DOCUMENT_TYPE_NODE) {
+                continue;
+            }
+
+            if (sibling.nodeName == node.nodeName) {
+                ++index;
+            }
+        }
+        var tagName = node.nodeName.toLowerCase();
+        var pathIndex = "[" + (index+1) + "]";
+        paths.unshift(tagName + pathIndex);
+    }
+
+    return paths.length ? "/" + paths.join( "/") : null;
+}
+
 function mapElement(element, parentPath, allElements) {
 	if (!element || !element.children) {
 		return allElements;
@@ -149,9 +170,14 @@ function mapElement(element, parentPath, allElements) {
 	return allElements;
 }
 
-var htmlNode = document.getElementsByTagName("html")[0];
-var html = transform(htmlNode);
-var allElements = mapElement(htmlNode, "//html[1]", {
-	"//html[1]": html
-});
+var rootNode = document.getElementsByTagName("html")[0];
+var rootPath = "//html[1]";
+if (arguments.length >= 2 && arguments[1]) {
+	rootNode = arguments[1];
+	rootPath = getElementXPath(rootNode);
+}
+var root = transform(rootNode);
+var allElements = {};
+allElements[rootPath] = root;
+allElements = mapElement(rootNode, rootPath, allElements);
 return allElements;
