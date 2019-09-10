@@ -24,12 +24,10 @@ import org.openqa.selenium.JavascriptExecutor;
 public class PathsToWebDataMapping implements Iterable<Entry<String, WebData>> {
 
 	private final Map<String, WebData> mapping;
-	private String rootPath;
+	private final String rootPath;
 
 	public PathsToWebDataMapping( final Map<String, Map<String, Object>> mapping ) {
-		mapping.forEach( ( k, v ) -> findRoot( k ) );
-		this.mapping = mapping.entrySet().stream() //
-				.collect( Collectors.toMap( Entry::getKey, entry -> new WebData( entry.getValue() ) ) );
+		this( "/", mapping );
 	}
 
 	/**
@@ -39,16 +37,12 @@ public class PathsToWebDataMapping implements Iterable<Entry<String, WebData>> {
 	 *            The raw map of paths to maps of attributes.
 	 */
 	public PathsToWebDataMapping( final String frameParentPath, final Map<String, Map<String, Object>> mapping ) {
-		mapping.forEach( ( k, v ) -> findRoot( k ) );
+		rootPath = frameParentPath + mapping.keySet().stream().reduce(
+				( rootPath, path ) -> countMatches( path, "/" ) < countMatches( rootPath, "/" ) ? path : rootPath )
+				.orElse( "" ).replace( "//", "/" );
 		this.mapping = mapping.entrySet().stream() //
 				.collect( Collectors.toMap( entry -> frameParentPath + entry.getKey().replace( "//", "/" ),
 						entry -> new WebData( entry.getValue() ) ) );
-	}
-
-	private void findRoot( final String path ) {
-		if ( rootPath == null || countMatches( path, "/" ) < countMatches( rootPath, "/" ) ) {
-			rootPath = path;
-		}
 	}
 
 	public int size() {
