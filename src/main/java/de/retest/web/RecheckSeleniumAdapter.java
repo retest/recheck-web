@@ -14,6 +14,7 @@ import java.util.Set;
 import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WrapsElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -50,7 +51,9 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public boolean canCheck( final Object toVerify ) {
-		return toVerify instanceof WebDriver || toVerify instanceof RemoteWebElement;
+		return toVerify instanceof WebDriver || toVerify instanceof RemoteWebElement //
+				|| toVerify instanceof WrapsElement
+						&& ((WrapsElement) toVerify).getWrappedElement() instanceof RemoteWebElement;
 	}
 
 	@Override
@@ -60,6 +63,10 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		}
 		if ( toVerify instanceof RemoteWebElement ) {
 			return convert( (RemoteWebElement) toVerify );
+		}
+		if ( toVerify instanceof WrapsElement
+				&& ((WrapsElement) toVerify).getWrappedElement() instanceof RemoteWebElement ) {
+			return convert( (RemoteWebElement) ((WrapsElement) toVerify).getWrappedElement() );
 		}
 		throw new IllegalArgumentException( "Cannot convert objects of " + toVerify.getClass() );
 	}
