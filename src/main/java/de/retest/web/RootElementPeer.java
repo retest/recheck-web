@@ -31,11 +31,20 @@ public class RootElementPeer extends WebElementPeer {
 			throw new IllegalStateException( "RootElement was not properly initialized!" );
 		}
 		final IdentifyingAttributes identifyingAttributes = retrieveIdentifyingAttributes();
+
+		// If this is a WebElement
+		String screen = title;
+		String title = this.title;
+		if ( !identifyingAttributes.getType().equals( "html" ) ) {
+			screen = "WebElement";
+			title = identifyingAttributes.getPath();
+		}
+
 		final MutableAttributes stateAttributes = retrieveStateAttributes( identifyingAttributes );
 		final String retestId = retestIdProvider.getRetestId( identifyingAttributes );
 		final Screenshot ss = ImageUtils.image2Screenshot( retestId, screenshot );
 		final RootElement rootElement =
-				new RootElement( retestId, identifyingAttributes, stateAttributes.immutable(), ss, title, 1, title );
+				new RootElement( retestId, identifyingAttributes, stateAttributes.immutable(), ss, screen, 1, title );
 		rootElement.addChildren( convertChildren( rootElement ) );
 		return rootElement;
 	}
