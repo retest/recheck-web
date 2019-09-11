@@ -38,6 +38,21 @@ public class RecheckRemoteWebElementIT {
 		re.capTest();
 	}
 
+	@ParameterizedTest
+	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
+	void complete_html_should_be_same_as_driver( final WebDriver driver ) throws Exception {
+		this.driver = driver;
+		re.startTest( "html-element-" + driver.getClass().getSimpleName() );
+
+		driver.get( PageFactory.page( Page.PAGE_FRAME ) );
+		Thread.sleep( 1000 );
+		final WebElement html = driver.findElement( By.tagName( "html" ) );
+
+		re.check( html, "open" );
+
+		re.capTest();
+	}
+
 	@AfterEach
 	void tearDown() {
 		driver.quit();
