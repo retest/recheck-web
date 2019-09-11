@@ -52,8 +52,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	@Override
 	public boolean canCheck( final Object toVerify ) {
 		return toVerify instanceof WebDriver || toVerify instanceof RemoteWebElement //
-				|| toVerify instanceof WrapsElement
-						&& ((WrapsElement) toVerify).getWrappedElement() instanceof RemoteWebElement;
+				|| toVerify instanceof WrapsElement && canCheck( ((WrapsElement) toVerify).getWrappedElement() );
 	}
 
 	@Override
@@ -64,9 +63,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		if ( toVerify instanceof RemoteWebElement ) {
 			return convert( (RemoteWebElement) toVerify );
 		}
-		if ( toVerify instanceof WrapsElement
-				&& ((WrapsElement) toVerify).getWrappedElement() instanceof RemoteWebElement ) {
-			return convert( (RemoteWebElement) ((WrapsElement) toVerify).getWrappedElement() );
+		if ( toVerify instanceof WrapsElement ) {
+			return convert( ((WrapsElement) toVerify).getWrappedElement() );
 		}
 		throw new IllegalArgumentException( "Cannot convert objects of " + toVerify.getClass() );
 	}
