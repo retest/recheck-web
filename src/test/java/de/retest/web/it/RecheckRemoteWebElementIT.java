@@ -25,9 +25,9 @@ public class RecheckRemoteWebElementIT {
 
 	@ParameterizedTest
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
-	void simple_html_page_should_be_checked( final WebDriver driver ) throws Exception {
+	void no_children_webelement_should_be_checked( final WebDriver driver ) throws Exception {
 		this.driver = driver;
-		re.startTest( "simple-page-" + driver.getClass().getSimpleName() );
+		re.startTest( "simple-webelement-" + driver.getClass().getSimpleName() );
 
 		driver.get( PageFactory.page( Page.PAGE_FRAME ) );
 		Thread.sleep( 1000 );
