@@ -3,14 +3,11 @@ package de.retest.web;
 import de.retest.recheck.RecheckOptions;
 import de.retest.web.selenium.AutocheckingCheckNamingStrategy;
 import de.retest.web.selenium.CounterCheckNamingStrategy;
-import lombok.Builder;
 import lombok.Getter;
-import lombok.experimental.SuperBuilder;
 
 /**
  * This class extends RecheckOptions for some specific web options.
  */
-@SuperBuilder
 @Getter
 public class RecheckWebOptions extends RecheckOptions {
 
@@ -18,7 +15,31 @@ public class RecheckWebOptions extends RecheckOptions {
 	 * The auto-checking driver needs more info than the standard naming strategy can provide. Therefore we need a
 	 * special {@link AutocheckingCheckNamingStrategy}.
 	 */
-	@Builder.Default
-	private final AutocheckingCheckNamingStrategy namingStrategy = new CounterCheckNamingStrategy();
+	private final AutocheckingCheckNamingStrategy checkNamingStrategy;
 
+	public RecheckWebOptions( final RecheckOptions superOptions,
+			final AutocheckingCheckNamingStrategy checkNamingStrategy ) {
+		super( superOptions );
+		this.checkNamingStrategy = checkNamingStrategy;
+	}
+
+	public static RecheckWebOptionsBuilder builder() {
+		return new RecheckWebOptionsBuilder();
+	}
+
+	public static class RecheckWebOptionsBuilder extends RecheckOptionsBuilder {
+
+		private AutocheckingCheckNamingStrategy checkNamingStrategy = new CounterCheckNamingStrategy();
+
+		public RecheckWebOptionsBuilder
+				checkNamingStrategy( final AutocheckingCheckNamingStrategy checkNamingStrategy ) {
+			this.checkNamingStrategy = checkNamingStrategy;
+			return this;
+		}
+
+		@Override
+		public RecheckWebOptions build() {
+			return new RecheckWebOptions( super.build(), checkNamingStrategy );
+		}
+	}
 }
