@@ -95,6 +95,14 @@ class RecheckSeleniumAdapterTest {
 	}
 
 	@Test
+	void canCheck_should_not_unwrap_UnbreakableDriver() {
+		final UnbreakableDriver driver = mock( UnbreakableDriver.class );
+
+		assertThat( cut.canCheck( driver ) ).isTrue();
+		verify( driver, never() ).getWrappedDriver();
+	}
+
+	@Test
 	void canCheck_should_accept_RemoteWebElement() throws Exception {
 		assertThat( cut.canCheck( mock( RemoteWebElement.class ) ) ).isTrue();
 	}
@@ -136,6 +144,17 @@ class RecheckSeleniumAdapterTest {
 
 		assertThat( cut.convert( outer ) ).isEmpty();
 		verify( cut ).convert( inner.getWrappedDriver() );
+	}
+
+	@Test
+	void convert_should_not_unwrap_UnbreakableDriver() {
+		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter() );
+		doReturn( Collections.emptySet() ).when( cut ).convertWebDriver( any() );
+
+		final UnbreakableDriver driver = mock( UnbreakableDriver.class );
+
+		assertThat( cut.convert( driver ) ).isEmpty();
+		verify( driver, never() ).getWrappedDriver();
 	}
 
 	@Test

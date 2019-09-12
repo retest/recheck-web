@@ -59,6 +59,9 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		if ( toVerify instanceof RemoteWebElement ) {
 			return true;
 		}
+		if ( toVerify instanceof UnbreakableDriver ) {
+			return true;
+		}
 		if ( toVerify instanceof WrapsDriver ) {
 			return canCheck( ((WrapsDriver) toVerify).getWrappedDriver() );
 		}
@@ -76,6 +79,9 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		if ( toVerify instanceof RemoteWebElement ) {
 			return convertWebElement( (RemoteWebElement) toVerify );
 		}
+		if ( toVerify instanceof UnbreakableDriver ) {
+			return convertWebDriver( (UnbreakableDriver) toVerify );
+		}
 		if ( toVerify instanceof WrapsDriver ) {
 			return convert( ((WrapsDriver) toVerify).getWrappedDriver() );
 		}
@@ -85,7 +91,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		throw new IllegalArgumentException( "Cannot convert objects of type '" + toVerify.getClass().getName() + "'." );
 	}
 
-	Set<RootElement> convertWebDriver( final RemoteWebDriver driver ) {
+	Set<RootElement> convertWebDriver( final WebDriver driver ) {
 		logger.info( "Retrieving attributes for each element." );
 		return convert( driver, null );
 	}
