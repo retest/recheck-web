@@ -3,8 +3,8 @@ Changelog
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to
-[Semantic Versioning](http://semver.org/).
+The format is based on [Keep a Changelog](https://keepachangelog.com/) and this project adheres to
+[Semantic Versioning](https://semver.org/).
 
 But we group the changes as follows:
 
@@ -34,8 +34,9 @@ Table of Contents
 
 --------------------------------------------------------------------------------
 
+
 [1.5.0] (2019-09-12)
-------------
+--------------------
 
 ### Improvements
 
@@ -47,6 +48,6 @@ Table of Contents
 
 
 [1.4.0] (2019-08-21)
-------------
+--------------------
 
 Changes not tracked before...
