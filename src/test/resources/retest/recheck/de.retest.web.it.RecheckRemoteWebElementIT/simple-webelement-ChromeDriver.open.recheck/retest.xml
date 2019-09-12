@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.3.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.4.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="input" screenId="1" screen="WebElement" title="html[1]/body[1]/form[1]/input[1]">
 			<identifyingAttributes>
@@ -7,15 +7,15 @@
 					<attribute key="absolute-outline" xsi:type="outlineAttribute">
 						<x>8</x>
 						<y>26</y>
-						<height>19</height>
-						<width>131</width>
+						<height>21</height>
+						<width>181</width>
 					</attribute>
 					<attribute key="id" xsi:type="stringAttribute">email</attribute>
 					<attribute key="outline" xsi:type="outlineAttribute">
 						<x>0</x>
 						<y>0</y>
 						<height>0</height>
-						<width>-526</width>
+						<width>-1003</width>
 					</attribute>
 					<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/input[1]</attribute>
 					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -66,7 +66,7 @@
 					</entry>
 					<entry>
 						<key>font-size</key>
-						<value xsi:type="xsd:string">11px</value>
+						<value xsi:type="xsd:string">13.3333px</value>
 					</entry>
 					<entry>
 						<key>margin-bottom</key>
@@ -91,7 +91,7 @@
 				</attributes>
 			</attributes>
 			<screenshot>
-				<persistenceId>input_54ea690110e6ac8a1a0eca1907c0bb7ef37a3b527d878466625bbe66b36ebf8b</persistenceId>
+				<persistenceId>input_b0398bd8a34b4b9128404e8c7b6ecb99d35238103cddf4bd8bb30363dbca8c84</persistenceId>
 				<type>PNG</type>
 			</screenshot>
 		</descriptors>

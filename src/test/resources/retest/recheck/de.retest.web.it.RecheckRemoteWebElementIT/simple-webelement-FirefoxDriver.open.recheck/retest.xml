@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.3.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.4.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="input" screenId="1" screen="WebElement" title="html[1]/body[1]/form[1]/input[1]">
 			<identifyingAttributes>
@@ -7,15 +7,15 @@
 					<attribute key="absolute-outline" xsi:type="outlineAttribute">
 						<x>8</x>
 						<y>27</y>
-						<height>22</height>
-						<width>149</width>
+						<height>29</height>
+						<width>211</width>
 					</attribute>
 					<attribute key="id" xsi:type="stringAttribute">email</attribute>
 					<attribute key="outline" xsi:type="outlineAttribute">
 						<x>0</x>
 						<y>0</y>
 						<height>0</height>
-						<width>-600</width>
+						<width>-1129</width>
 					</attribute>
 					<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/input[1]</attribute>
 					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -38,7 +38,7 @@
 					</entry>
 					<entry>
 						<key>border-bottom-width</key>
-						<value xsi:type="xsd:string">3px</value>
+						<value xsi:type="xsd:string">5px</value>
 					</entry>
 					<entry>
 						<key>border-left-color</key>
@@ -50,7 +50,7 @@
 					</entry>
 					<entry>
 						<key>border-left-width</key>
-						<value xsi:type="xsd:string">3px</value>
+						<value xsi:type="xsd:string">7px</value>
 					</entry>
 					<entry>
 						<key>border-right-color</key>
@@ -62,7 +62,7 @@
 					</entry>
 					<entry>
 						<key>border-right-width</key>
-						<value xsi:type="xsd:string">3px</value>
+						<value xsi:type="xsd:string">7px</value>
 					</entry>
 					<entry>
 						<key>border-top-color</key>
@@ -74,7 +74,7 @@
 					</entry>
 					<entry>
 						<key>border-top-width</key>
-						<value xsi:type="xsd:string">3px</value>
+						<value xsi:type="xsd:string">5px</value>
 					</entry>
 					<entry>
 						<key>caret-color</key>
@@ -89,28 +89,24 @@
 						<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 					</entry>
 					<entry>
-						<key>outline-color</key>
-						<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-					</entry>
-					<entry>
-						<key>text-decoration-color</key>
-						<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-					</entry>
-					<entry>
 						<key>font-family</key>
 						<value xsi:type="xsd:string">sans-serif</value>
 					</entry>
 					<entry>
 						<key>font-size</key>
-						<value xsi:type="xsd:string">11px</value>
+						<value xsi:type="xsd:string">14px</value>
 					</entry>
 					<entry>
 						<key>line-height</key>
-						<value xsi:type="xsd:string">14px</value>
+						<value xsi:type="xsd:string">17px</value>
 					</entry>
 					<entry>
 						<key>margin-bottom</key>
 						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>outline-color</key>
+						<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 					</entry>
 					<entry>
 						<key>padding-bottom</key>
@@ -133,6 +129,10 @@
 						<value xsi:type="xsd:string">true</value>
 					</entry>
 					<entry>
+						<key>text-decoration-color</key>
+						<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+					</entry>
+					<entry>
 						<key>type</key>
 						<value xsi:type="xsd:string">email</value>
 					</entry>
@@ -143,7 +143,7 @@
 				</attributes>
 			</attributes>
 			<screenshot>
-				<persistenceId>input_2749f740cb1c0fecae20b548f4766cd7a1b8b4884a3617c8f498a52403bef0cc</persistenceId>
+				<persistenceId>input_55bf18063eed7a040d95559c1a8689df5118c2d589738e9d491872f3b9153f2d</persistenceId>
 				<type>PNG</type>
 			</screenshot>
 		</descriptors>
