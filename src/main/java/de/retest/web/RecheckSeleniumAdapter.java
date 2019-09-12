@@ -85,12 +85,12 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		throw new IllegalArgumentException( "Cannot convert objects of type '" + toVerify.getClass().getName() + "'." );
 	}
 
-	private Set<RootElement> convertWebDriver( final RemoteWebDriver driver ) {
+	Set<RootElement> convertWebDriver( final RemoteWebDriver driver ) {
 		logger.info( "Retrieving attributes for each element." );
 		return convert( driver, null );
 	}
 
-	private Set<RootElement> convertWebElement( final RemoteWebElement webElement ) {
+	Set<RootElement> convertWebElement( final RemoteWebElement webElement ) {
 		logger.info( "Retrieving attributes for element '{}'.", webElement );
 		return convert( webElement.getWrappedDriver(), webElement );
 	}
