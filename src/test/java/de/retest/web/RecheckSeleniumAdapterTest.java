@@ -5,6 +5,7 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WrapsElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,10 +20,15 @@ import de.retest.web.selenium.WebElementWrapper;
 
 class RecheckSeleniumAdapterTest {
 
+	RecheckAdapter cut;
+
+	@BeforeEach
+	void setUp() throws Exception {
+		cut = new RecheckSeleniumAdapter();
+	}
+
 	@Test
 	void seleniumAdapter_canCheck_Driver() {
-		final RecheckAdapter cut = new RecheckSeleniumAdapter();
-
 		assertThat( cut.canCheck( mock( ChromeDriver.class ) ) ).isTrue();
 		assertThat( cut.canCheck( mock( FirefoxDriver.class ) ) ).isTrue();
 		assertThat( cut.canCheck( mock( EdgeDriver.class ) ) ).isTrue();
@@ -32,7 +38,6 @@ class RecheckSeleniumAdapterTest {
 
 	@Test
 	void seleniumAdapter_canCheck_WebElements() {
-		final RecheckAdapter cut = new RecheckSeleniumAdapter();
 		assertThat( cut.canCheck( mock( RemoteWebElement.class ) ) ).isTrue();
 
 		final WebElementWrapper mock = mock( WebElementWrapper.class );
@@ -46,13 +51,11 @@ class RecheckSeleniumAdapterTest {
 
 	@Test
 	void seleniumAdapter_can_NOT_Check_Object() {
-		final RecheckAdapter cut = new RecheckSeleniumAdapter();
 		assertThat( cut.canCheck( new Object() ) ).isFalse();
 	}
 
 	@Test
 	void convert_invalid_should_throw_exception() {
-		final RecheckAdapter cut = new RecheckSeleniumAdapter();
 		assertThatThrownBy( () -> {
 			cut.convert( new Object() );
 		} ).isInstanceOf( IllegalArgumentException.class )
