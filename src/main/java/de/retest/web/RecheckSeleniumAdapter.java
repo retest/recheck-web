@@ -14,7 +14,9 @@ import java.util.Set;
 import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WrapsDriver;
 import org.openqa.selenium.WrapsElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -51,40 +53,54 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public boolean canCheck( final Object toVerify ) {
-		return toVerify instanceof WebDriver || toVerify instanceof RemoteWebElement //
-				|| toVerify instanceof WrapsElement && canCheck( ((WrapsElement) toVerify).getWrappedElement() );
+		if ( toVerify instanceof WrapsElement ) {
+			return canCheck( ((WrapsElement) toVerify).getWrappedElement() );
+		}
+		if ( toVerify instanceof RemoteWebElement ) {
+			return true;
+		}
+		if ( toVerify instanceof WrapsDriver ) {
+			return canCheck( ((WrapsDriver) toVerify).getWrappedDriver() );
+		}
+		if ( toVerify instanceof RemoteWebDriver ) {
+			return true;
+		}
+		return false;
 	}
 
 	@Override
 	public Set<RootElement> convert( final Object toVerify ) {
-		if ( toVerify instanceof WebDriver ) {
-			return convert( (WebDriver) toVerify );
-		}
-		if ( toVerify instanceof RemoteWebElement ) {
-			return convert( (RemoteWebElement) toVerify );
-		}
 		if ( toVerify instanceof WrapsElement ) {
 			return convert( ((WrapsElement) toVerify).getWrappedElement() );
 		}
-		throw new IllegalArgumentException( "Cannot convert objects of " + toVerify.getClass() );
+		if ( toVerify instanceof RemoteWebElement ) {
+			return convertWebElement( (RemoteWebElement) toVerify );
+		}
+		if ( toVerify instanceof WrapsDriver ) {
+			return convert( ((WrapsDriver) toVerify).getWrappedDriver() );
+		}
+		if ( toVerify instanceof RemoteWebDriver ) {
+			return convertWebDriver( (RemoteWebDriver) toVerify );
+		}
+		throw new IllegalArgumentException( "Cannot convert objects of type '" + toVerify.getClass().getName() + "'." );
 	}
 
-	public Set<RootElement> convert( final RemoteWebElement webElement ) {
-		logger.info( "Retrieving attributes for element '{}'.", webElement );
-		return convert( webElement.getWrappedDriver(), webElement );
-	}
-
-	public Set<RootElement> convert( final WebDriver driver ) {
+	private Set<RootElement> convertWebDriver( final RemoteWebDriver driver ) {
 		logger.info( "Retrieving attributes for each element." );
 		return convert( driver, null );
 	}
 
-	private Set<RootElement> convert( final WebDriver driver, final RemoteWebElement node ) {
+	private Set<RootElement> convertWebElement( final RemoteWebElement webElement ) {
+		logger.info( "Retrieving attributes for element '{}'.", webElement );
+		return convert( webElement.getWrappedDriver(), webElement );
+	}
+
+	private Set<RootElement> convert( final WebDriver driver, final RemoteWebElement webElement ) {
 		final Set<String> cssAttributes = attributesProvider.getCssAttributes();
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		@SuppressWarnings( "unchecked" )
 		final Map<String, Map<String, Object>> tagMapping =
-				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes, node );
+				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes, webElement );
 		final RootElement lastChecked =
 				convert( tagMapping, driver.getCurrentUrl(), driver.getTitle(), shoot( driver ) );
 
