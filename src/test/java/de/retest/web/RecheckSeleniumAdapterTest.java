@@ -1,11 +1,17 @@
 package de.retest.web;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+
+import java.util.Collections;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -66,11 +72,9 @@ class RecheckSeleniumAdapterTest {
 
 	@Test
 	void canCheck_should_handle_WrapsElements() throws Exception {
-		final WrappingRemoteWebElement inner = mock( WrappingRemoteWebElement.class );
-		when( inner.getWrappedElement() ).thenReturn( mock( RemoteWebElement.class ) );
+		final WrappingRemoteWebElement inner = createInnerWrappingElement();
 
-		final WrappingRemoteWebElement outer = mock( WrappingRemoteWebElement.class );
-		when( outer.getWrappedElement() ).thenReturn( inner );
+		final WrappingRemoteWebElement outer = createOuterWrappingElement( inner );
 
 		assertThat( cut.canCheck( outer ) ).isTrue();
 		verify( outer ).getWrappedElement();
@@ -82,11 +86,8 @@ class RecheckSeleniumAdapterTest {
 
 	@Test
 	void canCheck_should_handle_WrapsDriver() throws Exception {
-		final WrappingRemoteWebDriver inner = mock( WrappingRemoteWebDriver.class );
-		when( inner.getWrappedDriver() ).thenReturn( mock( RemoteWebDriver.class ) );
-
-		final WrappingRemoteWebDriver outer = mock( WrappingRemoteWebDriver.class );
-		when( outer.getWrappedDriver() ).thenReturn( inner );
+		final WrappingRemoteWebDriver inner = createInnerWrappingDriver();
+		final WrappingRemoteWebDriver outer = createOuterWrappingDriver( inner );
 
 		assertThat( cut.canCheck( outer ) ).isTrue();
 		verify( outer ).getWrappedDriver();
@@ -113,7 +114,89 @@ class RecheckSeleniumAdapterTest {
 		assertThat( cut.canCheck( mock( WebDriver.class ) ) ).isFalse();
 	}
 
-	class WrappingRemoteWebElement extends RemoteWebElement implements WrapsElement {
+	@Test
+	void convert_should_handle_WrapsElement() {
+		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter() );
+		doReturn( Collections.emptySet() ).when( cut ).convertWebElement( any() );
+
+		final WrappingRemoteWebElement inner = createInnerWrappingElement();
+		final WrappingRemoteWebElement outer = createOuterWrappingElement( inner );
+
+		assertThat( cut.convert( outer ) ).isEmpty();
+		verify( cut ).convert( inner.getWrappedElement() );
+	}
+
+	@Test
+	void convert_should_handle_WrapsDriver() {
+		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter() );
+		doReturn( Collections.emptySet() ).when( cut ).convertWebDriver( any() );
+
+		final WrappingRemoteWebDriver inner = createInnerWrappingDriver();
+		final WrappingRemoteWebDriver outer = createOuterWrappingDriver( inner );
+
+		assertThat( cut.convert( outer ) ).isEmpty();
+		verify( cut ).convert( inner.getWrappedDriver() );
+	}
+
+	@Test
+	void convert_should_accept_RemoteWebElement() {
+		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter() );
+		doReturn( Collections.emptySet() ).when( cut ).convertWebElement( any() );
+
+		assertThat( cut.convert( mock( RemoteWebElement.class ) ) ).isEmpty();
+		verify( cut, never() ).convertWebDriver( any() );
+	}
+
+	@Test
+	void convert_should_accept_RemoteWebDriver() {
+		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter() );
+		doReturn( Collections.emptySet() ).when( cut ).convertWebDriver( any() );
+
+		assertThat( cut.convert( mock( RemoteWebDriver.class ) ) ).isEmpty();
+		verify( cut, never() ).convertWebElement( any() );
+	}
+
+	@Test
+	void convert_should_reject_WebElement() throws Exception {
+		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter() );
+		doReturn( Collections.emptySet() ).when( cut ).convertWebElement( any() );
+
+		assertThatCode( () -> cut.convert( mock( WebElement.class ) ) ).isInstanceOf( IllegalArgumentException.class );
+	}
+
+	@Test
+	void convert_should_reject_WebDriver() throws Exception {
+		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter() );
+		doReturn( Collections.emptySet() ).when( cut ).convertWebDriver( any() );
+
+		assertThatCode( () -> cut.convert( mock( WebDriver.class ) ) ).isInstanceOf( IllegalArgumentException.class );
+	}
+
+	private WrappingRemoteWebElement createOuterWrappingElement( final WrappingRemoteWebElement inner ) {
+		final WrappingRemoteWebElement outer = mock( WrappingRemoteWebElement.class );
+		when( outer.getWrappedElement() ).thenReturn( inner );
+		return outer;
+	}
+
+	private WrappingRemoteWebElement createInnerWrappingElement() {
+		final WrappingRemoteWebElement inner = mock( WrappingRemoteWebElement.class );
+		when( inner.getWrappedElement() ).thenReturn( mock( RemoteWebElement.class ) );
+		return inner;
+	}
+
+	private WrappingRemoteWebDriver createOuterWrappingDriver( final WrappingRemoteWebDriver inner ) {
+		final WrappingRemoteWebDriver outer = mock( WrappingRemoteWebDriver.class );
+		when( outer.getWrappedDriver() ).thenReturn( inner );
+		return outer;
+	}
+
+	private WrappingRemoteWebDriver createInnerWrappingDriver() {
+		final WrappingRemoteWebDriver inner = mock( WrappingRemoteWebDriver.class );
+		when( inner.getWrappedDriver() ).thenReturn( mock( RemoteWebDriver.class ) );
+		return inner;
+	}
+
+	static class WrappingRemoteWebElement extends RemoteWebElement implements WrapsElement {
 
 		@Override
 		public WebElement getWrappedElement() {
@@ -122,7 +205,7 @@ class RecheckSeleniumAdapterTest {
 
 	}
 
-	class WrappingRemoteWebDriver extends RemoteWebDriver implements WrapsDriver {
+	static class WrappingRemoteWebDriver extends RemoteWebDriver implements WrapsDriver {
 
 		@Override
 		public WebDriver getWrappedDriver() {
