@@ -1,5 +1,7 @@
 package de.retest.web.mapping;
 
+import static org.apache.commons.lang3.StringUtils.countMatches;
+
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -22,10 +24,10 @@ import org.openqa.selenium.JavascriptExecutor;
 public class PathsToWebDataMapping implements Iterable<Entry<String, WebData>> {
 
 	private final Map<String, WebData> mapping;
+	private final String rootPath;
 
 	public PathsToWebDataMapping( final Map<String, Map<String, Object>> mapping ) {
-		this.mapping = mapping.entrySet().stream() //
-				.collect( Collectors.toMap( Entry::getKey, entry -> new WebData( entry.getValue() ) ) );
+		this( "/", mapping );
 	}
 
 	/**
@@ -35,6 +37,9 @@ public class PathsToWebDataMapping implements Iterable<Entry<String, WebData>> {
 	 *            The raw map of paths to maps of attributes.
 	 */
 	public PathsToWebDataMapping( final String frameParentPath, final Map<String, Map<String, Object>> mapping ) {
+		rootPath = frameParentPath + mapping.keySet().stream().reduce(
+				( rootPath, path ) -> countMatches( path, "/" ) < countMatches( rootPath, "/" ) ? path : rootPath )
+				.orElse( "" ).replace( "//", "/" );
 		this.mapping = mapping.entrySet().stream() //
 				.collect( Collectors.toMap( entry -> frameParentPath + entry.getKey().replace( "//", "/" ),
 						entry -> new WebData( entry.getValue() ) ) );
@@ -53,4 +58,7 @@ public class PathsToWebDataMapping implements Iterable<Entry<String, WebData>> {
 		return mapping.entrySet().iterator();
 	}
 
+	public String getRootPath() {
+		return rootPath;
+	}
 }

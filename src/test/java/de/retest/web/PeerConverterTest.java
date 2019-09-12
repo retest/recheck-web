@@ -47,7 +47,7 @@ class PeerConverterTest {
 
 		final DefaultValueFinder defaultValueFinder = ( identifyingAttributes, attributeKey, attributeValue ) -> false;
 		final PeerConverter cut = new PeerConverter( RetestIdProviderUtil.getConfiguredRetestIdProvider(),
-				YamlAttributesProvider.getInstance(), mapping, "title", null, defaultValueFinder );
+				YamlAttributesProvider.getInstance(), mapping, "title", null, defaultValueFinder, null );
 		final RootElement root = cut.convertToPeers();
 
 		final RootElementDifferenceFinder diffFinder = new RootElementDifferenceFinder( defaultValueFinder );

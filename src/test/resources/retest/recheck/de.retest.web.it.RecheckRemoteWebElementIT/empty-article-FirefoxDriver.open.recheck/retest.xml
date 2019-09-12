@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.4.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+	<data xsi:type="sutState">
+		<descriptors retestId="article" screenId="1" screen="WebElement" title="html[1]/body[1]/article[1]">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="absolute-outline" xsi:type="outlineAttribute">
+						<x>8</x>
+						<y>900</y>
+						<height>0</height>
+						<width>1340</width>
+					</attribute>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>0</x>
+						<y>892</y>
+						<height>-892</height>
+						<width>0</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/article[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="type" xsi:type="stringAttribute">article</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>shown</key>
+						<value xsi:type="xsd:string">true</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>article_55bf18063eed7a040d95559c1a8689df5118c2d589738e9d491872f3b9153f2d</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+	</data>
+</reTestXmlDataContainer>

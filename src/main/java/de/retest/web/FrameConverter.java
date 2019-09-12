@@ -77,7 +77,7 @@ public class FrameConverter {
 	private RootElement convert( final PathsToWebDataMapping mapping, final String frameTitle,
 			final String framePath ) {
 		final PeerConverter peerConverter = new PeerConverter( retestIdProvider, attributesProvider, mapping,
-				frameTitle, null, defaultValueFinder ) {
+				frameTitle, null, defaultValueFinder, framePath ) {
 			@Override
 			protected boolean isRoot( final String parentPath ) {
 				// Handle trailing slashes.

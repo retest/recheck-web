@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.4.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+	<data xsi:type="sutState">
+		<descriptors retestId="select" screenId="1" screen="WebElement" title="html[1]/body[1]/form[3]/select[2]">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="absolute-outline" xsi:type="outlineAttribute">
+						<x>319</x>
+						<y>130</y>
+						<height>72</height>
+						<width>106</width>
+					</attribute>
+					<attribute key="id" xsi:type="stringAttribute">multi</attribute>
+					<attribute key="name" xsi:type="stringAttribute">multi</attribute>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>311</x>
+						<y>25</y>
+						<height>-270</height>
+						<width>-1234</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[2]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+					<attribute key="type" xsi:type="stringAttribute">select</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>background-color</key>
+						<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-bottom-width</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>border-left-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-left-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-left-width</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>border-right-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-right-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-right-width</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>border-top-color</key>
+						<value xsi:type="xsd:string">rgb(227, 227, 227)</value>
+					</entry>
+					<entry>
+						<key>border-top-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-top-width</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>box-sizing</key>
+						<value xsi:type="xsd:string">border-box</value>
+					</entry>
+					<entry>
+						<key>break-inside</key>
+						<value xsi:type="xsd:string">avoid</value>
+					</entry>
+					<entry>
+						<key>caret-color</key>
+						<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+					</entry>
+					<entry>
+						<key>color</key>
+						<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+					</entry>
+					<entry>
+						<key>column-rule-color</key>
+						<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+					</entry>
+					<entry>
+						<key>display</key>
+						<value xsi:type="xsd:string">inline-block</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">sans-serif</value>
+					</entry>
+					<entry>
+						<key>font-size</key>
+						<value xsi:type="xsd:string">14px</value>
+					</entry>
+					<entry>
+						<key>line-height</key>
+						<value xsi:type="xsd:string">17px</value>
+					</entry>
+					<entry>
+						<key>multiple</key>
+						<value xsi:type="xsd:string">multiple</value>
+					</entry>
+					<entry>
+						<key>outline-color</key>
+						<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+					</entry>
+					<entry>
+						<key>overflow-x</key>
+						<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+					</entry>
+					<entry>
+						<key>overflow-y</key>
+						<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+					</entry>
+					<entry>
+						<key>padding-bottom</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>padding-top</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>page-break-inside</key>
+						<value xsi:type="xsd:string">avoid</value>
+					</entry>
+					<entry>
+						<key>shown</key>
+						<value xsi:type="xsd:string">true</value>
+					</entry>
+					<entry>
+						<key>text-decoration-color</key>
+						<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+					</entry>
+					<entry>
+						<key>value</key>
+						<value xsi:type="xsd:string">eggs</value>
+					</entry>
+					<entry>
+						<key>vertical-align</key>
+						<value xsi:type="xsd:string">text-bottom</value>
+					</entry>
+					<entry>
+						<key>white-space</key>
+						<value xsi:type="xsd:string">nowrap</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<containedElements retestId="onion_gravy">
+				<identifyingAttributes>
+					<attributes>
+						<attribute key="absolute-outline" xsi:type="outlineAttribute">
+							<x>320</x>
+							<y>183</y>
+							<height>17</height>
+							<width>94</width>
+						</attribute>
+						<attribute key="outline" xsi:type="outlineAttribute">
+							<x>1</x>
+							<y>53</y>
+							<height>-55</height>
+							<width>-12</width>
+						</attribute>
+						<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[2]/option[4]</attribute>
+						<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
+						<attribute key="text" xsi:type="textAttribute">Onion gravy</attribute>
+						<attribute key="type" xsi:type="stringAttribute">option</attribute>
+					</attributes>
+				</identifyingAttributes>
+				<attributes>
+					<attributes>
+						<entry>
+							<key>border-bottom-color</key>
+							<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+						</entry>
+						<entry>
+							<key>border-left-color</key>
+							<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+						</entry>
+						<entry>
+							<key>border-right-color</key>
+							<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+						</entry>
+						<entry>
+							<key>border-top-color</key>
+							<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+						</entry>
+						<entry>
+							<key>min-height</key>
+							<value xsi:type="xsd:string">14px</value>
+						</entry>
+						<entry>
+							<key>padding-left</key>
+							<value xsi:type="xsd:string">3px</value>
+						</entry>
+						<entry>
+							<key>padding-right</key>
+							<value xsi:type="xsd:string">5px</value>
+						</entry>
+						<entry>
+							<key>shown</key>
+							<value xsi:type="xsd:string">true</value>
+						</entry>
+						<entry>
+							<key>text-align</key>
+							<value xsi:type="xsd:string">left</value>
+						</entry>
+						<entry>
+							<key>value</key>
+							<value xsi:type="xsd:string">onion gravy</value>
+						</entry>
+					</attributes>
+				</attributes>
+			</containedElements>
+			<containedElements retestId="eggs">
+				<identifyingAttributes>
+					<attributes>
+						<attribute key="absolute-outline" xsi:type="outlineAttribute">
+							<x>320</x>
+							<y>132</y>
+							<height>17</height>
+							<width>94</width>
+						</attribute>
+						<attribute key="outline" xsi:type="outlineAttribute">
+							<x>1</x>
+							<y>2</y>
+							<height>-55</height>
+							<width>-12</width>
+						</attribute>
+						<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[2]/option[1]</attribute>
+						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+						<attribute key="text" xsi:type="textAttribute">Eggs</attribute>
+						<attribute key="type" xsi:type="stringAttribute">option</attribute>
+					</attributes>
+				</identifyingAttributes>
+				<attributes>
+					<attributes>
+						<entry>
+							<key>background-color</key>
+							<value xsi:type="xsd:string">rgb(51, 153, 255)</value>
+						</entry>
+						<entry>
+							<key>border-bottom-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>border-left-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>border-right-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>border-top-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>caret-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>column-rule-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>min-height</key>
+							<value xsi:type="xsd:string">14px</value>
+						</entry>
+						<entry>
+							<key>outline-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>padding-left</key>
+							<value xsi:type="xsd:string">3px</value>
+						</entry>
+						<entry>
+							<key>padding-right</key>
+							<value xsi:type="xsd:string">5px</value>
+						</entry>
+						<entry>
+							<key>selected</key>
+							<value xsi:type="xsd:string">selected</value>
+						</entry>
+						<entry>
+							<key>shown</key>
+							<value xsi:type="xsd:string">true</value>
+						</entry>
+						<entry>
+							<key>text-align</key>
+							<value xsi:type="xsd:string">left</value>
+						</entry>
+						<entry>
+							<key>text-decoration-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>value</key>
+							<value xsi:type="xsd:string">eggs</value>
+						</entry>
+					</attributes>
+				</attributes>
+			</containedElements>
+			<containedElements retestId="sausages">
+				<identifyingAttributes>
+					<attributes>
+						<attribute key="absolute-outline" xsi:type="outlineAttribute">
+							<x>320</x>
+							<y>166</y>
+							<height>17</height>
+							<width>94</width>
+						</attribute>
+						<attribute key="outline" xsi:type="outlineAttribute">
+							<x>1</x>
+							<y>36</y>
+							<height>-55</height>
+							<width>-12</width>
+						</attribute>
+						<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[2]/option[3]</attribute>
+						<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
+						<attribute key="text" xsi:type="textAttribute">Sausages</attribute>
+						<attribute key="type" xsi:type="stringAttribute">option</attribute>
+					</attributes>
+				</identifyingAttributes>
+				<attributes>
+					<attributes>
+						<entry>
+							<key>background-color</key>
+							<value xsi:type="xsd:string">rgb(51, 153, 255)</value>
+						</entry>
+						<entry>
+							<key>border-bottom-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>border-left-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>border-right-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>border-top-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>caret-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>column-rule-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>min-height</key>
+							<value xsi:type="xsd:string">14px</value>
+						</entry>
+						<entry>
+							<key>outline-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>padding-left</key>
+							<value xsi:type="xsd:string">3px</value>
+						</entry>
+						<entry>
+							<key>padding-right</key>
+							<value xsi:type="xsd:string">5px</value>
+						</entry>
+						<entry>
+							<key>selected</key>
+							<value xsi:type="xsd:string">selected</value>
+						</entry>
+						<entry>
+							<key>shown</key>
+							<value xsi:type="xsd:string">true</value>
+						</entry>
+						<entry>
+							<key>text-align</key>
+							<value xsi:type="xsd:string">left</value>
+						</entry>
+						<entry>
+							<key>text-decoration-color</key>
+							<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+						</entry>
+						<entry>
+							<key>value</key>
+							<value xsi:type="xsd:string">sausages</value>
+						</entry>
+					</attributes>
+				</attributes>
+			</containedElements>
+			<containedElements retestId="ham">
+				<identifyingAttributes>
+					<attributes>
+						<attribute key="absolute-outline" xsi:type="outlineAttribute">
+							<x>320</x>
+							<y>149</y>
+							<height>17</height>
+							<width>94</width>
+						</attribute>
+						<attribute key="outline" xsi:type="outlineAttribute">
+							<x>1</x>
+							<y>19</y>
+							<height>-55</height>
+							<width>-12</width>
+						</attribute>
+						<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[2]/option[2]</attribute>
+						<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+						<attribute key="text" xsi:type="textAttribute">Ham</attribute>
+						<attribute key="type" xsi:type="stringAttribute">option</attribute>
+					</attributes>
+				</identifyingAttributes>
+				<attributes>
+					<attributes>
+						<entry>
+							<key>border-bottom-color</key>
+							<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+						</entry>
+						<entry>
+							<key>border-left-color</key>
+							<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+						</entry>
+						<entry>
+							<key>border-right-color</key>
+							<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+						</entry>
+						<entry>
+							<key>border-top-color</key>
+							<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+						</entry>
+						<entry>
+							<key>min-height</key>
+							<value xsi:type="xsd:string">14px</value>
+						</entry>
+						<entry>
+							<key>padding-left</key>
+							<value xsi:type="xsd:string">3px</value>
+						</entry>
+						<entry>
+							<key>padding-right</key>
+							<value xsi:type="xsd:string">5px</value>
+						</entry>
+						<entry>
+							<key>shown</key>
+							<value xsi:type="xsd:string">true</value>
+						</entry>
+						<entry>
+							<key>text-align</key>
+							<value xsi:type="xsd:string">left</value>
+						</entry>
+						<entry>
+							<key>value</key>
+							<value xsi:type="xsd:string">ham</value>
+						</entry>
+					</attributes>
+				</attributes>
+			</containedElements>
+			<screenshot>
+				<persistenceId>select_55bf18063eed7a040d95559c1a8689df5118c2d589738e9d491872f3b9153f2d</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+	</data>
+</reTestXmlDataContainer>

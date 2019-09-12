@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.4.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+	<data xsi:type="sutState">
+		<descriptors retestId="input" screenId="1" screen="WebElement" title="html[1]/body[1]/form[1]/input[1]">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="absolute-outline" xsi:type="outlineAttribute">
+						<x>8</x>
+						<y>26</y>
+						<height>21</height>
+						<width>181</width>
+					</attribute>
+					<attribute key="id" xsi:type="stringAttribute">email</attribute>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>0</x>
+						<y>0</y>
+						<height>0</height>
+						<width>-1003</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/input[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="type" xsi:type="stringAttribute">input</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>background-color</key>
+						<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+					</entry>
+					<entry>
+						<key>border-bottom-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-bottom-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>border-left-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-left-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>border-right-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-right-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>border-top-style</key>
+						<value xsi:type="xsd:string">inset</value>
+					</entry>
+					<entry>
+						<key>border-top-width</key>
+						<value xsi:type="xsd:string">2px</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">Arial</value>
+					</entry>
+					<entry>
+						<key>font-size</key>
+						<value xsi:type="xsd:string">13.3333px</value>
+					</entry>
+					<entry>
+						<key>margin-bottom</key>
+						<value xsi:type="xsd:string">0px</value>
+					</entry>
+					<entry>
+						<key>padding-bottom</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>padding-top</key>
+						<value xsi:type="xsd:string">1px</value>
+					</entry>
+					<entry>
+						<key>shown</key>
+						<value xsi:type="xsd:string">true</value>
+					</entry>
+					<entry>
+						<key>type</key>
+						<value xsi:type="xsd:string">email</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<screenshot>
+				<persistenceId>input_b0398bd8a34b4b9128404e8c7b6ecb99d35238103cddf4bd8bb30363dbca8c84</persistenceId>
+				<type>PNG</type>
+			</screenshot>
+		</descriptors>
+	</data>
+</reTestXmlDataContainer>
