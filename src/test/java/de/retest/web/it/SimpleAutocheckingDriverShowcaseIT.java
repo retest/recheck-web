@@ -1,8 +1,5 @@
 package de.retest.web.it;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import de.retest.web.selenium.AutocheckingRecheckDriver;
 import de.retest.web.selenium.By;
+import de.retest.web.testutils.PageFactory;
+import de.retest.web.testutils.PageFactory.Page;
 
 /*
  * Simple recheck-web showcase for a Chrome-based integration test. See other *IT classes for more examples.
@@ -37,8 +36,7 @@ public class SimpleAutocheckingDriverShowcaseIT {
 
 	@Test
 	public void index() throws Exception {
-		final Path showcasePath = Paths.get( "src/test/resources/pages/page-frame.html" );
-		driver.navigate().to( showcasePath.toUri().toURL().toString() );
+		driver.navigate().to( PageFactory.page( Page.PAGE_FRAME ) );
 
 		driver.findElement( By.id( "old-email-id" ) ).sendKeys( "me@retest.de" );
 

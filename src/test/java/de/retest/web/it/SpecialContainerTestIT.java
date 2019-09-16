@@ -1,7 +1,5 @@
 package de.retest.web.it;
 
-import java.nio.file.Paths;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -10,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
+import de.retest.web.testutils.PageFactory;
 
 class SpecialContainerTestIT {
 	WebDriver driver;
@@ -24,7 +23,7 @@ class SpecialContainerTestIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void testCenter( final WebDriver driver ) throws Exception {
 		this.driver = driver;
-		driver.get( Paths.get( "src/test/resources/pages/special-container.html" ).toUri().toURL().toString() );
+		driver.get( PageFactory.toPageUrlString( "special-container.html" ) );
 		re.startTest( "special-container-" + driver.getClass().getSimpleName() );
 
 		re.check( driver, "open" );
