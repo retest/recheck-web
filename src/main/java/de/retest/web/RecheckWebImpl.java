@@ -8,6 +8,10 @@ import de.retest.recheck.RecheckOptions;
 import de.retest.recheck.ui.descriptors.SutState;
 import de.retest.web.selenium.UnbreakableDriver;
 
+/**
+ * This class is specifically needed in conjunction with the {@link UnbreakableDriver}. For simple explicit calls to
+ * {@link #check(Object, String)}, a {@link RecheckImpl} suffices.
+ */
 public class RecheckWebImpl extends RecheckImpl {
 
 	private UnbreakableDriver driver;
@@ -22,13 +26,17 @@ public class RecheckWebImpl extends RecheckImpl {
 
 	@Override
 	public void check( final Object driver, final RecheckAdapter seleniumAdapter, final String currentStep ) {
-		this.driver = (UnbreakableDriver) driver;
+		if ( driver instanceof UnbreakableDriver ) {
+			this.driver = (UnbreakableDriver) driver;
+		}
 		super.check( driver, seleniumAdapter, currentStep );
 	}
 
 	@Override
 	public void check( final Object driver, final String currentStep ) {
-		this.driver = (UnbreakableDriver) driver;
+		if ( driver instanceof UnbreakableDriver ) {
+			this.driver = (UnbreakableDriver) driver;
+		}
 		super.check( driver, currentStep );
 	}
 
@@ -36,7 +44,8 @@ public class RecheckWebImpl extends RecheckImpl {
 	public SutState loadExpected( final File file ) {
 		final SutState result = super.loadExpected( file );
 		if ( driver == null ) {
-			throw new IllegalStateException( "Check should have been called before loadExpected!" );
+			throw new IllegalStateException(
+					"Must first call a check-method with an UnbreakableDriver before being able to load a Golden Master (needed for unbreakable tests)!" );
 		}
 		if ( result != null ) {
 			driver.setLastExpectedState( result.getRootElements().get( 0 ) );
