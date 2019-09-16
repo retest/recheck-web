@@ -108,7 +108,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		final Map<String, Map<String, Object>> tagMapping =
 				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes, webElement );
 		final RootElement lastChecked =
-				convert( tagMapping, driver.getCurrentUrl(), driver.getTitle(), shoot( driver ) );
+				convert( tagMapping, driver.getCurrentUrl(), driver.getTitle(), shoot( driver, webElement ) );
 
 		final FrameConverter frameConverter =
 				new FrameConverter( getQueryJS(), retestIdProvider, attributesProvider, defaultValueFinder );
