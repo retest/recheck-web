@@ -6,5 +6,5 @@ open resulted in:
 	div at 'html[1]/body[1]/div[3]':
 		id: expected="twoblocks", actual="changedblock"
 	p [Some text] at 'html[1]/body[1]/div[3]/p[1]':
-		text: expected="Some text", actual="Some changed text"	html[1]/body[1]/div[3]/p[2] was deleted!
-	html[1]/body[1]/h2[1] was inserted!
+		text: expected="Some text", actual="Some changed text"	html[1]/body[1]/h2[1] was inserted!
+	html[1]/body[1]/div[3]/p[2] was deleted!
