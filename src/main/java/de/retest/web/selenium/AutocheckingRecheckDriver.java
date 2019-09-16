@@ -38,6 +38,17 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 		checkNamingStrategy = RecheckWebOptions.builder().build().getCheckNamingStrategy();
 	}
 
+	/**
+	 * Use {@link #AutocheckingRecheckDriver(RemoteWebDriver, RecheckWebOptions)} instead.
+	 */
+	@Deprecated
+	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options,
+			final AutocheckingCheckNamingStrategy namingStrategy ) {
+		super( wrapped );
+		this.options = options;
+		checkNamingStrategy = RecheckWebOptions.builder().build().getCheckNamingStrategy();
+	}
+
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckWebOptions options ) {
 		super( wrapped );
 		this.options = options;
