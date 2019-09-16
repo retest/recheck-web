@@ -1,7 +1,5 @@
 package de.retest.web.it;
 
-import java.nio.file.Paths;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
@@ -11,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
+import de.retest.web.testutils.PageFactory;
 
 @Disabled( "We only use this to create an example.report file for review." )
 class WikipediaIT {
@@ -26,11 +25,9 @@ class WikipediaIT {
 
 	@Test
 	void myWikipediaTest() throws Exception {
-		// Switch to "expected" subfolder to restore original page.
-		final String url = Paths.get( "src/test/resources/pages/wikipedia/actual/wikipedia-characterization-test.html" )
-				.toUri().toURL().toString();
 		re.startTest();
-		driver.get( url );
+		// Switch to "expected" subfolder to restore original page.
+		driver.get( PageFactory.toPageUrlString( "wikipedia/actual/wikipedia-characterization-test.html" ) );
 		re.check( driver, "characterization-testing-page" );
 		re.capTest();
 	}

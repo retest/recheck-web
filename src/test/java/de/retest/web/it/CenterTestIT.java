@@ -1,7 +1,5 @@
 package de.retest.web.it;
 
-import java.nio.file.Paths;
-
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
+import de.retest.web.testutils.PageFactory;
 
 public class CenterTestIT {
 	WebDriver driver;
@@ -29,8 +28,7 @@ public class CenterTestIT {
 				"--window-size=1200,800" );
 		driver = new ChromeDriver( opts );
 
-		final String url = Paths.get( "src/test/resources/pages/centered.html" ).toUri().toURL().toString();
-		driver.get( url );
+		driver.get( PageFactory.toPageUrlString( "centered.html" ) );
 
 		re.check( driver, "open" );
 		re.capTest();
