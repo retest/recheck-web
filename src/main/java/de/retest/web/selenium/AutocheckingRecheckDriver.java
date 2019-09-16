@@ -29,7 +29,12 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 	}
 
 	/**
-	 * Use {@link #AutocheckingRecheckDriver(RemoteWebDriver, RecheckWebOptions)} instead.
+	 * @deprecated use {@link #AutocheckingRecheckDriver(RemoteWebDriver, RecheckWebOptions)} instead.
+	 *
+	 * @param wrapped
+	 *            The {@link RemoteWebDriver} to wrap.
+	 * @param options
+	 *            The {@link RecheckOptions} to use.
 	 */
 	@Deprecated
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options ) {
@@ -39,7 +44,14 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 	}
 
 	/**
-	 * Use {@link #AutocheckingRecheckDriver(RemoteWebDriver, RecheckWebOptions)} instead.
+	 * @deprecated use {@link #AutocheckingRecheckDriver(RemoteWebDriver, RecheckWebOptions)} instead.
+	 *
+	 * @param wrapped
+	 *            The {@link RemoteWebDriver} to wrap.
+	 * @param options
+	 *            The {@link RecheckOptions} to use.
+	 * @param namingStrategy
+	 *            The {@link AutocheckingCheckNamingStrategy} to use.
 	 */
 	@Deprecated
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options,
