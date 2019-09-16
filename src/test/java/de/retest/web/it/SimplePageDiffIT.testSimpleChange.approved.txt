@@ -1,0 +1,10 @@
+A detailed report will be created at 'C:\Users\Pascal Allion\eclipse-workspace\recheck-web\target\test-classes\retest\recheck\de.retest.web.it.SimplePageDiffIT.report'. You can review the details by using our CLI (https://github.com/retest/recheck.cli/) or GUI (https://retest.de/review/).
+
+1 check(s) in 'de.retest.web.it.SimplePageDiffIT' found the following difference(s):
+Test 'testSimpleChange' has 4 difference(s) in 1 state(s):
+open resulted in:
+	div at 'html[1]/body[1]/div[3]':
+		id: expected="twoblocks", actual="changedblock"
+	p [Some text] at 'html[1]/body[1]/div[3]/p[1]':
+		text: expected="Some text", actual="Some changed text"	html[1]/body[1]/div[3]/p[2] was deleted!
+	html[1]/body[1]/h2[1] was inserted!
