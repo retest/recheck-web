@@ -6,6 +6,7 @@ import static de.retest.recheck.ui.image.ImageUtils.resizeImage;
 import java.awt.image.BufferedImage;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,14 +26,21 @@ public class ScreenshotProvider {
 
 	private ScreenshotProvider() {}
 
-	public static BufferedImage shoot( final WebDriver driver ) {
+	public static BufferedImage shoot( final WebDriver driver, final WebElement element ) {
 		try {
+			if ( element != null ) {
+				return shootElement( driver, element );
+			}
 			final boolean viewportOnly = Boolean.getBoolean( VIEWPORT_ONLY_SCREENSHOT_PROPERTY );
 			return viewportOnly ? shootViewportOnly( driver ) : shootFullPage( driver );
 		} catch ( final Exception e ) {
 			logger.error( "Exception creating screenshot for check.", e );
 			return null;
 		}
+	}
+
+	private static BufferedImage shootElement( final WebDriver driver, final WebElement element ) {
+		return Shutterbug.shootElement( driver, element, USE_DEVICE_PIXEL_RATIO ).getImage();
 	}
 
 	private static BufferedImage shootFullPage( final WebDriver driver ) {
