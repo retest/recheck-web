@@ -10,7 +10,7 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WrapsElement;
+import org.openqa.selenium.internal.WrapsElement;
 
 public class WebElementWrapper implements WebElement, WrapsElement {
 
