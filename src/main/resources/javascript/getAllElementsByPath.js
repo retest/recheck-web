@@ -95,6 +95,9 @@ function transform(node) {
 
 	// extract *given* CSS style attributes
 	var style = window.getComputedStyle(node);
+	if (style == null) {
+		throw new Error("window.getComputedStyle() returned null for node " + node);
+	}
 	var parentStyle = [];
 	try {
 		parentStyle = window.getComputedStyle(node.parentNode);
