@@ -13,7 +13,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.internal.WrapsDriver;
 import org.openqa.selenium.interactions.HasInputDevices;
 import org.openqa.selenium.interactions.Interactive;
 import org.openqa.selenium.interactions.Keyboard;
@@ -26,11 +25,14 @@ import org.openqa.selenium.internal.FindsByLinkText;
 import org.openqa.selenium.internal.FindsByName;
 import org.openqa.selenium.internal.FindsByTagName;
 import org.openqa.selenium.internal.FindsByXPath;
+import org.openqa.selenium.internal.WrapsDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.web.RecheckWebImpl;
+import de.retest.web.util.SeleniumWrapperUtil;
+import de.retest.web.util.SeleniumWrapperUtil.WrapperOf;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -269,8 +271,8 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 
 	@Override
 	public WebDriver getWrappedDriver() {
-		if ( wrappedDriver instanceof WrapsDriver ) {
-			return ((WrapsDriver) wrappedDriver).getWrappedDriver();
+		if ( SeleniumWrapperUtil.instanceOf( WrapperOf.DRIVER, wrappedDriver ) ) {
+			return (WebDriver) SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, wrappedDriver );
 		}
 		return wrappedDriver;
 	}

@@ -14,8 +14,6 @@ import java.util.Set;
 import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.internal.WrapsDriver;
-import org.openqa.selenium.internal.WrapsElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.slf4j.Logger;
@@ -75,8 +73,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public Set<RootElement> convert( final Object toVerify ) {
-		if ( toVerify instanceof WrapsElement ) {
-			return convert( ((WrapsElement) toVerify).getWrappedElement() );
+		if ( SeleniumWrapperUtil.instanceOf( WrapperOf.ELEMENT, toVerify ) ) {
+			return convert( SeleniumWrapperUtil.getWrapped( WrapperOf.ELEMENT, toVerify ) );
 		}
 		if ( toVerify instanceof RemoteWebElement ) {
 			return convertWebElement( (RemoteWebElement) toVerify );
@@ -84,8 +82,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		if ( toVerify instanceof UnbreakableDriver ) {
 			return convertWebDriver( (UnbreakableDriver) toVerify );
 		}
-		if ( toVerify instanceof WrapsDriver ) {
-			return convert( ((WrapsDriver) toVerify).getWrappedDriver() );
+		if ( SeleniumWrapperUtil.instanceOf( WrapperOf.DRIVER, toVerify ) ) {
+			return convert( SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, toVerify ) );
 		}
 		if ( toVerify instanceof RemoteWebDriver ) {
 			return convertWebDriver( (RemoteWebDriver) toVerify );
