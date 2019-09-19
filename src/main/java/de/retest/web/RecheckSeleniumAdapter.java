@@ -28,6 +28,8 @@ import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
 import de.retest.recheck.util.RetestIdProviderUtil;
 import de.retest.web.mapping.PathsToWebDataMapping;
 import de.retest.web.selenium.UnbreakableDriver;
+import de.retest.web.util.SeleniumWrapperUtil;
+import de.retest.web.util.SeleniumWrapperUtil.WrapperOf;
 
 public class RecheckSeleniumAdapter implements RecheckAdapter {
 
@@ -53,8 +55,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public boolean canCheck( final Object toVerify ) {
-		if ( toVerify instanceof WrapsElement ) {
-			return canCheck( ((WrapsElement) toVerify).getWrappedElement() );
+		if ( SeleniumWrapperUtil.instanceOf( WrapperOf.ELEMENT, toVerify ) ) {
+			return canCheck( SeleniumWrapperUtil.getWrapped( WrapperOf.ELEMENT, toVerify ) );
 		}
 		if ( toVerify instanceof RemoteWebElement ) {
 			return true;
@@ -62,8 +64,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		if ( toVerify instanceof UnbreakableDriver ) {
 			return true;
 		}
-		if ( toVerify instanceof WrapsDriver ) {
-			return canCheck( ((WrapsDriver) toVerify).getWrappedDriver() );
+		if ( SeleniumWrapperUtil.instanceOf( WrapperOf.DRIVER, toVerify ) ) {
+			return canCheck( SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, toVerify ) );
 		}
 		if ( toVerify instanceof RemoteWebDriver ) {
 			return true;
