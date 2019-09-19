@@ -271,7 +271,7 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 
 	@Override
 	public WebDriver getWrappedDriver() {
-		if ( SeleniumWrapperUtil.instanceOf( WrapperOf.DRIVER, wrappedDriver ) ) {
+		if ( SeleniumWrapperUtil.isWrapper( WrapperOf.DRIVER, wrappedDriver ) ) {
 			return (WebDriver) SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, wrappedDriver );
 		}
 		return wrappedDriver;

@@ -17,13 +17,13 @@ class SeleniumWrapperUtilTest {
 	@Test
 	void should_detect_if_object_is_instance_of_wraps_element() {
 		final Object someObject = new Object();
-		assertThat( SeleniumWrapperUtil.instanceOf( WrapperOf.ELEMENT, someObject ) ).isFalse();
+		assertThat( SeleniumWrapperUtil.isWrapper( WrapperOf.ELEMENT, someObject ) ).isFalse();
 
 		final org.openqa.selenium.WrapsElement newWrapper = mock( org.openqa.selenium.WrapsElement.class );
-		assertThat( SeleniumWrapperUtil.instanceOf( WrapperOf.ELEMENT, newWrapper ) ).isTrue();
+		assertThat( SeleniumWrapperUtil.isWrapper( WrapperOf.ELEMENT, newWrapper ) ).isTrue();
 
 		final WrapsElement oldWrapper = mock( WrapsElement.class );
-		assertThat( SeleniumWrapperUtil.instanceOf( WrapperOf.ELEMENT, oldWrapper ) ).isTrue();
+		assertThat( SeleniumWrapperUtil.isWrapper( WrapperOf.ELEMENT, oldWrapper ) ).isTrue();
 	}
 
 	@Test
@@ -43,13 +43,13 @@ class SeleniumWrapperUtilTest {
 	@Test
 	void should_detect_if_object_is_instance_of_wraps_driver() {
 		final Object someObject = new Object();
-		assertThat( SeleniumWrapperUtil.instanceOf( WrapperOf.DRIVER, someObject ) ).isFalse();
+		assertThat( SeleniumWrapperUtil.isWrapper( WrapperOf.DRIVER, someObject ) ).isFalse();
 
 		final org.openqa.selenium.WrapsDriver newWrapper = mock( org.openqa.selenium.WrapsDriver.class );
-		assertThat( SeleniumWrapperUtil.instanceOf( WrapperOf.DRIVER, newWrapper ) ).isTrue();
+		assertThat( SeleniumWrapperUtil.isWrapper( WrapperOf.DRIVER, newWrapper ) ).isTrue();
 
 		final WrapsDriver oldWrapper = mock( WrapsDriver.class );
-		assertThat( SeleniumWrapperUtil.instanceOf( WrapperOf.DRIVER, oldWrapper ) ).isTrue();
+		assertThat( SeleniumWrapperUtil.isWrapper( WrapperOf.DRIVER, oldWrapper ) ).isTrue();
 	}
 
 	@Test

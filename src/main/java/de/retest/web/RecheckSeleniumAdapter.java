@@ -53,7 +53,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public boolean canCheck( final Object toVerify ) {
-		if ( SeleniumWrapperUtil.instanceOf( WrapperOf.ELEMENT, toVerify ) ) {
+		if ( SeleniumWrapperUtil.isWrapper( WrapperOf.ELEMENT, toVerify ) ) {
 			return canCheck( SeleniumWrapperUtil.getWrapped( WrapperOf.ELEMENT, toVerify ) );
 		}
 		if ( toVerify instanceof RemoteWebElement ) {
@@ -62,7 +62,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		if ( toVerify instanceof UnbreakableDriver ) {
 			return true;
 		}
-		if ( SeleniumWrapperUtil.instanceOf( WrapperOf.DRIVER, toVerify ) ) {
+		if ( SeleniumWrapperUtil.isWrapper( WrapperOf.DRIVER, toVerify ) ) {
 			return canCheck( SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, toVerify ) );
 		}
 		if ( toVerify instanceof RemoteWebDriver ) {
@@ -73,7 +73,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public Set<RootElement> convert( final Object toVerify ) {
-		if ( SeleniumWrapperUtil.instanceOf( WrapperOf.ELEMENT, toVerify ) ) {
+		if ( SeleniumWrapperUtil.isWrapper( WrapperOf.ELEMENT, toVerify ) ) {
 			return convert( SeleniumWrapperUtil.getWrapped( WrapperOf.ELEMENT, toVerify ) );
 		}
 		if ( toVerify instanceof RemoteWebElement ) {
@@ -82,7 +82,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		if ( toVerify instanceof UnbreakableDriver ) {
 			return convertWebDriver( (UnbreakableDriver) toVerify );
 		}
-		if ( SeleniumWrapperUtil.instanceOf( WrapperOf.DRIVER, toVerify ) ) {
+		if ( SeleniumWrapperUtil.isWrapper( WrapperOf.DRIVER, toVerify ) ) {
 			return convert( SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, toVerify ) );
 		}
 		if ( toVerify instanceof RemoteWebDriver ) {
