@@ -59,7 +59,7 @@
 		<url>https://github.com/retest/recheck-web/</url>
 		<connection>scm:git:git@github.com:retest/recheck-web.git</connection>
 		<developerConnection>scm:git:git@github.com:retest/recheck-web.git</developerConnection>
-		<tag>v1.5.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
@@ -109,7 +109,7 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-yaml</artifactId>
-			<version>2.9.9</version>
+			<version>2.9.10</version>
 		</dependency>
 
 		<dependency>
