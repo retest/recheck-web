@@ -22,30 +22,53 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 
 	private RecheckWebImpl re;
 	private final RecheckOptions options;
-	private final AutocheckingCheckNamingStrategy namingStrategy;
+	private final AutocheckingCheckNamingStrategy checkNamingStrategy;
 
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped ) {
 		this( wrapped, RecheckWebOptions.builder().build() );
 	}
 
 	/**
-	 * Use {@link #AutocheckingRecheckDriver(RemoteWebDriver, RecheckWebOptions)} instead.
+	 * @deprecated use {@link #AutocheckingRecheckDriver(RemoteWebDriver, RecheckWebOptions)} instead.
+	 *
+	 * @param wrapped
+	 *            The {@link RemoteWebDriver} to wrap.
+	 * @param options
+	 *            The {@link RecheckOptions} to use.
 	 */
 	@Deprecated
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options ) {
 		super( wrapped );
 		this.options = options;
-		namingStrategy = RecheckWebOptions.builder().build().getNamingStrategy();
+		checkNamingStrategy = RecheckWebOptions.builder().build().getCheckNamingStrategy();
+	}
+
+	/**
+	 * @deprecated use {@link #AutocheckingRecheckDriver(RemoteWebDriver, RecheckWebOptions)} instead.
+	 *
+	 * @param wrapped
+	 *            The {@link RemoteWebDriver} to wrap.
+	 * @param options
+	 *            The {@link RecheckOptions} to use.
+	 * @param namingStrategy
+	 *            The {@link AutocheckingCheckNamingStrategy} to use.
+	 */
+	@Deprecated
+	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options,
+			final AutocheckingCheckNamingStrategy namingStrategy ) {
+		super( wrapped );
+		this.options = options;
+		checkNamingStrategy = RecheckWebOptions.builder().build().getCheckNamingStrategy();
 	}
 
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckWebOptions options ) {
 		super( wrapped );
 		this.options = options;
-		namingStrategy = options.getNamingStrategy();
+		checkNamingStrategy = options.getCheckNamingStrategy();
 	}
 
 	public void startTest() {
-		namingStrategy.nextTest();
+		checkNamingStrategy.nextTest();
 		if ( re == null ) {
 			re = new RecheckWebImpl( options );
 		}
@@ -64,7 +87,7 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 	}
 
 	public void cap() {
-		namingStrategy.nextTest();
+		checkNamingStrategy.nextTest();
 		re.cap();
 	}
 
@@ -77,7 +100,7 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 	@Override
 	public void close() {
 		// Is this sensible? What about tests using separate sessions?
-		namingStrategy.nextTest();
+		checkNamingStrategy.nextTest();
 		re.cap();
 		super.close();
 	}
@@ -86,7 +109,7 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 	public void quit() {
 		try {
 			// Is this sensible? What about tests using separate sessions?
-			namingStrategy.nextTest();
+			checkNamingStrategy.nextTest();
 			re.cap();
 		} finally {
 			super.quit();
@@ -129,14 +152,14 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 		if ( re == null ) {
 			startTest();
 		}
-		re.check( this, namingStrategy.getUniqueCheckName( action, target, params ) );
+		re.check( this, checkNamingStrategy.getUniqueCheckName( action, target, params ) );
 	}
 
 	void check( final String action ) {
 		if ( re == null ) {
 			startTest();
 		}
-		re.check( this, namingStrategy.getUniqueCheckName( action ) );
+		re.check( this, checkNamingStrategy.getUniqueCheckName( action ) );
 	}
 
 	@Override

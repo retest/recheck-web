@@ -31,7 +31,7 @@ public class PageFactory {
 		}
 	}
 
-	private static final String toPageUrlString( final String relativePath ) {
+	public static final String toPageUrlString( final String relativePath ) {
 		try {
 			return Paths.get( BASE_PATH, relativePath ).toUri().toURL().toString();
 		} catch ( final MalformedURLException e ) {

@@ -19,12 +19,12 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WrapsDriver;
-import org.openqa.selenium.WrapsElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.internal.WrapsDriver;
+import org.openqa.selenium.internal.WrapsElement;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -56,6 +56,22 @@ class RecheckSeleniumAdapterTest {
 	void canCheck_should_accept_recheck_drivers( final Class<WrapsDriver> clazz ) {
 		final WrapsDriver mock = mock( clazz );
 		when( mock.getWrappedDriver() ).thenReturn( mock( RemoteWebDriver.class ) );
+		assertThat( cut.canCheck( mock ) ).isTrue();
+	}
+
+	@ParameterizedTest
+	@ValueSource( classes = { WrapsDriver.class, org.openqa.selenium.WrapsDriver.class } )
+	void canCheck_should_accept_new_and_old_driver_wrappers( final Class<?> clazz ) {
+		final org.openqa.selenium.WrapsDriver mock = (org.openqa.selenium.WrapsDriver) mock( clazz );
+		when( mock.getWrappedDriver() ).thenReturn( mock( RemoteWebDriver.class ) );
+		assertThat( cut.canCheck( mock ) ).isTrue();
+	}
+
+	@ParameterizedTest
+	@ValueSource( classes = { WrapsElement.class, org.openqa.selenium.WrapsElement.class } )
+	void canCheck_should_accept_new_and_old_element_wrappers( final Class<?> clazz ) {
+		final org.openqa.selenium.WrapsElement mock = (org.openqa.selenium.WrapsElement) mock( clazz );
+		when( mock.getWrappedElement() ).thenReturn( mock( RemoteWebElement.class ) );
 		assertThat( cut.canCheck( mock ) ).isTrue();
 	}
 
