@@ -66,6 +66,14 @@ function isDisabled(node) {
 	return node.disabled;
 }
 
+//extract *given* CSS style attributes
+function getComputedStyleSafely(node) {
+	try {
+		return window.getComputedStyle(node) || [];
+	} catch (err) {}
+	return [];
+}
+
 function transform(node) {
 	var extractedAttributes = {
 		"tagName": node.tagName.toLowerCase(),
@@ -93,12 +101,8 @@ function transform(node) {
 	extractedAttributes["disabled"] = isDisabled(node);
 	extractedAttributes["read-only"] = node.readOnly;
 
-	// extract *given* CSS style attributes
-	var style = window.getComputedStyle(node);
-	var parentStyle = [];
-	try {
-		parentStyle = window.getComputedStyle(node.parentNode);
-	} catch (err) {}
+	var style = getComputedStyleSafely(node);
+	var parentStyle = getComputedStyleSafely(node.parentNode);
 	for (var i = 0; i < cssAttributes.length; i++) {
 		var attributeName = cssAttributes[i];
 		if (!extractedAttributes[attributeName]) {
