@@ -234,6 +234,9 @@
 							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
 						</manifest>
+						<manifestEntries>
+							<Automatic-Module-Name>de.retest.web</Automatic-Module-Name>
+						</manifestEntries>
 					</archive>
 				</configuration>
 			</plugin>
