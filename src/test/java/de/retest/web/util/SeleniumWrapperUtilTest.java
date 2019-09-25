@@ -1,10 +1,12 @@
 package de.retest.web.util;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.internal.WrapsDriver;
@@ -29,7 +31,6 @@ class SeleniumWrapperUtilTest {
 	@Test
 	void should_get_wrapped_element() throws Exception {
 		final WebElement wrapped = mock( WebElement.class );
-		assertThat( SeleniumWrapperUtil.getWrapped( WrapperOf.ELEMENT, wrapped ) ).isSameAs( wrapped );
 
 		final org.openqa.selenium.WrapsElement newWrapper = mock( org.openqa.selenium.WrapsElement.class );
 		when( newWrapper.getWrappedElement() ).thenReturn( wrapped );
@@ -55,7 +56,6 @@ class SeleniumWrapperUtilTest {
 	@Test
 	void should_get_wrapped_driver() throws Exception {
 		final WebDriver wrapped = mock( WebDriver.class );
-		assertThat( SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, wrapped ) ).isSameAs( wrapped );
 
 		final org.openqa.selenium.WrapsDriver newWrapper = mock( org.openqa.selenium.WrapsDriver.class );
 		when( newWrapper.getWrappedDriver() ).thenReturn( wrapped );
@@ -66,4 +66,28 @@ class SeleniumWrapperUtilTest {
 		assertThat( SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, oldWrapper ) ).isSameAs( wrapped );
 	}
 
+	@Test
+	void getWrapped_should_not_silently_ignore_exceptions_thrown_by_method() {
+		final WrapsElement elementThrows = mock( WrapsElement.class );
+		when( elementThrows.getWrappedElement() ).thenThrow( new NoSuchElementException( "No element found" ) );
+
+		assertThatThrownBy( () -> SeleniumWrapperUtil.getWrapped( WrapperOf.ELEMENT, elementThrows ) )
+				.hasCauseInstanceOf( NoSuchElementException.class );
+	}
+
+	@Test
+	void getWrapped_should_not_loop_element_with_same_object() {
+		final Object notElement = mock( Object.class );
+
+		assertThatThrownBy( () -> SeleniumWrapperUtil.getWrapped( WrapperOf.ELEMENT, notElement ) )
+				.isInstanceOf( IllegalArgumentException.class );
+	}
+
+	@Test
+	void getWrapped_should_not_loop_driver_with_same_object() {
+		final Object notElement = mock( Object.class );
+
+		assertThatThrownBy( () -> SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, notElement ) )
+				.isInstanceOf( IllegalArgumentException.class );
+	}
 }
