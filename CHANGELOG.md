@@ -27,12 +27,22 @@ Table of Contents
 
 ### Bug Fixes
 
+* Fix `StackOverflowError` if a `WrapsElement` (e.g. `@FindBy`) is checked that throws an exception.
+
 ### New Features
 
 ### Improvements
 
 
 --------------------------------------------------------------------------------
+
+
+[1.5.1] (2019-09-23)
+--------------------
+
+### Bug Fixes
+
+* Fix [#355](https://github.com/retest/recheck-web/issues/355) when an exception is thrown in JavaScript if the element has no parent. 
 
 
 [1.5.0] (2019-09-12)
