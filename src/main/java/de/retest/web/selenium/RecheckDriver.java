@@ -16,10 +16,6 @@ public class RecheckDriver extends AutocheckingRecheckDriver {
 		super( wrapped );
 	}
 
-	/**
-	 * Use {@link #RecheckDriver(RemoteWebDriver, RecheckWebOptions)} instead.
-	 */
-	@Deprecated
 	public RecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options ) {
 		super( wrapped, options );
 	}
