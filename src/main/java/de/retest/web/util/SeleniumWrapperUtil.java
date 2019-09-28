@@ -1,5 +1,8 @@
 package de.retest.web.util;
 
+import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
+
 import lombok.Getter;
 
 /**
@@ -41,21 +44,37 @@ public class SeleniumWrapperUtil {
 	}
 
 	/**
+	 * Extracts the wrapped element or driver from a given object while implementing backwards compatibility to the
+	 * internal Selenium API. It is advised to call {@link #isWrapper(WrapperOf, Object)} before calling this method.
+	 * 
 	 * @param w
 	 *            The wrapper type.
 	 * @param o
 	 *            The object to be used.
-	 * @return The wrapped element or driver from the given object if it is instance of the selected type, otherwise the
-	 *         object itself.
+	 * @return The wrapped element or driver from the given object if it is instance of the selected type.
+	 * 
+	 * @throws RuntimeException
+	 *             If the <code>getWrapped</code> method throws an exception.
+	 * @throws UnsupportedOperationException
+	 *             If the <code>getWrapped</code> method cannot be invoked or the object does not wrap an instance of
+	 *             the selected type.
 	 */
 	public static Object getWrapped( final WrapperOf w, final Object o ) {
 		final Class<?> clazz = getWrapperClass( w, o );
-		if ( clazz != null ) {
-			try {
-				return clazz.getMethod( w.getWrapperMethodName() ).invoke( o );
-			} catch ( final ReflectiveOperationException e ) {}
+		if ( clazz == null ) {
+			throw new IllegalArgumentException( "Type '" + o.getClass() + "' is not instance of any of "
+					+ Arrays.toString( w.getWrapperClassNames() ) + "." );
 		}
-		return o;
+		try {
+			return clazz.getMethod( w.getWrapperMethodName() ).invoke( o );
+		} catch ( final InvocationTargetException e ) {
+			throw new RuntimeException(
+					"Failed to invoke " + o.getClass().getSimpleName() + "#" + w.getWrapperMethodName() + ".",
+					e.getTargetException() );
+		} catch ( final NoSuchMethodException | IllegalAccessException e ) {
+			throw new UnsupportedOperationException(
+					"Failed to invoke " + o.getClass().getSimpleName() + "#" + w.getWrapperMethodName() + ".", e );
+		}
 	}
 
 	private static Class<?> getWrapperClass( final WrapperOf w, final Object o ) {
