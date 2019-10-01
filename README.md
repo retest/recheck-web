@@ -16,14 +16,14 @@
 
 Imagine you could:
 
-1. Have your end-to-end tests actually fail when the website is broken or unusable
+1. Have your end-to-end tests actually fail when the website is broken or unusable (including visual regressions)
 2. Have your tests _NOT_ fail when something as insignificant as an element ID changes
 3. Maintain your tests with minimal effort
 
 ***recheck-web*** gives you these superpowers, and more.
 
 
-## Table of contents
+## Table of Contents
 
 - [Example](#example)
 - [Benefits](#benefits)
@@ -47,27 +47,27 @@ assertEquals(driver.findElement(By.tagName("h4")).getText(), "Success!");
 
 If the website e.g. looses _all_ of its CSS, thus rendering it essentially broken for a user, this test will still pass. However, if you change an invisible attribute that is irrelevant for a user, e.g. the element ID `username`, this test will break.
 
-By simply wrapping the driver in a `RecheckDriver`, all of this changes. When the looks of the website changes, the test will fail. And if the element ID changes, the test will still execute, albeit report the change—unless you chose to ignore it e.g. by specifying `attribute=id` in your `recheck.ignore` file. 
+By simply wrapping the driver in a `RecheckDriver`, all of this changes. When the looks of the website changes, the test will fail. And if the element ID changes, the test will still execute, albeit report the change—unless you chose to ignore it e.g. by specifying `attribute=id` in your `recheck.ignore` file (a file similar to Git's `.gitignore`). 
 
 
 ## Benefits
 
 With ***recheck-web*** you can:
 * Easily create and maintain checks in your tests
-* _Semantically_ compare all of the contents, tags and CSS attributes of websites or WebElements *after rendering*
-* Easily ignore volatile elements, attributes or sections, using a [git-like syntax](https://docs.retest.de/recheck/how-ignore-works/)
-* Automatically maintain Golden Masters (and [soon your tests](https://github.com/retest/recheck.cli/issues/141)) with intended changes, using our [GUI](https://retest.de/review/) or [CLI](https://github.com/retest/recheck.cli)
+* Perform _deep_ visual testing that goes beyond the UI and doesn't fail with every shifted pixel, i.e. _semantically_ compare all of the contents, tags and CSS attributes of websites or `WebElement`s *after rendering*
+* Easily ignore volatile elements, attributes or sections, using a [Git-like syntax](https://docs.retest.de/recheck/usage/filter/)
+* Automatically maintain Golden Masters (and soon [auto-heal your tests](https://github.com/retest/recheck.cli/issues/141)) with intended changes, using our [GUI](https://retest.de/review/) or [CLI](https://github.com/retest/recheck.cli)
 * Be sure no unexpected change goes unnoticed
 * Reuse your existing tests and infrastructure, as ***recheck-web*** operates on top of Selenium and is compatible with many test frameworks
 * Use a virtual constant `retestId` to reference elements, instead of element IDs, names, XPaths and other attributes that are prone to changes
-* Have virtually [unbreakable](https://retest.de/feature-unbreakable-selenium/) tests
+* Have virtually [unbreakable Selenium tests](https://retest.de/feature-unbreakable-selenium/)
 
 
-## How it Works
+## How It Works
 
-Automated regression tests are not tests, in the sense that they don't aim to find existing bugs. Instead, they guard against unintended changes. As such, they are an extension to the version control—but todays test tools [are a crutch](https://hackernoon.com/assertions-considered-harmful-d3770d818054).
+Automated regression tests are not tests, in the sense that they don't aim to find existing bugs. Instead, they guard against unintended changes. As such, they are an extension to version control—but today's test tools are [not optimized for this work flow](https://hackernoon.com/assertions-considered-harmful-d3770d818054).
 
-recheck takes this to the next level. You can explicitly or implicitly create Golden Masters (essentially a copy of the website) and semantically compare against these. Irrelevant changes are easy to ignore and the Golden Masters are effortless to update. In case of critical changes that would otherwise break your tests, ***recheck-web*** can now peek into the Golden Master, find the element there, and based on additional attributes still identify the changed element on the current website.
+recheck takes this to the next level. You can explicitly or implicitly create Golden Masters (essentially a copy of the rendered website) and semantically compare against these. Irrelevant changes are easy to ignore and the Golden Masters are effortless to update. In case of critical changes that would otherwise break your tests, ***recheck-web*** can now peek into the Golden Master, find the element there, and (based on additional attributes) still identify the changed element on the current website.
 
 ![best-match copy](https://user-images.githubusercontent.com/1871610/65941692-e9dfdd80-e42b-11e9-8d07-d3284ea57f12.png)
 
@@ -103,9 +103,9 @@ For explicit checks in your tests:
 - Make the test fail on changes via `re.capTest()`
 - Produce a `report` file via `re.cap()` (e.g. in your `@After`), so changes can easily be applied to the Golden Masters 
 
-A complete simple example test with explicit checks can be found in the [SimpleRecheckShowcaseIT](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/it/SimpleRecheckShowcaseIT.java).
+A simple example test with explicit checks can be found in the [SimpleRecheckShowcaseIT](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/it/SimpleRecheckShowcaseIT.java).
 
-A complete tutorial about how to setup and use ***recheck-web*** like this can e.g. be found on [DZone](https://dzone.com/articles/golden-master-testing-with-recheck-web) together with a [follow-up article](https://dzone.com/articles/making-your-selenium-tests-almost-unbreakable) about how to make your Selenium tests almost "unbreakable".
+A complete tutorial about how to setup and use ***recheck-web*** like this can e.g. be found in [our documentation](https://docs.retest.de/recheck-web/tutorial/explicit-checks/).
 
 
 ### Implicit Checks
@@ -135,23 +135,32 @@ java.lang.AssertionError: No Golden Master found. First time test was run? Creat
 
 ```
 
-Running such a test will also create a folder structure containing a `retest.xml` file and a screenshot per check, the location of both depends on your configuration, see [below](#how-can-i-configure-the-location-of-the-golden-master-files). This contains the Golden Master against which future executions of this test are compared. If you use version control, you should commit those files. Note that the `retest.xml` contains a full description of the _rendered_ website, including all relevant information such as text, source, etc. and _all_ non-default CSS attributes such as font and margin. Although these files may become large, they are smaller than the original and by ignoring specific (or all) attributes, you can configure how large they are. Anyways, storing a few kilobyte extra is much cheaper than the manpower needed to manually specify checks.
+Running such a test will also create a folder structure containing a `retest.xml` file and a screenshot per check, the location of both depends on your configuration, see [below](#how-can-i-configure-the-location-of-the-golden-master-files). This contains the Golden Master against which future executions of this test are compared. If you use version control, you should commit those files. Note that the `retest.xml` contains a full description of the _rendered_ website, including all relevant information such as text, source, etc. and _all_ non-default CSS attributes such as font and margin. Although these files may become large, they are smaller than the original and by ignoring specific (or all) attributes, you can configure how large they are. Anyways, storing a few kilobyte extra is much cheaper than the manpower needed to manually specify such checks.
 
 Executing the same test again should not result in any differences. But after changing the website and executing the test, you should see the test reporting your changes.
 
 
 ### Help, I have too many changes! What do I do?
 
-You need to decide what the goal of your test setup is. With traditional assertions, you ignore more than 99% of the changes. Instead, much like Git without an ignore file, ***recheck-web*** will report _every_ change. So it is up to you, to ignore changes that are not of interest for you. ***recheck-web*** can be used for cross-browser and cross-device testing, visual regression testing and functional regression testing. ***recheck-web*** is just a tool, it depends on you how you want to use it.
+You need to decide what the goal of your test setup is. With traditional assertions, you ignore more than 99% of the changes. Instead, much like Git without an ignore file, ***recheck-web*** will report _every_ change. So it is up to you to ignore changes that are not of interest for you. ***recheck-web*** can be used for cross-browser and cross-device testing, deep visual regression testing and functional regression testing. ***recheck-web*** is just a tool, it depends on you how you want to use it.
 
 A good starting point are the [pre-defined filter files](https://github.com/retest/recheck/tree/master/src/main/resources/filter/web) in recheck. [Ignoring positioning](https://github.com/retest/recheck/blob/master/src/main/resources/filter/web/positioning.filter) is usually a good idea. If you want to know more about the ways to maintain your ignore file or create your own filters, refer to the [detailed documentation](https://docs.retest.de/recheck/usage/filter/).
 
-If you didn't change anything between two executions, you can use the recheck CLI and e.g. call `recheck ignore --all` to simply add all changes as ignore rules to your `recheck.ignore` file.
+If you didn't change anything between two executions, you can use our CLI and e.g. call `recheck ignore --all` to simply add all changes as ignore rules to your `recheck.ignore` file.
 
 
 ### I still have too many changes! What do I do?
 
-You can use filters in conjunction with the [CLI](https://github.com/retest/recheck.cli/) or the [GUI](https://retest.de/review/) to quickly drill down on what changes are relevant to you. E.g. ignore changes to positioning, CSS and invisible attributes and see only changes in content using `recheck diff --filter positioning --filter	style-attributes --filter invisible-attributes`. If you have trouble with this, please [contact us](https://github.com/retest/recheck-web/issues), so we can learn on how to improve this for you.
+You can use filters in conjunction with the [CLI](https://github.com/retest/recheck.cli/) or the [GUI](https://retest.de/review/) to quickly drill down on what changes are relevant to you. E.g. ignore changes to positioning, CSS and invisible attributes, and see only changes in content using:
+
+```text
+recheck diff --exclude positioning.filter \
+        --exclude style-attributes.filter \
+        --exclude invisible-attributes.filter \
+        tests.report
+```
+
+If you have trouble with this, please [contact us](https://github.com/retest/recheck-web/issues), so we can learn on how to improve this for you.
 
 
 ### How can I configure the location of the Golden Master files?
@@ -163,7 +172,7 @@ RecheckOptions opts = RecheckOptions.builder().projectLayout(new CustomProjectLa
 driver = new RecheckDriver( new ChromeDriver(), opts );
 ```
 
-The default project layout is [Maven](https://github.com/retest/recheck/blob/master/src/main/java/de/retest/recheck/persistence/MavenProjectLayout.java) and will create Golden Master files under `src/test/resources` and reports as `${TEST_CLASS_NAME}.report` in your `target/test-classes` folder. A [Gradle layout](https://github.com/retest/recheck/blob/master/src/main/java/de/retest/recheck/persistence/GradleProjectLayout.java) is also available. If you want your Golden Master files and reports to be located somewhere different, implementing this interface is straight forward.
+The default project layout is [Maven](https://github.com/retest/recheck/blob/master/src/main/java/de/retest/recheck/persistence/MavenProjectLayout.java) and will create Golden Master files under `src/test/resources/retest/recheck/` and reports as `${TEST_CLASS_NAME}.report` in your `target/test-classes/retest/recheck/` folder. A [Gradle layout](https://github.com/retest/recheck/blob/master/src/main/java/de/retest/recheck/persistence/GradleProjectLayout.java) is also available. If you want your Golden Master files and reports to be located somewhere different, implementing this interface is straightforward.
 
 The [naming strategy](https://github.com/retest/recheck/blob/master/src/main/java/de/retest/recheck/persistence/NamingStrategy.java) is responsible for automagically retrieving names for the suite and test. The default implementation does so based on the [JUnit names](https://github.com/retest/recheck/blob/master/src/main/java/de/retest/recheck/persistence/ClassAndMethodBasedNamingStrategy.java). An [explicit naming strategy](https://github.com/retest/recheck/blob/master/src/main/java/de/retest/recheck/persistence/ExplicitMutableNamingStrategy.java) with setters and getters is also available. 
 
@@ -175,9 +184,9 @@ You can open the `report` using [***review***](https://retest.de/review/) or the
 
 ### What does the recheck warning mean?
 
-***recheck-web*** can identify elements even after the identifying attribute has changed. So assume you are using, e.g. an HTML `id` property to identify an element within your Selenium test. Now, assume that this `id` property changes within the HTML. With traditional Selenium, your test would break, resulting in an `NoSuchElementException`. But using e.g. the `RecheckDriver` as a drop-in replacement/wrapper of your normal driver, ***recheck-web*** magically finds the element and logs a warning such as
+***recheck-web*** can identify elements even after the identifying attribute has changed. So assume you are using, e.g. an HTML `id` property to identify an element within your Selenium test. Now, assume that this `id` property changes within the HTML. With traditional Selenium, your test would break, resulting in a `NoSuchElementException`. But using e.g. the `RecheckDriver` as a drop-in replacement/wrapper of your normal driver, ***recheck-web*** magically finds the element and logs a warning such as:
 
-```
+```text
 *************** recheck warning ***************
 The HTML id attribute used for element identification changed from 'username' to 'user'.
 retest identified the element based on the persisted Golden Master.
@@ -208,7 +217,7 @@ Yes, ***recheck-web*** easily integrates into your CI/CD environment. I can even
 
 ### How can I access the report files on my CI/CD server?
 
-If you cannot easily the reports on your CI/CD server, test reports can be easily uploaded to [***rehub***](https://retest.de/rehub/). To upload reports you will need a [retest account](https://sso.prod.cloud.retest.org/auth/realms/customer/account).
+If you cannot easily the reports on your CI/CD server, test reports can be easily uploaded to [***rehub***](https://retest.de/rehub/). To upload reports, you will need a [retest account](https://sso.prod.cloud.retest.org/auth/realms/customer/account).
 
 The first step is to modify the `setUp()` method in our existing test case to enable the upload to ***rehub***. There are two ways to achieve this:
 
@@ -241,6 +250,3 @@ A detailed tutorial can be found in our [documentation](https://docs.retest.de/r
 ## License
 
 This project is licensed under the [AGPL license](LICENSE).
-
-
-
