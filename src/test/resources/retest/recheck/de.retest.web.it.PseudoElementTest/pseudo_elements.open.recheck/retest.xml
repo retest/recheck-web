@@ -1,0 +1,1434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.9.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+	<data xsi:type="sutState">
+		<descriptors retestId="html" screenId="1" screen="" title="">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="absolute-outline" xsi:type="outlineAttribute">
+						<x>0</x>
+						<y>0</y>
+						<height>185</height>
+						<width>1366</width>
+					</attribute>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>0</x>
+						<y>0</y>
+						<height>185</height>
+						<width>1366</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">html[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="type" xsi:type="stringAttribute">html</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>border-image-outset</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">serif</value>
+					</entry>
+					<entry>
+						<key>shown</key>
+						<value xsi:type="xsd:string">true</value>
+					</entry>
+					<entry>
+						<key>unicode-bidi</key>
+						<value xsi:type="xsd:string">isolate</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<containedElements retestId="body">
+				<identifyingAttributes>
+					<attributes>
+						<attribute key="absolute-outline" xsi:type="outlineAttribute">
+							<x>8</x>
+							<y>16</y>
+							<height>153</height>
+							<width>1350</width>
+						</attribute>
+						<attribute key="outline" xsi:type="outlineAttribute">
+							<x>8</x>
+							<y>16</y>
+							<height>-32</height>
+							<width>-16</width>
+						</attribute>
+						<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]</attribute>
+						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+						<attribute key="type" xsi:type="stringAttribute">body</attribute>
+					</attributes>
+				</identifyingAttributes>
+				<attributes>
+					<attributes>
+						<entry>
+							<key>shown</key>
+							<value xsi:type="xsd:string">true</value>
+						</entry>
+					</attributes>
+				</attributes>
+				<containedElements retestId="ul">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>133</y>
+								<height>36</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>117</y>
+								<height>-117</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="type" xsi:type="stringAttribute">ul</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>counter-reset</key>
+								<value xsi:type="xsd:string">list-item 0</value>
+							</entry>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">16px</value>
+							</entry>
+							<entry>
+								<key>shown</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="none">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/&lt;pseudo::before>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::before</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="second_item">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>48</x>
+									<y>151</y>
+									<height>18</height>
+									<width>1310</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>40</x>
+									<y>18</y>
+									<height>-18</height>
+									<width>-40</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/li[2]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+								<attribute key="text" xsi:type="textAttribute">Second item</attribute>
+								<attribute key="type" xsi:type="stringAttribute">li</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>text-align</key>
+									<value xsi:type="xsd:string">left</value>
+								</entry>
+							</attributes>
+						</attributes>
+						<containedElements retestId="none-1">
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/li[2]/&lt;pseudo::first-letter>[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">none</attribute>
+									<attribute key="type" xsi:type="stringAttribute">::first-letter</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>display</key>
+										<value xsi:type="xsd:string">inline</value>
+									</entry>
+									<entry>
+										<key>pseudo</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+						<containedElements retestId="none-2">
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/li[2]/&lt;pseudo::before>[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">none</attribute>
+									<attribute key="type" xsi:type="stringAttribute">::before</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>display</key>
+										<value xsi:type="xsd:string">inline</value>
+									</entry>
+									<entry>
+										<key>pseudo</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+						<containedElements retestId="marker_">
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/li[2]/&lt;pseudo::marker>[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">&quot;marker > &quot;</attribute>
+									<attribute key="type" xsi:type="stringAttribute">::marker</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>border-bottom-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>border-left-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>border-right-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>border-top-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>column-rule-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>content</key>
+										<value xsi:type="xsd:string">marker ></value>
+									</entry>
+									<entry>
+										<key>font-variant</key>
+										<value xsi:type="xsd:string">tabular-nums</value>
+									</entry>
+									<entry>
+										<key>outline-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>pseudo</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+									<entry>
+										<key>text-align</key>
+										<value xsi:type="xsd:string">end</value>
+									</entry>
+									<entry>
+										<key>text-decoration-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+						<containedElements retestId="none-3">
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/li[2]/&lt;pseudo::first-line>[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">none</attribute>
+									<attribute key="type" xsi:type="stringAttribute">::first-line</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>display</key>
+										<value xsi:type="xsd:string">inline</value>
+									</entry>
+									<entry>
+										<key>pseudo</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+						<containedElements retestId="none-4">
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/li[2]/&lt;pseudo::after>[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">none</attribute>
+									<attribute key="type" xsi:type="stringAttribute">::after</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>display</key>
+										<value xsi:type="xsd:string">inline</value>
+									</entry>
+									<entry>
+										<key>pseudo</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+					</containedElements>
+					<containedElements retestId="first_item">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>48</x>
+									<y>133</y>
+									<height>18</height>
+									<width>1310</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>40</x>
+									<y>0</y>
+									<height>-18</height>
+									<width>-40</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/li[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">First item</attribute>
+								<attribute key="type" xsi:type="stringAttribute">li</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>text-align</key>
+									<value xsi:type="xsd:string">left</value>
+								</entry>
+							</attributes>
+						</attributes>
+						<containedElements retestId="marker_-1">
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/li[1]/&lt;pseudo::marker>[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">&quot;marker > &quot;</attribute>
+									<attribute key="type" xsi:type="stringAttribute">::marker</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>border-bottom-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>border-left-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>border-right-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>border-top-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>caret-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>column-rule-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>content</key>
+										<value xsi:type="xsd:string">marker ></value>
+									</entry>
+									<entry>
+										<key>font-variant</key>
+										<value xsi:type="xsd:string">tabular-nums</value>
+									</entry>
+									<entry>
+										<key>outline-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+									<entry>
+										<key>pseudo</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+									<entry>
+										<key>text-align</key>
+										<value xsi:type="xsd:string">end</value>
+									</entry>
+									<entry>
+										<key>text-decoration-color</key>
+										<value xsi:type="xsd:string">rgb(128, 0, 128)</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+						<containedElements retestId="none-5">
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/li[1]/&lt;pseudo::first-line>[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">none</attribute>
+									<attribute key="type" xsi:type="stringAttribute">::first-line</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>display</key>
+										<value xsi:type="xsd:string">inline</value>
+									</entry>
+									<entry>
+										<key>pseudo</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+						<containedElements retestId="none-6">
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/li[1]/&lt;pseudo::first-letter>[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">none</attribute>
+									<attribute key="type" xsi:type="stringAttribute">::first-letter</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>display</key>
+										<value xsi:type="xsd:string">inline</value>
+									</entry>
+									<entry>
+										<key>pseudo</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+						<containedElements retestId="none-7">
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/li[1]/&lt;pseudo::before>[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">none</attribute>
+									<attribute key="type" xsi:type="stringAttribute">::before</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>display</key>
+										<value xsi:type="xsd:string">inline</value>
+									</entry>
+									<entry>
+										<key>pseudo</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+						<containedElements retestId="none-8">
+							<identifyingAttributes>
+								<attributes>
+									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/li[1]/&lt;pseudo::after>[1]</attribute>
+									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+									<attribute key="text" xsi:type="textAttribute">none</attribute>
+									<attribute key="type" xsi:type="stringAttribute">::after</attribute>
+								</attributes>
+							</identifyingAttributes>
+							<attributes>
+								<attributes>
+									<entry>
+										<key>display</key>
+										<value xsi:type="xsd:string">inline</value>
+									</entry>
+									<entry>
+										<key>pseudo</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+								</attributes>
+							</attributes>
+						</containedElements>
+					</containedElements>
+					<containedElements retestId="none-9">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/&lt;pseudo::after>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::after</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="none-10">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/&lt;pseudo::first-line>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::first-line</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="none-11">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/&lt;pseudo::marker>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::marker</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>font-variant</key>
+									<value xsi:type="xsd:string">tabular-nums</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>text-align</key>
+									<value xsi:type="xsd:string">end</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="none-12">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/&lt;pseudo::first-letter>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::first-letter</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="divid">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>185</y>
+								<height>0</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="id" xsi:type="stringAttribute">divID</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>169</y>
+								<height>-153</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="type" xsi:type="stringAttribute">div</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>shown</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="none-13">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/&lt;pseudo::first-letter>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::first-letter</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="none-14">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/&lt;pseudo::marker>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::marker</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>font-variant</key>
+									<value xsi:type="xsd:string">tabular-nums</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>text-align</key>
+									<value xsi:type="xsd:string">end</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="none-15">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/&lt;pseudo::before>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::before</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="none-16">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/&lt;pseudo::first-line>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::first-line</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="none-17">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/&lt;pseudo::after>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::after</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="this_is_a_heading">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>73</y>
+								<height>38</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>57</y>
+								<height>-115</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/h1[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">This is a heading</attribute>
+							<attribute key="type" xsi:type="stringAttribute">h1</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>background-color</key>
+								<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+							</entry>
+							<entry>
+								<key>border-bottom-color</key>
+								<value xsi:type="xsd:string">rgb(0, 128, 0)</value>
+							</entry>
+							<entry>
+								<key>border-left-color</key>
+								<value xsi:type="xsd:string">rgb(0, 128, 0)</value>
+							</entry>
+							<entry>
+								<key>border-right-color</key>
+								<value xsi:type="xsd:string">rgb(0, 128, 0)</value>
+							</entry>
+							<entry>
+								<key>border-top-color</key>
+								<value xsi:type="xsd:string">rgb(0, 128, 0)</value>
+							</entry>
+							<entry>
+								<key>caret-color</key>
+								<value xsi:type="xsd:string">rgb(0, 128, 0)</value>
+							</entry>
+							<entry>
+								<key>color</key>
+								<value xsi:type="xsd:string">rgb(0, 128, 0)</value>
+							</entry>
+							<entry>
+								<key>column-rule-color</key>
+								<value xsi:type="xsd:string">rgb(0, 128, 0)</value>
+							</entry>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">21.4333px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">21.4333px</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(0, 128, 0)</value>
+							</entry>
+							<entry>
+								<key>shown</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+							<entry>
+								<key>text-decoration-color</key>
+								<value xsi:type="xsd:string">rgb(0, 128, 0)</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="none-18">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/h1[1]/&lt;pseudo::marker>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::marker</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>font-variant</key>
+									<value xsi:type="xsd:string">tabular-nums</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>text-align</key>
+									<value xsi:type="xsd:string">end</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="none-19">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/h1[1]/&lt;pseudo::first-letter>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::first-letter</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="this_is_an_invi">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/h1[1]/&lt;pseudo::after>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">&quot;This is an invisible text after!&quot;</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::after</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-color</key>
+									<value xsi:type="xsd:string">rgb(0, 128, 0)</value>
+								</entry>
+								<entry>
+									<key>border-bottom-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>border-left-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>border-right-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>border-top-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>content</key>
+									<value xsi:type="xsd:string">This is an invisible text after!</value>
+								</entry>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>text-decoration-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="this_is_an_invi-1">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/h1[1]/&lt;pseudo::before>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">&quot;This is an invisible text before!&quot;</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::before</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>background-color</key>
+									<value xsi:type="xsd:string">rgb(0, 128, 0)</value>
+								</entry>
+								<entry>
+									<key>border-bottom-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>border-left-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>border-right-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>border-top-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>content</key>
+									<value xsi:type="xsd:string">This is an invisible text before!</value>
+								</entry>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>text-decoration-color</key>
+									<value xsi:type="xsd:string">rgb(255, 0, 0)</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="none-20">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/h1[1]/&lt;pseudo::first-line>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::first-line</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="none-21">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/&lt;pseudo::first-line>[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">none</attribute>
+							<attribute key="type" xsi:type="stringAttribute">::first-line</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>display</key>
+								<value xsi:type="xsd:string">inline</value>
+							</entry>
+							<entry>
+								<key>pseudo</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="none-22">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/&lt;pseudo::first-letter>[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">none</attribute>
+							<attribute key="type" xsi:type="stringAttribute">::first-letter</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>display</key>
+								<value xsi:type="xsd:string">inline</value>
+							</entry>
+							<entry>
+								<key>pseudo</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="you_can_use_the">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>16</y>
+								<height>36</height>
+								<width>1350</width>
+							</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>-117</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</attribute>
+							<attribute key="type" xsi:type="stringAttribute">p</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>shown</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="none-23">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]/&lt;pseudo::after>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::after</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="none-24">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]/&lt;pseudo::first-line>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::first-line</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>border-bottom-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>border-left-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>border-right-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>border-top-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>text-decoration-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="none-25">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]/&lt;pseudo::marker>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::marker</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>font-variant</key>
+									<value xsi:type="xsd:string">tabular-nums</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>text-align</key>
+									<value xsi:type="xsd:string">end</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="none-26">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]/&lt;pseudo::before>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::before</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="none-27">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]/&lt;pseudo::first-letter>[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">none</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::first-letter</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>border-bottom-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>border-left-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>border-right-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>border-top-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>display</key>
+									<value xsi:type="xsd:string">inline</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>text-decoration-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+				</containedElements>
+				<containedElements retestId="none-28">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/&lt;pseudo::after>[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">none</attribute>
+							<attribute key="type" xsi:type="stringAttribute">::after</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>display</key>
+								<value xsi:type="xsd:string">inline</value>
+							</entry>
+							<entry>
+								<key>pseudo</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="none-29">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/&lt;pseudo::marker>[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">none</attribute>
+							<attribute key="type" xsi:type="stringAttribute">::marker</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>font-variant</key>
+								<value xsi:type="xsd:string">tabular-nums</value>
+							</entry>
+							<entry>
+								<key>pseudo</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+							<entry>
+								<key>text-align</key>
+								<value xsi:type="xsd:string">end</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="none-30">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/&lt;pseudo::before>[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">none</attribute>
+							<attribute key="type" xsi:type="stringAttribute">::before</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>display</key>
+								<value xsi:type="xsd:string">inline</value>
+							</entry>
+							<entry>
+								<key>pseudo</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+			</containedElements>
+		</descriptors>
+		<metadata>
+			<entry>
+				<key>driver.type</key>
+				<value>FirefoxDriver</value>
+			</entry>
+			<entry>
+				<key>time.offset</key>
+				<value>+01:00</value>
+			</entry>
+			<entry>
+				<key>os.arch</key>
+				<value>amd64</value>
+			</entry>
+			<entry>
+				<key>check.type</key>
+				<value>driver</value>
+			</entry>
+			<entry>
+				<key>vcs.commit</key>
+				<value>82d318add63f0b40b59c5e785fb0a79cb82b14d8</value>
+			</entry>
+			<entry>
+				<key>window.height</key>
+				<value>768</value>
+			</entry>
+			<entry>
+				<key>vcs.branch</key>
+				<value>feature/track-pseudo-elements</value>
+			</entry>
+			<entry>
+				<key>url</key>
+				<value>file:///F:/Worksapces/retest/git/recheck-web/target/test-classes/de/retest/web/it/pseudo-element.html</value>
+			</entry>
+			<entry>
+				<key>machine.name</key>
+				<value>LARS-PC</value>
+			</entry>
+			<entry>
+				<key>os.version</key>
+				<value>10.0</value>
+			</entry>
+			<entry>
+				<key>browser.name</key>
+				<value>firefox</value>
+			</entry>
+			<entry>
+				<key>browser.version</key>
+				<value>72.0.2</value>
+			</entry>
+			<entry>
+				<key>time.time</key>
+				<value>16:59:33.3908887</value>
+			</entry>
+			<entry>
+				<key>time.zone</key>
+				<value>Europe/Berlin</value>
+			</entry>
+			<entry>
+				<key>window.width</key>
+				<value>1366</value>
+			</entry>
+			<entry>
+				<key>os.name</key>
+				<value>WINDOWS</value>
+			</entry>
+			<entry>
+				<key>time.date</key>
+				<value>2020-02-01</value>
+			</entry>
+			<entry>
+				<key>vcs.name</key>
+				<value>git</value>
+			</entry>
+		</metadata>
+	</data>
+</reTestXmlDataContainer>

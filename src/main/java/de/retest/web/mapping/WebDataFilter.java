@@ -15,11 +15,15 @@ public class WebDataFilter {
 	private WebDataFilter() {}
 
 	public static boolean shouldIgnore( final WebData webData ) {
-		return isNotShown( webData ) && isNotSpecialTag( webData );
+		return isNotShown( webData ) && isNotPseudo( webData ) && isNotSpecialTag( webData );
 	}
 
 	private static boolean isNotShown( final WebData webData ) {
 		return !webData.isShown();
+	}
+
+	private static boolean isNotPseudo( final WebData webData ) {
+		return !webData.isPseudo();
 	}
 
 	private static boolean isNotSpecialTag( final WebData webData ) {

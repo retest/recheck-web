@@ -186,6 +186,22 @@ var cssAttributes = [
     "z-index"
 ];
 
+var pseudoElements = [
+	"::before",
+	"::after",
+	"::first-line",
+	"::first-letter"
+];
+
+var defaultPseudoElementValues = [];
+defaultPseudoElementValues['display'] = ['inline'];
+defaultPseudoElementValues['content'] = ['none', 'normal'];
+defaultPseudoElementValues['margin-bottom'] = ['0px'];
+defaultPseudoElementValues['margin-top'] = ['0px'];
+defaultPseudoElementValues['margin-left'] = ['0px'];
+defaultPseudoElementValues['margin-right'] = ['0px'];
+defaultPseudoElementValues['text-decoration-line'] = ['none'];
+
 var ELEMENT_NODE = 1;
 var TEXT_NODE = 3;
 var DOCUMENT_TYPE_NODE = 10;
@@ -372,6 +388,44 @@ function transform(node) {
     return extractedAttributes;
 }
 
+//extract *given* CSS style attributes for pseudo elements
+function getComputedPseudoStyleSafely(node, pseudo) {
+  try {
+      return window.getComputedStyle(node, pseudo) || [];
+  } catch (err) {}
+  return [];
+}
+
+function addPseudoElements(node, nodePath, allElements) {
+	for (pseudo of pseudoElements) {
+		try {
+			var parentStyle = getComputedStyleSafely(node);
+			var style = getComputedPseudoStyleSafely(node, pseudo);
+			if (!style || !parentStyle) {
+				continue;
+			}
+			// <pseudo:before>[1]
+			var path = nodePath + "/<pseudo" + pseudo + ">[1]";
+			var extractedAttributes = {
+					"pseudo": allElements.find(elem => elem[0] === nodePath && elem[1].shown),
+					"tagName": pseudo,
+				};
+			for (attributeName of cssAttributes) {
+				if (!extractedAttributes[attributeName]) {
+					if (!Object.keys(defaultPseudoElementValues).includes(attributeName) && parentStyle[attributeName] != style[attributeName]
+						|| Object.keys(defaultPseudoElementValues).includes(attributeName) && !defaultPseudoElementValues[attributeName].includes(style[attributeName])
+						) {
+						extractedAttributes[attributeName] = style[attributeName];
+					}
+				}
+			}
+			if (Object.keys(extractedAttributes).length > 2) {
+				allElements.push(path, extractedAttributes);
+			}
+		} catch (err) {}
+	}
+}
+
 function isShown(e) {
     if (e.nodeType == TEXT_NODE) {
         return isShown(e.parentNode);
@@ -424,6 +478,7 @@ function mapElement(parent, parentPath, allElements) {
             var cnt = counter.increase(child);
             var path = parentPath + "/" + child.tagName.toLowerCase() + "[" + cnt + "]";
             allElements.push([path, transform(child)]);
+            addPseudoElements(child, path, allElements);
             mapElement(child, path, allElements);
         }
     }
