@@ -221,24 +221,25 @@ If you cannot easily the reports on your CI/CD server, test reports can be easil
 
 The first step is to modify the `setUp()` method in our existing test case to enable the upload to ***rehub***. There are two ways to achieve this:
 
-- Set the `REHUB_REPORT_UPLOAD_ENABLED` system property
+- Set the `REHUB_REPORT_UPLOAD_ENABLED` system property (you have to do this _before_ `RecheckImpl` is created)
 
 ```java
 @Before
 void setUp() {
-    driver = new ChromeDriver();
+    System.setProperty( Properties.REHUB_REPORT_UPLOAD_ENABLED, "true" );
     re = new RecheckImpl();
-    System.setProperty( de.retest.recheck.Properties.REHUB_REPORT_UPLOAD_ENABLED, "true" );
+    // ...
 }
 ```
 
-- Modify the `RecheckImpl` constructor
+- Set the rehub flag via `RecheckOptions`
 
 ```java
 @Before
 void setUp() {
-    driver = new ChromeDriver();
-    re = new RecheckImpl( RecheckOptions.builder().enableReportUpload().build() );
+    RecheckOptions options = RecheckOptions.builder().enableReportUpload().build();
+    re = new RecheckImpl( options );
+    // ...
 }
 ```
 
