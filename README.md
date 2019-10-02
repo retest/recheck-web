@@ -37,12 +37,12 @@ Imagine you could:
 
 A typical Selenium test could look like the following:
 
-```
-driver.findElement(By.id("username")).sendKeys("Simon");
-driver.findElement(By.id("password")).sendKeys("secret");
-driver.findElement(By.id("sign-in")).click();
+```java
+driver.findElement( By.id( "username" ) ).sendKeys( "Simon" );
+driver.findElement( By.id( "password" ) ).sendKeys( "secret" );
+driver.findElement( By.id( "sign-in" ) ).click();
 
-assertEquals(driver.findElement(By.tagName("h4")).getText(), "Success!");
+assertEquals( driver.findElement( By.tagName( "h4" ) ).getText(), "Success!" );
 ```
 
 If the website e.g. looses _all_ of its CSS, thus rendering it essentially broken for a user, this test will still pass. However, if you change an invisible attribute that is irrelevant for a user, e.g. the element ID `username`, this test will break.
@@ -82,9 +82,9 @@ Simply add `recheck-web` as dependency to your project, e.g. via [Maven Central]
 
 ```xml
 <dependency>
-  <groupId>de.retest</groupId>
-  <artifactId>recheck-web</artifactId>
-  <version><!-- latest version, see above link --></version>
+    <groupId>de.retest</groupId>
+    <artifactId>recheck-web</artifactId>
+    <version><!-- latest version, see above link --></version>
 </dependency>
 ```
 
@@ -112,7 +112,7 @@ A complete tutorial about how to setup and use ***recheck-web*** like this can e
 
 You can also use the recheck driver wrapper, which will automatically create a check after every action. To use this, simply wrap your driver like so:
 
-```
+```java
 driver = new RecheckDriver( new ChromeDriver() );
 ```
 
@@ -130,9 +130,8 @@ Running a ***recheck-web*** test for the first time will result in a failure wit
 
 ```
 java.lang.AssertionError: No Golden Master found. First time test was run? Created new Golden Master, so don't forget to commit...
-	at de.retest.recheck.RecheckImpl.capTest(RecheckImpl.java:191)
+    at de.retest.recheck.RecheckImpl.capTest(RecheckImpl.java:191)
 ...
-
 ```
 
 Running such a test will also create a folder structure containing a `retest.xml` file and a screenshot per check, the location of both depends on your configuration, see [below](#how-can-i-configure-the-location-of-the-golden-master-files). This contains the Golden Master against which future executions of this test are compared. If you use version control, you should commit those files. Note that the `retest.xml` contains a full description of the _rendered_ website, including all relevant information such as text, source, etc. and _all_ non-default CSS attributes such as font and margin. Although these files may become large, they are smaller than the original and by ignoring specific (or all) attributes, you can configure how large they are. Anyways, storing a few kilobyte extra is much cheaper than the manpower needed to manually specify such checks.
@@ -167,8 +166,10 @@ If you have trouble with this, please [contact us](https://github.com/retest/rec
 
 You can provide a [project layout](https://github.com/retest/recheck/blob/master/src/main/java/de/retest/recheck/persistence/ProjectLayout.java) via the `RecheckOptions`:
 
-```
-RecheckOptions opts = RecheckOptions.builder().projectLayout(new CustomProjectLayout()).build();
+```java
+RecheckOptions opts = RecheckOptions.builder()
+        .projectLayout( new CustomProjectLayout() )
+        .build();
 driver = new RecheckDriver( new ChromeDriver(), opts );
 ```
 
@@ -200,11 +201,10 @@ Use `By.id("user")` or `By.retestId("username")` to update your test MyUnbreakab
 In order to use "Unbreakable Selenium", you just need to wrap your usual driver in an `UnbreakableDriver` (drop-in replacement) and use `RecheckWebImpl` instead of `RecheckImpl`. The code would look like [so](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/it/SimpleUnbreakableSeleniumShowcaseIT.java)):
 
 ```java
- // Use the RecheckDriver as a wrapper for your usual driver.
- driver = new UnbreakableDriver( new ChromeDriver() );
-
- // Use the unbreakable recheck implementation.
- re = new RecheckWebImpl();
+// Use the RecheckDriver as a wrapper for your usual driver.
+driver = new UnbreakableDriver( new ChromeDriver() );
+// Use the unbreakable recheck implementation.
+re = new RecheckWebImpl();
 ```
 
 Note that this works only in conjunction with at least one previous call to `Recheck#check(...)`, as behind the scenes, if the element cannot be found on the current page, then ***recheck-web*** searches for it in the _last_ Golden Master (where e.g. the ID still is), makes a 1-on-1 assignment to the current elements and returns the element with the highest match, if it's higher than a configurable confidence level. Also check out the other [ways of using ***recheck-web***](https://docs.retest.de/recheck-web/ways-of-using-recheck-web/).
@@ -221,24 +221,27 @@ If you cannot easily the reports on your CI/CD server, test reports can be easil
 
 The first step is to modify the `setUp()` method in our existing test case to enable the upload to ***rehub***. There are two ways to achieve this:
 
-- Set the `REHUB_REPORT_UPLOAD_ENABLED` system property
+- Set the `REHUB_REPORT_UPLOAD_ENABLED` system property (you have to do this _before_ `RecheckImpl` is created)
 
 ```java
 @Before
 void setUp() {
-    driver = new ChromeDriver();
+    System.setProperty( Properties.REHUB_REPORT_UPLOAD_ENABLED, "true" );
     re = new RecheckImpl();
-    System.setProperty( de.retest.recheck.Properties.REHUB_REPORT_UPLOAD_ENABLED, "true" );
+    // ...
 }
 ```
 
-- Modify the `RecheckImpl` constructor
+- Set the rehub flag via `RecheckOptions`
 
 ```java
 @Before
 void setUp() {
-    driver = new ChromeDriver();
-    re = new RecheckImpl( RecheckOptions.builder().enableReportUpload().build() );
+    RecheckOptions options = RecheckOptions.builder()
+            .enableReportUpload()
+            .build();
+    re = new RecheckImpl( options );
+    // ...
 }
 ```
 
