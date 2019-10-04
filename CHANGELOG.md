@@ -28,6 +28,7 @@ Table of Contents
 ### Bug Fixes
 
 * Fix `StackOverflowError` if a `WrapsElement` (e.g. `@FindBy`) is checked that throws an exception.
+* Fix `NullPointerException` if the checked `WebElement` is not visible.
 
 ### New Features
 

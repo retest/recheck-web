@@ -50,7 +50,7 @@ class PeerConverter {
 		for ( final Entry<String, WebData> entry : mapping ) {
 			final String path = entry.getKey();
 			final WebData webData = entry.getValue();
-			if ( WebDataFilter.shouldIgnore( webData ) ) {
+			if ( !isRoot( getParentPath( path ) ) && WebDataFilter.shouldIgnore( webData ) ) {
 				continue;
 			}
 			convertToPeer( path, webData );
