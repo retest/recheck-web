@@ -9,7 +9,7 @@
 
 ***recheck-web*** is a Golden Master-based test framework on top of Selenium that allows for easy creation and maintenance of more complete and nearly unbreakable tests. If you want to give it a quick try, checkout the [Chrome extension](https://chrome.google.com/webstore/detail/recheck-web-demo/ifbcdobnjihilgldbjeomakdaejhplii) that is based on recheck-web.
 
-<p align="center"><a href="https://www.youtube.com/watch?v=dpzlFxXfMWk"><img src="https://user-images.githubusercontent.com/1871610/58832376-171fa900-864f-11e9-8edb-56ea95865482.gif" /></a></p>
+<p align="center"><a href="https://www.youtube.com/watch?v=7cl8flD--i0"><img src="https://user-images.githubusercontent.com/1871610/66708890-27930f00-ed26-11e9-878e-be9d616cec34.gif" /></a></p>
 
 
 ## TL;DR
