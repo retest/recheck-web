@@ -1,5 +1,10 @@
 package de.retest.web;
 
+import java.awt.image.BufferedImage;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
 import de.retest.recheck.RecheckOptions;
 import de.retest.web.selenium.AutocheckingCheckNamingStrategy;
 import de.retest.web.selenium.CounterCheckNamingStrategy;
@@ -17,10 +22,23 @@ public class RecheckWebOptions extends RecheckOptions {
 	 */
 	private final AutocheckingCheckNamingStrategy checkNamingStrategy;
 
+	/**
+	 * The {@link AttributesProvider} that defines the CSS attributes to check.
+	 */
+	private final AttributesProvider attributesProvider;
+
+	/**
+	 * The {@link ScreenshotProvider} to use.
+	 */
+	private final ScreenshotProvider screenshotProvider;
+
 	public RecheckWebOptions( final RecheckOptions superOptions,
-			final AutocheckingCheckNamingStrategy checkNamingStrategy ) {
+			final AutocheckingCheckNamingStrategy checkNamingStrategy, final AttributesProvider attributesProvider,
+			final ScreenshotProvider screenshotProvider ) {
 		super( superOptions );
 		this.checkNamingStrategy = checkNamingStrategy;
+		this.attributesProvider = attributesProvider;
+		this.screenshotProvider = screenshotProvider;
 	}
 
 	public static RecheckWebOptionsBuilder builder() {
@@ -30,6 +48,8 @@ public class RecheckWebOptions extends RecheckOptions {
 	public static class RecheckWebOptionsBuilder extends RecheckOptionsBuilder {
 
 		private AutocheckingCheckNamingStrategy checkNamingStrategy = new CounterCheckNamingStrategy();
+		private AttributesProvider attributesProvider = YamlAttributesProvider.getInstance();
+		private ScreenshotProvider screenshotProvider = new ScreenshotProvider();
 
 		public RecheckWebOptionsBuilder
 				checkNamingStrategy( final AutocheckingCheckNamingStrategy checkNamingStrategy ) {
@@ -37,9 +57,24 @@ public class RecheckWebOptions extends RecheckOptions {
 			return this;
 		}
 
+		public RecheckWebOptionsBuilder attributesProvider( final AttributesProvider attributesProvider ) {
+			this.attributesProvider = attributesProvider;
+			return this;
+		}
+
+		public RecheckWebOptionsBuilder omitScreenshots() {
+			screenshotProvider = new ScreenshotProvider() {
+				@Override
+				public BufferedImage shoot( final WebDriver driver, final WebElement element ) {
+					return null;
+				}
+			};
+			return this;
+		}
+
 		@Override
 		public RecheckWebOptions build() {
-			return new RecheckWebOptions( super.build(), checkNamingStrategy );
+			return new RecheckWebOptions( super.build(), checkNamingStrategy, attributesProvider, screenshotProvider );
 		}
 	}
 }

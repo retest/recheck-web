@@ -24,9 +24,7 @@ public class ScreenshotProvider {
 
 	private static final Logger logger = LoggerFactory.getLogger( ScreenshotProvider.class );
 
-	private ScreenshotProvider() {}
-
-	public static BufferedImage shoot( final WebDriver driver, final WebElement element ) {
+	public BufferedImage shoot( final WebDriver driver, final WebElement element ) {
 		try {
 			if ( element != null ) {
 				return shootElement( driver, element );
@@ -39,18 +37,18 @@ public class ScreenshotProvider {
 		}
 	}
 
-	private static BufferedImage shootElement( final WebDriver driver, final WebElement element ) {
+	private BufferedImage shootElement( final WebDriver driver, final WebElement element ) {
 		return Shutterbug.shootElement( driver, element, USE_DEVICE_PIXEL_RATIO ).getImage();
 	}
 
-	private static BufferedImage shootFullPage( final WebDriver driver ) {
+	private BufferedImage shootFullPage( final WebDriver driver ) {
 		final BufferedImage image = Shutterbug
 				.shootPage( driver, ScrollStrategy.WHOLE_PAGE, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ).getImage();
 		return driver instanceof ChromeDriver
 				? resizeImage( image, image.getWidth() / SCALE, image.getHeight() / SCALE ) : image;
 	}
 
-	private static BufferedImage shootViewportOnly( final WebDriver driver ) {
+	private BufferedImage shootViewportOnly( final WebDriver driver ) {
 		return Shutterbug.shootPage( driver, USE_DEVICE_PIXEL_RATIO ).getImage();
 	}
 
