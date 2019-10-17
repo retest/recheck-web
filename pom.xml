@@ -278,7 +278,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<!-- downgrade to fix Maven build with Java 11 -->
+					<!-- downgrade to fix Maven build with Java 13 -->
 					<!-- see https://bugs.openjdk.java.net/browse/JDK-8212233 -->
 					<source>8</source>
 				</configuration>
