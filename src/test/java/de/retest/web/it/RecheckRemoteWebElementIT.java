@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
-import de.retest.recheck.junit.RecheckExtension;
+import de.retest.recheck.junit.jupiter.RecheckExtension;
 import de.retest.web.selenium.By;
 import de.retest.web.testutils.PageFactory;
 import de.retest.web.testutils.PageFactory.Page;

@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
-import de.retest.recheck.junit.RecheckRule;
+import de.retest.recheck.junit.vintage.RecheckRule;
 
 /*
  * Simple recheck-web showcase for a Chrome-based integration test. See other *IT classes for more examples.

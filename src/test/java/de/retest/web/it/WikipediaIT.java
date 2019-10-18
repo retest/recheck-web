@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
-import de.retest.recheck.junit.RecheckExtension;
+import de.retest.recheck.junit.jupiter.RecheckExtension;
 import de.retest.web.testutils.PageFactory;
 
 @Disabled( "We only use this to create an example.report file for review." )
