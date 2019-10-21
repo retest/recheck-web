@@ -8,13 +8,13 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.openqa.selenium.WebElement;
 
-class WebElementWrapperTest {
+class AutocheckingWebElementTest {
 
 	@Test
 	void changing_methods_should_check_and_delegate_calls() {
 		final WebElement delegate = mock( WebElement.class );
 		final AutocheckingRecheckDriver driver = mock( AutocheckingRecheckDriver.class );
-		final WebElementWrapper wrapper = new WebElementWrapper( delegate, driver );
+		final AutocheckingWebElement wrapper = new AutocheckingWebElement( delegate, driver );
 
 		wrapper.clear();
 		verify( delegate, times( 1 ) ).clear();
@@ -36,7 +36,7 @@ class WebElementWrapperTest {
 	@Test
 	void other_methods_should_delegate_calls() {
 		final WebElement delegate = mock( WebElement.class );
-		final WebElementWrapper wrapper = new WebElementWrapper( delegate, mock( AutocheckingRecheckDriver.class ) );
+		final AutocheckingWebElement wrapper = new AutocheckingWebElement( delegate, mock( AutocheckingRecheckDriver.class ) );
 
 		wrapper.getAttribute( "test" );
 		verify( delegate, times( 1 ) ).getAttribute( "test" );
