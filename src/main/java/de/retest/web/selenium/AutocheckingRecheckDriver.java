@@ -47,15 +47,15 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 	 *            The {@link RemoteWebDriver} to wrap.
 	 * @param options
 	 *            The {@link RecheckOptions} to use.
-	 * @param namingStrategy
+	 * @param checkNamingStrategy
 	 *            The {@link AutocheckingCheckNamingStrategy} to use.
 	 */
 	@Deprecated
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options,
-			final AutocheckingCheckNamingStrategy namingStrategy ) {
+			final AutocheckingCheckNamingStrategy checkNamingStrategy ) {
 		super( wrapped );
 		this.options = options;
-		checkNamingStrategy = RecheckWebOptions.builder().build().getCheckNamingStrategy();
+		this.checkNamingStrategy = checkNamingStrategy;
 	}
 
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckWebOptions options ) {
