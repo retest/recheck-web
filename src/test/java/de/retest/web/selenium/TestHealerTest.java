@@ -12,7 +12,6 @@ import java.util.Collections;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 import de.retest.recheck.ui.descriptors.Attributes;
 import de.retest.recheck.ui.descriptors.Element;
@@ -25,7 +24,7 @@ class TestHealerTest {
 	@Test
 	public void ByCssSelector_using_id_should_redirect() {
 		final RecheckDriver wrapped = mock( RecheckDriver.class );
-		final WebElement resultMarker = mock( WebElement.class );
+		final AutocheckingWebElement resultMarker = mock( AutocheckingWebElement.class );
 
 		final RootElement state = mock( RootElement.class );
 		when( wrapped.getLastExpectedState() ).thenReturn( state );
@@ -47,7 +46,7 @@ class TestHealerTest {
 	@Test
 	public void ByCssSelector_using_tag_should_redirect() {
 		final RecheckDriver wrapped = mock( RecheckDriver.class );
-		final WebElement resultMarker = mock( WebElement.class );
+		final AutocheckingWebElement resultMarker = mock( AutocheckingWebElement.class );
 
 		final RootElement state = mock( RootElement.class );
 		when( wrapped.getLastExpectedState() ).thenReturn( state );
@@ -66,7 +65,7 @@ class TestHealerTest {
 	@Test
 	public void ByCssSelector_matches_elements_with_given_class() {
 		final RecheckDriver wrapped = mock( RecheckDriver.class );
-		final WebElement resultMarker = mock( WebElement.class );
+		final AutocheckingWebElement resultMarker = mock( AutocheckingWebElement.class );
 
 		final RootElement state = mock( RootElement.class );
 		when( wrapped.getLastExpectedState() ).thenReturn( state );
@@ -129,7 +128,7 @@ class TestHealerTest {
 	@Test
 	public void ByXPathExpression_matches_elements_with_given_xpath() {
 		final RecheckDriver wrapped = mock( RecheckDriver.class );
-		final WebElement resultMarker = mock( WebElement.class );
+		final AutocheckingWebElement resultMarker = mock( AutocheckingWebElement.class );
 
 		final RootElement state = mock( RootElement.class );
 		when( wrapped.getLastExpectedState() ).thenReturn( state );

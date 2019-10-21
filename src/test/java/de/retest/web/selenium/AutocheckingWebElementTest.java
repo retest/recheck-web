@@ -1,6 +1,7 @@
 package de.retest.web.selenium;
 
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
@@ -9,6 +10,30 @@ import org.mockito.Mockito;
 import org.openqa.selenium.WebElement;
 
 class AutocheckingWebElementTest {
+
+	@Test
+	void check_is_skiped_when_skipCheck_is_called() throws Exception {
+		final WebElement delegate = mock( WebElement.class );
+		final AutocheckingRecheckDriver driver = mock( AutocheckingRecheckDriver.class );
+		final AutocheckingWebElement wrapper = new AutocheckingWebElement( delegate, driver );
+
+		wrapper.skipCheck().clear();
+		verify( delegate, times( 1 ) ).clear();
+		verify( driver, never() ).check( Mockito.any(), Mockito.any() );
+
+		wrapper.skipCheck().submit();
+		verify( delegate, times( 1 ) ).submit();
+		verify( driver, never() ).check( Mockito.any(), Mockito.any() );
+
+		wrapper.skipCheck().sendKeys();
+		verify( delegate, times( 1 ) ).sendKeys();
+		verify( driver, never() ).check( Mockito.any(), Mockito.any() );
+
+		wrapper.skipCheck().click();
+		verify( delegate, times( 1 ) ).click();
+		verify( driver, never() ).check( Mockito.any(), Mockito.any() );
+
+	}
 
 	@Test
 	void changing_methods_should_check_and_delegate_calls() {
@@ -36,7 +61,8 @@ class AutocheckingWebElementTest {
 	@Test
 	void other_methods_should_delegate_calls() {
 		final WebElement delegate = mock( WebElement.class );
-		final AutocheckingWebElement wrapper = new AutocheckingWebElement( delegate, mock( AutocheckingRecheckDriver.class ) );
+		final AutocheckingWebElement wrapper =
+				new AutocheckingWebElement( delegate, mock( AutocheckingRecheckDriver.class ) );
 
 		wrapper.getAttribute( "test" );
 		verify( delegate, times( 1 ) ).getAttribute( "test" );

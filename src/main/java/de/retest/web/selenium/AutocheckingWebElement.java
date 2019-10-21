@@ -25,6 +25,15 @@ public class AutocheckingWebElement implements WebElement, WrapsElement {
 		this.driver = driver;
 	}
 
+	/**
+	 * Skip checks for actions performed on this web element.
+	 *
+	 * @return returns the plain WebElement
+	 */
+	public WebElement skipCheck() {
+		return wrappedElement;
+	}
+
 	@Override
 	public <X> X getScreenshotAs( final OutputType<X> target ) throws WebDriverException {
 		return wrappedElement.getScreenshotAs( target );

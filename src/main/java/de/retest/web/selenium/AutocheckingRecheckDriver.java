@@ -112,7 +112,7 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 	}
 
 	@Override
-	public WebElement findElement( final ByBestMatchToRetestId by ) {
+	public AutocheckingWebElement findElement( final ByBestMatchToRetestId by ) {
 		final WebElement wrapped = super.findElement( by );
 		String result = wrapped.toString();
 		// replace " -> xpath: HTML[1]/BODY[1]/A[1]"
@@ -127,11 +127,11 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 	}
 
 	@Override
-	public WebElement findElement( final By by ) {
+	public AutocheckingWebElement findElement( final By by ) {
 		final WebElement result = super.findElement( by );
 		if ( result instanceof AutocheckingWebElement ) {
 			// Element was not found, so we already have it wrapped
-			return result;
+			return (AutocheckingWebElement) result;
 		}
 		return new AutocheckingWebElement( result, this );
 	}
