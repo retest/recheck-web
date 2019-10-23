@@ -172,7 +172,9 @@ public class TestHealer {
 		// remove leading .
 		final String selector = rawSelector.substring( 1 );
 		if ( selector.matches( ".*[<>:+\\s\"\\[\\*].*" ) ) {
-			throw new IllegalArgumentException( "For now, only simple class selector is implemented." );
+			throw new IllegalArgumentException(
+					"For now, only simple CSS selectors are implemented. Please report your chosen selector ('"
+							+ rawSelector + "') at https://github.com/retest/recheck-web/issues." );
 		}
 		return selector;
 	}
