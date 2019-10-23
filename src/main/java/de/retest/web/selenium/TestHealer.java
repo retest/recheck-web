@@ -65,13 +65,6 @@ public class TestHealer {
 			return findElementByLinkText( (ByLinkText) by );
 		}
 		if ( by instanceof ByCssSelector ) {
-			final String rawSelector = ByWhisperer.retrieveCssSelector( (ByCssSelector) by );
-			if ( rawSelector.startsWith( "#" ) && !isComplexCssSelector( rawSelector ) ) {
-				return findElement( By.id( rawSelector.substring( 1 ) ) );
-			}
-			if ( !rawSelector.startsWith( "." ) && !isComplexCssSelector( rawSelector ) ) {
-				return findElement( By.tagName( rawSelector ) );
-			}
 			return findElementByCssSelector( (ByCssSelector) by );
 		}
 		if ( by instanceof ByXPath ) {
@@ -82,10 +75,6 @@ public class TestHealer {
 		}
 		throw new UnsupportedOperationException(
 				"Healing tests with " + by.getClass().getSimpleName() + " not yet implemented" );
-	}
-
-	private boolean isComplexCssSelector( final String rawSelector ) {
-		return rawSelector.contains( " " ) || rawSelector.contains( "[" );
 	}
 
 	private WebElement findElementById( final ById by ) {
@@ -152,10 +141,25 @@ public class TestHealer {
 	}
 
 	private WebElement findElementByCssSelector( final ByCssSelector by ) {
-		final String selector = retrieveUsableCssSelector( by );
-
-		final Element actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState,
-				lastActualState, CLASS, value -> ((String) value).contains( selector ) );
+		final String selector = ByWhisperer.retrieveCssSelector( by );
+		if ( selector.matches( ".*[<>:+\\s\"\\[\\*].*" ) ) {
+			throw new IllegalArgumentException(
+					"For now, only simple CSS selectors are implemented. Please report your chosen selector ('"
+							+ selector + "') at https://github.com/retest/recheck-web/issues." );
+		}
+		Element actualElement = null;
+		if ( selector.startsWith( "#" ) ) {
+			actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, ID,
+					selector.substring( 1 ) );
+		}
+		if ( selector.matches( "^[a-zA-Z]*" ) ) {
+			actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, TYPE,
+					selector );
+		}
+		if ( selector.startsWith( "." ) ) {
+			actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, CLASS,
+					value -> ((String) value).contains( selector.substring( 1 ) ) );
+		}
 
 		if ( actualElement == null ) {
 			logger.warn( "{} with CSS selector '{}'.", ELEMENT_NOT_FOUND_MESSAGE, selector );
@@ -165,18 +169,6 @@ public class TestHealer {
 					actualElement.getIdentifyingAttributes().get( CLASS ), "cssSelector", actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
-	}
-
-	private String retrieveUsableCssSelector( final ByCssSelector by ) {
-		final String rawSelector = ByWhisperer.retrieveCssSelector( by );
-		// remove leading .
-		final String selector = rawSelector.substring( 1 );
-		if ( selector.matches( ".*[<>:+\\s\"\\[\\*].*" ) ) {
-			throw new IllegalArgumentException(
-					"For now, only simple CSS selectors are implemented. Please report your chosen selector ('"
-							+ rawSelector + "') at https://github.com/retest/recheck-web/issues." );
-		}
-		return selector;
 	}
 
 	private WebElement findElementByXPath( final ByXPath byXPath ) {
