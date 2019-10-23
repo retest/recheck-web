@@ -1,12 +1,12 @@
 package de.retest.web.selenium;
 
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 import org.openqa.selenium.WebElement;
 
 class AutocheckingWebElementTest {
@@ -15,23 +15,23 @@ class AutocheckingWebElementTest {
 	void check_is_skiped_when_skipCheck_is_called() throws Exception {
 		final WebElement delegate = mock( WebElement.class );
 		final AutocheckingRecheckDriver driver = mock( AutocheckingRecheckDriver.class );
-		final AutocheckingWebElement wrapper = new AutocheckingWebElement( delegate, driver );
+		final AutocheckingWebElement autoCheckElement = new AutocheckingWebElement( delegate, driver );
 
-		wrapper.skipCheck().clear();
+		autoCheckElement.skipCheck().clear();
 		verify( delegate, times( 1 ) ).clear();
-		verify( driver, never() ).check( Mockito.any(), Mockito.any() );
+		verify( driver, never() ).check( any(), any() );
 
-		wrapper.skipCheck().submit();
+		autoCheckElement.skipCheck().submit();
 		verify( delegate, times( 1 ) ).submit();
-		verify( driver, never() ).check( Mockito.any(), Mockito.any() );
+		verify( driver, never() ).check( any(), any() );
 
-		wrapper.skipCheck().sendKeys();
+		autoCheckElement.skipCheck().sendKeys();
 		verify( delegate, times( 1 ) ).sendKeys();
-		verify( driver, never() ).check( Mockito.any(), Mockito.any() );
+		verify( driver, never() ).check( any(), any() );
 
-		wrapper.skipCheck().click();
+		autoCheckElement.skipCheck().click();
 		verify( delegate, times( 1 ) ).click();
-		verify( driver, never() ).check( Mockito.any(), Mockito.any() );
+		verify( driver, never() ).check( any(), any() );
 
 	}
 
@@ -39,59 +39,59 @@ class AutocheckingWebElementTest {
 	void changing_methods_should_check_and_delegate_calls() {
 		final WebElement delegate = mock( WebElement.class );
 		final AutocheckingRecheckDriver driver = mock( AutocheckingRecheckDriver.class );
-		final AutocheckingWebElement wrapper = new AutocheckingWebElement( delegate, driver );
+		final AutocheckingWebElement autoCheckElement = new AutocheckingWebElement( delegate, driver );
 
-		wrapper.clear();
+		autoCheckElement.clear();
 		verify( delegate, times( 1 ) ).clear();
-		verify( driver, times( 1 ) ).check( Mockito.any(), Mockito.any() );
+		verify( driver, times( 1 ) ).check( any(), any() );
 
-		wrapper.submit();
+		autoCheckElement.submit();
 		verify( delegate, times( 1 ) ).submit();
-		verify( driver, times( 2 ) ).check( Mockito.any(), Mockito.any() );
+		verify( driver, times( 2 ) ).check( any(), any() );
 
-		wrapper.sendKeys();
+		autoCheckElement.sendKeys();
 		verify( delegate, times( 1 ) ).sendKeys();
-		verify( driver, times( 3 ) ).check( Mockito.any(), Mockito.any() );
+		verify( driver, times( 3 ) ).check( any(), any() );
 
-		wrapper.click();
+		autoCheckElement.click();
 		verify( delegate, times( 1 ) ).click();
-		verify( driver, times( 4 ) ).check( Mockito.any(), Mockito.any() );
+		verify( driver, times( 4 ) ).check( any(), any() );
 	}
 
 	@Test
 	void other_methods_should_delegate_calls() {
 		final WebElement delegate = mock( WebElement.class );
-		final AutocheckingWebElement wrapper =
+		final AutocheckingWebElement autoCheckElement =
 				new AutocheckingWebElement( delegate, mock( AutocheckingRecheckDriver.class ) );
 
-		wrapper.getAttribute( "test" );
+		autoCheckElement.getAttribute( "test" );
 		verify( delegate, times( 1 ) ).getAttribute( "test" );
 
-		wrapper.getCssValue( "css" );
+		autoCheckElement.getCssValue( "css" );
 		verify( delegate, times( 1 ) ).getCssValue( "css" );
 
-		wrapper.getLocation();
+		autoCheckElement.getLocation();
 		verify( delegate, times( 1 ) ).getLocation();
 
-		wrapper.getRect();
+		autoCheckElement.getRect();
 		verify( delegate, times( 1 ) ).getRect();
 
-		wrapper.getSize();
+		autoCheckElement.getSize();
 		verify( delegate, times( 1 ) ).getSize();
 
-		wrapper.getTagName();
+		autoCheckElement.getTagName();
 		verify( delegate, times( 1 ) ).getTagName();
 
-		wrapper.getText();
+		autoCheckElement.getText();
 		verify( delegate, times( 1 ) ).getText();
 
-		wrapper.isDisplayed();
+		autoCheckElement.isDisplayed();
 		verify( delegate, times( 1 ) ).isDisplayed();
 
-		wrapper.isEnabled();
+		autoCheckElement.isEnabled();
 		verify( delegate, times( 1 ) ).isEnabled();
 
-		wrapper.isSelected();
+		autoCheckElement.isSelected();
 		verify( delegate, times( 1 ) ).isSelected();
 	}
 }
