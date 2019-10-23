@@ -169,14 +169,6 @@ public class TestHealer {
 
 	private String retrieveUsableCssSelector( final ByCssSelector by ) {
 		final String rawSelector = ByWhisperer.retrieveCssSelector( by );
-		if ( rawSelector.startsWith( "#" ) ) {
-			throw new IllegalArgumentException(
-					"To search for element by ID, use `By.id()` instead of `#id` as CSS selector." );
-		}
-		if ( !rawSelector.startsWith( "." ) ) {
-			throw new IllegalArgumentException(
-					"To search for element by tag, use `By.tagName()` instead of `tag` as CSS selector." );
-		}
 		// remove leading .
 		final String selector = rawSelector.substring( 1 );
 		if ( selector.matches( ".*[<>:+\\s\"\\[\\*].*" ) ) {
