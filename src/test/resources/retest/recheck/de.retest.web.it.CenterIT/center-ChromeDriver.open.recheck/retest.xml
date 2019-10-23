@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.3.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.6.0-SNAPSHOT" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="" title="">
 			<identifyingAttributes>
@@ -61,7 +61,7 @@
 						</entry>
 					</attributes>
 				</attributes>
-				<containedElements retestId="x_587_y_390">
+				<containedElements retestId="center">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -152,7 +152,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="x_587_y_390-e4154">
+					<containedElements retestId="x_587_y_390">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -178,6 +178,9 @@
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>tab-index</key>
 								</entry>
 							</attributes>
 						</attributes>
@@ -209,6 +212,9 @@
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
+								<entry>
+									<key>tab-index</key>
+								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
@@ -217,14 +223,14 @@
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
 									<x>631</x>
-									<y>396</y>
-									<height>0</height>
+									<y>382</y>
+									<height>17</height>
 									<width>0</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>107</x>
-									<y>15</y>
-									<height>-38</height>
+									<y>1</y>
+									<height>-21</height>
 									<width>-152</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/br[1]</attribute>
@@ -244,7 +250,7 @@
 				</containedElements>
 			</containedElements>
 			<screenshot>
-				<persistenceId>html_0631fc48f57706b21987b7c5fff3e17557277abd58bc0c964471a7199f2f4dbd</persistenceId>
+				<persistenceId>html_3b17ccf69e7a8d72ac3f7c0b3f75a36b13604e95a9a12657abdf2c28de714100</persistenceId>
 				<type>PNG</type>
 			</screenshot>
 		</descriptors>
