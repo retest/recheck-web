@@ -12,7 +12,8 @@ public class PageFactory {
 	public enum Page {
 		SHOWCASE,
 		SIMPLE_PAGE,
-		PAGE_FRAME;
+		PAGE_FRAME,
+		CENTER
 	}
 
 	public static String page( final Page page ) {
@@ -25,6 +26,9 @@ public class PageFactory {
 			}
 			case PAGE_FRAME: {
 				return toPageUrlString( "page-frame.html" );
+			}
+			case CENTER: {
+				return toPageUrlString( "centered.html" );
 			}
 			default:
 				throw new IllegalArgumentException( "No \"" + page + "\" page available." );

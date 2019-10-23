@@ -1,5 +1,8 @@
 package de.retest.web.it;
 
+import static de.retest.web.testutils.PageFactory.page;
+import static de.retest.web.testutils.PageFactory.Page.CENTER;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -10,7 +13,6 @@ import org.openqa.selenium.WebDriver;
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
 import de.retest.recheck.junit.jupiter.RecheckExtension;
-import de.retest.web.testutils.PageFactory;
 
 @ExtendWith( RecheckExtension.class )
 class CenterIT {
@@ -26,7 +28,9 @@ class CenterIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void testCenter( final WebDriver driver, final String name ) throws Exception {
 		this.driver = driver;
-		this.driver.get( PageFactory.toPageUrlString( "centered.html" ) );
+		this.driver.get( page( CENTER ) );
+
+		Thread.sleep( 1000 );
 
 		re.check( this.driver, "open" );
 	}
