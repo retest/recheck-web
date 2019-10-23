@@ -12,17 +12,26 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.internal.WrapsElement;
 
-public class WebElementWrapper implements WebElement, WrapsElement {
+public class AutocheckingWebElement implements WebElement, WrapsElement {
 
 	private final WebElement wrappedElement;
 	private final AutocheckingRecheckDriver driver;
 
-	public WebElementWrapper( final WebElement wrappedElement, final AutocheckingRecheckDriver driver ) {
-		if ( wrappedElement instanceof WebElementWrapper ) {
+	public AutocheckingWebElement( final WebElement wrappedElement, final AutocheckingRecheckDriver driver ) {
+		if ( wrappedElement instanceof AutocheckingWebElement ) {
 			throw new IllegalArgumentException( "Cannot wrap WebElementWrapper inside WebElementWrapper." );
 		}
 		this.wrappedElement = wrappedElement;
 		this.driver = driver;
+	}
+
+	/**
+	 * Skip checks for actions performed on this web element.
+	 *
+	 * @return returns the plain WebElement
+	 */
+	public WebElement skipCheck() {
+		return wrappedElement;
 	}
 
 	@Override
@@ -82,13 +91,13 @@ public class WebElementWrapper implements WebElement, WrapsElement {
 	@Override
 	public List<WebElement> findElements( final By by ) {
 		return wrappedElement.findElements( by ).stream() //
-				.map( element -> new WebElementWrapper( element, driver ) ) //
+				.map( element -> new AutocheckingWebElement( element, driver ) ) //
 				.collect( Collectors.toList() );
 	}
 
 	@Override
 	public WebElement findElement( final By by ) {
-		return new WebElementWrapper( wrappedElement.findElement( by ), driver );
+		return new AutocheckingWebElement( wrappedElement.findElement( by ), driver );
 	}
 
 	@Override

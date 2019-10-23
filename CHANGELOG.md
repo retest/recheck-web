@@ -32,6 +32,18 @@ Table of Contents
 
 ### New Features
 
+* Option to skip checks with `AutocheckingRecheckDriver`.
+
+```java
+private AutocheckingRecheckDriver driver;
+@Test
+public void loginTest() throws Exception {
+	driver.findElement( By.id( "username" ) ).skipCheck().sendKeys( "myuser" );
+	driver.findElement( By.id( "password" ) ).skipCheck().sendKeys( "1234" );
+	driver.findElement( By.id( "login-from" ) ).submit();
+}
+```
+
 ### Improvements
 
 
