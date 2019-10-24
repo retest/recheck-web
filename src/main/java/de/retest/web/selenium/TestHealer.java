@@ -142,10 +142,11 @@ public class TestHealer {
 
 	private WebElement findElementByCssSelector( final ByCssSelector by ) {
 		final String selector = ByWhisperer.retrieveCssSelector( by );
-		if ( selector.matches( ".*[<>:+\\s\"\\[\\*].*" ) ) {
-			throw new IllegalArgumentException(
-					"For now, only simple CSS selectors are implemented. Please report your chosen selector ('"
-							+ selector + "') at https://github.com/retest/recheck-web/issues." );
+		if ( isNotYetSupportedCssSelector( selector ) ) {
+			logger.warn(
+					"Unbreakable tests are not implemented for all CSS selectors. Please report your chosen selector ('{}') at https://github.com/retest/recheck-web/issues.",
+					selector );
+			return null;
 		}
 		Element actualElement = null;
 		if ( selector.startsWith( "#" ) ) {
@@ -171,10 +172,21 @@ public class TestHealer {
 		}
 	}
 
+	protected static boolean isNotYetSupportedCssSelector( final String selector ) {
+		return selector.matches( ".*[<>:+\\s\"\\[\\*].*" );
+	}
+
+	protected static boolean isNotYetSupportedXPathExpression( final String xpathExpression ) {
+		return xpathExpression.matches( ".*[<>:+\\s\"|'@\\*].*" );
+	}
+
 	private WebElement findElementByXPath( final ByXPath byXPath ) {
 		final String xpathExpression = ByWhisperer.retrieveXPath( byXPath );
-		if ( xpathExpression.matches( ".*[<>:+\\s\"|'@\\*].*" ) ) {
-			throw new IllegalArgumentException( "For now, only simple class selector is implemented." );
+		if ( isNotYetSupportedXPathExpression( xpathExpression ) ) {
+			logger.warn(
+					"Unbreakable tests are not implemented for all XPath selectors. Please report your chosen selector ('{}') at https://github.com/retest/recheck-web/issues.",
+					xpathExpression );
+			return null;
 		}
 
 		final Element actualElement = findMatchingElement( xpathExpression );
