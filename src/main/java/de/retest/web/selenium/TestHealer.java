@@ -153,7 +153,7 @@ public class TestHealer {
 			actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, ID,
 					selector.substring( 1 ) );
 		}
-		if ( selector.matches( "^[a-zA-Z]*" ) ) {
+		if ( selector.matches( "^[a-z\\-A-Z]*" ) ) {
 			actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, TYPE,
 					selector );
 		}

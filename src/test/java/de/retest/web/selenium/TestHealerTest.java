@@ -64,6 +64,26 @@ class TestHealerTest {
 	}
 
 	@Test
+	public void ByCssSelector_using_tag_with_hyphen_should_redirect() {
+		final RecheckDriver wrapped = mock( RecheckDriver.class );
+		final AutocheckingWebElement resultMarker = mock( AutocheckingWebElement.class );
+
+		final RootElement state = mock( RootElement.class );
+		when( wrapped.getLastExpectedState() ).thenReturn( state );
+		when( wrapped.getLastActualState() ).thenReturn( state );
+
+		final String xpath = "html[1]/ytd-grid-video-renderer[1]";
+		final IdentifyingAttributes identifying =
+				IdentifyingAttributes.create( fromString( xpath ), "ytd-grid-video-renderer" );
+		final Element element = create( "id", state, identifying, new MutableAttributes().immutable() );
+		when( state.getContainedElements() ).thenReturn( Collections.singletonList( element ) );
+		when( wrapped.findElement( By.xpath( xpath ) ) ).thenReturn( resultMarker );
+
+		// assertThat( By.cssSelector( "div" ).matches( element ) ).isTrue();
+		assertThat( findElement( By.cssSelector( "ytd-grid-video-renderer" ), wrapped ) ).isEqualTo( resultMarker );
+	}
+
+	@Test
 	public void ByCssSelector_matches_elements_with_given_class() {
 		final RecheckDriver wrapped = mock( RecheckDriver.class );
 		final AutocheckingWebElement resultMarker = mock( AutocheckingWebElement.class );
