@@ -1,5 +1,9 @@
 package de.retest.web.selenium;
 
+import static de.retest.web.AttributesUtil.CLASS;
+import static de.retest.web.AttributesUtil.ID;
+import static de.retest.web.AttributesUtil.NAME;
+import static de.retest.web.AttributesUtil.TEXT;
 import static de.retest.web.selenium.ByWhisperer.retrieveCssClassName;
 import static de.retest.web.selenium.ByWhisperer.retrieveId;
 import static de.retest.web.selenium.ByWhisperer.retrieveLinkText;
@@ -27,10 +31,6 @@ import de.retest.recheck.ui.descriptors.RootElement;
 public class TestHealer {
 
 	private static final String PATH = "path";
-	private static final String TEXT = "text";
-	private static final String NAME = "name";
-	private static final String CLASS = "class";
-	private static final String ID = "id";
 	private static final String TYPE = "type";
 
 	private static final Logger logger = LoggerFactory.getLogger( TestHealer.class );
