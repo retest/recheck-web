@@ -24,7 +24,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import de.retest.recheck.TestCaseFinder;
-import de.retest.recheck.ui.Path;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
 import de.retest.recheck.ui.descriptors.RootElement;
@@ -83,7 +82,7 @@ public class TestHealer {
 	private WebElement findElementById( final ById by ) {
 		final String id = retrieveId( by );
 		final Element actualElement =
-				de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, ID, id );
+				de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState, hasID( id ) );
 
 		if ( actualElement == null ) {
 			logger.warn( "{} with id '{}'.", ELEMENT_NOT_FOUND_MESSAGE, id );
@@ -97,8 +96,8 @@ public class TestHealer {
 
 	private WebElement findElementByClassName( final ByClassName by ) {
 		final String className = retrieveCssClassName( by );
-		final Element actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState,
-				lastActualState, CLASS, value -> ((String) value).contains( className ) );
+		final Element actualElement =
+				de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState, hasClass( className ) );
 
 		if ( actualElement == null ) {
 			logger.warn( "{} with CSS class '{}'.", ELEMENT_NOT_FOUND_MESSAGE, className );
@@ -113,7 +112,7 @@ public class TestHealer {
 	private WebElement findElementByName( final ByName by ) {
 		final String name = retrieveName( by );
 		final Element actualElement =
-				de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, NAME, name );
+				de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState, hasName( name ) );
 
 		if ( actualElement == null ) {
 			logger.warn( "{} with name '{}'.", ELEMENT_NOT_FOUND_MESSAGE, name );
@@ -127,11 +126,8 @@ public class TestHealer {
 
 	private WebElement findElementByLinkText( final ByLinkText by ) {
 		final String linkText = retrieveLinkText( by );
-		final String attributeName = TEXT;
-		final Element actualElement = de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState,
-				element -> linkText.equals( element.getAttributes().get( attributeName ) )
-						|| linkText.equals( element.getIdentifyingAttributes().get( attributeName ) )
-								&& "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() ) );
+		final Element actualElement =
+				de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState, hasLinkText( linkText ) );
 
 		if ( actualElement == null ) {
 			logger.warn( "{} with link text '{}'.", ELEMENT_NOT_FOUND_MESSAGE, linkText );
@@ -153,25 +149,19 @@ public class TestHealer {
 		}
 		Predicate<Element> predicate = element -> true;
 		if ( selector.startsWith( "#" ) ) {
-			predicate = predicate
-					.and( element -> element.getIdentifyingAttributes().get( ID ).equals( selector.substring( 1 ) ) );
+			predicate = predicate.and( hasID( selector.substring( 1 ) ) );
 		}
 		if ( selector.matches( "^[a-z\\-A-Z]*" ) ) {
-			predicate = predicate.and( element -> element.getIdentifyingAttributes().get( TYPE ).equals( selector ) );
+			predicate = predicate.and( hasTag( selector ) );
 		}
 		if ( selector.startsWith( "." ) ) {
-			predicate = predicate.and( element -> element.getIdentifyingAttributes().get( CLASS ) != null
-					? ((String) element.getIdentifyingAttributes().get( CLASS )).contains( selector.substring( 1 ) )
-					: false );
+			predicate = predicate.and( hasClass( selector.substring( 1 ) ) );
 		}
 		if ( selector.matches( "\\[.*\\]" ) ) {
 			final String withoutBrackets = selector.substring( 1, selector.length() - 1 );
 			final String attribute = getAttribute( withoutBrackets );
 			final String attributeValue = getAttributeValue( withoutBrackets );
-			predicate = predicate.and( element -> element.getIdentifyingAttributes().get( attribute ) != null
-					? element.getIdentifyingAttributes().get( attribute ).equals( attributeValue )
-					: element.getAttributes().get( attribute ) != null
-							? element.getAttributes().get( attribute ).toString().equals( attributeValue ) : false );
+			predicate = predicate.and( hasAttribute( attribute, attributeValue ) );
 		}
 
 		final Element actualElement =
@@ -184,6 +174,38 @@ public class TestHealer {
 					actualElement.getIdentifyingAttributes().get( CLASS ), "cssSelector", actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
+	}
+
+	private static Predicate<Element> hasAttribute( final String attribute, final String attributeValue ) {
+		// TODO Replace with element.getAttribute after 1.6.0 release
+		return element -> element.getIdentifyingAttributes().get( attribute ) != null
+				? element.getIdentifyingAttributes().get( attribute ).equals( attributeValue )
+				: element.getAttributes().get( attribute ) != null
+						? element.getAttributes().get( attribute ).toString().equals( attributeValue ) : false;
+	}
+
+	private static Predicate<Element> hasLinkText( final String linkText ) {
+		return element -> linkText.equals( element.getAttributes().get( TEXT ) )
+				|| linkText.equals( element.getIdentifyingAttributes().get( TEXT ) )
+						&& "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() );
+	}
+
+	private static Predicate<Element> hasClass( final String cssClass ) {
+		return element -> element.getIdentifyingAttributes().get( CLASS ) != null
+				? ((String) element.getIdentifyingAttributes().get( CLASS )).contains( cssClass ) : false;
+	}
+
+	private static Predicate<Element> hasName( final String name ) {
+		return element -> element.getIdentifyingAttributes().get( NAME ) != null
+				? ((String) element.getIdentifyingAttributes().get( NAME )).equals( name ) : false;
+	}
+
+	private static Predicate<Element> hasTag( final String tag ) {
+		return element -> element.getIdentifyingAttributes().get( TYPE ).equals( tag );
+	}
+
+	private static Predicate<Element> hasID( final String id ) {
+		return element -> element.getIdentifyingAttributes().get( ID ).equals( id );
 	}
 
 	private String getAttribute( final String withoutBrackets ) {
@@ -206,7 +228,6 @@ public class TestHealer {
 
 	protected static boolean isNotYetSupportedCssSelector( final String selector ) {
 		return selector.matches( ".*[<>:+\\s\\*~,].*" ) || selector.matches( ".+\\..*" );
-
 	}
 
 	protected static boolean isNotYetSupportedXPathExpression( final String xpathExpression ) {
@@ -222,8 +243,17 @@ public class TestHealer {
 			return null;
 		}
 
-		final Element actualElement = findMatchingElement( xpathExpression );
+		Predicate<Element> predicate = element -> true;
+		if ( xpathExpression.startsWith( "//" ) ) {
+			predicate = predicate.and( element -> element.getIdentifyingAttributes().getPath().toLowerCase()
+					.contains( xpathExpression.substring( 1 ).toLowerCase() ) );
+		} else if ( xpathExpression.startsWith( "/" ) ) {
+			predicate = predicate.and( element -> element.getIdentifyingAttributes().getPath().toLowerCase()
+					.startsWith( xpathExpression.substring( 1 ).toLowerCase() ) );
+		}
 
+		final Element actualElement =
+				de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState, predicate );
 		if ( actualElement == null ) {
 			logger.warn( "{} with XPath '{}'.", ELEMENT_NOT_FOUND_MESSAGE, xpathExpression );
 			return null;
@@ -237,7 +267,7 @@ public class TestHealer {
 	private WebElement findElementByTagName( final ByTagName by ) {
 		final String tag = ByWhisperer.retrieveTag( by );
 		final Element actualElement =
-				de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, TYPE, tag );
+				de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState, hasTag( tag ) );
 
 		if ( actualElement == null ) {
 			logger.warn( "{} with tag '{}'.", ELEMENT_NOT_FOUND_MESSAGE, tag );
@@ -247,17 +277,6 @@ public class TestHealer {
 					actualElement.getIdentifyingAttributes().get( TYPE ), TYPE, actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
-	}
-
-	private Element findMatchingElement( final String xpathExpression ) {
-		if ( xpathExpression.startsWith( "//" ) ) {
-			return de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, PATH,
-					value -> ((Path) value).toString().toLowerCase()
-							.contains( xpathExpression.substring( 1 ).toLowerCase() ) );
-		}
-		return de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, PATH,
-				value -> ((Path) value).toString().toLowerCase()
-						.startsWith( xpathExpression.substring( 1 ).toLowerCase() ) );
 	}
 
 	private void writeWarnLogForChangedIdentifier( final String elementIdentifier, final Object oldValue,
