@@ -65,13 +65,6 @@ public class TestHealer {
 			return findElementByLinkText( (ByLinkText) by );
 		}
 		if ( by instanceof ByCssSelector ) {
-			final String rawSelector = ByWhisperer.retrieveCssSelector( (ByCssSelector) by );
-			if ( rawSelector.startsWith( "#" ) && !isComplexCssSelector( rawSelector ) ) {
-				return findElement( By.id( rawSelector.substring( 1 ) ) );
-			}
-			if ( !rawSelector.startsWith( "." ) && !isComplexCssSelector( rawSelector ) ) {
-				return findElement( By.tagName( rawSelector ) );
-			}
 			return findElementByCssSelector( (ByCssSelector) by );
 		}
 		if ( by instanceof ByXPath ) {
@@ -82,10 +75,6 @@ public class TestHealer {
 		}
 		throw new UnsupportedOperationException(
 				"Healing tests with " + by.getClass().getSimpleName() + " not yet implemented" );
-	}
-
-	private boolean isComplexCssSelector( final String rawSelector ) {
-		return rawSelector.contains( " " ) || rawSelector.contains( "[" );
 	}
 
 	private WebElement findElementById( final ById by ) {
@@ -152,10 +141,26 @@ public class TestHealer {
 	}
 
 	private WebElement findElementByCssSelector( final ByCssSelector by ) {
-		final String selector = retrieveUsableCssSelector( by );
-
-		final Element actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState,
-				lastActualState, CLASS, value -> ((String) value).contains( selector ) );
+		final String selector = ByWhisperer.retrieveCssSelector( by );
+		if ( isNotYetSupportedCssSelector( selector ) ) {
+			logger.warn(
+					"Unbreakable tests are not implemented for all CSS selectors. Please report your chosen selector ('{}') at https://github.com/retest/recheck-web/issues.",
+					selector );
+			return null;
+		}
+		Element actualElement = null;
+		if ( selector.startsWith( "#" ) ) {
+			actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, ID,
+					selector.substring( 1 ) );
+		}
+		if ( selector.matches( "^[a-z\\-A-Z]*" ) ) {
+			actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, TYPE,
+					selector );
+		}
+		if ( selector.startsWith( "." ) ) {
+			actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, CLASS,
+					value -> ((String) value).contains( selector.substring( 1 ) ) );
+		}
 
 		if ( actualElement == null ) {
 			logger.warn( "{} with CSS selector '{}'.", ELEMENT_NOT_FOUND_MESSAGE, selector );
@@ -167,28 +172,21 @@ public class TestHealer {
 		}
 	}
 
-	private String retrieveUsableCssSelector( final ByCssSelector by ) {
-		final String rawSelector = ByWhisperer.retrieveCssSelector( by );
-		if ( rawSelector.startsWith( "#" ) ) {
-			throw new IllegalArgumentException(
-					"To search for element by ID, use `By.id()` instead of `#id` as CSS selector." );
-		}
-		if ( !rawSelector.startsWith( "." ) ) {
-			throw new IllegalArgumentException(
-					"To search for element by tag, use `By.tagName()` instead of `tag` as CSS selector." );
-		}
-		// remove leading .
-		final String selector = rawSelector.substring( 1 );
-		if ( selector.matches( ".*[<>:+\\s\"\\[\\*].*" ) ) {
-			throw new IllegalArgumentException( "For now, only simple class selector is implemented." );
-		}
-		return selector;
+	protected static boolean isNotYetSupportedCssSelector( final String selector ) {
+		return selector.matches( ".*[<>:+\\s\"\\[\\*].*" );
+	}
+
+	protected static boolean isNotYetSupportedXPathExpression( final String xpathExpression ) {
+		return xpathExpression.matches( ".*[<>:+\\s\"|'@\\*].*" );
 	}
 
 	private WebElement findElementByXPath( final ByXPath byXPath ) {
 		final String xpathExpression = ByWhisperer.retrieveXPath( byXPath );
-		if ( xpathExpression.matches( ".*[<>:+\\s\"|'@\\*].*" ) ) {
-			throw new IllegalArgumentException( "For now, only simple class selector is implemented." );
+		if ( isNotYetSupportedXPathExpression( xpathExpression ) ) {
+			logger.warn(
+					"Unbreakable tests are not implemented for all XPath selectors. Please report your chosen selector ('{}') at https://github.com/retest/recheck-web/issues.",
+					xpathExpression );
+			return null;
 		}
 
 		final Element actualElement = findMatchingElement( xpathExpression );
