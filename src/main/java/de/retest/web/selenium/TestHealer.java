@@ -10,6 +10,8 @@ import static de.retest.web.selenium.ByWhisperer.retrieveLinkText;
 import static de.retest.web.selenium.ByWhisperer.retrieveName;
 
 import java.util.function.Predicate;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.By.ByClassName;
@@ -32,6 +34,11 @@ public class TestHealer {
 
 	private static final String PATH = IdentifyingAttributes.PATH_ATTRIBUTE_KEY;
 	private static final String TYPE = IdentifyingAttributes.TYPE_ATTRIBUTE_KEY;
+
+	private static final Pattern CSS_CLASS = Pattern.compile( "^\\.([a-zA-Z0-9\\-]+)" );
+	private static final Pattern CSS_ID = Pattern.compile( "^\\#([a-zA-Z0-9\\-]+)" );
+	private static final Pattern CSS_TAG = Pattern.compile( "^([a-zA-Z0-9\\-]+)" );
+	private static final Pattern CSS_ATTRIBUTE = Pattern.compile( "^\\[([a-zA-Z0-9\\-=\"]+)\\]" );
 
 	private static final Logger logger = LoggerFactory.getLogger( TestHealer.class );
 	private static final String ELEMENT_NOT_FOUND_MESSAGE = "It appears that even the Golden Master has no element";
@@ -140,37 +147,58 @@ public class TestHealer {
 	}
 
 	private WebElement findElementByCssSelector( final ByCssSelector by ) {
-		final String selector = ByWhisperer.retrieveCssSelector( by );
-		if ( isNotYetSupportedCssSelector( selector ) ) {
+		final String origSelector = ByWhisperer.retrieveCssSelector( by );
+		String selector = origSelector;
+		Predicate<Element> predicate = element -> true;
+		boolean matched = true;
+		while ( !selector.isEmpty() && matched ) {
+			matched = false;
+			final Matcher tagMatcher = CSS_TAG.matcher( selector );
+			if ( tagMatcher.find() ) {
+				final String tag = tagMatcher.group( 1 );
+				predicate = predicate.and( hasTag( tag ) );
+				selector = selector.substring( tag.length() ).trim();
+				matched = true;
+			}
+			final Matcher idMatcher = CSS_ID.matcher( selector );
+			if ( idMatcher.find() ) {
+				final String id = idMatcher.group( 1 );
+				predicate = predicate.and( hasID( id ) );
+				selector = selector.substring( id.length() + 1 ).trim();
+				matched = true;
+			}
+			final Matcher classMatcher = CSS_CLASS.matcher( selector );
+			if ( classMatcher.find() ) {
+				final String cssClass = classMatcher.group( 1 );
+				predicate = predicate.and( hasClass( cssClass ) );
+				selector = selector.substring( cssClass.length() + 1 ).trim();
+				matched = true;
+			}
+			final Matcher attributeMatcher = CSS_ATTRIBUTE.matcher( selector );
+			if ( attributeMatcher.find() ) {
+				final String withoutBrackets = attributeMatcher.group( 1 );
+				final String attribute = getAttribute( withoutBrackets );
+				final String attributeValue = getAttributeValue( withoutBrackets );
+				predicate = predicate.and( hasAttribute( attribute, attributeValue ) );
+				selector = selector.substring( withoutBrackets.length() + 2 ).trim();
+				matched = true;
+			}
+		}
+
+		if ( !selector.isEmpty() ) {
 			logger.warn(
 					"Unbreakable tests are not implemented for all CSS selectors. Please report your chosen selector ('{}') at https://github.com/retest/recheck-web/issues.",
 					selector );
 			return null;
 		}
-		Predicate<Element> predicate = element -> true;
-		if ( selector.startsWith( "#" ) ) {
-			predicate = predicate.and( hasID( selector.substring( 1 ) ) );
-		}
-		if ( selector.matches( "^[a-z\\-A-Z]*" ) ) {
-			predicate = predicate.and( hasTag( selector ) );
-		}
-		if ( selector.startsWith( "." ) ) {
-			predicate = predicate.and( hasClass( selector.substring( 1 ) ) );
-		}
-		if ( selector.matches( "\\[.*\\]" ) ) {
-			final String withoutBrackets = selector.substring( 1, selector.length() - 1 );
-			final String attribute = getAttribute( withoutBrackets );
-			final String attributeValue = getAttributeValue( withoutBrackets );
-			predicate = predicate.and( hasAttribute( attribute, attributeValue ) );
-		}
 
 		final Element actualElement =
 				de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState, predicate );
 		if ( actualElement == null ) {
-			logger.warn( "{} with CSS selector '{}'.", ELEMENT_NOT_FOUND_MESSAGE, selector );
+			logger.warn( "{} with CSS selector '{}'.", ELEMENT_NOT_FOUND_MESSAGE, origSelector );
 			return null;
 		} else {
-			writeWarnLogForChangedIdentifier( "HTML class attribute", selector,
+			writeWarnLogForChangedIdentifier( "HTML class attribute", origSelector,
 					actualElement.getIdentifyingAttributes().get( CLASS ), "cssSelector", actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
@@ -224,10 +252,6 @@ public class TestHealer {
 			result = result.substring( 1, result.length() - 1 );
 		}
 		return result;
-	}
-
-	protected static boolean isNotYetSupportedCssSelector( final String selector ) {
-		return selector.matches( ".*[<>:+\\s\\*~,].*" ) || selector.matches( ".+\\..*" );
 	}
 
 	protected static boolean isNotYetSupportedXPathExpression( final String xpathExpression ) {

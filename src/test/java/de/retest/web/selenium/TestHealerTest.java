@@ -3,7 +3,6 @@ package de.retest.web.selenium;
 import static de.retest.recheck.ui.Path.fromString;
 import static de.retest.recheck.ui.descriptors.Element.create;
 import static de.retest.web.selenium.TestHealer.findElement;
-import static de.retest.web.selenium.TestHealer.isNotYetSupportedCssSelector;
 import static de.retest.web.selenium.TestHealer.isNotYetSupportedXPathExpression;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
@@ -11,10 +10,15 @@ import static org.mockito.Mockito.when;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.slf4j.LoggerFactory;
 
+import ch.qos.logback.classic.Logger;
+import ch.qos.logback.classic.spi.ILoggingEvent;
+import ch.qos.logback.core.read.ListAppender;
 import de.retest.recheck.ui.descriptors.Attribute;
 import de.retest.recheck.ui.descriptors.Attributes;
 import de.retest.recheck.ui.descriptors.Element;
@@ -99,13 +103,24 @@ class TestHealerTest {
 		attributes.put( "disabled", "true" );
 
 		final String xpath = "html[1]/div[1]";
-		final IdentifyingAttributes identifying = IdentifyingAttributes.create( fromString( xpath ), "div" );
-		final Element element = create( "id", state, identifying, attributes.immutable() );
+		final Collection<Attribute> identCrit = IdentifyingAttributes.createList( fromString( xpath ), "div" );
+		identCrit.add( new StringAttribute( "class", "myClass" ) );
+		identCrit.add( new StringAttribute( "id", "myId" ) );
+		final Element element = create( "id", state, new IdentifyingAttributes( identCrit ), attributes.immutable() );
 		when( state.getContainedElements() ).thenReturn( Collections.singletonList( element ) );
 		when( wrapped.findElement( By.xpath( xpath ) ) ).thenReturn( resultMarker );
 
 		assertThat( findElement( By.cssSelector( "[data-id=\"myspecialID\"]" ), wrapped ) ).isEqualTo( resultMarker );
 		assertThat( findElement( By.cssSelector( "[disabled]" ), wrapped ) ).isEqualTo( resultMarker );
+		assertThat( findElement( By.cssSelector( "div[data-id=\"myspecialID\"]" ), wrapped ) )
+				.isEqualTo( resultMarker );
+		assertThat( findElement( By.cssSelector( "div[disabled]" ), wrapped ) ).isEqualTo( resultMarker );
+		assertThat( findElement( By.cssSelector( ".myClass[data-id=\"myspecialID\"]" ), wrapped ) )
+				.isEqualTo( resultMarker );
+		assertThat( findElement( By.cssSelector( ".myClass[disabled]" ), wrapped ) ).isEqualTo( resultMarker );
+		assertThat( findElement( By.cssSelector( "#myId[data-id=\"myspecialID\"]" ), wrapped ) )
+				.isEqualTo( resultMarker );
+		assertThat( findElement( By.cssSelector( "#myId[disabled]" ), wrapped ) ).isEqualTo( resultMarker );
 	}
 
 	@Test
@@ -125,10 +140,13 @@ class TestHealerTest {
 		when( state.getContainedElements() ).thenReturn( Collections.singletonList( element ) );
 		when( wrapped.findElement( By.xpath( xpath ) ) ).thenReturn( resultMarker );
 
-		// assertThat( By.cssSelector( ".pure-button" ).matches( element ) ).isTrue();
 		assertThat( findElement( By.cssSelector( ".pure-button" ), wrapped ) ).isEqualTo( resultMarker );
-		// assertThat( By.cssSelector( ".special-class" ).matches( element ) ).isFalse();
+		assertThat( findElement( By.cssSelector( ".pure-button.my-button" ), wrapped ) ).isEqualTo( resultMarker );
+		assertThat( findElement( By.cssSelector( ".pure-button .my-button" ), wrapped ) ).isEqualTo( resultMarker );
+
 		assertThat( findElement( By.cssSelector( ".special-class" ), wrapped ) ).isEqualTo( null );
+		assertThat( findElement( By.cssSelector( ".pure-button.special-class" ), wrapped ) ).isEqualTo( null );
+		assertThat( findElement( By.cssSelector( ".pure-button .special-class" ), wrapped ) ).isEqualTo( null );
 	}
 
 	@Test
@@ -150,29 +168,58 @@ class TestHealerTest {
 
 	@Test
 	public void not_yet_implemented_ByCssSelector_should_be_logged() {
-		assertThat( isNotYetSupportedCssSelector( ".open > .dropdown-toggle.btn-primary" ) ).isTrue();
-		assertThat( isNotYetSupportedCssSelector( ".btn-primary[disabled] p" ) ).isTrue();
-		assertThat( isNotYetSupportedCssSelector( ".btn-group-vertical > .btn:not(:first-child):not(:last-child)" ) )
-				.isTrue();
-		assertThat(
-				isNotYetSupportedCssSelector( "[data-toggle=\"buttons\"] > .btn-group > .btn input[type=\"radio\"]" ) )
-						.isTrue();
-		assertThat( isNotYetSupportedCssSelector( ".input-group[class*=\"col-\"]" ) ).isTrue();
-		assertThat( isNotYetSupportedCssSelector( "div~p" ) ).isTrue();
-		assertThat( isNotYetSupportedCssSelector( "[href*=\"w3schools\"]" ) ).isTrue();
-		assertThat( isNotYetSupportedCssSelector( "div,p" ) ).isTrue();
-		assertThat( isNotYetSupportedCssSelector( ".class1.class2" ) ).isTrue();
-		assertThat( isNotYetSupportedCssSelector( "p.intro" ) ).isTrue();
+		final ListAppender<ILoggingEvent> listAppender = new ListAppender<>();
+		listAppender.start();
+		((Logger) LoggerFactory.getLogger( TestHealer.class )).addAppender( listAppender );
+		final List<ILoggingEvent> logsList = listAppender.list;
+
+		final RecheckDriver wrapped = mock( RecheckDriver.class );
+		final RootElement state = mock( RootElement.class );
+		when( wrapped.getLastExpectedState() ).thenReturn( state );
+		when( wrapped.getLastActualState() ).thenReturn( state );
+
+		assertThat( findElement( By.cssSelector( ".open > .dropdown-toggle.btn-primary" ), wrapped ) ).isNull();
+		assertThat( logsList.get( 0 ).getMessage() )
+				.startsWith( "Unbreakable tests are not implemented for all CSS selectors." );
+		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( "> .dropdown-toggle.btn-primary" );
+		logsList.clear();
+
+		assertThat( findElement( By.cssSelector( ".btn:not(:first-child):not(:last-child)" ), wrapped ) ).isNull();
+		assertThat( logsList.get( 0 ).getMessage() )
+				.startsWith( "Unbreakable tests are not implemented for all CSS selectors." );
+		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( ":not(:first-child):not(:last-child)" );
+		logsList.clear();
+
+		assertThat( findElement( By.cssSelector( ".input-group[class*=\"col-\"]" ), wrapped ) ).isNull();
+		assertThat( logsList.get( 0 ).getMessage() )
+				.startsWith( "Unbreakable tests are not implemented for all CSS selectors." );
+		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( "[class*=\"col-\"]" );
+		logsList.clear();
+
+		assertThat( findElement( By.cssSelector( "div~p" ), wrapped ) ).isNull();
+		assertThat( logsList.get( 0 ).getMessage() )
+				.startsWith( "Unbreakable tests are not implemented for all CSS selectors." );
+		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( "~p" );
+		logsList.clear();
+
+		assertThat( findElement( By.cssSelector( "[href*=\"w3schools\"]" ), wrapped ) ).isNull();
+		assertThat( logsList.get( 0 ).getMessage() )
+				.startsWith( "Unbreakable tests are not implemented for all CSS selectors." );
+		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( "[href*=\"w3schools\"]" );
+		logsList.clear();
+
+		assertThat( findElement( By.cssSelector( "div,p" ), wrapped ) ).isNull();
+		assertThat( logsList.get( 0 ).getMessage() )
+				.startsWith( "Unbreakable tests are not implemented for all CSS selectors." );
+		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( ",p" );
+		logsList.clear();
 
 		// TODO
-		// [attribute]			[target]				Selects all elements with a target attribute
-		// [attribute=value]	[target=_blank]			Selects all elements with target="_blank"
 		// [attribute~=value]	[title~=flower]			Selects all elements with a title attribute containing the word "flower"
 		// [attribute|=value]	[lang|=en]				Selects all elements with a lang attribute value starting with "en"
 		// [attribute^=value]	a[href^="https"]		Selects every element whose href attribute value begins with "https"
 		// [attribute$=value]	a[href$=".pdf"]			Selects every element whose href attribute value ends with ".pdf"
 		// [attribute*=value]	a[href*="w3schools"]	Selects every element whose href attribute value contains the substring "w3schools"
-
 	}
 
 	@Test
