@@ -16,7 +16,7 @@ import de.retest.web.selenium.By;
 import de.retest.web.testutils.PageFactory;
 import de.retest.web.testutils.PageFactory.Page;
 
-public class RecheckRemoteWebElementFailingIT {
+class RecheckRemoteWebElementFailingIT {
 
 	private static final String MISSING_ASSERTION_MSG = "An assertion error should have been produced";
 	private static final String SELECT_ELEMENT = "select-element-";
@@ -32,9 +32,9 @@ public class RecheckRemoteWebElementFailingIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void inserted_child_in_webelement_should_be_checked( final WebDriver driver ) throws Exception {
 		this.driver = driver;
-		driver.get( PageFactory.page( Page.PAGE_FRAME ) );
+		this.driver.get( PageFactory.page( Page.PAGE_FRAME ) );
 
-		((JavascriptExecutor) driver)
+		((JavascriptExecutor) this.driver)
 				.executeScript( "document.getElementById('multi').add(document.createElement('option'))" );
 
 		re.startTest( SELECT_ELEMENT + driver.getClass().getSimpleName() );
@@ -56,11 +56,11 @@ public class RecheckRemoteWebElementFailingIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void deleted_child_in_webelement_should_be_checked( final WebDriver driver ) throws Exception {
 		this.driver = driver;
-		driver.get( PageFactory.page( Page.PAGE_FRAME ) );
+		this.driver.get( PageFactory.page( Page.PAGE_FRAME ) );
 
-		((JavascriptExecutor) driver).executeScript( "document.getElementById('multi').remove(3)" );
+		((JavascriptExecutor) this.driver).executeScript( "document.getElementById('multi').remove(3)" );
 
-		re.startTest( SELECT_ELEMENT + driver.getClass().getSimpleName() );
+		re.startTest( SELECT_ELEMENT + this.driver.getClass().getSimpleName() );
 
 		Thread.sleep( 1000 );
 

@@ -32,7 +32,7 @@ class CenterIT {
 
 		Thread.sleep( 1000 );
 
-		re.check( this.driver, "open" );
+		re.check( driver, "open" );
 	}
 
 	@AfterEach
