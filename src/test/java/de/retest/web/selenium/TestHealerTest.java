@@ -84,6 +84,29 @@ class TestHealerTest {
 	}
 
 	@Test
+	public void ByCssSelector_matches_elements_with_given_attribute() {
+		final RecheckDriver wrapped = mock( RecheckDriver.class );
+		final AutocheckingWebElement resultMarker = mock( AutocheckingWebElement.class );
+
+		final RootElement state = mock( RootElement.class );
+		when( wrapped.getLastExpectedState() ).thenReturn( state );
+		when( wrapped.getLastActualState() ).thenReturn( state );
+
+		final MutableAttributes attributes = new MutableAttributes();
+		attributes.put( "data-id", "myspecialID" );
+		attributes.put( "disabled", "true" );
+
+		final String xpath = "html[1]/div[1]";
+		final IdentifyingAttributes identifying = IdentifyingAttributes.create( fromString( xpath ), "div" );
+		final Element element = create( "id", state, identifying, attributes.immutable() );
+		when( state.getContainedElements() ).thenReturn( Collections.singletonList( element ) );
+		when( wrapped.findElement( By.xpath( xpath ) ) ).thenReturn( resultMarker );
+
+		assertThat( findElement( By.cssSelector( "[data-id=\"myspecialID\"]" ), wrapped ) ).isEqualTo( resultMarker );
+		assertThat( findElement( By.cssSelector( "[disabled]" ), wrapped ) ).isEqualTo( resultMarker );
+	}
+
+	@Test
 	public void ByCssSelector_matches_elements_with_given_class() {
 		final RecheckDriver wrapped = mock( RecheckDriver.class );
 		final AutocheckingWebElement resultMarker = mock( AutocheckingWebElement.class );
@@ -127,8 +150,7 @@ class TestHealerTest {
 	@Test
 	public void not_yet_implemented_ByCssSelector_should_be_logged() {
 		assertThat( isNotYetSupportedCssSelector( ".open > .dropdown-toggle.btn-primary" ) ).isTrue();
-		assertThat( isNotYetSupportedCssSelector( ".btn-primary[disabled]" ) ).isTrue();
-		assertThat( isNotYetSupportedCssSelector( "fieldset[disabled]" ) ).isTrue();
+		assertThat( isNotYetSupportedCssSelector( ".btn-primary[disabled] p" ) ).isTrue();
 		assertThat( isNotYetSupportedCssSelector( ".btn-group-vertical > .btn:not(:first-child):not(:last-child)" ) )
 				.isTrue();
 		assertThat(

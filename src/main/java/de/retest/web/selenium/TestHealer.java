@@ -161,6 +161,13 @@ public class TestHealer {
 			actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, CLASS,
 					value -> ((String) value).contains( selector.substring( 1 ) ) );
 		}
+		if ( selector.matches( "\\[.*\\]" ) ) {
+			final String withoutBrackets = selector.substring( 1, selector.length() - 1 );
+			final String attribute = getAttribute( withoutBrackets );
+			final String attributeValue = getAttributeValue( withoutBrackets );
+			actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState,
+					attribute, value -> ((String) value).contains( attributeValue ) );
+		}
 
 		if ( actualElement == null ) {
 			logger.warn( "{} with CSS selector '{}'.", ELEMENT_NOT_FOUND_MESSAGE, selector );
@@ -172,8 +179,27 @@ public class TestHealer {
 		}
 	}
 
+	private String getAttribute( final String withoutBrackets ) {
+		if ( withoutBrackets.contains( "=" ) ) {
+			return withoutBrackets.substring( 0, withoutBrackets.lastIndexOf( "=" ) );
+		}
+		return withoutBrackets;
+	}
+
+	private String getAttributeValue( final String withoutBrackets ) {
+		if ( !withoutBrackets.contains( "=" ) ) {
+			return "true";
+		}
+		String result = withoutBrackets.substring( withoutBrackets.lastIndexOf( "=" ) + 1 );
+		if ( result.contains( "\"" ) || result.contains( "'" ) ) {
+			result = result.substring( 1, result.length() - 1 );
+		}
+		return result;
+	}
+
 	protected static boolean isNotYetSupportedCssSelector( final String selector ) {
-		return selector.matches( ".*[<>:+\\s\"\\[\\*].*" );
+		return selector.matches( ".*[<>:+\\s\\*].*" );
+
 	}
 
 	protected static boolean isNotYetSupportedXPathExpression( final String xpathExpression ) {
