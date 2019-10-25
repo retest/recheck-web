@@ -9,16 +9,19 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+import java.util.Collection;
 import java.util.Collections;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
+import de.retest.recheck.ui.descriptors.Attribute;
 import de.retest.recheck.ui.descriptors.Attributes;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
 import de.retest.recheck.ui.descriptors.MutableAttributes;
 import de.retest.recheck.ui.descriptors.RootElement;
+import de.retest.recheck.ui.descriptors.StringAttribute;
 
 class TestHealerTest {
 
@@ -31,12 +34,11 @@ class TestHealerTest {
 		when( wrapped.getLastExpectedState() ).thenReturn( state );
 		when( wrapped.getLastActualState() ).thenReturn( state );
 
-		final MutableAttributes attributes = new MutableAttributes();
-		attributes.put( "id", "special-button" );
-
 		final String xpath = "HTML[1]/DIV[1]";
-		final IdentifyingAttributes identifying = IdentifyingAttributes.create( fromString( xpath ), "DIV" );
-		final Element element = create( "id", state, identifying, attributes.immutable() );
+		final Collection<Attribute> identCrit = IdentifyingAttributes.createList( fromString( xpath ), "DIV" );
+		identCrit.add( new StringAttribute( "id", "special-button" ) );
+		final Element element =
+				create( "id", state, new IdentifyingAttributes( identCrit ), new MutableAttributes().immutable() );
 		when( state.getContainedElements() ).thenReturn( Collections.singletonList( element ) );
 		when( wrapped.findElement( By.xpath( xpath ) ) ).thenReturn( resultMarker );
 
@@ -115,12 +117,11 @@ class TestHealerTest {
 		when( wrapped.getLastExpectedState() ).thenReturn( state );
 		when( wrapped.getLastActualState() ).thenReturn( state );
 
-		final MutableAttributes attributes = new MutableAttributes();
-		attributes.put( "class", "pure-button my-button menu-button" );
-
 		final String xpath = "HTML[1]/DIV[1]";
-		final IdentifyingAttributes identifying = IdentifyingAttributes.create( fromString( xpath ), "DIV" );
-		final Element element = create( "id", state, identifying, attributes.immutable() );
+		final Collection<Attribute> identCrit = IdentifyingAttributes.createList( fromString( xpath ), "DIV" );
+		identCrit.add( new StringAttribute( "class", "pure-button my-button menu-button" ) );
+		final Element element =
+				create( "id", state, new IdentifyingAttributes( identCrit ), new MutableAttributes().immutable() );
 		when( state.getContainedElements() ).thenReturn( Collections.singletonList( element ) );
 		when( wrapped.findElement( By.xpath( xpath ) ) ).thenReturn( resultMarker );
 
