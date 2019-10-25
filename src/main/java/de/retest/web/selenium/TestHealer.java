@@ -26,12 +26,13 @@ import org.slf4j.LoggerFactory;
 import de.retest.recheck.TestCaseFinder;
 import de.retest.recheck.ui.Path;
 import de.retest.recheck.ui.descriptors.Element;
+import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
 import de.retest.recheck.ui.descriptors.RootElement;
 
 public class TestHealer {
 
-	private static final String PATH = "path";
-	private static final String TYPE = "type";
+	private static final String PATH = IdentifyingAttributes.PATH_ATTRIBUTE_KEY;
+	private static final String TYPE = IdentifyingAttributes.TYPE_ATTRIBUTE_KEY;
 
 	private static final Logger logger = LoggerFactory.getLogger( TestHealer.class );
 	private static final String ELEMENT_NOT_FOUND_MESSAGE = "It appears that even the Golden Master has no element";
