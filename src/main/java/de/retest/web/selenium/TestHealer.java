@@ -254,8 +254,7 @@ public class TestHealer {
 	}
 
 	private static Predicate<Element> hasName( final String name ) {
-		return element -> element.getIdentifyingAttributes().get( NAME ) != null
-				? ((String) element.getIdentifyingAttributes().get( NAME )).equals( name ) : false;
+		return element -> name.equals( element.getIdentifyingAttributes().get( NAME ) );
 	}
 
 	private static Predicate<Element> hasTag( final String tag ) {
@@ -263,7 +262,7 @@ public class TestHealer {
 	}
 
 	private static Predicate<Element> hasID( final String id ) {
-		return element -> element.getIdentifyingAttributes().get( ID ).equals( id );
+		return element -> id.equals( element.getIdentifyingAttributes().get( ID ) );
 	}
 
 	private String getAttribute( final String withoutBrackets ) {
