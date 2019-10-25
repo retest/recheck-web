@@ -5,6 +5,8 @@ import static de.retest.web.selenium.ByWhisperer.retrieveId;
 import static de.retest.web.selenium.ByWhisperer.retrieveLinkText;
 import static de.retest.web.selenium.ByWhisperer.retrieveName;
 
+import java.util.function.Predicate;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.By.ByClassName;
 import org.openqa.selenium.By.ByCssSelector;
@@ -148,27 +150,31 @@ public class TestHealer {
 					selector );
 			return null;
 		}
-		Element actualElement = null;
+		Predicate<Element> predicate = element -> true;
 		if ( selector.startsWith( "#" ) ) {
-			actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, ID,
-					selector.substring( 1 ) );
+			predicate = predicate
+					.and( element -> element.getIdentifyingAttributes().get( ID ).equals( selector.substring( 1 ) ) );
 		}
 		if ( selector.matches( "^[a-z\\-A-Z]*" ) ) {
-			actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, TYPE,
-					selector );
+			predicate = predicate.and( element -> element.getIdentifyingAttributes().get( TYPE ).equals( selector ) );
 		}
 		if ( selector.startsWith( "." ) ) {
-			actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState, CLASS,
-					value -> ((String) value).contains( selector.substring( 1 ) ) );
+			predicate = predicate.and( element -> element.getIdentifyingAttributes().get( CLASS ) != null
+					? ((String) element.getIdentifyingAttributes().get( CLASS )).contains( selector.substring( 1 ) )
+					: false );
 		}
 		if ( selector.matches( "\\[.*\\]" ) ) {
 			final String withoutBrackets = selector.substring( 1, selector.length() - 1 );
 			final String attribute = getAttribute( withoutBrackets );
 			final String attributeValue = getAttributeValue( withoutBrackets );
-			actualElement = de.retest.web.selenium.By.findElementByAttribute( lastExpectedState, lastActualState,
-					attribute, value -> ((String) value).contains( attributeValue ) );
+			predicate = predicate.and( element -> element.getIdentifyingAttributes().get( attribute ) != null
+					? element.getIdentifyingAttributes().get( attribute ).equals( attributeValue )
+					: element.getAttributes().get( attribute ) != null
+							? element.getAttributes().get( attribute ).toString().equals( attributeValue ) : false );
 		}
 
+		final Element actualElement =
+				de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState, predicate );
 		if ( actualElement == null ) {
 			logger.warn( "{} with CSS selector '{}'.", ELEMENT_NOT_FOUND_MESSAGE, selector );
 			return null;
