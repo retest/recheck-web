@@ -16,7 +16,7 @@ import de.retest.web.testutils.PageFactory;
 import de.retest.web.testutils.PageFactory.Page;
 
 @ExtendWith( RecheckExtension.class )
-public class RecheckRemoteWebElementIT {
+class RecheckRemoteWebElementIT {
 
 	private static final String HTML_ELEMENT = "html-element-";
 	WebDriver driver;
@@ -31,7 +31,7 @@ public class RecheckRemoteWebElementIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void complete_html_should_be_same_as_driver( final WebDriver driver, final String name ) throws Exception {
 		this.driver = driver;
-		driver.get( PageFactory.page( Page.PAGE_FRAME ) );
+		this.driver.get( PageFactory.page( Page.PAGE_FRAME ) );
 
 		Thread.sleep( 1000 );
 
@@ -42,7 +42,7 @@ public class RecheckRemoteWebElementIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void complete_html_should_be_same_as_web_element( final WebDriver driver, final String name ) throws Exception {
 		this.driver = driver;
-		driver.get( PageFactory.page( Page.PAGE_FRAME ) );
+		this.driver.get( PageFactory.page( Page.PAGE_FRAME ) );
 
 		Thread.sleep( 1000 );
 
@@ -53,7 +53,7 @@ public class RecheckRemoteWebElementIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void no_children_webelement_should_be_checked( final WebDriver driver, final String name ) throws Exception {
 		this.driver = driver;
-		driver.get( PageFactory.page( Page.PAGE_FRAME ) );
+		this.driver.get( PageFactory.page( Page.PAGE_FRAME ) );
 
 		Thread.sleep( 1000 );
 
@@ -64,7 +64,7 @@ public class RecheckRemoteWebElementIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void empty_article_should_be_checked( final WebDriver driver, final String name ) throws Exception {
 		this.driver = driver;
-		driver.get( PageFactory.page( Page.PAGE_FRAME ) );
+		this.driver.get( PageFactory.page( Page.PAGE_FRAME ) );
 
 		((JavascriptExecutor) driver).executeScript(
 				"document.getElementsByTagName('body')[0].appendChild(document.createElement('article'))" );
@@ -77,7 +77,5 @@ public class RecheckRemoteWebElementIT {
 	@AfterEach
 	void tearDown() {
 		driver.quit();
-		re.cap();
 	}
-
 }

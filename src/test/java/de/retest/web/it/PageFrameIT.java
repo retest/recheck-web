@@ -1,5 +1,8 @@
 package de.retest.web.it;
 
+import static de.retest.web.testutils.PageFactory.page;
+import static de.retest.web.testutils.PageFactory.Page.PAGE_FRAME;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -11,8 +14,6 @@ import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
 import de.retest.recheck.junit.jupiter.RecheckExtension;
 import de.retest.web.selenium.By;
-import de.retest.web.testutils.PageFactory;
-import de.retest.web.testutils.PageFactory.Page;
 
 @ExtendWith( RecheckExtension.class )
 class PageFrameIT {
@@ -29,8 +30,8 @@ class PageFrameIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void page_frame_html_should_be_checked( final WebDriver driver, final String name ) throws Exception {
 		this.driver = driver;
+		this.driver.get( page( PAGE_FRAME ) );
 
-		driver.get( PageFactory.page( Page.PAGE_FRAME ) );
 		driver.findElement( By.id( "email" ) ).sendKeys( "Max" );
 
 		Thread.sleep( 1000 );

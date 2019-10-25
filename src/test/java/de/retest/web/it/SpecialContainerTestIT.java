@@ -26,7 +26,7 @@ class SpecialContainerTestIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void testCenter( final WebDriver driver, final String name ) throws Exception {
 		this.driver = driver;
-		driver.get( PageFactory.toPageUrlString( "special-container.html" ) );
+		this.driver.get( PageFactory.toPageUrlString( "special-container.html" ) );
 
 		re.check( driver, "open" );
 
