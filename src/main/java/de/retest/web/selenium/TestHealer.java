@@ -198,7 +198,7 @@ public class TestHealer {
 	}
 
 	protected static boolean isNotYetSupportedCssSelector( final String selector ) {
-		return selector.matches( ".*[<>:+\\s\\*].*" );
+		return selector.matches( ".*[<>:+\\s\\*~,].*" ) || selector.matches( ".+\\..*" );
 
 	}
 
