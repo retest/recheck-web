@@ -4,6 +4,7 @@ import static de.retest.web.selenium.ByWhisperer.retrieveCssClassName;
 import static de.retest.web.selenium.ByWhisperer.retrieveId;
 import static de.retest.web.selenium.ByWhisperer.retrieveLinkText;
 import static de.retest.web.selenium.ByWhisperer.retrieveName;
+import static de.retest.web.selenium.ByWhisperer.retrievePartialLinkText;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
@@ -12,6 +13,7 @@ import org.openqa.selenium.By.ByCssSelector;
 import org.openqa.selenium.By.ById;
 import org.openqa.selenium.By.ByLinkText;
 import org.openqa.selenium.By.ByName;
+import org.openqa.selenium.By.ByPartialLinkText;
 import org.openqa.selenium.By.ByTagName;
 import org.openqa.selenium.By.ByXPath;
 
@@ -39,6 +41,13 @@ class ByWhispererTest {
 	void retrieveLinkText_should_return_LinkText() {
 		final String linkText = "someLinkText";
 		assertThat( retrieveLinkText( (ByLinkText) By.linkText( linkText ) ) ).isEqualTo( linkText );
+	}
+
+	@Test
+	void retrievePartialLinkText_should_return_PartialLinkText() {
+		final String linkText = "someLinkText";
+		assertThat( retrievePartialLinkText( (ByPartialLinkText) By.partialLinkText( linkText ) ) )
+				.isEqualTo( linkText );
 	}
 
 	@Test

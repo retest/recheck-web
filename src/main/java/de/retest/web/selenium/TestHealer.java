@@ -8,6 +8,7 @@ import static de.retest.web.selenium.ByWhisperer.retrieveCssClassName;
 import static de.retest.web.selenium.ByWhisperer.retrieveId;
 import static de.retest.web.selenium.ByWhisperer.retrieveLinkText;
 import static de.retest.web.selenium.ByWhisperer.retrieveName;
+import static de.retest.web.selenium.ByWhisperer.retrievePartialLinkText;
 
 import java.util.function.Predicate;
 import java.util.regex.Matcher;
@@ -19,6 +20,7 @@ import org.openqa.selenium.By.ByCssSelector;
 import org.openqa.selenium.By.ById;
 import org.openqa.selenium.By.ByLinkText;
 import org.openqa.selenium.By.ByName;
+import org.openqa.selenium.By.ByPartialLinkText;
 import org.openqa.selenium.By.ByTagName;
 import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebElement;
@@ -82,6 +84,9 @@ public class TestHealer {
 		if ( by instanceof ByTagName ) {
 			return findElementByTagName( (ByTagName) by );
 		}
+		if ( by instanceof ByPartialLinkText ) {
+			return findElementByPartialLinkText( (ByPartialLinkText) by );
+		}
 		throw new UnsupportedOperationException(
 				"Healing tests with " + by.getClass().getSimpleName() + " not yet implemented" );
 	}
@@ -142,6 +147,22 @@ public class TestHealer {
 		} else {
 			writeWarnLogForChangedIdentifier( "link text", linkText,
 					actualElement.getIdentifyingAttributes().get( TEXT ), "linkText", actualElement.getRetestId() );
+			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
+		}
+	}
+
+	private WebElement findElementByPartialLinkText( final ByPartialLinkText by ) {
+		final String partialLinkText = retrievePartialLinkText( by );
+		final Element actualElement = de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState,
+				hasPartialLinkText( partialLinkText ) );
+
+		if ( actualElement == null ) {
+			logger.warn( "{} with link text '{}'.", ELEMENT_NOT_FOUND_MESSAGE, partialLinkText );
+			return null;
+		} else {
+			writeWarnLogForChangedIdentifier( "partial link text", partialLinkText,
+					actualElement.getIdentifyingAttributes().get( TEXT ), "partialLinkText",
+					actualElement.getRetestId() );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -213,9 +234,18 @@ public class TestHealer {
 	}
 
 	private static Predicate<Element> hasLinkText( final String linkText ) {
-		return element -> linkText.equals( element.getAttributes().get( TEXT ) )
-				|| linkText.equals( element.getIdentifyingAttributes().get( TEXT ) )
-						&& "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() );
+		return element -> "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() )
+				&& linkText.equals( element.getAttributes().get( TEXT ) )
+				|| linkText.equals( element.getIdentifyingAttributes().get( TEXT ) );
+	}
+
+	private static Predicate<Element> hasPartialLinkText( final String linkText ) {
+		// TODO Use element.getAttribute with recheck 1.6.0+
+		return element -> "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() )
+				&& (element.getIdentifyingAttributes().get( TEXT ) != null
+						? element.getIdentifyingAttributes().get( TEXT ).toString().contains( linkText )
+						: element.getAttributes().get( TEXT ) != null
+								? element.getAttributes().get( TEXT ).toString().contains( linkText ) : false);
 	}
 
 	private static Predicate<Element> hasClass( final String cssClass ) {

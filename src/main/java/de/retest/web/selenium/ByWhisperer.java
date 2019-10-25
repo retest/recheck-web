@@ -7,6 +7,7 @@ import org.openqa.selenium.By.ByCssSelector;
 import org.openqa.selenium.By.ById;
 import org.openqa.selenium.By.ByLinkText;
 import org.openqa.selenium.By.ByName;
+import org.openqa.selenium.By.ByPartialLinkText;
 import org.openqa.selenium.By.ByTagName;
 import org.openqa.selenium.By.ByXPath;
 
@@ -51,6 +52,16 @@ public class ByWhisperer {
 			return (String) field.get( by );
 		} catch ( final ReflectiveOperationException e ) {
 			throw new IllegalStateException( "ByLinkText does not have a 'linkText' field?", e );
+		}
+	}
+
+	public static String retrievePartialLinkText( final ByPartialLinkText by ) {
+		try {
+			final Field field = ByPartialLinkText.class.getDeclaredField( "partialLinkText" );
+			field.setAccessible( true );
+			return (String) field.get( by );
+		} catch ( final ReflectiveOperationException e ) {
+			throw new IllegalStateException( "ByPartialLinkText does not have a 'partialLinkText' field?", e );
 		}
 	}
 

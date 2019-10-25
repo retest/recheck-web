@@ -161,7 +161,7 @@ class TestHealerTest {
 		assertThat( findElement( By.id( "" ), wrapped ) ).isNull();
 		assertThat( findElement( By.linkText( "" ), wrapped ) ).isNull();
 		assertThat( findElement( By.name( "" ), wrapped ) ).isNull();
-		// assertThat( findElement( By.partialLinkText( "" ), wrapped ) ).isNull();
+		assertThat( findElement( By.partialLinkText( "" ), wrapped ) ).isNull();
 		assertThat( findElement( By.tagName( "" ), wrapped ) ).isNull();
 		assertThat( findElement( By.xpath( "" ), wrapped ) ).isNull();
 	}
@@ -241,6 +241,26 @@ class TestHealerTest {
 		assertThat( findElement( By.xpath( "/html[1]/div[3]/div[3]/div[3]/div[2]" ), wrapped ) )
 				.isEqualTo( resultMarker );
 		assertThat( findElement( By.xpath( "//div[1]" ), wrapped ) ).isEqualTo( null );
+	}
+
+	@Test
+	public void ByPartialLinkText_should_find_element() {
+		final RecheckDriver wrapped = mock( RecheckDriver.class );
+		final AutocheckingWebElement resultMarker = mock( AutocheckingWebElement.class );
+
+		final RootElement state = mock( RootElement.class );
+		when( wrapped.getLastExpectedState() ).thenReturn( state );
+		when( wrapped.getLastActualState() ).thenReturn( state );
+
+		final String xpath = "html[1]/a[1]";
+		final Collection<Attribute> identCrit = IdentifyingAttributes.createList( fromString( xpath ), "a" );
+		identCrit.add( new StringAttribute( TEXT, "my link text" ) );
+		final Element element =
+				create( "id", state, new IdentifyingAttributes( identCrit ), new MutableAttributes().immutable() );
+		when( state.getContainedElements() ).thenReturn( Collections.singletonList( element ) );
+		when( wrapped.findElement( By.xpath( xpath ) ) ).thenReturn( resultMarker );
+
+		assertThat( findElement( By.partialLinkText( "link" ), wrapped ) ).isEqualTo( resultMarker );
 	}
 
 	@Test
