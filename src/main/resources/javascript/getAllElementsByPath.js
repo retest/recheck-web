@@ -109,10 +109,10 @@ function transform(node) {
     var style = getComputedStyleSafely(node);
     var parentStyle = getComputedStyleSafely(node.parentNode);
     for (var i = 0; i < cssAttributes.length; i++) {
-        var attributeName = cssAttributes[i];
-        if (!extractedAttributes[attributeName]) {
-            if (parentStyle[attributeName] != style[attributeName]) {
-                extractedAttributes[attributeName] = style[attributeName];
+        var attrName = cssAttributes[i];
+        if (!extractedAttributes[attrName]) {
+            if (parentStyle[attrName] != style[attrName]) {
+                extractedAttributes[attrName] = style[attrName];
             }
         }
     }
