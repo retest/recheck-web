@@ -130,7 +130,8 @@ function isShown(e) {
 }
 
 function isNonEmptyTextNode(node) {
-    return node.nodeType == node.TEXT_NODE && node.nodeValue.trim().length > 0;
+    var nodeValue = (node.nodeValue == null) ? "" : node.nodeValue;
+    return node.nodeType == node.TEXT_NODE && nodeValue.trim().length > 0;
 }
 
 function containsOtherElements(element) {
