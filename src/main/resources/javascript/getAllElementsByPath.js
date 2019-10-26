@@ -1,16 +1,21 @@
 cssAttributes = arguments[0];
 
-function Counter() {
-    this.map = {};
-    this.increase = function (element) {
+var Counter = /** @class */ (function () {
+    function Counter() {
+        this.map = {};
+    }
+    Counter.prototype.increase = function (element) {
         if (element.tagName in this.map) {
             this.map[element.tagName] = this.map[element.tagName] + 1;
-        } else {
+        }
+        else {
             this.map[element.tagName] = 1;
         }
         return this.map[element.tagName];
     };
-}
+    ;
+    return Counter;
+}());
 
 function getText(node) {
     var firstNode = node.childNodes[0];
