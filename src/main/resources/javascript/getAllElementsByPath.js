@@ -68,7 +68,7 @@ function isDisabled(node) {
     if (node.disabled === "disabled") {
         return true;
     }
-    return node.disabled;
+    return node.disabled ? true : false;
 }
 
 //extract *given* CSS style attributes
