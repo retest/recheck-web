@@ -166,8 +166,8 @@ function mapElement(element, parentPath, allElements) {
     var counter = new Counter();
     for (var i = 0; i < element.childNodes.length; i++) {
         var child = element.childNodes[i];
-        if (child.nodeType == child.ELEMENT_NODE || 
-                (isNonEmptyTextNode(child) && containsOtherElements(element))) {
+        if (child.nodeType == child.ELEMENT_NODE ||
+            (isNonEmptyTextNode(child) && containsOtherElements(element))) {
             if (child.nodeType == child.TEXT_NODE) {
                 child.tagName = "textnode";
             }
