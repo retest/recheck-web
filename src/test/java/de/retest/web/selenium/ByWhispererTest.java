@@ -1,9 +1,13 @@
 package de.retest.web.selenium;
 
 import static de.retest.web.selenium.ByWhisperer.retrieveCssClassName;
+import static de.retest.web.selenium.ByWhisperer.retrieveCssSelector;
 import static de.retest.web.selenium.ByWhisperer.retrieveId;
 import static de.retest.web.selenium.ByWhisperer.retrieveLinkText;
 import static de.retest.web.selenium.ByWhisperer.retrieveName;
+import static de.retest.web.selenium.ByWhisperer.retrievePartialLinkText;
+import static de.retest.web.selenium.ByWhisperer.retrieveTag;
+import static de.retest.web.selenium.ByWhisperer.retrieveXPath;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
@@ -12,6 +16,7 @@ import org.openqa.selenium.By.ByCssSelector;
 import org.openqa.selenium.By.ById;
 import org.openqa.selenium.By.ByLinkText;
 import org.openqa.selenium.By.ByName;
+import org.openqa.selenium.By.ByPartialLinkText;
 import org.openqa.selenium.By.ByTagName;
 import org.openqa.selenium.By.ByXPath;
 
@@ -42,21 +47,27 @@ class ByWhispererTest {
 	}
 
 	@Test
+	void retrievePartialLinkText_should_return_PartialLinkText() {
+		final String linkText = "someLinkText";
+		assertThat( retrievePartialLinkText( (ByPartialLinkText) By.partialLinkText( linkText ) ) )
+				.isEqualTo( linkText );
+	}
+
+	@Test
 	void retrieveCssSelector_should_return_Selector() {
 		final String selector = "selector";
-		assertThat( ByWhisperer.retrieveCssSelector( (ByCssSelector) By.cssSelector( selector ) ) )
-				.isEqualTo( selector );
+		assertThat( retrieveCssSelector( (ByCssSelector) By.cssSelector( selector ) ) ).isEqualTo( selector );
 	}
 
 	@Test
 	void retrieveXPath_should_return_xpath() {
 		final String xpath = "HTML[1]/DIV[1]";
-		assertThat( ByWhisperer.retrieveXPath( (ByXPath) By.xpath( xpath ) ) ).isEqualTo( xpath );
+		assertThat( retrieveXPath( (ByXPath) By.xpath( xpath ) ) ).isEqualTo( xpath );
 	}
 
 	@Test
 	void retrieveTagName_should_return_tagName() {
 		final String tag = "div";
-		assertThat( ByWhisperer.retrieveTag( (ByTagName) By.tagName( tag ) ) ).isEqualTo( tag );
+		assertThat( retrieveTag( (ByTagName) By.tagName( tag ) ) ).isEqualTo( tag );
 	}
 }
