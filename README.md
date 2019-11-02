@@ -232,7 +232,7 @@ void setUp() {
 }
 ```
 
-- Set the rehub flag via `RecheckOptions`
+- Or set the rehub flag via `RecheckOptions`
 
 ```java
 @Before
