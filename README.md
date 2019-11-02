@@ -245,6 +245,17 @@ void setUp() {
 }
 ```
 
+Of course this can also be done with the `RecheckDriver`, but then use the `RecheckWebOptions`:
+
+```java
+    RecheckWebOptions options = RecheckWebOptions.builder()
+            .enableReportUpload()
+            .build();
+    driver = new RecheckDriver( new ChromeDriver(), options );
+    // ...
+}
+```
+
 If we execute the test locally and the configuration was successful, your browser will pop up and you will be prompted to login. Afterwards, you can find your test reports on [***rehub*** dashboard](https://garkbit.prod.cloud.retest.org/dashboard).
 
 A detailed tutorial can be found in our [documentation](https://docs.retest.de/recheck-web/tutorial/upload-test-reports-to-rehub/).
