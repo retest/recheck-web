@@ -11,10 +11,13 @@ function contains(array, key) {
 }
 
 function matches(element, diff) {
-	if (diff.expected === null) {
+	if (diff == null) {
+		return true;
+	}
+	if (diff.expected == null) {
 		diff.expected = "";
 	}
-	if (diff.actual === null) {
+	if (diff.actual == null) {
 		diff.actual = "";
 	}
 	if (diff.key == "opacity") {
