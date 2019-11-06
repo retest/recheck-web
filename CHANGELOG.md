@@ -27,6 +27,19 @@ Table of Contents
 
 ### Bug Fixes
 
+### New Features
+
+### Improvements
+
+
+--------------------------------------------------------------------------------
+
+
+[1.6.0] (2019-11-06)
+--------------------
+
+### Bug Fixes
+
 * Fix `StackOverflowError` if a `WrapsElement` (e.g. `@FindBy`) is checked that throws an exception.
 * Fix `NullPointerException` if the checked `WebElement` is not visible.
 
@@ -43,11 +56,6 @@ public void loginTest() throws Exception {
 	driver.findElement( By.id( "login-from" ) ).submit();
 }
 ```
-
-### Improvements
-
-
---------------------------------------------------------------------------------
 
 
 [1.5.1] (2019-09-23)
