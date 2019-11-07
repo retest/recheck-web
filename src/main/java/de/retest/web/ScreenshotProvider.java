@@ -44,10 +44,15 @@ public class ScreenshotProvider {
 	}
 
 	private static BufferedImage shootFullPage( final WebDriver driver ) {
-		final BufferedImage image = Shutterbug
-				.shootPage( driver, ScrollStrategy.WHOLE_PAGE, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ).getImage();
-		return driver instanceof ChromeDriver
-				? resizeImage( image, image.getWidth() / SCALE, image.getHeight() / SCALE ) : image;
+		if ( driver instanceof ChromeDriver ) {
+			final BufferedImage image = Shutterbug //
+					.shootPage( driver, ScrollStrategy.WHOLE_PAGE_CHROME, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
+					.getImage();
+			return resizeImage( image, image.getWidth() / SCALE, image.getHeight() / SCALE );
+		}
+		return Shutterbug //
+				.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
+				.getImage();
 	}
 
 	private static BufferedImage shootViewportOnly( final WebDriver driver ) {

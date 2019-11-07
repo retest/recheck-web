@@ -1,0 +1,16 @@
+version: 1
+update_configs:
+  - package_manager: "java:maven"
+    directory: "/"
+    update_schedule: "daily"
+    default_reviewers:
+      - "beatngu13"
+      - "martin-v"
+      - "modulo11"
+      - "diba1013"
+    ignored_updates:
+      - match:
+          # As long as the issue is not fixed, we need to use version 0.9
+          # see https://github.com/assertthat/selenium-shutterbug/issues/64
+          dependency_name: "selenium-shutterbug"
+          
