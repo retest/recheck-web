@@ -28,7 +28,7 @@ class CenterIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void testCenter( final WebDriver driver, final String name ) throws Exception {
 		this.driver = driver;
-		this.driver.get( page( CENTER ) );
+		driver.get( page( CENTER ) );
 
 		Thread.sleep( 1000 );
 

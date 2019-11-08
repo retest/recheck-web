@@ -30,7 +30,7 @@ class ShowcaseIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void showcase_html_should_be_checked( final WebDriver driver, final String name ) throws Exception {
 		this.driver = driver;
-		this.driver.get( page( SHOWCASE ) );
+		driver.get( page( SHOWCASE ) );
 
 		Thread.sleep( 1000 );
 

@@ -30,7 +30,7 @@ class PageFrameIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void page_frame_html_should_be_checked( final WebDriver driver, final String name ) throws Exception {
 		this.driver = driver;
-		this.driver.get( page( PAGE_FRAME ) );
+		driver.get( page( PAGE_FRAME ) );
 
 		driver.findElement( By.id( "email" ) ).sendKeys( "Max" );
 
