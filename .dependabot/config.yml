@@ -12,5 +12,4 @@ update_configs:
       - match:
           # As long as the issue is not fixed, we need to use version 0.9
           # see https://github.com/assertthat/selenium-shutterbug/issues/64
-          dependency_name: "selenium-shutterbug"
-          
+          dependency_name: "com.assertthat:selenium-shutterbug"
