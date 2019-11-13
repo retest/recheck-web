@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.6.0-SNAPSHOT" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.6.0-beta.4" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="" title="">
 			<identifyingAttributes>
@@ -34,10 +34,6 @@
 					<entry>
 						<key>line-height</key>
 						<value xsi:type="xsd:string">19px</value>
-					</entry>
-					<entry>
-						<key>quotes</key>
-						<value xsi:type="xsd:string">“&quot; &quot;”&quot; &quot;‘&quot; &quot;’</value>
 					</entry>
 					<entry>
 						<key>shown</key>
@@ -270,7 +266,7 @@
 				</containedElements>
 			</containedElements>
 			<screenshot>
-				<persistenceId>html_a5d3a9bce42823a623d7fd438d7c4f1c7fca4d53a91914abd5d777f2290da79e</persistenceId>
+				<persistenceId>html</persistenceId>
 				<type>PNG</type>
 			</screenshot>
 		</descriptors>
