@@ -1,6 +1,6 @@
 package de.retest.web;
 
-import static de.retest.web.ScreenshotProvider.shoot;
+import static de.retest.web.ScreenshotProviders.shoot;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -20,10 +20,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import de.retest.recheck.RecheckAdapter;
+import de.retest.recheck.RecheckOptions;
 import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
-import de.retest.recheck.util.RetestIdProviderUtil;
 import de.retest.web.mapping.PathsToWebDataMapping;
 import de.retest.web.selenium.UnbreakableDriver;
 import de.retest.web.util.SeleniumWrapperUtil;
@@ -38,17 +38,26 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	private final DefaultValueFinder defaultValueFinder = new DefaultWebValueFinder();
 
 	private final RetestIdProvider retestIdProvider;
-	private final AttributesProvider attributesProvider;
+	private final AttributesProvider attributesProvider = YamlAttributesProvider.getInstance();
+	private final ScreenshotProvider screenshotProvider;
 
-	public RecheckSeleniumAdapter( final RetestIdProvider retestIdProvider,
-			final AttributesProvider attributesProvider ) {
-		this.retestIdProvider = retestIdProvider;
-		this.attributesProvider = attributesProvider;
-		logger.debug( "New RecheckSeleniumAdapter created: {}.", System.identityHashCode( this ) );
+	public RecheckSeleniumAdapter( final RecheckOptions options ) {
+		retestIdProvider = options.getRetestIdProvider();
+		if ( options instanceof RecheckWebOptions ) {
+			final RecheckWebOptions webOptions = (RecheckWebOptions) options;
+			screenshotProvider = webOptions.getScreenshotProvider();
+		} else {
+			screenshotProvider = ScreenshotProviders.getGlobalScreenshotProvider();
+		}
 	}
 
 	public RecheckSeleniumAdapter() {
-		this( RetestIdProviderUtil.getConfiguredRetestIdProvider(), YamlAttributesProvider.getInstance() );
+		this( RecheckOptions.builder().build() );
+	}
+
+	@Override
+	public RecheckAdapter initialize( final RecheckOptions opts ) {
+		return new RecheckSeleniumAdapter( opts );
 	}
 
 	@Override
@@ -103,7 +112,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	private Set<RootElement> convert( final WebDriver driver, final RemoteWebElement webElement ) {
 		// Do not inline this, as we want the screenshot created before retrieving elements
-		final BufferedImage screenshot = shoot( driver, webElement );
+		final BufferedImage screenshot = shoot( driver, webElement, screenshotProvider );
 		final Set<String> cssAttributes = attributesProvider.getCssAttributes();
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		@SuppressWarnings( "unchecked" )
