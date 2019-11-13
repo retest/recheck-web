@@ -18,7 +18,7 @@ class ScreenshotProviderTest {
 		when( exceptionCausingDriver.executeScript( Mockito.anyString() ) ).thenReturn( 1.0 );
 		when( exceptionCausingDriver.getCommandExecutor() ).thenReturn( mock( CommandExecutor.class ) );
 
-		assertThat( ScreenshotProvider.shoot( exceptionCausingDriver, null ) ).isNull();
+		assertThat( ScreenshotProviders.shoot( exceptionCausingDriver, null, new NoScreenshot() ) ).isNull();
 	}
 
 }
