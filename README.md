@@ -110,7 +110,7 @@ A complete tutorial about how to setup and use ***recheck-web*** like this can e
 
 ### Implicit Checks
 
-You can also use the recheck driver wrapper, which will automatically create a check after every action. To use this, simply wrap your driver like so:
+You can also use the recheck driver wrapper, which will automatically create a check after every action. To use this, [simply wrap your driver like so](https://github.com/retest/recheck-web/blob/master/src/test/java/de/retest/web/it/RecheckDriverShowcaseIT.java):
 
 ```java
 driver = new RecheckDriver( new ChromeDriver() );
