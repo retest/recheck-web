@@ -31,6 +31,8 @@ Table of Contents
 
 ### Improvements
 
+* The default of how screenshots are created has changed from full page to viewport only. These two options are now available to set globally via properties and per test individually via `RecheckWebOptions`.
+
 
 --------------------------------------------------------------------------------
 
