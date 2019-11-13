@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
+import org.junit.jupiter.params.provider.Arguments;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -30,8 +31,12 @@ public class WebDriverFactory {
 		}
 	}
 
-	public static Stream<WebDriver> drivers() {
-		return Arrays.stream( Driver.values() ).map( WebDriverFactory::driver );
+	public static Stream<Arguments> drivers() {
+		return Arrays.stream( Driver.values() ).map( WebDriverFactory::driver ).map( WebDriverFactory::toArguments );
+	}
+
+	private static Arguments toArguments( final WebDriver driver ) {
+		return Arguments.of( driver, driver.getClass().getSimpleName() );
 	}
 
 	public static List<String> commonArguments() {

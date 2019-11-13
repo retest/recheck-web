@@ -1,7 +1,7 @@
 package de.retest.web.it;
 
 import static de.retest.web.testutils.PageFactory.page;
-import static de.retest.web.testutils.PageFactory.Page.SHOWCASE;
+import static de.retest.web.testutils.PageFactory.Page.CENTER;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,23 +14,21 @@ import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
 import de.retest.recheck.junit.jupiter.RecheckExtension;
 
-// Use extension to administer lifecycle of test
 @ExtendWith( RecheckExtension.class )
-class ShowcaseIT {
-
+class CenterIT {
 	WebDriver driver;
 	Recheck re;
 
 	@BeforeEach
-	void setUp() {
+	void before() {
 		re = new RecheckImpl();
 	}
 
-	@ParameterizedTest( name = "showcase-{1}" )
+	@ParameterizedTest( name = "center-{1}" )
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
-	void showcase_html_should_be_checked( final WebDriver driver, final String name ) throws Exception {
+	void testCenter( final WebDriver driver, final String name ) throws Exception {
 		this.driver = driver;
-		driver.get( page( SHOWCASE ) );
+		driver.get( page( CENTER ) );
 
 		Thread.sleep( 1000 );
 

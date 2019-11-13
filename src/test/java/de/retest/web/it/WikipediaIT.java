@@ -4,14 +4,17 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
+import de.retest.recheck.junit.jupiter.RecheckExtension;
 import de.retest.web.testutils.PageFactory;
 
 @Disabled( "We only use this to create an example.report file for review." )
+@ExtendWith( RecheckExtension.class )
 class WikipediaIT {
 
 	WebDriver driver;
@@ -29,13 +32,11 @@ class WikipediaIT {
 		// Switch to "expected" subfolder to restore original page.
 		driver.get( PageFactory.toPageUrlString( "wikipedia/actual/wikipedia-characterization-test.html" ) );
 		re.check( driver, "characterization-testing-page" );
-		re.capTest();
 	}
 
 	@AfterEach
 	void tearDown() throws Exception {
 		driver.close();
-		re.cap();
 	}
 
 }

@@ -5,6 +5,7 @@ import java.nio.file.Paths;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,11 +13,15 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
+import de.retest.recheck.junit.vintage.RecheckRule;
 
 /*
  * Simple recheck-web showcase for a Chrome-based integration test. See other *IT classes for more examples.
  */
 public class SimpleRecheckShowcaseIT {
+	// Connects recheck to your test's life cycle, taking care of starting and finishing tests, naming them, etc.
+	@Rule
+	public RecheckRule rule = new RecheckRule();
 
 	private WebDriver driver;
 	private Recheck re;
@@ -38,13 +43,12 @@ public class SimpleRecheckShowcaseIT {
 
 		// Use the default implementation.
 		re = new RecheckImpl();
+		// Let the recheck rule know which implementation it shall use.
+		rule.use( re );
 	}
 
 	@Test
-	public void index() throws Exception {
-		// Set the file name of the Golden Master.
-		re.startTest( "simple-showcase" );
-
+	public void simpleShowcase() throws Exception {
 		// Do your Selenium stuff.
 		final Path showcasePath = Paths.get( "src/test/resources/pages/showcase/retest.html" );
 		driver.get( showcasePath.toUri().toURL().toString() );
@@ -53,17 +57,11 @@ public class SimpleRecheckShowcaseIT {
 
 		// Single call instead of multiple assertions (doesn't fail on differences).
 		re.check( driver, "index" );
-
-		// Conclude the test case (fails on differences).
-		re.capTest();
 	}
 
 	@After
 	public void tearDown() {
 		driver.quit();
-
-		// Produce the result file.
-		re.cap();
 	}
 
 }
