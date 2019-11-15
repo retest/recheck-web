@@ -116,7 +116,7 @@ You can also use the recheck driver wrapper, which will automatically create a c
 driver = new RecheckDriver( new ChromeDriver() );
 ```
 
-Then you either need to call `driver.capTest()` after your test has finished, or you can integrate recheck into your JUnit life-cycle with [JUnit4](https://github.com/retest/recheck-junit-4-extension) and [JUnit 5](https://github.com/retest/recheck-junit-jupiter-extension)...
+Then you either need to call `driver.capTest()` after your test has finished, or you can integrate recheck into your JUnit life-cycle with our [JUnit 4](https://github.com/retest/recheck-junit-4-extension) and [JUnit 5](https://github.com/retest/recheck-junit-jupiter-extension) extensions.
 
 
 ## FAQs
