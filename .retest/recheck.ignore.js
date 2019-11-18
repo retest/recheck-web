@@ -11,11 +11,8 @@ function contains(array, key) {
 }
 
 function matches(element, diff) {
-	if (diff.expected === null) {
-		diff.expected = "";
-	}
-	if (diff.actual === null) {
-		diff.actual = "";
+	if (diff == null) {
+		return false;
 	}
 	if (diff.key == "opacity") {
 		return (Math.abs(diff.expected - diff.actual) <= 10);
