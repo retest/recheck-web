@@ -53,7 +53,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	}
 
 	public RecheckSeleniumAdapter() {
-		this( RecheckOptions.builder().build() );
+		this( RecheckWebOptions.builder().build() );
 	}
 
 	@Override

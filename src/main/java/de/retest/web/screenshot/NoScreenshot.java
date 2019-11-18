@@ -5,8 +5,7 @@ import java.awt.image.BufferedImage;
 import org.openqa.selenium.WebDriver;
 
 /**
- * Not implemented yet. Does not take any screenshot at all. Increases the performance. Only used for tests at the
- * moment.
+ * Does not take any screenshot at all. Increases the performance. Cannot be set globally.
  */
 public class NoScreenshot implements ScreenshotProvider {
 

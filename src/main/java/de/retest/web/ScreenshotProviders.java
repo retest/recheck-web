@@ -19,7 +19,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ScreenshotProviders {
 
-	private static final String SCREENSHOT_OPTION_PROPERTY = "de.retest.recheck.web.screenshotOption";
+	private static final String SCREENSHOT_PROVIDER_PROPERTY = "de.retest.recheck.web.screenshotProvider";
 	private static final boolean USE_DEVICE_PIXEL_RATIO = true;
 	private static final Logger logger = LoggerFactory.getLogger( ScreenshotProviders.class );
 
@@ -45,7 +45,7 @@ public class ScreenshotProviders {
 	}
 
 	public static ScreenshotProvider getGlobalScreenshotProvider() {
-		switch ( System.getProperty( SCREENSHOT_OPTION_PROPERTY, "viewPortOnly" ) ) {
+		switch ( System.getProperty( SCREENSHOT_PROVIDER_PROPERTY, "viewPortOnly" ) ) {
 			case "fullPage":
 				return new FullPageScreenshot();
 			case "viewPortOnly":
