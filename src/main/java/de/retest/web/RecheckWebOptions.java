@@ -1,16 +1,15 @@
 package de.retest.web;
 
 import de.retest.recheck.RecheckOptions;
+import de.retest.web.screenshot.ScreenshotProvider;
 import de.retest.web.selenium.AutocheckingCheckNamingStrategy;
 import de.retest.web.selenium.CounterCheckNamingStrategy;
 import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * This class extends RecheckOptions for some specific web options.
  */
 @Getter
-@Slf4j
 public class RecheckWebOptions extends RecheckOptions {
 
 	/**
@@ -49,8 +48,8 @@ public class RecheckWebOptions extends RecheckOptions {
 
 		@Override
 		public RecheckWebOptions build() {
-			return new RecheckWebOptions( super.build(), checkNamingStrategy,
-					screenshotProvider != null ? screenshotProvider : ScreenshotProviders.getGlobalScreenshotProvider() );
+			return new RecheckWebOptions( super.build(), checkNamingStrategy, screenshotProvider != null
+					? screenshotProvider : ScreenshotProviders.getGlobalScreenshotProvider() );
 		}
 	}
 }

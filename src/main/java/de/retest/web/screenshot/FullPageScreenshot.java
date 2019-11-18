@@ -1,4 +1,4 @@
-package de.retest.web;
+package de.retest.web.screenshot;
 
 import static de.retest.recheck.ui.image.ImageUtils.resizeImage;
 import static de.retest.web.ScreenshotProviders.SCALE;

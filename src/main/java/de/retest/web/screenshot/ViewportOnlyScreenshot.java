@@ -1,4 +1,4 @@
-package de.retest.web;
+package de.retest.web.screenshot;
 
 import java.awt.image.BufferedImage;
 

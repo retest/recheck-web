@@ -11,6 +11,9 @@ import org.slf4j.LoggerFactory;
 
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 
+import de.retest.web.screenshot.FullPageScreenshot;
+import de.retest.web.screenshot.ScreenshotProvider;
+import de.retest.web.screenshot.ViewportOnlyScreenshot;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

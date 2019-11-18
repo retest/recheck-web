@@ -25,6 +25,7 @@ import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
 import de.retest.web.mapping.PathsToWebDataMapping;
+import de.retest.web.screenshot.ScreenshotProvider;
 import de.retest.web.selenium.UnbreakableDriver;
 import de.retest.web.util.SeleniumWrapperUtil;
 import de.retest.web.util.SeleniumWrapperUtil.WrapperOf;

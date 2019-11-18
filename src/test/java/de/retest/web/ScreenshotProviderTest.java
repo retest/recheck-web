@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CommandExecutor;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import de.retest.web.screenshot.NoScreenshot;
+
 class ScreenshotProviderTest {
 
 	@Test
