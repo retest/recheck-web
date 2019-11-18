@@ -226,11 +226,7 @@ public class TestHealer {
 	}
 
 	private static Predicate<Element> hasAttribute( final String attribute, final String attributeValue ) {
-		// TODO Replace with element.getAttribute after 1.6.0 release
-		return element -> element.getIdentifyingAttributes().get( attribute ) != null
-				? element.getIdentifyingAttributes().get( attribute ).equals( attributeValue )
-				: element.getAttributes().get( attribute ) != null
-						? element.getAttributes().get( attribute ).toString().equals( attributeValue ) : false;
+		return element -> element.getAttributeValue( attribute ).toString().equals( attributeValue );
 	}
 
 	private static Predicate<Element> hasLinkText( final String linkText ) {
@@ -240,12 +236,8 @@ public class TestHealer {
 	}
 
 	private static Predicate<Element> hasPartialLinkText( final String linkText ) {
-		// TODO Use element.getAttribute with recheck 1.6.0+
 		return element -> "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() )
-				&& (element.getIdentifyingAttributes().get( TEXT ) != null
-						? element.getIdentifyingAttributes().get( TEXT ).toString().contains( linkText )
-						: element.getAttributes().get( TEXT ) != null
-								? element.getAttributes().get( TEXT ).toString().contains( linkText ) : false);
+				&& element.getAttributeValue( TEXT ).toString().contains( linkText );
 	}
 
 	private static Predicate<Element> hasClass( final String cssClass ) {
