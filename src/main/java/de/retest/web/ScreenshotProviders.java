@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 
 import de.retest.web.screenshot.FullPageScreenshot;
+import de.retest.web.screenshot.NoScreenshot;
 import de.retest.web.screenshot.ScreenshotProvider;
 import de.retest.web.screenshot.ViewportOnlyScreenshot;
 import lombok.extern.slf4j.Slf4j;
@@ -50,6 +51,8 @@ public class ScreenshotProviders {
 				return new FullPageScreenshot();
 			case "viewPortOnly":
 				return new ViewportOnlyScreenshot();
+			case "none":
+				return new NoScreenshot();
 			default:
 				log.warn( "Global property does not match a correct entry. Using default value (viewPortOnly)." );
 				return new ViewportOnlyScreenshot();
