@@ -6614,35 +6614,6 @@
 													</attributes>
 												</attributes>
 											</containedElements>
-											<containedElements retestId="br-11">
-												<identifyingAttributes>
-													<attributes>
-														<attribute key="absolute-outline" xsi:type="outlineAttribute">
-															<x>456</x>
-															<y>605</y>
-															<height>19</height>
-															<width>0</width>
-														</attribute>
-														<attribute key="outline" xsi:type="outlineAttribute">
-															<x>323</x>
-															<y>296</y>
-															<height>-377</height>
-															<width>-323</width>
-														</attribute>
-														<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[3]/p[1]/br[2]</attribute>
-														<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-														<attribute key="type" xsi:type="stringAttribute">br</attribute>
-													</attributes>
-												</identifyingAttributes>
-												<attributes>
-													<attributes>
-														<entry>
-															<key>shown</key>
-															<value xsi:type="xsd:string">true</value>
-														</entry>
-													</attributes>
-												</attributes>
-											</containedElements>
 										</containedElements>
 									</containedElements>
 								</containedElements>
@@ -7779,35 +7750,6 @@
 															<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 															<attribute key="text" xsi:type="textAttribute">test. With retest you go the other way around: Record the complete GUI state during capturing and easily compare it during replay. Differences are either improvements which can be accepted with a single click, volatile elements which can be permanently ignored, and regressions - which is the purpose of the test in the first place. No need to record any assertions at all.</attribute>
 															<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
-														</attributes>
-													</identifyingAttributes>
-													<attributes>
-														<attributes>
-															<entry>
-																<key>shown</key>
-																<value xsi:type="xsd:string">true</value>
-															</entry>
-														</attributes>
-													</attributes>
-												</containedElements>
-												<containedElements retestId="br-13">
-													<identifyingAttributes>
-														<attributes>
-															<attribute key="absolute-outline" xsi:type="outlineAttribute">
-																<x>789</x>
-																<y>948</y>
-																<height>19</height>
-																<width>0</width>
-															</attribute>
-															<attribute key="outline" xsi:type="outlineAttribute">
-																<x>222</x>
-																<y>8</y>
-																<height>-377</height>
-																<width>-420</width>
-															</attribute>
-															<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[2]/div[1]/div[3]/div[1]/p[1]/br[1]</attribute>
-															<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-															<attribute key="type" xsi:type="stringAttribute">br</attribute>
 														</attributes>
 													</identifyingAttributes>
 													<attributes>
