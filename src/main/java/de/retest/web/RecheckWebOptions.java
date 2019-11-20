@@ -2,6 +2,7 @@ package de.retest.web;
 
 import de.retest.recheck.RecheckOptions;
 import de.retest.web.screenshot.ScreenshotProvider;
+import de.retest.web.screenshot.ScreenshotProviders;
 import de.retest.web.selenium.AutocheckingCheckNamingStrategy;
 import de.retest.web.selenium.CounterCheckNamingStrategy;
 import lombok.Getter;

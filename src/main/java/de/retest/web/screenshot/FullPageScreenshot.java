@@ -1,7 +1,7 @@
 package de.retest.web.screenshot;
 
 import static de.retest.recheck.ui.image.ImageUtils.resizeImage;
-import static de.retest.web.ScreenshotProviders.SCALE;
+import static de.retest.web.screenshot.ScreenshotProviders.SCALE;
 
 import java.awt.image.BufferedImage;
 

@@ -1,4 +1,4 @@
-package de.retest.web;
+package de.retest.web.screenshot;
 
 import static de.retest.recheck.ui.image.ImageUtils.extractScale;
 
@@ -6,23 +6,16 @@ import java.awt.image.BufferedImage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 
-import de.retest.web.screenshot.FullPageScreenshot;
-import de.retest.web.screenshot.NoScreenshot;
-import de.retest.web.screenshot.ScreenshotProvider;
-import de.retest.web.screenshot.ViewportOnlyScreenshot;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class ScreenshotProviders {
 
-	private static final String SCREENSHOT_PROVIDER_PROPERTY = "de.retest.recheck.web.screenshotProvider";
+	private static final String SCREENSHOT_PROVIDER_PROPERTY = "de.retest.recheck.web.screenshot.provider";
 	private static final boolean USE_DEVICE_PIXEL_RATIO = true;
-	private static final Logger logger = LoggerFactory.getLogger( ScreenshotProviders.class );
 
 	public static final int SCALE = extractScale();
 
@@ -36,7 +29,7 @@ public class ScreenshotProviders {
 			}
 			return screenshotProvider.shoot( driver );
 		} catch ( final Exception e ) {
-			logger.error( "Exception creating screenshot for check.", e );
+			log.error( "Exception creating screenshot for check.", e );
 			return null;
 		}
 	}

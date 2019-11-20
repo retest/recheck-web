@@ -1,6 +1,6 @@
 package de.retest.web.mapping;
 
-import static de.retest.web.ScreenshotProviders.SCALE;
+import static de.retest.web.screenshot.ScreenshotProviders.SCALE;
 
 import java.awt.Rectangle;
 import java.util.Map;
