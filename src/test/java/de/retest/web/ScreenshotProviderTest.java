@@ -10,6 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CommandExecutor;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import de.retest.web.screenshot.NoScreenshot;
+import de.retest.web.screenshot.ScreenshotProviders;
+
 class ScreenshotProviderTest {
 
 	@Test
@@ -18,7 +21,7 @@ class ScreenshotProviderTest {
 		when( exceptionCausingDriver.executeScript( Mockito.anyString() ) ).thenReturn( 1.0 );
 		when( exceptionCausingDriver.getCommandExecutor() ).thenReturn( mock( CommandExecutor.class ) );
 
-		assertThat( ScreenshotProvider.shoot( exceptionCausingDriver, null ) ).isNull();
+		assertThat( ScreenshotProviders.shoot( exceptionCausingDriver, null, new NoScreenshot() ) ).isNull();
 	}
 
 }

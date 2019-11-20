@@ -1,6 +1,8 @@
 package de.retest.web;
 
 import de.retest.recheck.RecheckOptions;
+import de.retest.web.screenshot.ScreenshotProvider;
+import de.retest.web.screenshot.ScreenshotProviders;
 import de.retest.web.selenium.AutocheckingCheckNamingStrategy;
 import de.retest.web.selenium.CounterCheckNamingStrategy;
 import lombok.Getter;
@@ -16,11 +18,13 @@ public class RecheckWebOptions extends RecheckOptions {
 	 * special {@link AutocheckingCheckNamingStrategy}.
 	 */
 	private final AutocheckingCheckNamingStrategy checkNamingStrategy;
+	private final ScreenshotProvider screenshotProvider;
 
 	public RecheckWebOptions( final RecheckOptions superOptions,
-			final AutocheckingCheckNamingStrategy checkNamingStrategy ) {
+			final AutocheckingCheckNamingStrategy checkNamingStrategy, final ScreenshotProvider screenshotProvider ) {
 		super( superOptions );
 		this.checkNamingStrategy = checkNamingStrategy;
+		this.screenshotProvider = screenshotProvider;
 	}
 
 	public static RecheckWebOptionsBuilder builder() {
@@ -30,6 +34,7 @@ public class RecheckWebOptions extends RecheckOptions {
 	public static class RecheckWebOptionsBuilder extends RecheckOptionsBuilder {
 
 		private AutocheckingCheckNamingStrategy checkNamingStrategy = new CounterCheckNamingStrategy();
+		private ScreenshotProvider screenshotProvider = null;
 
 		public RecheckWebOptionsBuilder
 				checkNamingStrategy( final AutocheckingCheckNamingStrategy checkNamingStrategy ) {
@@ -37,9 +42,15 @@ public class RecheckWebOptions extends RecheckOptions {
 			return this;
 		}
 
+		public RecheckWebOptionsBuilder screenshotProvider( final ScreenshotProvider screenshotProvider ) {
+			this.screenshotProvider = screenshotProvider;
+			return this;
+		}
+
 		@Override
 		public RecheckWebOptions build() {
-			return new RecheckWebOptions( super.build(), checkNamingStrategy );
+			return new RecheckWebOptions( super.build(), checkNamingStrategy, screenshotProvider != null
+					? screenshotProvider : ScreenshotProviders.getGlobalScreenshotProvider() );
 		}
 	}
 }

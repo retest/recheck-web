@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.4.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.6.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="retest - Java Swing GUI Testing" title="retest - Java Swing GUI Testing">
 			<identifyingAttributes>
@@ -183,11 +183,11 @@
 							<attributes>
 								<entry>
 									<key>margin-left</key>
-									<value xsi:type="xsd:string">90px</value>
+									<value xsi:type="xsd:string">81.5px</value>
 								</entry>
 								<entry>
 									<key>margin-right</key>
-									<value xsi:type="xsd:string">90px</value>
+									<value xsi:type="xsd:string">81.5px</value>
 								</entry>
 								<entry>
 									<key>max-width</key>
@@ -504,11 +504,11 @@
 							<attributes>
 								<entry>
 									<key>margin-left</key>
-									<value xsi:type="xsd:string">90px</value>
+									<value xsi:type="xsd:string">81.5px</value>
 								</entry>
 								<entry>
 									<key>margin-right</key>
-									<value xsi:type="xsd:string">90px</value>
+									<value xsi:type="xsd:string">81.5px</value>
 								</entry>
 								<entry>
 									<key>max-width</key>
@@ -4935,11 +4935,11 @@
 							<attributes>
 								<entry>
 									<key>bottom</key>
-									<value xsi:type="xsd:string">3011px</value>
+									<value xsi:type="xsd:string">694px</value>
 								</entry>
 								<entry>
 									<key>left</key>
-									<value xsi:type="xsd:string">890px</value>
+									<value xsi:type="xsd:string">873px</value>
 								</entry>
 								<entry>
 									<key>position</key>
@@ -5107,11 +5107,11 @@
 											</entry>
 											<entry>
 												<key>margin-left</key>
-												<value xsi:type="xsd:string">90px</value>
+												<value xsi:type="xsd:string">81.5px</value>
 											</entry>
 											<entry>
 												<key>margin-right</key>
-												<value xsi:type="xsd:string">90px</value>
+												<value xsi:type="xsd:string">81.5px</value>
 											</entry>
 											<entry>
 												<key>max-width</key>
@@ -6687,11 +6687,11 @@
 											</entry>
 											<entry>
 												<key>margin-left</key>
-												<value xsi:type="xsd:string">90px</value>
+												<value xsi:type="xsd:string">81.5px</value>
 											</entry>
 											<entry>
 												<key>margin-right</key>
-												<value xsi:type="xsd:string">90px</value>
+												<value xsi:type="xsd:string">81.5px</value>
 											</entry>
 											<entry>
 												<key>max-width</key>
@@ -7835,11 +7835,11 @@
 											</entry>
 											<entry>
 												<key>margin-left</key>
-												<value xsi:type="xsd:string">90px</value>
+												<value xsi:type="xsd:string">81.5px</value>
 											</entry>
 											<entry>
 												<key>margin-right</key>
-												<value xsi:type="xsd:string">90px</value>
+												<value xsi:type="xsd:string">81.5px</value>
 											</entry>
 											<entry>
 												<key>max-width</key>
@@ -8861,11 +8861,11 @@
 											</entry>
 											<entry>
 												<key>margin-left</key>
-												<value xsi:type="xsd:string">90px</value>
+												<value xsi:type="xsd:string">81.5px</value>
 											</entry>
 											<entry>
 												<key>margin-right</key>
-												<value xsi:type="xsd:string">90px</value>
+												<value xsi:type="xsd:string">81.5px</value>
 											</entry>
 											<entry>
 												<key>max-width</key>
@@ -10058,11 +10058,11 @@
 							<attributes>
 								<entry>
 									<key>margin-left</key>
-									<value xsi:type="xsd:string">90px</value>
+									<value xsi:type="xsd:string">81.5px</value>
 								</entry>
 								<entry>
 									<key>margin-right</key>
-									<value xsi:type="xsd:string">90px</value>
+									<value xsi:type="xsd:string">81.5px</value>
 								</entry>
 								<entry>
 									<key>max-width</key>
@@ -11351,7 +11351,7 @@
 				</containedElements>
 			</containedElements>
 			<screenshot>
-				<persistenceId>html_536f7029395cc378441595d44d8b8bb8fc2cfa9c1dd08167ac492654753c6ca4</persistenceId>
+				<persistenceId>html</persistenceId>
 				<type>PNG</type>
 			</screenshot>
 		</descriptors>

@@ -25,11 +25,16 @@ Table of Contents
 
 ### Breaking Changes
 
+* The default of how screenshots are created has changed from full page to viewport only. These two options are now available to set globally via properties and per test individually via `RecheckWebOptions`.
+
 ### Bug Fixes
 
 ### New Features
 
+* Screenshot creation can now be configured via the `RecheckOptions` or globally via `de.retest.recheck.web.screenshot.provider`. 
+
 ### Improvements
+
 
 
 --------------------------------------------------------------------------------
