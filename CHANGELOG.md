@@ -31,6 +31,8 @@ Table of Contents
 
 ### New Features
 
+* Screenshot creation can now be configured via the `RecheckOptions` or globally via `de.retest.recheck.web.screenshot.provider`. 
+
 ### Improvements
 
 
