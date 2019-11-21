@@ -28,7 +28,6 @@ class WikipediaIT {
 
 	@Test
 	void myWikipediaTest() throws Exception {
-		re.startTest();
 		// Switch to "expected" subfolder to restore original page.
 		driver.get( PageFactory.toPageUrlString( "wikipedia/actual/wikipedia-characterization-test.html" ) );
 		re.check( driver, "characterization-testing-page" );
