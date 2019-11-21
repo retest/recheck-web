@@ -35,6 +35,7 @@ Table of Contents
 
 ### Improvements
 
+* `AutocheckingRecheckDriver` and thus the `RecheckDriver` now implement the `RecheckLifecycle`, meaning that they can be used with the JUnit extensions.
 
 
 --------------------------------------------------------------------------------
