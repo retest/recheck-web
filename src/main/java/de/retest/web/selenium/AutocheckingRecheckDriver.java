@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import de.retest.recheck.RecheckLifecycle;
 import de.retest.recheck.RecheckOptions;
 import de.retest.web.RecheckWebImpl;
 import de.retest.web.RecheckWebOptions;
@@ -18,7 +19,7 @@ import de.retest.web.RecheckWebOptions;
  * {@code RecheckImpl} or {@code RecheckWebImpl} instance. It utilizes the given {@link AutocheckingCheckNamingStrategy}
  * to create names for the checks.
  */
-public class AutocheckingRecheckDriver extends UnbreakableDriver {
+public class AutocheckingRecheckDriver extends UnbreakableDriver implements RecheckLifecycle {
 
 	private RecheckWebImpl re;
 	private final RecheckOptions options;
@@ -64,6 +65,7 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 		checkNamingStrategy = options.getCheckNamingStrategy();
 	}
 
+	@Override
 	public void startTest() {
 		checkNamingStrategy.nextTest();
 		if ( re == null ) {
@@ -72,6 +74,7 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 		re.startTest();
 	}
 
+	@Override
 	public void startTest( final String testName ) {
 		if ( re == null ) {
 			re = new RecheckWebImpl( options );
@@ -79,10 +82,12 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver {
 		re.startTest( testName );
 	}
 
+	@Override
 	public void capTest() {
 		re.capTest();
 	}
 
+	@Override
 	public void cap() {
 		checkNamingStrategy.nextTest();
 		re.cap();
