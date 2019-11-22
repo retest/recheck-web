@@ -25,17 +25,27 @@ Table of Contents
 
 ### Breaking Changes
 
-* The default of how screenshots are created has changed from full page to viewport only. These two options are now available to set globally via properties and per test individually via `RecheckWebOptions`.
-
 ### Bug Fixes
 
 ### New Features
 
-* Screenshot creation can now be configured via the `RecheckOptions` or globally via `de.retest.recheck.web.screenshot.provider`. 
-
 ### Improvements
 
 * `AutocheckingRecheckDriver` and thus the `RecheckDriver` now implement the `RecheckLifecycle`, meaning that they can be used with the JUnit extensions.
+
+--------------------------------------------------------------------------------
+
+
+[1.7.0] (2019-11-21)
+--------------------
+
+### Breaking Changes
+
+* The default of how screenshots are created has changed from full page to viewport only. These two options are now available to set globally via properties and per test individually via `RecheckWebOptions`.
+
+### New Features
+
+* Screenshot creation can now be configured via the `RecheckOptions` or globally via `de.retest.recheck.web.screenshot.provider`. 
 
 
 --------------------------------------------------------------------------------
