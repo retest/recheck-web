@@ -6,12 +6,12 @@ import java.util.regex.Matcher;
 
 import de.retest.recheck.ui.descriptors.Element;
 
-public class RegexSelector implements Selector {
+class RegexSelector implements Selector {
 
 	private final Matcher classMatcher;
 	private final Function<String, Predicate<Element>> factory;
 
-	public RegexSelector( final Matcher classMatcher, final Function<String, Predicate<Element>> factory ) {
+	RegexSelector( final Matcher classMatcher, final Function<String, Predicate<Element>> factory ) {
 		this.classMatcher = classMatcher;
 		this.factory = factory;
 	}

@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 import de.retest.recheck.ui.descriptors.Element;
 
-public class Transformer {
+class Transformer {
 
 	private final Pattern cssPattern;
 	private final Function<String, Predicate<Element>> factory;
