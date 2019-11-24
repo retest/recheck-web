@@ -18,7 +18,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import de.retest.recheck.ui.descriptors.Element;
 
 @ExtendWith( MockitoExtension.class )
-class TransformerTest {
+class RegexTransformerTest {
 
 	private static final String SELECTOR_PATTERN = "[a-z;]+";
 	private static final String SELECTED_PART = "abc;";
@@ -32,7 +32,7 @@ class TransformerTest {
 	@Test
 	void does_not_match() throws Exception {
 		final Pattern cssPattern = Pattern.compile( "^(" + SELECTOR_PATTERN + ";)(.*)" );
-		final Transformer transformer = new Transformer( cssPattern, factory );
+		final RegexTransformer transformer = new RegexTransformer( cssPattern, factory );
 
 		final String selectorString = "002;blub";
 		final Selector cssSelector = transformer.transform( selectorString );
@@ -45,7 +45,7 @@ class TransformerTest {
 	@Test
 	void matches_regex() throws Exception {
 		when( factory.apply( SELECTED_PART ) ).thenReturn( e -> true );
-		final Transformer transformer = newTransformer();
+		final RegexTransformer transformer = newTransformer();
 
 		final Selector cssSelector = transformer.transform( SELECTED_PART + REMAINING_PART );
 
@@ -54,8 +54,8 @@ class TransformerTest {
 				() -> assertThat( cssSelector.remainingSelector() ).isEqualTo( TRIMMED_REMAINING_PART ) );
 	}
 
-	private Transformer newTransformer() {
+	private RegexTransformer newTransformer() {
 		final Pattern cssPattern = Pattern.compile( "^(" + SELECTOR_PATTERN + ";)(.*)" );
-		return new Transformer( cssPattern, factory );
+		return new RegexTransformer( cssPattern, factory );
 	}
 }

@@ -18,9 +18,9 @@ public class DefaultSelectors {
 		private final String pattern;
 		private final Function<String, Predicate<Element>> factory;
 
-		private Transformer createTransformer() {
+		private RegexTransformer createTransformer() {
 			final Pattern cssTag = Pattern.compile( START_OF_LINE + pattern + REMAINING );
-			return new Transformer( cssTag, factory );
+			return new RegexTransformer( cssTag, factory );
 		}
 	}
 
