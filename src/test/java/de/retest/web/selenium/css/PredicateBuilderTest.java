@@ -1,9 +1,12 @@
 package de.retest.web.selenium.css;
 
+import static java.util.Arrays.asList;
 import static java.util.Collections.emptyList;
 import static java.util.Collections.singletonList;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.util.List;
@@ -25,11 +28,10 @@ import de.retest.recheck.ui.descriptors.Element;
 @ExtendWith( MockitoExtension.class )
 public class PredicateBuilderTest {
 
-	private static final String CSS_SELECTOR_NOT_SUPPORTED = "Unbreakable tests are not implemented for all CSS selectors.";
+	private static final String CSS_SELECTOR_NOT_SUPPORTED =
+			"Unbreakable tests are not implemented for all CSS selectors.";
 	@Mock
 	private Element element;
-	@Mock
-	private Selector matchingSelector;
 	@Mock
 	private Element otherElement;
 	private List<ILoggingEvent> logsList;
@@ -68,7 +70,7 @@ public class PredicateBuilderTest {
 	@Test
 	void parse_selector_with_unknown_part() throws Exception {
 		final String remainingPart = "remaining";
-		configureRemainingPart( remainingPart );
+		final Selector matchingSelector = createSelectorWith( remainingPart, e -> false );
 		final String origSelector = "abc";
 		final List<Transformer> transformers = singletonList( s -> matchingSelector );
 		final Optional<Predicate<Element>> predicate = buildPredicate( origSelector, transformers );
@@ -81,9 +83,9 @@ public class PredicateBuilderTest {
 
 	@Test
 	void parse_matching_selector() throws Exception {
-		final String remainingPart = "";
-		configureRemainingPart( remainingPart );
 		final String origSelector = "abc";
+		final String remainingPart = "";
+		final Selector matchingSelector = createSelectorWith( remainingPart, element::equals );
 		final List<Transformer> transformers = singletonList( s -> matchingSelector );
 		final Optional<Predicate<Element>> predicate = buildPredicate( origSelector, transformers );
 
@@ -93,15 +95,32 @@ public class PredicateBuilderTest {
 
 	}
 
+	@Test
+	void parse_multiple_matching_selectors() throws Exception {
+		final String origSelector = "abc";
+		final Selector someSelector = createSelectorWith( "def", e -> true );
+		final Selector otherSelector = createSelectorWith( "", e -> false );
+		final List<Transformer> transformers = asList( s -> someSelector, s -> otherSelector );
+		final Optional<Predicate<Element>> predicate = buildPredicate( origSelector, transformers );
+
+		assertAll( () -> assertThat( predicate.map( p -> p.test( element ) ) ).hasValue( false ),
+				() -> assertThat( logsList ).isEmpty() );
+		verify( someSelector ).predicate();
+		verify( otherSelector ).predicate();
+
+	}
+
 	private Optional<Predicate<Element>> buildPredicate( final String origSelector,
 			final List<Transformer> transformers ) {
 		return new PredicateBuilder( transformers, origSelector ).build();
 	}
 
-	private void configureRemainingPart( final String remainingPart ) {
+	private Selector createSelectorWith( final String remainingPart, final Predicate<Element> predicate ) {
+		final Selector matchingSelector = mock( Selector.class );
 		when( matchingSelector.matches() ).thenReturn( true, false );
 		when( matchingSelector.remainingSelector() ).thenReturn( remainingPart );
-		when( matchingSelector.predicate() ).thenReturn( element::equals );
+		when( matchingSelector.predicate() ).thenReturn( predicate );
+		return matchingSelector;
 	}
 
 }

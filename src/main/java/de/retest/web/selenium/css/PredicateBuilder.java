@@ -25,28 +25,45 @@ public class PredicateBuilder {
 	}
 
 	public Optional<Predicate<Element>> build() {
-		String selector = origSelector;
+		final String remainingSelector = parse( origSelector );
+
+		if ( isPartAvailable( remainingSelector ) ) {
+			logUnkownSelector( remainingSelector );
+			return Optional.empty();
+
+		}
+		return Optional.of( combinePredicates() );
+	}
+
+	private String parse( final String selector ) {
+		String remainingSelector = selector;
 		boolean matched = true;
-		while ( !selector.isEmpty() && matched ) {
+		while ( isPartAvailable( remainingSelector ) && matched ) {
 			matched = false;
 			for ( final Transformer function : selectors ) {
-				final Selector cssSelector = function.transform( selector );
+				final Selector cssSelector = function.transform( remainingSelector );
 				if ( cssSelector.matches() ) {
 					predicates.add( cssSelector.predicate() );
-					selector = cssSelector.remainingSelector();
+					remainingSelector = cssSelector.remainingSelector();
 					matched = cssSelector.matches();
 				}
 			}
 		}
+		return remainingSelector;
+	}
 
-		if ( !selector.isEmpty() ) {
-			logger.warn(
-					"Unbreakable tests are not implemented for all CSS selectors. Please report your chosen selector ('{}') at https://github.com/retest/recheck-web/issues.",
-					selector );
-			return Optional.empty();
+	private boolean isPartAvailable( final String selector ) {
+		return !selector.isEmpty();
+	}
 
-		}
-		return Optional.of( predicates.stream().reduce( Predicate::and ).orElse( e -> true ) );
+	private void logUnkownSelector( final String selector ) {
+		logger.warn(
+				"Unbreakable tests are not implemented for all CSS selectors. Please report your chosen selector ('{}') at https://github.com/retest/recheck-web/issues.",
+				selector );
+	}
+
+	private Predicate<Element> combinePredicates() {
+		return predicates.stream().reduce( Predicate::and ).orElse( e -> true );
 	}
 
 }
