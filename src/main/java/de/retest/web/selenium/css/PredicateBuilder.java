@@ -9,11 +9,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import de.retest.recheck.ui.descriptors.Element;
-import de.retest.web.selenium.TestHealer;
 
 public class PredicateBuilder {
 
-	private static final Logger logger = LoggerFactory.getLogger( TestHealer.class );
+	private static final Logger logger = LoggerFactory.getLogger( PredicateBuilder.class );
 
 	private final List<Transformer> selectors;
 	private final List<Predicate<Element>> predicates;

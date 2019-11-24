@@ -31,6 +31,7 @@ import de.retest.recheck.ui.descriptors.MutableAttributes;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.StringAttribute;
 import de.retest.web.AttributesUtil;
+import de.retest.web.selenium.css.PredicateBuilder;
 
 class TestHealerTest {
 
@@ -145,7 +146,7 @@ class TestHealerTest {
 	public void not_yet_implemented_ByCssSelector_should_be_logged() {
 		final ListAppender<ILoggingEvent> listAppender = new ListAppender<>();
 		listAppender.start();
-		((Logger) LoggerFactory.getLogger( TestHealer.class )).addAppender( listAppender );
+		((Logger) LoggerFactory.getLogger( PredicateBuilder.class )).addAppender( listAppender );
 		final List<ILoggingEvent> logsList = listAppender.list;
 
 		assertThat( findElement( By.cssSelector( ".open > .dropdown-toggle.btn-primary" ), wrapped ) ).isNull();
