@@ -38,18 +38,13 @@ public class AttributesUtil {
 	public static boolean isStateAttribute( final String key, final AttributesProvider provider ) {
 		final boolean isNotIdentifyingAttribute = !isIdentifyingAttribute( key );
 		final boolean isHtmlAttribute = isHtmlAttribute( key, provider );
-		final boolean isCssAttribute = isCssAttribute( key, provider );
-		return isNotIdentifyingAttribute && (isHtmlAttribute || isCssAttribute);
+		return isNotIdentifyingAttribute && isHtmlAttribute;
 	}
 
 	private static boolean isHtmlAttribute( final String key, final AttributesProvider provider ) {
 		return provider.allHtmlAttributes() //
 				? true //
 				: provider.getHtmlAttributes().contains( key );
-	}
-
-	private static boolean isCssAttribute( final String key, final AttributesProvider provider ) {
-		return provider.getCssAttributes().contains( key );
 	}
 
 }

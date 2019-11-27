@@ -115,16 +115,15 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	private Set<RootElement> convert( final WebDriver driver, final RemoteWebElement webElement ) {
 		// Do not inline this, as we want the screenshot created before retrieving elements
 		final BufferedImage screenshot = shoot( driver, webElement, screenshotProvider );
-		final Set<String> cssAttributes = attributesProvider.getCssAttributes();
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		@SuppressWarnings( "unchecked" )
 		final Map<String, Map<String, Object>> tagMapping =
-				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), cssAttributes, webElement );
+				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), webElement );
 		final RootElement lastChecked = convert( tagMapping, driver.getCurrentUrl(), driver.getTitle(), screenshot );
 
 		final FrameConverter frameConverter =
 				new FrameConverter( getQueryJS(), retestIdProvider, attributesProvider, defaultValueFinder );
-		frameConverter.addChildrenFromFrames( driver, cssAttributes, lastChecked );
+		frameConverter.addChildrenFromFrames( driver, lastChecked );
 
 		if ( driver instanceof UnbreakableDriver ) {
 			((UnbreakableDriver) driver).setLastActualState( lastChecked );

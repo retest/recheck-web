@@ -2,7 +2,6 @@ package de.retest.web;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
@@ -29,18 +28,17 @@ public class FrameConverter {
 	private final AttributesProvider attributesProvider;
 	private final DefaultValueFinder defaultValueFinder;
 
-	public void addChildrenFromFrames( final WebDriver driver, final Set<String> cssAttributes,
-			final RootElement lastChecked ) {
+	public void addChildrenFromFrames( final WebDriver driver, final RootElement lastChecked ) {
 		final List<Element> frames =
 				de.retest.web.selenium.By.findElements( lastChecked.getContainedElements(), isFrame() );
 		log.debug( "Found {} frame(s), getting data per frame.", frames.size() );
 		for ( final Element frame : frames ) {
-			addChildrenFromFrame( driver, cssAttributes, frame );
+			addChildrenFromFrame( driver, frame );
 			driver.switchTo().defaultContent();
 		}
 	}
 
-	private void addChildrenFromFrame( final WebDriver driver, final Set<String> cssAttributes, final Element frame ) {
+	private void addChildrenFromFrame( final WebDriver driver, final Element frame ) {
 		try {
 			final String framePath = frame.getIdentifyingAttributes().getPath();
 			final String frameXPath = "/" + framePath;
@@ -53,7 +51,7 @@ public class FrameConverter {
 			final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 			@SuppressWarnings( "unchecked" )
 			final PathsToWebDataMapping mapping = new PathsToWebDataMapping( framePath,
-					(Map<String, Map<String, Object>>) jsExecutor.executeScript( queryJs, cssAttributes ) );
+					(Map<String, Map<String, Object>>) jsExecutor.executeScript( queryJs ) );
 			final RootElement frameContent = convert( mapping, getFrameTitle( frame ), framePath );
 			frame.addChildren( frameContent.getContainedElements() );
 		} catch ( final Exception e ) {

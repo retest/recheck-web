@@ -68,11 +68,6 @@ public class YamlAttributesProvider implements AttributesProvider {
 	}
 
 	@Override
-	public Set<String> getCssAttributes() {
-		return attributesConfig.getCssAttributes();
-	}
-
-	@Override
 	public Set<String> getHtmlAttributes() {
 		return attributesConfig.getHtmlAttributes();
 	}

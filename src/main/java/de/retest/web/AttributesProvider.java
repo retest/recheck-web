@@ -5,14 +5,6 @@ import java.util.Set;
 public interface AttributesProvider {
 
 	/**
-	 * Set of CSS attributes that are added to an element's state. Can be a set of selected attributes or empty ("all"
-	 * not supported).
-	 *
-	 * @return Possibly empty set of selected CSS attributes.
-	 */
-	Set<String> getCssAttributes();
-
-	/**
 	 * Set of HTML attributes that are added to an element's state. Can be a set of selected attributes, empty, or
 	 * "all".
 	 *

@@ -21,14 +21,12 @@ class YamlAttributesConfigDeserializerTest {
 	@Test
 	void should_handle_attributes_selected() throws Exception {
 		final YamlAttributesConfig attributesConfig = deserialize( new File( baseDir, "selected.yaml" ) );
-		assertThat( attributesConfig.getCssAttributes() ).contains( "foo", "bar", "baz" );
 		assertThat( attributesConfig.getHtmlAttributes() ).contains( "tic", "tac", "toe" );
 	}
 
 	@Test
 	void should_handle_attributes_empty() throws Exception {
 		final YamlAttributesConfig attributesConfig = deserialize( new File( baseDir, "empty.yaml" ) );
-		assertThat( attributesConfig.getCssAttributes() ).isEmpty();
 		assertThat( attributesConfig.getHtmlAttributes() ).isEmpty();
 	}
 
@@ -36,21 +34,6 @@ class YamlAttributesConfigDeserializerTest {
 	void should_handle_html_attributes_all() throws Exception {
 		final YamlAttributesConfig attributesConfig = deserialize( new File( baseDir, "all-html.yaml" ) );
 		assertThat( attributesConfig.getHtmlAttributes() ).isNull();
-	}
-
-	@Test
-	void should_handle_css_attributes_all() throws Exception {
-		assertThatThrownBy( () -> deserialize( new File( baseDir, "all-css.yaml" ) ) ) //
-				.isExactlyInstanceOf( IllegalArgumentException.class ) //
-				.hasMessage(
-						"CSS attributes can only be a set of selected attributes or empty ('all' not supported)." );
-	}
-
-	@Test
-	void should_handle_css_attributes_invalid() throws Exception {
-		assertThatThrownBy( () -> deserialize( new File( baseDir, "invalid-css.yaml" ) ) ) //
-				.isExactlyInstanceOf( IllegalArgumentException.class ) //
-				.hasMessage( "'invalid' is an invalid value for 'cssAttributes'." );
 	}
 
 	@Test

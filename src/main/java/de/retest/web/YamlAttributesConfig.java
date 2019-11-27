@@ -7,19 +7,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 @JsonDeserialize( using = YamlAttributesConfigDeserializer.class )
 public class YamlAttributesConfig {
 
-	private final Set<String> cssAttributes;
 	private final Set<String> htmlAttributes;
 
-	public YamlAttributesConfig( final Set<String> cssAttributes, final Set<String> htmlAttributes ) {
-		this.cssAttributes = cssAttributes;
+	public YamlAttributesConfig( final Set<String> htmlAttributes ) {
 		this.htmlAttributes = htmlAttributes;
-	}
-
-	/**
-	 * @return See {@link AttributesProvider#getCssAttributes()}.
-	 */
-	public Set<String> getCssAttributes() {
-		return cssAttributes;
 	}
 
 	/**
