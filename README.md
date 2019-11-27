@@ -185,7 +185,7 @@ You can open the `report` using [***review***](https://retest.de/review/) or the
 
 ### recheck-web seems to be slow when executing. What can I do about that?
 
-recheck-web itself is not slow. But screenshot creation is. Lucky enough, we only use the screenshot for documentation, not for the actual comparison. Per default, we only create a screenshot of the given viewport and you can also disable the screenshot creation completely. For more information, please refer to our [documentation](https://docs.retest.de/recheck-web/usage/configuration/).
+recheck-web itself is not slow. But screenshot creation is. Lucky enough, we only use the screenshot for documentation, not for the actual comparison. Per default, we only create a screenshot of the given viewport and scale that to a max width. You can also disable the screenshot creation completely. For more information, please refer to our [documentation](https://docs.retest.de/recheck-web/usage/configuration/).
 
 
 ### What does the recheck warning mean?

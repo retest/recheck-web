@@ -32,6 +32,7 @@ Table of Contents
 ### Improvements
 
 * `AutocheckingRecheckDriver` and thus the `RecheckDriver` now implement the `RecheckLifecycle`, meaning that they can be used with the JUnit extensions.
+* Big screenshots create a lot of overhead in storing, transferring and processing. Since we need screenshots only for the user, we reduce that overhead by specifying a max width in pixel, to which the screenshot is resized. 
 
 --------------------------------------------------------------------------------
 
