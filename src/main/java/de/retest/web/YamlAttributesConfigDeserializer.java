@@ -15,7 +15,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 
 class YamlAttributesConfigDeserializer extends JsonDeserializer<YamlAttributesConfig> {
 
-	private static final String CSS_ATTRIBUTES_KEY = "cssAttributes";
 	private static final String HTML_ATTRIBUTES_KEY = "htmlAttributes";
 	private static final String ALL_VALUE = "all";
 
@@ -23,18 +22,8 @@ class YamlAttributesConfigDeserializer extends JsonDeserializer<YamlAttributesCo
 	public YamlAttributesConfig deserialize( final JsonParser parser, final DeserializationContext context )
 			throws IOException, JsonProcessingException {
 		final JsonNode node = parser.getCodec().readTree( parser );
-		final JsonNode cssAttributesNode = node.get( CSS_ATTRIBUTES_KEY );
 		final JsonNode htmlAttributesNode = node.get( HTML_ATTRIBUTES_KEY );
-		return new YamlAttributesConfig( toCssAttributesSet( cssAttributesNode ),
-				toHtmlAttributesSet( htmlAttributesNode ) );
-	}
-
-	private Set<String> toCssAttributesSet( final JsonNode cssAttributesNode ) {
-		if ( isAll( cssAttributesNode, CSS_ATTRIBUTES_KEY ) ) {
-			throw new IllegalArgumentException(
-					"CSS attributes can only be a set of selected attributes or empty ('all' not supported)." );
-		}
-		return toSet( cssAttributesNode );
+		return new YamlAttributesConfig( toHtmlAttributesSet( htmlAttributesNode ) );
 	}
 
 	private Set<String> toHtmlAttributesSet( final JsonNode htmlAttributesNode ) {
