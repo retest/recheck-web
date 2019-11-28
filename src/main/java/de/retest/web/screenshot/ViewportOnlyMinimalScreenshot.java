@@ -14,7 +14,7 @@ import de.retest.recheck.ui.image.ImageUtils;
 public class ViewportOnlyMinimalScreenshot implements ScreenshotProvider {
 
 	static final int DEFAULT_WANTED_WIDTH_PX = 800;
-	private static final String RESIZE_MAX_WIDTH_PX = "de.retest.recheck.web.resizeMaxWidthPx";
+	private static final String RESIZE_MAX_WIDTH_PX = "de.retest.recheck.web.screenshot.maxWidthPx";
 	private static final int WANTED_WIDTH = Integer.getInteger( RESIZE_MAX_WIDTH_PX, DEFAULT_WANTED_WIDTH_PX );
 
 	private static final boolean USE_DEVICE_PIXEL_RATIO = true;
