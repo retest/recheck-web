@@ -40,7 +40,6 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	private final DefaultValueFinder defaultValueFinder = new DefaultWebValueFinder();
 
 	private final RetestIdProvider retestIdProvider;
-	private final AttributesProvider attributesProvider = YamlAttributesProvider.getInstance();
 	private final ScreenshotProvider screenshotProvider;
 
 	public RecheckSeleniumAdapter( final RecheckOptions options ) {
@@ -121,8 +120,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), webElement );
 		final RootElement lastChecked = convert( tagMapping, driver.getCurrentUrl(), driver.getTitle(), screenshot );
 
-		final FrameConverter frameConverter =
-				new FrameConverter( getQueryJS(), retestIdProvider, attributesProvider, defaultValueFinder );
+		final FrameConverter frameConverter = new FrameConverter( getQueryJS(), retestIdProvider, defaultValueFinder );
 		frameConverter.addChildrenFromFrames( driver, lastChecked );
 
 		if ( driver instanceof UnbreakableDriver ) {
@@ -137,7 +135,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		final PathsToWebDataMapping mapping = new PathsToWebDataMapping( tagMapping );
 
 		logger.info( "Checking website {} with {} elements.", url, mapping.size() );
-		return new PeerConverter( retestIdProvider, attributesProvider, mapping, title, screenshot, defaultValueFinder,
+		return new PeerConverter( retestIdProvider, mapping, title, screenshot, defaultValueFinder,
 				mapping.getRootPath() ).convertToPeers();
 	}
 

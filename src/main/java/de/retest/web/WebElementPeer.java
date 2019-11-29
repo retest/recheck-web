@@ -30,14 +30,12 @@ public class WebElementPeer {
 	protected final RetestIdProvider retestIdProvider;
 	protected final WebData webData;
 
-	private final AttributesProvider attributesProvider;
 	private final String path;
 	private final DefaultValueFinder defaultValueFinder;
 
-	public WebElementPeer( final RetestIdProvider retestIdProvider, final AttributesProvider attributesProvider,
-			final WebData webData, final String path, final DefaultValueFinder defaultValueFinder ) {
+	public WebElementPeer( final RetestIdProvider retestIdProvider, final WebData webData, final String path,
+			final DefaultValueFinder defaultValueFinder ) {
 		this.retestIdProvider = retestIdProvider;
-		this.attributesProvider = attributesProvider;
 		this.webData = webData;
 		this.path = path;
 		this.defaultValueFinder = defaultValueFinder;
@@ -102,7 +100,7 @@ public class WebElementPeer {
 		final MutableAttributes state = new MutableAttributes();
 		webData.getKeys().stream() //
 				.filter( Objects::nonNull ) //
-				.filter( key -> AttributesUtil.isStateAttribute( key, attributesProvider ) && !defaultValueFinder
+				.filter( key -> !AttributesUtil.isIdentifyingAttribute( key ) && !defaultValueFinder
 						.isDefaultValue( identifyingAttributes, key, webData.getAsString( key ) ) ) //
 				.forEach( key -> state.put( key, webData.getAsString( key ) ) );
 		return state;

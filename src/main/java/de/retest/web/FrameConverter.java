@@ -25,7 +25,6 @@ public class FrameConverter {
 
 	private final String queryJs;
 	private final RetestIdProvider retestIdProvider;
-	private final AttributesProvider attributesProvider;
 	private final DefaultValueFinder defaultValueFinder;
 
 	public void addChildrenFromFrames( final WebDriver driver, final RootElement lastChecked ) {
@@ -74,14 +73,14 @@ public class FrameConverter {
 
 	private RootElement convert( final PathsToWebDataMapping mapping, final String frameTitle,
 			final String framePath ) {
-		final PeerConverter peerConverter = new PeerConverter( retestIdProvider, attributesProvider, mapping,
-				frameTitle, null, defaultValueFinder, framePath ) {
-			@Override
-			protected boolean isRoot( final String parentPath ) {
-				// Handle trailing slashes.
-				return framePath.equals( parentPath.replaceAll( "/$", "" ) );
-			}
-		};
+		final PeerConverter peerConverter =
+				new PeerConverter( retestIdProvider, mapping, frameTitle, null, defaultValueFinder, framePath ) {
+					@Override
+					protected boolean isRoot( final String parentPath ) {
+						// Handle trailing slashes.
+						return framePath.equals( parentPath.replaceAll( "/$", "" ) );
+					}
+				};
 		return peerConverter.convertToPeers();
 	}
 

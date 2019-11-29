@@ -34,17 +34,4 @@ public class AttributesUtil {
 	public static boolean isIdentifyingAttribute( final String key ) {
 		return identifyingAttributes.contains( key );
 	}
-
-	public static boolean isStateAttribute( final String key, final AttributesProvider provider ) {
-		final boolean isNotIdentifyingAttribute = !isIdentifyingAttribute( key );
-		final boolean isHtmlAttribute = isHtmlAttribute( key, provider );
-		return isNotIdentifyingAttribute && isHtmlAttribute;
-	}
-
-	private static boolean isHtmlAttribute( final String key, final AttributesProvider provider ) {
-		return provider.allHtmlAttributes() //
-				? true //
-				: provider.getHtmlAttributes().contains( key );
-	}
-
 }

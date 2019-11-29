@@ -46,8 +46,8 @@ class PeerConverterTest {
 		final PathsToWebDataMapping mapping = new PathsToWebDataMapping( data );
 
 		final DefaultValueFinder defaultValueFinder = ( identifyingAttributes, attributeKey, attributeValue ) -> false;
-		final PeerConverter cut = new PeerConverter( RetestIdProviderUtil.getConfiguredRetestIdProvider(),
-				YamlAttributesProvider.getInstance(), mapping, "title", null, defaultValueFinder, null );
+		final PeerConverter cut = new PeerConverter( RetestIdProviderUtil.getConfiguredRetestIdProvider(), mapping,
+				"title", null, defaultValueFinder, null );
 		final RootElement root = cut.convertToPeers();
 
 		final RootElementDifferenceFinder diffFinder = new RootElementDifferenceFinder( defaultValueFinder );
