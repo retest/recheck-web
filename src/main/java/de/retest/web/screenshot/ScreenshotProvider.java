@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
  * The screenshot provider for way screenshots are taken.
  *
  * The ScreenshotProvider can choose whether screenshots are taken for the full page, just the viewport or none at all.
- * The Default implementation is {@link ViewportOnlyScreenshot}.
+ * The Default implementation is {@link ViewportOnlyMinimalScreenshot}.
  */
 public interface ScreenshotProvider {
 

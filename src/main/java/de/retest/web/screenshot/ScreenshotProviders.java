@@ -35,7 +35,8 @@ public class ScreenshotProviders {
 	}
 
 	private static BufferedImage shootElement( final WebDriver driver, final WebElement element ) {
-		return Shutterbug.shootElement( driver, element, USE_DEVICE_PIXEL_RATIO ).getImage();
+		return ViewportOnlyMinimalScreenshot
+				.resizeImage( Shutterbug.shootElement( driver, element, USE_DEVICE_PIXEL_RATIO ).getImage() );
 	}
 
 	public static ScreenshotProvider getGlobalScreenshotProvider() {
@@ -43,12 +44,12 @@ public class ScreenshotProviders {
 			case "fullPage":
 				return new FullPageScreenshot();
 			case "viewPortOnly":
-				return new ViewportOnlyScreenshot();
+				return new ViewportOnlyMinimalScreenshot();
 			case "none":
 				return new NoScreenshot();
 			default:
 				log.warn( "Global property does not match a correct entry. Using default value (viewPortOnly)." );
-				return new ViewportOnlyScreenshot();
+				return new ViewportOnlyMinimalScreenshot();
 		}
 	}
 }
