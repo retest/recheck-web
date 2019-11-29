@@ -74,11 +74,18 @@
 		</repository>
 	</distributionManagement>
 
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io/</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>recheck</artifactId>
-			<version>1.7.0</version>
+			<version>7753f2e258</version>
 		</dependency>
 
 		<dependency>
