@@ -5,7 +5,10 @@ import static de.retest.web.AttributesUtil.ID;
 import static de.retest.web.AttributesUtil.NAME;
 import static de.retest.web.AttributesUtil.TEXT;
 
+import java.util.function.BiPredicate;
 import java.util.function.Predicate;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
@@ -13,33 +16,66 @@ import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
 public class Has {
 
 	private static final String TYPE = IdentifyingAttributes.TYPE_ATTRIBUTE_KEY;
+	private static final Pattern attribute = attributePattern( "" );
+	private static final Pattern attributeContaining = attributePattern( "~" );
+	private static final Pattern attributeStarting = attributePattern( "\\|" );
+	private static final Pattern attributeBeginning = attributePattern( "\\^" );
+	private static final Pattern attributeEnding = attributePattern( "\\$" );
+	private static final Pattern attributeContainsSubstring = attributePattern( "\\*" );
 
-	public static Predicate<Element> cssAttribute( final String withoutBrackets ) {
-		final String attribute = getAttribute( withoutBrackets );
-		final String attributeValue = getAttributeValue( withoutBrackets );
-		return hasAttribute( attribute, attributeValue );
+	private static Pattern attributePattern( final String selectingChar ) {
+		final String allowedCharacters = "[^" + selectingChar + "=]+";
+		return Pattern.compile( "(" + allowedCharacters + ")(" + selectingChar + "=(" + allowedCharacters + "))?" );
 	}
 
-	private static Predicate<Element> hasAttribute( final String attribute, final String attributeValue ) {
-		return element -> element.getAttributeValue( attribute ).toString().equals( attributeValue );
+	public static Predicate<Element> attribute( final String selector ) {
+		return hasAttribute( selector, attribute, String::equals );
 	}
 
-	private static String getAttribute( final String withoutBrackets ) {
-		if ( withoutBrackets.contains( "=" ) ) {
-			return withoutBrackets.substring( 0, withoutBrackets.lastIndexOf( "=" ) );
+	private static Predicate<Element> hasAttribute( final String selector, final Pattern pattern,
+			final BiPredicate<String, String> predicate ) {
+		final Matcher matcher = pattern.matcher( selector );
+		if ( matcher.matches() ) {
+			final String attribute = matcher.group( 1 );
+			final String attributeValue = clearQuotes( matcher.group( 3 ) );
+			return hasAttributeValue( attribute, attributeValue, predicate );
 		}
-		return withoutBrackets;
+		return e -> false;
 	}
 
-	private static String getAttributeValue( final String withoutBrackets ) {
-		if ( !withoutBrackets.contains( "=" ) ) {
+	private static Predicate<Element> hasAttributeValue( final String attribute, final String attributeValue,
+			final BiPredicate<String, String> toPredicate ) {
+		return element -> toPredicate.test( element.getAttributeValue( attribute ).toString(), attributeValue );
+	}
+
+	private static String clearQuotes( final String result ) {
+		if ( null == result ) {
 			return "true";
 		}
-		String result = withoutBrackets.substring( withoutBrackets.lastIndexOf( "=" ) + 1 );
 		if ( result.contains( "\"" ) || result.contains( "'" ) ) {
-			result = result.substring( 1, result.length() - 1 );
+			return result.substring( 1, result.length() - 1 );
 		}
 		return result;
+	}
+
+	public static Predicate<Element> attributeContaining( final String selector ) {
+		return hasAttribute( selector, attributeContaining, String::contains );
+	}
+
+	public static Predicate<Element> attributeStarting( final String selector ) {
+		return hasAttribute( selector, attributeStarting, String::startsWith );
+	}
+
+	public static Predicate<Element> attributeBeginning( final String selector ) {
+		return hasAttribute( selector, attributeBeginning, String::startsWith );
+	}
+
+	public static Predicate<Element> attributeEnding( final String selector ) {
+		return hasAttribute( selector, attributeEnding, String::endsWith );
+	}
+
+	public static Predicate<Element> attributeContainingSubstring( final String selector ) {
+		return hasAttribute( selector, attributeContainsSubstring, String::contains );
 	}
 
 	public static Predicate<Element> linkText( final String linkText ) {
@@ -55,7 +91,7 @@ public class Has {
 
 	public static Predicate<Element> cssClass( final String cssClass ) {
 		return element -> element.getIdentifyingAttributes().get( CLASS ) != null
-				? ((String) element.getIdentifyingAttributes().get( CLASS )).contains( cssClass ) : false;
+				&& element.getIdentifyingAttributes().get( CLASS ).toString().contains( cssClass );
 	}
 
 	public static Predicate<Element> cssName( final String name ) {
@@ -63,7 +99,7 @@ public class Has {
 	}
 
 	public static Predicate<Element> cssTag( final String tag ) {
-		return element -> element.getIdentifyingAttributes().get( TYPE ).equals( tag );
+		return element -> tag.equals( element.getIdentifyingAttributes().get( TYPE ) );
 	}
 
 	public static Predicate<Element> cssId( final String id ) {

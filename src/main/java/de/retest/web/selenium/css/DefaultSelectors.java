@@ -14,7 +14,7 @@ import lombok.RequiredArgsConstructor;
 public class DefaultSelectors {
 
 	@RequiredArgsConstructor
-	private static class Tupel {
+	private static class Rule {
 		private final String pattern;
 		private final Function<String, Predicate<Element>> factory;
 
@@ -24,20 +24,37 @@ public class DefaultSelectors {
 		}
 	}
 
-	private static final String TAG_PATTERN = "([a-zA-Z0-9\\-]+)";
-	private static final String ID_PATTERN = "\\#([a-zA-Z0-9\\-]+)";
-	private static final String CLASS_PATTERN = "\\.([a-zA-Z0-9\\-]+)";
-	private static final String ATTRIBUTE_PATTERN = "\\[([a-zA-Z0-9\\-=\"]+)\\]";
+	private static final String CHARACTERSET = "a-zA-Z0-9\\-_";
+	private static final String ALLOWED_CHARACTERS = "[" + CHARACTERSET + "]+";
+	private static final String TAG_PATTERN = "(" + ALLOWED_CHARACTERS + ")";
+	private static final String ID_PATTERN = "\\#(" + ALLOWED_CHARACTERS + ")";
+	private static final String CLASS_PATTERN = "\\.(" + ALLOWED_CHARACTERS + ")";
+	private static final String ATTRIBUTE_PATTERN = "\\[([" + CHARACTERSET + "=\"]+)\\]";
+	private static final String ATTRIBUTE_CONTAINING_PATTERN = attributePattern( "~" );
+	private static final String ATTRIBUTE_STARTING_PATTERN = attributePattern( "\\|" );
+	private static final String ATTRIBUTE_BEGINNING_PATTERN = attributePattern( "\\^" );
+	private static final String ATTRIBUTE_ENDING_PATTERN = attributePattern( "\\$" );
+	private static final String ATTRIBUTE_CONTAINING_SUBSTRING_PATTERN = attributePattern( "\\*" );
+
+	private static String attributePattern( final String selectorChar ) {
+		return "\\[([" + CHARACTERSET + selectorChar + "=\"]+)\\]";
+	}
+
 	private static final String REMAINING = "(.*)$";
 	private static final String START_OF_LINE = "^";
 
 	public static List<Transformer> all() {
-		final LinkedList<Tupel> tupels = new LinkedList<>();
-		tupels.add( new Tupel( TAG_PATTERN, Has::cssTag ) );
-		tupels.add( new Tupel( ID_PATTERN, Has::cssId ) );
-		tupels.add( new Tupel( CLASS_PATTERN, Has::cssClass ) );
-		tupels.add( new Tupel( ATTRIBUTE_PATTERN, Has::cssAttribute ) );
-		return tupels.stream().map( Tupel::createTransformer ).collect( toList() );
+		final LinkedList<Rule> tupels = new LinkedList<>();
+		tupels.add( new Rule( TAG_PATTERN, Has::cssTag ) );
+		tupels.add( new Rule( ID_PATTERN, Has::cssId ) );
+		tupels.add( new Rule( CLASS_PATTERN, Has::cssClass ) );
+		tupels.add( new Rule( ATTRIBUTE_PATTERN, Has::attribute ) );
+		tupels.add( new Rule( ATTRIBUTE_CONTAINING_PATTERN, Has::attributeContaining ) );
+		tupels.add( new Rule( ATTRIBUTE_STARTING_PATTERN, Has::attributeStarting ) );
+		tupels.add( new Rule( ATTRIBUTE_BEGINNING_PATTERN, Has::attributeBeginning ) );
+		tupels.add( new Rule( ATTRIBUTE_ENDING_PATTERN, Has::attributeEnding ) );
+		tupels.add( new Rule( ATTRIBUTE_CONTAINING_SUBSTRING_PATTERN, Has::attributeContainingSubstring ) );
+		return tupels.stream().map( Rule::createTransformer ).collect( toList() );
 	}
 
 }

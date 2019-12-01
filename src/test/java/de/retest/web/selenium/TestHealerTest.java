@@ -8,15 +8,18 @@ import static de.retest.web.AttributesUtil.TEXT;
 import static de.retest.web.selenium.TestHealer.findElement;
 import static de.retest.web.selenium.TestHealer.isNotYetSupportedXPathExpression;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Stream;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 import org.openqa.selenium.By;
 import org.slf4j.LoggerFactory;
 
@@ -86,6 +89,41 @@ class TestHealerTest {
 
 	@Test
 	public void ByCssSelector_matches_elements_with_given_attribute() {
+		configureByCssSelectorAttributeTests();
+
+		assertAll( Stream.of( //
+				"[data-id=\"myspecialID\"]", //
+				"[disabled]", //
+				"div[data-id=\"myspecialID\"]", //
+				"div[disabled]", //
+				".myClass[data-id=\"myspecialID\"]", //
+				".myClass[disabled]", //
+				"#myId[data-id=\"myspecialID\"]", //
+				"#myId[disabled]" ) //
+				.map( this::assertByCssSelector ) );
+	}
+
+	@Test
+	public void ByCssSelector_matches_elements_with_given_attribute_value() {
+		configureByCssSelectorAttributeTests();
+
+		assertAll( assertAttributeValues( "~", "=\"special\"]" ) );
+		assertAll( assertAttributeValues( "|", "=\"myspecial\"]" ) );
+		assertAll( assertAttributeValues( "^", "=\"myspecial\"]" ) );
+		assertAll( assertAttributeValues( "$", "=\"specialID\"]" ) );
+		assertAll( assertAttributeValues( "*", "=\"special\"]" ) );
+	}
+
+	private Stream<Executable> assertAttributeValues( final String selectorChar, final String value ) {
+		return Stream.of( //
+				"[data-id" + selectorChar + value, //
+				"div[data-id" + selectorChar + value, //
+				".myClass[data-id" + selectorChar + value, //
+				"#myId[data-id" + selectorChar + value ) //
+				.map( this::assertByCssSelector );
+	}
+
+	private void configureByCssSelectorAttributeTests() {
 		final MutableAttributes attributes = new MutableAttributes();
 		attributes.put( "data-id", "myspecialID" );
 		attributes.put( "disabled", "true" );
@@ -97,18 +135,6 @@ class TestHealerTest {
 		final Element element = create( ID, state, new IdentifyingAttributes( identCrit ), attributes.immutable() );
 		when( state.getContainedElements() ).thenReturn( Collections.singletonList( element ) );
 		when( wrapped.findElement( By.xpath( xpath ) ) ).thenReturn( resultMarker );
-
-		assertThat( findElement( By.cssSelector( "[data-id=\"myspecialID\"]" ), wrapped ) ).isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( "[disabled]" ), wrapped ) ).isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( "div[data-id=\"myspecialID\"]" ), wrapped ) )
-				.isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( "div[disabled]" ), wrapped ) ).isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( ".myClass[data-id=\"myspecialID\"]" ), wrapped ) )
-				.isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( ".myClass[disabled]" ), wrapped ) ).isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( "#myId[data-id=\"myspecialID\"]" ), wrapped ) )
-				.isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( "#myId[disabled]" ), wrapped ) ).isEqualTo( resultMarker );
 	}
 
 	@Test
@@ -121,13 +147,18 @@ class TestHealerTest {
 		when( state.getContainedElements() ).thenReturn( Collections.singletonList( element ) );
 		when( wrapped.findElement( By.xpath( xpath ) ) ).thenReturn( resultMarker );
 
-		assertThat( findElement( By.cssSelector( ".pure-button" ), wrapped ) ).isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( ".pure-button.my-button" ), wrapped ) ).isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( ".pure-button .my-button" ), wrapped ) ).isEqualTo( resultMarker );
+		assertAll( assertByCssSelector( ".pure-button" ), //
+				assertByCssSelector( ".pure-button.my-button" ), //
+				assertByCssSelector( ".pure-button .my-button" ) );
 
 		assertThat( findElement( By.cssSelector( ".special-class" ), wrapped ) ).isEqualTo( null );
 		assertThat( findElement( By.cssSelector( ".pure-button.special-class" ), wrapped ) ).isEqualTo( null );
 		assertThat( findElement( By.cssSelector( ".pure-button .special-class" ), wrapped ) ).isEqualTo( null );
+	}
+
+	private Executable assertByCssSelector( final String hierarchicalClass ) {
+		return () -> assertThat( findElement( By.cssSelector( hierarchicalClass ), wrapped ) )
+				.isEqualTo( resultMarker );
 	}
 
 	@Test
@@ -161,22 +192,10 @@ class TestHealerTest {
 		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( ":not(:first-child):not(:last-child)" );
 		logsList.clear();
 
-		assertThat( findElement( By.cssSelector( ".input-group[class*=\"col-\"]" ), wrapped ) ).isNull();
-		assertThat( logsList.get( 0 ).getMessage() )
-				.startsWith( "Unbreakable tests are not implemented for all CSS selectors." );
-		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( "[class*=\"col-\"]" );
-		logsList.clear();
-
 		assertThat( findElement( By.cssSelector( "div~p" ), wrapped ) ).isNull();
 		assertThat( logsList.get( 0 ).getMessage() )
 				.startsWith( "Unbreakable tests are not implemented for all CSS selectors." );
 		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( "~p" );
-		logsList.clear();
-
-		assertThat( findElement( By.cssSelector( "[href*=\"w3schools\"]" ), wrapped ) ).isNull();
-		assertThat( logsList.get( 0 ).getMessage() )
-				.startsWith( "Unbreakable tests are not implemented for all CSS selectors." );
-		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( "[href*=\"w3schools\"]" );
 		logsList.clear();
 
 		assertThat( findElement( By.cssSelector( "div,p" ), wrapped ) ).isNull();
@@ -184,13 +203,6 @@ class TestHealerTest {
 				.startsWith( "Unbreakable tests are not implemented for all CSS selectors." );
 		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( ",p" );
 		logsList.clear();
-
-		// TODO
-		// [attribute~=value]	[title~=flower]			Selects all elements with a title attribute containing the word "flower"
-		// [attribute|=value]	[lang|=en]				Selects all elements with a lang attribute value starting with "en"
-		// [attribute^=value]	a[href^="https"]		Selects every element whose href attribute value begins with "https"
-		// [attribute$=value]	a[href$=".pdf"]			Selects every element whose href attribute value ends with ".pdf"
-		// [attribute*=value]	a[href*="w3schools"]	Selects every element whose href attribute value contains the substring "w3schools"
 	}
 
 	@Test
