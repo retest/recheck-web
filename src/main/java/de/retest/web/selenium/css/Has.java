@@ -45,7 +45,8 @@ public class Has {
 
 	private static Predicate<Element> hasAttributeValue( final String attribute, final String attributeValue,
 			final BiPredicate<String, String> toPredicate ) {
-		return element -> toPredicate.test( element.getAttributeValue( attribute ).toString(), attributeValue );
+		return element -> null != element.getAttributeValue( attribute )
+				&& toPredicate.test( element.getAttributeValue( attribute ).toString(), attributeValue );
 	}
 
 	private static String clearQuotes( final String result ) {
@@ -92,6 +93,10 @@ public class Has {
 	public static Predicate<Element> cssClass( final String cssClass ) {
 		return element -> element.getIdentifyingAttributes().get( CLASS ) != null
 				&& element.getIdentifyingAttributes().get( CLASS ).toString().contains( cssClass );
+	}
+
+	public static Predicate<Element> cssPseudoClass( final String cssPseudoClass ) {
+		return hasAttributeValue( "last-child", "true", String::equals );
 	}
 
 	public static Predicate<Element> cssName( final String name ) {
