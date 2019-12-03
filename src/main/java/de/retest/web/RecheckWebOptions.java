@@ -2,7 +2,6 @@ package de.retest.web;
 
 import de.retest.recheck.RecheckOptions;
 import de.retest.web.screenshot.ScreenshotProvider;
-import de.retest.web.screenshot.ScreenshotProviders;
 import de.retest.web.selenium.AutocheckingCheckNamingStrategy;
 import de.retest.web.selenium.CounterCheckNamingStrategy;
 import lombok.Getter;
@@ -50,7 +49,7 @@ public class RecheckWebOptions extends RecheckOptions {
 		@Override
 		public RecheckWebOptions build() {
 			return new RecheckWebOptions( super.build(), checkNamingStrategy, screenshotProvider != null
-					? screenshotProvider : ScreenshotProviders.getGlobalScreenshotProvider() );
+					? screenshotProvider : RecheckWebProperties.getInstance().screenshotProvider() );
 		}
 	}
 }

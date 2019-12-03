@@ -3,7 +3,9 @@ package de.retest.web.screenshot;
 import static de.retest.recheck.ui.image.ImageUtils.extractScale;
 
 import java.awt.image.BufferedImage;
+import java.lang.reflect.Method;
 
+import org.aeonbits.owner.Converter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -14,7 +16,26 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ScreenshotProviders {
 
-	private static final String SCREENSHOT_PROVIDER_PROPERTY = "de.retest.recheck.web.screenshot.provider";
+	public static class ScreenshotProviderConverter implements Converter<ScreenshotProvider> {
+
+		@Override
+		public ScreenshotProvider convert( final Method method, final String input ) {
+			switch ( input ) {
+				case "fullPage":
+					return new FullPageScreenshot();
+				case "viewportOnly":
+					return new ViewportOnlyMinimalScreenshot();
+				case "none":
+					return new NoScreenshot();
+				default:
+					log.warn( "Unknown configured screenshot provider '{}'. Using default value 'viewportOnly'.",
+							input );
+					return new ViewportOnlyMinimalScreenshot();
+			}
+		}
+
+	}
+
 	private static final boolean USE_DEVICE_PIXEL_RATIO = true;
 
 	public static final int SCALE = extractScale();
@@ -35,21 +56,6 @@ public class ScreenshotProviders {
 	}
 
 	private static BufferedImage shootElement( final WebDriver driver, final WebElement element ) {
-		return ViewportOnlyMinimalScreenshot
-				.resizeImage( Shutterbug.shootElement( driver, element, USE_DEVICE_PIXEL_RATIO ).getImage() );
-	}
-
-	public static ScreenshotProvider getGlobalScreenshotProvider() {
-		switch ( System.getProperty( SCREENSHOT_PROVIDER_PROPERTY, "viewPortOnly" ) ) {
-			case "fullPage":
-				return new FullPageScreenshot();
-			case "viewPortOnly":
-				return new ViewportOnlyMinimalScreenshot();
-			case "none":
-				return new NoScreenshot();
-			default:
-				log.warn( "Global property does not match a correct entry. Using default value (viewPortOnly)." );
-				return new ViewportOnlyMinimalScreenshot();
-		}
+		return Shutterbug.shootElement( driver, element, USE_DEVICE_PIXEL_RATIO ).getImage();
 	}
 }
