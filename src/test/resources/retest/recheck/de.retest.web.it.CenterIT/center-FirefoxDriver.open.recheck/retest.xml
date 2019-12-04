@@ -92,7 +92,7 @@
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="text" xsi:type="textAttribute">x = 667, y = 336.5</attribute>
+							<attribute key="text" xsi:type="textAttribute">x = 666.3333129882812, y = 336.5</attribute>
 							<attribute key="type" xsi:type="stringAttribute">div</attribute>
 						</attributes>
 					</identifyingAttributes>
@@ -148,7 +148,7 @@
 							</entry>
 							<entry>
 								<key>right</key>
-								<value xsi:type="xsd:string">490px</value>
+								<value xsi:type="xsd:string">327.467px</value>
 							</entry>
 							<entry>
 								<key>shown</key>
@@ -160,7 +160,7 @@
 							</entry>
 							<entry>
 								<key>transform</key>
-								<value xsi:type="xsd:string">matrix(1, 0, 0, 1, -96.5, -20)</value>
+								<value xsi:type="xsd:string">matrix(1, 0, 0, 1, -177.767, -20)</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -181,7 +181,7 @@
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/textnode[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="text" xsi:type="textAttribute">x = 667, y = 336.5</attribute>
+								<attribute key="text" xsi:type="textAttribute">x = 666.3333129882812, y = 336.5</attribute>
 								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
 							</attributes>
 						</identifyingAttributes>
@@ -214,7 +214,7 @@
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/textnode[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-								<attribute key="text" xsi:type="textAttribute">width = 32, height = 21</attribute>
+								<attribute key="text" xsi:type="textAttribute">width = 33.350006103515625, height = 21</attribute>
 								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
 							</attributes>
 						</identifyingAttributes>
