@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.4.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.7.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="input" screenId="1" screen="WebElement" title="html[1]/body[1]/form[1]/input[1]">
 			<identifyingAttributes>
@@ -97,10 +97,6 @@
 						<value xsi:type="xsd:string">14px</value>
 					</entry>
 					<entry>
-						<key>line-height</key>
-						<value xsi:type="xsd:string">17px</value>
-					</entry>
-					<entry>
 						<key>margin-bottom</key>
 						<value xsi:type="xsd:string">0px</value>
 					</entry>
@@ -143,7 +139,7 @@
 				</attributes>
 			</attributes>
 			<screenshot>
-				<persistenceId>input_55bf18063eed7a040d95559c1a8689df5118c2d589738e9d491872f3b9153f2d</persistenceId>
+				<persistenceId>email</persistenceId>
 				<type>PNG</type>
 			</screenshot>
 		</descriptors>
