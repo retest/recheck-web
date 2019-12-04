@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.5.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.7.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="We Leave From Here" title="We Leave From Here">
 			<identifyingAttributes>
@@ -30,10 +30,6 @@
 					<entry>
 						<key>font-family</key>
 						<value xsi:type="xsd:string">serif</value>
-					</entry>
-					<entry>
-						<key>line-height</key>
-						<value xsi:type="xsd:string">19px</value>
 					</entry>
 					<entry>
 						<key>shown</key>
@@ -217,10 +213,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -357,10 +349,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>multiple</key>
@@ -638,10 +626,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>overflow-x</key>
 									<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
 								</entry>
@@ -891,10 +875,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>overflow-x</key>
@@ -1204,10 +1184,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -1344,10 +1320,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>multiple</key>
@@ -1640,10 +1612,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>outline-color</key>
@@ -1965,10 +1933,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>overflow-x</key>
 									<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
 								</entry>
@@ -2272,10 +2236,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -2387,10 +2347,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -2521,10 +2477,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>overflow-x</key>
@@ -2968,10 +2920,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>outline-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
@@ -3319,10 +3267,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>margin-left</key>
 									<value xsi:type="xsd:string">4px</value>
 								</entry>
@@ -3456,10 +3400,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>multiple</key>
@@ -3865,10 +3805,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>margin-left</key>
 									<value xsi:type="xsd:string">4px</value>
 								</entry>
@@ -3963,10 +3899,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -4131,10 +4063,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>margin-left</key>
 									<value xsi:type="xsd:string">4px</value>
 								</entry>
@@ -4255,10 +4183,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>opacity</key>
@@ -4534,10 +4458,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>margin-left</key>
 									<value xsi:type="xsd:string">4px</value>
 								</entry>
@@ -4624,10 +4544,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -4753,10 +4669,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -4951,10 +4863,6 @@
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
 									<entry>
-										<key>line-height</key>
-										<value xsi:type="xsd:string">17px</value>
-									</entry>
-									<entry>
 										<key>outline-color</key>
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 									</entry>
@@ -5079,10 +4987,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -5249,10 +5153,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -5395,10 +5295,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -5535,10 +5431,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -5697,10 +5589,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">12px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">15px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -5864,10 +5752,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">12px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">15px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -6036,10 +5920,6 @@
 									<value xsi:type="xsd:string">12px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">15px</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">1px</value>
 								</entry>
@@ -6161,10 +6041,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -6295,10 +6171,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -6434,10 +6306,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>onchange</key>
@@ -6728,10 +6596,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -6927,10 +6791,6 @@
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
 									<entry>
-										<key>line-height</key>
-										<value xsi:type="xsd:string">17px</value>
-									</entry>
-									<entry>
 										<key>margin-bottom</key>
 										<value xsi:type="xsd:string">0px</value>
 									</entry>
@@ -7077,10 +6937,6 @@
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
 									<entry>
-										<key>line-height</key>
-										<value xsi:type="xsd:string">17px</value>
-									</entry>
-									<entry>
 										<key>margin-bottom</key>
 										<value xsi:type="xsd:string">0px</value>
 									</entry>
@@ -7225,10 +7081,6 @@
 									<entry>
 										<key>font-size</key>
 										<value xsi:type="xsd:string">14px</value>
-									</entry>
-									<entry>
-										<key>line-height</key>
-										<value xsi:type="xsd:string">17px</value>
 									</entry>
 									<entry>
 										<key>margin-bottom</key>
@@ -7411,10 +7263,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -7555,10 +7403,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -7703,10 +7547,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -7849,10 +7689,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -7993,10 +7829,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -8177,10 +8009,6 @@
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
 									<entry>
-										<key>line-height</key>
-										<value xsi:type="xsd:string">17px</value>
-									</entry>
-									<entry>
 										<key>margin-left</key>
 										<value xsi:type="xsd:string">4px</value>
 									</entry>
@@ -8330,10 +8158,6 @@
 									<value xsi:type="xsd:string">14px</value>
 								</entry>
 								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
-								</entry>
-								<entry>
 									<key>margin-bottom</key>
 									<value xsi:type="xsd:string">0px</value>
 								</entry>
@@ -8462,10 +8286,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -8608,10 +8428,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">14px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -8790,10 +8606,6 @@
 								<value xsi:type="xsd:string">14px</value>
 							</entry>
 							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">17px</value>
-							</entry>
-							<entry>
 								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">0px</value>
 							</entry>
@@ -8930,10 +8742,6 @@
 							<entry>
 								<key>font-size</key>
 								<value xsi:type="xsd:string">14px</value>
-							</entry>
-							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">17px</value>
 							</entry>
 							<entry>
 								<key>margin-bottom</key>
@@ -9077,10 +8885,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">13px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">17px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -9242,7 +9046,7 @@
 				</containedElements>
 			</containedElements>
 			<screenshot>
-				<persistenceId>html_ca272ba0e8fe68440e70df6219ab1bdd405ee2e6adb783a7426387a0229e2513</persistenceId>
+				<persistenceId>html</persistenceId>
 				<type>PNG</type>
 			</screenshot>
 		</descriptors>

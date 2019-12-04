@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.5.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.7.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="Hello WebDriver" title="Hello WebDriver">
 			<identifyingAttributes>
@@ -30,10 +30,6 @@
 					<entry>
 						<key>font-family</key>
 						<value xsi:type="xsd:string">serif</value>
-					</entry>
-					<entry>
-						<key>line-height</key>
-						<value xsi:type="xsd:string">19px</value>
 					</entry>
 					<entry>
 						<key>shown</key>
@@ -163,10 +159,6 @@
 								<entry>
 									<key>font-size</key>
 									<value xsi:type="xsd:string">12px</value>
-								</entry>
-								<entry>
-									<key>line-height</key>
-									<value xsi:type="xsd:string">15px</value>
 								</entry>
 								<entry>
 									<key>margin-bottom</key>
@@ -1332,10 +1324,6 @@
 							<attributes>
 								<attributes>
 									<entry>
-										<key>line-height</key>
-										<value xsi:type="xsd:string">20px</value>
-									</entry>
-									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
 									</entry>
@@ -2054,10 +2042,6 @@
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
 									<entry>
-										<key>line-height</key>
-										<value xsi:type="xsd:string">17px</value>
-									</entry>
-									<entry>
 										<key>margin-left</key>
 										<value xsi:type="xsd:string">4px</value>
 									</entry>
@@ -2439,10 +2423,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>line-height</key>
-								<value xsi:type="xsd:string">39px</value>
-							</entry>
-							<entry>
 								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">21.4333px</value>
 							</entry>
@@ -2711,7 +2691,7 @@
 				</containedElements>
 			</containedElements>
 			<screenshot>
-				<persistenceId>html_ccc95f1c9c6803a22f080f151bfacd67a737c35b1cb4f5a2f07b16d30105e204</persistenceId>
+				<persistenceId>html</persistenceId>
 				<type>PNG</type>
 			</screenshot>
 		</descriptors>
