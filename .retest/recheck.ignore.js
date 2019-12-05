@@ -25,8 +25,10 @@ function matches(element, diff) {
 		}
 	}
 	if (diff.expected != null && diff.actual != null) {
-		cleanExpected = diff.expected.replace(baseUrl, '');
-		cleanActual = diff.actual.replace(baseUrl, '');
+		expected = new String(diff.expected);
+		actual = new String(diff.actual);
+		cleanExpected = expected.replace(baseUrl, '');
+		cleanActual = actual.replace(baseUrl, '');
 		return cleanExpected === cleanActual;
 	}
 	return false;

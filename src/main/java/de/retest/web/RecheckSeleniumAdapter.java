@@ -26,7 +26,6 @@ import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
 import de.retest.web.mapping.PathsToWebDataMapping;
 import de.retest.web.screenshot.ScreenshotProvider;
-import de.retest.web.screenshot.ScreenshotProviders;
 import de.retest.web.selenium.UnbreakableDriver;
 import de.retest.web.util.SeleniumWrapperUtil;
 import de.retest.web.util.SeleniumWrapperUtil.WrapperOf;
@@ -48,7 +47,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 			final RecheckWebOptions webOptions = (RecheckWebOptions) options;
 			screenshotProvider = webOptions.getScreenshotProvider();
 		} else {
-			screenshotProvider = ScreenshotProviders.getGlobalScreenshotProvider();
+			screenshotProvider = RecheckWebProperties.getInstance().screenshotProvider();
 		}
 	}
 
@@ -58,6 +57,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public RecheckAdapter initialize( final RecheckOptions opts ) {
+		RecheckWebProperties.init();
 		return new RecheckSeleniumAdapter( opts );
 	}
 
