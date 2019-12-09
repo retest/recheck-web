@@ -94,6 +94,18 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>webjars-locator-core</artifactId>
+			<version>0.44</version>
+		</dependency>
+    
+		<dependency>
+			<groupId>org.webjars.npm</groupId>
+			<artifactId>recheck-web-js</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>1.7.30</version>

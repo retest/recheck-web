@@ -25,7 +25,7 @@ public class AttributesUtil {
 	// Mapped to our "type" attribute in WebElementPeer to avoid conflicts with HTML "type" attribute.
 	public static final String TAG_NAME = "tagName";
 
-	// Keys used in getAllElementsByPath.js.
+	// Keys used in recheck-web-js
 	private static final Set<String> identifyingAttributes = new HashSet<>( Arrays.asList( ABSOLUTE_X, ABSOLUTE_Y,
 			ABSOLUTE_WIDTH, ABSOLUTE_HEIGHT, X, Y, WIDTH, HEIGHT, TEXT, CLASS, ID, NAME, TAG_NAME ) );
 

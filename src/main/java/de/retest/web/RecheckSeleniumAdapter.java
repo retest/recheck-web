@@ -19,6 +19,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.webjars.WebJarAssetLocator;
 
 import de.retest.recheck.RecheckAdapter;
 import de.retest.recheck.RecheckOptions;
@@ -40,7 +41,11 @@ import de.retest.web.util.SeleniumWrapperUtil.WrapperOf;
 
 public class RecheckSeleniumAdapter implements RecheckAdapter {
 
-	private static final String GET_ALL_ELEMENTS_BY_PATH_JS_PATH = "/javascript/getAllElementsByPath.js";
+	private static final String WEBJAR_NAME = "recheck-web-js";
+
+	private static final String WEBJAR_SCRIPT_FILE_NAME = "script.js";
+
+	private static final String WEBJAR_CSS_ATTRIBUTES_FILE_NAME = "cssAttributes.js";
 
 	private static final Logger logger = LoggerFactory.getLogger( RecheckSeleniumAdapter.class );
 
@@ -186,11 +191,37 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 				mapping.getRootPath() ).convertToPeers();
 	}
 
+	/**
+	 * Get the CSS attributes and the query Javascript for injection into the browser session.
+	 *
+	 * This does some additional ill-conceived magic in order to make the code work in the
+	 * context in which it is running.
+	 */
 	private String getQueryJS() {
-		try ( final InputStream url = getClass().getResourceAsStream( GET_ALL_ELEMENTS_BY_PATH_JS_PATH ) ) {
-			return String.join( "\n", IOUtils.readLines( url, StandardCharsets.UTF_8 ) );
+		WebJarAssetLocator locator = new WebJarAssetLocator();
+
+		// getFullPath() will return a path without a prefix slash, so we need to add this here
+		String queryJs = loadTextFromResource( "/" + locator.getFullPath(WEBJAR_NAME, WEBJAR_SCRIPT_FILE_NAME) );
+		String cssJs = loadTextFromResource( "/" + locator.getFullPath(WEBJAR_NAME, WEBJAR_CSS_ATTRIBUTES_FILE_NAME) );
+
+		// The CSS attributes are stored in the "default" property of the object "exports". We replace
+		// this name here because "exports.default" is already used by the code in queryJs.
+		cssJs = cssJs.replaceAll( "exports.default", "cssAttributes.default" );
+
+		return "var exports = {};" // define exports object such that the semi-module can set options on it
+				+ "var cssAttributes = {};" // define cssAttributes object to receive data from cssJs
+				+ "function require() {};" // define require (it does not exist in this context)
+				+ queryJs
+				+ cssJs
+				+ "cssAttributes_1 = cssAttributes;" // assign cssAttributes to variable used internally by the module
+				+ "return getAllElementsByXPath(arguments[0]);"; // Run script and return values
+	}
+
+	private String loadTextFromResource(String path) {
+		try ( final InputStream inputStream = getClass().getResourceAsStream( path ) ) {
+			return String.join( "\n", IOUtils.readLines( inputStream, StandardCharsets.UTF_8 ) );
 		} catch ( final IOException e ) {
-			throw new UncheckedIOException( "Exception reading '" + GET_ALL_ELEMENTS_BY_PATH_JS_PATH + "'.", e );
+			throw new UncheckedIOException( "Exception reading '" + path + "'.", e );
 		}
 	}
 
