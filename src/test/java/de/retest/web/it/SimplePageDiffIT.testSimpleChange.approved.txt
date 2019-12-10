@@ -3,6 +3,9 @@ A detailed report will be created at '/home/travis/build/retest/recheck-web/targ
 1 check(s) in 'de.retest.web.it.SimplePageDiffIT' found the following difference(s):
 Test 'testSimpleChange' has 4 difference(s) in 1 state(s):
 open resulted in:
+	Metadata Differences:
+		os.name: expected="LINUX", actual="null"
+		os.version: expected="4.4.0-101-generic", actual="null"
 	div at 'html[1]/body[1]/div[3]':
 		id: expected="twoblocks", actual="changedblock"
 	p [Some text] at 'html[1]/body[1]/div[3]/p[1]':

@@ -21,10 +21,12 @@ import org.slf4j.LoggerFactory;
 
 import de.retest.recheck.RecheckAdapter;
 import de.retest.recheck.RecheckOptions;
+import de.retest.recheck.meta.MetadataProvider;
 import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
 import de.retest.web.mapping.PathsToWebDataMapping;
+import de.retest.web.meta.SeleniumMetadataProvider;
 import de.retest.web.screenshot.ScreenshotProvider;
 import de.retest.web.selenium.UnbreakableDriver;
 import de.retest.web.util.SeleniumWrapperUtil;
@@ -145,6 +147,12 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		} catch ( final IOException e ) {
 			throw new UncheckedIOException( "Exception reading '" + GET_ALL_ELEMENTS_BY_PATH_JS_PATH + "'.", e );
 		}
+	}
+
+	@Override
+	public Map<String, String> retrieveMetadata( final Object toCheck ) {
+		final MetadataProvider provider = SeleniumMetadataProvider.of( toCheck );
+		return provider.retrieve();
 	}
 
 	@Override
