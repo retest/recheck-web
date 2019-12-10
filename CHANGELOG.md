@@ -29,6 +29,11 @@ Table of Contents
 
 ### New Features
 
+* As recheck gathers metadata, recheck-web will provide additional metadata:
+    * Browser name and version.
+    * Driver width and height.
+    * Operating system and version if specified in the driver.
+
 ### Improvements
 
 * `AutocheckingRecheckDriver` and thus the `RecheckDriver` now implement the `RecheckLifecycle`, meaning that they can be used with the JUnit extensions.
