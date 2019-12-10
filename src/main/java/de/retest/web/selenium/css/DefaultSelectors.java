@@ -29,7 +29,7 @@ public class DefaultSelectors {
 	private static final String TAG_PATTERN = "(" + ALLOWED_CHARACTERS + ")";
 	private static final String ID_PATTERN = "\\#(" + ALLOWED_CHARACTERS + ")";
 	private static final String CLASS_PATTERN = "\\.(" + ALLOWED_CHARACTERS + ")";
-	private static final String ATTRIBUTE_PATTERN = "\\[([" + CHARACTERSET + "=\"]+)\\]";
+	private static final String ATTRIBUTE_PATTERN = attributePattern( "" );
 	private static final String ATTRIBUTE_CONTAINING_PATTERN = attributePattern( "~" );
 	private static final String ATTRIBUTE_STARTING_PATTERN = attributePattern( "\\|" );
 	private static final String ATTRIBUTE_BEGINNING_PATTERN = attributePattern( "\\^" );
@@ -37,7 +37,7 @@ public class DefaultSelectors {
 	private static final String ATTRIBUTE_CONTAINING_SUBSTRING_PATTERN = attributePattern( "\\*" );
 
 	private static String attributePattern( final String selectorChar ) {
-		return "\\[([" + CHARACTERSET + selectorChar + "=\"]+)\\]";
+		return "\\[([" + CHARACTERSET + selectorChar + " =\"]+)\\]";
 	}
 
 	private static final String REMAINING = "(.*)$";

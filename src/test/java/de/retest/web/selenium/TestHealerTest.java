@@ -92,13 +92,13 @@ class TestHealerTest {
 		configureByCssSelectorAttributeTests();
 
 		assertAll( Stream.of( //
-				"[data-id=\"myspecialID\"]", //
+				"[data-id=\"my-special ID\"]", //
 				"[disabled]", //
-				"div[data-id=\"myspecialID\"]", //
+				"div[data-id=\"my-special ID\"]", //
 				"div[disabled]", //
-				".myClass[data-id=\"myspecialID\"]", //
+				".myClass[data-id=\"my-special ID\"]", //
 				".myClass[disabled]", //
-				"#myId[data-id=\"myspecialID\"]", //
+				"#myId[data-id=\"my-special ID\"]", //
 				"#myId[disabled]" ) //
 				.map( this::assertByCssSelector ) );
 	}
@@ -107,10 +107,10 @@ class TestHealerTest {
 	public void ByCssSelector_matches_elements_with_given_attribute_value() {
 		configureByCssSelectorAttributeTests();
 
-		assertAll( assertAttributeValues( "~", "=\"special\"]" ) );
-		assertAll( assertAttributeValues( "|", "=\"myspecial\"]" ) );
-		assertAll( assertAttributeValues( "^", "=\"myspecial\"]" ) );
-		assertAll( assertAttributeValues( "$", "=\"specialID\"]" ) );
+		assertAll( assertAttributeValues( "~", "=ID]" ) );
+		assertAll( assertAttributeValues( "|", "=my]" ) );
+		assertAll( assertAttributeValues( "^", "=\"my-special\"]" ) );
+		assertAll( assertAttributeValues( "$", "=\"special ID\"]" ) );
 		assertAll( assertAttributeValues( "*", "=\"special\"]" ) );
 	}
 
@@ -125,7 +125,7 @@ class TestHealerTest {
 
 	private void configureByCssSelectorAttributeTests() {
 		final MutableAttributes attributes = new MutableAttributes();
-		attributes.put( "data-id", "myspecialID" );
+		attributes.put( "data-id", "my-special ID" );
 		attributes.put( "disabled", "true" );
 
 		final String xpath = "html[1]/div[1]";

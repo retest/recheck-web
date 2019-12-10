@@ -11,6 +11,7 @@ import static org.mockito.Mockito.when;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
+import org.assertj.core.api.AbstractBooleanAssert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.function.Executable;
@@ -54,12 +55,50 @@ class HasTest {
 		final Function<String, String> endEscapedString = string -> string.substring( 5 );
 
 		assertAll( //
-				assertAttribute( "~", centerString, Has::attributeContaining ), //
-				assertAttribute( "|", beginString, Has::attributeStarting ), //
 				assertAttribute( "^", beginString.andThen( quote ), Has::attributeBeginning ), //
 				assertAttribute( "$", endEscapedString.andThen( quote ), Has::attributeEnding ), //
 				assertAttribute( "*", centerString.andThen( quote ), Has::attributeContainingSubstring ) //
 		);
+	}
+
+	@Test
+	void hasAttributeWithValueContainingWord() throws Exception {
+		final Function<String, Predicate<Element>> has = Has::attributeContaining;
+		final String selectorChar = "~";
+		final String attributeName = "attributeName";
+		final String wordSeparator = " ";
+		final String prefix = "at";
+		final String word = "tribe";
+		final String suffix = "uteValue";
+		final String matchingValue = prefix + wordSeparator + word + wordSeparator + suffix;
+		final String notMatchingValue = prefix + word + suffix;
+		final String selector = attributeName + selectorChar + "=" + word;
+		when( element.getAttributeValue( attributeName ) ).thenReturn( matchingValue );
+		assertThat( has.apply( selector ).test( element ) ).isTrue();
+		when( element.getAttributeValue( attributeName ) ).thenReturn( notMatchingValue );
+		assertThat( has.apply( selector ).test( element ) ).isFalse();
+	}
+
+	@Test
+	void hasAttributeWithValueStartingWord() throws Exception {
+		final String wordSeparator = "-";
+		final String prefix = "prefix";
+		final String word = "word";
+		final String suffix = "suffix";
+		assertAll( //
+				() -> assertWord( Has::attributeStarting, "|", word, word ).isTrue(), //
+				() -> assertWord( Has::attributeStarting, "|", word, word + wordSeparator + suffix ).isTrue(), //
+				() -> assertWord( Has::attributeStarting, "|", word, word + suffix ).isFalse(), //
+				() -> assertWord( Has::attributeStarting, "|", word, prefix + word + wordSeparator + suffix ).isFalse() //
+		);
+	}
+
+	private AbstractBooleanAssert<?> assertWord( final Function<String, Predicate<Element>> has,
+			final String selectorChar, final String word, final String matchingValue ) {
+		final String attributeName = "attributeName";
+		final String selector = attributeName + selectorChar + "=" + word;
+		when( element.getAttributeValue( attributeName ) ).thenReturn( matchingValue );
+		return assertThat( has.apply( selector ).test( element ) );
 	}
 
 	private Executable assertAttribute( final String selectorChar, final Function<String, String> substring,

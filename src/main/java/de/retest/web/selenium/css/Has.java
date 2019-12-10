@@ -5,6 +5,7 @@ import static de.retest.web.AttributesUtil.ID;
 import static de.retest.web.AttributesUtil.NAME;
 import static de.retest.web.AttributesUtil.TEXT;
 
+import java.util.Arrays;
 import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 import java.util.regex.Matcher;
@@ -60,11 +61,19 @@ public class Has {
 	}
 
 	public static Predicate<Element> attributeContaining( final String selector ) {
-		return hasAttribute( selector, attributeContaining, String::contains );
+		return hasAttribute( selector, attributeContaining, Has::containsWord );
+	}
+
+	public static boolean containsWord( final String value, final String selector ) {
+		return Arrays.stream( value.split( " " ) ).anyMatch( selector::equals );
 	}
 
 	public static Predicate<Element> attributeStarting( final String selector ) {
-		return hasAttribute( selector, attributeStarting, String::startsWith );
+		return hasAttribute( selector, attributeStarting, Has::startsWithWord );
+	}
+
+	public static boolean startsWithWord( final String value, final String selector ) {
+		return value.equals( selector ) || value.startsWith( selector + "-" );
 	}
 
 	public static Predicate<Element> attributeBeginning( final String selector ) {
@@ -93,10 +102,6 @@ public class Has {
 	public static Predicate<Element> cssClass( final String cssClass ) {
 		return element -> element.getIdentifyingAttributes().get( CLASS ) != null
 				&& element.getIdentifyingAttributes().get( CLASS ).toString().contains( cssClass );
-	}
-
-	public static Predicate<Element> cssPseudoClass( final String cssPseudoClass ) {
-		return hasAttributeValue( "last-child", "true", String::equals );
 	}
 
 	public static Predicate<Element> cssName( final String name ) {
