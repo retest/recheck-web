@@ -32,7 +32,7 @@ class RecheckRemoteWebElementFailingIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void inserted_child_in_webelement_should_be_checked( final WebDriver driver ) throws Exception {
 		this.driver = driver;
-		driver.get( PageFactory.page( Page.PAGE_FRAME ) );
+		driver.get( PageFactory.page( Page.FORM_PAGE ) );
 
 		((JavascriptExecutor) driver)
 				.executeScript( "document.getElementById('multi').add(document.createElement('option'))" );
@@ -56,7 +56,7 @@ class RecheckRemoteWebElementFailingIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void deleted_child_in_webelement_should_be_checked( final WebDriver driver ) throws Exception {
 		this.driver = driver;
-		driver.get( PageFactory.page( Page.PAGE_FRAME ) );
+		driver.get( PageFactory.page( Page.FORM_PAGE ) );
 
 		((JavascriptExecutor) driver).executeScript( "document.getElementById('multi').remove(3)" );
 
