@@ -1,7 +1,7 @@
 package de.retest.web.it;
 
 import static de.retest.web.testutils.PageFactory.page;
-import static de.retest.web.testutils.PageFactory.Page.PAGE_FRAME;
+import static de.retest.web.testutils.PageFactory.Page.FORM_PAGE;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -30,7 +30,7 @@ class PageFrameIT {
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
 	void page_frame_html_should_be_checked( final WebDriver driver, final String name ) throws Exception {
 		this.driver = driver;
-		driver.get( page( PAGE_FRAME ) );
+		driver.get( page( FORM_PAGE ) );
 
 		driver.findElement( By.id( "email" ) ).sendKeys( "Max" );
 
