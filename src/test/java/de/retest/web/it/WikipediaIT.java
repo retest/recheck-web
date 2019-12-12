@@ -6,12 +6,13 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
 import de.retest.recheck.junit.jupiter.RecheckExtension;
 import de.retest.web.testutils.PageFactory;
+import de.retest.web.testutils.WebDriverFactory;
+import de.retest.web.testutils.WebDriverFactory.Driver;
 
 @Disabled( "We only use this to create an example.report file for review." )
 @ExtendWith( RecheckExtension.class )
@@ -22,7 +23,7 @@ class WikipediaIT {
 
 	@BeforeEach
 	void setUp() throws Exception {
-		driver = new ChromeDriver();
+		driver = WebDriverFactory.driver( Driver.CHROME );
 		re = new RecheckImpl();
 	}
 
