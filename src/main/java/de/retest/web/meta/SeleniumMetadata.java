@@ -17,6 +17,7 @@ public final class SeleniumMetadata {
 	public static final String OS_VERSION = OSMetadataProvider.OS_VERSION;
 
 	public static final String DRIVER_TYPE = "driver.type";
-	public static final String DRIVER_WINDOW_WIDTH = "driver.window.width";
-	public static final String DRIVER_WINDOW_HEIGHT = "driver.window.height";
+
+	public static final String WINDOW_WIDTH = "window.width";
+	public static final String WINDOW_HEIGHT = "window.height";
 }

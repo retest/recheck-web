@@ -32,8 +32,8 @@ public final class WebDriverMetadataProvider implements MetadataProvider {
 		map.put( SeleniumMetadata.DRIVER_TYPE, driver.getClass().getSimpleName() );
 
 		final Dimension size = driver.manage().window().getSize();
-		map.put( SeleniumMetadata.DRIVER_WINDOW_WIDTH, String.valueOf( size.getWidth() ) );
-		map.put( SeleniumMetadata.DRIVER_WINDOW_HEIGHT, String.valueOf( size.getHeight() ) );
+		map.put( SeleniumMetadata.WINDOW_WIDTH, String.valueOf( size.getWidth() ) );
+		map.put( SeleniumMetadata.WINDOW_HEIGHT, String.valueOf( size.getHeight() ) );
 
 		return map;
 	}
