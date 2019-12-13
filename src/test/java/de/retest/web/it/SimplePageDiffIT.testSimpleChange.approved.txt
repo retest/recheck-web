@@ -4,8 +4,14 @@ A detailed report will be created at '/home/travis/build/retest/recheck-web/targ
 Test 'testSimpleChange' has 4 difference(s) in 1 state(s):
 open resulted in:
 	Metadata Differences:
-		os.name: expected="LINUX", actual="null"
-		os.version: expected="4.4.0-101-generic", actual="null"
+		browser.name: expected="null", actual="chrome"
+		browser.version: expected="null", actual="62.0.3202.94"
+		check.type: expected="null", actual="driver"
+		driver.type: expected="null", actual="ChromeDriver"
+		os.name: expected="null", actual="LINUX"
+		os.version: expected="null", actual="4.4.0-101-generic"
+		window.height: expected="null", actual="800"
+		window.width: expected="null", actual="1200"
 	div at 'html[1]/body[1]/div[3]':
 		id: expected="twoblocks", actual="changedblock"
 	p [Some text] at 'html[1]/body[1]/div[3]/p[1]':
