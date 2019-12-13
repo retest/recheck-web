@@ -29,6 +29,17 @@ Table of Contents
 
 ### New Features
 
+### Improvements
+
+
+--------------------------------------------------------------------------------
+
+
+[1.8.0] (2019-12-13)
+--------------------
+
+### New Features
+
 * As recheck gathers metadata, recheck-web will provide additional metadata:
     * Browser name and version.
     * Driver width and height.
@@ -38,8 +49,6 @@ Table of Contents
 
 * `AutocheckingRecheckDriver` and thus the `RecheckDriver` now implement the `RecheckLifecycle`, meaning that they can be used with the JUnit extensions.
 * Big screenshots create a lot of overhead in storing, transferring and processing. Since we need screenshots only for the user, we reduce that overhead by specifying a max width in pixel, to which the screenshot is resized. 
-
---------------------------------------------------------------------------------
 
 
 [1.7.0] (2019-11-21)
@@ -52,9 +61,6 @@ Table of Contents
 ### New Features
 
 * Screenshot creation can now be configured via the `RecheckOptions` or globally via `de.retest.recheck.web.screenshot.provider`. 
-
-
---------------------------------------------------------------------------------
 
 
 [1.6.0] (2019-11-06)
