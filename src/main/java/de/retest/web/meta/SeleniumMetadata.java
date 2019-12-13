@@ -20,4 +20,6 @@ public final class SeleniumMetadata {
 
 	public static final String WINDOW_WIDTH = "window.width";
 	public static final String WINDOW_HEIGHT = "window.height";
+
+	public static final String URL = "url";
 }
