@@ -29,6 +29,8 @@ Table of Contents
 
 ### New Features
 
+* Provide additional metadata: current URL
+
 ### Improvements
 
 
