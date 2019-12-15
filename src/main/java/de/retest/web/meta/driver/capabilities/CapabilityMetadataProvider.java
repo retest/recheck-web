@@ -31,8 +31,8 @@ public final class CapabilityMetadataProvider implements MetadataProvider {
 		if ( driver instanceof RemoteWebDriver ) {
 			return of( (RemoteWebDriver) driver );
 		}
-		log.warn( "Cannot retrieve capabilities from driver {}. Driver must be of '{}'. Returning empty metadata.",
-				driver, RemoteWebDriver.class.getSimpleName() );
+		log.debug( "Cannot retrieve capabilities from driver {}. Driver must be of '{}'. Returning empty metadata.",
+				driver, RemoteWebDriver.class );
 		return MetadataProvider.empty();
 	}
 
