@@ -40,7 +40,7 @@ public final class CapabilityMetadataProvider implements MetadataProvider {
 		return of( driver.getCapabilities() );
 	}
 
-	public static CapabilityMetadataProvider of( final Capabilities capabilities ) {
+	private static CapabilityMetadataProvider of( final Capabilities capabilities ) {
 		return new CapabilityMetadataProvider( capabilities );
 	}
 
