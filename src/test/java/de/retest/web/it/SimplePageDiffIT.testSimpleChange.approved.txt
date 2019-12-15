@@ -10,6 +10,7 @@ open resulted in:
 		driver.type: expected="null", actual="ChromeDriver"
 		os.name: expected="null", actual="LINUX"
 		os.version: expected="null", actual="4.4.0-101-generic"
+		url: expected="null", actual="file:///home/travis/build/retest/recheck-web/src/test/resources/pages/simple-page-diff.html"
 		window.height: expected="null", actual="800"
 		window.width: expected="null", actual="1200"
 	div at 'html[1]/body[1]/div[3]':
