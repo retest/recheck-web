@@ -29,6 +29,8 @@ public class Has {
 		return Pattern.compile( "(" + allowedCharacters + ")(" + selectingChar + "=(" + allowedCharacters + "))?" );
 	}
 
+	private Has() {}
+
 	public static Predicate<Element> attribute( final String selector ) {
 		return hasAttribute( selector, attribute, String::equals );
 	}
@@ -46,12 +48,13 @@ public class Has {
 
 	private static Predicate<Element> hasAttributeValue( final String attribute, final String attributeValue,
 			final BiPredicate<String, String> toPredicate ) {
-		return element -> null != element.getAttributeValue( attribute )
+		return element -> element.getAttributeValue( attribute ) != null
 				&& toPredicate.test( element.getAttributeValue( attribute ).toString(), attributeValue );
 	}
 
 	private static String clearQuotes( final String result ) {
-		if ( null == result ) {
+		// TODO check specification
+		if ( result == null ) {
 			return "true";
 		}
 		if ( result.contains( "\"" ) || result.contains( "'" ) ) {
@@ -86,6 +89,15 @@ public class Has {
 
 	public static Predicate<Element> attributeContainingSubstring( final String selector ) {
 		return hasAttribute( selector, attributeContainsSubstring, String::contains );
+	}
+
+	public static Predicate<Element> cssPseudoClass( final String pseudoClass ) {
+		return element -> hasPseudoClass( element, pseudoClass );
+	}
+
+	private static boolean hasPseudoClass( final Element element, final String pseudoClass ) {
+		// TODO kommt hier immer String oder auch boolean?
+		return "true".equals( element.getAttributeValue( pseudoClass ) );
 	}
 
 	public static Predicate<Element> linkText( final String linkText ) {

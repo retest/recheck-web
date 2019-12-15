@@ -36,17 +36,23 @@ public class PredicateBuilder {
 	}
 
 	private String parse( final String selector ) {
+		String oldSelector = "";
 		String remainingSelector = selector;
-		boolean matched = true;
-		while ( isPartAvailable( remainingSelector ) && matched ) {
-			matched = false;
-			for ( final Transformer function : selectors ) {
-				final Selector cssSelector = function.transform( remainingSelector );
-				if ( cssSelector.matches() ) {
-					predicates.add( cssSelector.predicate() );
-					remainingSelector = cssSelector.remainingSelector();
-					matched = cssSelector.matches();
-				}
+		while ( isPartAvailable( remainingSelector ) && !oldSelector.equals( remainingSelector ) ) {
+			oldSelector = remainingSelector;
+			remainingSelector = transform( remainingSelector );
+		}
+		return remainingSelector;
+	}
+
+	private String transform( final String selector ) {
+		String remainingSelector = selector;
+		for ( final Transformer function : selectors ) {
+			final Selector cssSelector = function.transform( remainingSelector );
+			remainingSelector = cssSelector.getRemainingSelector();
+			if ( !selector.equals( remainingSelector ) ) {
+				predicates.add( cssSelector.getPredicate() );
+				return remainingSelector;
 			}
 		}
 		return remainingSelector;

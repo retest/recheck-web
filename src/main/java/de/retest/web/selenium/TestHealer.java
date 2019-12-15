@@ -12,7 +12,6 @@ import static de.retest.web.selenium.ByWhisperer.retrievePartialLinkText;
 
 import java.util.function.Consumer;
 import java.util.Optional;
-import java.util.function.Function;
 import java.util.function.Predicate;
 
 import org.openqa.selenium.By;
@@ -173,8 +172,7 @@ public class TestHealer {
 		final Optional<Predicate<Element>> predicate =
 				new PredicateBuilder( DefaultSelectors.all(), origSelector ).build();
 
-		final Function<Predicate<Element>, WebElement> toWebElement = p -> toWebElement( origSelector, p );
-		return predicate.map( toWebElement ).orElse( null );
+		return predicate.map( p -> toWebElement( origSelector, p ) ).orElse( null );
 	}
 
 	private WebElement toWebElement( final String origSelector, final Predicate<Element> predicate ) {
