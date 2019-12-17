@@ -32,7 +32,7 @@ public class PageFactory {
 				return toPageUrlString( "centered.html" );
 			}
 			case FRAME_PAGE: {
-				return toPageUrlString( "frame-page.html" );
+				return toPageUrlString( "frame-outer.html" );
 			}
 			default:
 				throw new IllegalArgumentException( "No \"" + page + "\" page available." );
