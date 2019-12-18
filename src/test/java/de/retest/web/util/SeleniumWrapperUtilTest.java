@@ -13,6 +13,7 @@ import org.openqa.selenium.internal.WrapsDriver;
 import org.openqa.selenium.internal.WrapsElement;
 
 import de.retest.web.util.SeleniumWrapperUtil.WrapperOf;
+import lombok.Value;
 
 class SeleniumWrapperUtilTest {
 
@@ -89,5 +90,36 @@ class SeleniumWrapperUtilTest {
 
 		assertThatThrownBy( () -> SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, notElement ) )
 				.isInstanceOf( IllegalArgumentException.class );
+	}
+
+	@Test
+	void getWrapped_should_properly_handle_if_driver_returns_null() throws Exception {
+		final org.openqa.selenium.WrapsDriver nullDriver = mock( org.openqa.selenium.WrapsDriver.class );
+
+		assertThat( SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, nullDriver ) ).isEqualTo( null );
+	}
+
+	@Test
+	void getWrapped_should_properly_handle_if_element_returns_null() throws Exception {
+		final WrapsElement nullElement = mock( WrapsElement.class );
+
+		assertThat( SeleniumWrapperUtil.getWrapped( WrapperOf.ELEMENT, nullElement ) ).isEqualTo( null );
+	}
+
+	@Test
+	void getWrapped_should_throw_when_method_does_not_return_expected_type() throws Exception {
+		final Wrapper<?> fooled = new Wrapper<>( new Object() );
+		final org.openqa.selenium.WrapsDriver fooledDriver = () -> ((Wrapper<WebDriver>) fooled).getWrapped();
+
+		assertThatThrownBy( () -> SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, fooledDriver ) ) //
+				.isInstanceOf( RuntimeException.class ) //
+				.hasMessageStartingWith( "Failed to invoke SeleniumWrapperUtilTest" ) //
+				.hasCauseInstanceOf( ClassCastException.class );
+	}
+
+	@Value
+	private static class Wrapper<T> {
+
+		T wrapped;
 	}
 }
