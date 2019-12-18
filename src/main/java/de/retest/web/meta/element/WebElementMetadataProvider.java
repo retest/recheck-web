@@ -26,8 +26,8 @@ public final class WebElementMetadataProvider {
 			final Object wrapped = SeleniumWrapperUtil.getWrapped( WrapperOf.ELEMENT, element );
 			return extractDriverMetadataProvider( (WebElement) wrapped );
 		}
-		log.warn( "Cannot retrieve driver from element {}. Element must be of '{}'. Returning empty metadata.", element,
-				RemoteWebElement.class.getSimpleName() );
+		log.debug( "Cannot retrieve driver from element {}. Element must be of '{}'. Returning empty metadata.",
+				element, RemoteWebElement.class );
 		return MetadataProvider.empty();
 	}
 }
