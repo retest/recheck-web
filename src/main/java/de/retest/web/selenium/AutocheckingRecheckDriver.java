@@ -152,14 +152,14 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 		if ( re == null ) {
 			startTest();
 		}
-		re.check( this, checkNamingStrategy.getUniqueCheckName( action, target, params ) );
+		re.check( ImplicitDriverWrapper.of( this ), checkNamingStrategy.getUniqueCheckName( action, target, params ) );
 	}
 
 	void check( final String action ) {
 		if ( re == null ) {
 			startTest();
 		}
-		re.check( this, checkNamingStrategy.getUniqueCheckName( action ) );
+		re.check( ImplicitDriverWrapper.of( this ), checkNamingStrategy.getUniqueCheckName( action ) );
 	}
 
 	@Override
