@@ -85,22 +85,38 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public Set<RootElement> convert( final Object toVerify ) {
-		if ( SeleniumWrapperUtil.isWrapper( WrapperOf.ELEMENT, toVerify ) ) {
-			return convert( SeleniumWrapperUtil.getWrapped( WrapperOf.ELEMENT, toVerify ) );
+		final RemoteWebElement webElement = retrieveWebElement( toVerify );
+		if ( webElement != null ) {
+			return convertWebElement( webElement );
 		}
-		if ( toVerify instanceof RemoteWebElement ) {
-			return convertWebElement( (RemoteWebElement) toVerify );
-		}
-		if ( toVerify instanceof UnbreakableDriver ) {
-			return convertWebDriver( (UnbreakableDriver) toVerify );
-		}
-		if ( SeleniumWrapperUtil.isWrapper( WrapperOf.DRIVER, toVerify ) ) {
-			return convert( SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, toVerify ) );
-		}
-		if ( toVerify instanceof RemoteWebDriver ) {
-			return convertWebDriver( (RemoteWebDriver) toVerify );
+		final WebDriver webDriver = retrieveWebDriver( toVerify );
+		if ( webDriver != null ) {
+			return convertWebDriver( webDriver );
 		}
 		throw new IllegalArgumentException( "Cannot convert objects of type '" + toVerify.getClass().getName() + "'." );
+	}
+
+	private RemoteWebElement retrieveWebElement( final Object toVerify ) {
+		if ( SeleniumWrapperUtil.isWrapper( WrapperOf.ELEMENT, toVerify ) ) {
+			return retrieveWebElement( SeleniumWrapperUtil.getWrapped( WrapperOf.ELEMENT, toVerify ) );
+		}
+		if ( toVerify instanceof RemoteWebElement ) {
+			return (RemoteWebElement) toVerify;
+		}
+		return null;
+	}
+
+	private WebDriver retrieveWebDriver( final Object toVerify ) {
+		if ( toVerify instanceof UnbreakableDriver ) {
+			return (UnbreakableDriver) toVerify;
+		}
+		if ( SeleniumWrapperUtil.isWrapper( WrapperOf.DRIVER, toVerify ) ) {
+			return retrieveWebDriver( SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, toVerify ) );
+		}
+		if ( toVerify instanceof RemoteWebDriver ) {
+			return (RemoteWebDriver) toVerify;
+		}
+		return null;
 	}
 
 	Set<RootElement> convertWebDriver( final WebDriver driver ) {

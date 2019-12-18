@@ -147,7 +147,7 @@ class RecheckSeleniumAdapterTest {
 		final WrappingRemoteWebElement outer = createOuterWrappingElement( inner );
 
 		assertThat( cut.convert( outer ) ).isEmpty();
-		verify( cut ).convert( inner.getWrappedElement() );
+		verify( cut ).convertWebElement( (RemoteWebElement) inner.getWrappedElement() );
 	}
 
 	@Test
@@ -159,7 +159,7 @@ class RecheckSeleniumAdapterTest {
 		final WrappingRemoteWebDriver outer = createOuterWrappingDriver( inner );
 
 		assertThat( cut.convert( outer ) ).isEmpty();
-		verify( cut ).convert( inner.getWrappedDriver() );
+		verify( cut ).convertWebDriver( inner.getWrappedDriver() );
 	}
 
 	@Test
