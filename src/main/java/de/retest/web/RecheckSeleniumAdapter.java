@@ -28,6 +28,8 @@ import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
 import de.retest.web.mapping.PathsToWebDataMapping;
 import de.retest.web.meta.SeleniumMetadataProvider;
 import de.retest.web.screenshot.ScreenshotProvider;
+import de.retest.web.selenium.AutocheckingRecheckDriver;
+import de.retest.web.selenium.ImplicitDriverWrapper;
 import de.retest.web.selenium.UnbreakableDriver;
 import de.retest.web.util.SeleniumWrapperUtil;
 import de.retest.web.util.SeleniumWrapperUtil.WrapperOf;
@@ -89,7 +91,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		if ( webElement != null ) {
 			return convertWebElement( webElement );
 		}
-		final WebDriver webDriver = retrieveWebDriver( toVerify );
+		final WebDriver webDriver = retrieveWebDriver( unwrapImplicitDriver( toVerify ) );
 		if ( webDriver != null ) {
 			return convertWebDriver( webDriver );
 		}
@@ -104,6 +106,18 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 			return (RemoteWebElement) toVerify;
 		}
 		return null;
+	}
+
+	private Object unwrapImplicitDriver( final Object toVerify ) {
+		if ( toVerify instanceof AutocheckingRecheckDriver ) {
+			throw new UnsupportedOperationException( String.format(
+					"Mixing implicit checking used by '%s' and explicit checking with 'Recheck#check' is not supported.",
+					toVerify.getClass().getSimpleName() ) );
+		}
+		if ( toVerify instanceof ImplicitDriverWrapper ) {
+			return ((ImplicitDriverWrapper) toVerify).getWrappedDriver();
+		}
+		return toVerify;
 	}
 
 	private WebDriver retrieveWebDriver( final Object toVerify ) {
