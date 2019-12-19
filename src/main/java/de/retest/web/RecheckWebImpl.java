@@ -26,18 +26,21 @@ public class RecheckWebImpl extends RecheckImpl {
 
 	@Override
 	public void check( final Object driver, final RecheckAdapter seleniumAdapter, final String currentStep ) {
-		if ( driver instanceof UnbreakableDriver ) {
-			this.driver = (UnbreakableDriver) driver;
-		}
+		this.driver = retrieveUnbreakableDriver( driver );
 		super.check( driver, seleniumAdapter, currentStep );
 	}
 
 	@Override
 	public void check( final Object driver, final String currentStep ) {
-		if ( driver instanceof UnbreakableDriver ) {
-			this.driver = (UnbreakableDriver) driver;
-		}
+		this.driver = retrieveUnbreakableDriver( driver );
 		super.check( driver, currentStep );
+	}
+
+	private UnbreakableDriver retrieveUnbreakableDriver( final Object driver ) {
+		if ( driver instanceof UnbreakableDriver ) {
+			return (UnbreakableDriver) driver;
+		}
+		return null;
 	}
 
 	@Override
