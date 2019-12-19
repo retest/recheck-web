@@ -33,6 +33,8 @@ Table of Contents
 
 ### Improvements
 
+* An exception is now thrown if explicit `Recheck#check` is called with an implicit `RecheckDriver`. This kind of mixing is not expected and therefore now prevented as it produced unexpected behavior due to both checks trying to find and create a Golden Master.
+
 
 --------------------------------------------------------------------------------
 
