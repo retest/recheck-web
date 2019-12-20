@@ -7,10 +7,12 @@ import org.openqa.selenium.WebDriver;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 
 import de.retest.recheck.ui.image.ImageUtils;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * The default implementation that takes a screenshot of only the viewport visible to the user from the top page.
  */
+@Slf4j
 public class ViewportOnlyMinimalScreenshot implements ScreenshotProvider {
 
 	static final int DEFAULT_WANTED_WIDTH_PX = 800;
@@ -21,7 +23,10 @@ public class ViewportOnlyMinimalScreenshot implements ScreenshotProvider {
 
 	@Override
 	public BufferedImage shoot( final WebDriver driver ) {
-		return resizeImage( Shutterbug.shootPage( driver, USE_DEVICE_PIXEL_RATIO ).getImage() );
+		final long startTime = System.currentTimeMillis();
+		final BufferedImage result = resizeImage( Shutterbug.shootPage( driver, USE_DEVICE_PIXEL_RATIO ).getImage() );
+		log.info( "Took {}ms to create the screenshot.", System.currentTimeMillis() - startTime );
+		return result;
 	}
 
 	public static BufferedImage resizeImage( final BufferedImage image ) {

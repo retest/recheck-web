@@ -11,6 +11,8 @@ import org.openqa.selenium.WebElement;
 
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 
+import de.retest.web.RecheckWebOptions;
+import de.retest.web.RecheckWebProperties;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -26,6 +28,9 @@ public class ScreenshotProviders {
 				case "viewportOnly":
 					return new ViewportOnlyMinimalScreenshot();
 				case "none":
+					log.info( "ScreenshotProvider has been set to 'none' either via property "
+							+ RecheckWebProperties.SCREENSHOT_PROVIDER_PROPERTY_KEY + " or via "
+							+ RecheckWebOptions.class.getSimpleName() + ", will create NO screenshots." );
 					return new NoScreenshot();
 				default:
 					log.warn( "Unknown configured screenshot provider '{}'. Using default value 'viewportOnly'.",
