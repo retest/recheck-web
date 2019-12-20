@@ -27,6 +27,8 @@ Table of Contents
 
 ### Bug Fixes
 
+* (Re)Established IE11 compatibility.
+
 ### New Features
 
 ### Improvements
