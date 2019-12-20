@@ -3,7 +3,11 @@ package de.retest.web.util;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 /**
  * Utility to handle both old (<code>org.openqa.selenium.*</code>) and new (<code>org.openqa.selenium.internal.*</code>)
@@ -15,21 +19,18 @@ public class SeleniumWrapperUtil {
 	 * Determines a Selenium wrapper type (i.e. an element or a driver) and contains information for reflective access.
 	 */
 	@Getter
-	public static enum WrapperOf {
+	@RequiredArgsConstructor
+	public static class WrapperOf<T> {
 
-		ELEMENT( new String[] { "org.openqa.selenium.WrapsElement", "org.openqa.selenium.internal.WrapsElement" },
-				"getWrappedElement" ),
-		DRIVER( new String[] { "org.openqa.selenium.WrapsDriver", "org.openqa.selenium.internal.WrapsDriver" },
-				"getWrappedDriver" ),;
+		public static final WrapperOf<WebElement> ELEMENT = new WrapperOf<>( WebElement.class, "getWrappedElement",
+				new String[] { "org.openqa.selenium.WrapsElement", "org.openqa.selenium.internal.WrapsElement" } );
 
-		private WrapperOf( final String[] wrapperClassNames, final String wrapperMethodName ) {
-			this.wrapperClassNames = wrapperClassNames;
-			this.wrapperMethodName = wrapperMethodName;
-		}
+		public static final WrapperOf<WebDriver> DRIVER = new WrapperOf<>( WebDriver.class, "getWrappedDriver",
+				new String[] { "org.openqa.selenium.WrapsDriver", "org.openqa.selenium.internal.WrapsDriver" } );
 
-		private final String[] wrapperClassNames;
+		private final Class<? extends T> wrappedClass;
 		private final String wrapperMethodName;
-
+		private final String[] wrapperClassNames;
 	}
 
 	/**
@@ -39,7 +40,7 @@ public class SeleniumWrapperUtil {
 	 *            The object to be checked.
 	 * @return <code>true</code> if the given object is wrapper of the selected type, otherwise <code>false</code>.
 	 */
-	public static boolean isWrapper( final WrapperOf w, final Object o ) {
+	public static boolean isWrapper( final WrapperOf<?> w, final Object o ) {
 		return getWrapperClass( w, o ) != null;
 	}
 
@@ -59,14 +60,22 @@ public class SeleniumWrapperUtil {
 	 *             If the <code>getWrapped</code> method cannot be invoked or the object does not wrap an instance of
 	 *             the selected type.
 	 */
-	public static Object getWrapped( final WrapperOf w, final Object o ) {
+	public static <T> T getWrapped( final WrapperOf<? extends T> w, final Object o ) {
+		final Class<? extends T> wrappedClass = w.getWrappedClass();
 		final Class<?> clazz = getWrapperClass( w, o );
 		if ( clazz == null ) {
 			throw new IllegalArgumentException( "Type '" + o.getClass() + "' is not instance of any of "
 					+ Arrays.toString( w.getWrapperClassNames() ) + "." );
 		}
+		final Object wrapped;
 		try {
-			return clazz.getMethod( w.getWrapperMethodName() ).invoke( o );
+			wrapped = clazz.getMethod( w.getWrapperMethodName() ).invoke( o );
+			if ( wrapped == null ) { // We can't determine the type of null. 
+				return null;
+			}
+			if ( wrappedClass.isInstance( wrapped ) ) {
+				return wrappedClass.cast( wrapped );
+			}
 		} catch ( final InvocationTargetException e ) {
 			throw new RuntimeException(
 					"Failed to invoke " + o.getClass().getSimpleName() + "#" + w.getWrapperMethodName() + ".",
@@ -75,9 +84,11 @@ public class SeleniumWrapperUtil {
 			throw new UnsupportedOperationException(
 					"Failed to invoke " + o.getClass().getSimpleName() + "#" + w.getWrapperMethodName() + ".", e );
 		}
+		throw new UnsupportedOperationException( "Failed to retrieve expected type '" + wrappedClass.getSimpleName()
+				+ "' of '" + w.getWrapperMethodName() + "', got '" + wrapped.getClass().getSimpleName() + "'" );
 	}
 
-	private static Class<?> getWrapperClass( final WrapperOf w, final Object o ) {
+	private static Class<?> getWrapperClass( final WrapperOf<?> w, final Object o ) {
 		for ( final String wrapsElementClassName : w.getWrapperClassNames() ) {
 			try {
 				final Class<?> clazz = Class.forName( wrapsElementClassName );

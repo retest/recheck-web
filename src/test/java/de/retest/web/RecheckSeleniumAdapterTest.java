@@ -32,6 +32,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import de.retest.recheck.RecheckAdapter;
 import de.retest.web.selenium.AutocheckingRecheckDriver;
+import de.retest.web.selenium.ImplicitDriverWrapper;
 import de.retest.web.selenium.RecheckDriver;
 import de.retest.web.selenium.UnbreakableDriver;
 
@@ -147,7 +148,7 @@ class RecheckSeleniumAdapterTest {
 		final WrappingRemoteWebElement outer = createOuterWrappingElement( inner );
 
 		assertThat( cut.convert( outer ) ).isEmpty();
-		verify( cut ).convert( inner.getWrappedElement() );
+		verify( cut ).convertWebElement( (RemoteWebElement) inner.getWrappedElement() );
 	}
 
 	@Test
@@ -159,7 +160,7 @@ class RecheckSeleniumAdapterTest {
 		final WrappingRemoteWebDriver outer = createOuterWrappingDriver( inner );
 
 		assertThat( cut.convert( outer ) ).isEmpty();
-		verify( cut ).convert( inner.getWrappedDriver() );
+		verify( cut ).convertWebDriver( inner.getWrappedDriver() );
 	}
 
 	@Test
@@ -205,6 +206,33 @@ class RecheckSeleniumAdapterTest {
 		doReturn( Collections.emptySet() ).when( cut ).convertWebDriver( any() );
 
 		assertThatCode( () -> cut.convert( mock( WebDriver.class ) ) ).isInstanceOf( IllegalArgumentException.class );
+	}
+
+	@Test
+	void convert_should_throw_with_autochecking_driver() throws Exception {
+		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter() );
+		doReturn( Collections.emptySet() ).when( cut ).convertWebDriver( any() );
+
+		final AutocheckingRecheckDriver driver = mock( AutocheckingRecheckDriver.class );
+
+		assertThatThrownBy( () -> cut.convert( driver ) ) //
+				.isInstanceOf( UnsupportedOperationException.class ) //
+				.hasMessageStartingWith( String.format(
+						"The '%s' does implicit checking after each action, therefore no explicit check with 'Recheck#check' is needed",
+						driver.getClass().getSimpleName() ) );
+	}
+
+	@Test
+	void convert_should_not_walk_through_implicit_checking_if_unbreakable() throws Exception {
+		final UnbreakableDriver unbreakableDriver = mock( UnbreakableDriver.class );
+
+		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter() );
+		doReturn( Collections.emptySet() ).when( cut ).convertWebDriver( unbreakableDriver );
+
+		final ImplicitDriverWrapper wrapper = mock( ImplicitDriverWrapper.class );
+		when( wrapper.getWrappedDriver() ).thenReturn( unbreakableDriver );
+
+		assertThat( cut.convert( wrapper ) ).isNotNull();
 	}
 
 	private WrappingRemoteWebElement createOuterWrappingElement( final WrappingRemoteWebElement inner ) {
