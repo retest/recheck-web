@@ -50,8 +50,8 @@ class RecheckWebImplIT {
 			re.check( driver, "explicit-implicit-mixed" );
 		} ) //
 				.isInstanceOf( UnsupportedOperationException.class ) //
-				.hasMessage(
-						"Mixing implicit checking used by 'RecheckDriver' and explicit checking with 'Recheck#check' is not supported." );
+				.hasMessageStartingWith(
+						"The 'RecheckDriver' does implicit checking after each action, therefore no explicit check with 'Recheck#check' is needed" );
 
 		capTestSilently( re );
 		capTestSilently( driver );

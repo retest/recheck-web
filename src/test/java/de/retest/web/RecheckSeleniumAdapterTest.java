@@ -218,7 +218,7 @@ class RecheckSeleniumAdapterTest {
 		assertThatThrownBy( () -> cut.convert( driver ) ) //
 				.isInstanceOf( UnsupportedOperationException.class ) //
 				.hasMessageStartingWith( String.format(
-						"Mixing implicit checking used by '%s' and explicit checking with 'Recheck#check' is not supported.",
+						"The '%s' does implicit checking after each action, therefore no explicit check with 'Recheck#check' is needed",
 						driver.getClass().getSimpleName() ) );
 	}
 

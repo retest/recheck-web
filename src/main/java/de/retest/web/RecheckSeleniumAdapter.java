@@ -111,7 +111,10 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 	private Object unwrapImplicitDriver( final Object toVerify ) {
 		if ( toVerify instanceof AutocheckingRecheckDriver ) {
 			throw new UnsupportedOperationException( String.format(
-					"Mixing implicit checking used by '%s' and explicit checking with 'Recheck#check' is not supported.",
+					"The '%s' does implicit checking after each action, " // 
+							+ "therefore no explicit check with 'Recheck#check' is needed. " // 
+							+ "Please remove the explicit check. " //
+							+ "For more information, please have a look at https://docs.retest.de/recheck-web/introduction/usage/.",
 					toVerify.getClass().getSimpleName() ) );
 		}
 		if ( toVerify instanceof ImplicitDriverWrapper ) {
