@@ -1,3 +1,9 @@
+if (typeof String.prototype.trim !== 'function') {
+    String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g, '');
+    }
+}
+
 var cssAttributes = [
     "align-content",
     "align-items",
@@ -180,6 +186,10 @@ var cssAttributes = [
     "z-index"
 ];
 
+var ELEMENT_NODE = 1;
+var TEXT_NODE = 3;
+var DOCUMENT_TYPE_NODE = 10;
+
 var Counter = /** @class */ (function () {
     function Counter() {
         this.map = {};
@@ -199,10 +209,10 @@ var Counter = /** @class */ (function () {
 
 function getText(node) {
     var firstNode = node.childNodes[0];
-    if (firstNode && firstNode.nodeType == node.TEXT_NODE) {
+    if (firstNode && firstNode.nodeType == TEXT_NODE) {
         return firstNode.nodeValue;
     }
-    if (node.nodeType == node.TEXT_NODE) {
+    if (node.nodeType == TEXT_NODE) {
         return node.nodeValue;
     }
     return "";
@@ -210,30 +220,50 @@ function getText(node) {
 
 function getX(node) {
     var rect = node.getBoundingClientRect();
-    return rect.left + window.scrollX;
+    if (window.scrollX) {
+        return rect.left + window.scrollX;
+    }
+    return rect.left;
 }
 
 function getY(node) {
     var rect = node.getBoundingClientRect();
-    return rect.top + window.scrollY;
+    if (window.scrollY) {
+        return rect.top + window.scrollY;
+    }
+    return rect.top;
+}
+
+function getWidth(node) {
+    if (node.getBoundingClientRect().width) {
+        return node.getBoundingClientRect().width;
+    }
+    return node.clientWidth;
+}
+
+function getHeight(node) {
+    if (node.getBoundingClientRect().height) {
+        return node.getBoundingClientRect().height;
+    }
+    return node.clientHeight;
 }
 
 function addCoordinates(extractedAttributes, node) {
     // these attributes need special treatment
     extractedAttributes["absolute-x"] = getX(node);
     extractedAttributes["absolute-y"] = getY(node);
-    extractedAttributes["absolute-width"] = node.getBoundingClientRect().width;
-    extractedAttributes["absolute-height"] = node.getBoundingClientRect().height;
+    extractedAttributes["absolute-width"] = getWidth(node);
+    extractedAttributes["absolute-height"] = getHeight(node);
     if (typeof node.parentNode.getBoundingClientRect === "function") {
         extractedAttributes["x"] = getX(node) - getX(node.parentNode);
         extractedAttributes["y"] = getY(node) - getY(node.parentNode);
-        extractedAttributes["width"] = node.getBoundingClientRect().width - node.parentNode.getBoundingClientRect().width;
-        extractedAttributes["height"] = node.getBoundingClientRect().height - node.parentNode.getBoundingClientRect().height;
+        extractedAttributes["width"] = getWidth(node) - getWidth(node.parentNode);
+        extractedAttributes["height"] = getHeight(node) - getHeight(node.parentNode);
     } else {
         extractedAttributes["x"] = getX(node);
         extractedAttributes["y"] = getY(node);
-        extractedAttributes["width"] = node.getBoundingClientRect().width;
-        extractedAttributes["height"] = node.getBoundingClientRect().height;
+        extractedAttributes["width"] = getWidth(node);
+        extractedAttributes["height"] = getHeight(node);
     }
 }
 
@@ -268,7 +298,7 @@ function transform(node) {
         "shown": isShown(node)
     };
     
-    if (node.nodeType == node.TEXT_NODE) {
+    if (node.nodeType == TEXT_NODE) {
         addCoordinates(extractedAttributes, node.parentNode);
         return extractedAttributes;
     }
@@ -278,7 +308,9 @@ function transform(node) {
     for (var i = 0; i < attrs.length; i++) {
         var attributeName = attrs[i].name;
         var attributeValue = attrs[i].value;
-        extractedAttributes[attributeName] = attributeValue;
+        if (attributeValue && attributeValue != "" && attributeValue != "null") { 
+            extractedAttributes[attributeName] = attributeValue;
+        }
     }
     
     // overwrite empty attributes (e.g. 'disabled')
@@ -303,7 +335,7 @@ function transform(node) {
 }
 
 function isShown(e) {
-    if (e.nodeType == e.TEXT_NODE) {
+    if (e.nodeType == TEXT_NODE) {
         return isShown(e.parentNode);
     }
     return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
@@ -311,7 +343,7 @@ function isShown(e) {
 
 function isNonEmptyTextNode(node) {
     var nodeValue = (node.nodeValue == null) ? "" : node.nodeValue;
-    return node.nodeType == node.TEXT_NODE && nodeValue.trim().length > 0;
+    return node.nodeType == TEXT_NODE && nodeValue.trim().length > 0;
 }
 
 function containsOtherElements(element) {
@@ -320,10 +352,10 @@ function containsOtherElements(element) {
 
 function getElementXPath(node) {
     var paths = [];
-    for ( ; node && node.nodeType == Node.ELEMENT_NODE; node = node.parentNode)  {
+    for ( ; node && node.nodeType == ELEMENT_NODE; node = node.parentNode)  {
         var index = 0;
         for (var sibling = node.previousSibling; sibling; sibling = sibling.previousSibling) {
-            if (sibling.nodeType == Node.DOCUMENT_TYPE_NODE) {
+            if (sibling.nodeType == DOCUMENT_TYPE_NODE) {
                 continue;
             }
 
@@ -346,9 +378,9 @@ function mapElement(element, parentPath, allElements) {
     var counter = new Counter();
     for (var i = 0; i < element.childNodes.length; i++) {
         var child = element.childNodes[i];
-        if (child.nodeType == child.ELEMENT_NODE ||
+        if (child.nodeType == ELEMENT_NODE ||
             (isNonEmptyTextNode(child) && containsOtherElements(element))) {
-            if (child.nodeType == child.TEXT_NODE) {
+            if (child.nodeType == TEXT_NODE) {
                 child.tagName = "textnode";
             }
             var cnt = counter.increase(child);
