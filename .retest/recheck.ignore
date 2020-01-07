@@ -19,6 +19,9 @@ attribute-regex=data-.*
 attribute=jsdata
 attribute=jsaction
 attribute=cd_frame_id_
+attribute-regex=border-.*-width
+attribute=line-height
+attribute=quotes
 matcher: type=meta, attribute-regex: .*
 
 # Have the tests pass locally:

@@ -26,6 +26,12 @@ public class FrameConverter {
 	private final String queryJs;
 	private final RetestIdProvider retestIdProvider;
 	private final DefaultValueFinder defaultValueFinder;
+	private final String parentFramePrefix;
+
+	public FrameConverter( final String queryJs, final RetestIdProvider retestIdProvider,
+			final DefaultValueFinder defaultValueFinder ) {
+		this( queryJs, retestIdProvider, defaultValueFinder, "" );
+	}
 
 	public void addChildrenFromFrames( final WebDriver driver, final RootElement lastChecked ) {
 		final List<Element> frames =
@@ -39,23 +45,33 @@ public class FrameConverter {
 
 	private void addChildrenFromFrame( final WebDriver driver, final Element frame ) {
 		try {
-			final String framePath = frame.getIdentifyingAttributes().getPath();
-			final String frameXPath = "/" + framePath;
-			final WebElement frameWebElement = driver.findElement( By.xpath( frameXPath ) );
+			final WebElement frameWebElement = getFrameParent( driver, frame );
 
 			log.debug( "Switching to frame '{}'.", frame );
 			driver.switchTo().frame( frameWebElement );
 
 			log.debug( "Retrieving data content of frame '{}'.", frame );
+			final String framePath = frame.getIdentifyingAttributes().getPath();
 			final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 			@SuppressWarnings( "unchecked" )
 			final PathsToWebDataMapping mapping = new PathsToWebDataMapping( framePath,
 					(Map<String, Map<String, Object>>) jsExecutor.executeScript( queryJs ) );
 			final RootElement frameContent = convert( mapping, getFrameTitle( frame ), framePath );
+
+			final FrameConverter frameConverter =
+					new FrameConverter( queryJs, retestIdProvider, defaultValueFinder, framePath + "/" );
+			frameConverter.addChildrenFromFrames( driver, frameContent );
+
 			frame.addChildren( frameContent.getContainedElements() );
 		} catch ( final Exception e ) {
 			log.error( "Exception retrieving data content of frame '{}'.", frame, e );
 		}
+	}
+
+	private WebElement getFrameParent( final WebDriver driver, final Element frame ) {
+		final String framePath = frame.getIdentifyingAttributes().getPath().substring( parentFramePrefix.length() );
+		final String frameXPath = "/" + framePath;
+		return driver.findElement( By.xpath( frameXPath ) );
 	}
 
 	private String getFrameTitle( final Element frame ) {
@@ -90,5 +106,4 @@ public class FrameConverter {
 			return Stream.of( "iframe", "frame" ).anyMatch( type::equalsIgnoreCase );
 		};
 	}
-
 }

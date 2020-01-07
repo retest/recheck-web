@@ -13,6 +13,7 @@ public class PageFactory {
 		SHOWCASE,
 		SIMPLE_PAGE,
 		FORM_PAGE,
+		FRAME_PAGE,
 		CENTER
 	}
 
@@ -29,6 +30,9 @@ public class PageFactory {
 			}
 			case CENTER: {
 				return toPageUrlString( "centered.html" );
+			}
+			case FRAME_PAGE: {
+				return toPageUrlString( "frame-outer.html" );
 			}
 			default:
 				throw new IllegalArgumentException( "No \"" + page + "\" page available." );

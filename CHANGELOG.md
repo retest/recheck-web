@@ -27,6 +27,8 @@ Table of Contents
 
 ### Bug Fixes
 
+* Fix that cascading frames inside of frames are not analyzed. Now depth doesn't matter...
+
 ### New Features
 
 * Provide additional metadata: current URL
