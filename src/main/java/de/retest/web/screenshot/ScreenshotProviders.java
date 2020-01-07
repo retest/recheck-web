@@ -50,10 +50,13 @@ public class ScreenshotProviders {
 	public static BufferedImage shoot( final WebDriver driver, final WebElement element,
 			final ScreenshotProvider screenshotProvider ) {
 		try {
+			final long startTime = System.currentTimeMillis();
 			if ( element != null ) {
 				return shootElement( driver, element );
 			}
-			return screenshotProvider.shoot( driver );
+			final BufferedImage result = screenshotProvider.shoot( driver );
+			log.info( "Took {}ms to create the screenshot.", System.currentTimeMillis() - startTime );
+			return result;
 		} catch ( final Exception e ) {
 			log.error( "Exception creating screenshot for check.", e );
 			return null;

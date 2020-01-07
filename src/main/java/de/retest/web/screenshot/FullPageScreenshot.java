@@ -11,12 +11,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
 
-import lombok.extern.slf4j.Slf4j;
-
 /**
  * Scrolls to the bottom of the page and takes a screenshot of the entire page.
  */
-@Slf4j
 public class FullPageScreenshot implements ScreenshotProvider {
 
 	private static final int SCROLL_TIMEOUT_MS = 100;
@@ -24,18 +21,15 @@ public class FullPageScreenshot implements ScreenshotProvider {
 
 	@Override
 	public BufferedImage shoot( final WebDriver driver ) {
-		final long startTime = System.currentTimeMillis();
 		if ( driver instanceof ChromeDriver ) {
 			final BufferedImage image = Shutterbug //
 					.shootPage( driver, ScrollStrategy.WHOLE_PAGE_CHROME, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
 					.getImage();
 			return resizeImage( image, image.getWidth() / SCALE, image.getHeight() / SCALE );
 		}
-		final BufferedImage result = Shutterbug //
+		return Shutterbug //
 				.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
 				.getImage();
-		log.info( "Took {}ms to create the screenshot.", System.currentTimeMillis() - startTime );
-		return result;
 	}
 
 }
