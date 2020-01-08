@@ -4,10 +4,21 @@ xmlns:x="urn:schemas-microsoft-com:office:excel"
 xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
+<script type="text/javascript">
+function changeFrameUrl(){
+	var url = new URL(window.location.href);
+	var count = url.searchParams.get("cascadecount");
+	console.log("Count = " + count);
+	if (count > 0) {
+		var frame = document.getElementById("cascadedFrame");
+		frame.src = "frame-page.html?cascadecount=" + (count-1);
+	}
+}
+</script>
 </head>
 
-<frameset rows="*,39" border=0 width=0 frameborder=no framespacing=0>
- <frame src="frame-diff.html" name="frSheet">
+<frameset rows="*,39" border="0" width="0" frameborder="no" framespacing="0" onLoad="changeFrameUrl();">
+ <frame id="cascadedFrame" src="frame.html" name="frSheet" />
  <noframes>
   <body>
    <p>Diese Seite verwendet Frames. Frames werden von Ihrem Browser aber nicht unterstützt.</p>
