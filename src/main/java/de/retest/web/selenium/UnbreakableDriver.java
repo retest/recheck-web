@@ -3,6 +3,7 @@ package de.retest.web.selenium;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
+import java.util.function.Consumer;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
@@ -50,6 +51,7 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 	private final RemoteWebDriver wrappedDriver;
 	private RootElement lastExpectedState;
 	private RootElement lastActualState;
+	private Consumer<QualifiedElementWarning> warningConsumer;
 
 	/**
 	 * @param wrappedDriver

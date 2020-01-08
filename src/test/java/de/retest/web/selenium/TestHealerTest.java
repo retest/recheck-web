@@ -11,6 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -288,5 +289,37 @@ class TestHealerTest {
 	public void not_yet_implemented_ByXPathExpression_should_log_warning() {
 		assertThat( isNotYetSupportedXPathExpression( "//div[@id='mw-content-text']/div[2]" ) ).isTrue();
 		assertThat( isNotYetSupportedXPathExpression( "//button[contains(.,'Search')]" ) ).isTrue();
+	}
+
+	@Test
+	public void testHealing_should_trigger_warning_in_result() throws Exception {
+		final String retestId = "id";
+		final String xpath = "html[1]/div[1]";
+
+		final Collection<Attribute> identCrit = IdentifyingAttributes.createList( fromString( xpath ), "div" );
+		identCrit.add( new StringAttribute( AttributesUtil.ID, "myId" ) );
+
+		final IdentifyingAttributes identifying = new IdentifyingAttributes( identCrit );
+
+		final Element element = create( retestId, state, identifying, new MutableAttributes().immutable() );
+		when( state.getContainedElements() ).thenReturn( Collections.singletonList( element ) );
+
+		when( wrapped.findElement( By.xpath( xpath ) ) ).thenReturn( resultMarker );
+
+		final List<QualifiedElementWarning> warnings = new ArrayList<>();
+		when( wrapped.getWarningConsumer() ).thenReturn( warnings::add );
+
+		TestHealer.findElement( By.id( "myId" ), wrapped ); // Do not move this from line 312, or else change the line number below
+
+		assertThat( warnings ).hasSize( 1 );
+		assertThat( warnings.get( 0 ) ).satisfies( qualifiedWarning -> {
+			assertThat( qualifiedWarning.getRetestId() ).isEqualTo( retestId );
+			assertThat( qualifiedWarning.getAttributeKey() ).isEqualTo( "id" );
+			assertThat( qualifiedWarning.getWarning() ).satisfies( warning -> {
+				assertThat( warning.getTestFileName() ).isEqualTo( TestHealerTest.class.getSimpleName() + ".java" );
+				assertThat( warning.getTestLineNumber() ).isEqualTo( 312 );
+				assertThat( warning.getQualifiedTestName() ).isEqualTo( TestHealerTest.class.getName() );
+			} );
+		} );
 	}
 }

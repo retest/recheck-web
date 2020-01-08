@@ -10,6 +10,7 @@ import static de.retest.web.selenium.ByWhisperer.retrieveLinkText;
 import static de.retest.web.selenium.ByWhisperer.retrieveName;
 import static de.retest.web.selenium.ByWhisperer.retrievePartialLinkText;
 
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -31,6 +32,7 @@ import de.retest.recheck.TestCaseFinder;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
 import de.retest.recheck.ui.descriptors.RootElement;
+import de.retest.recheck.ui.diff.ElementIdentificationWarning;
 
 public class TestHealer {
 
@@ -48,6 +50,7 @@ public class TestHealer {
 	private final UnbreakableDriver wrapped;
 	private final RootElement lastExpectedState;
 	private final RootElement lastActualState;
+	private final Consumer<QualifiedElementWarning> warningConsumer;
 
 	private TestHealer( final UnbreakableDriver wrapped ) {
 		this.wrapped = wrapped;
@@ -56,6 +59,7 @@ public class TestHealer {
 			throw new IllegalStateException( "No last expected state to find old element in!" );
 		}
 		lastActualState = wrapped.getLastActualState();
+		warningConsumer = wrapped.getWarningConsumer();
 	}
 
 	public static WebElement findElement( final By by, final UnbreakableDriver wrapped ) {
@@ -353,6 +357,10 @@ public class TestHealer {
 		} else {
 			logger.warn( "Use `By.retestId(\"{}\")` to update your test {}:{}.", actualElement.getRetestId(),
 					callSiteFileName, callSiteLineNumber );
+		}
+		if ( warningConsumer != null ) {
+			warningConsumer.accept( new QualifiedElementWarning( actualElement.getRetestId(), elementIdentifier,
+					new ElementIdentificationWarning( callSiteFileName, callSiteLineNumber, byMethodName, test ) ) );
 		}
 	}
 
