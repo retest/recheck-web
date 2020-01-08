@@ -10,6 +10,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Stream;
 
 import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.JavascriptExecutor;
@@ -22,15 +23,18 @@ import org.slf4j.LoggerFactory;
 import de.retest.recheck.RecheckAdapter;
 import de.retest.recheck.RecheckOptions;
 import de.retest.recheck.meta.MetadataProvider;
+import de.retest.recheck.report.ActionReplayResult;
 import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
+import de.retest.recheck.ui.diff.ElementDifference;
 import de.retest.web.mapping.PathsToWebDataMapping;
 import de.retest.web.meta.SeleniumMetadataProvider;
 import de.retest.web.screenshot.ScreenshotProvider;
 import de.retest.web.selenium.AutocheckingRecheckDriver;
 import de.retest.web.selenium.ImplicitDriverWrapper;
 import de.retest.web.selenium.UnbreakableDriver;
+import de.retest.web.selenium.WriteToResultWarningConsumer;
 import de.retest.web.util.SeleniumWrapperUtil;
 import de.retest.web.util.SeleniumWrapperUtil.WrapperOf;
 
@@ -44,6 +48,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	private final RetestIdProvider retestIdProvider;
 	private final ScreenshotProvider screenshotProvider;
+
+	private ActionReplayResult actionReplayResult;
 
 	public RecheckSeleniumAdapter( final RecheckOptions options ) {
 		retestIdProvider = options.getRetestIdProvider();
@@ -160,6 +166,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 		if ( driver instanceof UnbreakableDriver ) {
 			((UnbreakableDriver) driver).setLastActualState( lastChecked );
+			((UnbreakableDriver) driver)
+					.setWarningConsumer( new WriteToResultWarningConsumer( this::retrieveDifferences ) );
 		}
 
 		return Collections.singleton( lastChecked );
@@ -182,6 +190,13 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		}
 	}
 
+	private Stream<ElementDifference> retrieveDifferences() {
+		if ( actionReplayResult == null ) {
+			return Stream.empty();
+		}
+		return actionReplayResult.getAllElementDifferences().stream();
+	}
+
 	@Override
 	public Map<String, String> retrieveMetadata( final Object toCheck ) {
 		final MetadataProvider provider = SeleniumMetadataProvider.of( toCheck );
@@ -193,4 +208,8 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		return defaultValueFinder;
 	}
 
+	@Override
+	public void notifyAboutDifferences( final ActionReplayResult actionReplayResult ) {
+		this.actionReplayResult = actionReplayResult;
+	}
 }
