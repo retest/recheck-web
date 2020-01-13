@@ -6,8 +6,8 @@ set -o pipefail
 
 ###### Extract these ######
 
-GECKODRIVER_VERSION="v0.24.0"
-GECKODRIVER_HASH="7552b85e43973c84763e212af7cca566"
+GECKODRIVER_VERSION="v0.26.0"
+GECKODRIVER_HASH="7a908350c9ce8bb90d9a8293c5758301"
 
 ###### Chrome ######
 
