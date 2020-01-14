@@ -1,7 +1,5 @@
 language: java
-dist: trusty
-
-jdk: openjdk8
+dist: bionic
 
 git:
   depth: false
@@ -12,6 +10,7 @@ addons:
   apt:
     packages:
       - chromium-chromedriver
+      - openjdk-8-jdk
   sonarcloud:
     organization: retest
     token: "${SONAR_CLOUD_TOKEN}"
