@@ -18,7 +18,6 @@ import de.retest.web.testutils.PageFactory.Page;
 @ExtendWith( RecheckExtension.class )
 class RecheckRemoteWebElementIT {
 
-	private static final String HTML_ELEMENT = "html-element-";
 	WebDriver driver;
 	Recheck re;
 
@@ -27,26 +26,16 @@ class RecheckRemoteWebElementIT {
 		re = new RecheckImpl();
 	}
 
-	@ParameterizedTest( name = HTML_ELEMENT + "{1}" )
+	@ParameterizedTest( name = "findElement-equals-driver-{1}" )
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
-	void complete_html_should_be_same_as_driver( final WebDriver driver, final String name ) throws Exception {
-		this.driver = driver;
-		driver.get( PageFactory.page( Page.FORM_PAGE ) );
-
-		Thread.sleep( 1000 );
-
-		re.check( driver.findElement( By.tagName( "html" ) ), "open" );
-	}
-
-	@ParameterizedTest( name = HTML_ELEMENT + "{1}" )
-	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
-	void complete_html_should_be_same_as_web_element( final WebDriver driver, final String name ) throws Exception {
+	void html_via_findElement_should_equal_driver_html( final WebDriver driver, final String name ) throws Exception {
 		this.driver = driver;
 		driver.get( PageFactory.page( Page.FORM_PAGE ) );
 
 		Thread.sleep( 1000 );
 
 		re.check( driver, "open" );
+		re.check( driver.findElement( By.tagName( "html" ) ), "open" );
 	}
 
 	@ParameterizedTest( name = "simple-webelement-{1}" )
