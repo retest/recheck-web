@@ -36,6 +36,10 @@ public class FrameConverter {
 	public void addChildrenFromFrames( final WebDriver driver, final RootElement lastChecked ) {
 		final List<Element> frames =
 				de.retest.web.selenium.By.findElements( lastChecked.getContainedElements(), isFrame() );
+		if ( frames.size() <= 0 ) {
+			log.debug( "Found no sub-frames." );
+			return;
+		}
 		log.debug( "Found {} sub-frame(s), getting data per frame.", frames.size() );
 		for ( final Element frame : frames ) {
 			addChildrenFromFrame( driver, frame );
