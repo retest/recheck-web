@@ -53,7 +53,6 @@ public class Has {
 	}
 
 	private static String clearQuotes( final String result ) {
-		// TODO check specification
 		if ( result == null ) {
 			return "true";
 		}
@@ -96,7 +95,6 @@ public class Has {
 	}
 
 	private static boolean hasPseudoClass( final Element element, final String pseudoClass ) {
-		// TODO kommt hier immer String oder auch boolean?
 		return "true".equals( element.getAttributeValue( pseudoClass ) );
 	}
 
