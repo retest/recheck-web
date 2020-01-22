@@ -223,7 +223,7 @@ Yes, ***recheck-web*** easily integrates into your CI/CD environment. I can even
 
 ### How can I access the report files on my CI/CD server?
 
-If you cannot easily the reports on your CI/CD server, test reports can be easily uploaded to [***rehub***](https://retest.de/rehub/). To upload reports, you will need a [retest account](https://sso.prod.cloud.retest.org/auth/realms/customer/account).
+If you cannot readily access the reports on your CI/CD server, test reports can be easily uploaded to [***rehub***](https://retest.de/rehub/). To upload reports, you will need a [retest account](https://sso.prod.cloud.retest.org/auth/realms/customer/account).
 
 The first step is to modify the `setUp()` method in our existing test case to enable the upload to ***rehub***. There are two ways to achieve this:
 
