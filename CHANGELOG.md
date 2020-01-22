@@ -38,6 +38,7 @@ Table of Contents
 
 * An exception is now thrown if explicit `Recheck#check` is called with an implicit `RecheckDriver`. This kind of mixing is not expected and therefore now prevented as it produced unexpected behavior due to both checks trying to find and create a Golden Master.
 * Improve the breaking messages from a `UnbreakableDriver` to include more information like the line number.
+* Add short cuts for screenshot enabling/disabling via the `RecheckWebOptions`.
 
 
 --------------------------------------------------------------------------------
