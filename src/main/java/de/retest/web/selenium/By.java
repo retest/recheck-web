@@ -24,7 +24,7 @@ public abstract class By extends org.openqa.selenium.By {
 			return null;
 		}
 		final Alignment alignment = Alignment.createAlignment( lastExpectedState, lastActualState );
-		final Element resultFromActual = alignment.get( resultFromExpected );
+		final Element resultFromActual = alignment.getActual( resultFromExpected );
 		if ( resultFromActual == null ) {
 			throw new NoElementWithHighEnoughMatchFoundException( resultFromExpected );
 		}
