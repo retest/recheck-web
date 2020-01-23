@@ -51,16 +51,16 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<junit.jupiter.version>5.5.2</junit.jupiter.version>
+		<junit.jupiter.version>5.6.0</junit.jupiter.version>
 		<logback.version>1.2.3</logback.version>
-		<jackson.version>2.10.1</jackson.version>
+		<jackson.version>2.10.2</jackson.version>
 	</properties>
 
 	<scm>
 		<url>https://github.com/retest/recheck-web/</url>
 		<connection>scm:git:git@github.com:retest/recheck-web.git</connection>
 		<developerConnection>scm:git:git@github.com:retest/recheck-web.git</developerConnection>
-		<tag>v1.8.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
@@ -89,13 +89,13 @@
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>recheck</artifactId>
-			<version>1.8.0</version>
+			<version>d3b0b678</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>1.7.29</version>
+			<version>1.7.30</version>
 		</dependency>
 
 		<!-- transitively loaded via Selenium -->
@@ -103,7 +103,7 @@
 		<dependency>
 			<groupId>net.bytebuddy</groupId>
 			<artifactId>byte-buddy</artifactId>
-			<version>1.10.5</version>
+			<version>1.10.7</version>
 		</dependency>
 
 		<dependency>
@@ -191,7 +191,7 @@
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
-			<version>3.2.0</version>
+			<version>3.2.4</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -281,7 +281,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
-				<version>3.2.0</version>
+				<version>3.2.1</version>
 				<executions>
 					<execution>
 						<id>bundle-sources</id>

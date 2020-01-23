@@ -10,15 +10,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class WebDriverFactory {
 
 	public enum Driver {
 		CHROME,
-		FIREFOX;
+		FIREFOX
 	}
 
-	public static WebDriver driver( final Driver driver ) {
+	public static RemoteWebDriver driver( final Driver driver ) {
 		switch ( driver ) {
 			case CHROME: {
 				return new ChromeDriver( new ChromeOptions().addArguments( commonArguments() ) );

@@ -4,6 +4,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyMap;
+import static org.mockito.ArgumentMatchers.nullable;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
@@ -11,12 +13,15 @@ import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import java.awt.image.BufferedImage;
 import java.util.Collections;
+import java.util.function.Consumer;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.mockito.ArgumentCaptor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,7 +36,13 @@ import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.safari.SafariDriver;
 
 import de.retest.recheck.RecheckAdapter;
+import de.retest.recheck.report.ActionReplayResult;
+import de.retest.recheck.ui.descriptors.RootElement;
+import de.retest.recheck.ui.diff.ElementIdentificationWarning;
+import de.retest.web.screenshot.NoScreenshot;
 import de.retest.web.selenium.AutocheckingRecheckDriver;
+import de.retest.web.selenium.ImplicitDriverWrapper;
+import de.retest.web.selenium.QualifiedElementWarning;
 import de.retest.web.selenium.RecheckDriver;
 import de.retest.web.selenium.UnbreakableDriver;
 
@@ -147,7 +158,7 @@ class RecheckSeleniumAdapterTest {
 		final WrappingRemoteWebElement outer = createOuterWrappingElement( inner );
 
 		assertThat( cut.convert( outer ) ).isEmpty();
-		verify( cut ).convert( inner.getWrappedElement() );
+		verify( cut ).convertWebElement( (RemoteWebElement) inner.getWrappedElement() );
 	}
 
 	@Test
@@ -159,7 +170,7 @@ class RecheckSeleniumAdapterTest {
 		final WrappingRemoteWebDriver outer = createOuterWrappingDriver( inner );
 
 		assertThat( cut.convert( outer ) ).isEmpty();
-		verify( cut ).convert( inner.getWrappedDriver() );
+		verify( cut ).convertWebDriver( inner.getWrappedDriver() );
 	}
 
 	@Test
@@ -205,6 +216,87 @@ class RecheckSeleniumAdapterTest {
 		doReturn( Collections.emptySet() ).when( cut ).convertWebDriver( any() );
 
 		assertThatCode( () -> cut.convert( mock( WebDriver.class ) ) ).isInstanceOf( IllegalArgumentException.class );
+	}
+
+	@Test
+	void convert_should_throw_with_autochecking_driver() throws Exception {
+		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter() );
+		doReturn( Collections.emptySet() ).when( cut ).convertWebDriver( any() );
+
+		final AutocheckingRecheckDriver driver = mock( AutocheckingRecheckDriver.class );
+
+		assertThatThrownBy( () -> cut.convert( driver ) ) //
+				.isInstanceOf( UnsupportedOperationException.class ) //
+				.hasMessageStartingWith( String.format(
+						"The '%s' does implicit checking after each action, therefore no explicit check with 'Recheck#check' is needed",
+						driver.getClass().getSimpleName() ) );
+	}
+
+	@Test
+	void convert_should_not_walk_through_implicit_checking_if_unbreakable() throws Exception {
+		final UnbreakableDriver unbreakableDriver = mock( UnbreakableDriver.class );
+
+		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter() );
+		doReturn( Collections.emptySet() ).when( cut ).convertWebDriver( unbreakableDriver );
+
+		final ImplicitDriverWrapper wrapper = mock( ImplicitDriverWrapper.class );
+		when( wrapper.getWrappedDriver() ).thenReturn( unbreakableDriver );
+
+		assertThat( cut.convert( wrapper ) ).isNotNull();
+	}
+
+	@Test
+	void convert_and_notify_should_allow_for_warnings_to_be_issued() throws Exception {
+		final ElementIdentificationWarning warning = new ElementIdentificationWarning( "test.java", 0, "id", "Test" );
+		final QualifiedElementWarning qualifiedElementWarning = new QualifiedElementWarning( "id", "id", warning );
+
+		final UnbreakableDriver unbreakableDriver = mock( UnbreakableDriver.class );
+		when( unbreakableDriver.executeScript( any(), any() ) ).thenReturn( Collections.emptyMap() );
+
+		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter( RecheckWebOptions.builder() //
+				.screenshotProvider( new NoScreenshot() ) //
+				.build() ) );
+		doReturn( mock( RootElement.class ) ).when( cut ).convert( anyMap(), nullable( String.class ),
+				nullable( String.class ), nullable( BufferedImage.class ) );
+
+		cut.convert( unbreakableDriver );
+
+		final ArgumentCaptor<Consumer<QualifiedElementWarning>> captor = ArgumentCaptor.forClass( Consumer.class );
+		verify( unbreakableDriver ).setWarningConsumer( captor.capture() );
+
+		cut.notifyAboutDifferences( mock( ActionReplayResult.class ) );
+
+		final Consumer<QualifiedElementWarning> warningConsumer = captor.getValue();
+
+		assertThatCode( () -> {
+			warningConsumer.accept( qualifiedElementWarning );
+		} ).doesNotThrowAnyException();
+	}
+
+	@Test
+	void convert_without_notify_should_not_throw_exception() throws Exception {
+		final ElementIdentificationWarning warning = new ElementIdentificationWarning( "test.java", 0, "id", "Test" );
+		final QualifiedElementWarning qualifiedElementWarning = new QualifiedElementWarning( "id", "id", warning );
+
+		final UnbreakableDriver unbreakableDriver = mock( UnbreakableDriver.class );
+		when( unbreakableDriver.executeScript( any(), any() ) ).thenReturn( Collections.emptyMap() );
+
+		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter( RecheckWebOptions.builder() //
+				.screenshotProvider( new NoScreenshot() ) //
+				.build() ) );
+		doReturn( mock( RootElement.class ) ).when( cut ).convert( anyMap(), nullable( String.class ),
+				nullable( String.class ), nullable( BufferedImage.class ) );
+
+		cut.convert( unbreakableDriver );
+
+		final ArgumentCaptor<Consumer<QualifiedElementWarning>> captor = ArgumentCaptor.forClass( Consumer.class );
+		verify( unbreakableDriver ).setWarningConsumer( captor.capture() );
+
+		final Consumer<QualifiedElementWarning> warningConsumer = captor.getValue();
+
+		assertThatCode( () -> {
+			warningConsumer.accept( qualifiedElementWarning );
+		} ).doesNotThrowAnyException();
 	}
 
 	private WrappingRemoteWebElement createOuterWrappingElement( final WrappingRemoteWebElement inner ) {

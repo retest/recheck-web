@@ -27,9 +27,18 @@ Table of Contents
 
 ### Bug Fixes
 
+* Fix that cascading frames inside of frames are not analyzed. Now depth doesn't matter...
+
 ### New Features
 
+* Provide additional metadata: current URL
+* Save the warnings identified by the `UnbreakableDriver` to the report to allow for healing of the test code.
+
 ### Improvements
+
+* An exception is now thrown if explicit `Recheck#check` is called with an implicit `RecheckDriver`. This kind of mixing is not expected and therefore now prevented as it produced unexpected behavior due to both checks trying to find and create a Golden Master.
+* Improve the breaking messages from a `UnbreakableDriver` to include more information like the line number.
+* Add short cuts for screenshot enabling/disabling via the `RecheckWebOptions`.
 
 
 --------------------------------------------------------------------------------

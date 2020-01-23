@@ -12,7 +12,8 @@ public class PageFactory {
 	public enum Page {
 		SHOWCASE,
 		SIMPLE_PAGE,
-		PAGE_FRAME,
+		FORM_PAGE,
+		FRAME_PAGE,
 		CENTER
 	}
 
@@ -24,11 +25,14 @@ public class PageFactory {
 			case SIMPLE_PAGE: {
 				return toPageUrlString( "simple-page.html" );
 			}
-			case PAGE_FRAME: {
-				return toPageUrlString( "page-frame.html" );
+			case FORM_PAGE: {
+				return toPageUrlString( "form-page.html" );
 			}
 			case CENTER: {
 				return toPageUrlString( "centered.html" );
+			}
+			case FRAME_PAGE: {
+				return toPageUrlString( "frame-outer.html" );
 			}
 			default:
 				throw new IllegalArgumentException( "No \"" + page + "\" page available." );

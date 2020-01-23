@@ -10,6 +10,7 @@ import static de.retest.web.selenium.ByWhisperer.retrieveLinkText;
 import static de.retest.web.selenium.ByWhisperer.retrieveName;
 import static de.retest.web.selenium.ByWhisperer.retrievePartialLinkText;
 
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -31,6 +32,7 @@ import de.retest.recheck.TestCaseFinder;
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
 import de.retest.recheck.ui.descriptors.RootElement;
+import de.retest.recheck.ui.diff.ElementIdentificationWarning;
 
 public class TestHealer {
 
@@ -48,6 +50,7 @@ public class TestHealer {
 	private final UnbreakableDriver wrapped;
 	private final RootElement lastExpectedState;
 	private final RootElement lastActualState;
+	private final Consumer<QualifiedElementWarning> warningConsumer;
 
 	private TestHealer( final UnbreakableDriver wrapped ) {
 		this.wrapped = wrapped;
@@ -56,6 +59,7 @@ public class TestHealer {
 			throw new IllegalStateException( "No last expected state to find old element in!" );
 		}
 		lastActualState = wrapped.getLastActualState();
+		warningConsumer = wrapped.getWarningConsumer();
 	}
 
 	public static WebElement findElement( final By by, final UnbreakableDriver wrapped ) {
@@ -100,8 +104,8 @@ public class TestHealer {
 			logger.warn( "{} with id '{}'.", ELEMENT_NOT_FOUND_MESSAGE, id );
 			return null;
 		} else {
-			writeWarnLogForChangedIdentifier( "HTML id attribute", id,
-					actualElement.getIdentifyingAttributes().get( ID ), ID, actualElement.getRetestId() );
+			writeWarnLogForChangedIdentifier( ID, id, actualElement.getIdentifyingAttributes().get( ID ), ID,
+					actualElement );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -115,8 +119,8 @@ public class TestHealer {
 			logger.warn( "{} with CSS class '{}'.", ELEMENT_NOT_FOUND_MESSAGE, className );
 			return null;
 		} else {
-			writeWarnLogForChangedIdentifier( "HTML class attribute", className,
-					actualElement.getIdentifyingAttributes().get( CLASS ), "className", actualElement.getRetestId() );
+			writeWarnLogForChangedIdentifier( CLASS, className, actualElement.getIdentifyingAttributes().get( CLASS ),
+					"className", actualElement );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -130,8 +134,8 @@ public class TestHealer {
 			logger.warn( "{} with name '{}'.", ELEMENT_NOT_FOUND_MESSAGE, name );
 			return null;
 		} else {
-			writeWarnLogForChangedIdentifier( "HTML name attribute", name,
-					actualElement.getIdentifyingAttributes().get( NAME ), NAME, actualElement.getRetestId() );
+			writeWarnLogForChangedIdentifier( NAME, name, actualElement.getIdentifyingAttributes().get( NAME ), NAME,
+					actualElement );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -145,8 +149,8 @@ public class TestHealer {
 			logger.warn( "{} with link text '{}'.", ELEMENT_NOT_FOUND_MESSAGE, linkText );
 			return null;
 		} else {
-			writeWarnLogForChangedIdentifier( "link text", linkText,
-					actualElement.getIdentifyingAttributes().get( TEXT ), "linkText", actualElement.getRetestId() );
+			writeWarnLogForChangedIdentifier( TEXT, linkText, actualElement.getIdentifyingAttributes().get( TEXT ),
+					"linkText", actualElement );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -161,8 +165,7 @@ public class TestHealer {
 			return null;
 		} else {
 			writeWarnLogForChangedIdentifier( "partial link text", partialLinkText,
-					actualElement.getIdentifyingAttributes().get( TEXT ), "partialLinkText",
-					actualElement.getRetestId() );
+					actualElement.getIdentifyingAttributes().get( TEXT ), "partialLinkText", actualElement );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -219,8 +222,8 @@ public class TestHealer {
 			logger.warn( "{} with CSS selector '{}'.", ELEMENT_NOT_FOUND_MESSAGE, origSelector );
 			return null;
 		} else {
-			writeWarnLogForChangedIdentifier( "HTML class attribute", origSelector,
-					actualElement.getIdentifyingAttributes().get( CLASS ), "cssSelector", actualElement.getRetestId() );
+			writeWarnLogForChangedIdentifier( CLASS, origSelector,
+					actualElement.getIdentifyingAttributes().get( CLASS ), "cssSelector", actualElement );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -303,8 +306,8 @@ public class TestHealer {
 			logger.warn( "{} with XPath '{}'.", ELEMENT_NOT_FOUND_MESSAGE, xpathExpression );
 			return null;
 		} else {
-			writeWarnLogForChangedIdentifier( "xpath", xpathExpression,
-					actualElement.getIdentifyingAttributes().get( PATH ), "xpath", actualElement.getRetestId() );
+			writeWarnLogForChangedIdentifier( PATH, xpathExpression,
+					actualElement.getIdentifyingAttributes().get( PATH ), "xpath", actualElement );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
@@ -318,27 +321,29 @@ public class TestHealer {
 			logger.warn( "{} with tag '{}'.", ELEMENT_NOT_FOUND_MESSAGE, tag );
 			return null;
 		} else {
-			writeWarnLogForChangedIdentifier( "HTML tag attribute", tag,
-					actualElement.getIdentifyingAttributes().get( TYPE ), TYPE, actualElement.getRetestId() );
+			writeWarnLogForChangedIdentifier( TYPE, tag, actualElement.getIdentifyingAttributes().get( TYPE ), TYPE,
+					actualElement );
 			return wrapped.findElement( By.xpath( actualElement.getIdentifyingAttributes().getPath() ) );
 		}
 	}
 
 	private void writeWarnLogForChangedIdentifier( final String elementIdentifier, final Object oldValue,
-			final Object newValue, final String byMethodName, final String retestId ) {
+			final Object newValue, final String byMethodName, final Element actualElement ) {
 		logger.warn( "*************** recheck warning ***************" );
-		logger.warn( "The {} used for element identification changed from '{}' to '{}'.", elementIdentifier, oldValue,
-				newValue );
+		logger.warn( "The {} used for element identification changed from '{}' to '{}'.",
+				makeHumanReadable( elementIdentifier ), oldValue, newValue );
 		logger.warn( "retest identified the element based on the persisted Golden Master." );
 
 		String test = "";
-		String callLocation = "";
+		String callSiteFileName = "";
+		Integer callSiteLineNumber = -1;
 		try {
 			final StackTraceElement callSite = TestCaseFinder.getInstance() //
 					.findTestCaseMethodInStack() //
 					.getStackTraceElement();
 			test = callSite.getClassName();
-			callLocation = callSite.getFileName() + ":" + callSite.getLineNumber();
+			callSiteFileName = callSite.getFileName();
+			callSiteLineNumber = callSite.getLineNumber();
 		} catch ( final Exception e ) {
 			logger.warn( "Exception retrieving call site of findBy call." );
 		}
@@ -347,11 +352,26 @@ public class TestHealer {
 		logger.warn( "If you apply these changes to the Golden Master {}, your test {} will break.", "", test );
 
 		if ( newValue != null ) {
-			logger.warn( "Use `By.{}(\"{}\")` or `By.retestId(\"{}\")` to update your test {}.", byMethodName, newValue,
-					retestId, callLocation );
+			logger.warn( "Use `By.{}(\"{}\")` or `By.retestId(\"{}\")` to update your test {}:{}.", byMethodName,
+					newValue, actualElement.getRetestId(), callSiteFileName, callSiteLineNumber );
 		} else {
-			logger.warn( "Use `By.retestId(\"{}\")` to update your test {}.", retestId, callLocation );
+			logger.warn( "Use `By.retestId(\"{}\")` to update your test {}:{}.", actualElement.getRetestId(),
+					callSiteFileName, callSiteLineNumber );
 		}
+		if ( warningConsumer != null ) {
+			warningConsumer.accept( new QualifiedElementWarning( actualElement.getRetestId(), elementIdentifier,
+					new ElementIdentificationWarning( callSiteFileName, callSiteLineNumber, byMethodName, test ) ) );
+		}
+	}
+
+	private String makeHumanReadable( final String elementIdentifier ) {
+		if ( elementIdentifier.equals( TYPE ) ) {
+			return "HTML tag attribute";
+		}
+		if ( elementIdentifier.equals( TEXT ) ) {
+			return "link text";
+		}
+		return "HTML " + elementIdentifier + " attribute";
 	}
 
 }

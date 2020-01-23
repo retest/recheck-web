@@ -1,7 +1,7 @@
 package de.retest.web.it;
 
 import static de.retest.web.testutils.PageFactory.page;
-import static de.retest.web.testutils.PageFactory.Page.PAGE_FRAME;
+import static de.retest.web.testutils.PageFactory.Page.FRAME_PAGE;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,10 +13,9 @@ import org.openqa.selenium.WebDriver;
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
 import de.retest.recheck.junit.jupiter.RecheckExtension;
-import de.retest.web.selenium.By;
 
 @ExtendWith( RecheckExtension.class )
-class PageFrameIT {
+class FramePageIT {
 
 	WebDriver driver;
 	Recheck re;
@@ -26,13 +25,11 @@ class PageFrameIT {
 		re = new RecheckImpl();
 	}
 
-	@ParameterizedTest( name = "page-frame-{1}" )
+	@ParameterizedTest( name = "frame-page-{1}" )
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
-	void page_frame_html_should_be_checked( final WebDriver driver, final String name ) throws Exception {
+	void frame_page_html_should_be_checked( final WebDriver driver, final String name ) throws Exception {
 		this.driver = driver;
-		driver.get( page( PAGE_FRAME ) );
-
-		driver.findElement( By.id( "email" ) ).sendKeys( "Max" );
+		driver.get( page( FRAME_PAGE ) );
 
 		Thread.sleep( 1000 );
 		re.check( driver, "open" );

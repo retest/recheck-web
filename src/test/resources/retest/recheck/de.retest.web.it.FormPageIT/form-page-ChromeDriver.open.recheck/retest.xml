@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.3.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.8.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="We Leave From Here" title="We Leave From Here">
 			<identifyingAttributes>
@@ -4327,6 +4327,64 @@
 							</attributes>
 						</attributes>
 					</containedElements>
+					<containedElements retestId="br-4">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>225</x>
+									<y>97</y>
+									<height>17</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>217</x>
+									<y>2</y>
+									<height>-266</height>
+									<width>-1184</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/br[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="type" xsi:type="stringAttribute">br</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="br-5">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>322</x>
+									<y>187</y>
+									<height>17</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>314</x>
+									<y>92</y>
+									<height>-266</height>
+									<width>-1184</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/br[2]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+								<attribute key="type" xsi:type="stringAttribute">br</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
 				</containedElements>
 				<containedElements retestId="form">
 					<identifyingAttributes>
@@ -7979,10 +8037,6 @@
 					</attributes>
 				</containedElements>
 			</containedElements>
-			<screenshot>
-				<persistenceId>html_2313683bacb030fc125f7c8729309d368e3600a93d90ef31556579d1750ba7f8</persistenceId>
-				<type>PNG</type>
-			</screenshot>
 		</descriptors>
 	</data>
 </reTestXmlDataContainer>

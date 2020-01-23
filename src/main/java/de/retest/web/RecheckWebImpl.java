@@ -6,7 +6,10 @@ import de.retest.recheck.RecheckAdapter;
 import de.retest.recheck.RecheckImpl;
 import de.retest.recheck.RecheckOptions;
 import de.retest.recheck.ui.descriptors.SutState;
+import de.retest.web.selenium.ImplicitDriverWrapper;
 import de.retest.web.selenium.UnbreakableDriver;
+import lombok.AccessLevel;
+import lombok.Getter;
 
 /**
  * This class is specifically needed in conjunction with the {@link UnbreakableDriver}. For simple explicit calls to
@@ -14,6 +17,7 @@ import de.retest.web.selenium.UnbreakableDriver;
  */
 public class RecheckWebImpl extends RecheckImpl {
 
+	@Getter( AccessLevel.PACKAGE )
 	private UnbreakableDriver driver;
 
 	public RecheckWebImpl() {
@@ -26,18 +30,24 @@ public class RecheckWebImpl extends RecheckImpl {
 
 	@Override
 	public void check( final Object driver, final RecheckAdapter seleniumAdapter, final String currentStep ) {
-		if ( driver instanceof UnbreakableDriver ) {
-			this.driver = (UnbreakableDriver) driver;
-		}
+		this.driver = retrieveUnbreakableDriver( driver );
 		super.check( driver, seleniumAdapter, currentStep );
 	}
 
 	@Override
 	public void check( final Object driver, final String currentStep ) {
-		if ( driver instanceof UnbreakableDriver ) {
-			this.driver = (UnbreakableDriver) driver;
-		}
+		this.driver = retrieveUnbreakableDriver( driver );
 		super.check( driver, currentStep );
+	}
+
+	private UnbreakableDriver retrieveUnbreakableDriver( final Object driver ) {
+		if ( driver instanceof ImplicitDriverWrapper ) {
+			return retrieveUnbreakableDriver( ((ImplicitDriverWrapper) driver).getWrappedDriver() );
+		}
+		if ( driver instanceof UnbreakableDriver ) {
+			return (UnbreakableDriver) driver;
+		}
+		return null;
 	}
 
 	@Override

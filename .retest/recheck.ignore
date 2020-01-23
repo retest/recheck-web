@@ -19,13 +19,16 @@ attribute-regex=data-.*
 attribute=jsdata
 attribute=jsaction
 attribute=cd_frame_id_
-matcher: type=meta, attribute-regex: .*
+attribute-regex=border-.*-width
+attribute=line-height
+attribute=quotes
+matcher: type=meta, attribute-regex=.*
 
 # Have the tests pass locally:
 attribute=outline
 
 # So we can have a different ID in SimpleAutocheckingDriverShowcaseIT:
-matcher: xpath=html[1]/body[1]/form[1]/input[1], attribute: id
+matcher: xpath=html[1]/body[1]/form[1]/input[1], attribute=id
 
 # Ignore pixel diffs up to 5 pixels:
-pixel-diff=5
+pixel-diff=5px

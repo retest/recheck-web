@@ -3,6 +3,7 @@
 [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/retest/recheck-web/blob/master/LICENSE)
 [![Build Status](https://travis-ci.com/retest/recheck-web.svg?branch=master)](https://travis-ci.com/retest/recheck-web)
 [![Latest recheck-web on Maven Central](https://maven-badges.herokuapp.com/maven-central/de.retest/recheck-web/badge.svg?style=flat)](https://mvnrepository.com/artifact/de.retest/recheck-web)
+[![Latest recheck-web releases on JitPack](https://jitpack.io/v/de.retest/recheck-web.svg)]( https://jitpack.io/#de.retest/recheck-web)
 [![license](https://img.shields.io/badge/license-AGPL-brightgreen.svg)](https://github.com/retest/recheck-web/blob/master/LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/retest/recheck-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![code with hearth by retest](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-retest-C1D82F.svg)](https://retest.de/)
@@ -222,7 +223,7 @@ Yes, ***recheck-web*** easily integrates into your CI/CD environment. I can even
 
 ### How can I access the report files on my CI/CD server?
 
-If you cannot easily the reports on your CI/CD server, test reports can be easily uploaded to [***rehub***](https://retest.de/rehub/). To upload reports, you will need a [retest account](https://sso.prod.cloud.retest.org/auth/realms/customer/account).
+If you cannot readily access the reports on your CI/CD server, test reports can be easily uploaded to [***rehub***](https://retest.de/rehub/). To upload reports, you will need a [retest account](https://sso.prod.cloud.retest.org/auth/realms/customer/account).
 
 The first step is to modify the `setUp()` method in our existing test case to enable the upload to ***rehub***. There are two ways to achieve this:
 

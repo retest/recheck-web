@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AutoHealingTest</title>
+</head>
+
+<body>
+  <button id="b">Click to change!</button>
+  <input type="text" id="id" readonly>
+</body>
+
+<script>
+  const changing = {
+    a: "b",
+    b: "a"
+  }
+
+  window.onload = () => {
+    const button = document.getElementById("b")
+    const input = document.getElementById("id")
+
+    button.onclick = ()=>{
+      change(button)
+      update(input, button.id)
+    }
+
+    update(input, button.id)
+  }
+
+  function change(button) {
+    button.id = changing[button.id]
+  }
+
+  function update(input, value) {
+    input.value = value
+  }
+</script>
+
+</html>

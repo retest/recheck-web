@@ -36,7 +36,7 @@ public class SimpleAutocheckingDriverShowcaseIT {
 
 	@Test
 	public void index() throws Exception {
-		driver.navigate().to( PageFactory.page( Page.PAGE_FRAME ) );
+		driver.navigate().to( PageFactory.page( Page.FORM_PAGE ) );
 
 		driver.findElement( By.id( "old-email-id" ) ).sendKeys( "me@retest.de" );
 
