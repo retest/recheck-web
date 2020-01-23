@@ -8,6 +8,7 @@ update_configs:
       - "martin-v"
       - "modulo11"
       - "diba1013"
+      - "githubert"
     ignored_updates:
       - match:
           # As long as the issue is not fixed, we need to use version 0.9
