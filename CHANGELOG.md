@@ -27,14 +27,21 @@ Table of Contents
 
 ### Bug Fixes
 
-* (Re)Established IE11 compatibility.
-
 ### New Features
 
 ### Improvements
 
 
 --------------------------------------------------------------------------------
+
+
+[1.8.1] (2020-01-23)
+--------------------
+
+### Bug Fixes
+
+* (Re)Established IE11 compatibility.
+
 
 
 [1.8.0] (2019-12-13)
