@@ -366,6 +366,10 @@
 						<configuration>
 							<skip>${gpg.skip}</skip>
 							<passphrase>${env.GPG_PASSPHRASE}</passphrase>
+							<gpgArguments>
+								<arg>--pinentry-mode</arg>
+								<arg>loopback</arg>
+							</gpgArguments>
 						</configuration>
 						<executions>
 							<execution>
