@@ -12,7 +12,6 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor( access = AccessLevel.PACKAGE )
 public final class BrowserMetadataProvider implements MetadataProvider {
-
 	private final Capabilities capabilities;
 
 	@Override

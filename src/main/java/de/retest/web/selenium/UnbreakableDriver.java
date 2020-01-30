@@ -14,6 +14,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WrapsDriver;
 import org.openqa.selenium.interactions.HasInputDevices;
 import org.openqa.selenium.interactions.Interactive;
 import org.openqa.selenium.interactions.Keyboard;
@@ -26,7 +27,6 @@ import org.openqa.selenium.internal.FindsByLinkText;
 import org.openqa.selenium.internal.FindsByName;
 import org.openqa.selenium.internal.FindsByTagName;
 import org.openqa.selenium.internal.FindsByXPath;
-import org.openqa.selenium.internal.WrapsDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import de.retest.recheck.ui.descriptors.Element;
@@ -47,6 +47,9 @@ import lombok.Setter;
 public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsById, FindsByClassName, FindsByLinkText,
 		FindsByName, FindsByCssSelector, FindsByTagName, FindsByXPath, HasInputDevices, HasCapabilities, Interactive,
 		TakesScreenshot, WrapsDriver {
+	// TODO: deprecated APIs to be removed in 4.0 --> implementation of RemoteWebDriver will change, 
+	//  this wrapper class needs to be adapted accordingly (see overwritten methods).
+	//  New implementation of RemoteWebDriver currently unknown
 
 	private final RemoteWebDriver wrappedDriver;
 	private RootElement lastExpectedState;
