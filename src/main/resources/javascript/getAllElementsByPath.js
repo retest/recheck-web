@@ -371,15 +371,15 @@ function getElementXPath(node) {
     return paths.length ? "/" + paths.join( "/") : null;
 }
 
-function mapElement(element, parentPath, allElements) {
-    if (!element || !element.children) {
+function mapElement(parent, parentPath, allElements) {
+    if (!parent || !parent.children) {
         return allElements;
     }
     var counter = new Counter();
-    for (var i = 0; i < element.childNodes.length; i++) {
-        var child = element.childNodes[i];
+    for (var i = 0; i < parent.childNodes.length; i++) {
+        var child = parent.childNodes[i];
         if (child.nodeType == ELEMENT_NODE ||
-            (isNonEmptyTextNode(child) && containsOtherElements(element))) {
+            (isNonEmptyTextNode(child) && containsOtherElements(parent))) {
             if (child.nodeType == TEXT_NODE) {
                 child.tagName = "textnode";
             }

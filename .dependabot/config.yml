@@ -11,9 +11,9 @@ update_configs:
       - "githubert"
     ignored_updates:
       - match:
-          # As long as the issue is not fixed, we need to use version 0.9
-          # see https://github.com/assertthat/selenium-shutterbug/issues/64
+          # As long as the issue is not fixed, we need to use version 0.9:
+          # https://github.com/assertthat/selenium-shutterbug/issues/64
           dependency_name: "com.assertthat:selenium-shutterbug"
       - match:
-          # We update this manually within the release process
-          dependency_name: "de.retest:recheck"
+          # We update these manually within the release process
+          dependency_name: "de.retest:recheck*"
