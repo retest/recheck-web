@@ -3,6 +3,7 @@ package de.retest.web.screenshot;
 import java.awt.image.BufferedImage;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 
@@ -16,6 +17,11 @@ public class ViewportOnlyScreenshot implements ScreenshotProvider {
 	@Override
 	public BufferedImage shoot( final WebDriver driver ) {
 		return Shutterbug.shootPage( driver, USE_DEVICE_PIXEL_RATIO ).getImage();
+	}
+
+	@Override
+	public BufferedImage shoot( final WebDriver driver, final WebElement element ) {
+		return Shutterbug.shootElement( driver, element, USE_DEVICE_PIXEL_RATIO ).getImage();
 	}
 
 }

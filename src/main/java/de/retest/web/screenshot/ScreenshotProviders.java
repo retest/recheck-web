@@ -9,15 +9,13 @@ import org.aeonbits.owner.Converter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.assertthat.selenium_shutterbug.core.Shutterbug;
-
 import de.retest.web.RecheckWebOptions;
 import de.retest.web.RecheckWebProperties;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class ScreenshotProviders {
-	
+
 	public static final ScreenshotProvider DEFAULT = new ViewportOnlyMinimalScreenshot();
 	public static final ScreenshotProvider NONE = new NoScreenshot();
 
@@ -44,8 +42,6 @@ public class ScreenshotProviders {
 
 	}
 
-	private static final boolean USE_DEVICE_PIXEL_RATIO = true;
-
 	public static final int SCALE = extractScale();
 
 	private ScreenshotProviders() {}
@@ -55,7 +51,7 @@ public class ScreenshotProviders {
 		try {
 			final long startTime = System.currentTimeMillis();
 			if ( element != null ) {
-				return shootElement( driver, element );
+				return screenshotProvider.shoot( driver, element );
 			}
 			final BufferedImage result = screenshotProvider.shoot( driver );
 			log.info( "Took {}ms to create the screenshot.", System.currentTimeMillis() - startTime );
@@ -66,7 +62,4 @@ public class ScreenshotProviders {
 		}
 	}
 
-	private static BufferedImage shootElement( final WebDriver driver, final WebElement element ) {
-		return Shutterbug.shootElement( driver, element, USE_DEVICE_PIXEL_RATIO ).getImage();
-	}
 }
