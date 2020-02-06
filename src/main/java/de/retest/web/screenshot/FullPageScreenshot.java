@@ -6,6 +6,7 @@ import static de.retest.web.screenshot.ScreenshotProviders.SCALE;
 import java.awt.image.BufferedImage;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
@@ -30,6 +31,11 @@ public class FullPageScreenshot implements ScreenshotProvider {
 		return Shutterbug //
 				.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
 				.getImage();
+	}
+
+	@Override
+	public BufferedImage shoot( final WebDriver driver, final WebElement element ) {
+		return Shutterbug.shootElement( driver, element, USE_DEVICE_PIXEL_RATIO ).getImage();
 	}
 
 }

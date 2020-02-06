@@ -3,6 +3,7 @@ package de.retest.web.screenshot;
 import java.awt.image.BufferedImage;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 /**
  * The screenshot provider for way screenshots are taken.
@@ -22,5 +23,18 @@ public interface ScreenshotProvider {
 	 *             If an exception occurred during screenshot creation.
 	 */
 	BufferedImage shoot( WebDriver driver ) throws Exception;
+
+	/**
+	 * Takes the screenshot from {@link WebElement}.
+	 *
+	 * @param driver
+	 *            Webdriver for taking the screenshot.
+	 * @param element
+	 *            WebElement where screenshot is taken from.
+	 * @return screenshot image of tested web element. May return {@code null} if screenshots are not supported.
+	 * @throws Exception
+	 *             If an exception occurred during screenshot creation.
+	 */
+	BufferedImage shoot( WebDriver driver, WebElement element ) throws Exception;
 
 }
