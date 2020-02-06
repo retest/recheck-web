@@ -358,11 +358,11 @@
 				<version>2.0.0</version>
 				<executions>
 					<execution>
-          				<id>download-licenses</id>
-            			<goals>
-              				<goal>download-licenses</goal>
-            			</goals>
-          			</execution>
+						<id>download-licenses</id>
+						<goals>
+							<goal>download-licenses</goal>
+						</goals>
+					</execution>
 				</executions>
 			</plugin>
 		</plugins>
