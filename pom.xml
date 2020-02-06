@@ -351,6 +351,20 @@
 					<stagingProfileId>506dfd640832af</stagingProfileId>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>2.0.0</version>
+				<executions>
+					<execution>
+          				<id>download-licenses</id>
+            			<goals>
+              				<goal>download-licenses</goal>
+            			</goals>
+          			</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
