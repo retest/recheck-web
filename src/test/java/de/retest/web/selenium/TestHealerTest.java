@@ -7,6 +7,7 @@ import static de.retest.web.AttributesUtil.NAME;
 import static de.retest.web.AttributesUtil.TEXT;
 import static de.retest.web.selenium.TestHealer.findElement;
 import static de.retest.web.selenium.TestHealer.isNotYetSupportedXPathExpression;
+import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -15,9 +16,13 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Stream;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.ValueSource;
 import org.openqa.selenium.By;
 import org.slf4j.LoggerFactory;
 
@@ -32,6 +37,7 @@ import de.retest.recheck.ui.descriptors.MutableAttributes;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.StringAttribute;
 import de.retest.web.AttributesUtil;
+import de.retest.web.selenium.css.PredicateBuilder;
 
 class TestHealerTest {
 
@@ -84,10 +90,48 @@ class TestHealerTest {
 		assertThat( findElement( By.cssSelector( "ytd-grid-video-renderer" ), wrapped ) ).isEqualTo( resultMarker );
 	}
 
-	@Test
-	public void ByCssSelector_matches_elements_with_given_attribute() {
+	@ValueSource( strings = { //
+			"[data-id=\"my-special ID\"]", //
+			"[disabled]", //
+			"div[data-id=\"my-special ID\"]", //
+			"div[disabled]", //
+			".myClass[data-id=\"my-special ID\"]", //
+			".myClass[disabled]", //
+			"#myId[data-id=\"my-special ID\"]", //
+			"#myId[disabled]" } )
+	@ParameterizedTest( name = "CSS Selector: {0}" )
+	public void ByCssSelecto_shouldr_match_elements_with_given_attribute( final String cssSelector ) {
+		configureByCssSelectorAttributeTests();
+
+		assertThat( findElement( By.cssSelector( cssSelector ), wrapped ) ).isEqualTo( resultMarker );
+	}
+
+	@MethodSource( "attributeValueSelectors" )
+	@ParameterizedTest( name = "CSS Selector: {0}" )
+	public void ByCssSelector_should_match_elements_with_given_attribute_value( final String selector ) {
+		configureByCssSelectorAttributeTests();
+
+		assertThat( findElement( By.cssSelector( selector ), wrapped ) ).isEqualTo( resultMarker );
+	}
+
+	private static Stream<String> attributeValueSelectors() {
+		final List<String> attributes = asList( //
+				"[data-id", //
+				"div[data-id", //
+				".myClass[data-id", //
+				"#myId[data-id" );
+		final List<String> values = asList( //
+				"~=ID]", //
+				"|=my]", //
+				"^=\"my-special\"]", //
+				"$=\"special ID\"]", //
+				"*=\"special\"]" );
+		return attributes.stream().flatMap( attribute -> values.stream().map( value -> attribute + value ) );
+	}
+
+	private void configureByCssSelectorAttributeTests() {
 		final MutableAttributes attributes = new MutableAttributes();
-		attributes.put( "data-id", "myspecialID" );
+		attributes.put( "data-id", "my-special ID" );
 		attributes.put( "disabled", "true" );
 
 		final String xpath = "html[1]/div[1]";
@@ -97,22 +141,10 @@ class TestHealerTest {
 		final Element element = create( ID, state, new IdentifyingAttributes( identCrit ), attributes.immutable() );
 		when( state.getContainedElements() ).thenReturn( Collections.singletonList( element ) );
 		when( wrapped.findElement( By.xpath( xpath ) ) ).thenReturn( resultMarker );
-
-		assertThat( findElement( By.cssSelector( "[data-id=\"myspecialID\"]" ), wrapped ) ).isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( "[disabled]" ), wrapped ) ).isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( "div[data-id=\"myspecialID\"]" ), wrapped ) )
-				.isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( "div[disabled]" ), wrapped ) ).isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( ".myClass[data-id=\"myspecialID\"]" ), wrapped ) )
-				.isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( ".myClass[disabled]" ), wrapped ) ).isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( "#myId[data-id=\"myspecialID\"]" ), wrapped ) )
-				.isEqualTo( resultMarker );
-		assertThat( findElement( By.cssSelector( "#myId[disabled]" ), wrapped ) ).isEqualTo( resultMarker );
 	}
 
 	@Test
-	public void ByCssSelector_matches_elements_with_given_class() {
+	public void ByCssSelector_should_match_elements_with_given_class() {
 		final String xpath = "HTML[1]/DIV[1]";
 		final Collection<Attribute> identCrit = IdentifyingAttributes.createList( fromString( xpath ), "DIV" );
 		identCrit.add( new StringAttribute( "class", "pure-button my-button menu-button" ) );
@@ -124,7 +156,6 @@ class TestHealerTest {
 		assertThat( findElement( By.cssSelector( ".pure-button" ), wrapped ) ).isEqualTo( resultMarker );
 		assertThat( findElement( By.cssSelector( ".pure-button.my-button" ), wrapped ) ).isEqualTo( resultMarker );
 		assertThat( findElement( By.cssSelector( ".pure-button .my-button" ), wrapped ) ).isEqualTo( resultMarker );
-
 		assertThat( findElement( By.cssSelector( ".special-class" ), wrapped ) ).isEqualTo( null );
 		assertThat( findElement( By.cssSelector( ".pure-button.special-class" ), wrapped ) ).isEqualTo( null );
 		assertThat( findElement( By.cssSelector( ".pure-button .special-class" ), wrapped ) ).isEqualTo( null );
@@ -146,7 +177,7 @@ class TestHealerTest {
 	public void not_yet_implemented_ByCssSelector_should_be_logged() {
 		final ListAppender<ILoggingEvent> listAppender = new ListAppender<>();
 		listAppender.start();
-		((Logger) LoggerFactory.getLogger( TestHealer.class )).addAppender( listAppender );
+		((Logger) LoggerFactory.getLogger( PredicateBuilder.class )).addAppender( listAppender );
 		final List<ILoggingEvent> logsList = listAppender.list;
 
 		assertThat( findElement( By.cssSelector( ".open > .dropdown-toggle.btn-primary" ), wrapped ) ).isNull();
@@ -161,22 +192,10 @@ class TestHealerTest {
 		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( ":not(:first-child):not(:last-child)" );
 		logsList.clear();
 
-		assertThat( findElement( By.cssSelector( ".input-group[class*=\"col-\"]" ), wrapped ) ).isNull();
-		assertThat( logsList.get( 0 ).getMessage() )
-				.startsWith( "Unbreakable tests are not implemented for all CSS selectors." );
-		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( "[class*=\"col-\"]" );
-		logsList.clear();
-
 		assertThat( findElement( By.cssSelector( "div~p" ), wrapped ) ).isNull();
 		assertThat( logsList.get( 0 ).getMessage() )
 				.startsWith( "Unbreakable tests are not implemented for all CSS selectors." );
 		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( "~p" );
-		logsList.clear();
-
-		assertThat( findElement( By.cssSelector( "[href*=\"w3schools\"]" ), wrapped ) ).isNull();
-		assertThat( logsList.get( 0 ).getMessage() )
-				.startsWith( "Unbreakable tests are not implemented for all CSS selectors." );
-		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( "[href*=\"w3schools\"]" );
 		logsList.clear();
 
 		assertThat( findElement( By.cssSelector( "div,p" ), wrapped ) ).isNull();
@@ -184,17 +203,10 @@ class TestHealerTest {
 				.startsWith( "Unbreakable tests are not implemented for all CSS selectors." );
 		assertThat( logsList.get( 0 ).getArgumentArray()[0] ).isEqualTo( ",p" );
 		logsList.clear();
-
-		// TODO
-		// [attribute~=value]	[title~=flower]			Selects all elements with a title attribute containing the word "flower"
-		// [attribute|=value]	[lang|=en]				Selects all elements with a lang attribute value starting with "en"
-		// [attribute^=value]	a[href^="https"]		Selects every element whose href attribute value begins with "https"
-		// [attribute$=value]	a[href$=".pdf"]			Selects every element whose href attribute value ends with ".pdf"
-		// [attribute*=value]	a[href*="w3schools"]	Selects every element whose href attribute value contains the substring "w3schools"
 	}
 
 	@Test
-	public void ByXPathExpression_matches_elements_with_given_xpath() {
+	public void ByXPathExpression_should_match_elements_with_given_xpath() {
 		final String xpath = "HTML[1]/DIV[3]/DIV[3]/DIV[3]/DIV[2]";
 		final IdentifyingAttributes identifying = IdentifyingAttributes.create( fromString( xpath ), "DIV" );
 		final Element element = create( ID, state, identifying, new Attributes() );
@@ -317,7 +329,7 @@ class TestHealerTest {
 			assertThat( qualifiedWarning.getAttributeKey() ).isEqualTo( "id" );
 			assertThat( qualifiedWarning.getWarning() ).satisfies( warning -> {
 				assertThat( warning.getTestFileName() ).isEqualTo( TestHealerTest.class.getSimpleName() + ".java" );
-				assertThat( warning.getTestLineNumber() ).isEqualTo( 312 );
+				assertThat( warning.getTestLineNumber() ).isEqualTo( 324 );
 				assertThat( warning.getQualifiedTestName() ).isEqualTo( TestHealerTest.class.getName() );
 			} );
 		} );

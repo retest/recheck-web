@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="base" id="root">
+<head>
+<title>retest - Java Swing GUI Testing</title>
+<!-- CSS  ================================================== -->
+<link rel="stylesheet" type="text/css" href="./assets/default.css">
+</head>
+
+<body class="base" style="">
+	<!-- :checked Selects every checked <input> element -->
+	<input class="checkable" id="checked" type="checkbox" checked="checked">
+	<!-- :checked Selects every checked <input> element -->
+	<input class="checkable" id="unchecked" type="checkbox">
+	<!-- :indeterminate Selects input elements that are in an indeterminate state -->
+	<input class="checkable" id="indeterminate" type="checkbox"></input>
+	<!-- :disabled Selects every disabled <input> element -->
+	<input class="disable" id="disabled" disabled="disabled"></input>
+	<!-- :enabled Selects every enabled <input> element -->
+	<input class="disable" id="enabled"></input>
+	<!-- :in-range Selects input elements with a value within a specified range -->
+	<input class="range" id="in-range" type="number" min="5" max="10"
+		value="7"></input>
+	<!-- :out-of-range Selects input elements with a value outside a specified range -->
+	<input class="range" id="out-of-range" type="number" min="5" max="10"
+		value="11"></input>
+	<!-- :invalid Selects all input elements with an invalid value -->
+	<input class="valid-invalid" id="invalid" type="email"
+		value="supportEmail"></input>
+	<!-- :valid Selects all input elements with a valid value -->
+	<input class="valid-invalid" id="valid"></input>
+	<!-- :lang(it) Selects every <p> element with a lang attribute equal to "it" (Italian) -->
+	<p id="lang(it)"></p>
+	<!-- :optional Selects input elements with no "required" attribute -->
+	<input class="optional-required" id="optional"></input>
+	<!-- :required Selects input elements with the "required" attribute specified -->
+	<input class="optional-required" id="required" required></input>
+	<!-- :read-only Selects input elements with the "readonly" attribute specified -->
+	<input class="write-access" id="read-only" readonly></input>
+	<!-- :read-write Selects input elements with the "readonly" attribute NOT specified -->
+	<input class="write-access" id="read-write"></input>
+	<!-- :link Selects all unvisited links -->
+	<a class="links" id="link" href="./unvisited.html">Unvisited</a>
+	<!-- :visited Selects all visited links -->
+	<a class="links" id="visited" href="#target">Visited</a>
+	<!-- :target Selects the current active #target element (clicked on a URL containing that anchor name) -->
+	<div class="links" id="target">Target</div>
+	<!-- :default Selects the default <input> element -->
+	<input class="default-other" id="other" type="radio" name="gender"
+		value="other">other
+	<input class="default-other" id="default" type="radio" name="gender"
+		value="default" checked>default
+	<!-- [id~|=value] Selects input elements based on word values -->
+	<input class="text" id="attribute-word-selector" type="text" value="attribute-word selector"></input>
+
+	<script>
+		// Make the checkbox indeterminate via JavaScript
+		var checkbox = document.getElementById("indeterminate");
+		checkbox.indeterminate = true;
+	</script>
+</body>
+</html>

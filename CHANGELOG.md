@@ -36,6 +36,9 @@ Table of Contents
 
 * Provide additional metadata: current URL
 * Save the warnings identified by the `UnbreakableDriver` to the report to allow for healing of the test code.
+* Implement [#389](https://github.com/retest/recheck-web/issues/389) 
+    * All CSS selectors using attribute syntax are supported.
+    * The pseudo class selectors: checked, disabled, and read-only are supported.
 
 ### Improvements
 
