@@ -13,7 +13,7 @@ import de.retest.recheck.junit.jupiter.RecheckExtension;
 import de.retest.web.testutils.PageFactory;
 
 @ExtendWith( RecheckExtension.class )
-class SpecialContainerTestIT {
+class SpecialContainerIT {
 	WebDriver driver;
 	Recheck re;
 
