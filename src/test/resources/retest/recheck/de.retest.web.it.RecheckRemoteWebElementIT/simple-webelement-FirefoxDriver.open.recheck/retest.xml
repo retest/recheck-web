@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.7.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.9.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="input" screenId="1" screen="WebElement" title="html[1]/body[1]/form[1]/input[1]">
 			<identifyingAttributes>
@@ -131,10 +131,6 @@
 					<entry>
 						<key>type</key>
 						<value xsi:type="xsd:string">email</value>
-					</entry>
-					<entry>
-						<key>user-select</key>
-						<value xsi:type="xsd:string">text</value>
 					</entry>
 				</attributes>
 			</attributes>

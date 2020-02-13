@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.7.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.9.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="We Leave From Here" title="We Leave From Here">
 			<identifyingAttributes>
@@ -231,10 +231,6 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">radio</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -1202,10 +1198,6 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">radio</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -2256,10 +2248,6 @@
 									<value xsi:type="xsd:string">radio</value>
 								</entry>
 								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
-								</entry>
-								<entry>
 									<key>value</key>
 									<value xsi:type="xsd:string">cheese and peas</value>
 								</entry>
@@ -3283,10 +3271,6 @@
 									<value xsi:type="xsd:string">checkbox</value>
 								</entry>
 								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
-								</entry>
-								<entry>
 									<key>value</key>
 									<value xsi:type="xsd:string">on</value>
 								</entry>
@@ -3821,10 +3805,6 @@
 									<value xsi:type="xsd:string">checkbox</value>
 								</entry>
 								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
-								</entry>
-								<entry>
 									<key>value</key>
 									<value xsi:type="xsd:string">furrfu</value>
 								</entry>
@@ -3919,10 +3899,6 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">radio</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -4077,10 +4053,6 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">checkbox</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -4474,10 +4446,6 @@
 									<value xsi:type="xsd:string">checkbox</value>
 								</entry>
 								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
-								</entry>
-								<entry>
 									<key>value</key>
 									<value xsi:type="xsd:string">on</value>
 								</entry>
@@ -4564,10 +4532,6 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">radio</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -4689,10 +4653,6 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">radio</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -4892,10 +4852,6 @@
 									</entry>
 									<entry>
 										<key>type</key>
-										<value xsi:type="xsd:string">text</value>
-									</entry>
-									<entry>
-										<key>user-select</key>
 										<value xsi:type="xsd:string">text</value>
 									</entry>
 									<entry>
@@ -5188,10 +5144,6 @@
 									<key>type</key>
 									<value xsi:type="xsd:string">text</value>
 								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
-								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
@@ -5330,10 +5282,6 @@
 									<key>type</key>
 									<value xsi:type="xsd:string">text</value>
 								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
-								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
@@ -5466,10 +5414,6 @@
 								</entry>
 								<entry>
 									<key>type</key>
-									<value xsi:type="xsd:string">text</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
 									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
@@ -5625,10 +5569,6 @@
 								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>vertical-align</key>
@@ -5788,10 +5728,6 @@
 								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>value</key>
@@ -5956,10 +5892,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
-								</entry>
-								<entry>
 									<key>vertical-align</key>
 									<value xsi:type="xsd:string">text-bottom</value>
 								</entry>
@@ -6065,10 +5997,6 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">file</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
 									<key>white-space</key>
@@ -6203,10 +6131,6 @@
 								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -6830,10 +6754,6 @@
 										<key>type</key>
 										<value xsi:type="xsd:string">text</value>
 									</entry>
-									<entry>
-										<key>user-select</key>
-										<value xsi:type="xsd:string">text</value>
-									</entry>
 								</attributes>
 							</attributes>
 						</containedElements>
@@ -6974,10 +6894,6 @@
 									</entry>
 									<entry>
 										<key>type</key>
-										<value xsi:type="xsd:string">text</value>
-									</entry>
-									<entry>
-										<key>user-select</key>
 										<value xsi:type="xsd:string">text</value>
 									</entry>
 								</attributes>
@@ -7299,10 +7215,6 @@
 									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
-								</entry>
-								<entry>
 									<key>value</key>
 									<value xsi:type="xsd:string">id</value>
 								</entry>
@@ -7438,10 +7350,6 @@
 								</entry>
 								<entry>
 									<key>type</key>
-									<value xsi:type="xsd:string">text</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
 									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
@@ -7583,10 +7491,6 @@
 									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
-								</entry>
-								<entry>
 									<key>value</key>
 									<value xsi:type="xsd:string">name</value>
 								</entry>
@@ -7722,10 +7626,6 @@
 								</entry>
 								<entry>
 									<key>type</key>
-									<value xsi:type="xsd:string">text</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
 									<value xsi:type="xsd:string">text</value>
 								</entry>
 								<entry>
@@ -7869,10 +7769,6 @@
 								<entry>
 									<key>text-decoration-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -8023,10 +7919,6 @@
 									<entry>
 										<key>type</key>
 										<value xsi:type="xsd:string">checkbox</value>
-									</entry>
-									<entry>
-										<key>user-select</key>
-										<value xsi:type="xsd:string">text</value>
 									</entry>
 									<entry>
 										<key>value</key>
@@ -8323,10 +8215,6 @@
 									<key>type</key>
 									<value xsi:type="xsd:string">email</value>
 								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
-								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
@@ -8460,10 +8348,6 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">number</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -8647,10 +8531,6 @@
 							</entry>
 							<entry>
 								<key>type</key>
-								<value xsi:type="xsd:string">text</value>
-							</entry>
-							<entry>
-								<key>user-select</key>
 								<value xsi:type="xsd:string">text</value>
 							</entry>
 						</attributes>
@@ -8905,10 +8785,6 @@
 								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">image</value>
-								</entry>
-								<entry>
-									<key>user-select</key>
-									<value xsi:type="xsd:string">text</value>
 								</entry>
 							</attributes>
 						</attributes>
