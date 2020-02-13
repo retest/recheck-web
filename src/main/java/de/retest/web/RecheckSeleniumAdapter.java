@@ -53,12 +53,17 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	public RecheckSeleniumAdapter( final RecheckOptions options ) {
 		retestIdProvider = options.getRetestIdProvider();
+		screenshotProvider = getScreenshotProvider( options );
+	}
+
+	private ScreenshotProvider getScreenshotProvider( final RecheckOptions options ) {
 		if ( options instanceof RecheckWebOptions ) {
-			final RecheckWebOptions webOptions = (RecheckWebOptions) options;
-			screenshotProvider = webOptions.getScreenshotProvider();
-		} else {
-			screenshotProvider = RecheckWebProperties.getInstance().screenshotProvider();
+			final ScreenshotProvider fromOptions = ((RecheckWebOptions) options).getScreenshotProvider();
+			if ( fromOptions != null ) {
+				return fromOptions;
+			}
 		}
+		return RecheckWebProperties.getInstance().screenshotProvider();
 	}
 
 	public RecheckSeleniumAdapter() {
