@@ -5,7 +5,7 @@ Test 'testSimpleChange' has 4 difference(s) in 1 state(s):
 open resulted in:
 	Metadata Differences:
 		browser.name: expected="null", actual="chrome"
-		browser.version: expected="null", actual="80.0.3987.87"
+		browser.version: expected="null", actual="80.0.3987.100"
 		check.type: expected="null", actual="driver"
 		driver.type: expected="null", actual="ChromeDriver"
 		os.name: expected="null", actual="LINUX"

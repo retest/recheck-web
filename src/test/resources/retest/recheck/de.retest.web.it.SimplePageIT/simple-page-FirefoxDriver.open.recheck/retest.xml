@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.7.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.9.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="Hello WebDriver" title="Hello WebDriver">
 			<identifyingAttributes>
@@ -2056,10 +2056,6 @@
 									<entry>
 										<key>type</key>
 										<value xsi:type="xsd:string">checkbox</value>
-									</entry>
-									<entry>
-										<key>user-select</key>
-										<value xsi:type="xsd:string">text</value>
 									</entry>
 									<entry>
 										<key>value</key>
