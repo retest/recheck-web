@@ -18,8 +18,7 @@ public interface RecheckWebProperties extends Reloadable {
 	 */
 
 	static RecheckWebProperties getInstance() {
-		final RecheckWebProperties instance =
-				ConfigCache.getOrCreate( RecheckWebProperties.class, System.getProperties() );
+		final RecheckWebProperties instance = ConfigCache.getOrCreate( RecheckWebProperties.class );
 		instance.reload();
 		return instance;
 	}
