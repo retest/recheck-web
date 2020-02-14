@@ -72,7 +72,6 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 
 	@Override
 	public RecheckAdapter initialize( final RecheckOptions opts ) {
-		RecheckWebProperties.init();
 		return new RecheckSeleniumAdapter( opts );
 	}
 

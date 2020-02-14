@@ -4,10 +4,8 @@ import org.aeonbits.owner.Config.LoadPolicy;
 import org.aeonbits.owner.Config.LoadType;
 import org.aeonbits.owner.Config.Sources;
 import org.aeonbits.owner.ConfigCache;
-import org.aeonbits.owner.ConfigFactory;
 import org.aeonbits.owner.Reloadable;
 
-import de.retest.recheck.configuration.ProjectRootFinderUtil;
 import de.retest.web.screenshot.ScreenshotProvider;
 import de.retest.web.screenshot.ScreenshotProviders.ScreenshotProviderConverter;
 
@@ -18,11 +16,6 @@ public interface RecheckWebProperties extends Reloadable {
 	/*
 	 * Basic usage.
 	 */
-
-	static void init() {
-		ProjectRootFinderUtil.getProjectRoot().ifPresent(
-				projectRoot -> ConfigFactory.setProperty( "projectroot", projectRoot.toAbsolutePath().toString() ) );
-	}
 
 	static RecheckWebProperties getInstance() {
 		final RecheckWebProperties instance =
