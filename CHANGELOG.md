@@ -30,7 +30,7 @@ Table of Contents
 ### Bug Fixes
 
 * Fix that cascading frames inside of frames are not analyzed. Now depth doesn't matter...
-* Fix that `NoScreenshot` or `RecheckWebOptions#disableScreenshots` is not applied to web elements.
+* Fix that `NoScreenshot` or `RecheckWebOptions#disableScreenshots()` is not applied to web elements.
 
 ### New Features
 
