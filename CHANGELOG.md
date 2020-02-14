@@ -25,7 +25,7 @@ Table of Contents
 
 ### Breaking Changes
 
-* Add `shoot(WebDriver, WebElement)` in interface `ScreenshotProvider` to create screenshots for `WebElement`
+* Add `shoot(WebDriver, WebElement)` in interface `ScreenshotProvider` to create screenshots for `WebElement`.
 
 ### Bug Fixes
 
