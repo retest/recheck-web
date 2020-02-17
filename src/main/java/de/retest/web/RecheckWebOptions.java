@@ -59,8 +59,7 @@ public class RecheckWebOptions extends RecheckOptions {
 
 		@Override
 		public RecheckWebOptions build() {
-			return new RecheckWebOptions( super.build(), checkNamingStrategy, screenshotProvider != null
-					? screenshotProvider : RecheckWebProperties.getInstance().screenshotProvider() );
+			return new RecheckWebOptions( super.build(), checkNamingStrategy, screenshotProvider );
 		}
 	}
 }

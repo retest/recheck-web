@@ -46,12 +46,10 @@ class RecheckWebImplIT {
 		re.startTest();
 		driver.startTest();
 
-		assertThatThrownBy( () -> {
-			re.check( driver, "explicit-implicit-mixed" );
-		} ) //
+		assertThatThrownBy( () -> re.check( driver, "explicit-implicit-mixed" ) ) //
 				.isInstanceOf( UnsupportedOperationException.class ) //
-				.hasMessageStartingWith(
-						"The 'RecheckDriver' does implicit checking after each action, therefore no explicit check with 'Recheck#check' is needed" );
+				.hasMessageStartingWith( "The 'RecheckDriver' does implicit checking after each action, "
+						+ "therefore no explicit check with 'Recheck#check' is needed" );
 
 		capTestSilently( re );
 		capTestSilently( driver );
