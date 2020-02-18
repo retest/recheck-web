@@ -21,7 +21,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import de.retest.recheck.RecheckImpl;
 import de.retest.recheck.ui.descriptors.SutState;
 
-class RootElementPeerNullTest {
+class RootElementPeerNullIT {
 
 	RecheckImpl re;
 	WebDriver driver;
