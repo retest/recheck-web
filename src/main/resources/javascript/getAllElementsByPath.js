@@ -195,6 +195,7 @@ var pseudoElements = [
 
 var defaultPseudoElementValues = [];
 defaultPseudoElementValues['background-color'] = ['rgba(0, 0, 0, 0)'];
+defaultPseudoElementValues['bottom'] = ['auto'];
 defaultPseudoElementValues['border-bottom-style'] = ['none'];
 defaultPseudoElementValues['border-bottom-width'] = ['0px'];
 defaultPseudoElementValues['border-left-style'] = ['none'];
@@ -206,6 +207,7 @@ defaultPseudoElementValues['border-top-width'] = ['0px'];
 defaultPseudoElementValues['box-sizing'] = ['content-box'];
 defaultPseudoElementValues['content'] = ['none', 'normal'];
 defaultPseudoElementValues['display'] = ['inline'];
+defaultPseudoElementValues['left'] = ['auto'];
 defaultPseudoElementValues['margin-bottom'] = ['0px'];
 defaultPseudoElementValues['margin-left'] = ['0px'];
 defaultPseudoElementValues['margin-right'] = ['0px'];
@@ -214,7 +216,12 @@ defaultPseudoElementValues['min-height'] = ['0px'];
 defaultPseudoElementValues['min-width'] = ['0px'];
 defaultPseudoElementValues['padding-bottom'] = ['0px'];
 defaultPseudoElementValues['padding-top'] = ['0px'];
+defaultPseudoElementValues['position'] = ['static'];
+defaultPseudoElementValues['pseudo'] = ['true'];
+defaultPseudoElementValues['right'] = ['auto'];
 defaultPseudoElementValues['text-decoration-line'] = ['none'];
+defaultPseudoElementValues['top'] = ['auto'];
+defaultPseudoElementValues['transform'] = ['none'];
 
 var ELEMENT_NODE = 1;
 var TEXT_NODE = 3;
@@ -425,14 +432,16 @@ function addPseudoElements(node, nodePath, allElements) {
 				};
 			for (attributeName of cssAttributes) {
 				if (!extractedAttributes[attributeName]) {
-					if (
-						!Object.keys(defaultPseudoElementValues).includes(attributeName)
-						&& parentStyle[attributeName] != style[attributeName]
-						||
-						Object.keys(defaultPseudoElementValues).includes(attributeName)
-						&& !defaultPseudoElementValues[attributeName].includes(style[attributeName])
-						) {
-						extractedAttributes[attributeName] = style[attributeName];
+					if (style[attributeName]) {
+						if (
+							!Object.keys(defaultPseudoElementValues).includes(attributeName)
+							&& parentStyle[attributeName] != style[attributeName]
+							||
+							Object.keys(defaultPseudoElementValues).includes(attributeName)
+							&& !defaultPseudoElementValues[attributeName].includes(style[attributeName])
+							) {
+							extractedAttributes[attributeName] = style[attributeName];
+						}
 					}
 				}
 			}
