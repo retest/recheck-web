@@ -194,12 +194,26 @@ var pseudoElements = [
 ];
 
 var defaultPseudoElementValues = [];
-defaultPseudoElementValues['display'] = ['inline'];
+defaultPseudoElementValues['background-color'] = ['rgba(0, 0, 0, 0)'];
+defaultPseudoElementValues['border-bottom-style'] = ['none'];
+defaultPseudoElementValues['border-bottom-width'] = ['0px'];
+defaultPseudoElementValues['border-left-style'] = ['none'];
+defaultPseudoElementValues['border-left-width'] = ['0px'];
+defaultPseudoElementValues['border-right-style'] = ['none'];
+defaultPseudoElementValues['border-right-width'] = ['0px'];
+defaultPseudoElementValues['border-top-style'] = ['none'];
+defaultPseudoElementValues['border-top-width'] = ['0px'];
+defaultPseudoElementValues['box-sizing'] = ['content-box'];
 defaultPseudoElementValues['content'] = ['none', 'normal'];
+defaultPseudoElementValues['display'] = ['inline'];
 defaultPseudoElementValues['margin-bottom'] = ['0px'];
-defaultPseudoElementValues['margin-top'] = ['0px'];
 defaultPseudoElementValues['margin-left'] = ['0px'];
 defaultPseudoElementValues['margin-right'] = ['0px'];
+defaultPseudoElementValues['margin-top'] = ['0px'];
+defaultPseudoElementValues['min-height'] = ['0px'];
+defaultPseudoElementValues['min-width'] = ['0px'];
+defaultPseudoElementValues['padding-bottom'] = ['0px'];
+defaultPseudoElementValues['padding-top'] = ['0px'];
 defaultPseudoElementValues['text-decoration-line'] = ['none'];
 
 var ELEMENT_NODE = 1;
@@ -404,7 +418,6 @@ function addPseudoElements(node, nodePath, allElements) {
 			if (!style || !parentStyle) {
 				continue;
 			}
-			// <pseudo:before>[1]
 			var path = nodePath + "/<pseudo" + pseudo + ">[1]";
 			var extractedAttributes = {
 					"pseudo": allElements.find(elem => elem[0] === nodePath && elem[1].shown),
@@ -412,8 +425,12 @@ function addPseudoElements(node, nodePath, allElements) {
 				};
 			for (attributeName of cssAttributes) {
 				if (!extractedAttributes[attributeName]) {
-					if (!Object.keys(defaultPseudoElementValues).includes(attributeName) && parentStyle[attributeName] != style[attributeName]
-						|| Object.keys(defaultPseudoElementValues).includes(attributeName) && !defaultPseudoElementValues[attributeName].includes(style[attributeName])
+					if (
+						!Object.keys(defaultPseudoElementValues).includes(attributeName)
+						&& parentStyle[attributeName] != style[attributeName]
+						||
+						Object.keys(defaultPseudoElementValues).includes(attributeName)
+						&& !defaultPseudoElementValues[attributeName].includes(style[attributeName])
 						) {
 						extractedAttributes[attributeName] = style[attributeName];
 					}
