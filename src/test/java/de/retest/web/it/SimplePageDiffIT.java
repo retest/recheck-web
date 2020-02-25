@@ -1,8 +1,8 @@
 package de.retest.web.it;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.fail;
 
-import org.approvaltests.Approvals;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -36,7 +36,15 @@ public class SimplePageDiffIT {
 			re.capTest();
 			fail( "Assertion Error expected" );
 		} catch ( final AssertionError e ) {
-			Approvals.verify( e.getMessage() );
+			assertThat( e ).hasMessageContaining( "Test 'testSimpleChange' has 4 difference(s) in 1 state(s):" ) //
+					.hasMessageEndingWith( "\tdiv at 'html[1]/body[1]/div[3]':\n" + //
+							"\t\tid: expected=\"twoblocks\", actual=\"changedblock\"\n" + //
+							"\tp [Some text] at 'html[1]/body[1]/div[3]/p[1]':\n" + //
+							"\t\ttext: expected=\"Some text\", actual=\"Some changed text\"\n" + //
+							"\tp [Some more text] at 'html[1]/body[1]/div[3]/p[2]':\n" + //
+							"\t\twas deleted\n" + //
+							"\th2 [Subheading] at 'html[1]/body[1]/h2[1]':\n" + //
+							"\t\twas inserted" );
 		}
 	}
 
