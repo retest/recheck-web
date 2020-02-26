@@ -425,7 +425,7 @@ function addPseudoElements(node, nodePath, allElements) {
 			if (!style || !parentStyle) {
 				continue;
 			}
-			var path = nodePath + "/<pseudo" + pseudo + ">[1]";
+			var path = nodePath + "/#pseudo" + pseudo + "[1]";
 			var extractedAttributes = {
 					"pseudo": allElements.find(elem => elem[0] === nodePath && elem[1].shown),
 					"tagName": pseudo,

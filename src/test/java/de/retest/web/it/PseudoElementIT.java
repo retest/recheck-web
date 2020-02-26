@@ -37,15 +37,15 @@ class PseudoElementIT {
 		assertThatThrownBy( re::capTest ) //
 				.hasMessageNotContaining( "link at 'html[1]/head[1]/link[1]'" ) //
 				.hasMessageContaining( "h1 [This is a heading] at 'html[1]/body[1]/h1[1]'" ) //
-				.hasMessageContaining( "::before at 'html[1]/body[1]/h1[1]/<pseudo::before>[1]'" ) //
+				.hasMessageContaining( "::before at 'html[1]/body[1]/h1[1]/#pseudo::before[1]'" ) //
 				.hasMessageContaining(
 						"content: expected=\"This is an invisible text before!\", actual=\"This is a changed invisible text using a before pseudo element!\"" ) //
-				.hasMessageContaining( "::after at 'html[1]/body[1]/h1[1]/<pseudo::after>[1]'" ) //
+				.hasMessageContaining( "::after at 'html[1]/body[1]/h1[1]/#pseudo::after[1]'" ) //
 				.hasMessageContaining(
 						"content: expected=\"This is an invisible text after!\", actual=\"This is a changed invisible text using an after pseudo element!\"" ) //
-				.hasMessageContaining( "::first-line at 'html[1]/body[1]/p[1]/<pseudo::first-line>[1]'" ) //
+				.hasMessageContaining( "::first-line at 'html[1]/body[1]/p[1]/#pseudo::first-line[1]'" ) //
 				.hasMessageContaining( "color: expected=\"rgb(170, 187, 204)\", actual=\"rgb(221, 238, 255)\"" ) //
-				.hasMessageContaining( "::first-letter at 'html[1]/body[1]/p[1]/<pseudo::first-letter>[1]'" ) //
+				.hasMessageContaining( "::first-letter at 'html[1]/body[1]/p[1]/#pseudo::first-letter[1]'" ) //
 				.hasMessageContaining( "color: expected=\"rgb(187, 204, 170)\", actual=\"rgb(238, 255, 221)\"" ) //
 		;
 	}
