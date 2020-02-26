@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
+import java.util.stream.Collectors;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
@@ -68,7 +69,19 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 					+ " and first check the state before being able to use the retest ID locator." );
 		}
 		final Element searchedFor = by.findElement( lastExpectedState, lastActualState );
-		return wrappedDriver.findElement( By.xpath( searchedFor.getIdentifyingAttributes().getPath() ) );
+		final WebElement element =
+				wrappedDriver.findElement( By.xpath( searchedFor.getIdentifyingAttributes().getPath() ) );
+		return wrap( element );
+	}
+
+	protected WebElement wrap( final WebElement element ) {
+		return WrappingWebElement.wrap( this, element );
+	}
+
+	private List<WebElement> wrap( final List<WebElement> elements ) {
+		return elements.stream() //
+				.map( this::wrap ) //
+				.collect( Collectors.toList() );
 	}
 
 	public WebElement findElementByRetestId( final String retestId ) {
@@ -81,99 +94,99 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 			return findElement( (ByBestMatchToRetestId) by );
 		}
 		try {
-			return wrappedDriver.findElement( by );
+			return wrap( wrappedDriver.findElement( by ) );
 		} catch ( final NoSuchElementException e ) {
 			final WebElement matchedOld = TestHealer.findElement( by, this );
 			if ( matchedOld == null ) {
 				throw e;
 			}
-			return matchedOld;
+			return wrap( matchedOld );
 		}
 	}
 
 	@Override
 	public List<WebElement> findElements( final By by ) {
-		return wrappedDriver.findElements( by );
+		return wrap( wrappedDriver.findElements( by ) );
 	}
 
 	@Override
 	public WebElement findElementById( final String using ) {
-		return wrappedDriver.findElementById( using );
+		return wrap( wrappedDriver.findElementById( using ) );
 	}
 
 	@Override
 	public List<WebElement> findElementsById( final String using ) {
-		return wrappedDriver.findElementsById( using );
+		return wrap( wrappedDriver.findElementsById( using ) );
 	}
 
 	@Override
 	public WebElement findElementByClassName( final String using ) {
-		return wrappedDriver.findElementByClassName( using );
+		return wrap( wrappedDriver.findElementByClassName( using ) );
 	}
 
 	@Override
 	public List<WebElement> findElementsByClassName( final String using ) {
-		return wrappedDriver.findElementsByClassName( using );
+		return wrap( wrappedDriver.findElementsByClassName( using ) );
 	}
 
 	@Override
 	public WebElement findElementByLinkText( final String using ) {
-		return wrappedDriver.findElementByLinkText( using );
+		return wrap( wrappedDriver.findElementByLinkText( using ) );
 	}
 
 	@Override
 	public List<WebElement> findElementsByLinkText( final String using ) {
-		return wrappedDriver.findElementsByLinkText( using );
+		return wrap( wrappedDriver.findElementsByLinkText( using ) );
 	}
 
 	@Override
 	public WebElement findElementByPartialLinkText( final String using ) {
-		return wrappedDriver.findElementByPartialLinkText( using );
+		return wrap( wrappedDriver.findElementByPartialLinkText( using ) );
 	}
 
 	@Override
 	public List<WebElement> findElementsByPartialLinkText( final String using ) {
-		return wrappedDriver.findElementsByPartialLinkText( using );
+		return wrap( wrappedDriver.findElementsByPartialLinkText( using ) );
 	}
 
 	@Override
 	public WebElement findElementByName( final String using ) {
-		return wrappedDriver.findElementByName( using );
+		return wrap( wrappedDriver.findElementByName( using ) );
 	}
 
 	@Override
 	public List<WebElement> findElementsByName( final String using ) {
-		return wrappedDriver.findElementsByName( using );
+		return wrap( wrappedDriver.findElementsByName( using ) );
 	}
 
 	@Override
 	public WebElement findElementByCssSelector( final String using ) {
-		return wrappedDriver.findElementByCssSelector( using );
+		return wrap( wrappedDriver.findElementByCssSelector( using ) );
 	}
 
 	@Override
 	public List<WebElement> findElementsByCssSelector( final String using ) {
-		return wrappedDriver.findElementsByCssSelector( using );
+		return wrap( wrappedDriver.findElementsByCssSelector( using ) );
 	}
 
 	@Override
 	public WebElement findElementByTagName( final String using ) {
-		return wrappedDriver.findElementByTagName( using );
+		return wrap( wrappedDriver.findElementByTagName( using ) );
 	}
 
 	@Override
 	public List<WebElement> findElementsByTagName( final String using ) {
-		return wrappedDriver.findElementsByTagName( using );
+		return wrap( wrappedDriver.findElementsByTagName( using ) );
 	}
 
 	@Override
 	public WebElement findElementByXPath( final String using ) {
-		return wrappedDriver.findElementByXPath( using );
+		return wrap( wrappedDriver.findElementByXPath( using ) );
 	}
 
 	@Override
 	public List<WebElement> findElementsByXPath( final String using ) {
-		return wrappedDriver.findElementsByXPath( using );
+		return wrap( wrappedDriver.findElementsByXPath( using ) );
 	}
 
 	@Override
