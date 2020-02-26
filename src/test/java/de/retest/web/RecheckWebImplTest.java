@@ -14,7 +14,10 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WrapsDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.RemoteWebElement;
 
 import de.retest.recheck.RecheckAdapter;
 import de.retest.recheck.RecheckOptions;
@@ -110,6 +113,60 @@ class RecheckWebImplTest {
 		capTestSilently();
 	}
 
+	@Test
+	void check_should_allow_for_web_elements_to_be_passed_which_extracts_the_driver() {
+		re.startTest();
+
+		final WebDriver driver = mock( UnbreakableDriver.class );
+
+		final RemoteWebElement element = mock( RemoteWebElement.class );
+		when( element.getWrappedDriver() ).thenReturn( driver );
+
+		re.check( element, adapter, "element_should_not_throw_exception" );
+
+		assertThat( re.getDriver() ).isEqualTo( driver );
+
+		capTestSilently();
+	}
+
+	@Test
+	void check_should_allow_for_web_elements_to_be_passed_which_extracts_the_wrapped_driver() {
+		re.startTest();
+
+		final WebDriver wrapped = mock( UnbreakableDriver.class );
+
+		final WrappingDriver driver = mock( WrappingDriver.class );
+		when( driver.getWrappedDriver() ).thenReturn( wrapped );
+
+		final RemoteWebElement element = mock( RemoteWebElement.class );
+		when( element.getWrappedDriver() ).thenReturn( driver );
+
+		re.check( element, adapter, "element_should_not_throw_exception" );
+
+		assertThat( re.getDriver() ).isEqualTo( wrapped );
+
+		capTestSilently();
+	}
+
+	@Test
+	void check_should_allow_for_web_elements_to_be_passed_which_extracts_the_legacy_wrapped_driver() {
+		re.startTest();
+
+		final WebDriver wrapped = mock( UnbreakableDriver.class );
+
+		final LegacyWrappingDriver driver = mock( LegacyWrappingDriver.class );
+		when( driver.getWrappedDriver() ).thenReturn( wrapped );
+
+		final RemoteWebElement element = mock( RemoteWebElement.class );
+		when( element.getWrappedDriver() ).thenReturn( driver );
+
+		re.check( element, adapter, "element_should_not_throw_exception" );
+
+		assertThat( re.getDriver() ).isEqualTo( wrapped );
+
+		capTestSilently();
+	}
+
 	private void capTestSilently() {
 		try {
 			re.capTest();
@@ -117,4 +174,8 @@ class RecheckWebImplTest {
 			// expected
 		}
 	}
+
+	interface WrappingDriver extends WebDriver, WrapsDriver {}
+
+	interface LegacyWrappingDriver extends WebDriver, org.openqa.selenium.internal.WrapsDriver {}
 }
