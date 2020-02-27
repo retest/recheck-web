@@ -292,9 +292,6 @@
 					<!-- combine Surefire and Failsafe reports for SonarCloud -->
 					<!-- see https://stackoverflow.com/a/15567782 -->
 					<reportsDirectory>${project.build.directory}/surefire-reports/</reportsDirectory>
-					<systemPropertyVariables>
-						<de.retest.recheck.rehub.reportUploadEnabled>true</de.retest.recheck.rehub.reportUploadEnabled>
-					</systemPropertyVariables>
 				</configuration>
 				<executions>
 					<execution>
