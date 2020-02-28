@@ -8,15 +8,17 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.Rectangle;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WrapsDriver;
 import org.openqa.selenium.internal.WrapsElement;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor( access = AccessLevel.PRIVATE )
-public class AutocheckingWebElement implements WebElement, WrapsElement {
+public class AutocheckingWebElement implements WebElement, WrapsDriver, WrapsElement {
 
 	private final WebElement wrappedElement;
 	private final AutocheckingRecheckDriver driver;
@@ -140,6 +142,11 @@ public class AutocheckingWebElement implements WebElement, WrapsElement {
 	@Override
 	public String getCssValue( final String propertyName ) {
 		return wrappedElement.getCssValue( propertyName );
+	}
+
+	@Override
+	public WebDriver getWrappedDriver() {
+		return driver;
 	}
 
 	@Override
