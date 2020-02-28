@@ -4,18 +4,22 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
 import java.io.UncheckedIOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Set;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import org.yaml.snakeyaml.DumperOptions;
+import org.yaml.snakeyaml.LoaderOptions;
+import org.yaml.snakeyaml.Yaml;
+import org.yaml.snakeyaml.constructor.Constructor;
+import org.yaml.snakeyaml.nodes.NodeId;
+import org.yaml.snakeyaml.nodes.Tag;
+import org.yaml.snakeyaml.representer.Representer;
+import org.yaml.snakeyaml.resolver.Resolver;
 
 import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
@@ -44,17 +48,25 @@ public class DefaultWebValueFinder implements DefaultValueFinder {
 
 	private Map<String, Map<String, String>> readAttributesConfigFromFile( final InputStream in ) throws IOException {
 		final Map<String, Map<String, String>> defaultValues = new HashMap<>();
-		final ObjectMapper mapper = new ObjectMapper( new YAMLFactory() );
-		final JsonNode jsonNode = mapper.readTree( in );
-		for ( final Iterator<Entry<String, JsonNode>> elements = jsonNode.fields(); elements.hasNext(); ) {
-			final Entry<String, JsonNode> field = elements.next();
-			final Map<String, String> defaults = new HashMap<>();
-			final ArrayNode valuesNode = (ArrayNode) field.getValue();
-			for ( final Iterator<JsonNode> values = valuesNode.elements(); values.hasNext(); ) {
-				final Entry<String, JsonNode> value = values.next().fields().next();
-				defaults.put( value.getKey(), value.getValue().asText() );
+		Yaml yaml = new Yaml( new Constructor(), new Representer(), new DumperOptions(), new LoaderOptions(),
+				new Resolver() {
+			@Override
+			public Tag resolve( NodeId kind, String value, boolean implicit ) {
+				if ( (kind == NodeId.scalar) && implicit ) {
+					return Tag.STR;
+				}
+				return super.resolve( kind, value, implicit );
 			}
-			defaultValues.put( field.getKey(), defaults );
+		} );
+		Map<String, Object> loaded = yaml.load( in );
+		for ( Map.Entry<String, Object> entry : loaded.entrySet() ) {
+			final Map<String, String> defaults = new HashMap<>();
+			ArrayList<LinkedHashMap<String, String>> value =
+					(ArrayList<LinkedHashMap<String, String>>) entry.getValue();
+			for ( LinkedHashMap<String, String> linkedHashMap : value ) {
+				defaults.putAll( linkedHashMap );
+			}
+			defaultValues.put( entry.getKey(), defaults );
 		}
 		return defaultValues;
 	}
