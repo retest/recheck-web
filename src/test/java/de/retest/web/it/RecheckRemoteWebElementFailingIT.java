@@ -48,7 +48,8 @@ class RecheckRemoteWebElementFailingIT {
 			fail( MISSING_ASSERTION_MSG );
 		} catch ( final AssertionError e ) {
 			Assertions.assertThat( e ).hasMessageContaining(
-					"option at 'html[1]/body[1]/form[3]/select[2]/option[5]':\n		was inserted" );
+					"html[1]/body[1]/form[3]/select[2]/option[5] at 'html[1]/body[1]/form[3]/select[2]/option[5]':\n"
+							+ "\t\twas inserted" );
 		}
 	}
 

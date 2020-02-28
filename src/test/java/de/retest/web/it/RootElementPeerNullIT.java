@@ -58,6 +58,7 @@ class RootElementPeerNullIT {
 
 		assertThatThrownBy( () -> re.capTest() ) //
 				.isInstanceOf( AssertionError.class ) //
-				.hasMessageContaining( "nav at 'html[1]/body[1]/div[1]/nav[1]':\n\t\twas inserted" );
+				.hasMessageContaining( "html[1]/body[1]/div[1]/nav[1] at 'html[1]/body[1]/div[1]/nav[1]':\n" //
+						+ "\t\twas inserted" );
 	}
 }
