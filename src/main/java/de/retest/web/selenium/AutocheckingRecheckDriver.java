@@ -1,8 +1,5 @@
 package de.retest.web.selenium;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -117,35 +114,23 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 	}
 
 	@Override
+	protected WebElement wrap( final WebElement element ) {
+		return AutocheckingWebElement.of( element, this );
+	}
+
+	@Override
 	public AutocheckingWebElement findElement( final ByBestMatchToRetestId by ) {
 		final WebElement wrapped = super.findElement( by );
 		String result = wrapped.toString();
 		// replace " -> xpath: HTML[1]/BODY[1]/A[1]"
 		result = result.substring( 0, result.lastIndexOf( " -> xpath: " ) );
 		final String representation = result + " -> retestId: " + by.getRetestId() + "]";
-		return new AutocheckingWebElement( wrapped, this ) {
-			@Override
-			public String toString() {
-				return representation;
-			}
-		};
+		return AutocheckingWebElement.of( wrapped, this, representation );
 	}
 
 	@Override
 	public AutocheckingWebElement findElement( final By by ) {
-		final WebElement result = super.findElement( by );
-		if ( result instanceof AutocheckingWebElement ) {
-			// Element was not found, so we already have it wrapped
-			return (AutocheckingWebElement) result;
-		}
-		return new AutocheckingWebElement( result, this );
-	}
-
-	@Override
-	public List<WebElement> findElements( final By by ) {
-		return super.findElements( by ).stream() //
-				.map( element -> new AutocheckingWebElement( element, this ) ) //
-				.collect( Collectors.toList() );
+		return (AutocheckingWebElement) super.findElement( by );
 	}
 
 	void check( final String action, final WebElement target, final Object... params ) {

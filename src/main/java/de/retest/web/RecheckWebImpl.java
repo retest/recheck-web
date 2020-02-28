@@ -8,6 +8,8 @@ import de.retest.recheck.RecheckOptions;
 import de.retest.recheck.ui.descriptors.SutState;
 import de.retest.web.selenium.ImplicitDriverWrapper;
 import de.retest.web.selenium.UnbreakableDriver;
+import de.retest.web.util.SeleniumWrapperUtil;
+import de.retest.web.util.SeleniumWrapperUtil.WrapperOf;
 import lombok.AccessLevel;
 import lombok.Getter;
 
@@ -46,6 +48,9 @@ public class RecheckWebImpl extends RecheckImpl {
 		}
 		if ( driver instanceof UnbreakableDriver ) {
 			return (UnbreakableDriver) driver;
+		}
+		if ( SeleniumWrapperUtil.isWrapper( WrapperOf.DRIVER, driver ) ) {
+			return retrieveUnbreakableDriver( SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, driver ) );
 		}
 		return null;
 	}

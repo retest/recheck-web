@@ -15,7 +15,7 @@ class AutocheckingWebElementTest {
 	void check_is_skiped_when_skipCheck_is_called() throws Exception {
 		final WebElement delegate = mock( WebElement.class );
 		final AutocheckingRecheckDriver driver = mock( AutocheckingRecheckDriver.class );
-		final AutocheckingWebElement autoCheckElement = new AutocheckingWebElement( delegate, driver );
+		final AutocheckingWebElement autoCheckElement = AutocheckingWebElement.of( delegate, driver );
 
 		autoCheckElement.skipCheck().clear();
 		verify( delegate, times( 1 ) ).clear();
@@ -39,7 +39,7 @@ class AutocheckingWebElementTest {
 	void changing_methods_should_check_and_delegate_calls() {
 		final WebElement delegate = mock( WebElement.class );
 		final AutocheckingRecheckDriver driver = mock( AutocheckingRecheckDriver.class );
-		final AutocheckingWebElement autoCheckElement = new AutocheckingWebElement( delegate, driver );
+		final AutocheckingWebElement autoCheckElement = AutocheckingWebElement.of( delegate, driver );
 
 		autoCheckElement.clear();
 		verify( delegate, times( 1 ) ).clear();
@@ -62,7 +62,7 @@ class AutocheckingWebElementTest {
 	void other_methods_should_delegate_calls() {
 		final WebElement delegate = mock( WebElement.class );
 		final AutocheckingWebElement autoCheckElement =
-				new AutocheckingWebElement( delegate, mock( AutocheckingRecheckDriver.class ) );
+				AutocheckingWebElement.of( delegate, mock( AutocheckingRecheckDriver.class ) );
 
 		autoCheckElement.getAttribute( "test" );
 		verify( delegate, times( 1 ) ).getAttribute( "test" );

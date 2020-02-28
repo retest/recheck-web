@@ -32,6 +32,7 @@ Table of Contents
 * Fix that cascading frames inside of frames are not analyzed. Now depth doesn't matter...
 * Fix that `NoScreenshot` or `RecheckWebOptions#disableScreenshots()` is not applied to web elements.
 * Fix that `de.retest.recheck.web.screenshot.provider` from `recheck.ignore` is ignored when `RecheckWebOptions` are used.
+* Fix that passing an element into `RecheckWebImpl` from an `UnbreakableDriver` throws an error.
 
 ### New Features
 

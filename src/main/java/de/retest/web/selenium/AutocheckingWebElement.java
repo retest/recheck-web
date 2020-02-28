@@ -8,21 +8,40 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.Rectangle;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WrapsDriver;
 import org.openqa.selenium.internal.WrapsElement;
 
-public class AutocheckingWebElement implements WebElement, WrapsElement {
+import lombok.AccessLevel;
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor( access = AccessLevel.PRIVATE )
+public class AutocheckingWebElement implements WebElement, WrapsDriver, WrapsElement {
 
 	private final WebElement wrappedElement;
 	private final AutocheckingRecheckDriver driver;
 
-	public AutocheckingWebElement( final WebElement wrappedElement, final AutocheckingRecheckDriver driver ) {
+	public static AutocheckingWebElement of( final WebElement wrappedElement, final AutocheckingRecheckDriver driver ) {
 		if ( wrappedElement instanceof AutocheckingWebElement ) {
-			throw new IllegalArgumentException( "Cannot wrap WebElementWrapper inside WebElementWrapper." );
+			return (AutocheckingWebElement) wrappedElement;
 		}
-		this.wrappedElement = wrappedElement;
-		this.driver = driver;
+		return new AutocheckingWebElement( wrappedElement, driver );
+	}
+
+	public static AutocheckingWebElement of( final WebElement wrappedElement, final AutocheckingRecheckDriver driver,
+			final String representation ) {
+		if ( wrappedElement instanceof AutocheckingWebElement ) {
+			return (AutocheckingWebElement) wrappedElement;
+		}
+
+		return new AutocheckingWebElement( wrappedElement, driver ) {
+			@Override
+			public String toString() {
+				return representation;
+			}
+		};
 	}
 
 	/**
@@ -91,13 +110,13 @@ public class AutocheckingWebElement implements WebElement, WrapsElement {
 	@Override
 	public List<WebElement> findElements( final By by ) {
 		return wrappedElement.findElements( by ).stream() //
-				.map( element -> new AutocheckingWebElement( element, driver ) ) //
+				.map( element -> of( element, driver ) ) //
 				.collect( Collectors.toList() );
 	}
 
 	@Override
 	public WebElement findElement( final By by ) {
-		return new AutocheckingWebElement( wrappedElement.findElement( by ), driver );
+		return of( wrappedElement.findElement( by ), driver );
 	}
 
 	@Override
@@ -126,7 +145,17 @@ public class AutocheckingWebElement implements WebElement, WrapsElement {
 	}
 
 	@Override
+	public WebDriver getWrappedDriver() {
+		return driver;
+	}
+
+	@Override
 	public WebElement getWrappedElement() {
 		return wrappedElement;
+	}
+
+	@Override
+	public String toString() {
+		return wrappedElement.toString();
 	}
 }

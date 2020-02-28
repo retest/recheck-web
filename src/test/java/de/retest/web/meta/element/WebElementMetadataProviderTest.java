@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 
 import de.retest.recheck.meta.MetadataProvider;
+import de.retest.web.selenium.AutocheckingRecheckDriver;
 import de.retest.web.selenium.AutocheckingWebElement;
 
 class WebElementMetadataProviderTest {
@@ -26,7 +27,7 @@ class WebElementMetadataProviderTest {
 	@Test
 	void of_should_extract_driver_from_wrapped() throws Exception {
 		final AutocheckingWebElement element = mock( AutocheckingWebElement.class );
-		when( element.getWrappedElement() ).thenReturn( mock( RemoteWebElement.class, RETURNS_MOCKS ) );
+		when( element.getWrappedDriver() ).thenReturn( mock( AutocheckingRecheckDriver.class, RETURNS_MOCKS ) );
 
 		final MetadataProvider cut = WebElementMetadataProvider.of( element );
 
