@@ -4,18 +4,15 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
 import java.io.UncheckedIOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Set;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import org.yaml.snakeyaml.Yaml;
 
 import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
@@ -44,17 +41,16 @@ public class DefaultWebValueFinder implements DefaultValueFinder {
 
 	private Map<String, Map<String, String>> readAttributesConfigFromFile( final InputStream in ) throws IOException {
 		final Map<String, Map<String, String>> defaultValues = new HashMap<>();
-		final ObjectMapper mapper = new ObjectMapper( new YAMLFactory() );
-		final JsonNode jsonNode = mapper.readTree( in );
-		for ( final Iterator<Entry<String, JsonNode>> elements = jsonNode.fields(); elements.hasNext(); ) {
-			final Entry<String, JsonNode> field = elements.next();
+		Yaml yaml = new Yaml();
+		Map<String, Object> loaded = yaml.load( in );
+		for ( Map.Entry<String, Object> entry : loaded.entrySet() ) {
 			final Map<String, String> defaults = new HashMap<>();
-			final ArrayNode valuesNode = (ArrayNode) field.getValue();
-			for ( final Iterator<JsonNode> values = valuesNode.elements(); values.hasNext(); ) {
-				final Entry<String, JsonNode> value = values.next().fields().next();
-				defaults.put( value.getKey(), value.getValue().asText() );
+			ArrayList<LinkedHashMap<String, String>> value =
+					(ArrayList<LinkedHashMap<String, String>>) entry.getValue();
+			for ( LinkedHashMap<String, String> linkedHashMap : value ) {
+				defaults.putAll( linkedHashMap );
 			}
-			defaultValues.put( field.getKey(), defaults );
+			defaultValues.put( entry.getKey(), defaults );
 		}
 		return defaultValues;
 	}
