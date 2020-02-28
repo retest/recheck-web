@@ -12,7 +12,14 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
+import org.yaml.snakeyaml.DumperOptions;
+import org.yaml.snakeyaml.LoaderOptions;
 import org.yaml.snakeyaml.Yaml;
+import org.yaml.snakeyaml.constructor.Constructor;
+import org.yaml.snakeyaml.nodes.NodeId;
+import org.yaml.snakeyaml.nodes.Tag;
+import org.yaml.snakeyaml.representer.Representer;
+import org.yaml.snakeyaml.resolver.Resolver;
 
 import de.retest.recheck.ui.DefaultValueFinder;
 import de.retest.recheck.ui.descriptors.IdentifyingAttributes;
@@ -41,7 +48,16 @@ public class DefaultWebValueFinder implements DefaultValueFinder {
 
 	private Map<String, Map<String, String>> readAttributesConfigFromFile( final InputStream in ) throws IOException {
 		final Map<String, Map<String, String>> defaultValues = new HashMap<>();
-		Yaml yaml = new Yaml();
+		Yaml yaml = new Yaml( new Constructor(), new Representer(), new DumperOptions(), new LoaderOptions(),
+				new Resolver() {
+			@Override
+			public Tag resolve( NodeId kind, String value, boolean implicit ) {
+				if ( (kind == NodeId.scalar) && implicit ) {
+					return Tag.STR;
+				}
+				return super.resolve( kind, value, implicit );
+			}
+		} );
 		Map<String, Object> loaded = yaml.load( in );
 		for ( Map.Entry<String, Object> entry : loaded.entrySet() ) {
 			final Map<String, String> defaults = new HashMap<>();
