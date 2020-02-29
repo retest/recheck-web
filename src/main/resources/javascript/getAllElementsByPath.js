@@ -236,6 +236,7 @@ defaultPseudoElementValues['position'] = ['static'];
 defaultPseudoElementValues['pseudo'] = ['true'];
 defaultPseudoElementValues['resize'] = ['none']; //?RecheckRemoteWebElementIT - html[1]/body[1]/form[4]/textarea[2]
 defaultPseudoElementValues['right'] = ['auto'];
+defaultPseudoElementValues['table-layout'] = ['auto'];
 defaultPseudoElementValues['text-decoration-line'] = ['none'];
 defaultPseudoElementValues['top'] = ['auto'];
 defaultPseudoElementValues['transform'] = ['none'];
@@ -451,12 +452,9 @@ function addPseudoElements(node, nodePath, allElements) {
 			for (attributeName of cssAttributes) {
 				if (!extractedAttributes[attributeName]) {
 					if (style[attributeName]) {
-						if (
-							!Object.keys(defaultPseudoElementValues).includes(attributeName) 
-							||
-							Object.keys(defaultPseudoElementValues).includes(attributeName) 
-							&& !defaultPseudoElementValues[attributeName].includes(style[attributeName])
-							) {
+						if (!Object.keys(defaultPseudoElementValues).includes(attributeName) ||
+						Object.keys(defaultPseudoElementValues).includes(attributeName) && !defaultPseudoElementValues[attributeName].includes(style[attributeName])
+						) {
 							if (parentStyle[attributeName] != style[attributeName]) {
 								extractedAttributes[attributeName] = style[attributeName];
 							}
