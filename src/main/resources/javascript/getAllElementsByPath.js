@@ -281,6 +281,34 @@ function isDisabled(node) {
     return node.disabled ? true : false;
 }
 
+function isClickable(node) {
+    // is element visible by styles
+    var styles = getComputedStyleSafely(node);
+    if (!(styles.visibility !== 'hidden' && styles.display !== 'none')) {
+        return false;
+    }
+
+    if (typeof node.getBoundingClientRect === "function") {
+	    // is the element behind another element
+	    var boundingRect = node.getBoundingClientRect();
+	
+	    // adjust coordinates to get more accurate results
+	    var left = boundingRect.left + 1;
+	    var right = boundingRect.right - 1;
+	    var top = boundingRect.top + 1;
+	    var bottom = boundingRect.bottom - 1;
+	
+	    if (!node.contains(document.elementFromPoint(left, top)) ||
+	    	!node.contains(document.elementFromPoint(right, top)) ||
+	    	!node.contains(document.elementFromPoint(left, bottom)) ||
+	    	!node.contains(document.elementFromPoint(right, bottom))) {
+	        return false;
+	    }
+    }
+
+    return true;
+}
+
 //extract *given* CSS style attributes
 function getComputedStyleSafely(node) {
     try {
@@ -295,7 +323,8 @@ function transform(node) {
         "text": getText(node),
         "value": node.value,
         "tabindex": node.tabIndex,
-        "shown": isShown(node)
+        "shown": isShown(node),
+        "isClickable": isClickable(node)
     };
     
     if (node.nodeType == TEXT_NODE) {
