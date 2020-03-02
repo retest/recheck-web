@@ -47,8 +47,8 @@ class RecheckRemoteWebElementFailingIT {
 			re.capTest();
 			fail( MISSING_ASSERTION_MSG );
 		} catch ( final AssertionError e ) {
-			Assertions.assertThat( e ).hasMessageContaining(
-					"html[1]/body[1]/form[3]/select[2]/option[5] at 'html[1]/body[1]/form[3]/select[2]/option[5]':\n"
+			Assertions.assertThat( e )
+					.hasMessageContaining( "option (option) at 'html[1]/body[1]/form[3]/select[2]/option[5]':\n" // 
 							+ "\t\twas inserted" );
 		}
 	}
@@ -72,7 +72,7 @@ class RecheckRemoteWebElementFailingIT {
 			fail( MISSING_ASSERTION_MSG );
 		} catch ( final AssertionError e ) {
 			Assertions.assertThat( e ).hasMessageContaining(
-					"option [Onion gravy] at 'html[1]/body[1]/form[3]/select[2]/option[4]':\n		was deleted" );
+					"option (onion_gravy) at 'html[1]/body[1]/form[3]/select[2]/option[4]':\n		was deleted" );
 		}
 	}
 
