@@ -26,6 +26,7 @@ Table of Contents
 ### Breaking Changes
 
 * Add `shoot(WebDriver, WebElement)` in interface `ScreenshotProvider` to create screenshots for `WebElement`.
+* Change constructor visibility of `RecheckWebOptions` and `RecheckWebOptions$Builder` from `public` to `protected`. Please use the corresponding builder accordingly.
 
 ### Bug Fixes
 
