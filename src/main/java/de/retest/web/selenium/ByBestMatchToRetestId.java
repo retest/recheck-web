@@ -52,6 +52,11 @@ public class ByBestMatchToRetestId extends By implements Serializable {
 	 * @return Maybe an element whose children have a different retest ID than in the Golden Master.
 	 */
 	public Element findElement( final RootElement lastExpectedState, final RootElement lastActualState ) {
+		if ( lastExpectedState == null ) {
+			// find by retestId even in case of just creating the state
+			return de.retest.web.selenium.By.findElement( lastActualState.getContainedElements(),
+					element -> retestId.equals( element.getRetestId() ) );
+		}
 		final Element result = de.retest.web.selenium.By.findElement( lastExpectedState, lastActualState,
 				element -> retestId.equals( element.getRetestId() ) );
 		if ( result == null ) {

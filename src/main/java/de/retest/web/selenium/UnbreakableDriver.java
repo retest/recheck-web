@@ -64,10 +64,6 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 	}
 
 	public WebElement findElement( final ByBestMatchToRetestId by ) {
-		if ( lastExpectedState == null ) {
-			throw new IllegalStateException( "You must use the " + RecheckWebImpl.class.getSimpleName()
-					+ " and first check the state before being able to use the retest ID locator." );
-		}
 		final Element searchedFor = by.findElement( lastExpectedState, lastActualState );
 		final WebElement element =
 				wrappedDriver.findElement( By.xpath( searchedFor.getIdentifyingAttributes().getPath() ) );
