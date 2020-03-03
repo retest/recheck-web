@@ -9,7 +9,9 @@ import org.openqa.selenium.WebDriver;
 
 import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckImpl;
+import de.retest.recheck.RecheckOptions;
 import de.retest.recheck.junit.jupiter.RecheckExtension;
+import de.retest.web.RecheckWebOptions;
 import de.retest.web.testutils.PageFactory;
 import de.retest.web.testutils.WebDriverFactory;
 import de.retest.web.testutils.WebDriverFactory.Driver;
@@ -24,7 +26,10 @@ class WikipediaIT {
 	@BeforeEach
 	void setUp() throws Exception {
 		driver = WebDriverFactory.driver( Driver.CHROME );
-		re = new RecheckImpl();
+		final RecheckOptions opts = RecheckWebOptions.builder() //
+				.enableScreenshots() //
+				.build();
+		re = new RecheckImpl( opts );
 	}
 
 	@Test
