@@ -16,7 +16,13 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ScreenshotProviders {
 
+	/**
+	 * The default screenshot provider: {@link ViewportOnlyMinimalScreenshot}.
+	 */
 	public static final ScreenshotProvider DEFAULT = new ViewportOnlyMinimalScreenshot();
+	/**
+	 * The none screenshot provider: {@link NoScreenshot}.
+	 */
 	public static final ScreenshotProvider NONE = new NoScreenshot();
 
 	public static class ScreenshotProviderConverter implements Converter<ScreenshotProvider> {
