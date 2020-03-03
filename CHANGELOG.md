@@ -33,6 +33,7 @@ Table of Contents
 * Fix that `NoScreenshot` or `RecheckWebOptions#disableScreenshots()` is not applied to web elements.
 * Fix that `de.retest.recheck.web.screenshot.provider` from `recheck.ignore` is ignored when `RecheckWebOptions` are used.
 * Fix that passing an element into `RecheckWebImpl` from an `UnbreakableDriver` throws an error.
+* Fix that `viewportOnly` points to `ViewportOnlyMinimalScreenshot` and adapt the default accordingly (`viewportOnlyMinimal`).
 
 ### New Features
 

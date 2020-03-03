@@ -30,7 +30,7 @@ public interface RecheckWebProperties extends Reloadable {
 	static final String SCREENSHOT_PROVIDER_PROPERTY_KEY = "de.retest.recheck.web.screenshot.provider";
 
 	@Key( SCREENSHOT_PROVIDER_PROPERTY_KEY )
-	@DefaultValue( "viewportOnly" )
+	@DefaultValue( "viewportOnlyMinimal" )
 	@ConverterClass( ScreenshotProviderConverter.class )
 	ScreenshotProvider screenshotProvider();
 

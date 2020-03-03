@@ -27,6 +27,8 @@ public class ScreenshotProviders {
 				case "fullPage":
 					return new FullPageScreenshot();
 				case "viewportOnly":
+					return new ViewportOnlyScreenshot();
+				case "viewportOnlyMinimal":
 					return new ViewportOnlyMinimalScreenshot();
 				case "none":
 					log.info( "ScreenshotProvider has been set to 'none' either via property "
@@ -34,7 +36,7 @@ public class ScreenshotProviders {
 							+ RecheckWebOptions.class.getSimpleName() + ", will create NO screenshots." );
 					return NONE;
 				default:
-					log.warn( "Unknown configured screenshot provider '{}'. Using default value 'viewportOnly'.",
+					log.warn( "Unknown configured screenshot provider '{}'. Using default value 'viewportOnlyMinimal'.",
 							input );
 					return DEFAULT;
 			}
