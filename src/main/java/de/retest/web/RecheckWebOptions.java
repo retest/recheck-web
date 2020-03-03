@@ -17,7 +17,7 @@ public class RecheckWebOptions extends RecheckOptions {
 	private final AutocheckingCheckNamingStrategy checkNamingStrategy;
 	private final ScreenshotProvider screenshotProvider;
 
-	public RecheckWebOptions( final RecheckOptions superOptions,
+	protected RecheckWebOptions( final RecheckOptions superOptions,
 			final AutocheckingCheckNamingStrategy checkNamingStrategy, final ScreenshotProvider screenshotProvider ) {
 		super( superOptions );
 		this.checkNamingStrategy = checkNamingStrategy;
@@ -39,7 +39,7 @@ public class RecheckWebOptions extends RecheckOptions {
 		 *            {@link CounterCheckNamingStrategy}.
 		 * @return self
 		 */
-		public RecheckWebOptionsBuilder
+		protected RecheckWebOptionsBuilder
 				checkNamingStrategy( final AutocheckingCheckNamingStrategy checkNamingStrategy ) {
 			this.checkNamingStrategy = checkNamingStrategy;
 			return this;
