@@ -40,7 +40,7 @@ Table of Contents
 
 * Provide additional metadata: current URL
 * Save the warnings identified by the `UnbreakableDriver` to the report to allow for healing of the test code.
-* Implement [#389](https://github.com/retest/recheck-web/issues/389) 
+* Implement [#389](https://github.com/retest/recheck-web/issues/389)
     * All CSS selectors using attribute syntax are supported.
     * The pseudo class selectors: checked, disabled, and read-only are supported.
 
@@ -49,7 +49,7 @@ Table of Contents
 * An exception is now thrown if explicit `Recheck#check` is called with an implicit `RecheckDriver`. This kind of mixing is not expected and therefore now prevented as it produced unexpected behavior due to both checks trying to find and create a Golden Master.
 * Improve the breaking messages from a `UnbreakableDriver` to include more information like the line number.
 * Add short cuts for screenshot enabling/disabling via the `RecheckWebOptions`.
-* Replace the dependency to fasterxml, which often caused trouble. Instead use snakeyaml.  
+* Replace the internal dependency to [Jackson](https://github.com/FasterXML/jackson) (which often caused trouble) with [SnakeYAML](https://bitbucket.org/asomov/snakeyaml).
 
 
 --------------------------------------------------------------------------------
