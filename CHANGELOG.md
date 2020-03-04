@@ -25,6 +25,21 @@ Table of Contents
 
 ### Breaking Changes
 
+### Bug Fixes
+
+### New Features
+
+### Improvements
+
+
+--------------------------------------------------------------------------------
+
+
+[1.10.0] (2020-03-04)
+---------------------
+
+### Breaking Changes
+
 * Add `shoot(WebDriver, WebElement)` in interface `ScreenshotProvider` to create screenshots for `WebElement`.
 * Change constructor visibility of `RecheckWebOptions` and `RecheckWebOptions$Builder` from `public` to `protected`. Please use the corresponding builder accordingly.
 
@@ -50,9 +65,6 @@ Table of Contents
 * Improve the breaking messages from a `UnbreakableDriver` to include more information like the line number.
 * Add short cuts for screenshot enabling/disabling via the `RecheckWebOptions`.
 * Replace the internal dependency to [Jackson](https://github.com/FasterXML/jackson) (which often caused trouble) with [SnakeYAML](https://bitbucket.org/asomov/snakeyaml).
-
-
---------------------------------------------------------------------------------
 
 
 [1.9.0] (2020-01-29)
