@@ -26,7 +26,11 @@ public class ActionbasedCheckNamingStrategy implements AutocheckingCheckNamingSt
 		// "enter_[" + normalizeAndShorten( keysToSend ) + "]_into"
 		if ( "enter".equals( action ) ) {
 			// TODO Call FileUtils.normalize
-			result = "enter_" + shortenTextInput( (CharSequence[]) params ) + "_into";
+			if ( params instanceof CharSequence[] ) {
+				result = "enter_" + shortenTextInput( (CharSequence[]) params ) + "_into";
+			} else {
+				result = "enter_nothing_into";
+			}
 		}
 		if ( "get".equals( action ) && params.length > 0 ) {
 			// TODO Call FileUtils.normalize

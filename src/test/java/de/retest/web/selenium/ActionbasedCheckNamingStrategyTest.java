@@ -3,6 +3,7 @@ package de.retest.web.selenium;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
+import static org.openqa.selenium.Keys.ENTER;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebElement;
@@ -70,6 +71,24 @@ class ActionbasedCheckNamingStrategyTest {
 		when( mock.toString() )
 				.thenReturn( "[[ChromeDriver: chrome on MAC (5822a9b14739d081f70f6b6f42e789cc)] -> id: signupEmail]" );
 		assertThat( cut.getUniqueCheckName( "get", mock ) ).isEqualTo( "get_signupEmail" );
+	}
+
+	@Test
+	void getUniqueCheckName_with_empty_parameters_on_enter_should_return_simple_description() {
+		final WebElement mock = mock( WebElement.class );
+		when( mock.toString() )
+				.thenReturn( "[[ChromeDriver: chrome on MAC (5822a9b14739d081f70f6b6f42e789cc)] -> id: signupEmail]" );
+		assertThat( cut.getUniqueCheckName( "enter", mock ) ).isEqualTo( "enter_nothing_into_signupEmail" );
+	}
+
+	@Test
+	void getUniqueCheckName_with_parameters_on_enter_should_return_description() {
+		final WebElement mock = mock( WebElement.class );
+		final CharSequence[] charSequences = new CharSequence[] { "A", "BC", ENTER };
+		when( mock.toString() )
+				.thenReturn( "[[ChromeDriver: chrome on MAC (5822a9b14739d081f70f6b6f42e789cc)] -> id: signupEmail]" );
+		assertThat( cut.getUniqueCheckName( "enter", mock, (Object[]) charSequences ) )
+				.isEqualTo( "enter_[A, BC, \uE007]_into_signupEmail" );
 	}
 
 	@Test
