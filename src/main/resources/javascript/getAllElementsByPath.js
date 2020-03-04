@@ -293,10 +293,10 @@ function isClickable(node) {
 	    var boundingRect = node.getBoundingClientRect();
 	
 	    // adjust coordinates to get more accurate results
-	    var left = boundingRect.left + 1;
-	    var right = boundingRect.right - 1;
-	    var top = boundingRect.top + 1;
-	    var bottom = boundingRect.bottom - 1;
+	    var left = boundingRect.left + 2;
+	    var right = boundingRect.right - 2;
+	    var top = boundingRect.top + 2;
+	    var bottom = boundingRect.bottom - 2;
 	
 	    if (!node.contains(document.elementFromPoint(left, top)) ||
 	    	!node.contains(document.elementFromPoint(right, top)) ||
