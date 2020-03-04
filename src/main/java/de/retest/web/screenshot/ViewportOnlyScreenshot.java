@@ -8,7 +8,8 @@ import org.openqa.selenium.WebElement;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 
 /**
- * The default implementation that takes a screenshot of only the viewport visible to the user from the top page.
+ * The default implementation that takes a screenshot of only the viewport visible to the user from the top page. In
+ * contrast to {@link ViewportOnlyMinimalScreenshot}, images are not resized.
  */
 public class ViewportOnlyScreenshot implements ScreenshotProvider {
 

@@ -10,7 +10,9 @@ import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import de.retest.recheck.ui.image.ImageUtils;
 
 /**
- * The default implementation that takes a screenshot of only the viewport visible to the user from the top page.
+ * The default implementation that takes a screenshot of only the viewport visible to the user from the top page. In
+ * contrast to {@link ViewportOnlyScreenshot}, images are resized to maximum 800px (see
+ * {@link #DEFAULT_WANTED_WIDTH_PX}) if they exceed this width, while keeping the aspect ratio.
  */
 public class ViewportOnlyMinimalScreenshot implements ScreenshotProvider {
 
