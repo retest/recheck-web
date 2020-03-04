@@ -10,8 +10,8 @@ import static de.retest.web.selenium.ByWhisperer.retrieveLinkText;
 import static de.retest.web.selenium.ByWhisperer.retrieveName;
 import static de.retest.web.selenium.ByWhisperer.retrievePartialLinkText;
 
-import java.util.function.Consumer;
 import java.util.Optional;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 import org.openqa.selenium.By;
@@ -144,6 +144,9 @@ public class TestHealer {
 
 		if ( actualElement == null ) {
 			logger.warn( "{} with link text '{}'.", ELEMENT_NOT_FOUND_MESSAGE, linkText );
+			return null;
+		} else if ( "true".equals( actualElement.getAttributeValue( "pseudo" ) ) ) {
+			logger.warn( "{} with link text '{}' is a pseudo element", ELEMENT_NOT_FOUND_MESSAGE, linkText );
 			return null;
 		} else {
 			writeWarnLogForChangedIdentifier( TEXT, linkText, actualElement.getIdentifyingAttributes().get( TEXT ),

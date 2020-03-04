@@ -107,9 +107,10 @@ public class Has {
 	}
 
 	public static Predicate<Element> linkText( final String linkText ) {
-		return element -> "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() )
-				&& linkText.equals( element.getAttributes().get( TEXT ) )
-				|| linkText.equals( element.getIdentifyingAttributes().get( TEXT ) );
+		return isPseudo().negate()
+				.and( element -> "a".equalsIgnoreCase( element.getIdentifyingAttributes().getType() )
+						&& linkText.equals( element.getAttributes().get( TEXT ) )
+						|| linkText.equals( element.getIdentifyingAttributes().get( TEXT ) ) );
 	}
 
 	public static Predicate<Element> partialLinkText( final String linkText ) {
@@ -132,5 +133,9 @@ public class Has {
 
 	public static Predicate<Element> cssId( final String id ) {
 		return element -> id.equals( element.getIdentifyingAttributes().get( ID ) );
+	}
+
+	private static Predicate<Element> isPseudo() {
+		return element -> "true".equals( element.getAttributeValue( "pseudo" ) );
 	}
 }
