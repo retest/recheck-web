@@ -65,6 +65,14 @@ class ActionbasedCheckNamingStrategyTest {
 	}
 
 	@Test
+	void getUniqueCheckName_with_empty_parameters_on_get_should_return_simple_description() {
+		final WebElement mock = mock( WebElement.class );
+		when( mock.toString() )
+				.thenReturn( "[[ChromeDriver: chrome on MAC (5822a9b14739d081f70f6b6f42e789cc)] -> id: signupEmail]" );
+		assertThat( cut.getUniqueCheckName( "get", mock ) ).isEqualTo( "get_signupEmail" );
+	}
+
+	@Test
 	void shortenUrl_should_shorten_different_URLs() {
 		assertThat( cut.shortenUrl( "http://retest.de" ) ).isEqualTo( "retest.de" );
 		assertThat( cut.shortenUrl( "https://retest.de" ) ).isEqualTo( "retest.de" );

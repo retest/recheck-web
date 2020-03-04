@@ -28,7 +28,7 @@ public class ActionbasedCheckNamingStrategy implements AutocheckingCheckNamingSt
 			// TODO Call FileUtils.normalize
 			result = "enter_" + shortenTextInput( (CharSequence[]) params ) + "_into";
 		}
-		if ( "get".equals( action ) ) {
+		if ( "get".equals( action ) && params.length > 0 ) {
 			// TODO Call FileUtils.normalize
 			result = "get_[" + shortenUrl( params[0] ) + "]";
 		}
