@@ -1,15 +1,13 @@
 package de.retest.web.it;
 
-import static de.retest.web.testutils.WebDriverFactory.commonArguments;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 import de.retest.recheck.RecheckImpl;
 
@@ -21,13 +19,13 @@ class PseudoElementIT {
 	@BeforeEach
 	void setup() {
 		re = new RecheckImpl();
-		driver = new ChromeDriver( new ChromeOptions().addArguments( commonArguments() ) );
 	}
 
-	//	@Disabled
-	@Test
-	public void should_trac_pseudo_elements() throws Exception {
-		re.startTest( "pseudo_elements" );
+	@ParameterizedTest( name = "pseudo-elements-{1}" )
+	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
+	public void should_trac_pseudo_elements( final WebDriver driver, final String name ) throws Exception {
+		re.startTest( "pseudo-elements-" + name );
+		this.driver = driver;
 		final String filePath = "pseudo-element-changed.html";
 		final String url = getClass().getResource( filePath ).toString();
 
@@ -55,9 +53,11 @@ class PseudoElementIT {
 	}
 
 	@Disabled
-	@Test
-	void should_generate_master() throws Exception {
-		re.startTest( "pseudo_elements" );
+	@ParameterizedTest( name = "pseudo-elements-{1}" )
+	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
+	void should_generate_master( final WebDriver driver, final String name ) throws Exception {
+		re.startTest( "pseudo-elements-" + name );
+		this.driver = driver;
 		final String filePath = "pseudo-element.html";
 		final String url = getClass().getResource( filePath ).toString();
 		driver.get( url );
