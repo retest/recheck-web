@@ -213,11 +213,4 @@ class HasTest {
 		assertThat( Has.partialLinkText( notMatchingLink ).test( element ) ).isEqualTo( false );
 	}
 
-	@Test
-	void should_not_match_pseudo_element() throws Exception {
-		final String value = "value";
-		when( element.getAttributeValue( "pseudo" ) ).thenReturn( "true" );
-
-		assertThat( Has.linkText( value ).test( element ) ).isFalse();
-	}
 }
