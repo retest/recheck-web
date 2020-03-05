@@ -25,7 +25,23 @@ Table of Contents
 
 ### Breaking Changes
 
+### Bug Fixes
+
+### New Features
+
+### Improvements
+
+
+--------------------------------------------------------------------------------
+
+
+[1.10.0] (2020-03-04)
+---------------------
+
+### Breaking Changes
+
 * Add `shoot(WebDriver, WebElement)` in interface `ScreenshotProvider` to create screenshots for `WebElement`.
+* Change constructor visibility of `RecheckWebOptions` and `RecheckWebOptions$Builder` from `public` to `protected`. Please use the corresponding builder accordingly.
 
 ### Bug Fixes
 
@@ -33,13 +49,14 @@ Table of Contents
 * Fix that `NoScreenshot` or `RecheckWebOptions#disableScreenshots()` is not applied to web elements.
 * Fix that `de.retest.recheck.web.screenshot.provider` from `recheck.ignore` is ignored when `RecheckWebOptions` are used.
 * Fix that passing an element into `RecheckWebImpl` from an `UnbreakableDriver` throws an error.
+* Fix that `viewportOnly` points to `ViewportOnlyMinimalScreenshot` and adapt the default accordingly (`viewportOnlyMinimal`).
 * Fix that `ActionbasedCheckNamingStrategy` could potentially throw an error.
 
 ### New Features
 
 * Provide additional metadata: current URL
 * Save the warnings identified by the `UnbreakableDriver` to the report to allow for healing of the test code.
-* Implement [#389](https://github.com/retest/recheck-web/issues/389) 
+* Implement [#389](https://github.com/retest/recheck-web/issues/389)
     * All CSS selectors using attribute syntax are supported.
     * The pseudo class selectors: checked, disabled, and read-only are supported.
 
@@ -48,9 +65,7 @@ Table of Contents
 * An exception is now thrown if explicit `Recheck#check` is called with an implicit `RecheckDriver`. This kind of mixing is not expected and therefore now prevented as it produced unexpected behavior due to both checks trying to find and create a Golden Master.
 * Improve the breaking messages from a `UnbreakableDriver` to include more information like the line number.
 * Add short cuts for screenshot enabling/disabling via the `RecheckWebOptions`.
-
-
---------------------------------------------------------------------------------
+* Replace the internal dependency to [Jackson](https://github.com/FasterXML/jackson) (which often caused trouble) with [SnakeYAML](https://bitbucket.org/asomov/snakeyaml).
 
 
 [1.9.0] (2020-01-29)

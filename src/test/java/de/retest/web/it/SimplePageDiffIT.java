@@ -37,14 +37,18 @@ public class SimplePageDiffIT {
 			fail( "Assertion Error expected" );
 		} catch ( final AssertionError e ) {
 			assertThat( e ).hasMessageContaining( "Test 'testSimpleChange' has 4 difference(s) in 1 state(s):" ) //
-					.hasMessageEndingWith( "\tdiv at 'html[1]/body[1]/div[3]':\n" + //
-							"\t\tid: expected=\"twoblocks\", actual=\"changedblock\"\n" + //
-							"\tp [Some text] at 'html[1]/body[1]/div[3]/p[1]':\n" + //
-							"\t\ttext: expected=\"Some text\", actual=\"Some changed text\"\n" + //
-							"\tp [Some more text] at 'html[1]/body[1]/div[3]/p[2]':\n" + //
-							"\t\twas deleted\n" + //
-							"\th2 [Subheading] at 'html[1]/body[1]/h2[1]':\n" + //
-							"\t\twas inserted" );
+					.hasMessageEndingWith( "\tdiv (div-5f5f0) at 'html[1]/body[1]/div[3]':\n" //
+							+ "\t\tid:\n" //
+							+ "\t\t  expected=\"twoblocks\",\n" //
+							+ "\t\t    actual=\"changedblock\"\n" //
+							+ "\tp (some_text) at 'html[1]/body[1]/div[3]/p[1]':\n" //
+							+ "\t\ttext:\n" //
+							+ "\t\t  expected=\"Some text\",\n" //
+							+ "\t\t    actual=\"Some changed text\"\n" //
+							+ "\tp (some_more_text) at 'html[1]/body[1]/div[3]/p[2]':\n" //
+							+ "\t\twas deleted\n" //
+							+ "\th2 (subheading) at 'html[1]/body[1]/h2[1]':\n" //
+							+ "\t\twas inserted" );
 		}
 	}
 

@@ -64,7 +64,13 @@ class RecheckSeleniumAdapterIT {
 		verifyNoWarning( b );
 
 		assertThatThrownBy( () -> re.capTest() ) //
-				.hasMessageContainingAll( "id: expected=\"a\", actual=\"b\"", "id: expected=\"b\", actual=\"a\"" );
+				.hasMessageContainingAll( // 
+						"id:\n" //
+								+ "\t\t  expected=\"a\",\n" //
+								+ "\t\t    actual=\"b\"", // 
+						"id:\n" //
+								+ "\t\t  expected=\"b\",\n" //
+								+ "\t\t    actual=\"a\"" );
 	}
 
 	public RecheckAdapter spyAdapter() {

@@ -16,7 +16,13 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ScreenshotProviders {
 
+	/**
+	 * The default screenshot provider: {@link ViewportOnlyMinimalScreenshot}.
+	 */
 	public static final ScreenshotProvider DEFAULT = new ViewportOnlyMinimalScreenshot();
+	/**
+	 * The none screenshot provider: {@link NoScreenshot}.
+	 */
 	public static final ScreenshotProvider NONE = new NoScreenshot();
 
 	public static class ScreenshotProviderConverter implements Converter<ScreenshotProvider> {
@@ -27,6 +33,8 @@ public class ScreenshotProviders {
 				case "fullPage":
 					return new FullPageScreenshot();
 				case "viewportOnly":
+					return new ViewportOnlyScreenshot();
+				case "viewportOnlyMinimal":
 					return new ViewportOnlyMinimalScreenshot();
 				case "none":
 					log.info( "ScreenshotProvider has been set to 'none' either via property "
@@ -34,7 +42,7 @@ public class ScreenshotProviders {
 							+ RecheckWebOptions.class.getSimpleName() + ", will create NO screenshots." );
 					return NONE;
 				default:
-					log.warn( "Unknown configured screenshot provider '{}'. Using default value 'viewportOnly'.",
+					log.warn( "Unknown configured screenshot provider '{}'. Using default value 'viewportOnlyMinimal'.",
 							input );
 					return DEFAULT;
 			}
