@@ -217,7 +217,8 @@ defaultPseudoElementValues['border-top-style'] = ['none'];
 defaultPseudoElementValues['border-top-width'] = ['0px'];
 defaultPseudoElementValues['box-shadow'] = ['none'];
 defaultPseudoElementValues['box-sizing'] = ['content-box'];
-defaultPseudoElementValues['content'] = ['none', 'normal'];
+defaultPseudoElementValues['break-inside'] = ['auto'];
+defaultPseudoElementValues['content'] = ['none', 'normal']; // For -moz-alt-content see https://bugzilla.mozilla.org/show_bug.cgi?id=10280
 defaultPseudoElementValues['display'] = ['inline'];
 defaultPseudoElementValues['flex-direction'] = ['row']; //?RecheckRemoteWebElementIT - html[1]/body[1]/form[4]/textarea[2]
 defaultPseudoElementValues['float'] = ['none'];
@@ -241,6 +242,7 @@ defaultPseudoElementValues['padding-bottom'] = ['0px'];
 defaultPseudoElementValues['padding-left'] = ['0px'];
 defaultPseudoElementValues['padding-right'] = ['0px'];
 defaultPseudoElementValues['padding-top'] = ['0px'];
+defaultPseudoElementValues['page-break-inside'] = ['auto'];
 defaultPseudoElementValues['position'] = ['static'];
 defaultPseudoElementValues['pseudo'] = ['true'];
 defaultPseudoElementValues['resize'] = ['none']; //?RecheckRemoteWebElementIT - html[1]/body[1]/form[4]/textarea[2]
@@ -254,8 +256,21 @@ defaultPseudoElementValues['transition-duration'] = ['0s'];
 defaultPseudoElementValues['transition-property'] = ['all'];
 defaultPseudoElementValues['transition-timing'] = ['ease'];
 defaultPseudoElementValues['transition-timing-function'] = ['ease'];
+defaultPseudoElementValues['user-select'] = ['auto'];
 defaultPseudoElementValues['vertical-align'] = ['baseline'];
 defaultPseudoElementValues['z-index'] = ['auto'];
+
+// Firefox fixes
+var imgDefaultPseudoElementValues = [];
+imgDefaultPseudoElementValues['content'] = ['none', '-moz-alt-content']; // see https://bugzilla.mozilla.org/show_bug.cgi?id=10280
+imgDefaultPseudoElementValues['unicode-bidi'] = ['isolate']; // https://developer.mozilla.org/en-US/docs/Web/CSS/unicode-bidi
+
+// Default values for disabled pseudo elements at disabled nodes
+var disabledPseudoElementValues = [];
+disabledPseudoElementValues['border-bottom-color'] = ['rgb(109, 109, 109)'];
+disabledPseudoElementValues['border-left-color'] = ['rgb(109, 109, 109)'];
+disabledPseudoElementValues['border-right-color'] = ['rgb(109, 109, 109)'];
+disabledPseudoElementValues['border-top-color'] = ['rgb(109, 109, 109)'];
 
 var ELEMENT_NODE = 1;
 var TEXT_NODE = 3;
@@ -465,10 +480,11 @@ function addPseudoElements(node, nodePath, allElements) {
 					"tagName": pseudo,
 				};
 			for (attributeName of cssAttributes) {
+				var defaultValues = selectDefaultValueSet(node, attributeName);
 				if (!extractedAttributes[attributeName]) {
 					if (style[attributeName]) {
-						if (!Object.keys(defaultPseudoElementValues).includes(attributeName) ||
-						Object.keys(defaultPseudoElementValues).includes(attributeName) && !defaultPseudoElementValues[attributeName].includes(style[attributeName])
+						if (!Object.keys(defaultValues).includes(attributeName) ||
+						Object.keys(defaultValues).includes(attributeName) && !defaultValues[attributeName].includes(style[attributeName])
 						) {
 							if (parentStyle[attributeName] != style[attributeName]) {
 								extractedAttributes[attributeName] = style[attributeName];
@@ -482,6 +498,19 @@ function addPseudoElements(node, nodePath, allElements) {
 			}
 		} catch (err) {}
 	}
+}
+
+function selectDefaultValueSet(node, attributeName) {
+	if (isDisabled(node)) {
+		if (Objects.keys(disabledPseudoElementValues).includes(attributeName)) {
+			return disabledPseudoElementValues;
+		}
+	}
+	if (('img' == node.tagName.toLowerCase() || 'input' == node.tagName.toLowerCase())
+			&& Object.keys(imgDefaultPseudoElementValues).includes(attributeName)) {
+		return imgDefaultPseudoElementValues;
+	}
+	return defaultPseudoElementValues;
 }
 
 function isShown(e) {
