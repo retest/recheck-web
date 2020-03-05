@@ -24,6 +24,7 @@ class PseudoElementIT {
 		driver = new ChromeDriver( new ChromeOptions().addArguments( commonArguments() ) );
 	}
 
+	//	@Disabled
 	@Test
 	public void should_trac_pseudo_elements() throws Exception {
 		re.startTest( "pseudo_elements" );
@@ -36,17 +37,20 @@ class PseudoElementIT {
 
 		assertThatThrownBy( re::capTest ) //
 				.hasMessageNotContaining( "link at 'html[1]/head[1]/link[1]'" ) //
-				.hasMessageContaining( "h1 [This is a heading] at 'html[1]/body[1]/h1[1]'" ) //
-				.hasMessageContaining( "::before at 'html[1]/body[1]/h1[1]/#pseudo::before[1]'" ) //
+				.hasMessageContaining( "h1 (this_is_a_heading) at 'html[1]/body[1]/h1[1]'" ) //
+				.hasMessageContaining( "::before (before) at 'html[1]/body[1]/h1[1]/#pseudo::before[1]'" ) //
+				.hasMessageContaining( "expected=\"This is an invisible text before!\"," ) //
+				.hasMessageContaining( "actual=\"This is a changed invisible text using a before pseudo element!\"" ) //
+				.hasMessageContaining( "::after (after) at 'html[1]/body[1]/h1[1]/#pseudo::after[1]'" ) //
+				.hasMessageContaining( "expected=\"This is an invisible text after!\"," ) //
+				.hasMessageContaining( "actual=\"This is a changed invisible text using an after pseudo element!\"" ) //
+				.hasMessageContaining( "::first-line (firstline) at 'html[1]/body[1]/p[1]/#pseudo::first-line[1]'" ) //
+				.hasMessageContaining( "expected=\"rgb(170, 187, 204)\"," ) //
+				.hasMessageContaining( "actual=\"rgb(221, 238, 255)\"" ) //
 				.hasMessageContaining(
-						"content: expected=\"This is an invisible text before!\", actual=\"This is a changed invisible text using a before pseudo element!\"" ) //
-				.hasMessageContaining( "::after at 'html[1]/body[1]/h1[1]/#pseudo::after[1]'" ) //
-				.hasMessageContaining(
-						"content: expected=\"This is an invisible text after!\", actual=\"This is a changed invisible text using an after pseudo element!\"" ) //
-				.hasMessageContaining( "::first-line at 'html[1]/body[1]/p[1]/#pseudo::first-line[1]'" ) //
-				.hasMessageContaining( "color: expected=\"rgb(170, 187, 204)\", actual=\"rgb(221, 238, 255)\"" ) //
-				.hasMessageContaining( "::first-letter at 'html[1]/body[1]/p[1]/#pseudo::first-letter[1]'" ) //
-				.hasMessageContaining( "color: expected=\"rgb(187, 204, 170)\", actual=\"rgb(238, 255, 221)\"" ) //
+						"::first-letter (firstletter) at 'html[1]/body[1]/p[1]/#pseudo::first-letter[1]'" ) //
+				.hasMessageContaining( "expected=\"rgb(187, 204, 170)\"," ) //
+				.hasMessageContaining( "actual=\"rgb(238, 255, 221)\"" ) //
 		;
 	}
 

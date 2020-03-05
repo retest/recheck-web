@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.9.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.10.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="" title="">
 			<identifyingAttributes>
@@ -57,6 +57,36 @@
 						</entry>
 					</attributes>
 				</attributes>
+				<containedElements retestId="divid">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>184</y>
+								<height>0</height>
+								<width>1184</width>
+							</attribute>
+							<attribute key="id" xsi:type="stringAttribute">divID</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>168</y>
+								<height>-152</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="type" xsi:type="stringAttribute">div</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>shown</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
 				<containedElements retestId="this_is_a_heading">
 					<identifyingAttributes>
 						<attributes>
@@ -249,36 +279,6 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="divid">
-					<identifyingAttributes>
-						<attributes>
-							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>8</x>
-								<y>184</y>
-								<height>0</height>
-								<width>1184</width>
-							</attribute>
-							<attribute key="id" xsi:type="stringAttribute">divID</attribute>
-							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>0</x>
-								<y>168</y>
-								<height>-152</height>
-								<width>0</width>
-							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]</attribute>
-							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="type" xsi:type="stringAttribute">div</attribute>
-						</attributes>
-					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>shown</key>
-								<value xsi:type="xsd:string">true</value>
-							</entry>
-						</attributes>
-					</attributes>
-				</containedElements>
 				<containedElements retestId="ul">
 					<identifyingAttributes>
 						<attributes>
@@ -315,23 +315,6 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="firstletter">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/#pseudo::first-letter[1]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">::first-letter</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>pseudo</key>
-									<value xsi:type="xsd:string">true</value>
-								</entry>
-							</attributes>
-						</attributes>
-					</containedElements>
 					<containedElements retestId="first_item">
 						<identifyingAttributes>
 							<attributes>
@@ -400,57 +383,6 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="after-1">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/#pseudo::after[1]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">::after</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>pseudo</key>
-									<value xsi:type="xsd:string">true</value>
-								</entry>
-							</attributes>
-						</attributes>
-					</containedElements>
-					<containedElements retestId="before-1">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/#pseudo::before[1]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">::before</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>pseudo</key>
-									<value xsi:type="xsd:string">true</value>
-								</entry>
-							</attributes>
-						</attributes>
-					</containedElements>
-					<containedElements retestId="firstline">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]/#pseudo::first-line[1]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">::first-line</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>pseudo</key>
-									<value xsi:type="xsd:string">true</value>
-								</entry>
-							</attributes>
-						</attributes>
-					</containedElements>
 				</containedElements>
 				<containedElements retestId="you_can_use_the">
 					<identifyingAttributes>
@@ -481,7 +413,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="firstline-1">
+					<containedElements retestId="firstline">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]/#pseudo::first-line[1]</attribute>
@@ -534,7 +466,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="firstletter-1">
+					<containedElements retestId="firstletter">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]/#pseudo::first-letter[1]</attribute>
@@ -609,7 +541,7 @@
 			</entry>
 			<entry>
 				<key>vcs.commit</key>
-				<value>b281c8cc177bcd93d99c0d9eab31abce7679e796</value>
+				<value>1b6b464bb4e459a6da6e746c234173a4b7bf97a4</value>
 			</entry>
 			<entry>
 				<key>window.height</key>
@@ -621,11 +553,11 @@
 			</entry>
 			<entry>
 				<key>url</key>
-				<value>file:///D:/briemla/retest/git-repos/recheck-web/target/test-classes/de/retest/web/it/pseudo-element.html</value>
+				<value>file:///F:/Worksapces/retest/git/recheck-web/target/test-classes/de/retest/web/it/pseudo-element.html</value>
 			</entry>
 			<entry>
 				<key>machine.name</key>
-				<value>IFV-BRIEM-M</value>
+				<value>LARS-PC</value>
 			</entry>
 			<entry>
 				<key>os.version</key>
@@ -641,7 +573,7 @@
 			</entry>
 			<entry>
 				<key>time.time</key>
-				<value>12:46:34.177</value>
+				<value>21:45:11.9491156</value>
 			</entry>
 			<entry>
 				<key>time.zone</key>
@@ -657,7 +589,7 @@
 			</entry>
 			<entry>
 				<key>time.date</key>
-				<value>2020-02-26</value>
+				<value>2020-03-05</value>
 			</entry>
 			<entry>
 				<key>vcs.name</key>
