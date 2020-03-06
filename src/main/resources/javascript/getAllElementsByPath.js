@@ -282,6 +282,7 @@ function isDisabled(node) {
 }
 
 function isClickable(node) {
+	const slack = 2;
     // is element visible by styles
     var styles = getComputedStyleSafely(node);
     if (!(styles.visibility !== 'hidden' && styles.display !== 'none')) {
@@ -293,16 +294,53 @@ function isClickable(node) {
 	    var boundingRect = node.getBoundingClientRect();
 	
 	    // adjust coordinates to get more accurate results
-	    var left = boundingRect.left + 2;
-	    var right = boundingRect.right - 2;
-	    var top = boundingRect.top + 2;
-	    var bottom = boundingRect.bottom - 2;
+	    var left = boundingRect.left + slack;
+	    var right = boundingRect.right - slack;
+	    var top = boundingRect.top + slack;
+	    var bottom = boundingRect.bottom - slack;
 	
-	    if (!node.contains(document.elementFromPoint(left, top)) ||
-	    	!node.contains(document.elementFromPoint(right, top)) ||
-	    	!node.contains(document.elementFromPoint(left, bottom)) ||
-	    	!node.contains(document.elementFromPoint(right, bottom))) {
-	        return false;
+	    var topLeft = document.elementFromPoint(left, top);
+	    var topRight = document.elementFromPoint(right, top);
+	    var bottomLeft = document.elementFromPoint(left, bottom);
+	    var bottomRight = document.elementFromPoint(right, bottom);
+	    while (!node.contains(topLeft) || !node.contains(topRight) ||
+	    	!node.contains(bottomLeft) || !node.contains(bottomRight)) {
+	        if (!node.contains(topLeft)) {
+	        	left = topLeft.getBoundingClientRect().left + slack;
+	        	top = topLeft.getBoundingClientRect().top + slack;
+	        	if (left > right && top < bottom) {
+	        		return false;
+	        	}
+	        	topLeft = document.elementFromPoint(left, top);
+	        	continue;
+	        }
+	        if (!node.contains(topRight)) {
+	        	right = topRight.getBoundingClientRect().right - slack;
+	        	top = topRight.getBoundingClientRect().top + slack;
+	        	if (left > right && top < bottom) {
+	        		return false;
+	        	}
+	        	topRight = document.elementFromPoint(right, top);
+	        	continue;
+	        }
+	        if (!node.contains(bottomLeft)) {
+	        	left = bottomLeft.getBoundingClientRect().left + slack;
+	        	bottom = bottomLeft.getBoundingClientRect().bottom - slack;
+	        	if (left > right && top < bottom) {
+	        		return false;
+	        	}
+	        	bottomLeft = document.elementFromPoint(left, bottom);
+	        	continue;
+	        }
+	        if (!node.contains(bottomRight)) {
+	        	right = bottomRight.getBoundingClientRect().right - slack;
+	        	bottom = bottomRight.getBoundingClientRect().bottom - slack;
+	        	if (left > right && top < bottom) {
+	        		return false;
+	        	}
+	        	bottomRight = document.elementFromPoint(right, bottom);
+	        	continue;
+	        }
 	    }
     }
 
