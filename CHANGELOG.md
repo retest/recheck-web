@@ -27,6 +27,8 @@ Table of Contents
 
 ### Bug Fixes
 
+* Fix method `RecheckWebOptionsBuilder#checkNamingStrategy( AutocheckingCheckNamingStrategy )`was changed to `protected`. It is now `public` again.
+
 ### New Features
 
 ### Improvements
