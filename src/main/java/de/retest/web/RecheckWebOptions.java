@@ -39,7 +39,7 @@ public class RecheckWebOptions extends RecheckOptions {
 		 *            {@link CounterCheckNamingStrategy}.
 		 * @return self
 		 */
-		protected RecheckWebOptionsBuilder
+		public RecheckWebOptionsBuilder
 				checkNamingStrategy( final AutocheckingCheckNamingStrategy checkNamingStrategy ) {
 			this.checkNamingStrategy = checkNamingStrategy;
 			return this;
