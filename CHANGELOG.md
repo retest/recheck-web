@@ -27,12 +27,22 @@ Table of Contents
 
 ### Bug Fixes
 
+* Fix method `RecheckWebOptionsBuilder#checkNamingStrategy( AutocheckingCheckNamingStrategy )`was changed to `protected`. It is now `public` again.
+
 ### New Features
 
 ### Improvements
 
 
 --------------------------------------------------------------------------------
+
+
+[1.10.1] (2020-03-06)
+---------------------
+
+### Bug Fixes
+
+* Fix method `RecheckWebOptionsBuilder#checkNamingStrategy( AutocheckingCheckNamingStrategy )`was changed to `protected`. It is now `public` again.
 
 
 [1.10.0] (2020-03-04)
@@ -45,7 +55,6 @@ Table of Contents
 
 ### Bug Fixes
 
-* Fix that cascading frames inside of frames are not analyzed. Now depth doesn't matter...
 * Fix that `NoScreenshot` or `RecheckWebOptions#disableScreenshots()` is not applied to web elements.
 * Fix that `de.retest.recheck.web.screenshot.provider` from `recheck.ignore` is ignored when `RecheckWebOptions` are used.
 * Fix that passing an element into `RecheckWebImpl` from an `UnbreakableDriver` throws an error.
@@ -54,17 +63,12 @@ Table of Contents
 
 ### New Features
 
-* Provide additional metadata: current URL
-* Save the warnings identified by the `UnbreakableDriver` to the report to allow for healing of the test code.
 * Implement [#389](https://github.com/retest/recheck-web/issues/389)
     * All CSS selectors using attribute syntax are supported.
     * The pseudo class selectors: checked, disabled, and read-only are supported.
 
 ### Improvements
 
-* An exception is now thrown if explicit `Recheck#check` is called with an implicit `RecheckDriver`. This kind of mixing is not expected and therefore now prevented as it produced unexpected behavior due to both checks trying to find and create a Golden Master.
-* Improve the breaking messages from a `UnbreakableDriver` to include more information like the line number.
-* Add short cuts for screenshot enabling/disabling via the `RecheckWebOptions`.
 * Replace the internal dependency to [Jackson](https://github.com/FasterXML/jackson) (which often caused trouble) with [SnakeYAML](https://bitbucket.org/asomov/snakeyaml).
 
 
