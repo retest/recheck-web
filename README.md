@@ -46,9 +46,9 @@ driver.findElement( By.id( "sign-in" ) ).click();
 assertEquals( driver.findElement( By.tagName( "h4" ) ).getText(), "Success!" );
 ```
 
-If the website e.g. looses _all_ of its CSS, thus rendering it essentially broken for a user, this test will still pass. However, if you change an invisible attribute that is irrelevant for a user, e.g. the element ID `username`, this test will break.
+If the website e.g. loses _all_ of its CSS, thus rendering it essentially broken for a user, this test will still pass. However, if you change an invisible attribute that is irrelevant for a user, e.g. the element ID `username`, this test will break.
 
-By simply wrapping the driver in a `RecheckDriver` and adding either a call to `driver.capTest()` or our [JUnit 4](https://github.com/retest/recheck-junit-4-extension) or [JUnit 5](https://github.com/retest/recheck-junit-jupiter-extension) extension, all of this changes. When the looks of the website changes, the test will fail. And if the element ID changes, the test will still execute, albeit report the change—unless you chose to ignore it e.g. by specifying `attribute=id` in your `recheck.ignore` file (a file similar to Git's `.gitignore`). 
+By simply wrapping the driver in a `RecheckDriver` and adding either a call to `driver.capTest()` or our [JUnit 4](https://github.com/retest/recheck-junit-4-extension) or [JUnit 5](https://github.com/retest/recheck-junit-jupiter-extension) extension, all of this changes. When the looks of the website change, the test will fail. And if the element ID changes, the test will still execute, albeit report the change—unless you chose to ignore it e.g. by specifying `attribute=id` in your `recheck.ignore` file (a file similar to Git's `.gitignore`).
 
 
 ## Benefits
