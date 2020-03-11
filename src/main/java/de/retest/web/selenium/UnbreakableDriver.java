@@ -291,4 +291,13 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 		}
 		return wrappedDriver;
 	}
+
+	/**
+	 * Skip checks for actions performed on this web driver. Alias for {@link #getWrappedDriver()}.
+	 *
+	 * @return the {@link WebDriver} wrapped by this instance
+	 */
+	public WebDriver skipCheck() {
+		return getWrappedDriver();
+	}
 }

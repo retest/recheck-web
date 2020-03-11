@@ -29,6 +29,8 @@ Table of Contents
 
 ### New Features
 
+* Introduce a `skipCheck()` method on `RecheckDriver`, `AutocheckingRecheckDriver`, and `UnbreakableDriver`, which is an alias for `getWrappedDriver()`, making it possible signal a clearer intent when writing tests.
+
 ### Improvements
 
 
