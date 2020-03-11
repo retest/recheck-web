@@ -74,8 +74,15 @@ class HasTest {
 		);
 	}
 
-	@Test
-	void should_match_attribute_with_value_containing_word() throws Exception {
+	@MethodSource( "attributeMatchersContainingWord" )
+	@ParameterizedTest( name = "[{index}] using selector ''{0}'', to match ''{1}'', expecting {2}" )
+	void should_match_attribute_with_value_containing_word( final String selector, final String value,
+			final boolean expectedResult ) throws Exception {
+		when( element.getAttributeValue( "attributeName" ) ).thenReturn( value );
+		assertThat( Has.attributeContaining( selector ).test( element ) ).isEqualTo( expectedResult );
+	}
+
+	private static Stream<Arguments> attributeMatchersContainingWord() {
 		final String selectorChar = "~";
 		final String attributeName = "attributeName";
 		final String wordSeparator = " ";
@@ -86,11 +93,10 @@ class HasTest {
 		final String notMatchingValue = prefix + word + suffix;
 		final String selector = attributeName + selectorChar + "=" + word;
 
-		when( element.getAttributeValue( attributeName ) ).thenReturn( matchingValue );
-		assertThat( Has.attributeContaining( selector ).test( element ) ).isTrue();
-
-		when( element.getAttributeValue( attributeName ) ).thenReturn( notMatchingValue );
-		assertThat( Has.attributeContaining( selector ).test( element ) ).isFalse();
+		return Stream.of( //
+				Arguments.of( selector, matchingValue, true ), //
+				Arguments.of( selector, notMatchingValue, false ) //
+		);
 	}
 
 	@CsvSource( value = { "word, true", "word-suffix,true", "wordsuffix,false", "prefixword-suffix,false" } )

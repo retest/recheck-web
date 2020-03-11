@@ -52,7 +52,7 @@
 		<project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<junit.jupiter.version>5.6.0</junit.jupiter.version>
-		<mockito.version>3.2.4</mockito.version>
+		<mockito.version>3.3.0</mockito.version>
 		<logback.version>1.2.3</logback.version>
 		<selenium.version>3.141.59</selenium.version>
 	</properties>
@@ -61,7 +61,7 @@
 		<url>https://github.com/retest/recheck-web/</url>
 		<connection>scm:git:git@github.com:retest/recheck-web.git</connection>
 		<developerConnection>scm:git:git@github.com:retest/recheck-web.git</developerConnection>
-		<tag>v1.10.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
@@ -122,7 +122,7 @@
 		<dependency>
 			<groupId>org.yaml</groupId>
 			<artifactId>snakeyaml</artifactId>
-			<version>1.21</version>            
+			<version>1.26</version>            
 		</dependency>
 
 		<dependency>
@@ -411,6 +411,32 @@
 								<phase>verify</phase>
 								<goals>
 									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>coverage</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.jacoco</groupId>
+						<artifactId>jacoco-maven-plugin</artifactId>
+						<version>0.8.5</version>
+						<executions>
+							<execution>
+								<id>prepare-agent</id>
+								<goals>
+									<goal>prepare-agent</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>report</id>
+								<goals>
+									<goal>report</goal>
 								</goals>
 							</execution>
 						</executions>
