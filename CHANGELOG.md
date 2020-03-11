@@ -27,14 +27,20 @@ Table of Contents
 
 ### Bug Fixes
 
-* Fix method `RecheckWebOptionsBuilder#checkNamingStrategy( AutocheckingCheckNamingStrategy )`was changed to `protected`. It is now `public` again.
-
 ### New Features
 
 ### Improvements
 
 
 --------------------------------------------------------------------------------
+
+
+[1.10.2] (2020-03-11)
+---------------------
+
+### Bug Fixes
+
+* Upgrade to recheck version 1.10.1
 
 
 [1.10.1] (2020-03-06)
