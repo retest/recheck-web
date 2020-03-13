@@ -294,7 +294,7 @@ function transform(node) {
         "tagName": node.tagName.toLowerCase(),
         "text": getText(node),
         "value": node.value,
-        "tab-index": node.tabIndex,
+        "tabindex": node.tabIndex,
         "shown": isShown(node)
     };
     

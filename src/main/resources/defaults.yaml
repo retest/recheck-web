@@ -43,7 +43,7 @@ all:
   - perspective-origin: 50% 50%
   - position: static
   - tab-size: 8
-  - tab-index: -1
+  - tabindex: -1
   - text-align: start
   - text-decoration-style: solid
   - text-overflow: clip
@@ -69,7 +69,7 @@ a:
   - text-decoration-color: rgb(0, 0, 238)
   - color: rgb(0, 0, 238)
   - display: inline
-  - tab-index: 0
+  - tabindex: 0
   - text-decoration: underline
   - text-decoration-line: underline
 
@@ -105,7 +105,7 @@ br:
   - display: inline
   
 button:
-  - tab-index: 0
+  - tabindex: 0
   - read-only: false
 
 caption:
@@ -224,7 +224,7 @@ i:
   - font-style: italic
   
 iframe:
-  - tab-index: 0
+  - tabindex: 0
 
 input:
   - border-image-width: 1
@@ -233,7 +233,7 @@ input:
   - display: inline-block
   - margin-bottom: 3px
   - margin-top: 3px
-  - tab-index: 0  
+  - tabindex: 0  
   - read-only: false
 
 img:
@@ -317,7 +317,7 @@ script:
   - display: none
 
 select:
-  - tab-index: 0
+  - tabindex: 0
 
 small:
   - font-size: smaller
@@ -370,7 +370,7 @@ td:
   - vertical-align: inherit
   
 textarea:
-  - tab-index: 0
+  - tabindex: 0
   - read-only: false
 
 tfoot:
