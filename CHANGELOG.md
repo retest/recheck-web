@@ -33,6 +33,7 @@ Table of Contents
 
 ### Improvements
 
+* Since `retestId` is now created deterministically, we can reference it before we even have a Golden Master. So if you know what the `retestId` will gona be (e.g. your element has a specific text, HTML ID or you have your own `RetestIdProvider`), you can already use it in the test. 
 
 --------------------------------------------------------------------------------
 
