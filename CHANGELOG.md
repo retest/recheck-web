@@ -25,6 +25,8 @@ Table of Contents
 
 ### Breaking Changes
 
+* Rename self-introduced property tab-index to tabindex, which is W3C standard.
+
 ### Bug Fixes
 
 ### New Features
