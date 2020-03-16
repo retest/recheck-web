@@ -25,9 +25,13 @@ Table of Contents
 
 ### Breaking Changes
 
+* Rename self-introduced property tab-index to tabindex, which is W3C standard.
+
 ### Bug Fixes
 
 ### New Features
+
+* Introduce a `skipCheck()` method on `RecheckDriver`, `AutocheckingRecheckDriver`, and `UnbreakableDriver`, which is an alias for `getWrappedDriver()`, making it possible signal a clearer intent when writing tests.
 
 ### Improvements
 
@@ -73,6 +77,7 @@ Table of Contents
 * Fix that `de.retest.recheck.web.screenshot.provider` from `recheck.ignore` is ignored when `RecheckWebOptions` are used.
 * Fix that passing an element into `RecheckWebImpl` from an `UnbreakableDriver` throws an error.
 * Fix that `viewportOnly` points to `ViewportOnlyMinimalScreenshot` and adapt the default accordingly (`viewportOnlyMinimal`).
+* Fix that `ActionbasedCheckNamingStrategy` could potentially throw an error.
 
 ### New Features
 
