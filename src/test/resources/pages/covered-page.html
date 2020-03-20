@@ -1,0 +1,75 @@
+<html>
+
+<head>
+	<style type="text/css">
+		#covering-element {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background: darksalmon;
+			text-align: center;
+			opacity: 0.5;
+		}
+
+		#hidden-element {
+			width: 25px;
+			height: 25px;
+		}
+
+		#partially-covering-element-right {
+			position: absolute;
+			top: 120px;
+			width: 100px;
+			height: 100px;
+			background: green;
+			text-align: center;
+			opacity: 0.5;
+			left: 25px;
+		}
+
+		#partially-overlapped-element-right {
+			position: absolute;
+			top: 140px;
+			height: 25px;
+		}
+
+		#partially-covering-element-left {
+			position: absolute;
+			top: 240px;
+			width: 100px;
+			height: 100px;
+			background: greenyellow;
+			text-align: center;
+			opacity: 0.5;
+		}
+
+		#partially-overlapped-element-left {
+			position: absolute;
+			top: 260px;
+			height: 25px;
+			left: 90px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="covering-element"></div>
+
+	<div>
+		<a href="#" id="fully-overlapped-element">foo</a>
+	</div>
+
+	<div id="partially-covering-element-right"></div>
+	<a href="#" id="partially-overlapped-element-right">bar baz</a>
+
+	<div id="partially-covering-element-left"></div>
+	<a href="#" id="partially-overlapped-element-left">bar baz</a>
+
+	<a href="#" id="covered-by-child-element" style="position: absolute;top:360px"><img height="100px" width="100px"></a>
+	
+	<span id="zero-width-element" style="position: absolute;top:470px"></span>
+
+	<button style="position: absolute;top:480px" id="non-overlapping-element">Click</button>
+</body>
+
+</html>
