@@ -284,6 +284,7 @@ function isDisabled(node) {
 
 // check if element is behind another one
 function isCovered(node) {
+    // TODO Handle false negatives for elements outside of viewport
     if (typeof node.getBoundingClientRect === "function") {
 	    var boundingRect = node.getBoundingClientRect();
 
