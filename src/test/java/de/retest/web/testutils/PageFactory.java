@@ -14,7 +14,8 @@ public class PageFactory {
 		SIMPLE_PAGE,
 		FORM_PAGE,
 		FRAME_PAGE,
-		CENTER
+		CENTER,
+		COVERED_PAGE
 	}
 
 	public static String page( final Page page ) {
@@ -33,6 +34,9 @@ public class PageFactory {
 			}
 			case FRAME_PAGE: {
 				return toPageUrlString( "frame-outer.html" );
+			}
+			case COVERED_PAGE: {
+				return toPageUrlString( "covered-page.html" );
 			}
 			default:
 				throw new IllegalArgumentException( "No \"" + page + "\" page available." );

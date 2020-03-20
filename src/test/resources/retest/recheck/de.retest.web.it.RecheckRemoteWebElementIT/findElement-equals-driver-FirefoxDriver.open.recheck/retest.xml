@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.9.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.10.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="We Leave From Here" title="We Leave From Here">
 			<identifyingAttributes>
@@ -26,6 +26,10 @@
 					<entry>
 						<key>border-image-outset</key>
 						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>covered</key>
+						<value xsi:type="xsd:string">false</value>
 					</entry>
 					<entry>
 						<key>font-family</key>
@@ -65,6 +69,10 @@
 				<attributes>
 					<attributes>
 						<entry>
+							<key>covered</key>
+							<value xsi:type="xsd:string">false</value>
+						</entry>
+						<entry>
 							<key>shown</key>
 							<value xsi:type="xsd:string">true</value>
 						</entry>
@@ -97,6 +105,10 @@
 							<entry>
 								<key>action</key>
 								<value xsi:type="xsd:string">#</value>
+							</entry>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>method</key>
@@ -136,11 +148,15 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tab-index</key>
+									<key>tabindex</key>
 								</entry>
 							</attributes>
 						</attributes>
@@ -170,13 +186,17 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input">
+					<containedElements retestId="nothing">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -200,6 +220,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
 								<entry>
 									<key>disabled</key>
 									<value xsi:type="xsd:string">true</value>
@@ -239,18 +263,18 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="select">
+					<containedElements retestId="multi_false">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>664</x>
+									<x>660</x>
 									<y>130</y>
 									<height>72</height>
 									<width>78</width>
 								</attribute>
 								<attribute key="name" xsi:type="stringAttribute">multi_false</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>656</x>
+									<x>652</x>
 									<y>25</y>
 									<height>-270</height>
 									<width>-1262</width>
@@ -335,6 +359,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline-block</value>
 								</entry>
@@ -396,7 +424,7 @@
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>665</x>
+										<x>661</x>
 										<y>149</y>
 										<height>17</height>
 										<width>66</width>
@@ -433,6 +461,10 @@
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -463,7 +495,7 @@
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>665</x>
+										<x>661</x>
 										<y>132</y>
 										<height>17</height>
 										<width>66</width>
@@ -500,6 +532,10 @@
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -527,20 +563,20 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="select-1c056">
+					<containedElements retestId="select">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>319</x>
+									<x>318</x>
 									<y>209</y>
 									<height>31</height>
-									<width>91</width>
+									<width>90</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>311</x>
+									<x>310</x>
 									<y>104</y>
 									<height>-311</height>
-									<width>-1249</width>
+									<width>-1250</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[10]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
@@ -610,6 +646,10 @@
 									<value xsi:type="xsd:string">avoid</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline-block</value>
 								</entry>
@@ -643,14 +683,14 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="option">
+						<containedElements retestId="blankoption">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>321</x>
+										<x>320</x>
 										<y>210</y>
 										<height>14</height>
-										<width>88</width>
+										<width>87</width>
 									</attribute>
 									<attribute key="id" xsi:type="stringAttribute">blankOption</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
@@ -699,6 +739,10 @@
 										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -729,14 +773,14 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="nothing">
+						<containedElements retestId="nothing-1">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>321</x>
+										<x>320</x>
 										<y>224</y>
 										<height>17</height>
-										<width>88</width>
+										<width>87</width>
 									</attribute>
 									<attribute key="id" xsi:type="stringAttribute">optionEmptyValueSet</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
@@ -753,6 +797,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
@@ -777,21 +825,21 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="select-6ff45">
+					<containedElements retestId="select_with_spa">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
 									<x>8</x>
 									<y>209</y>
 									<height>31</height>
-									<width>306</width>
+									<width>305</width>
 								</attribute>
 								<attribute key="name" xsi:type="stringAttribute">select_with_spaces</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>104</y>
 									<height>-311</height>
-									<width>-1034</width>
+									<width>-1035</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[9]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
@@ -861,6 +909,10 @@
 									<value xsi:type="xsd:string">avoid</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline-block</value>
 								</entry>
@@ -905,7 +957,7 @@
 										<x>10</x>
 										<y>244</y>
 										<height>17</height>
-										<width>303</width>
+										<width>302</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -921,6 +973,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
@@ -955,7 +1011,7 @@
 										<x>10</x>
 										<y>261</y>
 										<height>17</height>
-										<width>303</width>
+										<width>302</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -971,6 +1027,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
@@ -1005,7 +1065,7 @@
 										<x>10</x>
 										<y>210</y>
 										<height>17</height>
-										<width>303</width>
+										<width>302</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -1054,6 +1114,10 @@
 										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -1095,7 +1159,7 @@
 										<x>10</x>
 										<y>227</y>
 										<height>17</height>
-										<width>303</width>
+										<width>302</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -1111,6 +1175,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
@@ -1139,11 +1207,11 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="input-cae33">
+					<containedElements retestId="lone_disabled">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>88</x>
+									<x>87</x>
 									<y>419</y>
 									<height>18</height>
 									<width>18</width>
@@ -1151,7 +1219,7 @@
 								<attribute key="id" xsi:type="stringAttribute">lone_disabled_selected_radio</attribute>
 								<attribute key="name" xsi:type="stringAttribute">not_a_snack</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>80</x>
+									<x>79</x>
 									<y>314</y>
 									<height>-324</height>
 									<width>-1322</width>
@@ -1166,6 +1234,10 @@
 								<entry>
 									<key>checked</key>
 									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>disabled</key>
@@ -1206,18 +1278,18 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="select-31037">
+					<containedElements retestId="multi_true">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>581</x>
+									<x>578</x>
 									<y>130</y>
 									<height>72</height>
 									<width>78</width>
 								</attribute>
 								<attribute key="name" xsi:type="stringAttribute">multi_true</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>573</x>
+									<x>570</x>
 									<y>25</y>
 									<height>-270</height>
 									<width>-1262</width>
@@ -1302,6 +1374,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline-block</value>
 								</entry>
@@ -1359,11 +1435,11 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="select_1-b76d1">
+						<containedElements retestId="select_1-1">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>582</x>
+										<x>579</x>
 										<y>132</y>
 										<height>17</height>
 										<width>66</width>
@@ -1400,6 +1476,10 @@
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -1426,11 +1506,11 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="select_2-44f5d">
+						<containedElements retestId="select_2-1">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>582</x>
+										<x>579</x>
 										<y>149</y>
 										<height>17</height>
 										<width>66</width>
@@ -1467,6 +1547,10 @@
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -1494,7 +1578,7 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="heres_a_checkbox-f174c">
+					<containedElements retestId="heres_a_checkbox-1">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -1518,30 +1602,34 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tab-index</key>
+									<key>tabindex</key>
 								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="select-b4a10">
+					<containedElements retestId="noselect">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>430</x>
+									<x>428</x>
 									<y>178</y>
 									<height>31</height>
-									<width>63</width>
+									<width>62</width>
 								</attribute>
 								<attribute key="name" xsi:type="stringAttribute">no-select</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>422</x>
+									<x>420</x>
 									<y>73</y>
 									<height>-311</height>
-									<width>-1277</width>
+									<width>-1278</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
@@ -1623,6 +1711,10 @@
 									<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>disabled</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -1676,10 +1768,10 @@
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>432</x>
+										<x>430</x>
 										<y>196</y>
 										<height>17</height>
-										<width>60</width>
+										<width>59</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -1712,6 +1804,10 @@
 										<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -1742,10 +1838,10 @@
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>432</x>
+										<x>430</x>
 										<y>179</y>
 										<height>17</height>
-										<width>60</width>
+										<width>59</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -1794,6 +1890,10 @@
 										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -1829,21 +1929,21 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="select-1d0da">
+					<containedElements retestId="selectdefault">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>849</x>
+									<x>844</x>
 									<y>178</y>
 									<height>31</height>
-									<width>306</width>
+									<width>305</width>
 								</attribute>
 								<attribute key="name" xsi:type="stringAttribute">select-default</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>841</x>
+									<x>836</x>
 									<y>73</y>
 									<height>-311</height>
-									<width>-1034</width>
+									<width>-1035</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[8]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
@@ -1913,6 +2013,10 @@
 									<value xsi:type="xsd:string">avoid</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline-block</value>
 								</entry>
@@ -1950,14 +2054,14 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="one-97565">
+						<containedElements retestId="one-1">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>851</x>
+										<x>846</x>
 										<y>179</y>
 										<height>17</height>
-										<width>303</width>
+										<width>302</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -2006,6 +2110,10 @@
 										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -2040,14 +2148,14 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="still_learning-67214">
+						<containedElements retestId="still_learning-1">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>851</x>
+										<x>846</x>
 										<y>230</y>
 										<height>17</height>
-										<width>303</width>
+										<width>302</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -2063,6 +2171,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
@@ -2090,14 +2202,14 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="two-30800">
+						<containedElements retestId="two-1">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>851</x>
+										<x>846</x>
 										<y>196</y>
 										<height>17</height>
-										<width>303</width>
+										<width>302</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -2113,6 +2225,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
@@ -2140,14 +2256,14 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="four-ffb8b">
+						<containedElements retestId="four-1">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>851</x>
+										<x>846</x>
 										<y>213</y>
 										<height>17</height>
-										<width>303</width>
+										<width>302</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -2163,6 +2279,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
@@ -2191,7 +2311,7 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="input-6b819">
+					<containedElements retestId="cheese_and_peas">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2218,6 +2338,10 @@
 								<entry>
 									<key>checked</key>
 									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -2254,20 +2378,20 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-b2e03">
+					<containedElements retestId="input">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
 									<x>8</x>
 									<y>418</y>
 									<height>29</height>
-									<width>70</width>
+									<width>69</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>313</y>
 									<height>-313</height>
-									<width>-1270</width>
+									<width>-1271</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/input[11]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">11</attribute>
@@ -2329,6 +2453,10 @@
 									<value xsi:type="xsd:string">6px</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -2371,21 +2499,21 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="select-d9278">
+					<containedElements retestId="selectomatic">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
 									<x>8</x>
 									<y>178</y>
 									<height>31</height>
-									<width>306</width>
+									<width>305</width>
 								</attribute>
 								<attribute key="name" xsi:type="stringAttribute">selectomatic</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>73</y>
 									<height>-311</height>
-									<width>-1034</width>
+									<width>-1035</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -2455,6 +2583,10 @@
 									<value xsi:type="xsd:string">avoid</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline-block</value>
 								</entry>
@@ -2492,14 +2624,14 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="still_learning-1537b">
+						<containedElements retestId="still_learning-2">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
 										<x>10</x>
 										<y>230</y>
 										<height>17</height>
-										<width>303</width>
+										<width>302</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -2515,6 +2647,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
@@ -2542,14 +2678,14 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="four-b364f">
+						<containedElements retestId="four-2">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
 										<x>10</x>
 										<y>213</y>
 										<height>17</height>
-										<width>303</width>
+										<width>302</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -2565,6 +2701,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
@@ -2592,14 +2732,14 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="two-5535e">
+						<containedElements retestId="two-2">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
 										<x>10</x>
 										<y>196</y>
 										<height>17</height>
-										<width>303</width>
+										<width>302</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -2615,6 +2755,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
@@ -2642,14 +2786,14 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="one-01d27">
+						<containedElements retestId="one-2">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
 										<x>10</x>
 										<y>179</y>
 										<height>17</height>
-										<width>303</width>
+										<width>302</width>
 									</attribute>
 									<attribute key="id" xsi:type="stringAttribute">non_multi_option</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
@@ -2699,6 +2843,10 @@
 										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -2742,13 +2890,13 @@
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>168</x>
+									<x>171</x>
 									<y>311</y>
 									<height>0</height>
 									<width>0</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>160</x>
+									<x>163</x>
 									<y>206</y>
 									<height>-342</height>
 									<width>-1340</width>
@@ -2761,13 +2909,17 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="cheese_and_peas">
+					<containedElements retestId="cheese_and_peas-1">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -2791,27 +2943,31 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tab-index</key>
+									<key>tabindex</key>
 								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="select-f4792">
+					<containedElements retestId="select_empty">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>498</x>
+									<x>495</x>
 									<y>130</y>
 									<height>72</height>
 									<width>78</width>
 								</attribute>
 								<attribute key="name" xsi:type="stringAttribute">select_empty_multiple</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>490</x>
+									<x>487</x>
 									<y>25</y>
 									<height>-270</height>
 									<width>-1262</width>
@@ -2896,6 +3052,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline-block</value>
 								</entry>
@@ -2949,11 +3109,11 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="select_2-a0734">
+						<containedElements retestId="select_2-2">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>499</x>
+										<x>496</x>
 										<y>149</y>
 										<height>17</height>
 										<width>66</width>
@@ -2990,6 +3150,10 @@
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -3016,11 +3180,11 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="select_1-27846">
+						<containedElements retestId="select_1-2">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>499</x>
+										<x>496</x>
 										<y>132</y>
 										<height>17</height>
 										<width>66</width>
@@ -3057,6 +3221,10 @@
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -3087,7 +3255,7 @@
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>499</x>
+										<x>496</x>
 										<y>166</y>
 										<height>17</height>
 										<width>66</width>
@@ -3124,6 +3292,10 @@
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -3154,7 +3326,7 @@
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>499</x>
+										<x>496</x>
 										<y>183</y>
 										<height>17</height>
 										<width>66</width>
@@ -3191,6 +3363,10 @@
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -3218,11 +3394,11 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="input-46bcd">
+					<containedElements retestId="checkedchecky">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>200</x>
+									<x>202</x>
 									<y>108</y>
 									<height>18</height>
 									<width>18</width>
@@ -3230,7 +3406,7 @@
 								<attribute key="id" xsi:type="stringAttribute">checkedchecky</attribute>
 								<attribute key="name" xsi:type="stringAttribute">checkedchecky</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>192</x>
+									<x>194</x>
 									<y>3</y>
 									<height>-324</height>
 									<width>-1322</width>
@@ -3245,6 +3421,10 @@
 								<entry>
 									<key>checked</key>
 									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -3277,22 +3457,22 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="select-619a6">
+					<containedElements retestId="multi">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>319</x>
+									<x>318</x>
 									<y>130</y>
 									<height>72</height>
-									<width>106</width>
+									<width>105</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">multi</attribute>
 								<attribute key="name" xsi:type="stringAttribute">multi</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>311</x>
+									<x>310</x>
 									<y>25</y>
 									<height>-270</height>
-									<width>-1234</width>
+									<width>-1235</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -3374,6 +3554,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline-block</value>
 								</entry>
@@ -3439,10 +3623,10 @@
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>320</x>
+										<x>319</x>
 										<y>149</y>
 										<height>17</height>
-										<width>94</width>
+										<width>93</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>1</x>
@@ -3475,6 +3659,10 @@
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -3505,10 +3693,10 @@
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>320</x>
+										<x>319</x>
 										<y>132</y>
 										<height>17</height>
-										<width>94</width>
+										<width>93</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>1</x>
@@ -3557,6 +3745,10 @@
 										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -3599,10 +3791,10 @@
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>320</x>
+										<x>319</x>
 										<y>166</y>
 										<height>17</height>
-										<width>94</width>
+										<width>93</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>1</x>
@@ -3651,6 +3843,10 @@
 										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -3693,10 +3889,10 @@
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>320</x>
+										<x>319</x>
 										<y>183</y>
 										<height>17</height>
-										<width>94</width>
+										<width>93</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>1</x>
@@ -3729,6 +3925,10 @@
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -3756,11 +3956,11 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="input-7c92a">
+					<containedElements retestId="checky">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>170</x>
+									<x>172</x>
 									<y>108</y>
 									<height>18</height>
 									<width>18</width>
@@ -3768,7 +3968,7 @@
 								<attribute key="id" xsi:type="stringAttribute">checky</attribute>
 								<attribute key="name" xsi:type="stringAttribute">checky</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>162</x>
+									<x>164</x>
 									<y>3</y>
 									<height>-324</height>
 									<width>-1322</width>
@@ -3780,6 +3980,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
 								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
@@ -3835,16 +4039,20 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tab-index</key>
+									<key>tabindex</key>
 								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-24696">
+					<containedElements retestId="randomly_disabl">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -3868,6 +4076,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
 								<entry>
 									<key>disabled</key>
 									<value xsi:type="xsd:string">true</value>
@@ -3907,7 +4119,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="br-692b5">
+					<containedElements retestId="br-1">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -3930,23 +4142,27 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="br-87a3d">
+					<containedElements retestId="br-2">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>91</x>
+									<x>93</x>
 									<y>261</y>
 									<height>0</height>
 									<width>0</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>83</x>
+									<x>85</x>
 									<y>156</y>
 									<height>-342</height>
 									<width>-1340</width>
@@ -3958,6 +4174,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -3989,20 +4209,24 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tab-index</key>
+									<key>tabindex</key>
 								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-b659b">
+					<containedElements retestId="randomly_disabl-1">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>260</x>
+									<x>262</x>
 									<y>108</y>
 									<height>18</height>
 									<width>18</width>
@@ -4010,7 +4234,7 @@
 								<attribute key="id" xsi:type="stringAttribute">randomly_disabled_checky</attribute>
 								<attribute key="name" xsi:type="stringAttribute">randomlydisabledchecky</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>252</x>
+									<x>254</x>
 									<y>3</y>
 									<height>-324</height>
 									<width>-1322</width>
@@ -4025,6 +4249,10 @@
 								<entry>
 									<key>checked</key>
 									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>disabled</key>
@@ -4061,21 +4289,21 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="select-ddfcb">
+					<containedElements retestId="invisi_select">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>747</x>
+									<x>743</x>
 									<y>178</y>
 									<height>31</height>
-									<width>97</width>
+									<width>96</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">invisi_select</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>739</x>
+									<x>735</x>
 									<y>73</y>
 									<height>-311</height>
-									<width>-1243</width>
+									<width>-1244</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[3]/select[7]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
@@ -4145,6 +4373,10 @@
 									<value xsi:type="xsd:string">avoid</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline-block</value>
 								</entry>
@@ -4194,10 +4426,10 @@
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>749</x>
+										<x>745</x>
 										<y>196</y>
 										<height>17</height>
-										<width>94</width>
+										<width>93</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -4213,6 +4445,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
@@ -4244,10 +4480,10 @@
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>749</x>
+										<x>745</x>
 										<y>179</y>
 										<height>17</height>
-										<width>94</width>
+										<width>93</width>
 									</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>2</x>
@@ -4296,6 +4532,10 @@
 										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -4331,7 +4571,7 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="br-4f1bb">
+					<containedElements retestId="br-3">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4353,6 +4593,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -4384,20 +4628,24 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tab-index</key>
+									<key>tabindex</key>
 								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-8b08b">
+					<containedElements retestId="disabledchecky">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>230</x>
+									<x>232</x>
 									<y>108</y>
 									<height>18</height>
 									<width>18</width>
@@ -4405,7 +4653,7 @@
 								<attribute key="id" xsi:type="stringAttribute">disabledchecky</attribute>
 								<attribute key="name" xsi:type="stringAttribute">disabledchecky</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>222</x>
+									<x>224</x>
 									<y>3</y>
 									<height>-324</height>
 									<width>-1322</width>
@@ -4417,6 +4665,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
 								<entry>
 									<key>disabled</key>
 									<value xsi:type="xsd:string">true</value>
@@ -4452,17 +4704,17 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="br-f5aec">
+					<containedElements retestId="br-4">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>281</x>
+									<x>283</x>
 									<y>126</y>
 									<height>0</height>
 									<width>0</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>273</x>
+									<x>275</x>
 									<y>21</y>
 									<height>-342</height>
 									<width>-1340</width>
@@ -4475,13 +4727,17 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-d5ba4">
+					<containedElements retestId="peas-1">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4505,6 +4761,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
 								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
@@ -4540,17 +4800,17 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="br-936a9">
+					<containedElements retestId="br-5">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>410</x>
+									<x>408</x>
 									<y>229</y>
 									<height>0</height>
 									<width>0</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>402</x>
+									<x>400</x>
 									<y>124</y>
 									<height>-342</height>
 									<width>-1340</width>
@@ -4562,6 +4822,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -4593,16 +4857,20 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tab-index</key>
+									<key>tabindex</key>
 								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-11ca1">
+					<containedElements retestId="cheese-1">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4626,6 +4894,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
 								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
@@ -4662,7 +4934,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="form">
+				<containedElements retestId="nested_form">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4688,6 +4960,10 @@
 							<entry>
 								<key>action</key>
 								<value xsi:type="xsd:string">resultPage.html</value>
+							</entry>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>method</key>
@@ -4722,26 +4998,30 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="input-dc5f1">
+						<containedElements retestId="x">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
 										<x>8</x>
 										<y>666</y>
 										<height>29</height>
-										<width>211</width>
+										<width>216</width>
 									</attribute>
 									<attribute key="name" xsi:type="stringAttribute">x</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>0</x>
 										<y>0</y>
 										<height>0</height>
-										<width>-1129</width>
+										<width>-1124</width>
 									</attribute>
 									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[7]/div[1]/input[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -4815,6 +5095,10 @@
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>font-family</key>
 										<value xsi:type="xsd:string">sans-serif</value>
 									</entry>
@@ -4862,7 +5146,7 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="input-58004">
+					<containedElements retestId="input-1">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -4937,6 +5221,10 @@
 									<value xsi:type="xsd:string">6px</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -4976,7 +5264,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="form-e2d9b">
+				<containedElements retestId="disable">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -5004,6 +5292,10 @@
 								<value xsi:type="xsd:string">resultPage.html</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>method</key>
 								<value xsi:type="xsd:string">get</value>
 							</entry>
@@ -5013,21 +5305,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="input-2ef6c">
+					<containedElements retestId="working">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
 									<x>8</x>
 									<y>529</y>
 									<height>29</height>
-									<width>211</width>
+									<width>216</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">working</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>66</y>
 									<height>-66</height>
-									<width>-1129</width>
+									<width>-1124</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[4]/input[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -5101,6 +5393,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -5147,21 +5443,21 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-c98d0">
+					<containedElements retestId="notworking">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>224</x>
+									<x>229</x>
 									<y>529</y>
 									<height>29</height>
-									<width>211</width>
+									<width>216</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">notWorking</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>216</x>
+									<x>221</x>
 									<y>66</y>
 									<height>-66</height>
-									<width>-1129</width>
+									<width>-1124</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[4]/input[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -5235,6 +5531,10 @@
 									<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>disabled</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -5285,21 +5585,21 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-49356">
+					<containedElements retestId="inputwithtext">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>494</x>
+									<x>506</x>
 									<y>529</y>
 									<height>29</height>
-									<width>211</width>
+									<width>216</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">inputWithText</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>486</x>
+									<x>498</x>
 									<y>66</y>
 									<height>-66</height>
-									<width>-1129</width>
+									<width>-1124</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[4]/input[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
@@ -5373,6 +5673,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -5423,21 +5727,21 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="textarea">
+					<containedElements retestId="notworkingarea">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>440</x>
+									<x>451</x>
 									<y>464</y>
 									<height>87</height>
-									<width>49</width>
+									<width>50</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">notWorkingArea</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>432</x>
+									<x>443</x>
 									<y>1</y>
 									<height>-8</height>
-									<width>-1291</width>
+									<width>-1290</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[4]/textarea[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -5519,6 +5823,10 @@
 									<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>disabled</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -5589,17 +5897,17 @@
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>710</x>
+									<x>728</x>
 									<y>464</y>
 									<height>87</height>
-									<width>49</width>
+									<width>50</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">withText</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>702</x>
+									<x>720</x>
 									<y>1</y>
 									<height>-8</height>
-									<width>-1291</width>
+									<width>-1290</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[4]/textarea[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -5682,6 +5990,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline</value>
 								</entry>
@@ -5748,21 +6060,21 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="textarea-62d64">
+					<containedElements retestId="emptytextarea">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>764</x>
+									<x>783</x>
 									<y>464</y>
 									<height>87</height>
-									<width>49</width>
+									<width>50</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">emptyTextArea</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>756</x>
+									<x>775</x>
 									<y>1</y>
 									<height>-8</height>
-									<width>-1291</width>
+									<width>-1290</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[4]/textarea[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
@@ -5844,6 +6156,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline</value>
 								</entry>
@@ -5907,7 +6223,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="form-dbb6a">
+				<containedElements retestId="form">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -5934,6 +6250,10 @@
 								<value xsi:type="xsd:string">resultPage.html</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>method</key>
 								<value xsi:type="xsd:string">post</value>
 							</entry>
@@ -5943,21 +6263,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="input-ff19e">
+					<containedElements retestId="upload">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>295</x>
+									<x>300</x>
 									<y>575</y>
 									<height>29</height>
-									<width>269</width>
+									<width>268</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">upload</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>287</x>
+									<x>292</x>
 									<y>1</y>
 									<height>-2</height>
-									<width>-1071</width>
+									<width>-1072</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[5]/input[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -5966,6 +6286,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
 								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
@@ -6005,21 +6329,21 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-34f2a">
+					<containedElements retestId="notype">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
 									<x>79</x>
 									<y>575</y>
 									<height>29</height>
-									<width>211</width>
+									<width>216</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">no-type</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>71</x>
 									<y>1</y>
 									<height>-2</height>
-									<width>-1129</width>
+									<width>-1124</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[5]/input[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -6093,6 +6417,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -6135,7 +6463,7 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="select-8f587">
+					<containedElements retestId="redirect">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6220,6 +6548,10 @@
 									<value xsi:type="xsd:string">avoid</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline-block</value>
 								</entry>
@@ -6261,7 +6593,7 @@
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="one-80ab6">
+						<containedElements retestId="one-3">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6317,6 +6649,10 @@
 										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
+									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
 									</entry>
@@ -6355,7 +6691,7 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="two-fc49b">
+						<containedElements retestId="two-3">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6379,6 +6715,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">true</value>
+									</entry>
 									<entry>
 										<key>min-height</key>
 										<value xsi:type="xsd:string">14px</value>
@@ -6407,18 +6747,18 @@
 							</attributes>
 						</containedElements>
 					</containedElements>
-					<containedElements retestId="span">
+					<containedElements retestId="fileresults">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>569</x>
+									<x>573</x>
 									<y>594</y>
 									<height>0</height>
 									<width>0</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">fileResults</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>561</x>
+									<x>565</x>
 									<y>20</y>
 									<height>-31</height>
 									<width>-1340</width>
@@ -6431,23 +6771,27 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-33b6a">
+					<containedElements retestId="input-2">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>569</x>
+									<x>573</x>
 									<y>575</y>
 									<height>29</height>
 									<width>127</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>561</x>
+									<x>565</x>
 									<y>1</y>
 									<height>-2</height>
 									<width>-1213</width>
@@ -6512,6 +6856,10 @@
 									<value xsi:type="xsd:string">6px</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -6551,7 +6899,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="form-5e8ff">
+				<containedElements retestId="form-1">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -6576,6 +6924,10 @@
 							<entry>
 								<key>action</key>
 								<value xsi:type="xsd:string">xhtmlTest.html</value>
+							</entry>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>method</key>
@@ -6610,26 +6962,30 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 							</attributes>
 						</attributes>
-						<containedElements retestId="input-1fa01">
+						<containedElements retestId="disabledtextele">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
 										<x>8</x>
 										<y>740</y>
 										<height>29</height>
-										<width>211</width>
+										<width>216</width>
 									</attribute>
 									<attribute key="id" xsi:type="stringAttribute">disabledTextElement1</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
 										<x>0</x>
 										<y>0</y>
 										<height>0</height>
-										<width>-1129</width>
+										<width>-1124</width>
 									</attribute>
 									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[8]/p[1]/input[1]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -6703,6 +7059,10 @@
 										<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>disabled</key>
 										<value xsi:type="xsd:string">true</value>
 									</entry>
@@ -6757,21 +7117,21 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="input-e5c8d">
+						<containedElements retestId="disabledtextele-1">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>224</x>
+										<x>229</x>
 										<y>740</y>
 										<height>29</height>
-										<width>211</width>
+										<width>216</width>
 									</attribute>
 									<attribute key="id" xsi:type="stringAttribute">disabledTextElement2</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
-										<x>216</x>
+										<x>221</x>
 										<y>0</y>
 										<height>0</height>
-										<width>-1129</width>
+										<width>-1124</width>
 									</attribute>
 									<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[8]/p[1]/input[2]</attribute>
 									<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -6845,6 +7205,10 @@
 										<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>disabled</key>
 										<value xsi:type="xsd:string">true</value>
 									</entry>
@@ -6899,18 +7263,18 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="input-23a43">
+						<containedElements retestId="disabledsubmite">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
-										<x>440</x>
+										<x>451</x>
 										<y>740</y>
 										<height>29</height>
 										<width>80</width>
 									</attribute>
 									<attribute key="id" xsi:type="stringAttribute">disabledSubmitElement</attribute>
 									<attribute key="outline" xsi:type="outlineAttribute">
-										<x>432</x>
+										<x>443</x>
 										<y>0</y>
 										<height>0</height>
 										<width>-1260</width>
@@ -6987,6 +7351,10 @@
 										<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
 									</entry>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>disabled</key>
 										<value xsi:type="xsd:string">true</value>
 									</entry>
@@ -7047,7 +7415,7 @@
 						</containedElements>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="form-5cead">
+				<containedElements retestId="form-2">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -7074,6 +7442,10 @@
 								<value xsi:type="xsd:string">resultPage.html</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>method</key>
 								<value xsi:type="xsd:string">get</value>
 							</entry>
@@ -7083,21 +7455,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="input-4f155">
+					<containedElements retestId="idname2">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>440</x>
+									<x>451</x>
 									<y>621</y>
 									<height>29</height>
-									<width>211</width>
+									<width>216</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">id-name2</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>432</x>
+									<x>443</x>
 									<y>0</y>
 									<height>0</height>
-									<width>-1129</width>
+									<width>-1124</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[6]/input[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
@@ -7171,6 +7543,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -7221,21 +7597,21 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-491f1">
+					<containedElements retestId="idname2-1">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>656</x>
+									<x>672</x>
 									<y>621</y>
 									<height>29</height>
-									<width>211</width>
+									<width>216</width>
 								</attribute>
 								<attribute key="name" xsi:type="stringAttribute">id-name2</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>648</x>
+									<x>664</x>
 									<y>0</y>
 									<height>0</height>
-									<width>-1129</width>
+									<width>-1124</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[6]/input[4]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
@@ -7309,6 +7685,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -7359,21 +7739,21 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-81a4c">
+					<containedElements retestId="idname1">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
 									<x>8</x>
 									<y>621</y>
 									<height>29</height>
-									<width>211</width>
+									<width>216</width>
 								</attribute>
 								<attribute key="name" xsi:type="stringAttribute">id-name1</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>0</y>
 									<height>0</height>
-									<width>-1129</width>
+									<width>-1124</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[6]/input[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -7447,6 +7827,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -7497,21 +7881,21 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-5275f">
+					<containedElements retestId="idname1-1">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>224</x>
+									<x>229</x>
 									<y>621</y>
 									<height>29</height>
-									<width>211</width>
+									<width>216</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">id-name1</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>216</x>
+									<x>221</x>
 									<y>0</y>
 									<height>0</height>
-									<width>-1129</width>
+									<width>-1124</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[6]/input[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -7585,6 +7969,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -7635,21 +8023,21 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-816a2">
+					<containedElements retestId="readonly">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>872</x>
+									<x>894</x>
 									<y>621</y>
 									<height>29</height>
-									<width>211</width>
+									<width>216</width>
 								</attribute>
 								<attribute key="name" xsi:type="stringAttribute">readonly</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>864</x>
+									<x>886</x>
 									<y>0</y>
 									<height>0</height>
-									<width>-1129</width>
+									<width>-1124</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[6]/input[5]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
@@ -7723,6 +8111,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -7774,7 +8166,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="form-771f8">
+				<containedElements retestId="form-3">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -7801,6 +8193,10 @@
 								<value xsi:type="xsd:string">formPage.html</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>method</key>
 								<value xsi:type="xsd:string">get</value>
 							</entry>
@@ -7810,7 +8206,7 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="p-542f8">
+					<containedElements retestId="p-1">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -7832,6 +8228,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -7863,6 +8263,10 @@
 							<attributes>
 								<attributes>
 									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
+									<entry>
 										<key>for</key>
 										<value xsi:type="xsd:string">checkbox-with-label</value>
 									</entry>
@@ -7873,7 +8277,7 @@
 								</attributes>
 							</attributes>
 						</containedElements>
-						<containedElements retestId="input-9fe9a">
+						<containedElements retestId="checkboxwithlabel">
 							<identifyingAttributes>
 								<attributes>
 									<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -7896,6 +8300,10 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
+									<entry>
+										<key>covered</key>
+										<value xsi:type="xsd:string">false</value>
+									</entry>
 									<entry>
 										<key>font-family</key>
 										<value xsi:type="xsd:string">sans-serif</value>
@@ -7929,7 +8337,7 @@
 						</containedElements>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="form-650e1">
+				<containedElements retestId="login">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -7957,6 +8365,10 @@
 								<value xsi:type="xsd:string">resultPage.html</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>method</key>
 								<value xsi:type="xsd:string">get</value>
 							</entry>
@@ -7966,21 +8378,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="input-315e7">
+					<containedElements retestId="submitbutton">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>409</x>
+									<x>413</x>
 									<y>27</y>
 									<height>29</height>
-									<width>109</width>
+									<width>107</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">submitButton</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>401</x>
+									<x>405</x>
 									<y>0</y>
 									<height>0</height>
-									<width>-1231</width>
+									<width>-1233</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/input[3]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
@@ -8042,6 +8454,10 @@
 									<value xsi:type="xsd:string">6px</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -8084,21 +8500,21 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-775b8">
+					<containedElements retestId="email">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
 									<x>8</x>
 									<y>27</y>
 									<height>29</height>
-									<width>211</width>
+									<width>216</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">email</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>0</y>
 									<height>0</height>
-									<width>-1129</width>
+									<width>-1124</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/input[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -8172,6 +8588,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -8218,21 +8638,21 @@
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="input-f0427">
+					<containedElements retestId="age">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>224</x>
+									<x>229</x>
 									<y>27</y>
 									<height>29</height>
-									<width>180</width>
+									<width>178</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">age</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>216</x>
+									<x>221</x>
 									<y>0</y>
 									<height>0</height>
-									<width>-1160</width>
+									<width>-1162</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/input[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -8306,6 +8726,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -8353,7 +8777,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="div-0b6e7">
+				<containedElements retestId="wallace">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -8378,20 +8802,24 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="input-48558">
+				<containedElements retestId="vsearchgadget">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>871</y>
 								<height>29</height>
-								<width>193</width>
+								<width>199</width>
 							</attribute>
 							<attribute key="class" xsi:type="stringAttribute">inputLabel</attribute>
 							<attribute key="id" xsi:type="stringAttribute">vsearchGadget</attribute>
@@ -8400,7 +8828,7 @@
 								<x>0</x>
 								<y>863</y>
 								<height>-863</height>
-								<width>-1147</width>
+								<width>-1141</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -8478,6 +8906,10 @@
 								<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>font-family</key>
 								<value xsi:type="xsd:string">sans-serif</value>
 							</entry>
@@ -8536,21 +8968,21 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="input-e9be0">
+				<containedElements retestId="killiframe">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>785</y>
 								<height>29</height>
-								<width>181</width>
+								<width>179</width>
 							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">killIframe</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>777</y>
 								<height>-863</height>
-								<width>-1159</width>
+								<width>-1161</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -8612,6 +9044,10 @@
 								<value xsi:type="xsd:string">6px</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>font-family</key>
 								<value xsi:type="xsd:string">sans-serif</value>
 							</entry>
@@ -8662,7 +9098,7 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="form-f7390">
+				<containedElements retestId="image">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -8690,6 +9126,10 @@
 								<value xsi:type="xsd:string">resultPage.html</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>method</key>
 								<value xsi:type="xsd:string">get</value>
 							</entry>
@@ -8699,21 +9139,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="input-ce342">
+					<containedElements retestId="imagebutton">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
 									<x>8</x>
 									<y>72</y>
 									<height>17</height>
-									<width>60</width>
+									<width>59</width>
 								</attribute>
 								<attribute key="id" xsi:type="stringAttribute">imageButton</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>0</x>
 									<y>0</y>
 									<height>0</height>
-									<width>-1280</width>
+									<width>-1281</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[2]/input[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -8755,6 +9195,10 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -8790,7 +9234,7 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="there_should-4bf40">
+				<containedElements retestId="there_should-1">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
@@ -8814,11 +9258,15 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
 							<entry>
-								<key>tab-index</key>
+								<key>tabindex</key>
 							</entry>
 						</attributes>
 					</attributes>
@@ -8827,16 +9275,16 @@
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>206</x>
+								<x>212</x>
 								<y>875</y>
 								<height>19</height>
-								<width>63</width>
+								<width>64</width>
 							</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>198</x>
+								<x>204</x>
 								<y>867</y>
 								<height>-873</height>
-								<width>-1277</width>
+								<width>-1276</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/a[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -8846,6 +9294,10 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
 							<entry>
 								<key>href</key>
 								<value xsi:type="xsd:string">#</value>
@@ -8881,6 +9333,10 @@
 				<attributes>
 					<attributes>
 						<entry>
+							<key>covered</key>
+							<value xsi:type="xsd:string">true</value>
+						</entry>
+						<entry>
 							<key>shown</key>
 							<value xsi:type="xsd:string">false</value>
 						</entry>
@@ -8910,6 +9366,10 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">false</value>
 							</entry>
@@ -8918,5 +9378,75 @@
 				</containedElements>
 			</containedElements>
 		</descriptors>
+		<metadata>
+			<entry>
+				<key>driver.type</key>
+				<value>FirefoxDriver</value>
+			</entry>
+			<entry>
+				<key>time.offset</key>
+				<value>+01:00</value>
+			</entry>
+			<entry>
+				<key>os.arch</key>
+				<value>amd64</value>
+			</entry>
+			<entry>
+				<key>check.type</key>
+				<value>driver</value>
+			</entry>
+			<entry>
+				<key>vcs.commit</key>
+				<value>6494eed61cc748f758146dbd619b7e05660caa65</value>
+			</entry>
+			<entry>
+				<key>window.height</key>
+				<value>768</value>
+			</entry>
+			<entry>
+				<key>vcs.branch</key>
+				<value>feature/check-clickability</value>
+			</entry>
+			<entry>
+				<key>url</key>
+				<value>file:///home/travis/build/retest/recheck-web/src/test/resources/pages/form-page.html</value>
+			</entry>
+			<entry>
+				<key>os.version</key>
+				<value>5.3.0-40-generic</value>
+			</entry>
+			<entry>
+				<key>browser.name</key>
+				<value>firefox</value>
+			</entry>
+			<entry>
+				<key>browser.version</key>
+				<value>73.0.1</value>
+			</entry>
+			<entry>
+				<key>time.time</key>
+				<value>09:04:25.593</value>
+			</entry>
+			<entry>
+				<key>time.zone</key>
+				<value>Europe/Berlin</value>
+			</entry>
+			<entry>
+				<key>window.width</key>
+				<value>1366</value>
+			</entry>
+			<entry>
+				<key>os.name</key>
+				<value>LINUX</value>
+			</entry>
+			<entry>
+				<key>time.date</key>
+				<value>2020-03-17</value>
+			</entry>
+			<entry>
+				<key>vcs.name</key>
+				<value>git</value>
+			</entry>
+		</metadata>
 	</data>
 </reTestXmlDataContainer>

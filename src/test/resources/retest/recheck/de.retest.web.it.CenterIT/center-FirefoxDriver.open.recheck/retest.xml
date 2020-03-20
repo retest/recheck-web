@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.7.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.10.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="" title="">
 			<identifyingAttributes>
@@ -28,6 +28,10 @@
 						<value xsi:type="xsd:string">0</value>
 					</entry>
 					<entry>
+						<key>covered</key>
+						<value xsi:type="xsd:string">false</value>
+					</entry>
+					<entry>
 						<key>font-family</key>
 						<value xsi:type="xsd:string">serif</value>
 					</entry>
@@ -47,13 +51,13 @@
 						<attribute key="absolute-outline" xsi:type="outlineAttribute">
 							<x>8</x>
 							<y>8</y>
-							<height>0</height>
+							<height>694</height>
 							<width>1350</width>
 						</attribute>
 						<attribute key="outline" xsi:type="outlineAttribute">
 							<x>8</x>
 							<y>8</y>
-							<height>-8</height>
+							<height>686</height>
 							<width>-16</width>
 						</attribute>
 						<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]</attribute>
@@ -64,6 +68,10 @@
 				<attributes>
 					<attributes>
 						<entry>
+							<key>covered</key>
+							<value xsi:type="xsd:string">true</value>
+						</entry>
+						<entry>
 							<key>onload</key>
 							<value xsi:type="xsd:string">fillCenter();</value>
 						</entry>
@@ -73,22 +81,22 @@
 						</entry>
 					</attributes>
 				</attributes>
-				<containedElements retestId="center">
+				<containedElements retestId="x_6663333129882">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>587</x>
+								<x>505</x>
 								<y>327</y>
 								<height>40</height>
-								<width>193</width>
+								<width>356</width>
 							</attribute>
 							<attribute key="class" xsi:type="stringAttribute">centered</attribute>
 							<attribute key="id" xsi:type="stringAttribute">center</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>579</x>
+								<x>497</x>
 								<y>319</y>
-								<height>40</height>
-								<width>-1157</width>
+								<height>-654</height>
+								<width>-994</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -139,6 +147,10 @@
 								<value xsi:type="xsd:string">307px</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>left</key>
 								<value xsi:type="xsd:string">683px</value>
 							</entry>
@@ -164,20 +176,20 @@
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="x_667_y_3365">
+					<containedElements retestId="x_6663333129882-1">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>587</x>
+									<x>505</x>
 									<y>327</y>
 									<height>40</height>
-									<width>193</width>
+									<width>356</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>579</x>
+									<x>497</x>
 									<y>319</y>
-									<height>40</height>
-									<width>-1157</width>
+									<height>-654</height>
+									<width>-994</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/textnode[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -188,29 +200,33 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tab-index</key>
+									<key>tabindex</key>
 								</entry>
 							</attributes>
 						</attributes>
 					</containedElements>
-					<containedElements retestId="width_32_height">
+					<containedElements retestId="width_333500061">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>587</x>
+									<x>505</x>
 									<y>327</y>
 									<height>40</height>
-									<width>193</width>
+									<width>356</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>579</x>
+									<x>497</x>
 									<y>319</y>
-									<height>40</height>
-									<width>-1157</width>
+									<height>-654</height>
+									<width>-994</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/textnode[2]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
@@ -221,11 +237,15 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>tab-index</key>
+									<key>tabindex</key>
 								</entry>
 							</attributes>
 						</attributes>
@@ -234,16 +254,16 @@
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>737</x>
+									<x>795</x>
 									<y>343</y>
 									<height>0</height>
 									<width>0</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>150</x>
+									<x>290</x>
 									<y>16</y>
 									<height>-40</height>
-									<width>-193</width>
+									<width>-356</width>
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/br[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -253,6 +273,10 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -261,10 +285,76 @@
 					</containedElements>
 				</containedElements>
 			</containedElements>
-			<screenshot>
-				<persistenceId>html</persistenceId>
-				<type>PNG</type>
-			</screenshot>
 		</descriptors>
+		<metadata>
+			<entry>
+				<key>driver.type</key>
+				<value>FirefoxDriver</value>
+			</entry>
+			<entry>
+				<key>time.offset</key>
+				<value>+01:00</value>
+			</entry>
+			<entry>
+				<key>os.arch</key>
+				<value>amd64</value>
+			</entry>
+			<entry>
+				<key>check.type</key>
+				<value>driver</value>
+			</entry>
+			<entry>
+				<key>vcs.commit</key>
+				<value>6494eed61cc748f758146dbd619b7e05660caa65</value>
+			</entry>
+			<entry>
+				<key>window.height</key>
+				<value>768</value>
+			</entry>
+			<entry>
+				<key>vcs.branch</key>
+				<value>feature/check-clickability</value>
+			</entry>
+			<entry>
+				<key>url</key>
+				<value>file:///home/travis/build/retest/recheck-web/src/test/resources/pages/centered.html</value>
+			</entry>
+			<entry>
+				<key>os.version</key>
+				<value>5.3.0-40-generic</value>
+			</entry>
+			<entry>
+				<key>browser.name</key>
+				<value>firefox</value>
+			</entry>
+			<entry>
+				<key>browser.version</key>
+				<value>73.0.1</value>
+			</entry>
+			<entry>
+				<key>time.time</key>
+				<value>08:55:45.45</value>
+			</entry>
+			<entry>
+				<key>time.zone</key>
+				<value>Europe/Berlin</value>
+			</entry>
+			<entry>
+				<key>window.width</key>
+				<value>1366</value>
+			</entry>
+			<entry>
+				<key>os.name</key>
+				<value>LINUX</value>
+			</entry>
+			<entry>
+				<key>time.date</key>
+				<value>2020-03-17</value>
+			</entry>
+			<entry>
+				<key>vcs.name</key>
+				<value>git</value>
+			</entry>
+		</metadata>
 	</data>
 </reTestXmlDataContainer>

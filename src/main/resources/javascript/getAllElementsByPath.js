@@ -189,6 +189,7 @@ var cssAttributes = [
 var ELEMENT_NODE = 1;
 var TEXT_NODE = 3;
 var DOCUMENT_TYPE_NODE = 10;
+const BOUNDING_PRECISION = 2;
 
 var Counter = /** @class */ (function () {
     function Counter() {
@@ -281,6 +282,32 @@ function isDisabled(node) {
     return node.disabled ? true : false;
 }
 
+// check if element is behind another one
+function isCovered(node) {
+    // TODO Handle false negatives for elements outside of viewport
+    if (typeof node.getBoundingClientRect === "function") {
+	    var boundingRect = node.getBoundingClientRect();
+
+	    var boundingLeft = boundingRect.left + BOUNDING_PRECISION;
+	    var boundingRight = boundingRect.right - BOUNDING_PRECISION;
+	    var boundingTop = boundingRect.top + BOUNDING_PRECISION;
+	    var boundingBottom = boundingRect.bottom - BOUNDING_PRECISION;
+	
+	    var topLeft = document.elementFromPoint(boundingLeft, boundingTop);
+	    var topRight = document.elementFromPoint(boundingRight, boundingTop);
+	    var bottomLeft = document.elementFromPoint(boundingLeft, boundingBottom);
+	    var bottomRight = document.elementFromPoint(boundingRight, boundingBottom);
+	    if ((topLeft != null && !node.contains(topLeft))
+	    	|| (topRight != null && !node.contains(topRight))
+	    	|| (bottomLeft != null && !node.contains(bottomLeft)) 
+	    	|| (bottomRight != null && !node.contains(bottomRight))) {
+	        return true;
+	    }
+    }
+
+    return false;
+}
+
 //extract *given* CSS style attributes
 function getComputedStyleSafely(node) {
     try {
@@ -295,7 +322,8 @@ function transform(node) {
         "text": getText(node),
         "value": node.value,
         "tabindex": node.tabIndex,
-        "shown": isShown(node)
+        "shown": isShown(node),
+        "covered": isCovered(node)
     };
     
     if (node.nodeType == TEXT_NODE) {

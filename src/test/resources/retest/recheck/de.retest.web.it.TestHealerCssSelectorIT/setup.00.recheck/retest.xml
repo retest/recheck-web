@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.8.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.10.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="root" screenId="1" screen="retest - Java Swing GUI Testing" title="retest - Java Swing GUI Testing">
 			<identifyingAttributes>
@@ -10,7 +10,7 @@
 						<height>115</height>
 						<width>1200</width>
 					</attribute>
-					<attribute key="class" xsi:type="stringAttribute">base</attribute>
+					<attribute key="class" xsi:type="stringAttribute">changed-base</attribute>
 					<attribute key="id" xsi:type="stringAttribute">root</attribute>
 					<attribute key="outline" xsi:type="outlineAttribute">
 						<x>0</x>
@@ -26,6 +26,10 @@
 			<attributes>
 				<attributes>
 					<entry>
+						<key>covered</key>
+						<value xsi:type="xsd:string">false</value>
+					</entry>
+					<entry>
 						<key>shown</key>
 						<value xsi:type="xsd:string">true</value>
 					</entry>
@@ -40,7 +44,7 @@
 							<height>99</height>
 							<width>1184</width>
 						</attribute>
-						<attribute key="class" xsi:type="stringAttribute">base</attribute>
+						<attribute key="class" xsi:type="stringAttribute">changed-base</attribute>
 						<attribute key="outline" xsi:type="outlineAttribute">
 							<x>8</x>
 							<y>8</y>
@@ -54,6 +58,10 @@
 				</identifyingAttributes>
 				<attributes>
 					<attributes>
+						<entry>
+							<key>covered</key>
+							<value xsi:type="xsd:string">false</value>
+						</entry>
 						<entry>
 							<key>shown</key>
 							<value xsi:type="xsd:string">true</value>
@@ -84,11 +92,15 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
 							<entry>
-								<key>tab-index</key>
+								<key>tabindex</key>
 							</entry>
 						</attributes>
 					</attributes>
@@ -102,7 +114,7 @@
 								<height>13</height>
 								<width>13</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">default-other</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-default-other</attribute>
 							<attribute key="id" xsi:type="stringAttribute">default</attribute>
 							<attribute key="name" xsi:type="stringAttribute">gender</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
@@ -121,6 +133,10 @@
 							<entry>
 								<key>checked</key>
 								<value xsi:type="xsd:string">true</value>
+							</entry>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -169,18 +185,18 @@
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>539</x>
+								<x>482</x>
 								<y>46</y>
 								<height>21</height>
-								<width>173</width>
+								<width>154</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">write-access</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-write-access</attribute>
 							<attribute key="id" xsi:type="stringAttribute">read-write</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>531</x>
+								<x>474</x>
 								<y>38</y>
 								<height>-78</height>
-								<width>-1011</width>
+								<width>-1030</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[13]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">13</attribute>
@@ -226,6 +242,10 @@
 								<value xsi:type="xsd:string">2px</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>font-family</key>
 								<value xsi:type="xsd:string">Arial</value>
 							</entry>
@@ -260,18 +280,18 @@
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>185</x>
+								<x>166</x>
 								<y>46</y>
 								<height>21</height>
-								<width>173</width>
+								<width>154</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">optional-required</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-optional-required</attribute>
 							<attribute key="id" xsi:type="stringAttribute">required</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>177</x>
+								<x>158</x>
 								<y>38</y>
 								<height>-78</height>
-								<width>-1011</width>
+								<width>-1030</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[11]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">11</attribute>
@@ -315,6 +335,10 @@
 							<entry>
 								<key>border-top-width</key>
 								<value xsi:type="xsd:string">2px</value>
+							</entry>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -371,6 +395,10 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -386,7 +414,7 @@
 								<height>13</height>
 								<width>13</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">checkable</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-checkable</attribute>
 							<attribute key="id" xsi:type="stringAttribute">unchecked</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>28</x>
@@ -401,6 +429,10 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
 							<entry>
 								<key>font-family</key>
 								<value xsi:type="xsd:string">Arial</value>
@@ -447,15 +479,15 @@
 								<x>80</x>
 								<y>9</y>
 								<height>21</height>
-								<width>173</width>
+								<width>154</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">disable</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-disable</attribute>
 							<attribute key="id" xsi:type="stringAttribute">disabled</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>72</x>
 								<y>1</y>
 								<height>-78</height>
-								<width>-1011</width>
+								<width>-1030</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
@@ -529,6 +561,10 @@
 								<value xsi:type="xsd:string">rgb(84, 84, 84)</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>disabled</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -575,18 +611,18 @@
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>434</x>
+								<x>396</x>
 								<y>9</y>
 								<height>21</height>
-								<width>62</width>
+								<width>61</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">range</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-range</attribute>
 							<attribute key="id" xsi:type="stringAttribute">in-range</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>426</x>
+								<x>388</x>
 								<y>1</y>
 								<height>-78</height>
-								<width>-1122</width>
+								<width>-1123</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
@@ -630,6 +666,10 @@
 							<entry>
 								<key>border-top-width</key>
 								<value xsi:type="xsd:string">2px</value>
+							</entry>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -682,18 +722,18 @@
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>566</x>
+								<x>526</x>
 								<y>9</y>
 								<height>21</height>
-								<width>173</width>
+								<width>154</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">valid-invalid</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-valid-invalid</attribute>
 							<attribute key="id" xsi:type="stringAttribute">invalid</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>558</x>
+								<x>518</x>
 								<y>1</y>
 								<height>-78</height>
-								<width>-1011</width>
+								<width>-1030</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[8]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
@@ -739,6 +779,10 @@
 								<value xsi:type="xsd:string">2px</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>font-family</key>
 								<value xsi:type="xsd:string">Arial</value>
 							</entry>
@@ -781,15 +825,15 @@
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>782</x>
+								<x>706</x>
 								<y>47</y>
 								<height>17</height>
 								<width>45</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">links</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-links</attribute>
 							<attribute key="id" xsi:type="stringAttribute">visited</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>774</x>
+								<x>698</x>
 								<y>39</y>
 								<height>-82</height>
 								<width>-1139</width>
@@ -802,6 +846,10 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
 							<entry>
 								<key>href</key>
 								<value xsi:type="xsd:string">#target</value>
@@ -822,7 +870,7 @@
 								<height>18</height>
 								<width>1184</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">links</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-links</attribute>
 							<attribute key="id" xsi:type="stringAttribute">target</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -838,6 +886,10 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -869,11 +921,15 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
 							<entry>
-								<key>tab-index</key>
+								<key>tabindex</key>
 							</entry>
 						</attributes>
 					</attributes>
@@ -885,15 +941,15 @@
 								<x>135</x>
 								<y>86</y>
 								<height>21</height>
-								<width>173</width>
+								<width>154</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">text</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-text</attribute>
 							<attribute key="id" xsi:type="stringAttribute">attribute-word-selector</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>127</x>
 								<y>78</y>
 								<height>-78</height>
-								<width>-1011</width>
+								<width>-1030</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[16]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">16</attribute>
@@ -937,6 +993,10 @@
 							<entry>
 								<key>border-top-width</key>
 								<value xsi:type="xsd:string">2px</value>
+							</entry>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -986,7 +1046,7 @@
 								<height>13</height>
 								<width>13</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">default-other</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-default-other</attribute>
 							<attribute key="id" xsi:type="stringAttribute">other</attribute>
 							<attribute key="name" xsi:type="stringAttribute">gender</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
@@ -1002,6 +1062,10 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
 							<entry>
 								<key>font-family</key>
 								<value xsi:type="xsd:string">Arial</value>
@@ -1049,18 +1113,18 @@
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>362</x>
+								<x>324</x>
 								<y>46</y>
 								<height>21</height>
-								<width>173</width>
+								<width>154</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">write-access</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-write-access</attribute>
 							<attribute key="id" xsi:type="stringAttribute">read-only</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>354</x>
+								<x>316</x>
 								<y>38</y>
 								<height>-78</height>
-								<width>-1011</width>
+								<width>-1030</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[12]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">12</attribute>
@@ -1106,6 +1170,10 @@
 								<value xsi:type="xsd:string">2px</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>font-family</key>
 								<value xsi:type="xsd:string">Arial</value>
 							</entry>
@@ -1147,15 +1215,15 @@
 								<x>8</x>
 								<y>46</y>
 								<height>21</height>
-								<width>173</width>
+								<width>154</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">optional-required</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-optional-required</attribute>
 							<attribute key="id" xsi:type="stringAttribute">optional</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>38</y>
 								<height>-78</height>
-								<width>-1011</width>
+								<width>-1030</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[10]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
@@ -1201,6 +1269,10 @@
 								<value xsi:type="xsd:string">2px</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>font-family</key>
 								<value xsi:type="xsd:string">Arial</value>
 							</entry>
@@ -1240,7 +1312,7 @@
 								<height>13</height>
 								<width>13</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">checkable</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-checkable</attribute>
 							<attribute key="id" xsi:type="stringAttribute">checked</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>4</x>
@@ -1258,6 +1330,10 @@
 							<entry>
 								<key>checked</key>
 								<value xsi:type="xsd:string">true</value>
+							</entry>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -1307,7 +1383,7 @@
 								<height>13</height>
 								<width>13</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">checkable</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-checkable</attribute>
 							<attribute key="id" xsi:type="stringAttribute">indeterminate</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>52</x>
@@ -1322,6 +1398,10 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
 							<entry>
 								<key>font-family</key>
 								<value xsi:type="xsd:string">Arial</value>
@@ -1365,18 +1445,18 @@
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>257</x>
+								<x>238</x>
 								<y>9</y>
 								<height>21</height>
-								<width>173</width>
+								<width>154</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">disable</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-disable</attribute>
 							<attribute key="id" xsi:type="stringAttribute">enabled</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>249</x>
+								<x>230</x>
 								<y>1</y>
 								<height>-78</height>
-								<width>-1011</width>
+								<width>-1030</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
@@ -1422,6 +1502,10 @@
 								<value xsi:type="xsd:string">2px</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>font-family</key>
 								<value xsi:type="xsd:string">Arial</value>
 							</entry>
@@ -1456,18 +1540,18 @@
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>500</x>
+								<x>461</x>
 								<y>9</y>
 								<height>21</height>
-								<width>62</width>
+								<width>61</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">range</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-range</attribute>
 							<attribute key="id" xsi:type="stringAttribute">out-of-range</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>492</x>
+								<x>453</x>
 								<y>1</y>
 								<height>-78</height>
-								<width>-1122</width>
+								<width>-1123</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
@@ -1511,6 +1595,10 @@
 							<entry>
 								<key>border-top-width</key>
 								<value xsi:type="xsd:string">2px</value>
+							</entry>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -1563,18 +1651,18 @@
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>743</x>
+								<x>684</x>
 								<y>9</y>
 								<height>21</height>
-								<width>173</width>
+								<width>154</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">valid-invalid</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-valid-invalid</attribute>
 							<attribute key="id" xsi:type="stringAttribute">valid</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>735</x>
+								<x>676</x>
 								<y>1</y>
 								<height>-78</height>
-								<width>-1011</width>
+								<width>-1030</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/input[9]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
@@ -1620,6 +1708,10 @@
 								<value xsi:type="xsd:string">2px</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>font-family</key>
 								<value xsi:type="xsd:string">Arial</value>
 							</entry>
@@ -1650,19 +1742,19 @@
 						</attributes>
 					</attributes>
 				</containedElements>
-				<containedElements retestId="link">
+				<containedElements retestId="unvisited">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>716</x>
+								<x>640</x>
 								<y>47</y>
 								<height>17</height>
 								<width>62</width>
 							</attribute>
-							<attribute key="class" xsi:type="stringAttribute">links</attribute>
+							<attribute key="class" xsi:type="stringAttribute">changed-links</attribute>
 							<attribute key="id" xsi:type="stringAttribute">link</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>708</x>
+								<x>632</x>
 								<y>39</y>
 								<height>-82</height>
 								<width>-1122</width>
@@ -1675,6 +1767,10 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
 							<entry>
 								<key>href</key>
 								<value xsi:type="xsd:string">./unvisited.html</value>
@@ -1710,6 +1806,10 @@
 				<attributes>
 					<attributes>
 						<entry>
+							<key>covered</key>
+							<value xsi:type="xsd:string">true</value>
+						</entry>
+						<entry>
 							<key>shown</key>
 							<value xsi:type="xsd:string">false</value>
 						</entry>
@@ -1739,6 +1839,10 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">false</value>
 							</entry>
@@ -1746,10 +1850,6 @@
 					</attributes>
 				</containedElements>
 			</containedElements>
-			<screenshot>
-				<persistenceId>root</persistenceId>
-				<type>PNG</type>
-			</screenshot>
 		</descriptors>
 		<metadata>
 			<entry>
@@ -1770,7 +1870,7 @@
 			</entry>
 			<entry>
 				<key>vcs.commit</key>
-				<value>6b7df454c6cfcf55c9c0de3b72b5a2be1dcb32ac</value>
+				<value>6494eed61cc748f758146dbd619b7e05660caa65</value>
 			</entry>
 			<entry>
 				<key>window.height</key>
@@ -1778,15 +1878,15 @@
 			</entry>
 			<entry>
 				<key>vcs.branch</key>
-				<value>feature/implement-issue-389</value>
+				<value>feature/check-clickability</value>
 			</entry>
 			<entry>
-				<key>machine.name</key>
-				<value>IFV-BRIEM-M</value>
+				<key>url</key>
+				<value>file:///home/travis/build/retest/recheck-web/target/test-classes/de/retest/web/it/TestHealerCssSelectorIT-changed.html</value>
 			</entry>
 			<entry>
 				<key>os.version</key>
-				<value>10.0</value>
+				<value>5.3.0-40-generic</value>
 			</entry>
 			<entry>
 				<key>browser.name</key>
@@ -1794,11 +1894,11 @@
 			</entry>
 			<entry>
 				<key>browser.version</key>
-				<value>79.0.3945.79</value>
+				<value>80.0.3987.87</value>
 			</entry>
 			<entry>
 				<key>time.time</key>
-				<value>16:19:44.403</value>
+				<value>09:21:18.879</value>
 			</entry>
 			<entry>
 				<key>time.zone</key>
@@ -1810,11 +1910,11 @@
 			</entry>
 			<entry>
 				<key>os.name</key>
-				<value>WINDOWS</value>
+				<value>LINUX</value>
 			</entry>
 			<entry>
 				<key>time.date</key>
-				<value>2019-12-17</value>
+				<value>2020-03-17</value>
 			</entry>
 			<entry>
 				<key>vcs.name</key>
