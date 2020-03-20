@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.7.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.10.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="Welcome to the Test of Recheck-web" title="Welcome to the Test of Recheck-web">
 			<identifyingAttributes>
@@ -28,6 +28,10 @@
 						<value xsi:type="xsd:string">0</value>
 					</entry>
 					<entry>
+						<key>covered</key>
+						<value xsi:type="xsd:string">false</value>
+					</entry>
+					<entry>
 						<key>font-family</key>
 						<value xsi:type="xsd:string">serif</value>
 					</entry>
@@ -45,6 +49,110 @@
 					</entry>
 				</attributes>
 			</attributes>
+			<containedElements retestId="head">
+				<identifyingAttributes>
+					<attributes>
+						<attribute key="absolute-outline" xsi:type="outlineAttribute">
+							<x>0</x>
+							<y>0</y>
+							<height>0</height>
+							<width>0</width>
+						</attribute>
+						<attribute key="outline" xsi:type="outlineAttribute">
+							<x>0</x>
+							<y>0</y>
+							<height>-288</height>
+							<width>-1366</width>
+						</attribute>
+						<attribute key="path" xsi:type="pathAttribute">html[1]/head[1]</attribute>
+						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+						<attribute key="type" xsi:type="stringAttribute">head</attribute>
+					</attributes>
+				</identifyingAttributes>
+				<attributes>
+					<attributes>
+						<entry>
+							<key>covered</key>
+							<value xsi:type="xsd:string">true</value>
+						</entry>
+						<entry>
+							<key>shown</key>
+							<value xsi:type="xsd:string">false</value>
+						</entry>
+					</attributes>
+				</attributes>
+				<containedElements retestId="welcome_to_the">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/head[1]/title[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">Welcome to the Test of Recheck-web</attribute>
+							<attribute key="type" xsi:type="stringAttribute">title</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+							<entry>
+								<key>shown</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="meta">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/head[1]/meta[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="type" xsi:type="stringAttribute">meta</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>charset</key>
+								<value xsi:type="xsd:string">UTF-8</value>
+							</entry>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+							<entry>
+								<key>shown</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+			</containedElements>
 			<containedElements retestId="body">
 				<identifyingAttributes>
 					<attributes>
@@ -68,11 +176,110 @@
 				<attributes>
 					<attributes>
 						<entry>
+							<key>covered</key>
+							<value xsi:type="xsd:string">false</value>
+						</entry>
+						<entry>
 							<key>shown</key>
 							<value xsi:type="xsd:string">true</value>
 						</entry>
 					</attributes>
 				</attributes>
+				<containedElements retestId="html_headhead">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>97</x>
+								<y>70</y>
+								<height>200</height>
+								<width>300</width>
+							</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>89</x>
+								<y>54</y>
+								<height>-64</height>
+								<width>-1050</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/iframe[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">&lt;html> &lt;head>&lt;/head> &lt;body class=&quot;frameBody&quot;> Text in einem IFrame&lt;br/> &lt;/body> &lt;/html></attribute>
+							<attribute key="type" xsi:type="stringAttribute">iframe</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>border-bottom-style</key>
+								<value xsi:type="xsd:string">inset</value>
+							</entry>
+							<entry>
+								<key>border-left-style</key>
+								<value xsi:type="xsd:string">inset</value>
+							</entry>
+							<entry>
+								<key>border-right-style</key>
+								<value xsi:type="xsd:string">inset</value>
+							</entry>
+							<entry>
+								<key>border-top-style</key>
+								<value xsi:type="xsd:string">inset</value>
+							</entry>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
+								<key>display</key>
+								<value xsi:type="xsd:string">inline</value>
+							</entry>
+							<entry>
+								<key>frameborder</key>
+								<value xsi:type="xsd:string">0</value>
+							</entry>
+							<entry>
+								<key>shown</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+							<entry>
+								<key>title</key>
+								<value xsi:type="xsd:string">description</value>
+							</entry>
+						</attributes>
+					</attributes>
+					<containedElements retestId="body">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>8</y>
+									<height>200</height>
+									<width>284</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>8</y>
+									<height>192</height>
+									<width>-16</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/iframe[1]/html[1]/body[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="type" xsi:type="stringAttribute">body</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+				</containedElements>
 				<containedElements retestId="div">
 					<identifyingAttributes>
 						<attributes>
@@ -96,22 +303,100 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
 						</attributes>
 					</attributes>
+					<containedElements retestId="und">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>16</y>
+									<height>54</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>0</y>
+									<height>-210</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/textnode[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="text" xsi:type="textAttribute">Und</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>tabindex</key>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="auch">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+									<x>8</x>
+									<y>16</y>
+									<height>54</height>
+									<width>1350</width>
+								</attribute>
+								<attribute key="outline" xsi:type="outlineAttribute">
+									<x>0</x>
+									<y>0</y>
+									<height>-210</height>
+									<width>0</width>
+								</attribute>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/textnode[2]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+								<attribute key="text" xsi:type="textAttribute">auch.</attribute>
+								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
+									<key>shown</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>tabindex</key>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
 					<containedElements retestId="das">
 						<identifyingAttributes>
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>46</x>
+									<x>47</x>
 									<y>51</y>
 									<height>19</height>
 									<width>28</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>38</x>
+									<x>39</x>
 									<y>35</y>
 									<height>-35</height>
 									<width>-1322</width>
@@ -124,6 +409,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -155,159 +444,9 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>shown</key>
-									<value xsi:type="xsd:string">true</value>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
-							</attributes>
-						</attributes>
-					</containedElements>
-					<containedElements retestId="und">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>8</x>
-									<y>16</y>
-									<height>54</height>
-									<width>1350</width>
-								</attribute>
-								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>0</x>
-									<y>0</y>
-									<height>-210</height>
-									<width>0</width>
-								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/textnode[1]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="text" xsi:type="textAttribute">Und</attribute>
-								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>shown</key>
-									<value xsi:type="xsd:string">true</value>
-								</entry>
-								<entry>
-									<key>tab-index</key>
-								</entry>
-							</attributes>
-						</attributes>
-					</containedElements>
-					<containedElements retestId="auch">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>8</x>
-									<y>16</y>
-									<height>54</height>
-									<width>1350</width>
-								</attribute>
-								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>0</x>
-									<y>0</y>
-									<height>-210</height>
-									<width>0</width>
-								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/textnode[2]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
-								<attribute key="text" xsi:type="textAttribute">auch.</attribute>
-								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>shown</key>
-									<value xsi:type="xsd:string">true</value>
-								</entry>
-								<entry>
-									<key>tab-index</key>
-								</entry>
-							</attributes>
-						</attributes>
-					</containedElements>
-				</containedElements>
-				<containedElements retestId="html_headhead">
-					<identifyingAttributes>
-						<attributes>
-							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>98</x>
-								<y>70</y>
-								<height>200</height>
-								<width>300</width>
-							</attribute>
-							<attribute key="id" xsi:type="stringAttribute"></attribute>
-							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>90</x>
-								<y>54</y>
-								<height>-64</height>
-								<width>-1050</width>
-							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/iframe[1]</attribute>
-							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="text" xsi:type="textAttribute">&lt;html> &lt;head>&lt;/head> &lt;body class=&quot;frameBody&quot;> Text in einem IFrame&lt;br/> &lt;/body> &lt;/html></attribute>
-							<attribute key="type" xsi:type="stringAttribute">iframe</attribute>
-						</attributes>
-					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>border-bottom-style</key>
-								<value xsi:type="xsd:string">inset</value>
-							</entry>
-							<entry>
-								<key>border-left-style</key>
-								<value xsi:type="xsd:string">inset</value>
-							</entry>
-							<entry>
-								<key>border-right-style</key>
-								<value xsi:type="xsd:string">inset</value>
-							</entry>
-							<entry>
-								<key>border-top-style</key>
-								<value xsi:type="xsd:string">inset</value>
-							</entry>
-							<entry>
-								<key>display</key>
-								<value xsi:type="xsd:string">inline</value>
-							</entry>
-							<entry>
-								<key>frameborder</key>
-								<value xsi:type="xsd:string">0</value>
-							</entry>
-							<entry>
-								<key>shown</key>
-								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>title</key>
-								<value xsi:type="xsd:string">description</value>
-							</entry>
-						</attributes>
-					</attributes>
-					<containedElements retestId="body">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-									<x>8</x>
-									<y>8</y>
-									<height>0</height>
-									<width>284</width>
-								</attribute>
-								<attribute key="outline" xsi:type="outlineAttribute">
-									<x>8</x>
-									<y>8</y>
-									<height>-8</height>
-									<width>-16</width>
-								</attribute>
-								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/iframe[1]/html[1]/body[1]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">body</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes>
-							<attributes>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -323,14 +462,14 @@
 								<x>8</x>
 								<y>251</y>
 								<height>29</height>
-								<width>85</width>
+								<width>84</width>
 							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">change-for-div</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>235</y>
 								<height>-235</height>
-								<width>-1265</width>
+								<width>-1266</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/button[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -397,6 +536,10 @@
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">inline-block</value>
 							</entry>
@@ -435,102 +578,76 @@
 					</attributes>
 				</containedElements>
 			</containedElements>
-			<containedElements retestId="head">
-				<identifyingAttributes>
-					<attributes>
-						<attribute key="absolute-outline" xsi:type="outlineAttribute">
-							<x>0</x>
-							<y>0</y>
-							<height>0</height>
-							<width>0</width>
-						</attribute>
-						<attribute key="outline" xsi:type="outlineAttribute">
-							<x>0</x>
-							<y>0</y>
-							<height>-288</height>
-							<width>-1366</width>
-						</attribute>
-						<attribute key="path" xsi:type="pathAttribute">html[1]/head[1]</attribute>
-						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-						<attribute key="type" xsi:type="stringAttribute">head</attribute>
-					</attributes>
-				</identifyingAttributes>
-				<attributes>
-					<attributes>
-						<entry>
-							<key>shown</key>
-							<value xsi:type="xsd:string">false</value>
-						</entry>
-					</attributes>
-				</attributes>
-				<containedElements retestId="welcome_to_the">
-					<identifyingAttributes>
-						<attributes>
-							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>0</x>
-								<y>0</y>
-								<height>0</height>
-								<width>0</width>
-							</attribute>
-							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>0</x>
-								<y>0</y>
-								<height>0</height>
-								<width>0</width>
-							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">html[1]/head[1]/title[1]</attribute>
-							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="text" xsi:type="textAttribute">Welcome to the Test of Recheck-web</attribute>
-							<attribute key="type" xsi:type="stringAttribute">title</attribute>
-						</attributes>
-					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>shown</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-						</attributes>
-					</attributes>
-				</containedElements>
-				<containedElements retestId="meta">
-					<identifyingAttributes>
-						<attributes>
-							<attribute key="absolute-outline" xsi:type="outlineAttribute">
-								<x>0</x>
-								<y>0</y>
-								<height>0</height>
-								<width>0</width>
-							</attribute>
-							<attribute key="outline" xsi:type="outlineAttribute">
-								<x>0</x>
-								<y>0</y>
-								<height>0</height>
-								<width>0</width>
-							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">html[1]/head[1]/meta[1]</attribute>
-							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="type" xsi:type="stringAttribute">meta</attribute>
-						</attributes>
-					</identifyingAttributes>
-					<attributes>
-						<attributes>
-							<entry>
-								<key>charset</key>
-								<value xsi:type="xsd:string">UTF-8</value>
-							</entry>
-							<entry>
-								<key>shown</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-						</attributes>
-					</attributes>
-				</containedElements>
-			</containedElements>
-			<screenshot>
-				<persistenceId>html</persistenceId>
-				<type>PNG</type>
-			</screenshot>
 		</descriptors>
+		<metadata>
+			<entry>
+				<key>driver.type</key>
+				<value>FirefoxDriver</value>
+			</entry>
+			<entry>
+				<key>time.offset</key>
+				<value>+01:00</value>
+			</entry>
+			<entry>
+				<key>os.arch</key>
+				<value>amd64</value>
+			</entry>
+			<entry>
+				<key>check.type</key>
+				<value>driver</value>
+			</entry>
+			<entry>
+				<key>vcs.commit</key>
+				<value>6494eed61cc748f758146dbd619b7e05660caa65</value>
+			</entry>
+			<entry>
+				<key>window.height</key>
+				<value>768</value>
+			</entry>
+			<entry>
+				<key>vcs.branch</key>
+				<value>feature/check-clickability</value>
+			</entry>
+			<entry>
+				<key>url</key>
+				<value>file:///home/travis/build/retest/recheck-web/src/test/resources/pages/special-container.html</value>
+			</entry>
+			<entry>
+				<key>os.version</key>
+				<value>5.3.0-40-generic</value>
+			</entry>
+			<entry>
+				<key>browser.name</key>
+				<value>firefox</value>
+			</entry>
+			<entry>
+				<key>browser.version</key>
+				<value>73.0.1</value>
+			</entry>
+			<entry>
+				<key>time.time</key>
+				<value>09:19:33.352</value>
+			</entry>
+			<entry>
+				<key>time.zone</key>
+				<value>Europe/Berlin</value>
+			</entry>
+			<entry>
+				<key>window.width</key>
+				<value>1366</value>
+			</entry>
+			<entry>
+				<key>os.name</key>
+				<value>LINUX</value>
+			</entry>
+			<entry>
+				<key>time.date</key>
+				<value>2020-03-17</value>
+			</entry>
+			<entry>
+				<key>vcs.name</key>
+				<value>git</value>
+			</entry>
+		</metadata>
 	</data>
 </reTestXmlDataContainer>

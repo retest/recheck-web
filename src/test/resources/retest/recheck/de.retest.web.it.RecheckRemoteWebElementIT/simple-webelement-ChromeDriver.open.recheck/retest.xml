@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.4.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.10.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
-		<descriptors retestId="input" screenId="1" screen="WebElement" title="html[1]/body[1]/form[1]/input[1]">
+		<descriptors retestId="email" screenId="1" screen="WebElement" title="html[1]/body[1]/form[1]/input[1]">
 			<identifyingAttributes>
 				<attributes>
 					<attribute key="absolute-outline" xsi:type="outlineAttribute">
 						<x>8</x>
 						<y>26</y>
 						<height>21</height>
-						<width>181</width>
+						<width>154</width>
 					</attribute>
 					<attribute key="id" xsi:type="stringAttribute">email</attribute>
 					<attribute key="outline" xsi:type="outlineAttribute">
 						<x>0</x>
 						<y>0</y>
 						<height>0</height>
-						<width>-1003</width>
+						<width>-1030</width>
 					</attribute>
 					<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/form[1]/input[1]</attribute>
 					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -61,6 +61,10 @@
 						<value xsi:type="xsd:string">2px</value>
 					</entry>
 					<entry>
+						<key>covered</key>
+						<value xsi:type="xsd:string">false</value>
+					</entry>
+					<entry>
 						<key>font-family</key>
 						<value xsi:type="xsd:string">Arial</value>
 					</entry>
@@ -90,10 +94,76 @@
 					</entry>
 				</attributes>
 			</attributes>
-			<screenshot>
-				<persistenceId>input_b0398bd8a34b4b9128404e8c7b6ecb99d35238103cddf4bd8bb30363dbca8c84</persistenceId>
-				<type>PNG</type>
-			</screenshot>
 		</descriptors>
+		<metadata>
+			<entry>
+				<key>driver.type</key>
+				<value>ChromeDriver</value>
+			</entry>
+			<entry>
+				<key>time.offset</key>
+				<value>+01:00</value>
+			</entry>
+			<entry>
+				<key>os.arch</key>
+				<value>amd64</value>
+			</entry>
+			<entry>
+				<key>check.type</key>
+				<value>element</value>
+			</entry>
+			<entry>
+				<key>vcs.commit</key>
+				<value>6494eed61cc748f758146dbd619b7e05660caa65</value>
+			</entry>
+			<entry>
+				<key>window.height</key>
+				<value>800</value>
+			</entry>
+			<entry>
+				<key>vcs.branch</key>
+				<value>feature/check-clickability</value>
+			</entry>
+			<entry>
+				<key>url</key>
+				<value>file:///home/travis/build/retest/recheck-web/src/test/resources/pages/form-page.html</value>
+			</entry>
+			<entry>
+				<key>os.version</key>
+				<value>5.3.0-40-generic</value>
+			</entry>
+			<entry>
+				<key>browser.name</key>
+				<value>chrome</value>
+			</entry>
+			<entry>
+				<key>browser.version</key>
+				<value>80.0.3987.87</value>
+			</entry>
+			<entry>
+				<key>time.time</key>
+				<value>09:04:11.051</value>
+			</entry>
+			<entry>
+				<key>time.zone</key>
+				<value>Europe/Berlin</value>
+			</entry>
+			<entry>
+				<key>window.width</key>
+				<value>1200</value>
+			</entry>
+			<entry>
+				<key>os.name</key>
+				<value>LINUX</value>
+			</entry>
+			<entry>
+				<key>time.date</key>
+				<value>2020-03-17</value>
+			</entry>
+			<entry>
+				<key>vcs.name</key>
+				<value>git</value>
+			</entry>
+		</metadata>
 	</data>
 </reTestXmlDataContainer>

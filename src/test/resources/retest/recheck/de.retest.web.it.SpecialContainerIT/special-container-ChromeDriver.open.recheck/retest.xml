@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.4.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.10.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="Welcome to the Test of Recheck-web" title="Welcome to the Test of Recheck-web">
 			<identifyingAttributes>
@@ -23,6 +23,10 @@
 			</identifyingAttributes>
 			<attributes>
 				<attributes>
+					<entry>
+						<key>covered</key>
+						<value xsi:type="xsd:string">false</value>
+					</entry>
 					<entry>
 						<key>lang</key>
 						<value xsi:type="xsd:string">en</value>
@@ -56,6 +60,10 @@
 				<attributes>
 					<attributes>
 						<entry>
+							<key>covered</key>
+							<value xsi:type="xsd:string">true</value>
+						</entry>
+						<entry>
 							<key>shown</key>
 							<value xsi:type="xsd:string">false</value>
 						</entry>
@@ -84,6 +92,10 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">false</value>
@@ -118,6 +130,10 @@
 								<value xsi:type="xsd:string">UTF-8</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">false</value>
 							</entry>
@@ -148,6 +164,10 @@
 				<attributes>
 					<attributes>
 						<entry>
+							<key>covered</key>
+							<value xsi:type="xsd:string">false</value>
+						</entry>
+						<entry>
 							<key>shown</key>
 							<value xsi:type="xsd:string">true</value>
 						</entry>
@@ -162,7 +182,6 @@
 								<height>200</height>
 								<width>300</width>
 							</attribute>
-							<attribute key="id" xsi:type="stringAttribute"/>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>67</x>
 								<y>52</y>
@@ -192,6 +211,10 @@
 							<entry>
 								<key>border-top-style</key>
 								<value xsi:type="xsd:string">inset</value>
+							</entry>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>display</key>
@@ -234,6 +257,10 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -264,6 +291,10 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -293,8 +324,15 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>tabindex</key>
 								</entry>
 							</attributes>
 						</attributes>
@@ -323,8 +361,15 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>tabindex</key>
 								</entry>
 							</attributes>
 						</attributes>
@@ -352,6 +397,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -382,6 +431,10 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
+								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -475,6 +528,10 @@
 								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>display</key>
 								<value xsi:type="xsd:string">inline-block</value>
 							</entry>
@@ -507,6 +564,9 @@
 								<value xsi:type="xsd:string">1px</value>
 							</entry>
 							<entry>
+								<key>read-only</key>
+							</entry>
+							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -518,10 +578,76 @@
 					</attributes>
 				</containedElements>
 			</containedElements>
-			<screenshot>
-				<persistenceId>html_f5603547723e5f5c3b9979f8db49ad6b91389981770f6666898b686e5d882b53</persistenceId>
-				<type>PNG</type>
-			</screenshot>
 		</descriptors>
+		<metadata>
+			<entry>
+				<key>driver.type</key>
+				<value>ChromeDriver</value>
+			</entry>
+			<entry>
+				<key>time.offset</key>
+				<value>+01:00</value>
+			</entry>
+			<entry>
+				<key>os.arch</key>
+				<value>amd64</value>
+			</entry>
+			<entry>
+				<key>check.type</key>
+				<value>driver</value>
+			</entry>
+			<entry>
+				<key>vcs.commit</key>
+				<value>6494eed61cc748f758146dbd619b7e05660caa65</value>
+			</entry>
+			<entry>
+				<key>window.height</key>
+				<value>800</value>
+			</entry>
+			<entry>
+				<key>vcs.branch</key>
+				<value>feature/check-clickability</value>
+			</entry>
+			<entry>
+				<key>url</key>
+				<value>file:///home/travis/build/retest/recheck-web/src/test/resources/pages/special-container.html</value>
+			</entry>
+			<entry>
+				<key>os.version</key>
+				<value>5.3.0-40-generic</value>
+			</entry>
+			<entry>
+				<key>browser.name</key>
+				<value>chrome</value>
+			</entry>
+			<entry>
+				<key>browser.version</key>
+				<value>80.0.3987.87</value>
+			</entry>
+			<entry>
+				<key>time.time</key>
+				<value>09:19:28.297</value>
+			</entry>
+			<entry>
+				<key>time.zone</key>
+				<value>Europe/Berlin</value>
+			</entry>
+			<entry>
+				<key>window.width</key>
+				<value>1200</value>
+			</entry>
+			<entry>
+				<key>os.name</key>
+				<value>LINUX</value>
+			</entry>
+			<entry>
+				<key>time.date</key>
+				<value>2020-03-17</value>
+			</entry>
+			<entry>
+				<key>vcs.name</key>
+				<value>git</value>
+			</entry>
+		</metadata>
 	</data>
 </reTestXmlDataContainer>
