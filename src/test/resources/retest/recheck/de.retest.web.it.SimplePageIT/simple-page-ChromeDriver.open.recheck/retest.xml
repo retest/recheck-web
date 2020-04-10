@@ -558,6 +558,10 @@
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
+							<entry>
+								<key>box-sizing</key>
+								<value xsi:type="xsd:string">border-box</value>
+							</entry>
 						</attributes>
 					</attributes>
 					<containedElements retestId="tbody">
