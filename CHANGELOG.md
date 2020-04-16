@@ -35,6 +35,7 @@ Table of Contents
 
 ### Improvements
 
+* Keep the order of the HTML elements preserved in the underlying result (internal change), which makes a couple things easier.
 
 --------------------------------------------------------------------------------
 

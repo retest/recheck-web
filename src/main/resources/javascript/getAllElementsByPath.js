@@ -413,7 +413,7 @@ function mapElement(parent, parentPath, allElements) {
             }
             var cnt = counter.increase(child);
             var path = parentPath + "/" + child.tagName.toLowerCase() + "[" + cnt + "]";
-            allElements[path] = transform(child);
+            allElements.push([path, transform(child)]);
             mapElement(child, path, allElements);
         }
     }
@@ -427,7 +427,7 @@ if (arguments.length >= 1 && arguments[0]) {
     rootPath = getElementXPath(rootNode);
 }
 var root = transform(rootNode);
-var allElements = {};
-allElements[rootPath] = root;
+var allElements = [];
+allElements.push([rootPath, root]);
 allElements = mapElement(rootNode, rootPath, allElements);
 return allElements;

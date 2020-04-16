@@ -4,7 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyMap;
+import static org.mockito.ArgumentMatchers.anyList;
 import static org.mockito.ArgumentMatchers.nullable;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
@@ -14,7 +14,12 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.function.Consumer;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -251,12 +256,12 @@ class RecheckSeleniumAdapterTest {
 		final QualifiedElementWarning qualifiedElementWarning = new QualifiedElementWarning( "id", "id", warning );
 
 		final UnbreakableDriver unbreakableDriver = mock( UnbreakableDriver.class );
-		when( unbreakableDriver.executeScript( any(), any() ) ).thenReturn( Collections.emptyMap() );
+		when( unbreakableDriver.executeScript( any(), any() ) ).thenReturn( Collections.emptyList() );
 
 		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter( RecheckWebOptions.builder() //
 				.screenshotProvider( new NoScreenshot() ) //
 				.build() ) );
-		doReturn( mock( RootElement.class ) ).when( cut ).convert( anyMap(), nullable( String.class ),
+		doReturn( mock( RootElement.class ) ).when( cut ).convert( anyList(), nullable( String.class ),
 				nullable( String.class ), nullable( BufferedImage.class ) );
 
 		cut.convert( unbreakableDriver );
@@ -279,12 +284,12 @@ class RecheckSeleniumAdapterTest {
 		final QualifiedElementWarning qualifiedElementWarning = new QualifiedElementWarning( "id", "id", warning );
 
 		final UnbreakableDriver unbreakableDriver = mock( UnbreakableDriver.class );
-		when( unbreakableDriver.executeScript( any(), any() ) ).thenReturn( Collections.emptyMap() );
+		when( unbreakableDriver.executeScript( any(), any() ) ).thenReturn( Collections.emptyList() );
 
 		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter( RecheckWebOptions.builder() //
 				.screenshotProvider( new NoScreenshot() ) //
 				.build() ) );
-		doReturn( mock( RootElement.class ) ).when( cut ).convert( anyMap(), nullable( String.class ),
+		doReturn( mock( RootElement.class ) ).when( cut ).convert( anyList(), nullable( String.class ),
 				nullable( String.class ), nullable( BufferedImage.class ) );
 
 		cut.convert( unbreakableDriver );
@@ -297,6 +302,36 @@ class RecheckSeleniumAdapterTest {
 		assertThatCode( () -> {
 			warningConsumer.accept( qualifiedElementWarning );
 		} ).doesNotThrowAnyException();
+	}
+
+	@Test
+	void convert_should_preserve_order_of_elements() {
+		final RecheckSeleniumAdapter cut = new RecheckSeleniumAdapter( RecheckWebOptions.builder() //
+				.screenshotProvider( new NoScreenshot() ) //
+				.build() );
+		final List<List<Object>> tagMapping = new ArrayList<>();
+		tagMapping.add( Arrays.asList( "//html[1]", makeShown( toMap( "tagName", "html" ) ) ) );
+		tagMapping.add( Arrays.asList( "//html[1]/div[1]", makeShown( toMap( "tagName", "div" ) ) ) );
+		tagMapping.add( Arrays.asList( "//html[1]/a[1]", makeShown( toMap( "tagName", "a" ) ) ) );
+		final RootElement root = cut.convert( tagMapping, "url", "title", null );
+		assertThat( root.getContainedElements().toString() ).isEqualTo( "[div, a]" );
+	}
+
+	private Map<String, Object> makeShown( final Map<String, Object> map ) {
+		map.put( "shown", true );
+		map.put( "x", 0 );
+		map.put( "y", 0 );
+		map.put( "width", 10 );
+		map.put( "height", 10 );
+		return map;
+	}
+
+	private Map<String, Object> toMap( final Object... keysAndValues ) {
+		final Map<String, Object> result = new HashMap<>();
+		for ( int idx = 0; idx < keysAndValues.length; ) {
+			result.put( (String) keysAndValues[idx++], keysAndValues[idx++] );
+		}
+		return result;
 	}
 
 	private WrappingRemoteWebElement createOuterWrappingElement( final WrappingRemoteWebElement inner ) {

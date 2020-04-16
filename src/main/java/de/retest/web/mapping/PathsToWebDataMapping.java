@@ -3,9 +3,10 @@ package de.retest.web.mapping;
 import static org.apache.commons.lang3.StringUtils.countMatches;
 
 import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.stream.Collectors;
 
 import org.openqa.selenium.JavascriptExecutor;
 
@@ -23,10 +24,10 @@ import org.openqa.selenium.JavascriptExecutor;
  */
 public class PathsToWebDataMapping implements Iterable<Entry<String, WebData>> {
 
-	private final Map<String, WebData> mapping;
+	private final LinkedHashMap<String, WebData> mapping;
 	private final String rootPath;
 
-	public PathsToWebDataMapping( final Map<String, Map<String, Object>> mapping ) {
+	public PathsToWebDataMapping( final List<List<Object>> mapping ) {
 		this( "/", mapping );
 	}
 
@@ -36,13 +37,34 @@ public class PathsToWebDataMapping implements Iterable<Entry<String, WebData>> {
 	 * @param mapping
 	 *            The raw map of paths to maps of attributes.
 	 */
-	public PathsToWebDataMapping( final String frameParentPath, final Map<String, Map<String, Object>> mapping ) {
-		rootPath = frameParentPath + mapping.keySet().stream().reduce(
-				( rootPath, path ) -> countMatches( path, "/" ) < countMatches( rootPath, "/" ) ? path : rootPath )
-				.orElse( "" ).replace( "//", "/" );
-		this.mapping = mapping.entrySet().stream() //
-				.collect( Collectors.toMap( entry -> frameParentPath + entry.getKey().replace( "//", "/" ),
-						entry -> new WebData( entry.getValue() ) ) );
+	public PathsToWebDataMapping( final String frameParentPath, final List<List<Object>> mapping ) {
+		rootPath = frameParentPath + extractRootPath( mapping );
+		this.mapping = convertMapping( frameParentPath, mapping );
+	}
+
+	@SuppressWarnings( "unchecked" )
+	private LinkedHashMap<String, WebData> convertMapping( final String frameParentPath,
+			final List<List<Object>> mapping ) {
+		final LinkedHashMap<String, WebData> result = new LinkedHashMap<>();
+		for ( final List<Object> list : mapping ) {
+			result.put( frameParentPath + list.get( 0 ).toString().replace( "//", "/" ),
+					new WebData( (Map<String, Object>) list.get( 1 ) ) );
+		}
+		return result;
+	}
+
+	private String extractRootPath( final List<List<Object>> mapping ) {
+		String rootPath = null;
+		for ( final List<Object> entry : mapping ) {
+			if ( rootPath == null ) {
+				rootPath = entry.get( 0 ).toString();
+				continue;
+			}
+			if ( countMatches( entry.get( 0 ).toString(), "/" ) < countMatches( rootPath, "/" ) ) {
+				rootPath = entry.get( 0 ).toString();
+			}
+		}
+		return rootPath.replace( "//", "/" );
 	}
 
 	public int size() {
