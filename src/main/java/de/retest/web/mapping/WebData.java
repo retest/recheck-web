@@ -28,9 +28,15 @@ public class WebData {
 	private static final Logger logger = LoggerFactory.getLogger( WebData.class );
 
 	private final Map<String, Object> wrappedData;
+	private final int scale;
 
 	public WebData( final Map<String, Object> wrappedData ) {
+		this( wrappedData, SCALE );
+	}
+
+	public WebData( final Map<String, Object> wrappedData, final int scale ) {
 		this.wrappedData = wrappedData;
+		this.scale = scale;
 	}
 
 	/**
@@ -89,10 +95,10 @@ public class WebData {
 			return null;
 		}
 		try {
-			final int x = getAsInt( AttributesUtil.X ) / SCALE;
-			final int y = getAsInt( AttributesUtil.Y ) / SCALE;
-			final int width = getAsInt( AttributesUtil.WIDTH ) / SCALE;
-			final int height = getAsInt( AttributesUtil.HEIGHT ) / SCALE;
+			final int x = getAsInt( AttributesUtil.X ) / scale;
+			final int y = getAsInt( AttributesUtil.Y ) / scale;
+			final int width = getAsInt( AttributesUtil.WIDTH ) / scale;
+			final int height = getAsInt( AttributesUtil.HEIGHT ) / scale;
 			return new Rectangle( x, y, width, height );
 		} catch ( final Exception e ) {
 			logger.error( "Exception retrieving outline: ", e );

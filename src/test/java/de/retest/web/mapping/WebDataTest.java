@@ -16,7 +16,6 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import de.retest.web.AttributesUtil;
 import de.retest.web.ConversionException;
-import de.retest.web.mapping.WebData;
 
 class WebDataTest {
 
@@ -40,7 +39,7 @@ class WebDataTest {
 		input.put( AttributesUtil.WIDTH, "3" );
 		input.put( AttributesUtil.HEIGHT, "4" );
 
-		final Rectangle outline = new WebData( input ).getOutline();
+		final Rectangle outline = new WebData( input, 1 ).getOutline();
 		assertThat( outline.getX() ).isEqualTo( 1.0 );
 		assertThat( outline.getY() ).isEqualTo( 2.0 );
 		assertThat( outline.getWidth() ).isEqualTo( 3.0 );
