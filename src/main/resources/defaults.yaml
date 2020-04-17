@@ -4,6 +4,7 @@ all:
   - animation-iteration-count: 1
   - animation-play-state: running
   - animation-timing-function: ease
+  - autofocus: false 
   - backface-visibility: visible
   - background-attachment: scroll
   - background-clip: border-box
