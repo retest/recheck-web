@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.io.UncheckedIOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Stream;
@@ -160,9 +161,10 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		// Do not inline this, as we want the screenshot created before retrieving elements
 		final BufferedImage screenshot = shoot( driver, webElement, screenshotProvider );
 		final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		final Object result = jsExecutor.executeScript( getQueryJS(), webElement );
 		@SuppressWarnings( "unchecked" )
-		final Map<String, Map<String, Object>> tagMapping =
-				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), webElement );
+		// [["//html[1]", {tagName=html, ...}], ["//html[1]/body[1]", {tagName=body, ...}]]
+		final List<List<Object>> tagMapping = (List<List<Object>>) result;
 		final RootElement lastChecked = convert( tagMapping, driver.getCurrentUrl(), driver.getTitle(), screenshot );
 
 		final FrameConverter frameConverter = new FrameConverter( getQueryJS(), retestIdProvider, defaultValueFinder );
@@ -177,7 +179,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		return Collections.singleton( lastChecked );
 	}
 
-	public RootElement convert( final Map<String, Map<String, Object>> tagMapping, final String url, final String title,
+	public RootElement convert( final List<List<Object>> tagMapping, final String url, final String title,
 			final BufferedImage screenshot ) {
 		final PathsToWebDataMapping mapping = new PathsToWebDataMapping( tagMapping );
 

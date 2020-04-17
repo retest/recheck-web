@@ -1,7 +1,6 @@
 package de.retest.web;
 
 import java.util.List;
-import java.util.Map;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
@@ -59,7 +58,7 @@ public class FrameConverter {
 			final JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 			@SuppressWarnings( "unchecked" )
 			final PathsToWebDataMapping mapping = new PathsToWebDataMapping( framePath,
-					(Map<String, Map<String, Object>>) jsExecutor.executeScript( queryJs ) );
+					(List<List<Object>>) jsExecutor.executeScript( queryJs ) );
 			final RootElement frameContent = convert( mapping, getFrameTitle( frame ), framePath );
 
 			final FrameConverter frameConverter =
