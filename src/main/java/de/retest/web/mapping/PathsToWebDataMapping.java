@@ -64,7 +64,7 @@ public class PathsToWebDataMapping implements Iterable<Entry<String, WebData>> {
 				rootPath = entry.get( 0 ).toString();
 			}
 		}
-		return rootPath.replace( "//", "/" );
+		return rootPath != null ? rootPath.replace( "//", "/" ) : "";
 	}
 
 	public int size() {
