@@ -1,6 +1,9 @@
 package de.retest.web;
 
 import de.retest.recheck.RecheckOptions;
+import de.retest.recheck.persistence.NamingStrategy;
+import de.retest.recheck.persistence.ProjectLayout;
+import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
 import de.retest.web.screenshot.ScreenshotProvider;
 import de.retest.web.screenshot.ScreenshotProviders;
 import de.retest.web.selenium.AutocheckingCheckNamingStrategy;
@@ -72,6 +75,54 @@ public class RecheckWebOptions extends RecheckOptions {
 		 */
 		public RecheckWebOptionsBuilder enableScreenshots() {
 			return screenshotProvider( ScreenshotProviders.DEFAULT );
+		}
+
+		@Override
+		public RecheckWebOptionsBuilder namingStrategy( final NamingStrategy namingStrategy ) {
+			super.namingStrategy( namingStrategy );
+			return this;
+		}
+
+		@Override
+		public RecheckWebOptionsBuilder projectLayout( final ProjectLayout projectLayout ) {
+			super.projectLayout( projectLayout );
+			return this;
+		}
+
+		@Override
+		public RecheckWebOptionsBuilder suiteName( final String suiteName ) {
+			super.suiteName( suiteName );
+			return this;
+		}
+
+		@Override
+		public RecheckWebOptionsBuilder enableReportUpload() {
+			super.enableReportUpload();
+			return this;
+		}
+
+		@Override
+		public RecheckWebOptionsBuilder setIgnore( final String filterName ) {
+			super.setIgnore( filterName );
+			return this;
+		}
+
+		@Override
+		public RecheckWebOptionsBuilder ignoreNothing() {
+			super.ignoreNothing();
+			return this;
+		}
+
+		@Override
+		public RecheckWebOptionsBuilder addIgnore( final String filterName ) {
+			super.addIgnore( filterName );
+			return this;
+		}
+
+		@Override
+		public RecheckWebOptionsBuilder retestIdProvider( final RetestIdProvider retestIdProvider ) {
+			super.retestIdProvider( retestIdProvider );
+			return this;
 		}
 
 		@Override
