@@ -29,6 +29,8 @@ Table of Contents
 
 ### Bug Fixes
 
+* `RecheckWebOptionsBuilder` now overrides all parent methods to return an instance of `RecheckWebOptionsBuilder`. Before that, using methods from the parent would effectively shadow methods from `RecheckWebOptionsBuilder`.
+
 ### New Features
 
 * Introduce a `skipCheck()` method on `RecheckDriver`, `AutocheckingRecheckDriver`, and `UnbreakableDriver`, which is an alias for `getWrappedDriver()`, making it possible signal a clearer intent when writing tests.
