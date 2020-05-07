@@ -53,12 +53,8 @@ class DefaultWebValueFinderTest {
 	@Test
 	void getDefaultValue_should_prefer_specific_over_general_values() {
 		final DefaultWebValueFinder cut = new DefaultWebValueFinder();
-		final IdentifyingAttributes ident0 = mock( IdentifyingAttributes.class );
-		when( ident0.getType() ).thenReturn( "body" );
-		assertThat( cut.getDefaultValue( ident0, "margin-top" ) ).isEqualTo( "8px" );
-		final IdentifyingAttributes ident1 = mock( IdentifyingAttributes.class );
-		when( ident1.getType() ).thenReturn( "ul" );
-		assertThat( cut.getDefaultValue( ident1, "margin-top" ) ).isEqualTo( "1em" );
+		assertThat( cut.getDefaultValue( "body", "margin-top" ) ).isEqualTo( "8px" );
+		assertThat( cut.getDefaultValue( "ul", "margin-top" ) ).isEqualTo( "1em" );
 	}
 
 	@Test

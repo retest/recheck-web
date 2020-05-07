@@ -75,7 +75,7 @@ public class DefaultWebValueFinder implements DefaultValueFinder {
 	public boolean isDefaultValue( final IdentifyingAttributes identifyingAttributes, final String attributeKey,
 			final Serializable attributeValue ) {
 		final String attributeValueString = attributeValue != null ? attributeValue.toString() : null;
-		final String defaultValueString = getDefaultValue( identifyingAttributes, attributeKey );
+		final String defaultValueString = getDefaultValue( identifyingAttributes.getType(), attributeKey );
 		if ( defaultValueString != null ) {
 			return defaultValueString.equalsIgnoreCase( attributeValueString );
 		}
@@ -88,8 +88,7 @@ public class DefaultWebValueFinder implements DefaultValueFinder {
 		return false;
 	}
 
-	String getDefaultValue( final IdentifyingAttributes identifyingAttributes, final String attribute ) {
-		final String tag = identifyingAttributes.getType();
+	public String getDefaultValue( final String tag, final String attribute ) {
 		final Map<String, String> defaults = defaultValues.get( tag.toLowerCase() );
 		if ( defaults != null ) {
 			final String defaultValue = defaults.get( attribute.toLowerCase() );
