@@ -15,9 +15,6 @@ addons:
     organization: retest
     token: "${SONAR_CLOUD_TOKEN}"
 
-notifications:
-  email: false
-
 cache:
   directories:
     - "${HOME}/.sonar/cache/"
