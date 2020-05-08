@@ -4728,7 +4728,7 @@
 							<attributes>
 								<entry>
 									<key>covered</key>
-									<value xsi:type="xsd:string">true</value>
+									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>shown</key>
@@ -8840,6 +8840,10 @@
 							<entry>
 								<key>accesskey</key>
 								<value xsi:type="xsd:string">4</value>
+							</entry>
+							<entry>
+								<key>autofocus</key>
+								<value xsi:type="xsd:string">true</value>
 							</entry>
 							<entry>
 								<key>background-color</key>

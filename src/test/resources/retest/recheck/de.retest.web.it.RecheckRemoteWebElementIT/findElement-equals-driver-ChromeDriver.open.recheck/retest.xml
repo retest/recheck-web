@@ -8014,6 +8014,10 @@
 								<value xsi:type="xsd:string">4</value>
 							</entry>
 							<entry>
+								<key>autofocus</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+							<entry>
 								<key>background-color</key>
 								<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
 							</entry>
@@ -8068,6 +8072,18 @@
 							<entry>
 								<key>margin-top</key>
 								<value xsi:type="xsd:string">0px</value>
+							</entry>
+							<entry>
+								<key>outline-color</key>
+								<value xsi:type="xsd:string">rgb(229, 151, 0)</value>
+							</entry>
+							<entry>
+								<key>outline-offset</key>
+								<value xsi:type="xsd:string">-2px</value>
+							</entry>
+							<entry>
+								<key>outline-width</key>
+								<value xsi:type="xsd:string">1px</value>
 							</entry>
 							<entry>
 								<key>padding-bottom</key>

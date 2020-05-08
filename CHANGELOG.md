@@ -26,6 +26,7 @@ Table of Contents
 ### Breaking Changes
 
 * Rename self-introduced property tab-index to tabindex, which is W3C standard.
+* Add `autofocus` as attribute (needs special handling).
 
 ### Bug Fixes
 
@@ -38,6 +39,7 @@ Table of Contents
 ### Improvements
 
 * Keep the order of the HTML elements preserved in the underlying result (internal change), which makes a couple things easier.
+
 
 --------------------------------------------------------------------------------
 

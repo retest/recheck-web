@@ -282,6 +282,19 @@ function isDisabled(node) {
     return node.disabled ? true : false;
 }
 
+function hasAutofocus(node) {
+    if (!node.autofocus) {
+        return false;
+    }
+    if (node.autofocus === "") {
+        return false;
+    }
+    if (node.autofocus === "autofocus") {
+        return true;
+    }
+    return node.autofocus ? true : false;
+}
+
 // check if element is behind another one
 function isCovered(node) {
     // TODO Handle false negatives for elements outside of viewport
@@ -344,6 +357,7 @@ function transform(node) {
     // overwrite empty attributes (e.g. 'disabled')
     extractedAttributes["checked"] = node.checked;
     extractedAttributes["disabled"] = isDisabled(node);
+    extractedAttributes["autofocus"] = hasAutofocus(node);
     extractedAttributes["read-only"] = node.readOnly;
 
     var style = getComputedStyleSafely(node);
