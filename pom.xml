@@ -90,7 +90,7 @@
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>recheck</artifactId>
-			<version>1.10.2</version>
+			<version>1.11.0-beta.1</version>
 		</dependency>
 
 		<dependency>
@@ -176,14 +176,14 @@
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>recheck-junit-jupiter-extension</artifactId>
-			<version>1.10.0</version>
+			<version>1.11.0-beta.1</version>
 			<scope>test</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>recheck-junit-4-extension</artifactId>
-			<version>1.10.0</version>
+			<version>1.11.0-beta.2</version>
 			<scope>test</scope>
 		</dependency>
 
