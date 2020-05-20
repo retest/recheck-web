@@ -41,7 +41,7 @@ Table of Contents
 ### Breaking Changes
 
 * Rename self-introduced property `tab-index` to `tabindex`, which is W3C standard.
-* Add self-introduced property `convered`.
+* Add self-introduced property `covered`.
 * Add `autofocus` as attribute (needs special handling).
 
 ### Bug Fixes
