@@ -25,7 +25,23 @@ Table of Contents
 
 ### Breaking Changes
 
-* Rename self-introduced property tab-index to tabindex, which is W3C standard.
+### Bug Fixes
+
+### New Features
+
+### Improvements
+
+
+--------------------------------------------------------------------------------
+
+
+[1.11.0] (2020-05-15)
+------------
+
+### Breaking Changes
+
+* Rename self-introduced property `tab-index` to `tabindex`, which is W3C standard.
+* Add self-introduced property `covered`.
 * Add `autofocus` as attribute (needs special handling).
 
 ### Bug Fixes
@@ -39,9 +55,6 @@ Table of Contents
 ### Improvements
 
 * Keep the order of the HTML elements preserved in the underlying result (internal change), which makes a couple things easier.
-
-
---------------------------------------------------------------------------------
 
 
 [1.10.3] (2020-03-16)
