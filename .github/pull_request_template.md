@@ -2,7 +2,7 @@
 
 - [ ] the code follows the [Clean Code](https://clean-code-developer.com/) guidelines.
 - [ ] the necessary tests are either created or updated.
-- [ ] all status checks (Travis CI, SonarCloud, etc.) pass.
+- [ ] all status checks (GitHub Actions, SonarCloud, etc.) pass.
 - [ ] your commit history is cleaned up.
 - [ ] you updated the changelog.
 - [ ] you updated necessary documentation within [retest/docs](https://github.com/retest/docs).
