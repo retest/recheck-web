@@ -1,0 +1,53 @@
+name: build
+
+on: [push, pull_request]
+
+env:
+  SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v2
+
+      # fetch unshallow to enable blame for Sonar
+    - name: Fetch unshallow
+      run: git fetch --prune --unshallow
+
+    - name: Cache Maven
+      uses: actions/cache@v1
+      with:
+        path: ~/.m2/repository/
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: ${{ runner.os }}-maven-
+
+    - name: Cache Sonar
+      uses: actions/cache@v1
+      with:
+        path: ~/.sonar/cache/
+        key: ${{ runner.os }}-sonar
+
+    - name: Set up JDK 8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 8
+
+    - name: Compile
+      run: mvn --batch-mode clean package -DskipTests
+
+    - name: Set up JDK 13
+      uses: actions/setup-java@v1
+      with:
+        java-version: 13
+
+    - name: Test
+      run: >
+        mvn --batch-mode clean verify sonar:sonar -Pcoverage
+        -Dsonar.host.url=https://sonarcloud.io
+        -Dsonar.organization=retest
+        -Dsonar.projectKey=de.retest:recheck-web
