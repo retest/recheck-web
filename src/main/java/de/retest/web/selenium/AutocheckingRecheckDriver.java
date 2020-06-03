@@ -96,23 +96,6 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 	}
 
 	@Override
-	public void close() {
-		// Is this sensible? What about tests using separate sessions?
-		cap();
-		super.close();
-	}
-
-	@Override
-	public void quit() {
-		try {
-			// Is this sensible? What about tests using separate sessions?
-			cap();
-		} finally {
-			super.quit();
-		}
-	}
-
-	@Override
 	protected WebElement wrap( final WebElement element ) {
 		return AutocheckingWebElement.of( element, this );
 	}

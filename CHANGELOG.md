@@ -27,6 +27,8 @@ Table of Contents
 
 ### Bug Fixes
 
+* Fix `AutocheckingRecheckDriver#close` and `AutocheckingRecheckDriver#quit` competing with the recheck lifecycle. This now requires that both lifecycles are called properly. Hint: Use the recheck extensions for the latter.
+
 ### New Features
 
 ### Improvements
