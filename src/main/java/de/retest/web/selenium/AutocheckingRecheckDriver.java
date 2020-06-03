@@ -151,4 +151,9 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 	public Navigation navigate() {
 		return new AutocheckingNavigationWrapper( super.navigate(), this );
 	}
+
+	@Override
+	public TargetLocator switchTo() {
+		return new AutocheckingTargetLocator( super.switchTo(), this );
+	}
 }
