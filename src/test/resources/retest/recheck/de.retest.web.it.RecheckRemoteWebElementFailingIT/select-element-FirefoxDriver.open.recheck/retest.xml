@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.7.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="select" screenId="1" screen="WebElement" title="html[1]/body[1]/form[3]/select[2]">
 			<identifyingAttributes>
@@ -96,6 +96,10 @@
 					<entry>
 						<key>column-rule-color</key>
 						<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
+					</entry>
+					<entry>
+						<key>covered</key>
+						<value xsi:type="xsd:string">false</value>
 					</entry>
 					<entry>
 						<key>display</key>
@@ -479,10 +483,6 @@
 					</attributes>
 				</attributes>
 			</containedElements>
-			<screenshot>
-				<persistenceId>multi</persistenceId>
-				<type>PNG</type>
-			</screenshot>
 		</descriptors>
 	</data>
 </reTestXmlDataContainer>

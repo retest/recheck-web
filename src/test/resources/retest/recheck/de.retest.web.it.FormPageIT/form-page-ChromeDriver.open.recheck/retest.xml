@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.10.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="We Leave From Here" title="We Leave From Here">
 			<identifyingAttributes>
@@ -23,6 +23,10 @@
 			</identifyingAttributes>
 			<attributes>
 				<attributes>
+					<entry>
+						<key>border-image-outset</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
 					<entry>
 						<key>covered</key>
 						<value xsi:type="xsd:string">false</value>
@@ -331,6 +335,14 @@
 									<value xsi:type="xsd:string">rgb(169, 169, 169)</value>
 								</entry>
 								<entry>
+									<key>border-bottom-left-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>border-bottom-right-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
 									<key>border-bottom-style</key>
 									<value xsi:type="xsd:string">solid</value>
 								</entry>
@@ -351,6 +363,10 @@
 									<value xsi:type="xsd:string">1px</value>
 								</entry>
 								<entry>
+									<key>border-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
 									<key>border-right-color</key>
 									<value xsi:type="xsd:string">rgb(169, 169, 169)</value>
 								</entry>
@@ -365,6 +381,14 @@
 								<entry>
 									<key>border-top-color</key>
 									<value xsi:type="xsd:string">rgb(169, 169, 169)</value>
+								</entry>
+								<entry>
+									<key>border-top-left-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>border-top-right-radius</key>
+									<value xsi:type="xsd:string">2px</value>
 								</entry>
 								<entry>
 									<key>border-top-style</key>
@@ -1230,6 +1254,14 @@
 									<value xsi:type="xsd:string">rgb(169, 169, 169)</value>
 								</entry>
 								<entry>
+									<key>border-bottom-left-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>border-bottom-right-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
 									<key>border-bottom-style</key>
 									<value xsi:type="xsd:string">solid</value>
 								</entry>
@@ -1250,6 +1282,10 @@
 									<value xsi:type="xsd:string">1px</value>
 								</entry>
 								<entry>
+									<key>border-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
 									<key>border-right-color</key>
 									<value xsi:type="xsd:string">rgb(169, 169, 169)</value>
 								</entry>
@@ -1264,6 +1300,14 @@
 								<entry>
 									<key>border-top-color</key>
 									<value xsi:type="xsd:string">rgb(169, 169, 169)</value>
+								</entry>
+								<entry>
+									<key>border-top-left-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>border-top-right-radius</key>
+									<value xsi:type="xsd:string">2px</value>
 								</entry>
 								<entry>
 									<key>border-top-style</key>
@@ -2732,6 +2776,14 @@
 									<value xsi:type="xsd:string">rgb(169, 169, 169)</value>
 								</entry>
 								<entry>
+									<key>border-bottom-left-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>border-bottom-right-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
 									<key>border-bottom-style</key>
 									<value xsi:type="xsd:string">solid</value>
 								</entry>
@@ -2752,6 +2804,10 @@
 									<value xsi:type="xsd:string">1px</value>
 								</entry>
 								<entry>
+									<key>border-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
 									<key>border-right-color</key>
 									<value xsi:type="xsd:string">rgb(169, 169, 169)</value>
 								</entry>
@@ -2766,6 +2822,14 @@
 								<entry>
 									<key>border-top-color</key>
 									<value xsi:type="xsd:string">rgb(169, 169, 169)</value>
+								</entry>
+								<entry>
+									<key>border-top-left-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>border-top-right-radius</key>
+									<value xsi:type="xsd:string">2px</value>
 								</entry>
 								<entry>
 									<key>border-top-style</key>
@@ -3162,6 +3226,14 @@
 									<value xsi:type="xsd:string">rgb(169, 169, 169)</value>
 								</entry>
 								<entry>
+									<key>border-bottom-left-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>border-bottom-right-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
 									<key>border-bottom-style</key>
 									<value xsi:type="xsd:string">solid</value>
 								</entry>
@@ -3182,6 +3254,10 @@
 									<value xsi:type="xsd:string">1px</value>
 								</entry>
 								<entry>
+									<key>border-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
 									<key>border-right-color</key>
 									<value xsi:type="xsd:string">rgb(169, 169, 169)</value>
 								</entry>
@@ -3196,6 +3272,14 @@
 								<entry>
 									<key>border-top-color</key>
 									<value xsi:type="xsd:string">rgb(169, 169, 169)</value>
+								</entry>
+								<entry>
+									<key>border-top-left-radius</key>
+									<value xsi:type="xsd:string">2px</value>
+								</entry>
+								<entry>
+									<key>border-top-right-radius</key>
+									<value xsi:type="xsd:string">2px</value>
 								</entry>
 								<entry>
 									<key>border-top-style</key>
