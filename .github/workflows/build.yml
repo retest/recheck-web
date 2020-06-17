@@ -51,3 +51,5 @@ jobs:
         -Dsonar.host.url=https://sonarcloud.io
         -Dsonar.organization=retest
         -Dsonar.projectKey=de.retest:recheck-web
+      env:
+        RECHECK_API_KEY: ${{ secrets.RECHECK_API_KEY }}
