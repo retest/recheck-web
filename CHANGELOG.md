@@ -55,6 +55,7 @@ Table of Contents
 ### Improvements
 
 * Keep the order of the HTML elements preserved in the underlying result (internal change), which makes a couple things easier.
+* Change how covered elements are detected in order to handle rounded buttons
 
 
 [1.10.3] (2020-03-16)
