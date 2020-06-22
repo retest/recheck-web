@@ -41,6 +41,7 @@ matcher: type=meta, attribute-regex=.*
 
 # Have the tests pass locally:
 attribute=outline
+attribute=outline-width
 
 # So we can have a different ID in SimpleAutocheckingDriverShowcaseIT:
 matcher: xpath=html[1]/body[1]/form[1]/input[1], attribute=id
