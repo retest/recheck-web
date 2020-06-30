@@ -29,6 +29,8 @@ Table of Contents
 
 ### New Features
 
+* Calling `driver.switchTo().window( name )` will now perform a check when using a `AutocheckingRecheckDriver`.
+
 ### Improvements
 
 

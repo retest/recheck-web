@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+	<data xsi:type="sutState">
+		<descriptors retestId="html" screenId="1" screen="Page" title="Page">
+			<identifyingAttributes>
+				<attributes>
+					<attribute key="absolute-outline" xsi:type="outlineAttribute">
+						<x>0</x>
+						<y>0</y>
+						<height>34</height>
+						<width>1200</width>
+					</attribute>
+					<attribute key="outline" xsi:type="outlineAttribute">
+						<x>0</x>
+						<y>0</y>
+						<height>34</height>
+						<width>1200</width>
+					</attribute>
+					<attribute key="path" xsi:type="pathAttribute">html[1]</attribute>
+					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+					<attribute key="type" xsi:type="stringAttribute">html</attribute>
+				</attributes>
+			</identifyingAttributes>
+			<attributes>
+				<attributes>
+					<entry>
+						<key>border-image-outset</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>covered</key>
+						<value xsi:type="xsd:string">false</value>
+					</entry>
+					<entry>
+						<key>lang</key>
+						<value xsi:type="xsd:string">en</value>
+					</entry>
+					<entry>
+						<key>shown</key>
+						<value xsi:type="xsd:string">true</value>
+					</entry>
+				</attributes>
+			</attributes>
+			<containedElements retestId="head">
+				<identifyingAttributes>
+					<attributes>
+						<attribute key="absolute-outline" xsi:type="outlineAttribute">
+							<x>0</x>
+							<y>0</y>
+							<height>0</height>
+							<width>0</width>
+						</attribute>
+						<attribute key="outline" xsi:type="outlineAttribute">
+							<x>0</x>
+							<y>0</y>
+							<height>-34</height>
+							<width>-1200</width>
+						</attribute>
+						<attribute key="path" xsi:type="pathAttribute">html[1]/head[1]</attribute>
+						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+						<attribute key="type" xsi:type="stringAttribute">head</attribute>
+					</attributes>
+				</identifyingAttributes>
+				<attributes>
+					<attributes>
+						<entry>
+							<key>covered</key>
+							<value xsi:type="xsd:string">false</value>
+						</entry>
+						<entry>
+							<key>shown</key>
+							<value xsi:type="xsd:string">false</value>
+						</entry>
+					</attributes>
+				</attributes>
+				<containedElements retestId="meta">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/head[1]/meta[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="type" xsi:type="stringAttribute">meta</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>charset</key>
+								<value xsi:type="xsd:string">UTF-8</value>
+							</entry>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+							<entry>
+								<key>shown</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="page">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>0</height>
+								<width>0</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/head[1]/title[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">Page</attribute>
+							<attribute key="type" xsi:type="stringAttribute">title</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
+								<key>shown</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="body">
+				<identifyingAttributes>
+					<attributes>
+						<attribute key="absolute-outline" xsi:type="outlineAttribute">
+							<x>8</x>
+							<y>8</y>
+							<height>18</height>
+							<width>1184</width>
+						</attribute>
+						<attribute key="outline" xsi:type="outlineAttribute">
+							<x>8</x>
+							<y>8</y>
+							<height>-16</height>
+							<width>-16</width>
+						</attribute>
+						<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]</attribute>
+						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+						<attribute key="type" xsi:type="stringAttribute">body</attribute>
+					</attributes>
+				</identifyingAttributes>
+				<attributes>
+					<attributes>
+						<entry>
+							<key>covered</key>
+							<value xsi:type="xsd:string">false</value>
+						</entry>
+						<entry>
+							<key>shown</key>
+							<value xsi:type="xsd:string">true</value>
+						</entry>
+					</attributes>
+				</attributes>
+				<containedElements retestId="new_tab">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>8</x>
+								<y>8</y>
+								<height>17</height>
+								<width>58</width>
+							</attribute>
+							<attribute key="id" xsi:type="stringAttribute">tab</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>0</x>
+								<y>0</y>
+								<height>-1</height>
+								<width>-1126</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/a[1]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+							<attribute key="text" xsi:type="textAttribute">New Tab</attribute>
+							<attribute key="type" xsi:type="stringAttribute">a</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
+								<key>href</key>
+								<value xsi:type="xsd:string">tab.html</value>
+							</entry>
+							<entry>
+								<key>shown</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+							<entry>
+								<key>target</key>
+								<value xsi:type="xsd:string">_blank</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+				<containedElements retestId="new_window">
+					<identifyingAttributes>
+						<attributes>
+							<attribute key="absolute-outline" xsi:type="outlineAttribute">
+								<x>70</x>
+								<y>8</y>
+								<height>17</height>
+								<width>88</width>
+							</attribute>
+							<attribute key="id" xsi:type="stringAttribute">window</attribute>
+							<attribute key="outline" xsi:type="outlineAttribute">
+								<x>62</x>
+								<y>0</y>
+								<height>-1</height>
+								<width>-1096</width>
+							</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/a[2]</attribute>
+							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+							<attribute key="text" xsi:type="textAttribute">New Window</attribute>
+							<attribute key="type" xsi:type="stringAttribute">a</attribute>
+						</attributes>
+					</identifyingAttributes>
+					<attributes>
+						<attributes>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
+								<key>href</key>
+								<value xsi:type="xsd:string">tab.html</value>
+							</entry>
+							<entry>
+								<key>onclick</key>
+								<value xsi:type="xsd:string">window.open('tab.html', 'newwindow', 'width=300,height=300'); return false;</value>
+							</entry>
+							<entry>
+								<key>shown</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
+						</attributes>
+					</attributes>
+				</containedElements>
+			</containedElements>
+		</descriptors>
+		<metadata>
+			<entry>
+				<key>driver.type</key>
+				<value>RecheckDriver</value>
+			</entry>
+			<entry>
+				<key>time.offset</key>
+				<value>+02:00</value>
+			</entry>
+			<entry>
+				<key>os.arch</key>
+				<value>amd64</value>
+			</entry>
+			<entry>
+				<key>check.type</key>
+				<value>driver</value>
+			</entry>
+			<entry>
+				<key>vcs.commit</key>
+				<value>6d0f84a91f63fb58073faaff1cdaa3eda453372a</value>
+			</entry>
+			<entry>
+				<key>window.height</key>
+				<value>800</value>
+			</entry>
+			<entry>
+				<key>vcs.branch</key>
+				<value>feature/autochecking-target-locator</value>
+			</entry>
+			<entry>
+				<key>url</key>
+				<value>file:///C:/Users/diehl/Documents/Work/Repo/Company/open/recheck-web/target/test-classes/de/retest/web/it/page.html</value>
+			</entry>
+			<entry>
+				<key>machine.name</key>
+				<value>PC-BASTIAN</value>
+			</entry>
+			<entry>
+				<key>os.version</key>
+				<value>10.0</value>
+			</entry>
+			<entry>
+				<key>browser.name</key>
+				<value>chrome</value>
+			</entry>
+			<entry>
+				<key>browser.version</key>
+				<value>83.0.4103.106</value>
+			</entry>
+			<entry>
+				<key>time.time</key>
+				<value>10:16:09.3176127</value>
+			</entry>
+			<entry>
+				<key>time.zone</key>
+				<value>Europe/Berlin</value>
+			</entry>
+			<entry>
+				<key>window.width</key>
+				<value>1200</value>
+			</entry>
+			<entry>
+				<key>os.name</key>
+				<value>WINDOWS</value>
+			</entry>
+			<entry>
+				<key>time.date</key>
+				<value>2020-06-22</value>
+			</entry>
+			<entry>
+				<key>vcs.name</key>
+				<value>git</value>
+			</entry>
+		</metadata>
+	</data>
+</reTestXmlDataContainer>
