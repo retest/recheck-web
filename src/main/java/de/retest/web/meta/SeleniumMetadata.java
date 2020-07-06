@@ -15,6 +15,7 @@ public final class SeleniumMetadata {
 
 	public static final String OS_NAME = OSMetadataProvider.OS_NAME;
 	public static final String OS_VERSION = OSMetadataProvider.OS_VERSION;
+	public static final String OS_ARCH = OSMetadataProvider.OS_ARCH;
 
 	public static final String DRIVER_TYPE = "driver.type";
 

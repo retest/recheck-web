@@ -33,6 +33,7 @@ Table of Contents
 
 ### Improvements
 
+* Always override the system metadata (i.e. on "architecture"), so that we do not end up with mixed info.
 
 --------------------------------------------------------------------------------
 
