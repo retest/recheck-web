@@ -27,6 +27,9 @@ Table of Contents
 
 ### Bug Fixes
 
+* Add `covered=false` as default attribute to reduce noise.
+* Add `border-image-outset=0` as default
+
 ### New Features
 
 ### Improvements

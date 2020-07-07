@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.10.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="Hello WebDriver" title="Hello WebDriver">
 			<identifyingAttributes>
@@ -23,10 +23,6 @@
 			</identifyingAttributes>
 			<attributes>
 				<attributes>
-					<entry>
-						<key>covered</key>
-						<value xsi:type="xsd:string">false</value>
-					</entry>
 					<entry>
 						<key>shown</key>
 						<value xsi:type="xsd:string">true</value>
@@ -57,10 +53,6 @@
 				<attributes>
 					<attributes>
 						<entry>
-							<key>covered</key>
-							<value xsi:type="xsd:string">false</value>
-						</entry>
-						<entry>
 							<key>shown</key>
 							<value xsi:type="xsd:string">true</value>
 						</entry>
@@ -90,10 +82,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -122,10 +110,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -161,10 +145,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -194,10 +174,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -231,10 +207,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -265,10 +237,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -297,10 +265,6 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
 									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
@@ -331,10 +295,6 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
 									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
@@ -370,10 +330,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -407,10 +363,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -443,10 +395,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -482,10 +430,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -515,10 +459,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -551,16 +491,12 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
+								<key>box-sizing</key>
+								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
-							</entry>
-							<entry>
-								<key>box-sizing</key>
-								<value xsi:type="xsd:string">border-box</value>
 							</entry>
 						</attributes>
 					</attributes>
@@ -586,10 +522,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -619,10 +551,6 @@
 							<attributes>
 								<attributes>
 									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
-									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
 									</entry>
@@ -650,10 +578,6 @@
 								</identifyingAttributes>
 								<attributes>
 									<attributes>
-										<entry>
-											<key>covered</key>
-											<value xsi:type="xsd:string">false</value>
-										</entry>
 										<entry>
 											<key>padding-bottom</key>
 											<value xsi:type="xsd:string">1px</value>
@@ -704,10 +628,6 @@
 									<attributes>
 										<attributes>
 											<entry>
-												<key>covered</key>
-												<value xsi:type="xsd:string">false</value>
-											</entry>
-											<entry>
 												<key>shown</key>
 												<value xsi:type="xsd:string">true</value>
 											</entry>
@@ -738,10 +658,6 @@
 									<attributes>
 										<attributes>
 											<entry>
-												<key>covered</key>
-												<value xsi:type="xsd:string">false</value>
-											</entry>
-											<entry>
 												<key>shown</key>
 												<value xsi:type="xsd:string">true</value>
 											</entry>
@@ -770,10 +686,6 @@
 									</identifyingAttributes>
 									<attributes>
 										<attributes>
-											<entry>
-												<key>covered</key>
-												<value xsi:type="xsd:string">false</value>
-											</entry>
 											<entry>
 												<key>shown</key>
 												<value xsi:type="xsd:string">true</value>
@@ -809,10 +721,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -841,10 +749,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -911,10 +815,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -943,10 +843,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -980,10 +876,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -1048,10 +940,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -1084,10 +972,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -1119,10 +1003,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -1151,10 +1031,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -1188,10 +1064,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -1260,10 +1132,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -1294,10 +1162,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -1327,10 +1191,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -1363,10 +1223,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -1398,10 +1254,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -1431,10 +1283,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -1463,10 +1311,6 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
 									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
@@ -1500,10 +1344,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -1535,10 +1375,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -1568,10 +1404,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -1600,10 +1432,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -1669,10 +1497,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -1701,10 +1525,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -1741,10 +1561,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -1773,10 +1589,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -1804,10 +1616,6 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
 									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
@@ -1838,10 +1646,6 @@
 								<attributes>
 									<attributes>
 										<entry>
-											<key>covered</key>
-											<value xsi:type="xsd:string">false</value>
-										</entry>
-										<entry>
 											<key>shown</key>
 											<value xsi:type="xsd:string">true</value>
 										</entry>
@@ -1871,10 +1675,6 @@
 								</identifyingAttributes>
 								<attributes>
 									<attributes>
-										<entry>
-											<key>covered</key>
-											<value xsi:type="xsd:string">false</value>
-										</entry>
 										<entry>
 											<key>shown</key>
 											<value xsi:type="xsd:string">true</value>
@@ -1907,10 +1707,6 @@
 							<attributes>
 								<attributes>
 									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
-									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
 									</entry>
@@ -1941,10 +1737,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -1978,10 +1770,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -2018,10 +1806,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -2055,10 +1839,6 @@
 								<value xsi:type="xsd:string">resultPage.html</value>
 							</entry>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -2086,10 +1866,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -2120,10 +1896,6 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
 									<entry>
 										<key>for</key>
 										<value xsi:type="xsd:string">checkbox1</value>
@@ -2157,10 +1929,6 @@
 								<attributes>
 									<attributes>
 										<entry>
-											<key>covered</key>
-											<value xsi:type="xsd:string">false</value>
-										</entry>
-										<entry>
 											<key>shown</key>
 											<value xsi:type="xsd:string">true</value>
 										</entry>
@@ -2190,10 +1958,6 @@
 								</identifyingAttributes>
 								<attributes>
 									<attributes>
-										<entry>
-											<key>covered</key>
-											<value xsi:type="xsd:string">false</value>
-										</entry>
 										<entry>
 											<key>shown</key>
 											<value xsi:type="xsd:string">true</value>
@@ -2228,10 +1992,6 @@
 								<attributes>
 									<attributes>
 										<entry>
-											<key>covered</key>
-											<value xsi:type="xsd:string">false</value>
-										</entry>
-										<entry>
 											<key>shown</key>
 											<value xsi:type="xsd:string">true</value>
 										</entry>
@@ -2265,10 +2025,6 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
 									<entry>
 										<key>font-family</key>
 										<value xsi:type="xsd:string">Arial</value>
@@ -2376,10 +2132,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -2418,10 +2170,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>href</key>
 									<value xsi:type="xsd:string">resultPage.html</value>
 								</entry>
@@ -2454,10 +2202,6 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
 									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
@@ -2492,10 +2236,6 @@
 							<attributes>
 								<attributes>
 									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
-									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
 									</entry>
@@ -2527,10 +2267,6 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
 									<entry>
 										<key>shown</key>
 										<value xsi:type="xsd:string">true</value>
@@ -2565,10 +2301,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -2598,10 +2330,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -2634,10 +2362,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -2669,10 +2393,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -2702,10 +2422,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -2738,10 +2454,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -2771,10 +2483,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -2811,10 +2519,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -2845,10 +2549,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -2881,10 +2581,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -2915,10 +2611,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
 							<entry>
 								<key>href</key>
 								<value xsi:type="xsd:string">icon.gif</value>
