@@ -50,7 +50,7 @@ public class SimplePageDiffIT {
 							+ "\tspan (span-2) at 'html[1]/body[1]/div[5]/span[1]':\n" //
 							+ "\t\tcovered:\n" //
 							+ "\t\t  expected=\"true\",\n" //
-							+ "\t\t    actual=\"false\"\n" //
+							+ "\t\t    actual=\"null\"\n" //
 							+ "\th2 (subheading) at 'html[1]/body[1]/h2[1]':\n" //
 							+ "\t\twas inserted" );
 		}
