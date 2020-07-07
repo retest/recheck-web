@@ -13,6 +13,7 @@ all:
   - background-position: 0% 0%
   - background-repeat: repeat
   - border-collapse: separate
+  - border-image-outset: 0
   - border-image-repeat: stretch
   - border-image-slice: 100%
   - box-decoration-break: slice
