@@ -27,6 +27,8 @@ Table of Contents
 
 ### Bug Fixes
 
+* Add `covered=false` as default attribute to reduce noise.
+
 ### New Features
 
 ### Improvements

@@ -19,6 +19,7 @@ all:
   - box-sizing: content-box
   - caption-side: top
   - column-fill: balance
+  - covered: false
   - direction: ltr
   - disabled: false
   - display: block
