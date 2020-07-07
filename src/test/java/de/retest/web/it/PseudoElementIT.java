@@ -10,6 +10,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.openqa.selenium.WebDriver;
 
 import de.retest.recheck.RecheckImpl;
+import de.retest.recheck.RecheckOptions;
 
 class PseudoElementIT {
 
@@ -18,7 +19,7 @@ class PseudoElementIT {
 
 	@BeforeEach
 	void setup() {
-		re = new RecheckImpl();
+		re = new RecheckImpl( RecheckOptions.builder().setIgnore( "recheck-pseudo-elements.filter" ).build() );
 	}
 
 	@ParameterizedTest( name = "pseudo-elements-{1}" )
@@ -49,6 +50,8 @@ class PseudoElementIT {
 						"::first-letter (firstletter) at 'html[1]/body[1]/p[1]/#pseudo::first-letter[1]'" ) //
 				.hasMessageContaining( "expected=\"rgb(187, 204, 170)\"," ) //
 				.hasMessageContaining( "actual=\"rgb(238, 255, 221)\"" ) //
+				.hasMessageContaining( "::before (before-1) at 'html[1]/body[1]/h1[2]/#pseudo::before[1]'" ) //
+				.hasMessageContaining( "was inserted" ) //
 		;
 	}
 

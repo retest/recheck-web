@@ -15,6 +15,10 @@ h1 {
   background-color: orange;
 }
 
+h1#hidden {
+
+}
+
 li::marker {
 	content: "changed marker > ";
 	color: cyan;

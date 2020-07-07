@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.10.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.12.0-SNAPSHOT" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="" title="">
 			<identifyingAttributes>
@@ -23,6 +23,10 @@
 			</identifyingAttributes>
 			<attributes>
 				<attributes>
+					<entry>
+						<key>covered</key>
+						<value xsi:type="xsd:string">false</value>
+					</entry>
 					<entry>
 						<key>shown</key>
 						<value xsi:type="xsd:string">true</value>
@@ -52,40 +56,154 @@
 				<attributes>
 					<attributes>
 						<entry>
+							<key>covered</key>
+							<value xsi:type="xsd:string">false</value>
+						</entry>
+						<entry>
 							<key>shown</key>
 							<value xsi:type="xsd:string">true</value>
 						</entry>
 					</attributes>
 				</attributes>
-				<containedElements retestId="divid">
+				<containedElements retestId="you_can_use_the">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
 								<x>8</x>
-								<y>184</y>
-								<height>0</height>
+								<y>16</y>
+								<height>36</height>
 								<width>1184</width>
 							</attribute>
-							<attribute key="id" xsi:type="stringAttribute">divID</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
-								<y>168</y>
-								<height>-152</height>
+								<y>0</y>
+								<height>-116</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="type" xsi:type="stringAttribute">div</attribute>
+							<attribute key="text" xsi:type="textAttribute">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</attribute>
+							<attribute key="type" xsi:type="stringAttribute">p</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
 						</attributes>
 					</attributes>
+					<containedElements retestId="firstline">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]/#pseudo::first-line[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::first-line</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>border-bottom-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>border-left-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>border-right-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>border-top-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>text-decoration-color</key>
+									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
+					<containedElements retestId="firstletter">
+						<identifyingAttributes>
+							<attributes>
+								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]/#pseudo::first-letter[1]</attribute>
+								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+								<attribute key="type" xsi:type="stringAttribute">::first-letter</attribute>
+							</attributes>
+						</identifyingAttributes>
+						<attributes>
+							<attributes>
+								<entry>
+									<key>border-bottom-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>border-left-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>border-right-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>border-top-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>caret-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>column-rule-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>outline-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+								<entry>
+									<key>pseudo</key>
+									<value xsi:type="xsd:string">true</value>
+								</entry>
+								<entry>
+									<key>text-decoration-color</key>
+									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
+								</entry>
+							</attributes>
+						</attributes>
+					</containedElements>
 				</containedElements>
 				<containedElements retestId="this_is_a_heading">
 					<identifyingAttributes>
@@ -141,6 +259,10 @@
 							<entry>
 								<key>column-rule-color</key>
 								<value xsi:type="xsd:string">rgb(0, 128, 0)</value>
+							</entry>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>outline-color</key>
@@ -302,6 +424,10 @@
 					<attributes>
 						<attributes>
 							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">false</value>
+							</entry>
+							<entry>
 								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">16px</value>
 							</entry>
@@ -339,6 +465,10 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -373,6 +503,10 @@
 						<attributes>
 							<attributes>
 								<entry>
+									<key>covered</key>
+									<value xsi:type="xsd:string">false</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -384,141 +518,39 @@
 						</attributes>
 					</containedElements>
 				</containedElements>
-				<containedElements retestId="you_can_use_the">
+				<containedElements retestId="divid">
 					<identifyingAttributes>
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
 								<x>8</x>
-								<y>16</y>
-								<height>36</height>
+								<y>184</y>
+								<height>0</height>
 								<width>1184</width>
 							</attribute>
+							<attribute key="id" xsi:type="stringAttribute">divID</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
-								<y>0</y>
-								<height>-116</height>
+								<y>168</y>
+								<height>-152</height>
 								<width>0</width>
 							</attribute>
-							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="text" xsi:type="textAttribute">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</attribute>
-							<attribute key="type" xsi:type="stringAttribute">p</attribute>
+							<attribute key="type" xsi:type="stringAttribute">div</attribute>
 						</attributes>
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>covered</key>
+								<value xsi:type="xsd:string">true</value>
+							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
 						</attributes>
 					</attributes>
-					<containedElements retestId="firstline">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]/#pseudo::first-line[1]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">::first-line</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-bottom-color</key>
-									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
-								</entry>
-								<entry>
-									<key>border-left-color</key>
-									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
-								</entry>
-								<entry>
-									<key>border-right-color</key>
-									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
-								</entry>
-								<entry>
-									<key>border-top-color</key>
-									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
-								</entry>
-								<entry>
-									<key>caret-color</key>
-									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
-								</entry>
-								<entry>
-									<key>column-rule-color</key>
-									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
-								</entry>
-								<entry>
-									<key>outline-color</key>
-									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
-								</entry>
-								<entry>
-									<key>pseudo</key>
-									<value xsi:type="xsd:string">true</value>
-								</entry>
-								<entry>
-									<key>text-decoration-color</key>
-									<value xsi:type="xsd:string">rgb(170, 187, 204)</value>
-								</entry>
-							</attributes>
-						</attributes>
-					</containedElements>
-					<containedElements retestId="firstletter">
-						<identifyingAttributes>
-							<attributes>
-								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]/#pseudo::first-letter[1]</attribute>
-								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="type" xsi:type="stringAttribute">::first-letter</attribute>
-							</attributes>
-						</identifyingAttributes>
-						<attributes>
-							<attributes>
-								<entry>
-									<key>border-bottom-color</key>
-									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
-								</entry>
-								<entry>
-									<key>border-left-color</key>
-									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
-								</entry>
-								<entry>
-									<key>border-right-color</key>
-									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
-								</entry>
-								<entry>
-									<key>border-top-color</key>
-									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
-								</entry>
-								<entry>
-									<key>caret-color</key>
-									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
-								</entry>
-								<entry>
-									<key>color</key>
-									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
-								</entry>
-								<entry>
-									<key>column-rule-color</key>
-									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
-								</entry>
-								<entry>
-									<key>outline-color</key>
-									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
-								</entry>
-								<entry>
-									<key>pseudo</key>
-									<value xsi:type="xsd:string">true</value>
-								</entry>
-								<entry>
-									<key>text-decoration-color</key>
-									<value xsi:type="xsd:string">rgb(187, 204, 170)</value>
-								</entry>
-							</attributes>
-						</attributes>
-					</containedElements>
 				</containedElements>
 			</containedElements>
 		</descriptors>
@@ -529,11 +561,11 @@
 			</entry>
 			<entry>
 				<key>time.offset</key>
-				<value>+01:00</value>
+				<value>+02:00</value>
 			</entry>
 			<entry>
 				<key>os.arch</key>
-				<value>amd64</value>
+				<value></value>
 			</entry>
 			<entry>
 				<key>check.type</key>
@@ -541,7 +573,7 @@
 			</entry>
 			<entry>
 				<key>vcs.commit</key>
-				<value>b507b52f8cf28ce41e38fde5a92708c1d4b91702</value>
+				<value>c9e81c63f0efc67d6f6eeec678fb7e6851ced553</value>
 			</entry>
 			<entry>
 				<key>window.height</key>
@@ -549,19 +581,19 @@
 			</entry>
 			<entry>
 				<key>vcs.branch</key>
-				<value>feature/track-pseudo-elements</value>
+				<value>feature/track-pseudo-elements-rebase</value>
 			</entry>
 			<entry>
 				<key>url</key>
-				<value>file:///F:/Worksapces/retest/git/recheck-web/target/test-classes/de/retest/web/it/pseudo-element.html</value>
+				<value>file:///home/fries/projects/recheck-web/target/test-classes/de/retest/web/it/pseudo-element.html</value>
 			</entry>
 			<entry>
 				<key>machine.name</key>
-				<value>LARS-PC</value>
+				<value>cf-laptop</value>
 			</entry>
 			<entry>
 				<key>os.version</key>
-				<value>10.0</value>
+				<value></value>
 			</entry>
 			<entry>
 				<key>browser.name</key>
@@ -569,11 +601,11 @@
 			</entry>
 			<entry>
 				<key>browser.version</key>
-				<value>80.0.3987.122</value>
+				<value>81.0.4044.138</value>
 			</entry>
 			<entry>
 				<key>time.time</key>
-				<value>21:58:46.7691965</value>
+				<value>13:29:30.104213</value>
 			</entry>
 			<entry>
 				<key>time.zone</key>
@@ -585,11 +617,11 @@
 			</entry>
 			<entry>
 				<key>os.name</key>
-				<value>WINDOWS</value>
+				<value>LINUX</value>
 			</entry>
 			<entry>
 				<key>time.date</key>
-				<value>2020-03-05</value>
+				<value>2020-07-07</value>
 			</entry>
 			<entry>
 				<key>vcs.name</key>

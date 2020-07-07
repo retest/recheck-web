@@ -494,7 +494,7 @@ function addPseudoElements(node, nodePath, allElements) {
 			}
 			var path = nodePath + "/#pseudo" + pseudo + "[1]";
 			var extractedAttributes = {
-					"pseudo": allElements.find(elem => elem[0] === nodePath && elem[1].shown),
+					"pseudo": allElements.find(elem => elem[0] === nodePath)[1].shown,
 					"tagName": pseudo,
 				};
 			for (attributeName of cssAttributes) {
@@ -512,7 +512,7 @@ function addPseudoElements(node, nodePath, allElements) {
 				}
 			}
 			if (Object.keys(extractedAttributes).length > 2) {
-				allElements.push(path, extractedAttributes);
+				allElements.push([path, extractedAttributes]);
 			}
 		} catch (err) {}
 	}

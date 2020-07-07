@@ -15,6 +15,10 @@ h1 {
   background-color: red;
 }
 
+h1#hidden {
+    display: none;
+}
+
 li::marker {
 	content: "marker > ";
 	color: purple;
