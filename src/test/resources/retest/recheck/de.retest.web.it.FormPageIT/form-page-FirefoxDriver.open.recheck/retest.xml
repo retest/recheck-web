@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.10.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="We Leave From Here" title="We Leave From Here">
 			<identifyingAttributes>
@@ -23,14 +23,6 @@
 			</identifyingAttributes>
 			<attributes>
 				<attributes>
-					<entry>
-						<key>border-image-outset</key>
-						<value xsi:type="xsd:string">0</value>
-					</entry>
-					<entry>
-						<key>covered</key>
-						<value xsi:type="xsd:string">false</value>
-					</entry>
 					<entry>
 						<key>font-family</key>
 						<value xsi:type="xsd:string">serif</value>
@@ -69,10 +61,6 @@
 				<attributes>
 					<attributes>
 						<entry>
-							<key>covered</key>
-							<value xsi:type="xsd:string">false</value>
-						</entry>
-						<entry>
 							<key>shown</key>
 							<value xsi:type="xsd:string">true</value>
 						</entry>
@@ -105,10 +93,6 @@
 							<entry>
 								<key>action</key>
 								<value xsi:type="xsd:string">#</value>
-							</entry>
-							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>method</key>
@@ -148,10 +132,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -186,10 +166,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -220,10 +196,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>disabled</key>
 									<value xsi:type="xsd:string">true</value>
@@ -357,10 +329,6 @@
 								<entry>
 									<key>column-rule-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>display</key>
@@ -646,10 +614,6 @@
 									<value xsi:type="xsd:string">avoid</value>
 								</entry>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline-block</value>
 								</entry>
@@ -907,10 +871,6 @@
 								<entry>
 									<key>break-inside</key>
 									<value xsi:type="xsd:string">avoid</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>display</key>
@@ -1236,10 +1196,6 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>disabled</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -1372,10 +1328,6 @@
 								<entry>
 									<key>column-rule-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>display</key>
@@ -1602,10 +1554,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -1709,10 +1657,6 @@
 								<entry>
 									<key>column-rule-color</key>
 									<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>disabled</key>
@@ -2011,10 +1955,6 @@
 								<entry>
 									<key>break-inside</key>
 									<value xsi:type="xsd:string">avoid</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>display</key>
@@ -2340,10 +2280,6 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -2451,10 +2387,6 @@
 								<entry>
 									<key>border-top-width</key>
 									<value xsi:type="xsd:string">6px</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -2581,10 +2513,6 @@
 								<entry>
 									<key>break-inside</key>
 									<value xsi:type="xsd:string">avoid</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>display</key>
@@ -2943,10 +2871,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -3050,10 +2974,6 @@
 								<entry>
 									<key>column-rule-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>display</key>
@@ -3423,10 +3343,6 @@
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -3552,10 +3468,6 @@
 								<entry>
 									<key>column-rule-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>display</key>
@@ -3981,10 +3893,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -4039,10 +3947,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -4076,10 +3980,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>disabled</key>
 									<value xsi:type="xsd:string">true</value>
@@ -4209,10 +4109,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -4249,10 +4145,6 @@
 								<entry>
 									<key>checked</key>
 									<value xsi:type="xsd:string">true</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>disabled</key>
@@ -4371,10 +4263,6 @@
 								<entry>
 									<key>break-inside</key>
 									<value xsi:type="xsd:string">avoid</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>display</key>
@@ -4628,10 +4516,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -4665,10 +4549,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>disabled</key>
 									<value xsi:type="xsd:string">true</value>
@@ -4762,10 +4642,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -4857,10 +4733,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -4894,10 +4766,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
@@ -4962,10 +4830,6 @@
 								<value xsi:type="xsd:string">resultPage.html</value>
 							</entry>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>method</key>
 								<value xsi:type="xsd:string">get</value>
 							</entry>
@@ -4997,10 +4861,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -5093,10 +4953,6 @@
 									<entry>
 										<key>column-rule-color</key>
 										<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-									</entry>
-									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>font-family</key>
@@ -5221,10 +5077,6 @@
 									<value xsi:type="xsd:string">6px</value>
 								</entry>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -5290,10 +5142,6 @@
 							<entry>
 								<key>action</key>
 								<value xsi:type="xsd:string">resultPage.html</value>
-							</entry>
-							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>method</key>
@@ -5391,10 +5239,6 @@
 								<entry>
 									<key>column-rule-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -5529,10 +5373,6 @@
 								<entry>
 									<key>column-rule-color</key>
 									<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>disabled</key>
@@ -5671,10 +5511,6 @@
 								<entry>
 									<key>column-rule-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -5821,10 +5657,6 @@
 								<entry>
 									<key>column-rule-color</key>
 									<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>disabled</key>
@@ -5990,10 +5822,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline</value>
 								</entry>
@@ -6156,10 +5984,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline</value>
 								</entry>
@@ -6250,10 +6074,6 @@
 								<value xsi:type="xsd:string">resultPage.html</value>
 							</entry>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>method</key>
 								<value xsi:type="xsd:string">post</value>
 							</entry>
@@ -6286,10 +6106,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
@@ -6417,10 +6233,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -6546,10 +6358,6 @@
 								<entry>
 									<key>break-inside</key>
 									<value xsi:type="xsd:string">avoid</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>display</key>
@@ -6856,10 +6664,6 @@
 									<value xsi:type="xsd:string">6px</value>
 								</entry>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -6926,10 +6730,6 @@
 								<value xsi:type="xsd:string">xhtmlTest.html</value>
 							</entry>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>method</key>
 								<value xsi:type="xsd:string">get</value>
 							</entry>
@@ -6961,10 +6761,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
@@ -7057,10 +6853,6 @@
 									<entry>
 										<key>column-rule-color</key>
 										<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
-									</entry>
-									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>disabled</key>
@@ -7205,10 +6997,6 @@
 										<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
 									</entry>
 									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
-									<entry>
 										<key>disabled</key>
 										<value xsi:type="xsd:string">true</value>
 									</entry>
@@ -7351,10 +7139,6 @@
 										<value xsi:type="xsd:string">rgb(109, 109, 109)</value>
 									</entry>
 									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
-									<entry>
 										<key>disabled</key>
 										<value xsi:type="xsd:string">true</value>
 									</entry>
@@ -7440,10 +7224,6 @@
 							<entry>
 								<key>action</key>
 								<value xsi:type="xsd:string">resultPage.html</value>
-							</entry>
-							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>method</key>
@@ -7541,10 +7321,6 @@
 								<entry>
 									<key>column-rule-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -7685,10 +7461,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -7825,10 +7597,6 @@
 								<entry>
 									<key>column-rule-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -7969,10 +7737,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -8111,10 +7875,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -8193,10 +7953,6 @@
 								<value xsi:type="xsd:string">formPage.html</value>
 							</entry>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>method</key>
 								<value xsi:type="xsd:string">get</value>
 							</entry>
@@ -8229,10 +7985,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -8262,10 +8014,6 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
 									<entry>
 										<key>for</key>
 										<value xsi:type="xsd:string">checkbox-with-label</value>
@@ -8300,10 +8048,6 @@
 							</identifyingAttributes>
 							<attributes>
 								<attributes>
-									<entry>
-										<key>covered</key>
-										<value xsi:type="xsd:string">false</value>
-									</entry>
 									<entry>
 										<key>font-family</key>
 										<value xsi:type="xsd:string">sans-serif</value>
@@ -8363,10 +8107,6 @@
 							<entry>
 								<key>action</key>
 								<value xsi:type="xsd:string">resultPage.html</value>
-							</entry>
-							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>method</key>
@@ -8452,10 +8192,6 @@
 								<entry>
 									<key>border-top-width</key>
 									<value xsi:type="xsd:string">6px</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -8586,10 +8322,6 @@
 								<entry>
 									<key>column-rule-color</key>
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-								</entry>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
 								</entry>
 								<entry>
 									<key>font-family</key>
@@ -8730,10 +8462,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -8805,10 +8533,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
 							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
@@ -8912,10 +8636,6 @@
 							<entry>
 								<key>column-rule-color</key>
 								<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
-							</entry>
-							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
 							</entry>
 							<entry>
 								<key>font-family</key>
@@ -9052,10 +8772,6 @@
 								<value xsi:type="xsd:string">6px</value>
 							</entry>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>font-family</key>
 								<value xsi:type="xsd:string">sans-serif</value>
 							</entry>
@@ -9134,10 +8850,6 @@
 								<value xsi:type="xsd:string">resultPage.html</value>
 							</entry>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>method</key>
 								<value xsi:type="xsd:string">get</value>
 							</entry>
@@ -9203,10 +8915,6 @@
 									<value xsi:type="xsd:string">rgb(33, 33, 33)</value>
 								</entry>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">sans-serif</value>
 								</entry>
@@ -9266,10 +8974,6 @@
 					<attributes>
 						<attributes>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>shown</key>
 								<value xsi:type="xsd:string">true</value>
 							</entry>
@@ -9302,10 +9006,6 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
-							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
 							<entry>
 								<key>href</key>
 								<value xsi:type="xsd:string">#</value>
