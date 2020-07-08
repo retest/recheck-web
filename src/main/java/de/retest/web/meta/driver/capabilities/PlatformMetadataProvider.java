@@ -2,6 +2,7 @@ package de.retest.web.meta.driver.capabilities;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Platform;
@@ -25,9 +26,8 @@ public final class PlatformMetadataProvider implements MetadataProvider {
 		if ( platform != null ) {
 			map.put( SeleniumMetadata.OS_NAME, platform.toString() );
 			final Object version = capabilities.getCapability( "platformVersion" );
-			if ( version != null ) {
-				map.put( SeleniumMetadata.OS_VERSION, version.toString() );
-			}
+			map.put( SeleniumMetadata.OS_VERSION, Objects.toString( version, "" ) );
+			map.put( SeleniumMetadata.OS_ARCH, "" );
 		}
 
 		return map;

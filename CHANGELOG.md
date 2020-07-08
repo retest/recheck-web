@@ -29,8 +29,11 @@ Table of Contents
 
 ### New Features
 
+* Calling `driver.switchTo().window( name )` will now perform a check when using a `AutocheckingRecheckDriver`.
+
 ### Improvements
 
+* Always override the system metadata (i.e. on "architecture"), so that we do not end up with mixed info.
 
 --------------------------------------------------------------------------------
 
@@ -50,7 +53,7 @@ Table of Contents
 ### Breaking Changes
 
 * Rename self-introduced property `tab-index` to `tabindex`, which is W3C standard.
-* Add self-introduced property `convered`.
+* Add self-introduced property `covered`.
 * Add `autofocus` as attribute (needs special handling).
 
 ### Bug Fixes
@@ -64,6 +67,7 @@ Table of Contents
 ### Improvements
 
 * Keep the order of the HTML elements preserved in the underlying result (internal change), which makes a couple things easier.
+* Change how covered elements are detected in order to handle rounded buttons
 
 
 [1.10.3] (2020-03-16)

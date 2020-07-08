@@ -61,7 +61,7 @@
 		<url>https://github.com/retest/recheck-web/</url>
 		<connection>scm:git:git@github.com:retest/recheck-web.git</connection>
 		<developerConnection>scm:git:git@github.com:retest/recheck-web.git</developerConnection>
-		<tag>v1.11.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
@@ -90,7 +90,7 @@
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>recheck</artifactId>
-			<version>1.11.0</version>
+			<version>4b91d88466d58f544ebdb96447ede6ae8e63e3e6</version>
 		</dependency>
 
 		<dependency>
@@ -104,7 +104,7 @@
 		<dependency>
 			<groupId>net.bytebuddy</groupId>
 			<artifactId>byte-buddy</artifactId>
-			<version>1.10.10</version>
+			<version>1.10.13</version>
 		</dependency>
 
 		<dependency>
@@ -140,7 +140,7 @@
 		<dependency>
 			<groupId>org.aeonbits.owner</groupId>
 			<artifactId>owner</artifactId>
-			<version>1.0.11</version>
+			<version>1.0.12</version>
 		</dependency>
 
 		<!-- test dependencies -->
@@ -232,7 +232,7 @@
 		<dependency>
 			<groupId>com.approvaltests</groupId>
 			<artifactId>approvaltests</artifactId>
-			<version>4.0.2</version>
+			<version>9.1.0</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -348,7 +348,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
-				<version>3.2.3</version>
+				<version>3.2.4</version>
 				<executions>
 					<execution>
 						<phase>package</phase>

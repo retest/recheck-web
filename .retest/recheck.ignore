@@ -1,5 +1,7 @@
 # Ignore file for recheck. Please do not delete, even if it is empty.
 
+import: volatile-metadata.filter
+
 # You can ignore specific attributes like so:
 # matcher: retestid=div-b4f23, attribute: font.*
 
@@ -41,6 +43,7 @@ matcher: type=meta, attribute-regex=.*
 
 # Have the tests pass locally:
 attribute=outline
+attribute=outline-width
 
 # So we can have a different ID in SimpleAutocheckingDriverShowcaseIT:
 matcher: xpath=html[1]/body[1]/form[1]/input[1], attribute=id

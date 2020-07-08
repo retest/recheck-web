@@ -189,7 +189,7 @@ var cssAttributes = [
 var ELEMENT_NODE = 1;
 var TEXT_NODE = 3;
 var DOCUMENT_TYPE_NODE = 10;
-const BOUNDING_PRECISION = 2;
+const BOUNDING_PRECISION = 1;
 
 var Counter = /** @class */ (function () {
     function Counter() {
@@ -299,23 +299,19 @@ function hasAutofocus(node) {
 function isCovered(node) {
     // TODO Handle false negatives for elements outside of viewport
     if (typeof node.getBoundingClientRect === "function") {
-	    var boundingRect = node.getBoundingClientRect();
+        var boundingRect = node.getBoundingClientRect();
 
-	    var boundingLeft = boundingRect.left + BOUNDING_PRECISION;
-	    var boundingRight = boundingRect.right - BOUNDING_PRECISION;
-	    var boundingTop = boundingRect.top + BOUNDING_PRECISION;
-	    var boundingBottom = boundingRect.bottom - BOUNDING_PRECISION;
-	
-	    var topLeft = document.elementFromPoint(boundingLeft, boundingTop);
-	    var topRight = document.elementFromPoint(boundingRight, boundingTop);
-	    var bottomLeft = document.elementFromPoint(boundingLeft, boundingBottom);
-	    var bottomRight = document.elementFromPoint(boundingRight, boundingBottom);
-	    if ((topLeft != null && !node.contains(topLeft))
-	    	|| (topRight != null && !node.contains(topRight))
-	    	|| (bottomLeft != null && !node.contains(bottomLeft)) 
-	    	|| (bottomRight != null && !node.contains(bottomRight))) {
-	        return true;
-	    }
+        var top = document.elementFromPoint(boundingRect.left + (boundingRect.width / 2), boundingRect.top + BOUNDING_PRECISION);
+        var bottom = document.elementFromPoint(boundingRect.left + (boundingRect.width / 2), boundingRect.bottom - BOUNDING_PRECISION);
+        var left = document.elementFromPoint(boundingRect.left + BOUNDING_PRECISION, boundingRect.top + (boundingRect.height / 2));
+        var right = document.elementFromPoint(boundingRect.right - BOUNDING_PRECISION, boundingRect.top + (boundingRect.height / 2));
+
+        if ((top != null && !node.contains(top))
+            && (bottom != null && !node.contains(bottom))
+            && (left != null && !node.contains(left))
+            && (right != null && !node.contains(right))) {
+            return true;
+        }
     }
 
     return false;
