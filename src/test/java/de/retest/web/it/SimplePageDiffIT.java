@@ -37,14 +37,14 @@ public class SimplePageDiffIT {
 			fail( "Assertion Error expected" );
 		} catch ( final AssertionError e ) {
 			assertThat( e ).hasMessageContaining( "Test 'testSimpleChange' has 5 difference(s) in 1 state(s):" ) //
-					.hasMessageEndingWith( "\tdiv (twoblocks) at 'html[1]/body[1]/div[3]':\n" //
+					.hasMessageEndingWith( "div (twoblocks) at 'html[1]/body[1]/div[3]':\n" //
 							+ "\t\tid: expected=\"twoblocks\", actual=\"changedblock\"\n" //
 							+ "\tp (some_text) at 'html[1]/body[1]/div[3]/p[1]':\n" //
 							+ "\t\ttext: expected=\"Some text\", actual=\"Some changed text\"\n" //
 							+ "\tp (some_more_text) at 'html[1]/body[1]/div[3]/p[2]':\n" //
 							+ "\t\twas deleted\n" //
 							+ "\tspan (span-2) at 'html[1]/body[1]/div[5]/span[1]':\n" //
-							+ "\t\tcovered: expected=\"true\", actual=\"false\"\n" //
+							+ "\t\tcovered: expected=\"true\", actual=\"null\"\n" //
 							+ "\th2 (subheading) at 'html[1]/body[1]/h2[1]':\n" //
 							+ "\t\twas inserted" );
 		}

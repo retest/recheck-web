@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.10.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="" title="">
 			<identifyingAttributes>
@@ -23,14 +23,6 @@
 			</identifyingAttributes>
 			<attributes>
 				<attributes>
-					<entry>
-						<key>border-image-outset</key>
-						<value xsi:type="xsd:string">0</value>
-					</entry>
-					<entry>
-						<key>covered</key>
-						<value xsi:type="xsd:string">false</value>
-					</entry>
 					<entry>
 						<key>font-family</key>
 						<value xsi:type="xsd:string">serif</value>
@@ -147,10 +139,6 @@
 								<value xsi:type="xsd:string">307px</value>
 							</entry>
 							<entry>
-								<key>covered</key>
-								<value xsi:type="xsd:string">false</value>
-							</entry>
-							<entry>
 								<key>left</key>
 								<value xsi:type="xsd:string">683px</value>
 							</entry>
@@ -200,10 +188,6 @@
 						<attributes>
 							<attributes>
 								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
-								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
@@ -236,10 +220,6 @@
 						</identifyingAttributes>
 						<attributes>
 							<attributes>
-								<entry>
-									<key>covered</key>
-									<value xsi:type="xsd:string">false</value>
-								</entry>
 								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>

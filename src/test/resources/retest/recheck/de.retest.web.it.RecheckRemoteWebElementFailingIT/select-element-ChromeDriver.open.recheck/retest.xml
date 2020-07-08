@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="select" screenId="1" screen="WebElement" title="html[1]/body[1]/form[3]/select[2]">
 			<identifyingAttributes>
@@ -104,10 +104,6 @@
 					<entry>
 						<key>box-sizing</key>
 						<value xsi:type="xsd:string">border-box</value>
-					</entry>
-					<entry>
-						<key>covered</key>
-						<value xsi:type="xsd:string">false</value>
 					</entry>
 					<entry>
 						<key>display</key>

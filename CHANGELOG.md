@@ -38,6 +38,15 @@ Table of Contents
 --------------------------------------------------------------------------------
 
 
+[1.11.1] (2020-07-08)
+---------------------
+
+### Bug Fixes
+
+* Add `covered=false` as default attribute to reduce noise.
+* Add `border-image-outset=0` as default
+
+
 [1.11.0] (2020-05-15)
 ------------
 

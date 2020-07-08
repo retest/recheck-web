@@ -51,10 +51,10 @@ class IsCoveredIT {
 				driver.findElement( By.id( "partially-overlapped-element-left" ) );
 		final Set<RootElement> rootElementOnRight = recheckAdapter.convert( partiallyOverlappedElementOnRight );
 		assertThat( rootElementOnRight ).first()
-				.satisfies( element -> assertThat( element.getAttributeValue( "covered" ) ).isEqualTo( "false" ) );
+				.satisfies( element -> assertThat( element.getAttributeValue( "covered" ) ).isNull() );
 		final Set<RootElement> rootElementOnLeft = recheckAdapter.convert( partiallyOverlappedElementOnLeft );
 		assertThat( rootElementOnLeft ).first()
-				.satisfies( element -> assertThat( element.getAttributeValue( "covered" ) ).isEqualTo( "false" ) );
+				.satisfies( element -> assertThat( element.getAttributeValue( "covered" ) ).isNull() );
 		partiallyOverlappedElementOnRight.click();
 		partiallyOverlappedElementOnLeft.click();
 	}
@@ -65,7 +65,7 @@ class IsCoveredIT {
 		final WebElement coveredByChildElement = driver.findElement( By.id( "covered-by-child-element" ) );
 		final Set<RootElement> rootElement = recheckAdapter.convert( coveredByChildElement );
 		assertThat( rootElement ).first()
-				.satisfies( element -> assertThat( element.getAttributeValue( "covered" ) ).isEqualTo( "false" ) );
+				.satisfies( element -> assertThat( element.getAttributeValue( "covered" ) ).isNull() );
 		coveredByChildElement.click();
 	}
 
@@ -85,7 +85,7 @@ class IsCoveredIT {
 		final WebElement nonOverlappingElement = driver.findElement( By.id( "non-overlapping-element" ) );
 		final Set<RootElement> rootElement = recheckAdapter.convert( nonOverlappingElement );
 		assertThat( rootElement ).first()
-				.satisfies( element -> assertThat( element.getAttributeValue( "covered" ) ).isEqualTo( "false" ) );
+				.satisfies( element -> assertThat( element.getAttributeValue( "covered" ) ).isNull() );
 		nonOverlappingElement.click();
 	}
 
