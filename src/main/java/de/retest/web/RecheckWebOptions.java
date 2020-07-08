@@ -102,6 +102,12 @@ public class RecheckWebOptions extends RecheckOptions {
 		}
 
 		@Override
+		public RecheckWebOptionsBuilder disableReportUpload() {
+			super.disableReportUpload();
+			return this;
+		}
+
+		@Override
 		public RecheckWebOptionsBuilder setIgnore( final String filterName ) {
 			super.setIgnore( filterName );
 			return this;
