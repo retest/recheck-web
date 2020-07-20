@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="Multi Frame" title="Multi Frame">
 			<identifyingAttributes>
@@ -35681,226 +35681,6 @@
 																							</entry>
 																						</attributes>
 																					</attributes>
-																					<containedElements retestId="quadratmeter">
-																						<identifyingAttributes>
-																							<attributes>
-																								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-																									<x>177</x>
-																									<y>8</y>
-																									<height>19</height>
-																									<width>110</width>
-																								</attribute>
-																								<attribute key="outline" xsi:type="outlineAttribute">
-																									<x>169</x>
-																									<y>0</y>
-																									<height>0</height>
-																									<width>-234</width>
-																								</attribute>
-																								<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[3]</attribute>
-																								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
-																								<attribute key="text" xsi:type="textAttribute">Quadratmeter</attribute>
-																								<attribute key="type" xsi:type="stringAttribute">td</attribute>
-																							</attributes>
-																						</identifyingAttributes>
-																						<attributes>
-																							<attributes>
-																								<entry>
-																									<key>background-color</key>
-																									<value xsi:type="xsd:string">rgb(112, 173, 71)</value>
-																								</entry>
-																								<entry>
-																									<key>border-bottom-color</key>
-																									<value xsi:type="xsd:string">rgb(169, 208, 142)</value>
-																								</entry>
-																								<entry>
-																									<key>border-bottom-style</key>
-																									<value xsi:type="xsd:string">solid</value>
-																								</entry>
-																								<entry>
-																									<key>border-bottom-width</key>
-																									<value xsi:type="xsd:string">0.65625px</value>
-																								</entry>
-																								<entry>
-																									<key>border-left-color</key>
-																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-																								</entry>
-																								<entry>
-																									<key>border-right-color</key>
-																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-																								</entry>
-																								<entry>
-																									<key>border-top-color</key>
-																									<value xsi:type="xsd:string">rgb(169, 208, 142)</value>
-																								</entry>
-																								<entry>
-																									<key>border-top-style</key>
-																									<value xsi:type="xsd:string">solid</value>
-																								</entry>
-																								<entry>
-																									<key>border-top-width</key>
-																									<value xsi:type="xsd:string">0.65625px</value>
-																								</entry>
-																								<entry>
-																									<key>caret-color</key>
-																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-																								</entry>
-																								<entry>
-																									<key>color</key>
-																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-																								</entry>
-																								<entry>
-																									<key>column-rule-color</key>
-																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-																								</entry>
-																								<entry>
-																									<key>font-family</key>
-																									<value xsi:type="xsd:string">Calibri, sans-serif</value>
-																								</entry>
-																								<entry>
-																									<key>font-size</key>
-																									<value xsi:type="xsd:string">14.6667px</value>
-																								</entry>
-																								<entry>
-																									<key>font-weight</key>
-																									<value xsi:type="xsd:string">700</value>
-																								</entry>
-																								<entry>
-																									<key>outline-color</key>
-																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-																								</entry>
-																								<entry>
-																									<key>shown</key>
-																									<value xsi:type="xsd:string">true</value>
-																								</entry>
-																								<entry>
-																									<key>style</key>
-																									<value xsi:type="xsd:string">width:83pt;font-size:11.0pt;color:white;font-weight:
-  700;text-decoration:none;text-underline-style:none;text-line-through:none;
-  font-family:Calibri, sans-serif;border-top:.5pt solid #A9D08E;border-right:
-  none;border-bottom:.5pt solid #A9D08E;border-left:none;background:#70AD47;
-  mso-pattern:#70AD47 none</value>
-																								</entry>
-																								<entry>
-																									<key>text-decoration-color</key>
-																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-																								</entry>
-																							</attributes>
-																						</attributes>
-																					</containedElements>
-																					<containedElements retestId="stadt">
-																						<identifyingAttributes>
-																							<attributes>
-																								<attribute key="absolute-outline" xsi:type="outlineAttribute">
-																									<x>287</x>
-																									<y>8</y>
-																									<height>19</height>
-																									<width>65</width>
-																								</attribute>
-																								<attribute key="outline" xsi:type="outlineAttribute">
-																									<x>279</x>
-																									<y>0</y>
-																									<height>0</height>
-																									<width>-279</width>
-																								</attribute>
-																								<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[4]</attribute>
-																								<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
-																								<attribute key="text" xsi:type="textAttribute">Stadt</attribute>
-																								<attribute key="type" xsi:type="stringAttribute">td</attribute>
-																							</attributes>
-																						</identifyingAttributes>
-																						<attributes>
-																							<attributes>
-																								<entry>
-																									<key>background-color</key>
-																									<value xsi:type="xsd:string">rgb(112, 173, 71)</value>
-																								</entry>
-																								<entry>
-																									<key>border-bottom-color</key>
-																									<value xsi:type="xsd:string">rgb(169, 208, 142)</value>
-																								</entry>
-																								<entry>
-																									<key>border-bottom-style</key>
-																									<value xsi:type="xsd:string">solid</value>
-																								</entry>
-																								<entry>
-																									<key>border-bottom-width</key>
-																									<value xsi:type="xsd:string">0.65625px</value>
-																								</entry>
-																								<entry>
-																									<key>border-left-color</key>
-																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-																								</entry>
-																								<entry>
-																									<key>border-right-color</key>
-																									<value xsi:type="xsd:string">rgb(169, 208, 142)</value>
-																								</entry>
-																								<entry>
-																									<key>border-right-style</key>
-																									<value xsi:type="xsd:string">solid</value>
-																								</entry>
-																								<entry>
-																									<key>border-right-width</key>
-																									<value xsi:type="xsd:string">0.65625px</value>
-																								</entry>
-																								<entry>
-																									<key>border-top-color</key>
-																									<value xsi:type="xsd:string">rgb(169, 208, 142)</value>
-																								</entry>
-																								<entry>
-																									<key>border-top-style</key>
-																									<value xsi:type="xsd:string">solid</value>
-																								</entry>
-																								<entry>
-																									<key>border-top-width</key>
-																									<value xsi:type="xsd:string">0.65625px</value>
-																								</entry>
-																								<entry>
-																									<key>caret-color</key>
-																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-																								</entry>
-																								<entry>
-																									<key>color</key>
-																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-																								</entry>
-																								<entry>
-																									<key>column-rule-color</key>
-																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-																								</entry>
-																								<entry>
-																									<key>font-family</key>
-																									<value xsi:type="xsd:string">Calibri, sans-serif</value>
-																								</entry>
-																								<entry>
-																									<key>font-size</key>
-																									<value xsi:type="xsd:string">14.6667px</value>
-																								</entry>
-																								<entry>
-																									<key>font-weight</key>
-																									<value xsi:type="xsd:string">700</value>
-																								</entry>
-																								<entry>
-																									<key>outline-color</key>
-																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-																								</entry>
-																								<entry>
-																									<key>shown</key>
-																									<value xsi:type="xsd:string">true</value>
-																								</entry>
-																								<entry>
-																									<key>style</key>
-																									<value xsi:type="xsd:string">width:49pt;font-size:11.0pt;color:white;font-weight:700;
-  text-decoration:none;text-underline-style:none;text-line-through:none;
-  font-family:Calibri, sans-serif;border-top:.5pt solid #A9D08E;border-right:
-  .5pt solid #A9D08E;border-bottom:.5pt solid #A9D08E;border-left:none;
-  background:#70AD47;mso-pattern:#70AD47 none</value>
-																								</entry>
-																								<entry>
-																									<key>text-decoration-color</key>
-																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
-																								</entry>
-																							</attributes>
-																						</attributes>
-																					</containedElements>
 																					<containedElements retestId="gewinn">
 																						<identifyingAttributes>
 																							<attributes>
@@ -35938,7 +35718,7 @@
 																								</entry>
 																								<entry>
 																									<key>border-bottom-width</key>
-																									<value xsi:type="xsd:string">0.65625px</value>
+																									<value xsi:type="xsd:string">1px</value>
 																								</entry>
 																								<entry>
 																									<key>border-left-color</key>
@@ -35950,7 +35730,7 @@
 																								</entry>
 																								<entry>
 																									<key>border-left-width</key>
-																									<value xsi:type="xsd:string">0.65625px</value>
+																									<value xsi:type="xsd:string">1px</value>
 																								</entry>
 																								<entry>
 																									<key>border-right-color</key>
@@ -35966,7 +35746,7 @@
 																								</entry>
 																								<entry>
 																									<key>border-top-width</key>
-																									<value xsi:type="xsd:string">0.65625px</value>
+																									<value xsi:type="xsd:string">1px</value>
 																								</entry>
 																								<entry>
 																									<key>caret-color</key>
@@ -36014,6 +35794,558 @@
 																								</entry>
 																							</attributes>
 																						</attributes>
+																						<containedElements retestId="before">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/#pseudo::before[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::before</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-left-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
+																						<containedElements retestId="after">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/#pseudo::after[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::after</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-left-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
+																						<containedElements retestId="firstline">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/#pseudo::first-line[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::first-line</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-left-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
+																						<containedElements retestId="firstletter">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/#pseudo::first-letter[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::first-letter</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-left-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
+																					</containedElements>
+																					<containedElements retestId="stadt">
+																						<identifyingAttributes>
+																							<attributes>
+																								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+																									<x>287</x>
+																									<y>8</y>
+																									<height>19</height>
+																									<width>65</width>
+																								</attribute>
+																								<attribute key="outline" xsi:type="outlineAttribute">
+																									<x>279</x>
+																									<y>0</y>
+																									<height>0</height>
+																									<width>-279</width>
+																								</attribute>
+																								<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[4]</attribute>
+																								<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
+																								<attribute key="text" xsi:type="textAttribute">Stadt</attribute>
+																								<attribute key="type" xsi:type="stringAttribute">td</attribute>
+																							</attributes>
+																						</identifyingAttributes>
+																						<attributes>
+																							<attributes>
+																								<entry>
+																									<key>background-color</key>
+																									<value xsi:type="xsd:string">rgb(112, 173, 71)</value>
+																								</entry>
+																								<entry>
+																									<key>border-bottom-color</key>
+																									<value xsi:type="xsd:string">rgb(169, 208, 142)</value>
+																								</entry>
+																								<entry>
+																									<key>border-bottom-style</key>
+																									<value xsi:type="xsd:string">solid</value>
+																								</entry>
+																								<entry>
+																									<key>border-bottom-width</key>
+																									<value xsi:type="xsd:string">1px</value>
+																								</entry>
+																								<entry>
+																									<key>border-left-color</key>
+																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																								</entry>
+																								<entry>
+																									<key>border-right-color</key>
+																									<value xsi:type="xsd:string">rgb(169, 208, 142)</value>
+																								</entry>
+																								<entry>
+																									<key>border-right-style</key>
+																									<value xsi:type="xsd:string">solid</value>
+																								</entry>
+																								<entry>
+																									<key>border-right-width</key>
+																									<value xsi:type="xsd:string">1px</value>
+																								</entry>
+																								<entry>
+																									<key>border-top-color</key>
+																									<value xsi:type="xsd:string">rgb(169, 208, 142)</value>
+																								</entry>
+																								<entry>
+																									<key>border-top-style</key>
+																									<value xsi:type="xsd:string">solid</value>
+																								</entry>
+																								<entry>
+																									<key>border-top-width</key>
+																									<value xsi:type="xsd:string">1px</value>
+																								</entry>
+																								<entry>
+																									<key>caret-color</key>
+																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																								</entry>
+																								<entry>
+																									<key>color</key>
+																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																								</entry>
+																								<entry>
+																									<key>column-rule-color</key>
+																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																								</entry>
+																								<entry>
+																									<key>font-family</key>
+																									<value xsi:type="xsd:string">Calibri, sans-serif</value>
+																								</entry>
+																								<entry>
+																									<key>font-size</key>
+																									<value xsi:type="xsd:string">14.6667px</value>
+																								</entry>
+																								<entry>
+																									<key>font-weight</key>
+																									<value xsi:type="xsd:string">700</value>
+																								</entry>
+																								<entry>
+																									<key>outline-color</key>
+																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																								</entry>
+																								<entry>
+																									<key>shown</key>
+																									<value xsi:type="xsd:string">true</value>
+																								</entry>
+																								<entry>
+																									<key>style</key>
+																									<value xsi:type="xsd:string">width:49pt;font-size:11.0pt;color:white;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #A9D08E;border-right:
+  .5pt solid #A9D08E;border-bottom:.5pt solid #A9D08E;border-left:none;
+  background:#70AD47;mso-pattern:#70AD47 none</value>
+																								</entry>
+																								<entry>
+																									<key>text-decoration-color</key>
+																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																								</entry>
+																							</attributes>
+																						</attributes>
+																						<containedElements retestId="before-3">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[4]/#pseudo::before[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::before</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-right-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
+																						<containedElements retestId="after-3">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[4]/#pseudo::after[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::after</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-right-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
+																						<containedElements retestId="firstline-3">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[4]/#pseudo::first-line[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::first-line</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-right-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
+																						<containedElements retestId="firstletter-3">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[4]/#pseudo::first-letter[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::first-letter</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-right-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
+																					</containedElements>
+																					<containedElements retestId="quadratmeter">
+																						<identifyingAttributes>
+																							<attributes>
+																								<attribute key="absolute-outline" xsi:type="outlineAttribute">
+																									<x>177</x>
+																									<y>8</y>
+																									<height>19</height>
+																									<width>110</width>
+																								</attribute>
+																								<attribute key="outline" xsi:type="outlineAttribute">
+																									<x>169</x>
+																									<y>0</y>
+																									<height>0</height>
+																									<width>-234</width>
+																								</attribute>
+																								<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[3]</attribute>
+																								<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
+																								<attribute key="text" xsi:type="textAttribute">Quadratmeter</attribute>
+																								<attribute key="type" xsi:type="stringAttribute">td</attribute>
+																							</attributes>
+																						</identifyingAttributes>
+																						<attributes>
+																							<attributes>
+																								<entry>
+																									<key>background-color</key>
+																									<value xsi:type="xsd:string">rgb(112, 173, 71)</value>
+																								</entry>
+																								<entry>
+																									<key>border-bottom-color</key>
+																									<value xsi:type="xsd:string">rgb(169, 208, 142)</value>
+																								</entry>
+																								<entry>
+																									<key>border-bottom-style</key>
+																									<value xsi:type="xsd:string">solid</value>
+																								</entry>
+																								<entry>
+																									<key>border-bottom-width</key>
+																									<value xsi:type="xsd:string">1px</value>
+																								</entry>
+																								<entry>
+																									<key>border-left-color</key>
+																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																								</entry>
+																								<entry>
+																									<key>border-right-color</key>
+																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																								</entry>
+																								<entry>
+																									<key>border-top-color</key>
+																									<value xsi:type="xsd:string">rgb(169, 208, 142)</value>
+																								</entry>
+																								<entry>
+																									<key>border-top-style</key>
+																									<value xsi:type="xsd:string">solid</value>
+																								</entry>
+																								<entry>
+																									<key>border-top-width</key>
+																									<value xsi:type="xsd:string">1px</value>
+																								</entry>
+																								<entry>
+																									<key>caret-color</key>
+																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																								</entry>
+																								<entry>
+																									<key>color</key>
+																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																								</entry>
+																								<entry>
+																									<key>column-rule-color</key>
+																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																								</entry>
+																								<entry>
+																									<key>font-family</key>
+																									<value xsi:type="xsd:string">Calibri, sans-serif</value>
+																								</entry>
+																								<entry>
+																									<key>font-size</key>
+																									<value xsi:type="xsd:string">14.6667px</value>
+																								</entry>
+																								<entry>
+																									<key>font-weight</key>
+																									<value xsi:type="xsd:string">700</value>
+																								</entry>
+																								<entry>
+																									<key>outline-color</key>
+																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																								</entry>
+																								<entry>
+																									<key>shown</key>
+																									<value xsi:type="xsd:string">true</value>
+																								</entry>
+																								<entry>
+																									<key>style</key>
+																									<value xsi:type="xsd:string">width:83pt;font-size:11.0pt;color:white;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri, sans-serif;border-top:.5pt solid #A9D08E;border-right:
+  none;border-bottom:.5pt solid #A9D08E;border-left:none;background:#70AD47;
+  mso-pattern:#70AD47 none</value>
+																								</entry>
+																								<entry>
+																									<key>text-decoration-color</key>
+																									<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																								</entry>
+																							</attributes>
+																						</attributes>
+																						<containedElements retestId="before-2">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[3]/#pseudo::before[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::before</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
+																						<containedElements retestId="after-2">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[3]/#pseudo::after[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::after</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
+																						<containedElements retestId="firstline-2">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[3]/#pseudo::first-line[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::first-line</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
+																						<containedElements retestId="firstletter-2">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[3]/#pseudo::first-letter[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::first-letter</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
 																					</containedElements>
 																					<containedElements retestId="preis_in_mio">
 																						<identifyingAttributes>
@@ -36052,7 +36384,7 @@
 																								</entry>
 																								<entry>
 																									<key>border-bottom-width</key>
-																									<value xsi:type="xsd:string">0.65625px</value>
+																									<value xsi:type="xsd:string">1px</value>
 																								</entry>
 																								<entry>
 																									<key>border-left-color</key>
@@ -36072,7 +36404,7 @@
 																								</entry>
 																								<entry>
 																									<key>border-top-width</key>
-																									<value xsi:type="xsd:string">0.65625px</value>
+																									<value xsi:type="xsd:string">1px</value>
 																								</entry>
 																								<entry>
 																									<key>caret-color</key>
@@ -36120,6 +36452,106 @@
 																								</entry>
 																							</attributes>
 																						</attributes>
+																						<containedElements retestId="before-1">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/#pseudo::before[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::before</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
+																						<containedElements retestId="after-1">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/#pseudo::after[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::after</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
+																						<containedElements retestId="firstline-1">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/#pseudo::first-line[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::first-line</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
+																						<containedElements retestId="firstletter-1">
+																							<identifyingAttributes>
+																								<attributes>
+																									<attribute key="path" xsi:type="pathAttribute">html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/frameset[1]/frame[1]/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/#pseudo::first-letter[1]</attribute>
+																									<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
+																									<attribute key="type" xsi:type="stringAttribute">::first-letter</attribute>
+																								</attributes>
+																							</identifyingAttributes>
+																							<attributes>
+																								<attributes>
+																									<entry>
+																										<key>border-bottom-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>border-top-color</key>
+																										<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																									</entry>
+																									<entry>
+																										<key>pseudo</key>
+																										<value xsi:type="xsd:string">true</value>
+																									</entry>
+																								</attributes>
+																							</attributes>
+																						</containedElements>
 																					</containedElements>
 																				</containedElements>
 																				<containedElements retestId="tr-96">

@@ -1,6 +1,10 @@
 package de.retest.web;
 
+import static java.util.stream.Collectors.joining;
+
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
@@ -15,6 +19,7 @@ import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.recheck.ui.descriptors.idproviders.RetestIdProvider;
 import de.retest.web.mapping.PathsToWebDataMapping;
+import de.retest.web.mapping.WebData;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -59,6 +64,7 @@ public class FrameConverter {
 			@SuppressWarnings( "unchecked" )
 			final PathsToWebDataMapping mapping = new PathsToWebDataMapping( framePath,
 					(List<List<Object>>) jsExecutor.executeScript( queryJs ) );
+			debug( mapping );
 			final RootElement frameContent = convert( mapping, getFrameTitle( frame ), framePath );
 
 			final FrameConverter frameConverter =
@@ -69,6 +75,14 @@ public class FrameConverter {
 		} catch ( final Exception e ) {
 			log.error( "Exception retrieving data content of frame '{}'.", frame, e );
 		}
+	}
+
+	private void debug( final PathsToWebDataMapping mapping ) {
+		final Map<String, WebData> tagMapping = new LinkedHashMap<>();
+		mapping.forEach( entry -> tagMapping.put( entry.getKey(), entry.getValue() ) );
+		tagMapping.entrySet().stream().filter( entry -> entry.getKey().contains( "pseudo" ) )
+				.forEach( entry -> log.warn( "{} | {}", entry.getKey(), entry.getValue().getKeys().stream()
+						.map( key -> key + "=" + entry.getValue().getAsString( key ) ).collect( joining( ", " ) ) ) );
 	}
 
 	private WebElement getFrameParent( final WebDriver driver, final Element frame ) {

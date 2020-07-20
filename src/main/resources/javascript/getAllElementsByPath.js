@@ -186,6 +186,110 @@ var cssAttributes = [
     "z-index"
 ];
 
+var pseudoElements = [
+	"::before",
+	"::after",
+	"::first-line",
+	"::first-letter"
+];
+
+var defaultPseudoElementValues = [];
+defaultPseudoElementValues['align-items'] = ['normal']; //?RecheckRemoteWebElementIT
+defaultPseudoElementValues['animation-delay'] = ['0s'];
+defaultPseudoElementValues['animation-direction'] = ['normal'];
+defaultPseudoElementValues['animation-duration'] = ['0'];
+defaultPseudoElementValues['animation-fill-mode'] = ['none'];
+defaultPseudoElementValues['animation-iteration-count'] = ['1'];
+defaultPseudoElementValues['animation-name'] = ['none'];
+defaultPseudoElementValues['animation-play-state'] = ['running'];
+defaultPseudoElementValues['animation-timing-function'] = ['ease'];
+defaultPseudoElementValues['background-color'] = ['rgba(0, 0, 0, 0)'];
+defaultPseudoElementValues['background-image'] = ['none'];
+defaultPseudoElementValues['background-origin'] = ['padding-box'];
+defaultPseudoElementValues['background-position'] = ['0% 0%'];
+defaultPseudoElementValues['background-repeat'] = ['repeat'];
+defaultPseudoElementValues['background-size'] = ['auto'];
+defaultPseudoElementValues['bottom'] = ['auto'];
+defaultPseudoElementValues['border-bottom-color'] = ['rgb(0, 0, 0)', 'rgba(0, 0, 0, 0)'];
+defaultPseudoElementValues['border-bottom-left-radius'] = ['0px'];
+defaultPseudoElementValues['border-bottom-right-radius'] = ['0px'];
+defaultPseudoElementValues['border-bottom-style'] = ['none'];
+defaultPseudoElementValues['border-bottom-width'] = ['0px'];
+defaultPseudoElementValues['border-left-color'] = ['rgb(0, 0, 0)', 'rgba(0, 0, 0, 0)'];
+defaultPseudoElementValues['border-left-style'] = ['none'];
+defaultPseudoElementValues['border-left-width'] = ['0px'];
+defaultPseudoElementValues['border-radius'] = ['0px'];
+defaultPseudoElementValues['border-right-color'] = ['rgb(0, 0, 0)', 'rgba(0, 0, 0, 0)'];
+defaultPseudoElementValues['border-right-style'] = ['none'];
+defaultPseudoElementValues['border-right-width'] = ['0px'];
+defaultPseudoElementValues['border-top-color'] = ['rgb(0, 0, 0)', 'rgba(0, 0, 0, 0)'];
+defaultPseudoElementValues['border-top-left-radius'] = ['0px'];
+defaultPseudoElementValues['border-top-right-radius'] = ['0px'];
+defaultPseudoElementValues['border-top-style'] = ['none'];
+defaultPseudoElementValues['border-top-width'] = ['0px'];
+defaultPseudoElementValues['box-shadow'] = ['none'];
+defaultPseudoElementValues['box-sizing'] = ['content-box'];
+defaultPseudoElementValues['break-inside'] = ['auto'];
+defaultPseudoElementValues['content'] = ['none', 'normal']; // For -moz-alt-content see https://bugzilla.mozilla.org/show_bug.cgi?id=10280
+defaultPseudoElementValues['counter-reset'] = ['none'];
+defaultPseudoElementValues['display'] = ['inline'];
+defaultPseudoElementValues['flex-direction'] = ['row']; //?RecheckRemoteWebElementIT - html[1]/body[1]/form[4]/textarea[2]
+defaultPseudoElementValues['flex-shrink'] = ['1'];
+defaultPseudoElementValues['flex-wrap'] = ['nowrap'];
+defaultPseudoElementValues['float'] = ['none'];
+defaultPseudoElementValues['justify-content'] = ['normal']; // not allowed but appears in chrome
+defaultPseudoElementValues['left'] = ['auto'];
+defaultPseudoElementValues['margin-bottom'] = ['0px'];
+defaultPseudoElementValues['margin-left'] = ['0px'];
+defaultPseudoElementValues['margin-right'] = ['0px'];
+defaultPseudoElementValues['margin-top'] = ['0px'];
+defaultPseudoElementValues['max-height'] = ['none'];
+defaultPseudoElementValues['max-width'] = ['none'];
+defaultPseudoElementValues['min-height'] = ['0px'];
+defaultPseudoElementValues['min-width'] = ['0px'];
+defaultPseudoElementValues['opacity'] = ['1'];
+defaultPseudoElementValues['outline-color'] = ['rgb(0, 0, 0)'];
+defaultPseudoElementValues['outline-offset'] = ['0px'];
+defaultPseudoElementValues['outline-style'] = ['none'];
+defaultPseudoElementValues['outline-width'] = ['0px'];
+defaultPseudoElementValues['overflow-x'] = ['visible'];
+defaultPseudoElementValues['overflow-y'] = ['visible'];
+defaultPseudoElementValues['padding-bottom'] = ['0px'];
+defaultPseudoElementValues['padding-left'] = ['0px'];
+defaultPseudoElementValues['padding-right'] = ['0px'];
+defaultPseudoElementValues['padding-top'] = ['0px'];
+defaultPseudoElementValues['page-break-inside'] = ['auto'];
+defaultPseudoElementValues['position'] = ['static'];
+defaultPseudoElementValues['pseudo'] = ['true'];
+defaultPseudoElementValues['resize'] = ['none']; //?RecheckRemoteWebElementIT - html[1]/body[1]/form[4]/textarea[2]
+defaultPseudoElementValues['right'] = ['auto'];
+defaultPseudoElementValues['table-layout'] = ['auto'];
+defaultPseudoElementValues['text-overflow'] = ['clip'];
+defaultPseudoElementValues['text-decoration-line'] = ['none'];
+defaultPseudoElementValues['top'] = ['auto'];
+defaultPseudoElementValues['transform'] = ['none'];
+defaultPseudoElementValues['transition-delay'] = ['0s'];
+defaultPseudoElementValues['transition-duration'] = ['0s'];
+defaultPseudoElementValues['transition-property'] = ['all'];
+defaultPseudoElementValues['transition-timing'] = ['ease'];
+defaultPseudoElementValues['transition-timing-function'] = ['ease'];
+defaultPseudoElementValues['unicode-bidi'] = ['normal']; //invisible on 2 Elements at SimplePageIT - Firefox
+defaultPseudoElementValues['user-select'] = ['auto'];
+defaultPseudoElementValues['vertical-align'] = ['baseline'];
+defaultPseudoElementValues['z-index'] = ['auto'];
+
+// Firefox fixes
+var imgDefaultPseudoElementValues = [];
+imgDefaultPseudoElementValues['content'] = ['none', '-moz-alt-content']; // see https://bugzilla.mozilla.org/show_bug.cgi?id=10280
+imgDefaultPseudoElementValues['unicode-bidi'] = ['isolate']; // https://developer.mozilla.org/en-US/docs/Web/CSS/unicode-bidi
+
+// Default values for disabled pseudo elements at disabled nodes
+var disabledPseudoElementValues = [];
+disabledPseudoElementValues['border-bottom-color'] = ['rgb(109, 109, 109)'];
+disabledPseudoElementValues['border-left-color'] = ['rgb(109, 109, 109)'];
+disabledPseudoElementValues['border-right-color'] = ['rgb(109, 109, 109)'];
+disabledPseudoElementValues['border-top-color'] = ['rgb(109, 109, 109)'];
+
 var ELEMENT_NODE = 1;
 var TEXT_NODE = 3;
 var DOCUMENT_TYPE_NODE = 10;
@@ -372,6 +476,61 @@ function transform(node) {
     return extractedAttributes;
 }
 
+//extract *given* CSS style attributes for pseudo elements
+function getComputedPseudoStyleSafely(node, pseudo) {
+  try {
+      return window.getComputedStyle(node, pseudo) || [];
+  } catch (err) {}
+  return [];
+}
+
+function addPseudoElements(node, nodePath, allElements) {
+	for (pseudo of pseudoElements) {
+		try {
+			var parentStyle = getComputedStyleSafely(node);
+			var style = getComputedPseudoStyleSafely(node, pseudo);
+			if (!style || !parentStyle) {
+				continue;
+			}
+			var path = nodePath + "/#pseudo" + pseudo + "[1]";
+			var extractedAttributes = {
+					"pseudo": allElements.find(elem => elem[0] === nodePath)[1].shown,
+					"tagName": pseudo,
+				};
+			for (attributeName of cssAttributes) {
+				var defaultValues = selectDefaultValueSet(node, attributeName);
+				if (!extractedAttributes[attributeName]) {
+					if (style[attributeName]) {
+						if (!Object.keys(defaultValues).includes(attributeName) ||
+						Object.keys(defaultValues).includes(attributeName) && !defaultValues[attributeName].includes(style[attributeName])
+						) {
+							if (parentStyle[attributeName] != style[attributeName]) {
+								extractedAttributes[attributeName] = style[attributeName];
+							}
+						}
+					}
+				}
+			}
+			if (Object.keys(extractedAttributes).length > 2) {
+				allElements.push([path, extractedAttributes]);
+			}
+		} catch (err) {}
+	}
+}
+
+function selectDefaultValueSet(node, attributeName) {
+	if (isDisabled(node)) {
+		if (Objects.keys(disabledPseudoElementValues).includes(attributeName)) {
+			return disabledPseudoElementValues;
+		}
+	}
+	if (('img' == node.tagName.toLowerCase() || 'input' == node.tagName.toLowerCase())
+			&& Object.keys(imgDefaultPseudoElementValues).includes(attributeName)) {
+		return imgDefaultPseudoElementValues;
+	}
+	return defaultPseudoElementValues;
+}
+
 function isShown(e) {
     if (e.nodeType == TEXT_NODE) {
         return isShown(e.parentNode);
@@ -424,6 +583,7 @@ function mapElement(parent, parentPath, allElements) {
             var cnt = counter.increase(child);
             var path = parentPath + "/" + child.tagName.toLowerCase() + "[" + cnt + "]";
             allElements.push([path, transform(child)]);
+            addPseudoElements(child, path, allElements);
             mapElement(child, path, allElements);
         }
     }

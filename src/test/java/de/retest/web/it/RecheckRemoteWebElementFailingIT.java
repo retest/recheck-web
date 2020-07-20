@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.openqa.selenium.JavascriptExecutor;
@@ -30,6 +31,7 @@ class RecheckRemoteWebElementFailingIT {
 
 	@ParameterizedTest
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
+	@Disabled("Temporarily disabled due to bug")
 	void inserted_child_in_webelement_should_be_checked( final WebDriver driver ) throws Exception {
 		this.driver = driver;
 		driver.get( PageFactory.page( Page.FORM_PAGE ) );
@@ -55,6 +57,7 @@ class RecheckRemoteWebElementFailingIT {
 
 	@ParameterizedTest
 	@MethodSource( "de.retest.web.testutils.WebDriverFactory#drivers" )
+	@Disabled("Temporarily disabled due to bug")
 	void deleted_child_in_webelement_should_be_checked( final WebDriver driver ) throws Exception {
 		this.driver = driver;
 		driver.get( PageFactory.page( Page.FORM_PAGE ) );
