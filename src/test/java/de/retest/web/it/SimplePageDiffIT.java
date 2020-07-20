@@ -34,7 +34,6 @@ public class SimplePageDiffIT {
 		re.check( driver, "open" );
 		try {
 			re.capTest();
-			fail( "Assertion Error expected" );
 		} catch ( final AssertionError e ) {
 			assertThat( e ).hasMessageContaining( "Test 'testSimpleChange' has 5 difference(s) in 1 state(s):" ) //
 					.hasMessageEndingWith( "div (twoblocks) at 'html[1]/body[1]/div[3]':\n" //
