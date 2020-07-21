@@ -1,0 +1,37 @@
+#logo {
+    font-size: 5rem;
+}
+
+header,
+main,
+footer {
+    padding: 0.5rem;
+}
+
+header,
+footer {
+    left: 0;
+    right: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: min-content auto min-content;
+}
+
+header h1 {
+    font-variant: small-caps;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    padding: 0;
+}

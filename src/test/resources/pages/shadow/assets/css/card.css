@@ -1,0 +1,45 @@
+.card-deck {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: stretch;
+}
+
+.card-deck ::slotted(rt-card:first-child) {
+    margin-right: 0.5rem;
+}
+
+.card-deck ::slotted(rt-card) {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.card-deck ::slotted(rt-card:last-child) {
+    margin-left: 0.5rem;
+}
+
+.card {
+    border-radius: 0.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    height: 100%;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-header,
+.card-footer :not(:empty) {
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.card-header {
+    font-weight: bold;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-footer :not(:empty) {
+    margin-top: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
