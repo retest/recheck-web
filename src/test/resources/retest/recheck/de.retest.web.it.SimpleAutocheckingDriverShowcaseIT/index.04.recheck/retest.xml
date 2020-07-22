@@ -8462,6 +8462,10 @@
 								<value xsi:type="xsd:string">rgb(229, 151, 0)</value>
 							</entry>
 							<entry>
+								<key>outline-offset</key>
+								<value xsi:type="xsd:string">1px</value>
+							</entry>
+							<entry>
 								<key>outline-width</key>
 								<value xsi:type="xsd:string">1px</value>
 							</entry>
@@ -8569,7 +8573,6 @@
 			</entry>
 			<entry>
 				<key>os.arch</key>
-				<value></value>
 			</entry>
 			<entry>
 				<key>check.type</key>
@@ -8597,7 +8600,6 @@
 			</entry>
 			<entry>
 				<key>os.version</key>
-				<value></value>
 			</entry>
 			<entry>
 				<key>browser.name</key>
