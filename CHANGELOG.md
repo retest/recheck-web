@@ -27,6 +27,8 @@ Table of Contents
 
 ### Bug Fixes
 
+* Fix unchecked `ClassCastExceptions` when using the `Actions`-API with the `AutocheckingDriver`.
+
 ### New Features
 
 * Calling `driver.switchTo().window( name )` will now perform a check when using a `AutocheckingRecheckDriver`.
