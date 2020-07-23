@@ -1,8 +1,7 @@
 package de.retest.web.it;
 
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -43,14 +42,9 @@ class RecheckRemoteWebElementFailingIT {
 
 		re.check( driver.findElement( By.id( "multi" ) ), "open" );
 
-		try {
-			re.capTest();
-			fail( MISSING_ASSERTION_MSG );
-		} catch ( final AssertionError e ) {
-			Assertions.assertThat( e )
-					.hasMessageContaining( "option (option) at 'html[1]/body[1]/form[3]/select[2]/option[5]':\n" // 
-							+ "\t\twas inserted" );
-		}
+		assertThatThrownBy( re::capTest ) //
+				.hasMessageContaining( "option (option) at 'html[1]/body[1]/form[3]/select[2]/option[5]':\n" // 
+						+ "\t\twas inserted" );
 	}
 
 	@ParameterizedTest
@@ -67,13 +61,9 @@ class RecheckRemoteWebElementFailingIT {
 
 		re.check( driver.findElement( By.id( "multi" ) ), "open" );
 
-		try {
-			re.capTest();
-			fail( MISSING_ASSERTION_MSG );
-		} catch ( final AssertionError e ) {
-			Assertions.assertThat( e ).hasMessageContaining(
-					"option (onion_gravy) at 'html[1]/body[1]/form[3]/select[2]/option[4]':\n		was deleted" );
-		}
+		assertThatThrownBy( re::capTest ) //
+				.hasMessageContaining(
+						"option (onion_gravy) at 'html[1]/body[1]/form[3]/select[2]/option[4]':\n		was deleted" );
 	}
 
 	@AfterEach

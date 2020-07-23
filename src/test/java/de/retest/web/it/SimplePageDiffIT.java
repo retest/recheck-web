@@ -1,7 +1,6 @@
 package de.retest.web.it;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import org.junit.After;
 import org.junit.Before;
@@ -32,22 +31,19 @@ public class SimplePageDiffIT {
 		driver.get( PageFactory.toPageUrlString( "simple-page-diff.html" ) );
 
 		re.check( driver, "open" );
-		try {
-			re.capTest();
-			fail( "Assertion Error expected" );
-		} catch ( final AssertionError e ) {
-			assertThat( e ).hasMessageContaining( "Test 'testSimpleChange' has 5 difference(s) in 1 state(s):" ) //
-					.hasMessageEndingWith( "div (twoblocks) at 'html[1]/body[1]/div[3]':\n" //
-							+ "\t\tid: expected=\"twoblocks\", actual=\"changedblock\"\n" //
-							+ "\tp (some_text) at 'html[1]/body[1]/div[3]/p[1]':\n" //
-							+ "\t\ttext: expected=\"Some text\", actual=\"Some changed text\"\n" //
-							+ "\tp (some_more_text) at 'html[1]/body[1]/div[3]/p[2]':\n" //
-							+ "\t\twas deleted\n" //
-							+ "\tspan (span-2) at 'html[1]/body[1]/div[5]/span[1]':\n" //
-							+ "\t\tcovered: expected=\"true\", actual=\"null\"\n" //
-							+ "\th2 (subheading) at 'html[1]/body[1]/h2[1]':\n" //
-							+ "\t\twas inserted" );
-		}
+
+		assertThatThrownBy( re::capTest ) //
+				.hasMessageContaining( "Test 'testSimpleChange' has 5 difference(s) in 1 state(s):" ) //
+				.hasMessageEndingWith( "div (twoblocks) at 'html[1]/body[1]/div[3]':\n" //
+						+ "\t\tid: expected=\"twoblocks\", actual=\"changedblock\"\n" //
+						+ "\tp (some_text) at 'html[1]/body[1]/div[3]/p[1]':\n" //
+						+ "\t\ttext: expected=\"Some text\", actual=\"Some changed text\"\n" //
+						+ "\tp (some_more_text) at 'html[1]/body[1]/div[3]/p[2]':\n" //
+						+ "\t\twas deleted\n" //
+						+ "\tspan (span-2) at 'html[1]/body[1]/div[5]/span[1]':\n" //
+						+ "\t\tcovered: expected=\"true\", actual=\"null\"\n" //
+						+ "\th2 (subheading) at 'html[1]/body[1]/h2[1]':\n" //
+						+ "\t\twas inserted" );
 	}
 
 	@After
