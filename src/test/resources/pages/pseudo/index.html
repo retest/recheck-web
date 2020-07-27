@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="test">
+        <p class="description">Link without pseudo elements</p>
+        <a href="#" id="link-without-pseudo">No pseudo elements</a>
+    </div>
+
+    <div class="test">
+        <p class="description">Button without pseudo elements that adds ::before after click</p>
+        <button href="#" id="lazy-before-pseudo">Lazy ::before element</button>
+    </div>
+
+    <div class="test">
+        <p class="description">Link without pseudo elements that adds ::after after click</p>
+        <button href="#" id="lazy-after-pseudo">Lazy ::after element</button>
+    </div>
+
+    <style href="index.js"></style>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+.test {
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 80%;
+    color: gray;
+    font-weight: lighter;
+    margin-bottom: 0.25rem;
+}
+
+#lazy-after-pseudo.clicked ::before {
+    content: "before";
+}
