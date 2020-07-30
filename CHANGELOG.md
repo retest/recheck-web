@@ -28,6 +28,7 @@ Table of Contents
 ### Bug Fixes
 
 * Fix unchecked `ClassCastExceptions` when using the `Actions`-API with the `AutocheckingDriver`.
+* Fix a bug with which, if the element is checked in isolation, some attributes can escape the scope and not be checked.
 
 ### New Features
 
