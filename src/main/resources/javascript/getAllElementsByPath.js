@@ -461,7 +461,10 @@ function transform(node) {
     extractedAttributes["read-only"] = node.readOnly;
 
     var style = getComputedStyleSafely(node);
-    var parentStyle = getComputedStyleSafely(node.parentNode);
+    var parentStyle = [];
+    if (node !== rootNode) {
+    	parentStyle = getComputedStyleSafely(node.parentNode);
+    }
     for (var i = 0; i < cssAttributes.length; i++) {
         var attrName = cssAttributes[i];
         if (!extractedAttributes[attrName]) {
