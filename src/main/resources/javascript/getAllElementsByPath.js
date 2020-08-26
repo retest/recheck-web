@@ -494,7 +494,13 @@ function addPseudoElements(node, nodePath, allElements) {
 			var style = getComputedPseudoStyleSafely(node, pseudo);
 			if (!style || !parentStyle) {
 				continue;
-			}
+            }
+            if (pseudo === "::before" || pseudo === "::after") {
+                // TODO: This is w3c standard, but what do the different browsers implement (null, "")?
+                if (style["content"] === "none") {
+                    continue;
+                }
+            }
 			var path = nodePath + "/#pseudo" + pseudo + "[1]";
 			var extractedAttributes = {
 					"pseudo": allElements.find(elem => elem[0] === nodePath)[1].shown,
