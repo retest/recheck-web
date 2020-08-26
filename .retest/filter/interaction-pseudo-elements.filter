@@ -1,0 +1,5 @@
+# Ignore every metadata
+import: metadata.filter
+
+# Ignore outline, since this is changed (however briefly) on click of a button/link
+attribute-regex=outline-.*
