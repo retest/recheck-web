@@ -501,6 +501,13 @@ function addPseudoElements(node, nodePath, allElements) {
                     continue;
                 }
             }
+            else {
+                // Ignore state specific changes
+                // TODO: This is a hack! Ideally, each pseudo element only checks their applicable cssAttributes, as they cannot take all (see https://www.w3.org/TR/css-pseudo-4)
+                if (style["outline"] !== parentStyle["outline"]) {
+                    continue;
+                }
+            }
 			var path = nodePath + "/#pseudo" + pseudo + "[1]";
 			var extractedAttributes = {
 					"pseudo": allElements.find(elem => elem[0] === nodePath)[1].shown,
