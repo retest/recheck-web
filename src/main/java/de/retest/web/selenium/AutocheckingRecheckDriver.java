@@ -21,6 +21,7 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 	private RecheckWebImpl re;
 	private final RecheckOptions options;
 	private final AutocheckingCheckNamingStrategy checkNamingStrategy;
+	private final long autocheckingDelayMillis;
 
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped ) {
 		this( wrapped, RecheckWebOptions.builder().build() );
@@ -35,7 +36,9 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options ) {
 		super( wrapped );
 		this.options = options;
-		checkNamingStrategy = RecheckWebOptions.builder().build().getCheckNamingStrategy();
+		final RecheckWebOptions defaultOptions = RecheckWebOptions.builder().build();
+		checkNamingStrategy = defaultOptions.getCheckNamingStrategy();
+		autocheckingDelayMillis = defaultOptions.getAutocheckingDelayMillis();
 	}
 
 	/**
@@ -54,12 +57,14 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 		super( wrapped );
 		this.options = options;
 		this.checkNamingStrategy = checkNamingStrategy;
+		autocheckingDelayMillis = RecheckWebOptions.builder().build().getAutocheckingDelayMillis();
 	}
 
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckWebOptions options ) {
 		super( wrapped );
 		this.options = options;
 		checkNamingStrategy = options.getCheckNamingStrategy();
+		autocheckingDelayMillis = options.getAutocheckingDelayMillis();
 	}
 
 	@Override
@@ -137,6 +142,7 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 		if ( re == null ) {
 			startTest();
 		}
+		waitAutocheckingDelay();
 		re.check( ImplicitDriverWrapper.of( this ), checkNamingStrategy.getUniqueCheckName( action, target, params ) );
 	}
 
@@ -144,7 +150,16 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 		if ( re == null ) {
 			startTest();
 		}
+		waitAutocheckingDelay();
 		re.check( ImplicitDriverWrapper.of( this ), checkNamingStrategy.getUniqueCheckName( action ) );
+	}
+
+	void waitAutocheckingDelay() {
+		if ( autocheckingDelayMillis > 0 ) {
+			try {
+				Thread.sleep( autocheckingDelayMillis );
+			} catch ( final InterruptedException e ) { /* ignore */ }
+		}
 	}
 
 	@Override
