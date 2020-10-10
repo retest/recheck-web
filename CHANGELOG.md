@@ -33,6 +33,7 @@ Table of Contents
 ### New Features
 
 * Calling `driver.switchTo().window( name )` will now perform a check when using a `AutocheckingRecheckDriver`.
+* Add Option to delay autochecking with AutocheckingRecheckDriver
 
 ### Improvements
 

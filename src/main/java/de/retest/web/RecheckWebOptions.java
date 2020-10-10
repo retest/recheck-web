@@ -19,12 +19,16 @@ public class RecheckWebOptions extends RecheckOptions {
 
 	private final AutocheckingCheckNamingStrategy checkNamingStrategy;
 	private final ScreenshotProvider screenshotProvider;
+	private final long autocheckingDelayMillis;
 
 	protected RecheckWebOptions( final RecheckOptions superOptions,
-			final AutocheckingCheckNamingStrategy checkNamingStrategy, final ScreenshotProvider screenshotProvider ) {
+			final AutocheckingCheckNamingStrategy checkNamingStrategy, final ScreenshotProvider screenshotProvider,
+			final long autocheckingDelayMillis ) {
 		super( superOptions );
 		this.checkNamingStrategy = checkNamingStrategy;
 		this.screenshotProvider = screenshotProvider;
+		this.autocheckingDelayMillis = autocheckingDelayMillis;
+
 	}
 
 	public static RecheckWebOptionsBuilder builder() {
@@ -35,6 +39,7 @@ public class RecheckWebOptions extends RecheckOptions {
 
 		private AutocheckingCheckNamingStrategy checkNamingStrategy = new CounterCheckNamingStrategy();
 		private ScreenshotProvider screenshotProvider = null;
+		private long autocheckingDelayMillis = 0;
 
 		/**
 		 * @param checkNamingStrategy
@@ -75,6 +80,18 @@ public class RecheckWebOptions extends RecheckOptions {
 		 */
 		public RecheckWebOptionsBuilder enableScreenshots() {
 			return screenshotProvider( ScreenshotProviders.DEFAULT );
+		}
+
+		/**
+		 * Delay each check performed by the <code>AutocheckingRecheckDriver</code>.
+		 *
+		 * @param autocheckingDelayMillis
+		 *            Amount of milliseconds to wait
+		 * @return self
+		 */
+		public RecheckWebOptionsBuilder setAutocheckingDelayMillis( final long autocheckingDelayMillis ) {
+			this.autocheckingDelayMillis = autocheckingDelayMillis;
+			return this;
 		}
 
 		@Override
@@ -133,7 +150,9 @@ public class RecheckWebOptions extends RecheckOptions {
 
 		@Override
 		public RecheckWebOptions build() {
-			return new RecheckWebOptions( super.build(), checkNamingStrategy, screenshotProvider );
+			return new RecheckWebOptions( super.build(), checkNamingStrategy, screenshotProvider,
+					autocheckingDelayMillis );
 		}
 	}
+
 }

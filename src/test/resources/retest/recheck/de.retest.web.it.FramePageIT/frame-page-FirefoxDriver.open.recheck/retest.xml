@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.12.0-SNAPSHOT" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="Multi Frame" title="Multi Frame">
 			<identifyingAttributes>
@@ -148,11 +148,11 @@
 						</entry>
 						<entry>
 							<key>overflow-x</key>
-							<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+							<value xsi:type="xsd:string">clip</value>
 						</entry>
 						<entry>
 							<key>overflow-y</key>
-							<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+							<value xsi:type="xsd:string">clip</value>
 						</entry>
 						<entry>
 							<key>rows</key>
@@ -245,11 +245,11 @@
 								</entry>
 								<entry>
 									<key>overflow-x</key>
-									<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+									<value xsi:type="xsd:string">clip</value>
 								</entry>
 								<entry>
 									<key>overflow-y</key>
-									<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+									<value xsi:type="xsd:string">clip</value>
 								</entry>
 								<entry>
 									<key>rows</key>
@@ -343,11 +343,11 @@
 										</entry>
 										<entry>
 											<key>overflow-x</key>
-											<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+											<value xsi:type="xsd:string">clip</value>
 										</entry>
 										<entry>
 											<key>overflow-y</key>
-											<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+											<value xsi:type="xsd:string">clip</value>
 										</entry>
 										<entry>
 											<key>rows</key>
@@ -441,11 +441,11 @@
 												</entry>
 												<entry>
 													<key>overflow-x</key>
-													<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+													<value xsi:type="xsd:string">clip</value>
 												</entry>
 												<entry>
 													<key>overflow-y</key>
-													<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+													<value xsi:type="xsd:string">clip</value>
 												</entry>
 												<entry>
 													<key>rows</key>
@@ -539,11 +539,11 @@
 														</entry>
 														<entry>
 															<key>overflow-x</key>
-															<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+															<value xsi:type="xsd:string">clip</value>
 														</entry>
 														<entry>
 															<key>overflow-y</key>
-															<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+															<value xsi:type="xsd:string">clip</value>
 														</entry>
 														<entry>
 															<key>rows</key>
@@ -637,11 +637,11 @@
 																</entry>
 																<entry>
 																	<key>overflow-x</key>
-																	<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+																	<value xsi:type="xsd:string">clip</value>
 																</entry>
 																<entry>
 																	<key>overflow-y</key>
-																	<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+																	<value xsi:type="xsd:string">clip</value>
 																</entry>
 																<entry>
 																	<key>rows</key>
@@ -735,11 +735,11 @@
 																		</entry>
 																		<entry>
 																			<key>overflow-x</key>
-																			<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+																			<value xsi:type="xsd:string">clip</value>
 																		</entry>
 																		<entry>
 																			<key>overflow-y</key>
-																			<value xsi:type="xsd:string">-moz-hidden-unscrollable</value>
+																			<value xsi:type="xsd:string">clip</value>
 																		</entry>
 																		<entry>
 																			<key>rows</key>
@@ -57118,7 +57118,6 @@
 			</entry>
 			<entry>
 				<key>os.arch</key>
-				<value></value>
 			</entry>
 			<entry>
 				<key>check.type</key>
