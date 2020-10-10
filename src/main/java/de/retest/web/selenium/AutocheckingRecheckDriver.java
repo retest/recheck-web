@@ -31,18 +31,19 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 	 * @param wrapped
 	 *            The {@link RemoteWebDriver} to wrap.
 	 * @param options
-	 *            The {@link RecheckOptions} to use.
+	 *            The {@link RecheckOptions} or {@link RecheckWebOptions} to use.
 	 */
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options ) {
 		super( wrapped );
 		this.options = options;
-		final RecheckWebOptions defaultOptions = RecheckWebOptions.builder().build();
-		checkNamingStrategy = defaultOptions.getCheckNamingStrategy();
-		autocheckingDelayMillis = defaultOptions.getAutocheckingDelayMillis();
+		final RecheckWebOptions webOptions = options instanceof RecheckWebOptions ? (RecheckWebOptions) options
+				: RecheckWebOptions.builder().build();
+		checkNamingStrategy = webOptions.getCheckNamingStrategy();
+		autocheckingDelayMillis = webOptions.getAutocheckingDelayMillis();
 	}
 
 	/**
-	 * @deprecated use {@link #AutocheckingRecheckDriver(RemoteWebDriver, RecheckWebOptions)} instead.
+	 * @deprecated use {@link #AutocheckingRecheckDriver(RemoteWebDriver, RecheckOptions)} instead.
 	 *
 	 * @param wrapped
 	 *            The {@link RemoteWebDriver} to wrap.
@@ -58,13 +59,6 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 		this.options = options;
 		this.checkNamingStrategy = checkNamingStrategy;
 		autocheckingDelayMillis = RecheckWebOptions.builder().build().getAutocheckingDelayMillis();
-	}
-
-	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckWebOptions options ) {
-		super( wrapped );
-		this.options = options;
-		checkNamingStrategy = options.getCheckNamingStrategy();
-		autocheckingDelayMillis = options.getAutocheckingDelayMillis();
 	}
 
 	@Override
