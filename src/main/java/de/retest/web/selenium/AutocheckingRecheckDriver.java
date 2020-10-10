@@ -152,7 +152,10 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 		if ( autocheckingDelayMillis > 0 ) {
 			try {
 				Thread.sleep( autocheckingDelayMillis );
-			} catch ( final InterruptedException e ) { /* ignore */ }
+			} catch ( final InterruptedException e ) {
+				// ignore
+				Thread.currentThread().interrupt();
+			}
 		}
 	}
 
