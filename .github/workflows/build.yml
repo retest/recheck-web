@@ -51,5 +51,11 @@ jobs:
         -Dsonar.host.url=https://sonarcloud.io
         -Dsonar.organization=retest
         -Dsonar.projectKey=de.retest:recheck-web
-      env:
-        RECHECK_API_KEY: ${{ secrets.RECHECK_API_KEY }}
+
+    - name: Archive recheck tests.report
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: tests.report
+        path: target/test-classes/retest/recheck/tests.report
+        retention-days: 10
