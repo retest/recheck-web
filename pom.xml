@@ -50,13 +50,6 @@
 		<selenium.version>3.141.59</selenium.version>
 	</properties>
 
-	<scm>
-		<url>https://github.com/retest/recheck-web/</url>
-		<connection>scm:git:git@github.com:retest/recheck-web.git</connection>
-		<developerConnection>scm:git:git@github.com:retest/recheck-web.git</developerConnection>
-		<tag>HEAD</tag>
-	</scm>
-
 	<distributionManagement>
 		<snapshotRepository>
 			<id>ossrh</id>
@@ -284,7 +277,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
-				<version>2.5.3</version><!--$NO-MVN-MAN-VER$-->
+				<version>3.0.0-M1</version>
 				<configuration>
 					<goals>install</goals>
 					<tagNameFormat>v@{project.version}</tagNameFormat>
@@ -446,4 +439,11 @@
 			</build>
 		</profile>
 	</profiles>
+
+	<scm>
+		<connection>scm:git:https://${git.repo.host}/${git.repo.path}.git</connection>
+		<developerConnection>scm:git:ssh://git@${git.repo.host}/${git.repo.path}.git</developerConnection>
+		<url>https://${git.repo.host}/${git.repo.path}/</url>
+		<tag>HEAD</tag>
+	</scm>
 </project>
