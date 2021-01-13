@@ -12,32 +12,25 @@
 	<url>https://retest.de/recheck-web/</url>
 
 	<organization>
-		<name>ReTest GmbH</name>
+		<name>retest @ UBS Hainer GmbH</name>
 		<url>https://retest.de/</url>
 	</organization>
 
 	<developers>
 		<developer>
-			<id>roessler</id>
-			<name>Dr. Jeremias Rößler</name>
-			<email>jeremias.roessler@retest.de</email>
-		</developer>
-		<developer>
-			<id>kraus</id>
-			<name>Daniel Kraus</name>
-			<email>daniel.kraus@retest.de</email>
-		</developer>
-		<developer>
-			<id>vietz</id>
-			<name>Martin Vietz</name>
-			<email>martin.vietz@retest.de</email>
-		</developer>
-		<developer>
-			<id>dillmann</id>
-			<name>Johannes Dillmann</name>
-			<email>johannes.dillmann@retest.de</email>
+			<id>team</id>
+			<name>The retest developers</name>
+			<email>info@retest.de</email>
+			<url>https://github.com/orgs/retest/people</url>
 		</developer>
 	</developers>
+
+	<contributors>
+		<contributor>
+			<name>The contributors</name>
+			<url>https://github.com/retest/${project.artifactId}/graphs/contributors</url>
+		</contributor>
+	</contributors>
 
 	<licenses>
 		<license>
@@ -51,7 +44,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<junit.jupiter.version>5.7.0</junit.jupiter.version>
+		<maven.surefire.and.failsafe.version>3.0.0-M5</maven.surefire.and.failsafe.version>
 		<mockito.version>3.6.28</mockito.version>
 		<logback.version>1.2.3</logback.version>
 		<selenium.version>3.141.59</selenium.version>
@@ -139,7 +132,7 @@
 
 		<dependency>
 			<groupId>org.aeonbits.owner</groupId>
-			<artifactId>owner</artifactId>
+			<artifactId>owner-java8</artifactId>
 			<version>1.0.12</version>
 		</dependency>
 
@@ -147,22 +140,8 @@
 
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>${junit.jupiter.version}</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.junit.vintage</groupId>
-			<artifactId>junit-vintage-engine</artifactId>
-			<version>${junit.jupiter.version}</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-params</artifactId>
-			<version>${junit.jupiter.version}</version>
+			<artifactId>junit-jupiter</artifactId>
+			<version>5.7.0</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -251,15 +230,15 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.22.2</version>
+				<version>${maven.surefire.and.failsafe.version}</version>
 				<configuration>
 					<includes>
+						<!-- overwrite default, prevent run of files matching `Test*.class`  -->
 						<include>%regex[.*Test.class]</include>
 					</includes>
 					<properties>
 						<configurationParameters>
 							junit.jupiter.execution.parallel.enabled=true
-							junit.jupiter.execution.parallel.config.dynamic.factor=1
 						</configurationParameters>
 					</properties>
 				</configuration>
@@ -268,7 +247,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-failsafe-plugin</artifactId>
-				<version>2.22.2</version>
+				<version>${maven.surefire.and.failsafe.version}</version>
 				<configuration>
 					<!-- combine Surefire and Failsafe reports for SonarCloud -->
 					<!-- see https://stackoverflow.com/a/15567782 -->
@@ -375,6 +354,27 @@
 			</plugin>
 
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>3.0.0-M3</version>
+				<executions>
+					<execution>
+						<id>enforce-maven</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireMavenVersion>
+									<version>3.4</version>
+								</requireMavenVersion>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
 				<version>1.6.8</version>
@@ -401,6 +401,7 @@
 							<skip>${gpg.skip}</skip>
 							<passphrase>${env.GPG_PASSPHRASE}</passphrase>
 							<gpgArguments>
+								<!-- This is necessary for gpg to not try to use the pinentry programs -->
 								<arg>--pinentry-mode</arg>
 								<arg>loopback</arg>
 							</gpgArguments>
