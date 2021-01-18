@@ -66,7 +66,7 @@ jobs:
       id: upload_release_asset
       uses: actions/upload-release-asset@v1
       with:
-        upload_url: ${{ steps.release.outputs.upload_url }}
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./target/${{ steps.deploy.outputs.zip_name }}
         asset_name: ${{ steps.deploy.outputs.zip_name }}
         asset_content_type: application/zip
