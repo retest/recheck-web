@@ -9,8 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.assertthat.selenium_shutterbug.core.Capture;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
-import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
 
 /**
  * Scrolls to the bottom of the page and takes a screenshot of the entire page.
@@ -24,12 +24,12 @@ public class FullPageScreenshot implements ScreenshotProvider {
 	public BufferedImage shoot( final WebDriver driver ) {
 		if ( driver instanceof ChromeDriver ) {
 			final BufferedImage image = Shutterbug //
-					.shootPage( driver, ScrollStrategy.WHOLE_PAGE_CHROME, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
+					.shootPage( driver, Capture.FULL, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
 					.getImage();
 			return resizeImage( image, image.getWidth() / SCALE, image.getHeight() / SCALE );
 		}
 		return Shutterbug //
-				.shootPage( driver, ScrollStrategy.BOTH_DIRECTIONS, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
+				.shootPage( driver, Capture.FULL, SCROLL_TIMEOUT_MS, USE_DEVICE_PIXEL_RATIO ) //
 				.getImage();
 	}
 
