@@ -46,7 +46,7 @@ public class AutocheckingTargetLocator implements WebDriver.TargetLocator {
 
 	@Override
 	public WebElement activeElement() {
-		return delegate.activeElement();
+		return driver.wrap( delegate.activeElement() ) ;
 	}
 
 	@Override
