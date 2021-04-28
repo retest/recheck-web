@@ -36,6 +36,7 @@ Table of Contents
 
 * Calling `driver.switchTo().window( name )` will now perform a check when using a `AutocheckingRecheckDriver`.
 * Add Option to delay autochecking with AutocheckingRecheckDriver
+* AutocheckingRecheckDriver now allows manual checks: `driver.check( final String action )`
 
 ### Improvements
 
