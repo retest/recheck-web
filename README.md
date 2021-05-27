@@ -1,10 +1,9 @@
 # <a href="https://retest.dev"><img src="https://assets.retest.org/retest/ci/logos/recheck-screen.svg" width="300"/></a>-web [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Have%20a%20look%20at%20the%20test%20automation%20API%20recheck-web&url=http://retest.dev&via=retest_en&hashtags=opensource,software,testing,testautomation,developers)
 
-[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/retest/recheck-web/blob/master/LICENSE)
-[![build](https://github.com/retest/recheck-web/workflows/build/badge.svg)](https://github.com/retest/recheck-web/actions?query=workflow%3Abuild)
+[![Build Status](https://github.com/retest/recheck-web/actions/workflows/build-project.yml/badge.svg)](https://github.com/retest/recheck-web/actions/workflows/build-project.yml)
 [![Latest recheck-web on Maven Central](https://maven-badges.herokuapp.com/maven-central/de.retest/recheck-web/badge.svg?style=flat)](https://mvnrepository.com/artifact/de.retest/recheck-web)
 [![Latest recheck-web releases on JitPack](https://jitpack.io/v/de.retest/recheck-web.svg)]( https://jitpack.io/#de.retest/recheck-web)
-[![license](https://img.shields.io/badge/license-AGPL-brightgreen.svg)](https://github.com/retest/recheck-web/blob/master/LICENSE)
+[![license](https://img.shields.io/badge/license-AGPL-brightgreen.svg)](https://github.com/retest/recheck-web/blob/main/LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/retest/recheck-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![code with hearth by retest](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-retest-C1D82F.svg)](https://retest.de/)
 
@@ -83,9 +82,9 @@ Simply add `recheck-web` as dependency to your project, e.g. via [Maven Central]
 
 ```xml
 <dependency>
-    <groupId>de.retest</groupId>
-    <artifactId>recheck-web</artifactId>
-    <version><!-- latest version, see above link --></version>
+	<groupId>de.retest</groupId>
+	<artifactId>recheck-web</artifactId>
+	<version><!-- latest version, see above link --></version>
 </dependency>
 ```
 

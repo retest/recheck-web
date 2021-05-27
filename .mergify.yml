@@ -7,20 +7,32 @@ pull_request_rules:
       - "-draft"
     actions:
       rebase:
-        bot_account: rebazer
 
-  - name: "merge non-release PRs with strict rebase"
+  - name: "merge non-release SonarCloud-checked PRs with strict rebase"
     conditions:
       - "head~=^(?!(release|hotfix)).*$"
       - "#approved-reviews-by>=1"
       - "#changes-requested-reviews-by=0"
       - "-draft"
+      - "check-success=SonarCloud Code Analysis"
     actions:
       merge:
         strict: true
         strict_method: rebase
         method: merge
-        bot_account: rebazer
+
+  - name: "merge non-release without-SonarCloud-but-from-dependabot PRs with strict rebase"
+    conditions:
+      - "head~=^(?!(release|hotfix)).*$"
+      - "#approved-reviews-by>=1"
+      - "#changes-requested-reviews-by=0"
+      - "-draft"
+      - "author=dependabot[bot]"
+    actions:
+      merge:
+        strict: true
+        strict_method: rebase
+        method: merge
 
   - name: "merge release PRs with strict merge"
     conditions:
@@ -32,7 +44,6 @@ pull_request_rules:
       merge:
         strict: true
         method: merge
-        bot_account: rebazer
 
   - name: "delete PR branches after merge"
     conditions:

@@ -1,0 +1,45 @@
+name: Release hotfix finish
+
+on:
+  workflow_dispatch:
+    inputs:
+      approval:
+        description: 'Do you really want to finish the current HOTFIX release?'
+        required: true
+        default: 'NO'
+
+env:
+  MVN_ARGS: --batch-mode --errors --fail-fast --no-transfer-progress
+
+jobs:
+  default:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Verify approval
+        run: "[[ $(echo ${{ github.event.inputs.approval }} | tr 'a-z' 'A-Z') == 'YES' ]]"
+
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.TRIGGER_ACTIONS_GITHUB_TOKEN }}
+
+      - uses: actions/setup-java@v1
+        with:
+          java-version: 8
+
+      - name: Cache local Maven repository
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-maven-
+
+      - name: Configure Git user
+        run: |
+          git config user.email "ops+githubactions@retest.de"
+          git config user.name "retest release github action"
+
+      - name: Tag and finish release branch
+        run: mvn ${MVN_ARGS} gitflow:hotfix-finish

@@ -5,7 +5,6 @@
 	<groupId>de.retest</groupId>
 	<artifactId>recheck-web</artifactId>
 	<version>1.12.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
 
 	<name>recheck - web</name>
 	<description>recheck for web apps.</description>
@@ -41,6 +40,8 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<git.repo.host>github.com</git.repo.host>
+		<git.repo.path>retest/${project.artifactId}</git.repo.path>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -193,6 +194,10 @@
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
+					<compilerArguments>
+						<Xlint:unchecked />
+						<Xlint:deprecation />
+					</compilerArguments>
 				</configuration>
 			</plugin>
 
@@ -251,12 +256,23 @@
 			</plugin>
 
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>3.0.0-M1</version>
+				<groupId>com.amashchenko.maven.plugin</groupId>
+				<artifactId>gitflow-maven-plugin</artifactId>
+				<version>1.16.0</version>
 				<configuration>
-					<goals>install</goals>
-					<tagNameFormat>v@{project.version}</tagNameFormat>
+					<gitFlowConfig>
+						<productionBranch>main</productionBranch>
+						<releaseBranchPrefix>release/v</releaseBranchPrefix>
+						<hotfixBranchPrefix>hotfix/v</hotfixBranchPrefix>
+						<versionTagPrefix>v</versionTagPrefix>
+					</gitFlowConfig>
+					<commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
+					<skipTestProject>true</skipTestProject>
+					<useSnapshotInHotfix>true</useSnapshotInHotfix>
+					<useSnapshotInRelease>true</useSnapshotInRelease>
+					<versionDigitToIncrement>1</versionDigitToIncrement>
+					<commitMessagePrefix xml:space="preserve">ci: </commitMessagePrefix>
+					<pushRemote>true</pushRemote>
 				</configuration>
 			</plugin>
 

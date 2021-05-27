@@ -1,0 +1,63 @@
+name: Release beta
+
+on:
+  workflow_dispatch:
+    inputs:
+      approval:
+        description: 'Do you really want to release a BETA from configured BRANCH?'
+        required: true
+        default: 'NO'
+
+env:
+  MVN_ARGS: --batch-mode --errors --fail-fast --no-transfer-progress
+
+jobs:
+  default:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Verify approval
+        run: "[[ $(echo ${{ github.event.inputs.approval }} | tr 'a-z' 'A-Z') == 'YES' ]]"
+
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.TRIGGER_ACTIONS_GITHUB_TOKEN }}
+
+      - name: Verify for release or hotfix branch
+        run: "[[ $( git branch --show-current ) =~ ^release.*|^hotfix.* ]]"
+
+      - uses: actions/setup-java@v1
+        with:
+          java-version: 8
+
+      - name: Cache local Maven repository
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-maven-
+
+      - name: Configure Git user
+        run: |
+          git config user.email "ops+githubactions@retest.de"
+          git config user.name "retest release github action"
+
+      - id: next_beta
+        name: Find next beta version
+        run: |
+            # get next stable release version from pom.xml
+            RELEASE_VERSION=$( mvn help:evaluate -Dexpression=project.version -q -DforceStdout | sed 's/-SNAPSHOT//' )
+            # find last beta for this version using git tags. Prefix with 0 als default for next line
+            LAST_BETA_TAG=0$( git for-each-ref --sort=-taggerdate --count=1 --format '%(refname:short)' "refs/tags/v${RELEASE_VERSION}-beta.*" )
+            # Create string for beta version
+            NEXT_BETA="$RELEASE_VERSION-beta.$((1+"${LAST_BETA_TAG/v$RELEASE_VERSION-beta./}"))"
+            echo "::set-output name=version::$NEXT_BETA"
+
+      - name: Create beta release tag
+        run: |
+          mvn versions:set -DnewVersion=${{ steps.next_beta.outputs.version }} -DgenerateBackupPoms=false
+          git commit -a -m "ci: release ${{ steps.next_beta.outputs.version }}"
+          git tag -a v${{ steps.next_beta.outputs.version }} -m "ci: tag beta release ${{ steps.next_beta.outputs.version }}"
+          git push --tags
