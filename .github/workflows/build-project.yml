@@ -43,7 +43,7 @@ jobs:
 
       - name: Test with SonarCloud
         id: test-with-sonar
-        if: ${{ github.actor == 'dependabot' }}
+        if: ${{ github.actor != 'dependabot[bot]' }}
         run: >
           mvn ${MVN_ARGS} verify sonar:sonar -Pcoverage
           -Dsonar.host.url=https://sonarcloud.io
