@@ -31,11 +31,13 @@ Table of Contents
 
 * Fix unchecked `ClassCastExceptions` when using the `Actions`-API with the `AutocheckingDriver`.
 * Fix a bug with which, if the element is checked in isolation, some attributes can escape the scope and not be checked.
+* AutocheckingRecheckDriver `driver.switchTo().activeElement().*` wasn't performing automatic checks.
 
 ### New Features
 
 * Calling `driver.switchTo().window( name )` will now perform a check when using a `AutocheckingRecheckDriver`.
 * Add Option to delay autochecking with AutocheckingRecheckDriver
+* AutocheckingRecheckDriver now allows manual checks: `driver.check( final String action )`
 
 ### Improvements
 
