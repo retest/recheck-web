@@ -5,6 +5,8 @@ on: [push, pull_request]
 
 env:
   MVN_ARGS: --batch-mode --errors --fail-fast --no-transfer-progress
+  HAS_SONAR_TOKEN: ${{ secrets.SONAR_TOKEN != '' }}
+
 
 jobs:
   default:
@@ -43,7 +45,7 @@ jobs:
 
       - name: Test with SonarCloud
         id: test-with-sonar
-        if: ${{ github.actor == 'dependabot' }}
+        if: ${{ env.HAS_SONAR_TOKEN == 'true' }}
         run: >
           mvn ${MVN_ARGS} verify sonar:sonar -Pcoverage
           -Dsonar.host.url=https://sonarcloud.io
