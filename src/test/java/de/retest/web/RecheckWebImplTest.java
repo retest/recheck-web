@@ -10,7 +10,6 @@ import static org.mockito.Mockito.when;
 import java.nio.file.Path;
 import java.util.Collections;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
@@ -44,11 +43,6 @@ class RecheckWebImplTest {
 		re = new RecheckWebImpl( options );
 		adapter = mock( RecheckAdapter.class );
 		when( adapter.convert( any() ) ).thenReturn( Collections.singleton( rootElement ) );
-	}
-
-	@AfterEach
-	void tearDown() {
-		re.cap();
 	}
 
 	@Test
