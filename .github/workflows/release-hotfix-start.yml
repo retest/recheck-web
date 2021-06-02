@@ -21,6 +21,8 @@ jobs:
         run: "[[ $(echo ${{ github.event.inputs.approval }} | tr 'a-z' 'A-Z') == 'YES' ]]"
 
       - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.TRIGGER_ACTIONS_GITHUB_TOKEN }}
 
       - uses: actions/setup-java@v1
         with:
