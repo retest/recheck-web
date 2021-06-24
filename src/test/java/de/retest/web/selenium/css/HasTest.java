@@ -212,4 +212,5 @@ class HasTest {
 
 		assertThat( Has.partialLinkText( notMatchingLink ).test( element ) ).isEqualTo( false );
 	}
+
 }

@@ -4,7 +4,7 @@ all:
   - animation-iteration-count: 1
   - animation-play-state: running
   - animation-timing-function: ease
-  - autofocus: false 
+  - autofocus: false
   - backface-visibility: visible
   - background-attachment: scroll
   - background-clip: border-box
@@ -236,7 +236,7 @@ input:
   - display: inline-block
   - margin-bottom: 3px
   - margin-top: 3px
-  - tabindex: 0  
+  - tabindex: 0
   - read-only: false
 
 img:

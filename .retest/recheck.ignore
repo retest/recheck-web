@@ -39,6 +39,8 @@ attribute-regex=border-.*-style
 attribute-regex=padding-.*
 attribute=line-height
 attribute=quotes
+attribute=outline-offset
+attribute=unicode-bidi
 matcher: type=meta, attribute-regex=.*
 
 # Have the tests pass locally:

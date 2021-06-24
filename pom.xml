@@ -4,40 +4,32 @@
 
 	<groupId>de.retest</groupId>
 	<artifactId>recheck-web</artifactId>
-	<version>1.12.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<version>1.12.0</version>
 
 	<name>recheck - web</name>
 	<description>recheck for web apps.</description>
 	<url>https://retest.de/recheck-web/</url>
 
 	<organization>
-		<name>ReTest GmbH</name>
+		<name>retest @ UBS Hainer GmbH</name>
 		<url>https://retest.de/</url>
 	</organization>
 
 	<developers>
 		<developer>
-			<id>roessler</id>
-			<name>Dr. Jeremias Rößler</name>
-			<email>jeremias.roessler@retest.de</email>
-		</developer>
-		<developer>
-			<id>kraus</id>
-			<name>Daniel Kraus</name>
-			<email>daniel.kraus@retest.de</email>
-		</developer>
-		<developer>
-			<id>vietz</id>
-			<name>Martin Vietz</name>
-			<email>martin.vietz@retest.de</email>
-		</developer>
-		<developer>
-			<id>dillmann</id>
-			<name>Johannes Dillmann</name>
-			<email>johannes.dillmann@retest.de</email>
+			<id>team</id>
+			<name>The retest developers</name>
+			<email>info@retest.de</email>
+			<url>https://github.com/orgs/retest/people</url>
 		</developer>
 	</developers>
+
+	<contributors>
+		<contributor>
+			<name>The contributors</name>
+			<url>https://github.com/retest/${project.artifactId}/graphs/contributors</url>
+		</contributor>
+	</contributors>
 
 	<licenses>
 		<license>
@@ -48,21 +40,16 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<git.repo.host>github.com</git.repo.host>
+		<git.repo.path>retest/${project.artifactId}</git.repo.path>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<junit.jupiter.version>5.6.2</junit.jupiter.version>
-		<mockito.version>3.3.3</mockito.version>
+		<maven.surefire.and.failsafe.version>3.0.0-M5</maven.surefire.and.failsafe.version>
+		<mockito.version>3.10.0</mockito.version>
 		<logback.version>1.2.3</logback.version>
 		<selenium.version>3.141.59</selenium.version>
 	</properties>
-
-	<scm>
-		<url>https://github.com/retest/recheck-web/</url>
-		<connection>scm:git:git@github.com:retest/recheck-web.git</connection>
-		<developerConnection>scm:git:git@github.com:retest/recheck-web.git</developerConnection>
-		<tag>HEAD</tag>
-	</scm>
 
 	<distributionManagement>
 		<snapshotRepository>
@@ -90,13 +77,7 @@
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>recheck</artifactId>
-			<version>4b91d88466d58f544ebdb96447ede6ae8e63e3e6</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.30</version>
+			<version>1.12.0</version>
 		</dependency>
 
 		<!-- transitively loaded via Selenium -->
@@ -104,7 +85,7 @@
 		<dependency>
 			<groupId>net.bytebuddy</groupId>
 			<artifactId>byte-buddy</artifactId>
-			<version>1.10.13</version>
+			<version>1.11.1</version>
 		</dependency>
 
 		<dependency>
@@ -116,60 +97,28 @@
 		<dependency>
 			<groupId>com.assertthat</groupId>
 			<artifactId>selenium-shutterbug</artifactId>
-			<version>0.9</version>
+			<version>1.5</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.yaml</groupId>
 			<artifactId>snakeyaml</artifactId>
-			<version>1.26</version>            
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>3.10</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>29.0-jre</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.aeonbits.owner</groupId>
-			<artifactId>owner</artifactId>
-			<version>1.0.12</version>
+			<version>1.28</version>
 		</dependency>
 
 		<!-- test dependencies -->
 
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>${junit.jupiter.version}</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.junit.vintage</groupId>
-			<artifactId>junit-vintage-engine</artifactId>
-			<version>${junit.jupiter.version}</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-params</artifactId>
-			<version>${junit.jupiter.version}</version>
+			<artifactId>junit-jupiter</artifactId>
+			<version>5.7.2</version>
 			<scope>test</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.assertj</groupId>
 			<artifactId>assertj-core</artifactId>
-			<version>3.16.1</version>
+			<version>3.19.0</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -232,7 +181,7 @@
 		<dependency>
 			<groupId>com.approvaltests</groupId>
 			<artifactId>approvaltests</artifactId>
-			<version>9.1.0</version>
+			<version>11.6.0</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -245,21 +194,22 @@
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
+					<compilerArgument>-Xlint:all</compilerArgument>
 				</configuration>
 			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.22.2</version>
+				<version>${maven.surefire.and.failsafe.version}</version>
 				<configuration>
 					<includes>
+						<!-- overwrite default, prevent run of files matching `Test*.class` -->
 						<include>%regex[.*Test.class]</include>
 					</includes>
 					<properties>
 						<configurationParameters>
 							junit.jupiter.execution.parallel.enabled=true
-							junit.jupiter.execution.parallel.config.dynamic.factor=1
 						</configurationParameters>
 					</properties>
 				</configuration>
@@ -268,7 +218,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-failsafe-plugin</artifactId>
-				<version>2.22.2</version>
+				<version>${maven.surefire.and.failsafe.version}</version>
 				<configuration>
 					<!-- combine Surefire and Failsafe reports for SonarCloud -->
 					<!-- see https://stackoverflow.com/a/15567782 -->
@@ -303,12 +253,23 @@
 			</plugin>
 
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.5.3</version><!--$NO-MVN-MAN-VER$-->
+				<groupId>com.amashchenko.maven.plugin</groupId>
+				<artifactId>gitflow-maven-plugin</artifactId>
+				<version>1.16.0</version>
 				<configuration>
-					<goals>install</goals>
-					<tagNameFormat>v@{project.version}</tagNameFormat>
+					<gitFlowConfig>
+						<productionBranch>main</productionBranch>
+						<releaseBranchPrefix>release/v</releaseBranchPrefix>
+						<hotfixBranchPrefix>hotfix/v</hotfixBranchPrefix>
+						<versionTagPrefix>v</versionTagPrefix>
+					</gitFlowConfig>
+					<commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
+					<skipTestProject>true</skipTestProject>
+					<useSnapshotInHotfix>true</useSnapshotInHotfix>
+					<useSnapshotInRelease>true</useSnapshotInRelease>
+					<versionDigitToIncrement>1</versionDigitToIncrement>
+					<commitMessagePrefix xml:space="preserve">ci: </commitMessagePrefix>
+					<pushRemote>true</pushRemote>
 				</configuration>
 			</plugin>
 
@@ -329,7 +290,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>3.2.0</version>
+				<version>3.3.0</version>
 				<executions>
 					<execution>
 						<id>bundle-javadoc</id>
@@ -375,6 +336,27 @@
 			</plugin>
 
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>3.0.0-M3</version>
+				<executions>
+					<execution>
+						<id>enforce-maven</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireMavenVersion>
+									<version>3.4</version>
+								</requireMavenVersion>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
 				<version>1.6.8</version>
@@ -396,11 +378,12 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.6</version>
+						<version>3.0.1</version>
 						<configuration>
 							<skip>${gpg.skip}</skip>
 							<passphrase>${env.GPG_PASSPHRASE}</passphrase>
 							<gpgArguments>
+								<!-- This is necessary for gpg to not try to use the pinentry programs -->
 								<arg>--pinentry-mode</arg>
 								<arg>loopback</arg>
 							</gpgArguments>
@@ -425,7 +408,7 @@
 					<plugin>
 						<groupId>org.jacoco</groupId>
 						<artifactId>jacoco-maven-plugin</artifactId>
-						<version>0.8.5</version>
+						<version>0.8.7</version>
 						<executions>
 							<execution>
 								<id>prepare-agent</id>
@@ -445,4 +428,11 @@
 			</build>
 		</profile>
 	</profiles>
+
+	<scm>
+		<connection>scm:git:https://${git.repo.host}/${git.repo.path}.git</connection>
+		<developerConnection>scm:git:ssh://git@${git.repo.host}/${git.repo.path}.git</developerConnection>
+		<url>https://${git.repo.host}/${git.repo.path}/</url>
+		<tag>HEAD</tag>
+	</scm>
 </project>

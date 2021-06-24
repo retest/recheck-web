@@ -1,0 +1,68 @@
+name: Build project
+
+on: [push, pull_request]
+
+
+env:
+  MVN_ARGS: --batch-mode --errors --fail-fast --no-transfer-progress
+  HAS_SONAR_TOKEN: ${{ secrets.SONAR_TOKEN != '' }}
+
+
+jobs:
+  default:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Fetch unshallow to enable blame for Sonar
+        run: git fetch --prune --unshallow
+
+      - uses: actions/setup-java@v1
+        with:
+          java-version: 8
+
+      - name: Cache local Maven repository
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-maven-
+
+      - name: Cache Sonar
+        uses: actions/cache@v1
+        with:
+          path: ~/.sonar/cache/
+          key: ${{ runner.os }}-sonar
+
+      - name: Compile
+        run: mvn ${MVN_ARGS} clean package -DskipTests
+
+      - uses: actions/setup-java@v1
+        with:
+          java-version: 15
+
+      - name: Test with SonarCloud
+        id: test-with-sonar
+        if: ${{ env.HAS_SONAR_TOKEN == 'true' }}
+        run: >
+          mvn ${MVN_ARGS} verify sonar:sonar -Pcoverage
+          -Dsonar.host.url=https://sonarcloud.io
+          -Dsonar.organization=retest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+      - name: Test without SonarCloud
+        id: test-without-sonar
+        if: ${{ steps.test-with-sonar.conclusion == 'skipped' }}
+        run: mvn ${MVN_ARGS} verify
+
+      - name: Archive recheck tests.report
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: tests.report
+          path: target/test-classes/retest/recheck/tests.report
+          retention-days: 10

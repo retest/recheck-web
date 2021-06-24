@@ -5767,12 +5767,28 @@
 									<value xsi:type="xsd:string">document.getElementById('fileResults').innerHTML = 'changed';</value>
 								</entry>
 								<entry>
+									<key>overflow-x</key>
+									<value xsi:type="xsd:string">hidden</value>
+								</entry>
+								<entry>
+									<key>overflow-y</key>
+									<value xsi:type="xsd:string">hidden</value>
+								</entry>
+								<entry>
 									<key>shown</key>
 									<value xsi:type="xsd:string">true</value>
 								</entry>
 								<entry>
+									<key>text-overflow</key>
+									<value xsi:type="xsd:string">ellipsis</value>
+								</entry>
+								<entry>
 									<key>type</key>
 									<value xsi:type="xsd:string">file</value>
+								</entry>
+								<entry>
+									<key>white-space</key>
+									<value xsi:type="xsd:string">pre</value>
 								</entry>
 							</attributes>
 						</attributes>
@@ -7884,10 +7900,6 @@
 							<entry>
 								<key>outline-color</key>
 								<value xsi:type="xsd:string">rgb(229, 151, 0)</value>
-							</entry>
-							<entry>
-								<key>outline-offset</key>
-								<value xsi:type="xsd:string">-2px</value>
 							</entry>
 							<entry>
 								<key>outline-width</key>

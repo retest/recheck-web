@@ -1,5 +1,7 @@
 package de.retest.web.selenium;
 
+import static org.assertj.core.api.Assertions.assertThatCode;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
@@ -8,6 +10,7 @@ import static org.mockito.Mockito.verify;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Locatable;
 
 class AutocheckingWebElementTest {
 
@@ -94,4 +97,28 @@ class AutocheckingWebElementTest {
 		autoCheckElement.isSelected();
 		verify( delegate, times( 1 ) ).isSelected();
 	}
+
+	@Test
+	void getCoordinate_should_call_wrapped_if_instance_of_locatable() {
+		final LocatableElement delegate = mock( LocatableElement.class ); // Is instanceof Locatable
+		final AutocheckingWebElement cut =
+				AutocheckingWebElement.of( delegate, mock( AutocheckingRecheckDriver.class ) );
+
+		assertThatCode( cut::getCoordinates ).doesNotThrowAnyException();
+
+		verify( delegate ).getCoordinates();
+	}
+
+	@Test
+	void getCoordinate_should_throw_if_not_instance_of_locatable() {
+		final WebElement delegate = mock( WebElement.class );
+		final AutocheckingWebElement cut =
+				AutocheckingWebElement.of( delegate, mock( AutocheckingRecheckDriver.class ) );
+
+		assertThatThrownBy( cut::getCoordinates ) //
+				.isInstanceOf( IllegalStateException.class ) //
+				.hasMessage( String.format( "Element is not instance of %s.", Locatable.class.getSimpleName() ) );
+	}
+
+	interface LocatableElement extends WebElement, Locatable {}
 }

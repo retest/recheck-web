@@ -1,0 +1,33 @@
+h1::before {
+  content: "This is a changed invisible text using a before pseudo element!";
+  color: orange;
+  background-color: blue;
+}
+
+h1::after {
+  content: "This is a changed invisible text using an after pseudo element!";
+  color: orange;
+  background-color: blue;
+}
+
+h1 {
+  color: blue;
+  background-color: orange;
+}
+
+h1#hidden {
+
+}
+
+li::marker {
+	content: "changed marker > ";
+	color: cyan;
+}
+
+p::first-line {
+	color: #def;
+}
+
+p::first-letter {
+	color: #efd;
+}

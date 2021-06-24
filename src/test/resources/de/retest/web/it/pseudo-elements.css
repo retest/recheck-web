@@ -1,0 +1,33 @@
+h1::before {
+  content: "This is an invisible text before!";
+  color: red;
+  background-color: green;
+}
+
+h1::after {
+  content: "This is an invisible text after!";
+  color: red;
+  background-color: green;
+}
+
+h1 {
+  color: green;
+  background-color: red;
+}
+
+h1#hidden {
+    display: none;
+}
+
+li::marker {
+	content: "marker > ";
+	color: purple;
+}
+
+p::first-line {
+	color: #abc;
+}
+
+p::first-letter {
+	color: #bca;
+}

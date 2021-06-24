@@ -21,6 +21,7 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 	private RecheckWebImpl re;
 	private final RecheckOptions options;
 	private final AutocheckingCheckNamingStrategy checkNamingStrategy;
+	private final long autocheckingDelayMillis;
 
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped ) {
 		this( wrapped, RecheckWebOptions.builder().build() );
@@ -30,16 +31,19 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 	 * @param wrapped
 	 *            The {@link RemoteWebDriver} to wrap.
 	 * @param options
-	 *            The {@link RecheckOptions} to use.
+	 *            The {@link RecheckOptions} or {@link RecheckWebOptions} to use.
 	 */
 	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckOptions options ) {
 		super( wrapped );
 		this.options = options;
-		checkNamingStrategy = RecheckWebOptions.builder().build().getCheckNamingStrategy();
+		final RecheckWebOptions webOptions = options instanceof RecheckWebOptions ? (RecheckWebOptions) options
+				: RecheckWebOptions.builder().build();
+		checkNamingStrategy = webOptions.getCheckNamingStrategy();
+		autocheckingDelayMillis = webOptions.getAutocheckingDelayMillis();
 	}
 
 	/**
-	 * @deprecated use {@link #AutocheckingRecheckDriver(RemoteWebDriver, RecheckWebOptions)} instead.
+	 * @deprecated use {@link #AutocheckingRecheckDriver(RemoteWebDriver, RecheckOptions)} instead.
 	 *
 	 * @param wrapped
 	 *            The {@link RemoteWebDriver} to wrap.
@@ -54,12 +58,7 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 		super( wrapped );
 		this.options = options;
 		this.checkNamingStrategy = checkNamingStrategy;
-	}
-
-	public AutocheckingRecheckDriver( final RemoteWebDriver wrapped, final RecheckWebOptions options ) {
-		super( wrapped );
-		this.options = options;
-		checkNamingStrategy = options.getCheckNamingStrategy();
+		autocheckingDelayMillis = RecheckWebOptions.builder().build().getAutocheckingDelayMillis();
 	}
 
 	@Override
@@ -137,14 +136,27 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 		if ( re == null ) {
 			startTest();
 		}
+		waitAutocheckingDelay();
 		re.check( ImplicitDriverWrapper.of( this ), checkNamingStrategy.getUniqueCheckName( action, target, params ) );
 	}
 
-	void check( final String action ) {
+	public void check( final String action ) {
 		if ( re == null ) {
 			startTest();
 		}
+		waitAutocheckingDelay();
 		re.check( ImplicitDriverWrapper.of( this ), checkNamingStrategy.getUniqueCheckName( action ) );
+	}
+
+	void waitAutocheckingDelay() {
+		if ( autocheckingDelayMillis > 0 ) {
+			try {
+				Thread.sleep( autocheckingDelayMillis );
+			} catch ( final InterruptedException e ) {
+				// ignore
+				Thread.currentThread().interrupt();
+			}
+		}
 	}
 
 	@Override

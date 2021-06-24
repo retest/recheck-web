@@ -148,6 +148,11 @@ public class WebData {
 		return true;
 	}
 
+	public boolean isPseudo() {
+		final Boolean pseudo = (Boolean) wrappedData.get( "pseudo" );
+		return pseudo != null && pseudo;
+	}
+
 	public String getTag() {
 		return getAsString( AttributesUtil.TAG_NAME );
 	}

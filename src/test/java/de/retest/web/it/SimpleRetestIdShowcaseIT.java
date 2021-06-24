@@ -3,6 +3,8 @@ package de.retest.web.it;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import org.apache.commons.io.FileUtils;
+import org.assertj.core.api.Assertions;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -55,8 +57,15 @@ public class SimpleRetestIdShowcaseIT {
 
 		driver.findElement( By.retestId( "contact" ) ).click();
 
-		// Usually, we conclude the test case, but since we expect differences, this will fail.
-		// re.capTest();
+		// Works even if the GM is not yet created, if retestId is deterministic
+		re.check( driver, "new_state" );
+		driver.findElement( By.retestId( "for_testers" ) ).click();
+
+		// Usually, we conclude the test case with re.capTest(),
+		// but since we expect differences, we check these.
+		Assertions.assertThatThrownBy( () -> re.capTest() ).hasMessageContainingAll( //
+				"text: expected=\"Contact\", actual=\"Support\"", //
+				"No Golden Master found. First time test was run?" );
 	}
 
 	@After
@@ -65,6 +74,10 @@ public class SimpleRetestIdShowcaseIT {
 
 		// Produce the result file.
 		//		re.cap();
+
+		// Not standard! Ensure we delete the GM that was created
+		FileUtils.deleteQuietly( Paths.get( "src/test/resources/retest/recheck",
+				"de.retest.web.it.SimpleRetestIdShowcaseIT", "simple-showcase.new_state.recheck" ).toFile() );
 	}
 
 }

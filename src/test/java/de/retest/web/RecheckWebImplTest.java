@@ -10,7 +10,6 @@ import static org.mockito.Mockito.when;
 import java.nio.file.Path;
 import java.util.Collections;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
@@ -46,11 +45,6 @@ class RecheckWebImplTest {
 		when( adapter.convert( any() ) ).thenReturn( Collections.singleton( rootElement ) );
 	}
 
-	@AfterEach
-	void tearDown() {
-		re.cap();
-	}
-
 	@Test
 	void check_should_properly_extract_unbreakable_driver() throws Exception {
 		re.startTest();
@@ -58,8 +52,7 @@ class RecheckWebImplTest {
 		re.check( mock( UnbreakableDriver.class ), adapter, "unbreakable" );
 
 		assertThat( re.getDriver() ).isNotNull();
-
-		capTestSilently();
+		assertThatThrownBy( () -> re.capTest() ).isInstanceOf( AssertionError.class );
 	}
 
 	@Test
@@ -74,8 +67,7 @@ class RecheckWebImplTest {
 						"Must first call a check-method with an UnbreakableDriver before being able to load a Golden Master (needed for unbreakable tests)!" );
 
 		assertThat( re.getDriver() ).isNull();
-
-		capTestSilently();
+		re.capTest();
 	}
 
 	@Test
@@ -89,8 +81,7 @@ class RecheckWebImplTest {
 		re.check( wrapper, adapter, "unbreakable" );
 
 		assertThat( re.getDriver() ).isNotNull();
-
-		capTestSilently();
+		assertThatThrownBy( () -> re.capTest() ).isInstanceOf( AssertionError.class );
 	}
 
 	@Test
@@ -109,8 +100,7 @@ class RecheckWebImplTest {
 						"Must first call a check-method with an UnbreakableDriver before being able to load a Golden Master (needed for unbreakable tests)!" );
 
 		assertThat( re.getDriver() ).isNull();
-
-		capTestSilently();
+		re.capTest();
 	}
 
 	@Test
@@ -125,8 +115,7 @@ class RecheckWebImplTest {
 		re.check( element, adapter, "element_should_not_throw_exception" );
 
 		assertThat( re.getDriver() ).isEqualTo( driver );
-
-		capTestSilently();
+		assertThatThrownBy( () -> re.capTest() ).isInstanceOf( AssertionError.class );
 	}
 
 	@Test
@@ -144,8 +133,7 @@ class RecheckWebImplTest {
 		re.check( element, adapter, "element_should_not_throw_exception" );
 
 		assertThat( re.getDriver() ).isEqualTo( wrapped );
-
-		capTestSilently();
+		assertThatThrownBy( () -> re.capTest() ).isInstanceOf( AssertionError.class );
 	}
 
 	@Test
@@ -163,16 +151,7 @@ class RecheckWebImplTest {
 		re.check( element, adapter, "element_should_not_throw_exception" );
 
 		assertThat( re.getDriver() ).isEqualTo( wrapped );
-
-		capTestSilently();
-	}
-
-	private void capTestSilently() {
-		try {
-			re.capTest();
-		} catch ( final AssertionError e ) {
-			// expected
-		}
+		assertThatThrownBy( () -> re.capTest() ).isInstanceOf( AssertionError.class );
 	}
 
 	interface WrappingDriver extends WebDriver, WrapsDriver {}

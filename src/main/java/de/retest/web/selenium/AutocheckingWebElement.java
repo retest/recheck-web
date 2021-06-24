@@ -12,13 +12,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WrapsDriver;
+import org.openqa.selenium.interactions.Coordinates;
+import org.openqa.selenium.interactions.Locatable;
 import org.openqa.selenium.internal.WrapsElement;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor( access = AccessLevel.PRIVATE )
-public class AutocheckingWebElement implements WebElement, WrapsDriver, WrapsElement {
+public class AutocheckingWebElement implements WebElement, WrapsDriver, WrapsElement, Locatable {
 
 	private final WebElement wrappedElement;
 	private final AutocheckingRecheckDriver driver;
@@ -157,5 +159,14 @@ public class AutocheckingWebElement implements WebElement, WrapsDriver, WrapsEle
 	@Override
 	public String toString() {
 		return wrappedElement.toString();
+	}
+
+	@Override
+	public Coordinates getCoordinates() {
+		if ( wrappedElement instanceof Locatable ) {
+			return ((Locatable) wrappedElement).getCoordinates();
+		}
+		throw new IllegalStateException(
+				String.format( "Element is not instance of %s.", Locatable.class.getSimpleName() ) );
 	}
 }
