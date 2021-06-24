@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.12.0-alpha.2021-06-04" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="" title="">
 			<identifyingAttributes>
@@ -92,7 +92,7 @@
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-							<attribute key="text" xsi:type="textAttribute">x = 666.3333129882812, y = 336.5</attribute>
+							<attribute key="text" xsi:type="textAttribute">x = 666.3333129882812, y = 331</attribute>
 							<attribute key="type" xsi:type="stringAttribute">div</attribute>
 						</attributes>
 					</identifyingAttributes>
@@ -136,7 +136,7 @@
 							</entry>
 							<entry>
 								<key>bottom</key>
-								<value xsi:type="xsd:string">307px</value>
+								<value xsi:type="xsd:string">301.5px</value>
 							</entry>
 							<entry>
 								<key>left</key>
@@ -156,7 +156,7 @@
 							</entry>
 							<entry>
 								<key>top</key>
-								<value xsi:type="xsd:string">347px</value>
+								<value xsi:type="xsd:string">341.5px</value>
 							</entry>
 							<entry>
 								<key>transform</key>
@@ -181,7 +181,7 @@
 								</attribute>
 								<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]/textnode[1]</attribute>
 								<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
-								<attribute key="text" xsi:type="textAttribute">x = 666.3333129882812, y = 336.5</attribute>
+								<attribute key="text" xsi:type="textAttribute">x = 666.3333129882812, y = 331</attribute>
 								<attribute key="type" xsi:type="stringAttribute">textnode</attribute>
 							</attributes>
 						</identifyingAttributes>
