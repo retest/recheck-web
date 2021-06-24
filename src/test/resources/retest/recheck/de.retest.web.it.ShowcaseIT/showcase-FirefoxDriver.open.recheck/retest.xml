@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.12.0-alpha.2021-06-04" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="retest - Java Swing GUI Testing" title="retest - Java Swing GUI Testing">
 			<identifyingAttributes>
@@ -6047,7 +6047,7 @@
 							<attributes>
 								<entry>
 									<key>bottom</key>
-									<value xsi:type="xsd:string">588px</value>
+									<value xsi:type="xsd:string">577px</value>
 								</entry>
 								<entry>
 									<key>covered</key>
@@ -8310,6 +8310,10 @@
 																	<entry>
 																		<key>column-rule-color</key>
 																		<value xsi:type="xsd:string">rgb(255, 255, 255)</value>
+																	</entry>
+																	<entry>
+																		<key>font-weight</key>
+																		<value xsi:type="xsd:string">600</value>
 																	</entry>
 																	<entry>
 																		<key>margin-bottom</key>
