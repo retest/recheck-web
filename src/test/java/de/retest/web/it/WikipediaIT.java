@@ -41,7 +41,7 @@ class WikipediaIT {
 
 	@AfterEach
 	void tearDown() throws Exception {
-		driver.close();
+		driver.quit();
 	}
 
 }
