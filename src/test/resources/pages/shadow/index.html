@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Shadow DOM</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+	<rt-layout title="Shadow Dom Example">
+		<button id="change" class="btn btn-primary" slot="context">Change</button>
+		<rt-card-deck slot="main">
+			<rt-card id="card-1" header="Card 1" footer="First">
+				<div slot="body">
+					<button class="btn btn-success">Hello World</button>
+				</div>
+			</rt-card>
+			<rt-card id="card-2" header="Card 2">
+				<div slot="body">
+					<button class="btn btn-warning">Hello World</button>
+				</div>
+			</rt-card>
+			<rt-card id="card-3" header="Card 3" footer="Last">
+				<div slot="body">
+					<button class="btn btn-danger">Hello World</button>
+				</div>
+			</rt-card>
+		</rt-card-deck>
+		<rt-copyright id="copyright" company="retest" year="2020" slot="footer"></rt-copyright>
+	</rt-layout>
+
+	<script src="assets/js/index.js"></script>
+</body>
+
+</html>
