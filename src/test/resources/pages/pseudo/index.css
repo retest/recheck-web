@@ -1,0 +1,31 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header, .main {
+	padding: 1em;
+}
+
+.group > .description {
+	font-size: 80%;
+	color: gray;
+	margin-top: 0.25em;
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	background-color: lightgray;
+	z-index: 100;
+}
+
+#link-without-pseudo:pressed {
+	outline-color: red;
+}
+
+.main[data-state=changed] #link-without-pseudo {
+	text-decoration: none;
+	color: lime;
+}
