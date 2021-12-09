@@ -48,7 +48,7 @@
 		<maven.surefire.and.failsafe.version>3.0.0-M5</maven.surefire.and.failsafe.version>
 		<mockito.version>3.11.2</mockito.version>
 		<logback.version>1.2.5</logback.version>
-		<selenium.version>3.141.59</selenium.version>
+		<selenium.version>4.1.0</selenium.version>
 	</properties>
 
 	<distributionManagement>
