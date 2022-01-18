@@ -1,10 +1,14 @@
-pull_request_rules:
-  - name: "rebase unreviewed non-release PRs"
+queue_rules:
+  - name: default
     conditions:
-      - "head~=^(?!(release|hotfix)).*$"
-      - "#approved-reviews-by=0"
+      - "#approved-reviews-by>=1"
       - "#changes-requested-reviews-by=0"
       - "-draft"
+
+pull_request_rules:
+  - name: "rebase non-release PRs"
+    conditions:
+      - "head~=^(?!(release|hotfix)).*$"
     actions:
       rebase:
 
@@ -13,37 +17,38 @@ pull_request_rules:
       - "head~=^(?!(release|hotfix)).*$"
       - "#approved-reviews-by>=1"
       - "#changes-requested-reviews-by=0"
+      - "#commits-behind=0"
       - "-draft"
       - "check-success=SonarCloud Code Analysis"
     actions:
-      merge:
-        strict: true
-        strict_method: rebase
-        method: merge
+      queue:
+        name: default
+        update_method: rebase
 
   - name: "merge non-release without-SonarCloud-but-from-dependabot PRs with strict rebase"
     conditions:
       - "head~=^(?!(release|hotfix)).*$"
       - "#approved-reviews-by>=1"
       - "#changes-requested-reviews-by=0"
+      - "#commits-behind=0"
       - "-draft"
       - "author=dependabot[bot]"
     actions:
-      merge:
-        strict: true
-        strict_method: rebase
-        method: merge
+      queue:
+        name: default
+        update_method: rebase
 
   - name: "merge release PRs with strict merge"
     conditions:
       - "head~=^(release|hotfix).*$"
       - "#approved-reviews-by>=1"
       - "#changes-requested-reviews-by=0"
+      - "#commits-behind=0"
       - "-draft"
     actions:
-      merge:
-        strict: true
-        method: merge
+      queue:
+        name: default
+        update_method: rebase
 
   - name: "delete PR branches after merge"
     conditions:
