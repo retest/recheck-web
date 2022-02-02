@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import lombok.RequiredArgsConstructor;
+import org.openqa.selenium.WindowType;
 
 @RequiredArgsConstructor
 public class AutocheckingTargetLocator implements WebDriver.TargetLocator {
@@ -37,6 +38,11 @@ public class AutocheckingTargetLocator implements WebDriver.TargetLocator {
 		final WebDriver driver = delegate.window( nameOrHandle );
 		this.driver.check( "switch-window" );
 		return driver;
+	}
+
+	@Override
+	public WebDriver newWindow(WindowType typeHint) {
+		throw new RuntimeException( "Not yet implemented." );
 	}
 
 	@Override

@@ -20,14 +20,7 @@ import org.openqa.selenium.interactions.Interactive;
 import org.openqa.selenium.interactions.Keyboard;
 import org.openqa.selenium.interactions.Mouse;
 import org.openqa.selenium.interactions.Sequence;
-import org.openqa.selenium.internal.FindsByClassName;
-import org.openqa.selenium.internal.FindsByCssSelector;
-import org.openqa.selenium.internal.FindsById;
-import org.openqa.selenium.internal.FindsByLinkText;
-import org.openqa.selenium.internal.FindsByName;
-import org.openqa.selenium.internal.FindsByTagName;
-import org.openqa.selenium.internal.FindsByXPath;
-import org.openqa.selenium.internal.WrapsDriver;
+import org.openqa.selenium.WrapsDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import de.retest.recheck.ui.descriptors.Element;
@@ -45,8 +38,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsById, FindsByClassName, FindsByLinkText,
-		FindsByName, FindsByCssSelector, FindsByTagName, FindsByXPath, HasInputDevices, HasCapabilities, Interactive,
+public class UnbreakableDriver implements WebDriver, JavascriptExecutor, HasInputDevices, HasCapabilities, Interactive,
 		TakesScreenshot, WrapsDriver {
 
 	private final RemoteWebDriver wrappedDriver;
@@ -105,84 +97,68 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 		return wrap( wrappedDriver.findElements( by ) );
 	}
 
-	@Override
 	public WebElement findElementById( final String using ) {
-		return wrap( wrappedDriver.findElementById( using ) );
+		return wrap( wrappedDriver.findElement( By.id( using ) ) );
 	}
 
-	@Override
 	public List<WebElement> findElementsById( final String using ) {
-		return wrap( wrappedDriver.findElementsById( using ) );
+		return wrap( wrappedDriver.findElements( By.id( using ) ) );
 	}
 
-	@Override
 	public WebElement findElementByClassName( final String using ) {
-		return wrap( wrappedDriver.findElementByClassName( using ) );
+		return wrap( wrappedDriver.findElement( By.className( using ) ) );
 	}
 
-	@Override
 	public List<WebElement> findElementsByClassName( final String using ) {
-		return wrap( wrappedDriver.findElementsByClassName( using ) );
+		return wrap( wrappedDriver.findElements( By.className( using ) ) );
 	}
 
-	@Override
 	public WebElement findElementByLinkText( final String using ) {
-		return wrap( wrappedDriver.findElementByLinkText( using ) );
+		return wrap( wrappedDriver.findElement( By.linkText( using ) ) );
 	}
 
-	@Override
 	public List<WebElement> findElementsByLinkText( final String using ) {
-		return wrap( wrappedDriver.findElementsByLinkText( using ) );
+		return wrap( wrappedDriver.findElements( By.linkText( using ) ) );
 	}
 
-	@Override
 	public WebElement findElementByPartialLinkText( final String using ) {
-		return wrap( wrappedDriver.findElementByPartialLinkText( using ) );
+		return wrap( wrappedDriver.findElement( By.partialLinkText( using ) ) );
 	}
 
-	@Override
 	public List<WebElement> findElementsByPartialLinkText( final String using ) {
-		return wrap( wrappedDriver.findElementsByPartialLinkText( using ) );
+		return wrap( wrappedDriver.findElements( By.partialLinkText( using ) ) );
 	}
 
-	@Override
 	public WebElement findElementByName( final String using ) {
-		return wrap( wrappedDriver.findElementByName( using ) );
+		return wrap( wrappedDriver.findElement( By.name( using ) ) );
 	}
 
-	@Override
 	public List<WebElement> findElementsByName( final String using ) {
-		return wrap( wrappedDriver.findElementsByName( using ) );
+		return wrap( wrappedDriver.findElements( By.name( using ) ) );
 	}
 
-	@Override
 	public WebElement findElementByCssSelector( final String using ) {
-		return wrap( wrappedDriver.findElementByCssSelector( using ) );
+		return wrap( wrappedDriver.findElement( By.cssSelector( using ) ) );
 	}
 
-	@Override
 	public List<WebElement> findElementsByCssSelector( final String using ) {
-		return wrap( wrappedDriver.findElementsByCssSelector( using ) );
+		return wrap( wrappedDriver.findElements( By.cssSelector( using ) ) );
 	}
 
-	@Override
 	public WebElement findElementByTagName( final String using ) {
-		return wrap( wrappedDriver.findElementByTagName( using ) );
+		return wrap( wrappedDriver.findElement( By.tagName( using ) ) );
 	}
 
-	@Override
 	public List<WebElement> findElementsByTagName( final String using ) {
-		return wrap( wrappedDriver.findElementsByTagName( using ) );
+		return wrap( wrappedDriver.findElements( By.tagName( using ) ) );
 	}
 
-	@Override
 	public WebElement findElementByXPath( final String using ) {
-		return wrap( wrappedDriver.findElementByXPath( using ) );
+		return wrap( wrappedDriver.findElement( By.xpath( using ) ) );
 	}
 
-	@Override
 	public List<WebElement> findElementsByXPath( final String using ) {
-		return wrap( wrappedDriver.findElementsByXPath( using ) );
+		return wrap( wrappedDriver.findElements( By.xpath( using ) ) );
 	}
 
 	@Override
@@ -280,7 +256,6 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 		wrappedDriver.resetInputState();
 	}
 
-	@Override
 	public WebDriver getWrappedDriver() {
 		if ( SeleniumWrapperUtil.isWrapper( WrapperOf.DRIVER, wrappedDriver ) ) {
 			return (WebDriver) SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, wrappedDriver );

@@ -156,5 +156,5 @@ class RecheckWebImplTest {
 
 	interface WrappingDriver extends WebDriver, WrapsDriver {}
 
-	interface LegacyWrappingDriver extends WebDriver, org.openqa.selenium.internal.WrapsDriver {}
+	interface LegacyWrappingDriver extends WebDriver, org.openqa.selenium.WrapsDriver {}
 }

@@ -16,7 +16,7 @@ class UnbreakableDriverTest {
 		final RemoteWebDriver inner = mock( RemoteWebDriver.class );
 
 		final RemoteWebDriver oldOuter = mock( RemoteWebDriver.class,
-				withSettings().extraInterfaces( org.openqa.selenium.internal.WrapsDriver.class ) );
+				withSettings().extraInterfaces( org.openqa.selenium.WrapsDriver.class ) );
 		when( ((WrapsDriver) oldOuter).getWrappedDriver() ).thenReturn( inner );
 
 		final RemoteWebDriver newOuter =
