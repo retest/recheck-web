@@ -97,66 +97,82 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, HasInpu
 		return wrap( wrappedDriver.findElements( by ) );
 	}
 
+	@Deprecated
 	public WebElement findElementById( final String using ) {
 		return wrap( wrappedDriver.findElement( By.id( using ) ) );
 	}
 
+	@Deprecated
 	public List<WebElement> findElementsById( final String using ) {
 		return wrap( wrappedDriver.findElements( By.id( using ) ) );
 	}
 
+	@Deprecated
 	public WebElement findElementByClassName( final String using ) {
 		return wrap( wrappedDriver.findElement( By.className( using ) ) );
 	}
 
+	@Deprecated
 	public List<WebElement> findElementsByClassName( final String using ) {
 		return wrap( wrappedDriver.findElements( By.className( using ) ) );
 	}
 
+	@Deprecated
 	public WebElement findElementByLinkText( final String using ) {
 		return wrap( wrappedDriver.findElement( By.linkText( using ) ) );
 	}
 
+	@Deprecated
 	public List<WebElement> findElementsByLinkText( final String using ) {
 		return wrap( wrappedDriver.findElements( By.linkText( using ) ) );
 	}
 
+	@Deprecated
 	public WebElement findElementByPartialLinkText( final String using ) {
 		return wrap( wrappedDriver.findElement( By.partialLinkText( using ) ) );
 	}
 
+	@Deprecated
 	public List<WebElement> findElementsByPartialLinkText( final String using ) {
 		return wrap( wrappedDriver.findElements( By.partialLinkText( using ) ) );
 	}
 
+	@Deprecated
 	public WebElement findElementByName( final String using ) {
 		return wrap( wrappedDriver.findElement( By.name( using ) ) );
 	}
 
+	@Deprecated
 	public List<WebElement> findElementsByName( final String using ) {
 		return wrap( wrappedDriver.findElements( By.name( using ) ) );
 	}
 
+	@Deprecated
 	public WebElement findElementByCssSelector( final String using ) {
 		return wrap( wrappedDriver.findElement( By.cssSelector( using ) ) );
 	}
 
+	@Deprecated
 	public List<WebElement> findElementsByCssSelector( final String using ) {
 		return wrap( wrappedDriver.findElements( By.cssSelector( using ) ) );
 	}
 
+	@Deprecated
 	public WebElement findElementByTagName( final String using ) {
 		return wrap( wrappedDriver.findElement( By.tagName( using ) ) );
 	}
 
+	@Deprecated
 	public List<WebElement> findElementsByTagName( final String using ) {
 		return wrap( wrappedDriver.findElements( By.tagName( using ) ) );
 	}
 
+	@Deprecated
 	public WebElement findElementByXPath( final String using ) {
 		return wrap( wrappedDriver.findElement( By.xpath( using ) ) );
 	}
 
+	@Deprecated
 	public List<WebElement> findElementsByXPath( final String using ) {
 		return wrap( wrappedDriver.findElements( By.xpath( using ) ) );
 	}
