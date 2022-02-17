@@ -42,7 +42,7 @@ public class AutocheckingTargetLocator implements WebDriver.TargetLocator {
 
 	@Override
 	public WebDriver newWindow(WindowType typeHint) {
-		throw new RuntimeException( "Not yet implemented." );
+		return delegate.newWindow(typeHint);
 	}
 
 	@Override
