@@ -1,28 +1,5 @@
 package de.retest.web.selenium;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
-import java.util.function.Consumer;
-import java.util.stream.Collectors;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.HasCapabilities;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.HasInputDevices;
-import org.openqa.selenium.interactions.Interactive;
-import org.openqa.selenium.interactions.Keyboard;
-import org.openqa.selenium.interactions.Mouse;
-import org.openqa.selenium.interactions.Sequence;
-import org.openqa.selenium.WrapsDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.web.RecheckWebImpl;
@@ -30,6 +7,20 @@ import de.retest.web.util.SeleniumWrapperUtil;
 import de.retest.web.util.SeleniumWrapperUtil.WrapperOf;
 import lombok.Getter;
 import lombok.Setter;
+import org.openqa.selenium.By;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.*;
+import org.openqa.selenium.print.PrintOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.virtualauthenticator.HasVirtualAuthenticator;
+import org.openqa.selenium.virtualauthenticator.VirtualAuthenticator;
+import org.openqa.selenium.virtualauthenticator.VirtualAuthenticatorOptions;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
+import java.util.function.Consumer;
+import java.util.stream.Collectors;
 
 /**
  * A wrapper for a given {@code RemoteWebDriver}, which can be used with e.g. {@code ChromeDriver}, {@code GeckoDriver},
@@ -38,8 +29,8 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class UnbreakableDriver implements WebDriver, JavascriptExecutor, HasInputDevices, HasCapabilities, Interactive,
-		TakesScreenshot, WrapsDriver {
+public class UnbreakableDriver implements WebDriver, JavascriptExecutor, HasInputDevices, HasCapabilities,
+		HasVirtualAuthenticator, Interactive, PrintsPage, TakesScreenshot, WrapsDriver {
 
 	private final RemoteWebDriver wrappedDriver;
 	private RootElement lastExpectedState;
@@ -95,86 +86,6 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, HasInpu
 	@Override
 	public List<WebElement> findElements( final By by ) {
 		return wrap( wrappedDriver.findElements( by ) );
-	}
-
-	@Deprecated
-	public WebElement findElementById( final String using ) {
-		return wrap( wrappedDriver.findElement( By.id( using ) ) );
-	}
-
-	@Deprecated
-	public List<WebElement> findElementsById( final String using ) {
-		return wrap( wrappedDriver.findElements( By.id( using ) ) );
-	}
-
-	@Deprecated
-	public WebElement findElementByClassName( final String using ) {
-		return wrap( wrappedDriver.findElement( By.className( using ) ) );
-	}
-
-	@Deprecated
-	public List<WebElement> findElementsByClassName( final String using ) {
-		return wrap( wrappedDriver.findElements( By.className( using ) ) );
-	}
-
-	@Deprecated
-	public WebElement findElementByLinkText( final String using ) {
-		return wrap( wrappedDriver.findElement( By.linkText( using ) ) );
-	}
-
-	@Deprecated
-	public List<WebElement> findElementsByLinkText( final String using ) {
-		return wrap( wrappedDriver.findElements( By.linkText( using ) ) );
-	}
-
-	@Deprecated
-	public WebElement findElementByPartialLinkText( final String using ) {
-		return wrap( wrappedDriver.findElement( By.partialLinkText( using ) ) );
-	}
-
-	@Deprecated
-	public List<WebElement> findElementsByPartialLinkText( final String using ) {
-		return wrap( wrappedDriver.findElements( By.partialLinkText( using ) ) );
-	}
-
-	@Deprecated
-	public WebElement findElementByName( final String using ) {
-		return wrap( wrappedDriver.findElement( By.name( using ) ) );
-	}
-
-	@Deprecated
-	public List<WebElement> findElementsByName( final String using ) {
-		return wrap( wrappedDriver.findElements( By.name( using ) ) );
-	}
-
-	@Deprecated
-	public WebElement findElementByCssSelector( final String using ) {
-		return wrap( wrappedDriver.findElement( By.cssSelector( using ) ) );
-	}
-
-	@Deprecated
-	public List<WebElement> findElementsByCssSelector( final String using ) {
-		return wrap( wrappedDriver.findElements( By.cssSelector( using ) ) );
-	}
-
-	@Deprecated
-	public WebElement findElementByTagName( final String using ) {
-		return wrap( wrappedDriver.findElement( By.tagName( using ) ) );
-	}
-
-	@Deprecated
-	public List<WebElement> findElementsByTagName( final String using ) {
-		return wrap( wrappedDriver.findElements( By.tagName( using ) ) );
-	}
-
-	@Deprecated
-	public WebElement findElementByXPath( final String using ) {
-		return wrap( wrappedDriver.findElement( By.xpath( using ) ) );
-	}
-
-	@Deprecated
-	public List<WebElement> findElementsByXPath( final String using ) {
-		return wrap( wrappedDriver.findElements( By.xpath( using ) ) );
 	}
 
 	@Override
@@ -270,6 +181,21 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, HasInpu
 	@Override
 	public void resetInputState() {
 		wrappedDriver.resetInputState();
+	}
+
+	@Override
+	public Pdf print(PrintOptions printOptions) throws WebDriverException {
+		return wrappedDriver.print(printOptions);
+	}
+
+	@Override
+	public VirtualAuthenticator addVirtualAuthenticator(VirtualAuthenticatorOptions options) {
+		return wrappedDriver.addVirtualAuthenticator(options);
+	}
+
+	@Override
+	public void removeVirtualAuthenticator(VirtualAuthenticator authenticator) {
+		wrappedDriver.removeVirtualAuthenticator(authenticator);
 	}
 
 	public WebDriver getWrappedDriver() {
