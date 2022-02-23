@@ -1,35 +1,5 @@
 package de.retest.web.selenium;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
-import java.util.function.Consumer;
-import java.util.stream.Collectors;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.HasCapabilities;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.HasInputDevices;
-import org.openqa.selenium.interactions.Interactive;
-import org.openqa.selenium.interactions.Keyboard;
-import org.openqa.selenium.interactions.Mouse;
-import org.openqa.selenium.interactions.Sequence;
-import org.openqa.selenium.internal.FindsByClassName;
-import org.openqa.selenium.internal.FindsByCssSelector;
-import org.openqa.selenium.internal.FindsById;
-import org.openqa.selenium.internal.FindsByLinkText;
-import org.openqa.selenium.internal.FindsByName;
-import org.openqa.selenium.internal.FindsByTagName;
-import org.openqa.selenium.internal.FindsByXPath;
-import org.openqa.selenium.internal.WrapsDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
 import de.retest.recheck.ui.descriptors.Element;
 import de.retest.recheck.ui.descriptors.RootElement;
 import de.retest.web.RecheckWebImpl;
@@ -37,6 +7,20 @@ import de.retest.web.util.SeleniumWrapperUtil;
 import de.retest.web.util.SeleniumWrapperUtil.WrapperOf;
 import lombok.Getter;
 import lombok.Setter;
+import org.openqa.selenium.By;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.*;
+import org.openqa.selenium.print.PrintOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.virtualauthenticator.HasVirtualAuthenticator;
+import org.openqa.selenium.virtualauthenticator.VirtualAuthenticator;
+import org.openqa.selenium.virtualauthenticator.VirtualAuthenticatorOptions;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
+import java.util.function.Consumer;
+import java.util.stream.Collectors;
 
 /**
  * A wrapper for a given {@code RemoteWebDriver}, which can be used with e.g. {@code ChromeDriver}, {@code GeckoDriver},
@@ -45,9 +29,8 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsById, FindsByClassName, FindsByLinkText,
-		FindsByName, FindsByCssSelector, FindsByTagName, FindsByXPath, HasInputDevices, HasCapabilities, Interactive,
-		TakesScreenshot, WrapsDriver {
+public class UnbreakableDriver implements WebDriver, JavascriptExecutor, HasInputDevices, HasCapabilities,
+		HasVirtualAuthenticator, Interactive, PrintsPage, TakesScreenshot, WrapsDriver {
 
 	private final RemoteWebDriver wrappedDriver;
 	private RootElement lastExpectedState;
@@ -103,86 +86,6 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 	@Override
 	public List<WebElement> findElements( final By by ) {
 		return wrap( wrappedDriver.findElements( by ) );
-	}
-
-	@Override
-	public WebElement findElementById( final String using ) {
-		return wrap( wrappedDriver.findElementById( using ) );
-	}
-
-	@Override
-	public List<WebElement> findElementsById( final String using ) {
-		return wrap( wrappedDriver.findElementsById( using ) );
-	}
-
-	@Override
-	public WebElement findElementByClassName( final String using ) {
-		return wrap( wrappedDriver.findElementByClassName( using ) );
-	}
-
-	@Override
-	public List<WebElement> findElementsByClassName( final String using ) {
-		return wrap( wrappedDriver.findElementsByClassName( using ) );
-	}
-
-	@Override
-	public WebElement findElementByLinkText( final String using ) {
-		return wrap( wrappedDriver.findElementByLinkText( using ) );
-	}
-
-	@Override
-	public List<WebElement> findElementsByLinkText( final String using ) {
-		return wrap( wrappedDriver.findElementsByLinkText( using ) );
-	}
-
-	@Override
-	public WebElement findElementByPartialLinkText( final String using ) {
-		return wrap( wrappedDriver.findElementByPartialLinkText( using ) );
-	}
-
-	@Override
-	public List<WebElement> findElementsByPartialLinkText( final String using ) {
-		return wrap( wrappedDriver.findElementsByPartialLinkText( using ) );
-	}
-
-	@Override
-	public WebElement findElementByName( final String using ) {
-		return wrap( wrappedDriver.findElementByName( using ) );
-	}
-
-	@Override
-	public List<WebElement> findElementsByName( final String using ) {
-		return wrap( wrappedDriver.findElementsByName( using ) );
-	}
-
-	@Override
-	public WebElement findElementByCssSelector( final String using ) {
-		return wrap( wrappedDriver.findElementByCssSelector( using ) );
-	}
-
-	@Override
-	public List<WebElement> findElementsByCssSelector( final String using ) {
-		return wrap( wrappedDriver.findElementsByCssSelector( using ) );
-	}
-
-	@Override
-	public WebElement findElementByTagName( final String using ) {
-		return wrap( wrappedDriver.findElementByTagName( using ) );
-	}
-
-	@Override
-	public List<WebElement> findElementsByTagName( final String using ) {
-		return wrap( wrappedDriver.findElementsByTagName( using ) );
-	}
-
-	@Override
-	public WebElement findElementByXPath( final String using ) {
-		return wrap( wrappedDriver.findElementByXPath( using ) );
-	}
-
-	@Override
-	public List<WebElement> findElementsByXPath( final String using ) {
-		return wrap( wrappedDriver.findElementsByXPath( using ) );
 	}
 
 	@Override
@@ -281,6 +184,20 @@ public class UnbreakableDriver implements WebDriver, JavascriptExecutor, FindsBy
 	}
 
 	@Override
+	public Pdf print(PrintOptions printOptions) throws WebDriverException {
+		return wrappedDriver.print(printOptions);
+	}
+
+	@Override
+	public VirtualAuthenticator addVirtualAuthenticator(VirtualAuthenticatorOptions options) {
+		return wrappedDriver.addVirtualAuthenticator(options);
+	}
+
+	@Override
+	public void removeVirtualAuthenticator(VirtualAuthenticator authenticator) {
+		wrappedDriver.removeVirtualAuthenticator(authenticator);
+	}
+
 	public WebDriver getWrappedDriver() {
 		if ( SeleniumWrapperUtil.isWrapper( WrapperOf.DRIVER, wrappedDriver ) ) {
 			return (WebDriver) SeleniumWrapperUtil.getWrapped( WrapperOf.DRIVER, wrappedDriver );

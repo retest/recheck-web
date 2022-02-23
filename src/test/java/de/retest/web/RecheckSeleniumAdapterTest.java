@@ -33,8 +33,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.internal.WrapsDriver;
-import org.openqa.selenium.internal.WrapsElement;
+import org.openqa.selenium.WrapsDriver;
+import org.openqa.selenium.WrapsElement;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -256,7 +256,7 @@ class RecheckSeleniumAdapterTest {
 		final QualifiedElementWarning qualifiedElementWarning = new QualifiedElementWarning( "id", "id", warning );
 
 		final UnbreakableDriver unbreakableDriver = mock( UnbreakableDriver.class );
-		when( unbreakableDriver.executeScript( any(), any() ) ).thenReturn( Collections.emptyList() );
+		when( unbreakableDriver.executeScript( (String) any(), any() ) ).thenReturn( Collections.emptyList() );
 
 		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter( RecheckWebOptions.builder() //
 				.screenshotProvider( new NoScreenshot() ) //
@@ -284,7 +284,7 @@ class RecheckSeleniumAdapterTest {
 		final QualifiedElementWarning qualifiedElementWarning = new QualifiedElementWarning( "id", "id", warning );
 
 		final UnbreakableDriver unbreakableDriver = mock( UnbreakableDriver.class );
-		when( unbreakableDriver.executeScript( any(), any() ) ).thenReturn( Collections.emptyList() );
+		when( unbreakableDriver.executeScript( (String) any(), any() ) ).thenReturn( Collections.emptyList() );
 
 		final RecheckSeleniumAdapter cut = spy( new RecheckSeleniumAdapter( RecheckWebOptions.builder() //
 				.screenshotProvider( new NoScreenshot() ) //
