@@ -27,6 +27,8 @@ Table of Contents
 
 ### Bug Fixes
 
+* AutocheckingRecheckDriver now only calls `Recheck#cap()` if browser is closed.
+
 ### New Features
 
 ### Improvements
