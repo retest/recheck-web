@@ -77,7 +77,7 @@ public class AllCapabilities {
 
 	public static DesiredCapabilities operaBlink() {
 		LOG.info("Using `new OperaOptions()` is preferred to `DesiredCapabilities.operaBlink()`");
-		return new DesiredCapabilities(BrowserType.OPERA_BLINK, "", Platform.ANY);
+		return new DesiredCapabilities(BrowserType.OPERA, "", Platform.ANY);
 	}
 
 	public static DesiredCapabilities safari() {
