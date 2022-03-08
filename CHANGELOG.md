@@ -20,6 +20,7 @@ Table of Contents
 [TOC]
 
 
+
 [Unreleased]
 ------------
 
@@ -31,7 +32,23 @@ Table of Contents
 
 ### Improvements
 
+
 --------------------------------------------------------------------------------
+
+[1.13.0] (2022-03-08)
+---------------------
+
+### Breaking Changes
+
+* Update Selenium version to > 4.0, this cause that you need also to update your Selenium version.
+
+### Bug Fixes
+
+* AutocheckingRecheckDriver now only calls `Recheck#cap()` if browser is closed.
+
+### Improvements
+
+* Update dependencies to fix bugs and security issues.
 
 
 [1.12.0] (2021-06-24)
