@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.12.0-alpha.2021-06-04" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.12.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="retest - Java Swing GUI Testing" title="retest - Java Swing GUI Testing">
 			<identifyingAttributes>
@@ -1127,6 +1127,10 @@
 													<value xsi:type="xsd:string">3px</value>
 												</entry>
 												<entry>
+													<key>border-radius</key>
+													<value xsi:type="xsd:string">3px</value>
+												</entry>
+												<entry>
 													<key>border-top-left-radius</key>
 													<value xsi:type="xsd:string">3px</value>
 												</entry>
@@ -1527,6 +1531,10 @@
 													<entry>
 														<key>border-bottom-right-radius</key>
 														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-radius</key>
+														<value xsi:type="xsd:string">0px 0px 3px 3px</value>
 													</entry>
 													<entry>
 														<key>counter-reset</key>
@@ -2543,6 +2551,10 @@
 														<value xsi:type="xsd:string">3px</value>
 													</entry>
 													<entry>
+														<key>border-radius</key>
+														<value xsi:type="xsd:string">0px 0px 3px 3px</value>
+													</entry>
+													<entry>
 														<key>counter-reset</key>
 														<value xsi:type="xsd:string">list-item 0</value>
 													</entry>
@@ -3380,6 +3392,10 @@
 													<entry>
 														<key>border-bottom-right-radius</key>
 														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-radius</key>
+														<value xsi:type="xsd:string">0px 0px 3px 3px</value>
 													</entry>
 													<entry>
 														<key>counter-reset</key>
@@ -4223,6 +4239,10 @@
 													<entry>
 														<key>border-bottom-right-radius</key>
 														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-radius</key>
+														<value xsi:type="xsd:string">0px 0px 3px 3px</value>
 													</entry>
 													<entry>
 														<key>counter-reset</key>
@@ -5142,6 +5162,10 @@
 														<value xsi:type="xsd:string">1px</value>
 													</entry>
 													<entry>
+														<key>border-radius</key>
+														<value xsi:type="xsd:string">0px 0px 3px 3px</value>
+													</entry>
+													<entry>
 														<key>border-right-color</key>
 														<value xsi:type="xsd:string">rgba(0, 0, 0, 0.15)</value>
 													</entry>
@@ -5575,6 +5599,10 @@
 																	<value xsi:type="xsd:string">3px</value>
 																</entry>
 																<entry>
+																	<key>border-radius</key>
+																	<value xsi:type="xsd:string">3px</value>
+																</entry>
+																<entry>
 																	<key>border-top-left-radius</key>
 																	<value xsi:type="xsd:string">3px</value>
 																</entry>
@@ -5918,6 +5946,10 @@
 															</entry>
 															<entry>
 																<key>border-bottom-right-radius</key>
+																<value xsi:type="xsd:string">3px</value>
+															</entry>
+															<entry>
+																<key>border-radius</key>
 																<value xsi:type="xsd:string">3px</value>
 															</entry>
 															<entry>
@@ -7344,6 +7376,40 @@
 														</attributes>
 													</attributes>
 												</containedElements>
+												<containedElements retestId="colorscheme">
+													<identifyingAttributes>
+														<attributes>
+															<attribute key="absolute-outline" xsi:type="outlineAttribute">
+																<x>0</x>
+																<y>0</y>
+																<height>0</height>
+																<width>0</width>
+															</attribute>
+															<attribute key="name" xsi:type="stringAttribute">color-scheme</attribute>
+															<attribute key="outline" xsi:type="outlineAttribute">
+																<x>0</x>
+																<y>0</y>
+																<height>0</height>
+																<width>0</width>
+															</attribute>
+															<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/section[1]/div[2]/ul[1]/li[1]/div[1]/div[2]/iframe[1]/html[1]/head[1]/meta[2]</attribute>
+															<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
+															<attribute key="type" xsi:type="stringAttribute">meta</attribute>
+														</attributes>
+													</identifyingAttributes>
+													<attributes>
+														<attributes>
+															<entry>
+																<key>content</key>
+																<value xsi:type="xsd:string">light dark</value>
+															</entry>
+															<entry>
+																<key>shown</key>
+																<value xsi:type="xsd:string">false</value>
+															</entry>
+														</attributes>
+													</attributes>
+												</containedElements>
 											</containedElements>
 											<containedElements retestId="body">
 												<identifyingAttributes>
@@ -7371,10 +7437,6 @@
 														<entry>
 															<key>align-items</key>
 															<value xsi:type="xsd:string">center</value>
-														</entry>
-														<entry>
-															<key>background-position</key>
-															<value xsi:type="xsd:string">10px -10px</value>
 														</entry>
 														<entry>
 															<key>background-repeat</key>
@@ -8264,6 +8326,10 @@
 																		<value xsi:type="xsd:string">1px</value>
 																	</entry>
 																	<entry>
+																		<key>border-radius</key>
+																		<value xsi:type="xsd:string">4px</value>
+																	</entry>
+																	<entry>
 																		<key>border-right-color</key>
 																		<value xsi:type="xsd:string">rgba(0, 0, 0, 0)</value>
 																	</entry>
@@ -8518,8 +8584,20 @@
 														<attributes>
 															<attributes>
 																<entry>
+																	<key>bottom</key>
+																	<value xsi:type="xsd:string">-135.5px</value>
+																</entry>
+																<entry>
+																	<key>position</key>
+																	<value xsi:type="xsd:string">absolute</value>
+																</entry>
+																<entry>
 																	<key>shown</key>
 																	<value xsi:type="xsd:string">true</value>
+																</entry>
+																<entry>
+																	<key>top</key>
+																	<value xsi:type="xsd:string">423.5px</value>
 																</entry>
 															</attributes>
 														</attributes>
@@ -9595,6 +9673,10 @@
 															<value xsi:type="xsd:string">3px</value>
 														</entry>
 														<entry>
+															<key>border-radius</key>
+															<value xsi:type="xsd:string">3px</value>
+														</entry>
+														<entry>
 															<key>border-top-left-radius</key>
 															<value xsi:type="xsd:string">3px</value>
 														</entry>
@@ -9877,6 +9959,10 @@
 													</entry>
 													<entry>
 														<key>border-bottom-right-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-radius</key>
 														<value xsi:type="xsd:string">3px</value>
 													</entry>
 													<entry>
@@ -10872,6 +10958,10 @@
 															<value xsi:type="xsd:string">3px</value>
 														</entry>
 														<entry>
+															<key>border-radius</key>
+															<value xsi:type="xsd:string">3px</value>
+														</entry>
+														<entry>
 															<key>border-top-left-radius</key>
 															<value xsi:type="xsd:string">3px</value>
 														</entry>
@@ -11463,6 +11553,10 @@
 														<value xsi:type="xsd:string">3px</value>
 													</entry>
 													<entry>
+														<key>border-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
 														<key>border-top-left-radius</key>
 														<value xsi:type="xsd:string">3px</value>
 													</entry>
@@ -11558,6 +11652,10 @@
 													</entry>
 													<entry>
 														<key>border-bottom-right-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-radius</key>
 														<value xsi:type="xsd:string">3px</value>
 													</entry>
 													<entry>
@@ -11988,6 +12086,10 @@
 															<value xsi:type="xsd:string">3px</value>
 														</entry>
 														<entry>
+															<key>border-radius</key>
+															<value xsi:type="xsd:string">3px</value>
+														</entry>
+														<entry>
 															<key>border-top-left-radius</key>
 															<value xsi:type="xsd:string">3px</value>
 														</entry>
@@ -12390,6 +12492,10 @@
 													</entry>
 													<entry>
 														<key>border-bottom-right-radius</key>
+														<value xsi:type="xsd:string">3px</value>
+													</entry>
+													<entry>
+														<key>border-radius</key>
 														<value xsi:type="xsd:string">3px</value>
 													</entry>
 													<entry>

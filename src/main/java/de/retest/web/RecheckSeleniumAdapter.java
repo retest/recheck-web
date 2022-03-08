@@ -165,7 +165,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		@SuppressWarnings( "unchecked" )
 		// [["//html[1]", {tagName=html, ...}], ["//html[1]/body[1]", {tagName=body, ...}]]
 		final List<List<Object>> tagMapping = (List<List<Object>>) result;
-		debug( tagMapping );
+		debugLogPseudoElements( tagMapping );
 		final RootElement lastChecked = convert( tagMapping, driver.getCurrentUrl(), driver.getTitle(), screenshot );
 
 		final FrameConverter frameConverter = new FrameConverter( getQueryJS(), retestIdProvider, defaultValueFinder );
@@ -180,9 +180,11 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		return Collections.singleton( lastChecked );
 	}
 
-	private void debug( final List<List<Object>> tagMapping ) {
-		tagMapping.stream().filter( entry -> ((String) entry.get(0)).contains( "pseudo" ) )
-				.forEach( entry -> logger.warn( "{} | {}", entry.get(0), entry.get(1) ) );
+	private void debugLogPseudoElements( final List<List<Object>> tagMapping ) {
+		if ( logger.isDebugEnabled() ) {
+			tagMapping.stream().filter( entry -> ((String) entry.get( 0 )).contains( "pseudo" ) )
+					.forEach( entry -> logger.debug( "{} | {}", entry.get( 0 ), entry.get( 1 ) ) );
+		}
 	}
 
 	public RootElement convert( final List<List<Object>> tagMapping, final String url, final String title,

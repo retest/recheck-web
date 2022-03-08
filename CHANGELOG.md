@@ -20,8 +20,39 @@ Table of Contents
 [TOC]
 
 
+
 [Unreleased]
 ------------
+
+### Breaking Changes
+
+### Bug Fixes
+
+### New Features
+
+### Improvements
+
+
+--------------------------------------------------------------------------------
+
+[1.13.0] (2022-03-08)
+---------------------
+
+### Breaking Changes
+
+* Update Selenium version to > 4.0, this cause that you need also to update your Selenium version.
+
+### Bug Fixes
+
+* AutocheckingRecheckDriver now only calls `Recheck#cap()` if browser is closed.
+
+### Improvements
+
+* Update dependencies to fix bugs and security issues.
+
+
+[1.12.0] (2021-06-24)
+---------------------
 
 ### Breaking Changes
 
@@ -38,13 +69,12 @@ Table of Contents
 * Calling `driver.switchTo().window( name )` will now perform a check when using a `AutocheckingRecheckDriver`.
 * Add Option to delay autochecking with AutocheckingRecheckDriver
 * AutocheckingRecheckDriver now allows manual checks: `driver.check( final String action )`
+* Upgrade to recheck version 1.12.0
 
 ### Improvements
 
 * Always override the system metadata (i.e. on "architecture"), so that we do not end up with mixed info.
 * Since `retestId` is now created deterministically, we can reference it before we even have a Golden Master. So if you know what the `retestId` will gona be (e.g. your element has a specific text, HTML ID or you have your own `RetestIdProvider`), you can already use it in the test. 
-
---------------------------------------------------------------------------------
 
 
 [1.11.1] (2020-07-08)

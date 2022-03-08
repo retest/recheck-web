@@ -1,10 +1,12 @@
 package de.retest.web.selenium;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchSessionException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import de.retest.recheck.Recheck;
 import de.retest.recheck.RecheckLifecycle;
 import de.retest.recheck.RecheckOptions;
 import de.retest.web.RecheckWebImpl;
@@ -15,6 +17,8 @@ import de.retest.web.RecheckWebOptions;
  * starting with {@link WebDriver#get(String)}). Consequently, you can omit using a {@code Recheck} instance such as
  * {@code RecheckImpl} or {@code RecheckWebImpl} instance. It utilizes the given {@link AutocheckingCheckNamingStrategy}
  * to create names for the checks.
+ *
+ * Also handles {@link Recheck#startTest()}, {@link Recheck#capTest()} and on browser quit {@link Recheck#cap()}.
  */
 public class AutocheckingRecheckDriver extends UnbreakableDriver implements RecheckLifecycle {
 
@@ -97,18 +101,24 @@ public class AutocheckingRecheckDriver extends UnbreakableDriver implements Rech
 
 	@Override
 	public void close() {
-		// Is this sensible? What about tests using separate sessions?
-		cap();
 		super.close();
+		ifBrowserIsNotRunning( this::cap ); // cap if close window quit the driver
 	}
 
 	@Override
 	public void quit() {
 		try {
-			// Is this sensible? What about tests using separate sessions?
 			cap();
 		} finally {
 			super.quit();
+		}
+	}
+
+	private void ifBrowserIsNotRunning( final Runnable call ) {
+		try {
+			super.getWindowHandles();
+		} catch ( NullPointerException | NoSuchSessionException e ) {
+			call.run();
 		}
 	}
 

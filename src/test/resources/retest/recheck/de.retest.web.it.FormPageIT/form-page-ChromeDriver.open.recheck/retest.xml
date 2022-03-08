@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.2" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.12.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="We Leave From Here" title="We Leave From Here">
 			<identifyingAttributes>
@@ -5371,10 +5371,6 @@
 									<value xsi:type="xsd:string">inline-block</value>
 								</entry>
 								<entry>
-									<key>flex-direction</key>
-									<value xsi:type="xsd:string">column</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">monospace</value>
 								</entry>
@@ -5518,10 +5514,6 @@
 									<value xsi:type="xsd:string">inline-block</value>
 								</entry>
 								<entry>
-									<key>flex-direction</key>
-									<value xsi:type="xsd:string">column</value>
-								</entry>
-								<entry>
 									<key>font-family</key>
 									<value xsi:type="xsd:string">monospace</value>
 								</entry>
@@ -5658,10 +5650,6 @@
 								<entry>
 									<key>display</key>
 									<value xsi:type="xsd:string">inline-block</value>
-								</entry>
-								<entry>
-									<key>flex-direction</key>
-									<value xsi:type="xsd:string">column</value>
 								</entry>
 								<entry>
 									<key>font-family</key>

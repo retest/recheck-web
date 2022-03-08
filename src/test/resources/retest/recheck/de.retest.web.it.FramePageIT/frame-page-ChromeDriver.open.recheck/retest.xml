@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.11.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.12.0" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="Multi Frame" title="Multi Frame">
 			<identifyingAttributes>
@@ -56726,10 +56726,6 @@
 																				<attributes>
 																					<attributes>
 																						<entry>
-																							<key>covered</key>
-																							<value xsi:type="xsd:string">true</value>
-																						</entry>
-																						<entry>
 																							<key>shown</key>
 																							<value xsi:type="xsd:string">true</value>
 																						</entry>
@@ -56757,10 +56753,6 @@
 																					</identifyingAttributes>
 																					<attributes>
 																						<attributes>
-																							<entry>
-																								<key>covered</key>
-																								<value xsi:type="xsd:string">true</value>
-																							</entry>
 																							<entry>
 																								<key>shown</key>
 																								<value xsi:type="xsd:string">true</value>
@@ -56795,10 +56787,6 @@
 																					<attributes>
 																						<attributes>
 																							<entry>
-																								<key>covered</key>
-																								<value xsi:type="xsd:string">true</value>
-																							</entry>
-																							<entry>
 																								<key>shown</key>
 																								<value xsi:type="xsd:string">true</value>
 																							</entry>
@@ -56832,10 +56820,6 @@
 																					<attributes>
 																						<attributes>
 																							<entry>
-																								<key>covered</key>
-																								<value xsi:type="xsd:string">true</value>
-																							</entry>
-																							<entry>
 																								<key>shown</key>
 																								<value xsi:type="xsd:string">true</value>
 																							</entry>
@@ -56868,10 +56852,6 @@
 																					</identifyingAttributes>
 																					<attributes>
 																						<attributes>
-																							<entry>
-																								<key>covered</key>
-																								<value xsi:type="xsd:string">true</value>
-																							</entry>
 																							<entry>
 																								<key>shown</key>
 																								<value xsi:type="xsd:string">true</value>

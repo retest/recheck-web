@@ -169,7 +169,8 @@ class TestHealerTest {
 		assertThat( findElement( By.linkText( "" ), wrapped ) ).isNull();
 		assertThat( findElement( By.name( "" ), wrapped ) ).isNull();
 		assertThat( findElement( By.partialLinkText( "" ), wrapped ) ).isNull();
-		assertThat( findElement( By.tagName( "" ), wrapped ) ).isNull();
+		// with selenium version 4, en empty tag name throws an exception
+		// assertThat( findElement( By.tagName( "" ), wrapped ) ).isNull();
 		assertThat( findElement( By.xpath( "" ), wrapped ) ).isNull();
 	}
 
@@ -304,7 +305,7 @@ class TestHealerTest {
 	}
 
 	@Test
-	public void testHealing_should_trigger_warning_in_result() throws Exception {
+	public void testHealing_should_trigger_warning_in_result() {
 		final String retestId = "id";
 		final String xpath = "html[1]/div[1]";
 
@@ -321,7 +322,7 @@ class TestHealerTest {
 		final List<QualifiedElementWarning> warnings = new ArrayList<>();
 		when( wrapped.getWarningConsumer() ).thenReturn( warnings::add );
 
-		TestHealer.findElement( By.id( "myId" ), wrapped ); // Do not move this from line 312, or else change the line number below
+		TestHealer.findElement( By.id( "myId" ), wrapped ); // Do not move this from line 325, or else change the line number below
 
 		assertThat( warnings ).hasSize( 1 );
 		assertThat( warnings.get( 0 ) ).satisfies( qualifiedWarning -> {
@@ -329,7 +330,7 @@ class TestHealerTest {
 			assertThat( qualifiedWarning.getAttributeKey() ).isEqualTo( "id" );
 			assertThat( qualifiedWarning.getWarning() ).satisfies( warning -> {
 				assertThat( warning.getTestFileName() ).isEqualTo( TestHealerTest.class.getSimpleName() + ".java" );
-				assertThat( warning.getTestLineNumber() ).isEqualTo( 324 );
+				assertThat( warning.getTestLineNumber() ).isEqualTo( 325 );
 				assertThat( warning.getQualifiedTestName() ).isEqualTo( TestHealerTest.class.getName() );
 			} );
 		} );
