@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.12.0-alpha.2021-06-04" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="1.13.0-beta.1" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="4">
 	<data xsi:type="sutState">
 		<descriptors retestId="html" screenId="1" screen="We Leave From Here" title="We Leave From Here">
 			<identifyingAttributes>
@@ -724,7 +724,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -779,7 +779,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -951,7 +951,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -1005,7 +1005,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -1095,7 +1095,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -1153,7 +1153,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -1765,7 +1765,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -1855,7 +1855,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -2071,7 +2071,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -2129,7 +2129,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -2183,7 +2183,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -2237,7 +2237,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -2593,7 +2593,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -2647,7 +2647,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -2701,7 +2701,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -2796,7 +2796,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -4351,7 +4351,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -4441,7 +4441,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -6352,7 +6352,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
@@ -6411,7 +6411,7 @@
 									</entry>
 									<entry>
 										<key>shown</key>
-										<value xsi:type="xsd:string">true</value>
+										<value xsi:type="xsd:string">false</value>
 									</entry>
 									<entry>
 										<key>text-align</key>
